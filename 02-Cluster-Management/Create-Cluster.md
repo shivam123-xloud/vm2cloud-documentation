@@ -115,7 +115,7 @@ After the task completes:
 **Cluster Created Successfully**
 
 
-![Cluster Created Successfully](images/Cluster Created Successfully.png)
+![Cluster Created Successfully](images/Cluster-Created-Successfully.png)
 
 
 ---
