@@ -46,9 +46,7 @@ Before creating a cluster, ensure that:
 
 **Open Cluster Management**
 
-```
-[ Place Screenshot Here ]
-```
+![Open Cluster Management](images/cluster-overview.png)
 
 ---
 
