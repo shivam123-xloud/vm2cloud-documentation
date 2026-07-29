@@ -83,13 +83,13 @@ These details will be required when joining the new node.
 
 ---
 
-### Screenshot 3
+
 
 **New Node Cluster Page**
 
-```text
-[ Place Screenshot Here ]
-```
+
+![New Node Cluster Page](images/new-cluster-deshbord.png)
+
 
 ---
 
@@ -100,13 +100,12 @@ These details will be required when joining the new node.
 
 ---
 
-### Screenshot 4
+
 
 **Join Cluster Window**
 
-```text
-[ Place Screenshot Here ]
-```
+![Join Cluster Window](images/joint-cluster-page.png)
+
 
 ---
 
@@ -120,13 +119,13 @@ These details will be required when joining the new node.
 
 ---
 
-### Screenshot 5
+
 
 **Cluster Join Configuration**
 
-```text
-[ Place Screenshot Here ]
-```
+
+![Cluster Join Configuration](images/Cluster-Join-Configuration.png)
+
 
 ---
 
@@ -138,13 +137,12 @@ These details will be required when joining the new node.
 
 ---
 
-### Screenshot 6
 
 **Joining Cluster**
 
-```text
-[ Place Screenshot Here ]
-```
+
+![Joining Cluster](images/joining-cluster.png)
+
 
 ---
 
@@ -156,13 +154,12 @@ These details will be required when joining the new node.
 
 ---
 
-### Screenshot 7
 
 **Node Successfully Joined**
 
-```text
-[ Place Screenshot Here ]
-```
+
+![Node Successfully Joined](images/node-Successfully-Joined.png)
+
 
 ---
 
