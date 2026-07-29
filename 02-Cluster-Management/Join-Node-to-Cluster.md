@@ -65,13 +65,12 @@ These details will be required when joining the new node.
 
 ---
 
-### Screenshot 2
+
 
 **Cluster Join Information**
 
-```text
-[ Place Screenshot Here ]
-```
+![Cluster Join Information](images/cluster-joint-info.png)
+
 
 ---
 
