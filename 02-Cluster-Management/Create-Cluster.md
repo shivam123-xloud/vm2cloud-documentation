@@ -42,13 +42,15 @@ Before creating a cluster, ensure that:
 
 ---
 
-### Screenshot 1
+
 
 **Open Cluster Management**
 
 ![Open Cluster Management](images/cluster-overview.png)
 
+
 ---
+
 
 ## Step 2: Start Cluster Creation
 
@@ -57,13 +59,11 @@ Before creating a cluster, ensure that:
 
 ---
 
-### Screenshot 2
+
 
 **Create Cluster Window**
 
-```
-[ Place Screenshot Here ]
-```
+![Create Cluster Window](images/create-cluster.png)
 
 ---
 
@@ -77,13 +77,9 @@ Before creating a cluster, ensure that:
 
 ---
 
-### Screenshot 3
-
 **Cluster Configuration**
 
-```
-[ Place Screenshot Here ]
-```
+![Cluster Configuration](images/cluster-config.png)
 
 ---
 
@@ -95,13 +91,12 @@ Before creating a cluster, ensure that:
 
 ---
 
-### Screenshot 4
 
 **Cluster Creation Progress**
 
-```
-[ Place Screenshot Here ]
-```
+
+![Cluster Creation Progress](images/Cluster Creation Progress.png)
+
 
 ---
 
@@ -115,13 +110,13 @@ After the task completes:
 
 ---
 
-### Screenshot 5
+
 
 **Cluster Created Successfully**
 
-```
-[ Place Screenshot Here ]
-```
+
+![Cluster Created Successfully](images/Cluster Created Successfully.png)
+
 
 ---
 
