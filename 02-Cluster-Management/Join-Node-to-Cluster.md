@@ -44,13 +44,11 @@ Before joining a node to the cluster, ensure that:
 
 ---
 
-### Screenshot 1
 
 **Cluster Management Page**
 
-```text
-[ Place Screenshot Here ]
-```
+![Cluster Management Page](images/cluster-overview.png)
+
 
 ---
 
