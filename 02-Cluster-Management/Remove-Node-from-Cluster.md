@@ -44,7 +44,6 @@ Before removing a node, ensure that:
 
 ---
 
-### Screenshot 1
 
 **Cluster Nodes**
 
@@ -65,7 +64,6 @@ Before removing a node, ensure that:
 
 ---
 
-### Screenshot 2
 
 **Node Workloads**
 
@@ -85,7 +83,6 @@ Before removing a node, ensure that:
 
 ---
 
-### Screenshot 3
 
 **Prepare Node**
 
@@ -117,7 +114,6 @@ Wait until the command completes successfully.
 
 ---
 
-### Screenshot 4
 
 **CLI Node Removal**
 
@@ -185,7 +181,6 @@ systemctl restart pvedaemon
 systemctl restart pveproxy
 systemctl restart pvestatd
 ```
-### Screenshot 5
 
 **Clean Removed Node**
 
@@ -207,7 +202,6 @@ systemctl restart pvestatd
 
 ---
 
-### Screenshot 6
 
 **Updated Cluster**
 
