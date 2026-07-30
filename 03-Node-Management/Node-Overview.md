@@ -47,9 +47,9 @@ Before viewing the Node Overview, ensure that:
 
 **Open Node**
 
-```text id="3vxtsj"
-[ Place Screenshot Here ]
-```
+
+![Open Node](images/expand-datacenter.png)
+
 
 ---
 
@@ -64,9 +64,7 @@ Before viewing the Node Overview, ensure that:
 
 **Summary Page**
 
-```text id="pt5v3g"
-[ Place Screenshot Here ]
-```
+![Summary Page](images/node-summary.png)
 
 ---
 
@@ -93,9 +91,7 @@ Information typically displayed includes:
 
 **Node Summary**
 
-```text id="3djlwm"
-[ Place Screenshot Here ]
-```
+![Node Summary](images/node-overview.png)
 
 ---
 
@@ -119,9 +115,8 @@ Information may include:
 
 **CPU Information**
 
-```text id="pkh1k7"
-[ Place Screenshot Here ]
-```
+![CPU Information](images/node-overview.png)
+![CPU Information](images/cpu-usage.png)
 
 ---
 
@@ -143,9 +138,9 @@ Information may include:
 
 **Memory Information**
 
-```text id="jkjgo8"
-[ Place Screenshot Here ]
-```
+![Memory Information](images/node-overview.png)
+
+![Memory Information](images/memory-usage.png)
 
 ---
 
@@ -168,9 +163,7 @@ Information may include:
 
 **Storage Information**
 
-```text id="l4kwl2"
-[ Place Screenshot Here ]
-```
+![Storage Information](images/node-overview.png)
 
 ---
 
@@ -193,9 +186,7 @@ Information may include:
 
 **Network Information**
 
-```text id="xqvb9j"
-[ Place Screenshot Here ]
-```
+![Network Information](images/node-network.png)
 
 ---
 
@@ -219,9 +210,7 @@ Information may include:
 
 **System Information**
 
-```text id="xhg6fd"
-[ Place Screenshot Here ]
-```
+![System Information](images/node-overview.png)
 
 ---
 
