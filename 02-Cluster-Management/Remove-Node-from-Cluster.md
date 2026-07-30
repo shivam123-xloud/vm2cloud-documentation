@@ -90,7 +90,7 @@ Before removing a node, ensure that:
 **Prepare Node**
 
 
-![Prepare Node](images/Prepare-Node)
+![Prepare Node](images/Prepare-Node.png)
 
 
 
@@ -121,7 +121,7 @@ Wait until the command completes successfully.
 
 **CLI Node Removal**
 
-![CLI Node Removal](images/CLI-Node-Removal)
+![CLI Node Removal](images/CLI-Node-Removal.png)
 
 
 
