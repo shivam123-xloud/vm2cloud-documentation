@@ -43,9 +43,9 @@ Before viewing node information, ensure that:
 
 **VM2Cloud Login**
 
-```text
-[ Place Screenshot Here ]
-```
+
+![VM2Cloud Login](images/log-in-page.png)
+
 
 ---
 
@@ -60,9 +60,9 @@ Before viewing node information, ensure that:
 
 **Datacenter Navigation**
 
-```text
-[ Place Screenshot Here ]
-```
+
+![Datacenter Navigation](images/expand-datacenter.png)
+
 
 ---
 
@@ -77,9 +77,9 @@ Before viewing node information, ensure that:
 
 **Select Node**
 
-```text
-[ Place Screenshot Here ]
-```
+
+![Select Node](images/select-node.png)
+
 
 ---
 
@@ -110,9 +110,9 @@ After selecting the node, the following management options are available from th
 
 **Node Navigation Menu**
 
-```text
-[ Place Screenshot Here ]
-```
+
+![Node Navigation Menu](images/navigation-menu.png)
+
 
 ---
 
