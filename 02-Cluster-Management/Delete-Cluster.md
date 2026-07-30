@@ -57,9 +57,9 @@ Datacenter → Cluster
 
 **Cluster Overview**
 
-```text
-[ Place Screenshot Here ]
-```
+
+![Cluster Overview](images/cluster-after-removal-node.png)
+
 
 ---
 
@@ -81,9 +81,9 @@ ssh root@<node-ip-address>
 
 **SSH Session**
 
-```text
-[ Place Screenshot Here ]
-```
+
+![SSH Session](images/delete-cluster-ssh.png)
+
 
 ---
 
@@ -109,9 +109,8 @@ pvecm nodes
 
 **Cluster Status Verification**
 
-```text
-[ Place Screenshot Here ]
-```
+
+![Cluster Status Verification](images/Verify-Current-Cluster-Status.png)
 
 ---
 
@@ -137,9 +136,9 @@ systemctl status corosync
 
 **Stop Cluster Services**
 
-```text
-[ Place Screenshot Here ]
-```
+
+![Stop Cluster Services](images/delete-stop-cluster-service.png)
+
 
 ---
 
@@ -169,9 +168,9 @@ Expected output:
 
 **VM2Cloud Cluster Filesystem Local Mode**
 
-```text
-[ Place Screenshot Here ]
-```
+
+![VM2Cloud Cluster Filesystem Local Mode](images/deleting-clusture-config-1.png)
+
 
 ---
 
@@ -201,9 +200,9 @@ killall pmxcfs
 
 **Remove Cluster Configuration**
 
-```text
-[ Place Screenshot Here ]
-```
+
+![Remove Cluster Configuration](images/deleting-clusture-config-2.png)
+
 
 ---
 
@@ -229,9 +228,9 @@ systemctl restart pvestatd
 
 **Restart VM2Cloud Services**
 
-```text
-[ Place Screenshot Here ]
-```
+
+![Restart VM2Cloud Services](images/Restart-VM2Cloud-Services.png)
+
 
 ---
 
@@ -269,9 +268,9 @@ is no longer present.
 
 **Cluster Removal Verification**
 
-```text
-[ Place Screenshot Here ]
-```
+
+![Cluster Removal Verification](images/cluster-delete-verification.png)
+
 
 ---
 
@@ -297,9 +296,9 @@ Datacenter → Cluster
 
 **Standalone Node**
 
-```text
-[ Place Screenshot Here ]
-```
+
+![Standalone Node](images/verification-of-delete.png)
+
 
 ---
 
