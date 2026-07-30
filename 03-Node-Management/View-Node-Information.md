@@ -120,15 +120,7 @@ After selecting the node, the following management options are available from th
 
 Select the required option from the node menu to perform monitoring, configuration, or maintenance tasks.
 
----
 
-### Screenshot 5
-
-**Node Workspace**
-
-```text
-[ Place Screenshot Here ]
-```
 
 ---
 
