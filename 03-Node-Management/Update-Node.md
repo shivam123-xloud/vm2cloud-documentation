@@ -130,13 +130,6 @@ Before updating a node, ensure that:
 
 ---
 
-### Screenshot 6
-
-**Node Restart**
-
-```text
-[ Place Screenshot Here ]
-```
 
 ---
 
