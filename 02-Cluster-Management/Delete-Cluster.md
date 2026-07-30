@@ -53,7 +53,6 @@ Datacenter → Cluster
 
 ---
 
-### Screenshot 1
 
 **Cluster Overview**
 
@@ -77,7 +76,6 @@ ssh root@<node-ip-address>
 
 ---
 
-### Screenshot 2
 
 **SSH Session**
 
@@ -105,7 +103,6 @@ pvecm nodes
 
 ---
 
-### Screenshot 3
 
 **Cluster Status Verification**
 
@@ -132,7 +129,6 @@ systemctl status corosync
 
 ---
 
-### Screenshot 4
 
 **Stop Cluster Services**
 
@@ -164,7 +160,6 @@ Expected output:
 
 ---
 
-### Screenshot 5
 
 **VM2Cloud Cluster Filesystem Local Mode**
 
@@ -196,7 +191,6 @@ killall pmxcfs
 
 ---
 
-### Screenshot 6
 
 **Remove Cluster Configuration**
 
@@ -224,7 +218,6 @@ systemctl restart pvestatd
 
 ---
 
-### Screenshot 7
 
 **Restart VM2Cloud Services**
 
@@ -264,7 +257,6 @@ is no longer present.
 
 ---
 
-### Screenshot 8
 
 **Cluster Removal Verification**
 
@@ -292,7 +284,6 @@ Datacenter → Cluster
 
 ---
 
-### Screenshot 9
 
 **Standalone Node**
 
