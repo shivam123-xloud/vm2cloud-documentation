@@ -48,11 +48,10 @@ Before removing a node, ensure that:
 
 **Cluster Nodes**
 
-```text
-[ Place Screenshot Here ]
-```
 
-> Capture the **Datacenter → Cluster** page showing all cluster nodes before removal.
+![Cluster Nodes](images/cluster-deshboard.png)
+
+
 
 ---
 
@@ -70,11 +69,11 @@ Before removing a node, ensure that:
 
 **Node Workloads**
 
-```text
-[ Place Screenshot Here ]
-```
 
-> Capture the node showing that no virtual machines or containers remain.
+![Node Workloads](images/node-zero-workload.png)
+
+
+
 
 ---
 
@@ -90,11 +89,11 @@ Before removing a node, ensure that:
 
 **Prepare Node**
 
-```text
-[ Place Screenshot Here ]
-```
 
-> Capture the node summary page before removal.
+![Prepare Node](images/Prepare-Node)
+
+
+
 
 ---
 
@@ -122,11 +121,10 @@ Wait until the command completes successfully.
 
 **CLI Node Removal**
 
-```text
-[ Place Screenshot Here ]
-```
+![CLI Node Removal](images/CLI-Node-Removal)
 
-> Capture the terminal showing the successful execution of the `pvecm delnode` command.
+
+
 
 ---
 
@@ -191,11 +189,12 @@ systemctl restart pvestatd
 
 **Clean Removed Node**
 
-```text
-[ Place Screenshot Here ]
-```
 
-> Capture the terminal after removing the cluster configuration.
+![Clean Removed Node](images/Clean-the-Removed-Node-1.png)
+![Clean Removed Node](images/Clean-the-Removed-Node-2.png)
+
+
+
 
 ---
 
@@ -212,9 +211,9 @@ systemctl restart pvestatd
 
 **Updated Cluster**
 
-```text
-[ Place Screenshot Here ]
-```
+
+![Updated Cluster](images/Verify-the-Cluster.png)
+
 
 > Capture the **Datacenter → Cluster** page showing that the removed node is no longer part of the cluster.
 
