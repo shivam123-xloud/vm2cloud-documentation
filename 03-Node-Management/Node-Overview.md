@@ -43,7 +43,6 @@ Before viewing the Node Overview, ensure that:
 
 ---
 
-### Screenshot 1
 
 **Open Node**
 
@@ -60,7 +59,7 @@ Before viewing the Node Overview, ensure that:
 
 ---
 
-### Screenshot 2
+
 
 **Summary Page**
 
@@ -87,7 +86,6 @@ Information typically displayed includes:
 
 ---
 
-### Screenshot 3
 
 **Node Summary**
 
@@ -111,7 +109,6 @@ Information may include:
 
 ---
 
-### Screenshot 4
 
 **CPU Information**
 
@@ -134,7 +131,7 @@ Information may include:
 
 ---
 
-### Screenshot 5
+
 
 **Memory Information**
 
@@ -159,7 +156,6 @@ Information may include:
 
 ---
 
-### Screenshot 6
 
 **Storage Information**
 
@@ -181,8 +177,6 @@ Information may include:
 * Link Status
 
 ---
-
-### Screenshot 7
 
 **Network Information**
 
@@ -206,7 +200,7 @@ Information may include:
 
 ---
 
-### Screenshot 8
+
 
 **System Information**
 
