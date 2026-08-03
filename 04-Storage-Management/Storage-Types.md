@@ -39,6 +39,9 @@ It is one of the simplest storage types to configure and is commonly used in sta
 * Not suitable for High Availability
 * No built-in redundancy
 
+
+### Storage Types
+![Storage Types](images/)
 ---
 
 # LVM Storage
