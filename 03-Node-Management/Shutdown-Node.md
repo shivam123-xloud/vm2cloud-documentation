@@ -86,7 +86,7 @@ Before shutting down a node, ensure that:
 **Shutdown Confirmation**
 
 
-[Shutdown Confirmation]
+![Shutdown Confirmation](images/shutdown-confirmation.png)
 
 
 ---
