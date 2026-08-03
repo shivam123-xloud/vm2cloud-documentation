@@ -43,11 +43,9 @@ Before managing storage, ensure that:
 
 ---
 
-### Screenshot 1
 
-```text
-[ Place Screenshot Here ]
-```
+![Open Storage Management](images/edit-storage-page.png)
+
 
 ---
 
@@ -58,11 +56,11 @@ Before managing storage, ensure that:
 
 ---
 
-### Screenshot 2
 
-```text
-[ Place Screenshot Here ]
-```
+
+
+![Select the Storage](images/updated-storage-section.png)
+
 
 ---
 
@@ -84,11 +82,11 @@ Depending on the storage type, you may update:
 
 ---
 
-### Screenshot 3
 
-```text
-[ Place Screenshot Here ]
-```
+
+
+![Update the Configuration](images/updated-storage-section.png)
+
 
 ---
 
@@ -100,11 +98,9 @@ Depending on the storage type, you may update:
 
 ---
 
-### Screenshot 4
 
-```text
-[ Place Screenshot Here ]
-```
+![Save the Changes](images/final-storage-after-update.png)
+
 
 ---
 
@@ -118,11 +114,11 @@ Depending on the storage type, you may update:
 
 ---
 
-### Screenshot 5
 
-```text
-[ Place Screenshot Here ]
-```
+
+
+![Select the Storage](images/updated-storage-section.png)
+
 
 ---
 
@@ -135,11 +131,9 @@ Depending on the storage type, you may update:
 
 ---
 
-### Screenshot 6
 
-```text
-[ Place Screenshot Here ]
-```
+![Change the Status](images/enabel-check-off-storage.png)
+![Change the Status](images/disabel-storage.png)
 
 ---
 
@@ -156,11 +150,9 @@ Before removing storage, ensure that:
 
 ---
 
-### Screenshot 7
 
-```text
-[ Place Screenshot Here ]
-```
+![Verify the Storage](images/no-vm-is-running.png)
+
 
 ---
 
@@ -173,11 +165,9 @@ Before removing storage, ensure that:
 
 ---
 
-### Screenshot 8
 
-```text
-[ Place Screenshot Here ]
-```
+![Remove the Storage](images/remove-storage.png)
+
 
 ---
 
@@ -188,11 +178,9 @@ Before removing storage, ensure that:
 
 ---
 
-### Screenshot 9
 
-```text
-[ Place Screenshot Here ]
-```
+![Verify Removal](images/verify-remove-storage.png)
+
 
 ---
 
