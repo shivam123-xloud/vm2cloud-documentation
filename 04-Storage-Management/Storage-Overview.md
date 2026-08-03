@@ -85,7 +85,7 @@ Review the information to verify that the required storage is available and onli
 
 
 
-[Review the Storage List](images/review-the-storage-List.png)
+![Review the Storage List](images/Review-the-Storage-List.png)
 
 
 ---
@@ -108,7 +108,7 @@ Depending on the storage type, you can review:
 
 
 
-[View Storage Details](images/review-the-storage-List.png)
+![View Storage Details](images/Review-the-Storage-List.png)
 
 
 ---
@@ -131,7 +131,7 @@ Depending on how the storage is configured, the Content page may contain:
 
 
 
-[View Storage Content](images/storage-content.png)
+![View Storage Content](images/storage-content.png)
 
 
 ---
