@@ -44,11 +44,10 @@ Before uploading content, ensure that:
 
 ---
 
-### Screenshot 1
 
-```text id="k4ns2u"
-[ Place Screenshot Here ]
-```
+
+![Open the Storage](images/upload-iso.png)
+
 
 ---
 
@@ -61,11 +60,11 @@ Before uploading content, ensure that:
 
 ---
 
-### Screenshot 2
 
-```text id="e0f7da"
-[ Place Screenshot Here ]
-```
+
+
+![Upload the ISO](images/upload-menu.png)
+
 
 ---
 
@@ -78,11 +77,11 @@ After the upload completes:
 
 ---
 
-### Screenshot 3
 
-```text id="lh9mv3"
-[ Place Screenshot Here ]
-```
+
+
+![Verify the Upload](images/iso-upload-success.png)
+
 
 ---
 
@@ -95,11 +94,11 @@ After the upload completes:
 
 ---
 
-### Screenshot 4
 
-```text id="8onvyd"
-[ Place Screenshot Here ]
-```
+
+
+![Open Container Templates](images/ct-temp-page.png)
+
 
 ---
 
@@ -114,11 +113,9 @@ Select the required template and complete the operation.
 
 ---
 
-### Screenshot 5
 
-```text id="v8m4ak"
-[ Place Screenshot Here ]
-```
+![Upload or Download a Template](images/download-temp.png)
+
 
 ---
 
@@ -128,73 +125,13 @@ Verify that the container template appears in the **CT Templates** list.
 
 ---
 
-### Screenshot 6
 
-```text id="vtkzbw"
-[ Place Screenshot Here ]
-```
 
----
 
-# Upload Backup Files
+![Verify the Template](images/Verify-Template.png)
 
-## Step 1: Open Backup Storage
 
-1. Select the storage configured for backups.
-2. Open the **Backups** or **Content** tab.
 
----
-
-### Screenshot 7
-
-```text id="2ewtv2"
-[ Place Screenshot Here ]
-```
-
----
-
-## Step 2: Upload the Backup
-
-1. Click **Upload**.
-2. Select the backup file.
-3. Click **Upload**.
-4. Wait for the upload to complete.
-
----
-
-### Screenshot 8
-
-```text id="8p0e7m"
-[ Place Screenshot Here ]
-```
-
----
-
-## Step 3: Verify the Backup
-
-Confirm that the backup file appears in the storage content list.
-
----
-
-### Screenshot 9
-
-```text id="lmfdxs"
-[ Place Screenshot Here ]
-```
-
----
-
-# Upload Snippets (If Supported)
-
-If the selected storage supports **Snippets**, upload the required configuration or automation files using the same upload process.
-
----
-
-### Screenshot 10
-
-```text id="t17wgu"
-[ Place Screenshot Here ]
-```
 
 ---
 
