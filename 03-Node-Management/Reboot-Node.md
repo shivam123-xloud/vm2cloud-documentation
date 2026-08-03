@@ -42,13 +42,13 @@ Before rebooting a node, ensure that:
 
 ---
 
-### Screenshot 1
+
 
 **Select Node**
 
-```text id="q2d4nh"
-[ Place Screenshot Here ]
-```
+
+![Select Node](images/select-node.png)
+
 
 ---
 
@@ -60,13 +60,13 @@ Before rebooting a node, ensure that:
 
 ---
 
-### Screenshot 2
+
 
 **Running Workloads**
 
-```text id="4aw2ks"
-[ Place Screenshot Here ]
-```
+
+![Running Workloads](images/running-vm.png)
+
 
 ---
 
@@ -78,13 +78,13 @@ Before rebooting a node, ensure that:
 
 ---
 
-### Screenshot 3
+
 
 **Reboot Confirmation**
 
-```text id="ow8c1m"
-[ Place Screenshot Here ]
-```
+
+![Reboot Confirmation](images/reboot-confirmation.png)
+
 
 ---
 
@@ -95,13 +95,13 @@ Before rebooting a node, ensure that:
 
 ---
 
-### Screenshot 4
+
 
 **Node Restarting**
 
-```text id="v6n0tg"
-[ Place Screenshot Here ]
-```
+
+![Node Restarting](images/node-down.png)
+
 
 ---
 
@@ -113,13 +113,13 @@ Before rebooting a node, ensure that:
 
 ---
 
-### Screenshot 5
+
 
 **Node Online**
 
-```text id="ewm8kx"
-[ Place Screenshot Here ]
-```
+
+![Node Online](images/node-up.png)
+
 
 ---
 
