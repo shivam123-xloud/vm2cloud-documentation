@@ -44,13 +44,13 @@ Before shutting down a node, ensure that:
 
 ---
 
-### Screenshot 1
+
 
 **Select Node**
 
-```text id="7dc3mk"
-[ Place Screenshot Here ]
-```
+
+![Select Node](images/select-node.png)
+
 
 ---
 
@@ -63,13 +63,13 @@ Before shutting down a node, ensure that:
 
 ---
 
-### Screenshot 2
+
 
 **Running Workloads**
 
-```text id="l9fq2p"
-[ Place Screenshot Here ]
-```
+
+![Running Workloads](images/running-vm.png)
+
 
 ---
 
@@ -98,13 +98,13 @@ Before shutting down a node, ensure that:
 
 ---
 
-### Screenshot 4
+
 
 **Node Shutting Down**
 
-```text id="9bxm5r"
-[ Place Screenshot Here ]
-```
+
+![Node Shutting Down](images/node-down.png)
+
 
 ---
 
@@ -120,9 +120,9 @@ Before shutting down a node, ensure that:
 
 **Node Offline**
 
-```text id="u6cz4n"
-[ Place Screenshot Here ]
-```
+
+![Node Offline](images/node-down.png)
+
 
 ---
 
