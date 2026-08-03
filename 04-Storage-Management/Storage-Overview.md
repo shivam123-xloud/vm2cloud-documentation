@@ -41,11 +41,11 @@ Before viewing storage information, ensure that:
 
 ---
 
-### Screenshot 1
 
-```text
-[ Place Screenshot Here ]
-```
+
+
+![Log in to VM2Cloud](images/log-in-page.png)
+
 
 ---
 
@@ -58,11 +58,10 @@ The Storage page displays all storage resources configured in the environment.
 
 ---
 
-### Screenshot 2
 
-```text
-[ Place Screenshot Here ]
-```
+
+![Open the Storage Page](images/storage-page.png)
+
 
 ---
 
@@ -83,11 +82,11 @@ Review the information to verify that the required storage is available and onli
 
 ---
 
-### Screenshot 3
 
-```text
-[ Place Screenshot Here ]
-```
+
+
+[Review the Storage List](images/review-the-storage-List.png)
+
 
 ---
 
@@ -106,11 +105,11 @@ Depending on the storage type, you can review:
 
 ---
 
-### Screenshot 4
 
-```text
-[ Place Screenshot Here ]
-```
+
+
+[View Storage Details](images/review-the-storage-List.png)
+
 
 ---
 
@@ -129,11 +128,11 @@ Depending on how the storage is configured, the Content page may contain:
 
 ---
 
-### Screenshot 5
 
-```text
-[ Place Screenshot Here ]
-```
+
+
+[View Storage Content](images/storage-content.png)
+
 
 ---
 
