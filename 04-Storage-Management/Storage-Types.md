@@ -41,7 +41,11 @@ It is one of the simplest storage types to configure and is commonly used in sta
 
 
 ### Storage Types
-![Storage Types](images/)
+
+
+![Storage Types](images/storage-type.png)
+
+
 ---
 
 # LVM Storage
