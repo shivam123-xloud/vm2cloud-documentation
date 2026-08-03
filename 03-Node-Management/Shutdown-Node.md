@@ -81,13 +81,13 @@ Before shutting down a node, ensure that:
 
 ---
 
-### Screenshot 3
+
 
 **Shutdown Confirmation**
 
-```text id="2mvd1k"
-[ Place Screenshot Here ]
-```
+
+[Shutdown Confirmation]
+
 
 ---
 
@@ -116,7 +116,7 @@ Before shutting down a node, ensure that:
 
 ---
 
-### Screenshot 5
+
 
 **Node Offline**
 
