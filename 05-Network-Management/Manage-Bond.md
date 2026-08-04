@@ -75,11 +75,9 @@ VM2Cloud supports multiple bonding modes. The most commonly used modes are:
 
 ---
 
-### Screenshot 2
 
-```text id="bond02"
-[ Place Screenshot Here ]
-```
+![Create the Bond](images/Create-the-Bond.png)
+
 
 ---
 
@@ -99,11 +97,9 @@ Review the configuration before creating the bond.
 
 ---
 
-### Screenshot 3
 
-```text id="bond03"
-[ Place Screenshot Here ]
-```
+![Configure the Bond](images/Configure-the-Bond.png)
+
 
 ---
 
@@ -114,11 +110,9 @@ Review the configuration before creating the bond.
 
 ---
 
-### Screenshot 4
 
-```text id="bond04"
-[ Place Screenshot Here ]
-```
+![Save the Configuration](images/Save-the-Configuration.png)
+
 
 ---
 
@@ -132,11 +126,9 @@ Review the configuration before creating the bond.
 
 ---
 
-### Screenshot 5
 
-```text id="bond05"
-[ Place Screenshot Here ]
-```
+![Select the Bond](images/Select-the-Bond.png)
+
 
 ---
 
@@ -155,11 +147,9 @@ After making the required changes, click **OK**.
 
 ---
 
-### Screenshot 6
 
-```text id="bond06"
-[ Place Screenshot Here ]
-```
+![Modify the Configuration](images/Modify-the-Configuration.png)
+
 
 ---
 
@@ -175,11 +165,9 @@ Before removing the bond, ensure that:
 
 ---
 
-### Screenshot 7
 
-```text id="bond07"
-[ Place Screenshot Here ]
-```
+![Verify the Bond](images/Verify-the-Bond.png)
+
 
 ---
 
@@ -191,11 +179,9 @@ Before removing the bond, ensure that:
 
 ---
 
-### Screenshot 8
 
-```text id="bond08"
-[ Place Screenshot Here ]
-```
+![Remove the Bond](images/Remove-the-Bond.png)
+
 
 ---
 
@@ -213,11 +199,9 @@ To apply the changes:
 
 ---
 
-### Screenshot 9
 
-```text id="bond09"
-[ Place Screenshot Here ]
-```
+![Apply the Network Configuration](images/Apply-the-Network-Configuration.png)
+
 
 ---
 
