@@ -62,11 +62,9 @@ VM2Cloud supports multiple bonding modes. The most commonly used modes are:
 
 ---
 
-### Screenshot 1
 
-```text id="bond01"
-[ Place Screenshot Here ]
-```
+![Open the Network Page](images/network-configuration-page.png)
+
 
 ---
 
