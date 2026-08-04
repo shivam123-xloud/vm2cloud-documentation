@@ -49,11 +49,9 @@ If there are pending network changes, an **Apply Configuration** button is displ
 
 ---
 
-### Screenshot 1
 
-```text id="apply01"
-[ Place Screenshot Here ]
-```
+![Open the Network Page](images/Open-the-Network-Page.png)
+
 
 ---
 
@@ -68,11 +66,9 @@ Before applying the configuration:
 
 ---
 
-### Screenshot 2
 
-```text id="apply02"
-[ Place Screenshot Here ]
-```
+![Review the Pending Changes](images/Review-the-Pending-Changes.png)
+
 
 ---
 
@@ -86,11 +82,9 @@ VM2Cloud applies the updated network configuration to the selected node.
 
 ---
 
-### Screenshot 3
 
-```text id="apply03"
-[ Place Screenshot Here ]
-```
+![Apply the Configuration](images/Apply-the-Network-Configuration.png)
+
 
 ---
 
@@ -102,11 +96,9 @@ Depending on the configuration changes, network connectivity may be interrupted 
 
 ---
 
-### Screenshot 4
 
-```text id="apply04"
-[ Place Screenshot Here ]
-```
+![Wait for Completion](images/Wait-for-Completion.png)
+
 
 ---
 
@@ -121,11 +113,9 @@ After the configuration has been applied:
 
 ---
 
-### Screenshot 5
 
-```text id="apply05"
-[ Place Screenshot Here ]
-```
+![Verify the Configuration](images/Verify-the-Configuration.png)
+
 
 ---
 
@@ -137,11 +127,9 @@ If you decide not to apply the pending configuration, you can discard the unsave
 
 ---
 
-### Screenshot 6
 
-```text id="apply06"
-[ Place Screenshot Here ]
-```
+![Revert Pending Changes](images/revert-change-1.png)
+![Revert Pending Changes](images/revert-change-2.png)
 
 ---
 
