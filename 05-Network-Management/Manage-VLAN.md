@@ -45,11 +45,9 @@ Before creating a VLAN, ensure that:
 
 ---
 
-### Screenshot 1
 
-```text id="vlan01"
-[ Place Screenshot Here ]
-```
+![Open the Network Page](images/network-configuration-page.png)
+
 
 ---
 
@@ -60,11 +58,9 @@ Before creating a VLAN, ensure that:
 
 ---
 
-### Screenshot 2
 
-```text id="vlan02"
-[ Place Screenshot Here ]
-```
+![Create the VLAN](images/Create-the-VLAN.png)
+
 
 ---
 
@@ -83,11 +79,9 @@ Review the configuration before saving.
 
 ---
 
-### Screenshot 3
 
-```text id="vlan03"
-[ Place Screenshot Here ]
-```
+![Configure the VLAN](images/Configure-the-VLAN.png)
+
 
 ---
 
@@ -98,11 +92,9 @@ Review the configuration before saving.
 
 ---
 
-### Screenshot 4
 
-```text id="vlan04"
-[ Place Screenshot Here ]
-```
+![Save the Configuration](images/Save-the-Configuration.png)
+
 
 ---
 
@@ -116,11 +108,9 @@ Review the configuration before saving.
 
 ---
 
-### Screenshot 5
 
-```text id="vlan05"
-[ Place Screenshot Here ]
-```
+![Select the VLAN](images/Select-the-VLAN.png)
+
 
 ---
 
@@ -140,11 +130,9 @@ Click **OK** to save the changes.
 
 ---
 
-### Screenshot 6
 
-```text id="vlan06"
-[ Place Screenshot Here ]
-```
+![Modify the Configuration](images/Modify-the-Configuration.png)
+
 
 ---
 
@@ -160,11 +148,9 @@ Before removing the VLAN, ensure that:
 
 ---
 
-### Screenshot 7
 
-```text id="vlan07"
-[ Place Screenshot Here ]
-```
+![Verify the VLAN](images/Verify-the-VLAN.png)
+
 
 ---
 
@@ -176,11 +162,9 @@ Before removing the VLAN, ensure that:
 
 ---
 
-### Screenshot 8
 
-```text id="vlan08"
-[ Place Screenshot Here ]
-```
+![Remove the VLAN](images/Remove-the-VLAN.png)
+
 
 ---
 
@@ -198,11 +182,9 @@ To apply the changes:
 
 ---
 
-### Screenshot 9
 
-```text id="vlan09"
-[ Place Screenshot Here ]
-```
+![Apply the Network Configuration](images/Apply-the-Network-Configuration.png)
+
 
 ---
 
