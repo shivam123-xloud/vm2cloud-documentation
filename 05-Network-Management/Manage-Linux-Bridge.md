@@ -45,11 +45,9 @@ Before creating a Linux Bridge, ensure that:
 
 ---
 
-### Screenshot 1
 
-```text
-[ Place Screenshot Here ]
-```
+![Open the Network Page](images/network-configuration-page.png)
+
 
 ---
 
@@ -60,11 +58,9 @@ Before creating a Linux Bridge, ensure that:
 
 ---
 
-### Screenshot 2
 
-```text
-[ Place Screenshot Here ]
-```
+![Create the Bridge](images/Create-the-Bridge.png)
+
 
 ---
 
@@ -86,11 +82,9 @@ Review the configuration before saving.
 
 ---
 
-### Screenshot 3
 
-```text
-[ Place Screenshot Here ]
-```
+![Configure the Bridge](images/Configure-the-Bridge.png)
+
 
 ---
 
@@ -101,11 +95,9 @@ Review the configuration before saving.
 
 ---
 
-### Screenshot 4
 
-```text
-[ Place Screenshot Here ]
-```
+![Save the Configuration](images/Save-the-Configuration.png)
+
 
 ---
 
@@ -119,11 +111,11 @@ Review the configuration before saving.
 
 ---
 
-### Screenshot 5
 
-```text
-[ Place Screenshot Here ]
-```
+
+
+![Select the Bridge](images/Edit-Linux-Bridge.png)
+
 
 ---
 
@@ -143,11 +135,10 @@ After making the required changes, click **OK**.
 
 ---
 
-### Screenshot 6
+![Modify the Configuration](images/Modify-the-Configuration.png)
+![Modify the Configuration](images/Modify-the-Configuration-1.png)
 
-```text
-[ Place Screenshot Here ]
-```
+
 
 ---
 
@@ -163,11 +154,9 @@ Before removing the bridge, ensure that:
 
 ---
 
-### Screenshot 7
 
-```text
-[ Place Screenshot Here ]
-```
+![Verify the Bridge](images/Modify-the-Configuration-1.png)
+
 
 ---
 
@@ -179,11 +168,9 @@ Before removing the bridge, ensure that:
 
 ---
 
-### Screenshot 8
 
-```text
-[ Place Screenshot Here ]
-```
+![Remove the Bridge](images/remove-bridge.png)
+
 
 ---
 
@@ -201,11 +188,9 @@ To make the changes active:
 
 ---
 
-### Screenshot 9
 
-```text
-[ Place Screenshot Here ]
-```
+![Apply the Network Configuration](images/Apply-the-Network-Configuration.png)
+
 
 ---
 
