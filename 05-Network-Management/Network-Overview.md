@@ -49,11 +49,9 @@ The Network page displays all network interfaces configured on the selected node
 
 ---
 
-### Screenshot 1
 
-```text id="net01"
-[ Place Screenshot Here ]
-```
+![Network Configuration Page](images/network-configuration-page.png)
+
 
 ---
 
@@ -80,11 +78,9 @@ Each interface displays information such as:
 
 ---
 
-### Screenshot 2
 
-```text id="net02"
-[ Place Screenshot Here ]
-```
+![Network Interfaces](images/network-interfaces.png)
+
 
 ---
 
@@ -104,11 +100,9 @@ Typical bridge names include:
 
 ---
 
-### Screenshot 3
 
-```text id="net03"
-[ Place Screenshot Here ]
-```
+![Linux Bridge](images/linux-bridge.png)
+
 
 ---
 
@@ -129,11 +123,9 @@ Typical bond names include:
 
 ---
 
-### Screenshot 4
 
-```text id="net04"
-[ Place Screenshot Here ]
-```
+![Bond Interfaces](images/bond-interfaces.png)
+
 
 ---
 
@@ -152,11 +144,9 @@ VLANs help isolate workloads and organize network traffic.
 
 ---
 
-### Screenshot 5
 
-```text id="net05"
-[ Place Screenshot Here ]
-```
+![VLAN Interfaces](images/vlan-interface.png)
+
 
 ---
 
@@ -170,11 +160,9 @@ A correctly configured DNS server ensures reliable communication with internal a
 
 ---
 
-### Screenshot 6
 
-```text id="net06"
-[ Place Screenshot Here ]
-```
+![DNS Configuration](images/DNS-configuration.png)
+
 
 ---
 
@@ -186,11 +174,9 @@ The configured gateway should be reachable from the management interface to ensu
 
 ---
 
-### Screenshot 7
 
-```text id="net07"
-[ Place Screenshot Here ]
-```
+![Gateway Configuration](images/gateway-configuration.png)
+
 
 ---
 
