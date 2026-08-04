@@ -42,11 +42,11 @@ Before adding storage, ensure that:
 
 ---
 
-### Screenshot 1
 
-```text id="v7sj2a"
-[ Place Screenshot Here ]
-```
+
+
+![Open Storage Management](images/login-storage-for-add-storage.png)
+
 
 ---
 
@@ -72,11 +72,11 @@ Available options may include:
 
 ---
 
-### Screenshot 2
 
-```text id="8s2yd9"
-[ Place Screenshot Here ]
-```
+
+
+![Start Adding Storage](images/A-list-of-supported-storage-types.png)
+
 
 ---
 
@@ -87,11 +87,9 @@ Available options may include:
 
 ---
 
-### Screenshot 3
 
-```text id="p2t8uo"
-[ Place Screenshot Here ]
-```
+![Select a Storage Type](images/select-storage-type.png)
+
 
 ---
 
@@ -114,11 +112,9 @@ Complete all required fields before continuing.
 
 ---
 
-### Screenshot 4
 
-```text id="1gh5pd"
-[ Place Screenshot Here ]
-```
+![Configure Storage](images/save-the-configuration-1.png)
+
 
 ---
 
@@ -130,11 +126,10 @@ Complete all required fields before continuing.
 
 ---
 
-### Screenshot 5
 
-```text id="n1v5xr"
-[ Place Screenshot Here ]
-```
+
+![Save the Configuration](images/verify-the-storage.png)
+
 
 ---
 
@@ -149,13 +144,8 @@ After the operation completes:
 
 ---
 
-### Screenshot 6
 
-```text id="u5bw8g"
-[ Place Screenshot Here ]
-```
 
----
 
 # Verification
 
