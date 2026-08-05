@@ -57,11 +57,12 @@ The virtual machine console opens in a new tab or within the current window, dep
 
 ---
 
-### Screenshot 2
 
-```text id="console02"
-[ Place Screenshot Here ]
-```
+
+
+![Open the Console](images/vm-console-1.png)
+![Open the Console](images/vm-console-2.png)
+
 
 ---
 
@@ -78,11 +79,9 @@ Once the console opens, you can:
 
 ---
 
-### Screenshot 3
 
-```text id="console03"
-[ Place Screenshot Here ]
-```
+![Use the Console](images/vm-console-3.png)
+
 
 ---
 
@@ -99,11 +98,9 @@ These options are useful when the guest operating system does not respond to key
 
 ---
 
-### Screenshot 4
 
-```text id="console04"
-[ Place Screenshot Here ]
-```
+![Send Special Key Combinations](images/console-special-key.png)
+
 
 ---
 
@@ -119,11 +116,9 @@ Depending on your VM2Cloud version, the console toolbar may provide options such
 
 ---
 
-### Screenshot 5
 
-```text id="console05"
-[ Place Screenshot Here ]
-```
+![Console Toolbar](images/console-toolbar.png)
+
 
 ---
 
