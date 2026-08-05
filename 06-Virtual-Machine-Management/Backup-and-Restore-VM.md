@@ -49,11 +49,9 @@ Before creating or restoring a backup, ensure that:
 
 ---
 
-### Screenshot 1
 
-```text id="vmbkp01"
-[ Place Screenshot Here ]
-```
+![Select the Virtual Machine](images/vm-backup.png)
+
 
 ---
 
@@ -65,11 +63,9 @@ The backup configuration window opens.
 
 ---
 
-### Screenshot 2
 
-```text id="vmbkp02"
-[ Place Screenshot Here ]
-```
+![Start a Backup](images/create-backup.png)
+
 
 ---
 
@@ -90,11 +86,8 @@ Click **Backup** to start the operation.
 
 ---
 
-### Screenshot 3
+![Configure the Backup](images/create-backup.png)
 
-```text id="vmbkp03"
-[ Place Screenshot Here ]
-```
 
 ---
 
@@ -111,11 +104,10 @@ Wait until the backup completes successfully.
 
 ---
 
-### Screenshot 4
 
-```text id="vmbkp04"
-[ Place Screenshot Here ]
-```
+![Monitor the Backup](images/backup-monitor.png)
+![Monitor the Backup](images/backup-monitor-1.png)
+
 
 ---
 
@@ -131,11 +123,9 @@ The available backup files are displayed.
 
 ---
 
-### Screenshot 5
 
-```text id="vmbkp05"
-[ Place Screenshot Here ]
-```
+![Open Backup Storage](images/backup-show.png)
+
 
 ---
 
@@ -148,11 +138,9 @@ The restore window opens.
 
 ---
 
-### Screenshot 6
 
-```text id="vmbkp06"
-[ Place Screenshot Here ]
-```
+![Select the Backup](images/restore-backup.png)
+
 
 ---
 
@@ -173,11 +161,9 @@ Click **Restore**.
 
 ---
 
-### Screenshot 7
 
-```text id="vmbkp07"
-[ Place Screenshot Here ]
-```
+![Configure the Restore](images/restore-configure.png)
+
 
 ---
 
@@ -189,11 +175,9 @@ After the restore finishes, the virtual machine appears on the selected node.
 
 ---
 
-### Screenshot 8
 
-```text id="vmbkp08"
-[ Place Screenshot Here ]
-```
+![Wait for Completion](images/wait-for-restore.png)
+
 
 ---
 
