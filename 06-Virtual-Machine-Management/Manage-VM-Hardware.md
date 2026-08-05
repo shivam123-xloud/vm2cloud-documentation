@@ -45,11 +45,9 @@ The Hardware page displays all hardware assigned to the virtual machine.
 
 ---
 
-### Screenshot 1
 
-```text id="hw01"
-[ Place Screenshot Here ]
-```
+![Access the Hardware Page](images/vm-hardware.png)
+
 
 ---
 
@@ -70,11 +68,10 @@ Typical settings include:
 
 ---
 
-### Screenshot 2
 
-```text id="hw02"
-[ Place Screenshot Here ]
-```
+![Modify CPU](images/vm-cpu-1.png)
+![Modify CPU](images/vm-cpu-2.png)
+
 
 ---
 
@@ -91,11 +88,10 @@ If supported, configure the **Ballooning Device** as required.
 
 ---
 
-### Screenshot 3
 
-```text id="hw03"
-[ Place Screenshot Here ]
-```
+![Modify Memory](images/vm-memory-1.png)
+![Modify Memory](images/vm-memory-2.png)
+
 
 ---
 
@@ -117,11 +113,10 @@ Typical options include:
 
 ---
 
-### Screenshot 4
 
-```text id="hw04"
-[ Place Screenshot Here ]
-```
+![Add a Hard Disk](images/vm-harddisk-1.png)
+![Add a Hard Disk](images/vm-harddisk-2.png)
+
 
 ---
 
@@ -135,11 +130,9 @@ Typical options include:
 
 ---
 
-### Screenshot 5
 
-```text id="hw05"
-[ Place Screenshot Here ]
-```
+![Remove a Hard Disk](images/vm-detach-harddisk.png)
+
 
 ---
 
@@ -161,11 +154,9 @@ Typical settings include:
 
 ---
 
-### Screenshot 6
 
-```text id="hw06"
-[ Place Screenshot Here ]
-```
+![Configure Network Device](images/vm-network-1.png)
+![Configure Network Device](images/vm-network-2.png)
 
 ---
 
@@ -180,11 +171,9 @@ The selected ISO will be available the next time the virtual machine boots from 
 
 ---
 
-### Screenshot 7
 
-```text id="hw07"
-[ Place Screenshot Here ]
-```
+![Mount or Change an ISO Image](images/vm-iso-1.png)
+![Mount or Change an ISO Image](images/vm-iso-2.png)
 
 ---
 
@@ -199,11 +188,9 @@ If supported by your environment:
 
 ---
 
-### Screenshot 8
 
-```text id="hw08"
-[ Place Screenshot Here ]
-```
+![Add USB Device](images/vm-usb-1.png)
+![Add USB Device](images/vm-usb-2.png)
 
 ---
 
@@ -218,11 +205,10 @@ If PCI Passthrough is configured:
 
 ---
 
-### Screenshot 9
 
-```text id="hw09"
-[ Place Screenshot Here ]
-```
+![Add PCI Device](images/vm-pci-1.png)
+![Add PCI Device](images/vm-pci-2.png)
+
 
 ---
 
@@ -237,11 +223,9 @@ For operating systems that require TPM or UEFI boot:
 
 ---
 
-### Screenshot 10
 
-```text id="hw10"
-[ Place Screenshot Here ]
-```
+![Add TPM or EFI Disk](images/vm-tpm-disk-1.png)
+![Add TPM or EFI Disk](images/vm-tpm-disk-2.png)
 
 ---
 
