@@ -44,11 +44,9 @@ Before deleting a virtual machine, ensure that:
 
 ---
 
-### Screenshot 1
 
-```text id="del01"
-[ Place Screenshot Here ]
-```
+![Select the Virtual Machine](images/delete-vm-selection.png)
+
 
 ---
 
@@ -63,11 +61,9 @@ If the virtual machine is running:
 
 ---
 
-### Screenshot 2
 
-```text id="del02"
-[ Place Screenshot Here ]
-```
+![Stop the Virtual Machine](images/stopping-vm.png)
+
 
 ---
 
@@ -80,11 +76,9 @@ The Remove Virtual Machine dialog opens.
 
 ---
 
-### Screenshot 3
 
-```text id="del03"
-[ Place Screenshot Here ]
-```
+![Delete the Virtual Machine](images/vm-deleting-option.png)
+
 
 ---
 
@@ -102,11 +96,9 @@ Select the required options.
 
 ---
 
-### Screenshot 4
 
-```text id="del04"
-[ Place Screenshot Here ]
-```
+![Review the Removal Options](images/vm-delete-configration.png)
+![Review the Removal Options](images/vm-delete-confirmation.png)
 
 ---
 
@@ -120,11 +112,10 @@ Wait for the task to complete.
 
 ---
 
-### Screenshot 5
 
-```text id="del05"
-[ Place Screenshot Here ]
-```
+
+![Confirm the Operation](images/delete-vm-verify.png)
+
 
 ---
 
