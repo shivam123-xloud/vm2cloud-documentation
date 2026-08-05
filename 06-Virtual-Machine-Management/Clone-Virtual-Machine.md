@@ -59,11 +59,9 @@ The Clone Virtual Machine window opens.
 
 ---
 
-### Screenshot 2
 
-```text id="clone02"
-[ Place Screenshot Here ]
-```
+![Open the Clone Wizard](images/vm-clone.png)
+
 
 ---
 
@@ -83,11 +81,9 @@ Review the configuration before continuing.
 
 ---
 
-### Screenshot 3
 
-```text id="clone03"
-[ Place Screenshot Here ]
-```
+![Configure the Clone](images/vm-clone-configuration.png)
+
 
 ---
 
@@ -100,11 +96,9 @@ The duration depends on the size of the virtual machine and the selected clone t
 
 ---
 
-### Screenshot 4
 
-```text id="clone04"
-[ Place Screenshot Here ]
-```
+![Create the Clone](images/cloning-task.png)
+
 
 ---
 
@@ -145,11 +139,9 @@ Verify the following after the cloning process completes:
 
 ---
 
-### Screenshot 5
 
-```text id="clone05"
-[ Place Screenshot Here ]
-```
+![Verification](images/cloned-vm.png)
+
 
 ---
 
