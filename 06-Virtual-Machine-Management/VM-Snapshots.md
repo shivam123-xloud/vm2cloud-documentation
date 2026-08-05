@@ -46,11 +46,9 @@ The Snapshots page displays all snapshots available for the selected virtual mac
 
 ---
 
-### Screenshot 1
 
-```text id="snap01"
-[ Place Screenshot Here ]
-```
+![Access the Snapshot Page](images/vm-snapshort-page.png)
+
 
 ---
 
@@ -62,11 +60,9 @@ The Snapshots page displays all snapshots available for the selected virtual mac
 
 ---
 
-### Screenshot 2
 
-```text id="snap02"
-[ Place Screenshot Here ]
-```
+![Open the Snapshot Window](images/vm-create-snapshot.png)
+
 
 ---
 
@@ -85,11 +81,9 @@ Click **Take Snapshot**.
 
 ---
 
-### Screenshot 3
 
-```text id="snap03"
-[ Place Screenshot Here ]
-```
+![Configure the Snapshot](images/Configure-the-Snapshot.png)
+![Configure the Snapshot](images/snap-complete.png)
 
 ---
 
@@ -106,11 +100,9 @@ Information typically includes:
 
 ---
 
-### Screenshot 4
 
-```text id="snap04"
-[ Place Screenshot Here ]
-```
+![View Snapshot Information](images/view-snap.png)
+
 
 ---
 
@@ -129,11 +121,11 @@ Wait for the restore operation to complete.
 
 ---
 
-### Screenshot 5
 
-```text id="snap05"
-[ Place Screenshot Here ]
-```
+![Restore a Snapshot](images/snap-restore-1.png)
+![Restore a Snapshot](images/snap-restore-2.png)
+![Restore a Snapshot](images/snap-restore-3.png)
+
 
 ---
 
@@ -151,11 +143,9 @@ Wait for the deletion task to complete.
 
 ---
 
-### Screenshot 6
 
-```text id="snap06"
-[ Place Screenshot Here ]
-```
+![Delete a Snapshot](images/delete-snap.png)
+
 
 ---
 
