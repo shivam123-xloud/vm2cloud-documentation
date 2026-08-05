@@ -43,11 +43,9 @@ Before opening the console, ensure that:
 
 ---
 
-### Screenshot 1
 
-```text id="console01"
-[ Place Screenshot Here ]
-```
+![Select the Virtual Machine](images/vm-shutdown-2.png)
+
 
 ---
 
