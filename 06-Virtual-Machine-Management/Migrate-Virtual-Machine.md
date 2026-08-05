@@ -63,20 +63,33 @@ The migration window opens.
 
 ---
 
-## Step 3: Configure the Migration
+## Step 3: Prepare the Virtual Machine for Migration
+
+Before configuring the migration, verify that no installation media is attached to the virtual machine.
+
+1. Select the virtual machine.
+2. Click **Hardware**.
+3. Select the **CD/DVD Drive** entry.
+4. Click **Edit**.
+5. In the **Media** field, select **Do not use any media**.
+6. Click **OK** to save the changes.
+
+> **Note:** If an ISO image stored on local storage is attached to the virtual machine, migration may fail because the target node cannot access the local ISO file. Removing the ISO before migration helps avoid this issue.
+
+---
+
+## Step 4: Configure the Migration
 
 Configure the migration settings.
 
 Typical options include:
 
-* Target Node
-* Migration Type (when available)
-* Target Storage (if applicable)
-* Migration with Local Disks (if supported)
+- Target Node
+- Migration Type (when available)
+- Target Storage (if applicable)
+- Migration with Local Disks (if supported)
 
 Review the selected options before continuing.
-
----
 
 
 ![Configure the Migration](images/migration-configuration-complete.png)
@@ -84,7 +97,7 @@ Review the selected options before continuing.
 
 ---
 
-## Step 4: Start the Migration
+## Step 5: Start the Migration
 
 1. Click **Migrate**.
 2. Wait for the migration task to complete.
