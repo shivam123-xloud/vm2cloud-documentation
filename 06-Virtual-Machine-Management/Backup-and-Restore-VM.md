@@ -177,6 +177,7 @@ After the restore finishes, the virtual machine appears on the selected node.
 
 
 ![Wait for Completion](images/wait-for-restore.png)
+![Wait for Completion](images/restoare-complete.png)
 
 
 ---
