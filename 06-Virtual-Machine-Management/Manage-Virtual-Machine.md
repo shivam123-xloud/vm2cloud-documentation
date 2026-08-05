@@ -43,11 +43,9 @@ Before performing any operation, ensure that:
 
 ---
 
-### Screenshot 1
 
-```text
-[ Place Screenshot Here ]
-```
+!Select the Virtual Machine](images/vm-shutdown-2.png)
+
 
 ---
 
@@ -60,11 +58,9 @@ The virtual machine status changes from **Stopped** to **Running**.
 
 ---
 
-### Screenshot 2
 
-```text
-[ Place Screenshot Here ]
-```
+![Start the Virtual Machine](images/vm-start.png)
+
 
 ---
 
@@ -84,11 +80,9 @@ Wait until the virtual machine powers off.
 
 ---
 
-### Screenshot 3
 
-```text
-[ Place Screenshot Here ]
-```
+![Shutdown a Virtual Machine](images/vm-shutdown-1.png)
+![Shutdown a Virtual Machine](images/vm-shutdown-2.png)
 
 ---
 
@@ -106,11 +100,11 @@ A stop operation immediately powers off the virtual machine.
 
 ---
 
-### Screenshot 4
 
-```text
-[ Place Screenshot Here ]
-```
+
+
+![Stop a Virtual Machine](images/vm-stop-1.png)
+
 
 ---
 
@@ -128,11 +122,10 @@ The virtual machine shuts down and starts again automatically.
 
 ---
 
-### Screenshot 5
 
-```text
-[ Place Screenshot Here ]
-```
+![Reboot a Virtual Machine](images/vm-reboot-1.png)
+![Reboot a Virtual Machine](images/vm-reboot-2.png)
+
 
 ---
 
@@ -150,11 +143,11 @@ The virtual machine status changes to **Paused**.
 
 ---
 
-### Screenshot 6
 
-```text
-[ Place Screenshot Here ]
-```
+
+
+![Pause a Virtual Machine](images/vm-pause-1.png)
+![Pause a Virtual Machine](images/vm-pause-2.png)
 
 ---
 
@@ -171,11 +164,12 @@ The virtual machine continues from where it was paused.
 
 ---
 
-### Screenshot 7
 
-```text
-[ Place Screenshot Here ]
-```
+
+
+![Resume a Virtual Machine](images/resume-vm-1.png)
+![Resume a Virtual Machine](images/resume-vm-2.png)
+
 
 ---
 
