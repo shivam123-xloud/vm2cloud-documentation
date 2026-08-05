@@ -43,11 +43,9 @@ Before migrating a virtual machine, ensure that:
 
 ---
 
-### Screenshot 1
 
-```text id="mig01"
-[ Place Screenshot Here ]
-```
+![Select the Virtual Machine](images/migrating-vm.png)
+
 
 ---
 
@@ -59,11 +57,9 @@ The migration window opens.
 
 ---
 
-### Screenshot 2
 
-```text id="mig02"
-[ Place Screenshot Here ]
-```
+![Open the Migration Window](images/migration-configuration.png)
+
 
 ---
 
@@ -82,11 +78,9 @@ Review the selected options before continuing.
 
 ---
 
-### Screenshot 3
 
-```text id="mig03"
-[ Place Screenshot Here ]
-```
+![Configure the Migration](images/migration-configuration-complete.png)
+
 
 ---
 
@@ -99,11 +93,9 @@ The migration progress can be monitored from the **Recent Tasks** panel.
 
 ---
 
-### Screenshot 4
 
-```text id="mig04"
-[ Place Screenshot Here ]
-```
+![Start the Migration](images/migrartion-task.png)
+
 
 ---
 
@@ -118,11 +110,11 @@ After the migration completes:
 
 ---
 
-### Screenshot 5
 
-```text id="mig05"
-[ Place Screenshot Here ]
-```
+
+
+![Verify the Migration](images/verify-migration.png)
+
 
 ---
 
