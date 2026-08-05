@@ -53,8 +53,7 @@ Before migrating a virtual machine, ensure that:
 
 ## Step 2: Open the Migration Window
 
-1. Click **More**.
-2. Select **Migrate**.
+ Click **Migrate**. Located on the top action toolbar of the selected virtual machine, between Shutdown and Console, the Migrate button is used to move the VM to another node in the cluster.
 
 The migration window opens.
 
