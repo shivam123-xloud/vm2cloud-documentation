@@ -43,11 +43,9 @@ Before creating a virtual machine, ensure that:
 
 ---
 
-### Screenshot 1
 
-```text
-[ Place Screenshot Here ]
-```
+![Open the Create Virtual Machine Wizard](images/create-vm.png)
+
 
 ---
 
@@ -65,11 +63,9 @@ After entering the required information, click **Next**.
 
 ---
 
-### Screenshot 2
 
-```text
-[ Place Screenshot Here ]
-```
+![General](images/create-vm-general.png)
+
 
 ---
 
@@ -89,11 +85,10 @@ Click **Next**.
 
 ---
 
-### Screenshot 3
 
-```text
-[ Place Screenshot Here ]
-```
+
+![OS](images/create-vm-os.png)
+
 
 ---
 
@@ -115,11 +110,9 @@ Review the settings and click **Next**.
 
 ---
 
-### Screenshot 4
 
-```text
-[ Place Screenshot Here ]
-```
+![System](images/create-vm-system.png)
+
 
 ---
 
@@ -140,11 +133,10 @@ Click **Next** after reviewing the configuration.
 
 ---
 
-### Screenshot 5
 
-```text
-[ Place Screenshot Here ]
-```
+
+![Disks](images/create-vm-disk.png)
+
 
 ---
 
@@ -162,11 +154,9 @@ Click **Next**.
 
 ---
 
-### Screenshot 6
 
-```text
-[ Place Screenshot Here ]
-```
+![CPU](images/create-vm-cpu.png)
+
 
 ---
 
@@ -183,11 +173,9 @@ Click **Next**.
 
 ---
 
-### Screenshot 7
 
-```text
-[ Place Screenshot Here ]
-```
+![Memory](images/create-vm-memory.png)
+
 
 ---
 
@@ -206,11 +194,9 @@ Click **Next**.
 
 ---
 
-### Screenshot 8
 
-```text
-[ Place Screenshot Here ]
-```
+![Network](images/create-vm-network.png)
+
 
 ---
 
@@ -232,11 +218,9 @@ If everything is correct, click **Finish**.
 
 ---
 
-### Screenshot 9
 
-```text
-[ Place Screenshot Here ]
-```
+![Confirm](images/create-vm-confirm.png)
+
 
 ---
 
