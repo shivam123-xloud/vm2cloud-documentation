@@ -46,11 +46,9 @@ If no virtual machines exist, create one before continuing.
 
 ---
 
-### Screenshot 1
 
-```text
-[ Place Screenshot Here ]
-```
+![Access Virtual Machines](images/vm-summary-page.png)
+
 
 ---
 
@@ -62,11 +60,10 @@ Depending on your VM2Cloud configuration, the page provides tabs for viewing inf
 
 ---
 
-### Screenshot 2
 
-```text
-[ Place Screenshot Here ]
-```
+
+![Virtual Machine Management Page](images/Virtual-Machine-Management-Page.png)
+
 
 ---
 
@@ -89,11 +86,9 @@ This information helps administrators quickly identify the virtual machine and r
 
 ---
 
-### Screenshot 3
+![Common Virtual Machine Information](images/Virtual-Machine-Management-Page.png)
 
-```text
-[ Place Screenshot Here ]
-```
+
 
 ---
 
@@ -120,11 +115,10 @@ The available actions may vary depending on the virtual machine status and your 
 
 ---
 
-### Screenshot 4
 
-```text
-[ Place Screenshot Here ]
-```
+![Available Actions](images/vm-actions.png)
+![Available Actions](images/vm-action-1.png)
+
 
 ---
 
@@ -146,11 +140,9 @@ A virtual machine is managed through multiple tabs. Common tabs include:
 
 ---
 
-### Screenshot 5
 
-```text
-[ Place Screenshot Here ]
-```
+![Virtual Machine Tabs](images/vm-tabs.png)
+
 
 ---
 
