@@ -46,11 +46,9 @@ The Users page displays all configured user accounts.
 
 ---
 
-### Screenshot 1
 
-```text
-[ Place Screenshot Here ]
-```
+![Open the Users Page](images/user-page.png)
+
 
 ---
 
@@ -62,11 +60,9 @@ The Add User window opens.
 
 ---
 
-### Screenshot 2
 
-```text
-[ Place Screenshot Here ]
-```
+![Open the Create User Window](images/add-user.png)
+
 
 ---
 
@@ -91,11 +87,9 @@ Review the information before continuing.
 
 ---
 
-### Screenshot 3
 
-```text
-[ Place Screenshot Here ]
-```
+![Configure the User](images/configure-user.png)
+
 
 ---
 
@@ -107,11 +101,9 @@ The user is created and appears in the Users list.
 
 ---
 
-### Screenshot 4
 
-```text
-[ Place Screenshot Here ]
-```
+![Create the User](images/new-user.png)
+
 
 ---
 
