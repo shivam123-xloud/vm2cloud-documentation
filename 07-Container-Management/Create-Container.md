@@ -186,7 +186,7 @@ Click **Next**.
 ---
 
 
-[DNS](images/ct-dns.png)
+[DNS](images/ct-domain.png)
 
 
 ---
