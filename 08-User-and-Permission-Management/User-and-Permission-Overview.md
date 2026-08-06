@@ -47,11 +47,9 @@ The Permissions section provides access to all user and permission management fe
 
 ---
 
-### Screenshot 1
 
-```text
-[ Place Screenshot Here ]
-```
+![Access User and Permission Management](images/permission-page.png)
+
 
 ---
 
@@ -71,11 +69,9 @@ The Permissions section includes the following components.
 
 ---
 
-### Screenshot 2
 
-```text
-[ Place Screenshot Here ]
-```
+![Components of User and Permission Management](images/permission-components.png)
+
 
 ---
 
@@ -106,11 +102,10 @@ A user authenticates through an authentication realm. The user may belong to one
 
 ---
 
-### Screenshot 3
 
-```text
-[ Place Screenshot Here ]
-```
+![User Access Model](images/permission-components.png)
+
+
 
 ---
 
