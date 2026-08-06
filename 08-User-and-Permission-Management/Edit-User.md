@@ -46,11 +46,9 @@ The Users page displays all configured user accounts.
 
 ---
 
-### Screenshot 1
 
-```text
-[ Place Screenshot Here ]
-```
+![Open the Users Page](images/new-user.png)
+
 
 ---
 
@@ -63,11 +61,9 @@ The Edit User window opens.
 
 ---
 
-### Screenshot 2
 
-```text
-[ Place Screenshot Here ]
-```
+![Select the User](images/edit-user.png)
+
 
 ---
 
@@ -88,11 +84,11 @@ Review the updated information.
 
 ---
 
-### Screenshot 3
 
-```text
-[ Place Screenshot Here ]
-```
+
+
+![Update the User Information](images/update-user.png)
+
 
 ---
 
@@ -104,11 +100,9 @@ The updated user information is saved.
 
 ---
 
-### Screenshot 4
 
-```text
-[ Place Screenshot Here ]
-```
+![Save the Changes](images/edited-user.png)
+
 
 ---
 
