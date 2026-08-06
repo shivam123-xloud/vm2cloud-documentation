@@ -43,11 +43,9 @@ Before managing container templates, ensure that:
 
 ---
 
-### Screenshot 1
 
-```text
-[ Place Screenshot Here ]
-```
+![Open Storage Content](images/ct-template.png)
+
 
 ---
 
@@ -59,11 +57,9 @@ The Template Repository window opens and displays the list of available Linux co
 
 ---
 
-### Screenshot 2
 
-```text
-[ Place Screenshot Here ]
-```
+![Open the Template Repository](images/template-repo.png)
+
 
 ---
 
@@ -75,11 +71,9 @@ The Template Repository window opens and displays the list of available Linux co
 
 ---
 
-### Screenshot 3
 
-```text
-[ Place Screenshot Here ]
-```
+![Select a Template](images/template-selection.png)
+
 
 ---
 
@@ -92,11 +86,9 @@ After the download finishes, the template is available in the **CT Templates** l
 
 ---
 
-### Screenshot 4
 
-```text
-[ Place Screenshot Here ]
-```
+![Download the Template](images/download-temp.png)
+
 
 ---
 
@@ -115,11 +107,9 @@ Information typically includes:
 
 ---
 
-### Screenshot 5
 
-```text
-[ Place Screenshot Here ]
-```
+![View Installed Container Templates](images/verify-installation.png)
+
 
 ---
 
@@ -139,11 +129,9 @@ Wait for the task to complete.
 
 ---
 
-### Screenshot 6
 
-```text
-[ Place Screenshot Here ]
-```
+![Remove a Container Template](images/ct-template.png)
+
 
 ---
 
