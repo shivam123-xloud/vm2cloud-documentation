@@ -45,11 +45,9 @@ The Create Container wizard opens.
 
 ---
 
-### Screenshot 1
 
-```text
-[ Place Screenshot Here ]
-```
+![Open the Create Container Wizard](images/create-ct.png)
+
 
 ---
 
@@ -71,11 +69,9 @@ After entering the required information, click **Next**.
 
 ---
 
-### Screenshot 2
 
-```text
-[ Place Screenshot Here ]
-```
+![General](images/ct-gerneral.png)
+
 
 ---
 
@@ -92,11 +88,9 @@ Choose the required Linux container template and click **Next**.
 
 ---
 
-### Screenshot 3
 
-```text
-[ Place Screenshot Here ]
-```
+![Template](images/ct-temp-selection.png)
+
 
 ---
 
@@ -113,11 +107,9 @@ Review the configuration and click **Next**.
 
 ---
 
-### Screenshot 4
 
-```text
-[ Place Screenshot Here ]
-```
+![Disks](images/ct-disk.png)
+
 
 ---
 
@@ -134,11 +126,9 @@ Click **Next**.
 
 ---
 
-### Screenshot 5
 
-```text
-[ Place Screenshot Here ]
-```
+![CPU](images/ct-cpu.png)
+
 
 ---
 
@@ -155,11 +145,9 @@ Click **Next**.
 
 ---
 
-### Screenshot 6
 
-```text
-[ Place Screenshot Here ]
-```
+![Memory](images/ct-memory.png)
+
 
 ---
 
@@ -178,11 +166,9 @@ Click **Next**.
 
 ---
 
-### Screenshot 7
 
-```text
-[ Place Screenshot Here ]
-```
+![Network](images/ct-network.png)
+
 
 ---
 
@@ -199,11 +185,9 @@ Click **Next**.
 
 ---
 
-### Screenshot 8
 
-```text
-[ Place Screenshot Here ]
-```
+[DNS](images/ct-dns.png)
+
 
 ---
 
@@ -226,11 +210,9 @@ Click **Finish** to create the container.
 
 ---
 
-### Screenshot 9
 
-```text
-[ Place Screenshot Here ]
-```
+![Confirm](images/ct-confirm.png)
+
 
 ---
 
