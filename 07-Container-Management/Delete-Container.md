@@ -44,11 +44,7 @@ Before deleting a container, ensure that:
 
 ---
 
-### Screenshot 1
-
-```text id="ctdel01"
-[ Place Screenshot Here ]
-```
+![Select the Container](images/delete-ct-1.png)
 
 ---
 
@@ -63,11 +59,9 @@ If the container is running:
 
 ---
 
-### Screenshot 2
 
-```text id="ctdel02"
-[ Place Screenshot Here ]
-```
+![Stop the Container](images/delete-ct.png)
+
 
 ---
 
@@ -80,11 +74,9 @@ The Remove Container dialog opens.
 
 ---
 
-### Screenshot 3
 
-```text id="ctdel03"
-[ Place Screenshot Here ]
-```
+![Open the Remove Window](images/delete-option.png)
+
 
 ---
 
@@ -101,11 +93,9 @@ Select the required options.
 
 ---
 
-### Screenshot 4
 
-```text id="ctdel04"
-[ Place Screenshot Here ]
-```
+![Review the Removal Options](images/delete-configuration.png)
+
 
 ---
 
@@ -119,11 +109,9 @@ Wait for the removal task to complete.
 
 ---
 
-### Screenshot 5
 
-```text id="ctdel05"
-[ Place Screenshot Here ]
-```
+![Confirm the Deletion](images/delete-verification.png)
+
 
 ---
 
