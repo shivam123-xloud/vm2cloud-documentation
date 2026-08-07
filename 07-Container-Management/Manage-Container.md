@@ -41,11 +41,9 @@ Before performing any operation, ensure that:
 
 ---
 
-### Screenshot 1
 
-```text
-[ Place Screenshot Here ]
-```
+![Select the Container](images/ct-start-1.png)
+
 
 ---
 
@@ -58,11 +56,9 @@ The container status changes from **Stopped** to **Running**.
 
 ---
 
-### Screenshot 2
 
-```text
-[ Place Screenshot Here ]
-```
+![Start the Container](images/ct-start-1.png)
+![Start the Container](images/ct-start-2.png)
 
 ---
 
@@ -80,11 +76,9 @@ Wait until the container status changes to **Stopped**.
 
 ---
 
-### Screenshot 3
 
-```text
-[ Place Screenshot Here ]
-```
+![Shutdown a Container](images/ct-shutdown.png)
+![Shutdown a Container](images/ct-shutdown-1.png)
 
 ---
 
@@ -102,11 +96,9 @@ A stop operation immediately powers off the container.
 
 ---
 
-### Screenshot 4
 
-```text
-[ Place Screenshot Here ]
-```
+![Stop a Container](images/ct-stop-1.png)
+![Stop a Container](images/ct-stop-2.png)
 
 ---
 
@@ -124,54 +116,11 @@ Wait until the container starts again.
 
 ---
 
-### Screenshot 5
 
-```text
-[ Place Screenshot Here ]
-```
+![Reboot a Container](images/ct-reboot-1.png)
+![Reboot a Container](images/ct-reboot-2.png)
 
----
 
-# Suspend a Container
-
-Suspending temporarily pauses the running container without shutting it down.
-
-## Steps
-
-1. Select the running container.
-2. Click **Suspend**.
-3. Confirm the operation.
-
-The container status changes to **Suspended**.
-
----
-
-### Screenshot 6
-
-```text
-[ Place Screenshot Here ]
-```
-
----
-
-# Resume a Container
-
-Resume starts a suspended container from its previous state.
-
-## Steps
-
-1. Select the suspended container.
-2. Click **Resume**.
-
-Wait until the container status changes to **Running**.
-
----
-
-### Screenshot 7
-
-```text
-[ Place Screenshot Here ]
-```
 
 ---
 
