@@ -190,17 +190,17 @@ Typical settings include:
 
 Configure how the container starts and stops during node boot or shutdown.
 
-1. Select **Startup/Shutdown Order**.
-2. Click **Edit**.
-3. Configure the required options.
-4. Click **OK**.
+1. Select the required container.
+2. Click **Options**.
+3. Select **Start/Shutdown Order**.
+4. Click **Edit**.
+5. Configure the required options:
+   - Start at Boot
+   - Startup Order
+   - Startup Delay
+   - Shutdown Delay
+6. Click **OK**.
 
-Typical options include:
-
-* Start at Boot
-* Startup Order
-* Startup Delay
-* Shutdown Delay
 
 ---
 
