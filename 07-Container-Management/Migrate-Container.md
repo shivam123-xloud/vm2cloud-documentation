@@ -42,11 +42,9 @@ Before migrating a container, ensure that:
 
 ---
 
-### Screenshot 1
 
-```text id="ctmig01"
-[ Place Screenshot Here ]
-```
+![Select the Container](images/ct-migration.png)
+
 
 ---
 
@@ -59,11 +57,9 @@ The migration window opens.
 
 ---
 
-### Screenshot 2
 
-```text id="ctmig02"
-[ Place Screenshot Here ]
-```
+![Open the Migration Window](images/select-migration-1.png)
+
 
 ---
 
@@ -81,11 +77,9 @@ Review the configuration before continuing.
 
 ---
 
-### Screenshot 3
 
-```text id="ctmig03"
-[ Place Screenshot Here ]
-```
+![Configure the Migration](images/select-migration.png)
+
 
 ---
 
@@ -98,11 +92,9 @@ The progress can be monitored from **Recent Tasks**.
 
 ---
 
-### Screenshot 4
 
-```text id="ctmig04"
-[ Place Screenshot Here ]
-```
+![Start the Migration](images/wait-migration.png)
+
 
 ---
 
@@ -117,11 +109,9 @@ After the migration completes:
 
 ---
 
-### Screenshot 5
 
-```text id="ctmig05"
-[ Place Screenshot Here ]
-```
+![Verification](images/verify-migration.png)
+
 
 ---
 
