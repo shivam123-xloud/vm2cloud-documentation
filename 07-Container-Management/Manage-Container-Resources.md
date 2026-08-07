@@ -44,11 +44,9 @@ The Resources page displays all resources assigned to the container.
 
 ---
 
-### Screenshot 1
 
-```text
-[ Place Screenshot Here ]
-```
+![Access the Resources Page](images/ct-resources.png)
+
 
 ---
 
@@ -61,11 +59,9 @@ The Resources page displays all resources assigned to the container.
 
 ---
 
-### Screenshot 2
 
-```text
-[ Place Screenshot Here ]
-```
+![Modify CPU](images/modify-cpu-1.png)
+![Modify CPU](images/modify-cpu-2.png)
 
 ---
 
@@ -78,11 +74,9 @@ The Resources page displays all resources assigned to the container.
 
 ---
 
-### Screenshot 3
 
-```text
-[ Place Screenshot Here ]
-```
+![Modify Memory](images/modify-memory-1.png)
+![Modify Memory](images/modify-memory-2.png)
 
 ---
 
@@ -95,11 +89,9 @@ The Resources page displays all resources assigned to the container.
 
 ---
 
-### Screenshot 4
 
-```text
-[ Place Screenshot Here ]
-```
+![Modify Swap](images/modify-swap-1.png)
+![Modify Swap](images/modify-swap-2.png)
 
 ---
 
@@ -115,11 +107,10 @@ The Resources page displays all resources assigned to the container.
 
 ---
 
-### Screenshot 5
 
-```text
-[ Place Screenshot Here ]
-```
+![Resize the Root Disk](images/resize-root-disk-1.png)
+![Resize the Root Disk](images/resize-root-disk-2.png)
+
 
 ---
 
@@ -143,11 +134,10 @@ Typical settings include:
 
 ---
 
-### Screenshot 6
 
-```text
-[ Place Screenshot Here ]
-```
+![Add a Mount Point](images/add-mount-1.png)
+![Add a Mount Point](images/add-mount-2.png)
+
 
 ---
 
@@ -160,11 +150,10 @@ Typical settings include:
 
 ---
 
-### Screenshot 7
 
-```text
-[ Place Screenshot Here ]
-```
+![Edit a Mount Point](images/edit-mount-1.png)
+![Edit a Mount Point](images/edit-mount-2.png)
+
 
 ---
 
@@ -178,11 +167,9 @@ Typical settings include:
 
 ---
 
-### Screenshot 8
 
-```text
-[ Place Screenshot Here ]
-```
+![Remove a Mount Point](images/remove-mount.png)
+
 
 ---
 
@@ -195,20 +182,17 @@ Configure how the container starts and stops during node boot or shutdown.
 3. Select **Start/Shutdown Order**.
 4. Click **Edit**.
 5. Configure the required options:
-   - Start at Boot
-   - Startup Order
-   - Startup Delay
-   - Shutdown Delay
+     - Start/Shutdown order
+     - Startup delay
+     - Shutdown timeout
 6. Click **OK**.
 
 
 ---
 
-### Screenshot 9
 
-```text
-[ Place Screenshot Here ]
-```
+![Configure Startup and Shutdown](images/configure-start-shutdown-1.png)
+![Configure Startup and Shutdown](images/configure-start-shutdown-2.png)
 
 ---
 
