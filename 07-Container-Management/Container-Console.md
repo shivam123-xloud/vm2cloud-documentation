@@ -43,11 +43,9 @@ Before opening the console, ensure that:
 
 ---
 
-### Screenshot 1
 
-```text
-[ Place Screenshot Here ]
-```
+![Select the Container](images/ct-summary.png)
+
 
 ---
 
@@ -59,11 +57,9 @@ The console opens and displays the container's terminal.
 
 ---
 
-### Screenshot 2
 
-```text
-[ Place Screenshot Here ]
-```
+![Open the Console](images/ct-console.png)
+
 
 ---
 
@@ -83,11 +79,9 @@ Common tasks include:
 
 ---
 
-### Screenshot 3
 
-```text
-[ Place Screenshot Here ]
-```
+![Use the Console](images/ct-console-use.png)
+
 
 ---
 
@@ -149,11 +143,9 @@ apt update
 
 ---
 
-### Screenshot 4
 
-```text
-[ Place Screenshot Here ]
-```
+![Common Console Operations](images/common-console-operations.png)
+
 
 ---
 
