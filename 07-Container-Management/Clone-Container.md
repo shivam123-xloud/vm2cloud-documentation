@@ -42,11 +42,9 @@ Before cloning a container, ensure that:
 
 ---
 
-### Screenshot 1
 
-```text
-[ Place Screenshot Here ]
-```
+![Select the Container](images/ct-summary.png)
+
 
 ---
 
@@ -59,11 +57,9 @@ The Clone Container window opens.
 
 ---
 
-### Screenshot 2
 
-```text
-[ Place Screenshot Here ]
-```
+![Open the Clone Window](images/ct-clone.png)
+
 
 ---
 
@@ -83,11 +79,9 @@ After reviewing the settings, click **Clone**.
 
 ---
 
-### Screenshot 3
 
-```text
-[ Place Screenshot Here ]
-```
+![Configure the Clone](images/configure-clone.png)
+
 
 ---
 
@@ -101,11 +95,9 @@ Once completed, the cloned container appears under the selected node.
 
 ---
 
-### Screenshot 4
 
-```text
-[ Place Screenshot Here ]
-```
+![Wait for Completion](images/monitor-clone-task.png)
+![Wait for Completion](images/cloned-ct.png)
 
 ---
 
