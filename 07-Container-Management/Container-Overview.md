@@ -48,11 +48,9 @@ If no containers exist, create one before continuing.
 
 ---
 
-### Screenshot 1
 
-```text
-[ Place Screenshot Here ]
-```
+![Access Containers](images/ct-summary.png)
+
 
 ---
 
@@ -64,11 +62,9 @@ Depending on your VM2Cloud configuration, the page provides tabs for monitoring 
 
 ---
 
-### Screenshot 2
 
-```text
-[ Place Screenshot Here ]
-```
+![Container Management Page](images/ct-info.png)
+
 
 ---
 
@@ -90,11 +86,10 @@ This information helps administrators quickly identify the container and review 
 
 ---
 
-### Screenshot 3
 
-```text
-[ Place Screenshot Here ]
-```
+![Common Container Information](images/ct-info.png)
+![Common Container Information](images/ct-monitoring.png)
+
 
 ---
 
@@ -119,11 +114,10 @@ The available actions may vary depending on the container status and your user p
 
 ---
 
-### Screenshot 4
 
-```text
-[ Place Screenshot Here ]
-```
+![Available Actions](images/ct-action.png)
+![Available Actions](images/ct-action-1.png)
+
 
 ---
 
@@ -147,11 +141,9 @@ Common tabs include:
 
 ---
 
-### Screenshot 5
 
-```text
-[ Place Screenshot Here ]
-```
+![Container Tabs](images/ct-tabs.png)
+
 
 ---
 
