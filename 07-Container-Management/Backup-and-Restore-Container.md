@@ -49,11 +49,9 @@ Before creating or restoring a backup, ensure that:
 
 ---
 
-### Screenshot 1
 
-```text
-[ Place Screenshot Here ]
-```
+![Select the Container](images/ct-backup.png)
+
 
 ---
 
@@ -65,11 +63,9 @@ The backup window opens.
 
 ---
 
-### Screenshot 2
 
-```text
-[ Place Screenshot Here ]
-```
+![Start the Backup](images/ct-backup-now.png)
+
 
 ---
 
@@ -90,11 +86,9 @@ Click **Backup**.
 
 ---
 
-### Screenshot 3
 
-```text
-[ Place Screenshot Here ]
-```
+![Configure the Backup](images/ct-backup-now.png)
+
 
 ---
 
@@ -111,11 +105,9 @@ Wait until the backup completes successfully.
 
 ---
 
-### Screenshot 4
 
-```text
-[ Place Screenshot Here ]
-```
+![Monitor the Backup](images/ct-backup-monitor.png)
+
 
 ---
 
@@ -131,11 +123,9 @@ The available container backup files are displayed.
 
 ---
 
-### Screenshot 5
 
-```text
-[ Place Screenshot Here ]
-```
+![Open Backup Storage](images/ct-new-backup.png)
+
 
 ---
 
@@ -148,11 +138,9 @@ The restore window opens.
 
 ---
 
-### Screenshot 6
 
-```text
-[ Place Screenshot Here ]
-```
+![Select the Backup](images/ct-retore-page.png)
+
 
 ---
 
@@ -173,11 +161,9 @@ Click **Restore**.
 
 ---
 
-### Screenshot 7
 
-```text
-[ Place Screenshot Here ]
-```
+![Configure the Restore](images/ct-retore-page.png)
+
 
 ---
 
@@ -189,11 +175,9 @@ After the restore finishes, the container appears under the selected node.
 
 ---
 
-### Screenshot 8
 
-```text
-[ Place Screenshot Here ]
-```
+![Wait for Completion](images/ct-recovery-final.png)
+
 
 ---
 
