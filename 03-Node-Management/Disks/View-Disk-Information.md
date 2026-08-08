@@ -4,22 +4,26 @@
 
 ## Overview
 
-The **Disks** page allows administrators to view detailed information about the physical disks detected on a VM2Cloud node.
+The **Disks** section allows administrators to view information about the physical disks detected on a VM2Cloud node.
 
-This information helps identify disks, verify their capacity and model, check their current usage, and determine whether a disk is available for a storage configuration.
+Disk information is useful for identifying storage devices, checking their capacity, reviewing hardware details, checking disk usage, and determining whether a disk is available for further storage configuration.
+
+Administrators should always verify the correct physical disk before performing operations such as initialization, wiping, or creating storage configurations.
 
 ---
 
 ## When to Use
 
-Use this page to:
+Use **View Disk Information** to:
 
-- Identify physical disks.
+- Identify physical disks installed on the node.
 - Check disk capacity.
-- View disk model and serial information.
+- View the disk model.
+- View the disk serial number.
 - Check whether a disk is being used.
 - Review disk health information.
-- Select the correct disk before performing storage operations.
+- Identify disks before configuring storage.
+- Verify the correct disk before performing destructive operations.
 
 ---
 
@@ -28,20 +32,19 @@ Use this page to:
 Before viewing disk information:
 
 - Log in to the VM2Cloud web interface.
-- Select the required node.
-- Ensure the node is online.
-- Have sufficient permissions to view node storage information.
+- Ensure the required node is online.
+- Ensure you have permission to view node information.
+- Make sure the physical disk you want to inspect is connected to the node.
 
 ---
 
-# View Disk Information
+# Procedure
 
-## Step 1: Open Disks
+## Step 1: Open the Required Node
 
 1. Log in to the VM2Cloud web interface.
-2. Select the required node.
-3. Open **Disks**.
-4. Select **Disks**.
+2. From the left navigation panel, locate the required node.
+3. Select the node.
 
 ---
 
