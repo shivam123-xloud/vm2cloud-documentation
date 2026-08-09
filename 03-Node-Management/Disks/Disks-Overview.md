@@ -1,207 +1,313 @@
-# Disks Overview
+# View Disk Information
 
 ---
 
 ## Overview
 
-The **Disks** section allows administrators to view and manage physical disks available on a VM2Cloud node.
+The **Disks** section in VM2Cloud provides an overview of physical disks attached to the selected node.
 
-It provides information about the node's storage devices and provides access to disk-management operations used when preparing disks for storage configurations such as LVM, LVM-Thin, ZFS, and Directory storage.
+Administrators can use this page to inspect the disks detected by the node before using them for storage configuration or other disk-management operations.
 
-Disk operations should be performed carefully because modifying or initializing a disk can destroy existing data.
+Disk information is useful when identifying available drives, checking disk capacity and status, and determining which disks are available for operations such as LVM, LVM-Thin, or ZFS configuration.
+
+VM2Cloud uses the underlying Proxmox VE disk-management functionality for this information. The node-level **Disks** page provides an overview of attached disks and disk-management capabilities.
 
 ---
 
 ## When to Use
 
-Use the **Disks** section to:
+Use **View Disk Information** when you need to:
 
-- View physical disks installed in the node.
-- Check disk capacity and status.
-- Identify available disks.
-- Review disk partitions.
-- Prepare unused disks for storage configuration.
-- Troubleshoot disk-related problems.
+* Identify physical disks attached to a node.
+* Check which disks are detected by VM2Cloud.
+* Review disk capacity and device information.
+* Determine whether a disk is already being used.
+* Identify disks before creating storage.
+* Verify that a newly installed disk is detected.
+* Investigate disk-related problems.
+* Identify the correct disk before performing a destructive disk operation.
 
 ---
 
 ## Prerequisites
 
-Before managing disks, ensure that:
+Before viewing disk information:
 
-- You are logged in to the VM2Cloud web interface.
-- You have administrative privileges.
-- The selected node is online.
-- You know which physical disk you want to manage.
-- Important data has been backed up before destructive operations.
+* You must be able to log in to the VM2Cloud web interface.
+* You must have access to the required node.
+* The node should be online and accessible.
+* The physical disk must be connected to the node.
+* For detailed disk information, the required disk-management permissions must be available to your account.
 
----
-
-# Open the Disks Page
-
-## Step 1: Select the Node
-
-1. Log in to the VM2Cloud web interface.
-2. Select the required node.
-3. Expand **Disks**.
+> **Warning:** Always verify the disk identity before performing any disk-management operation. Selecting the wrong disk during a destructive operation can permanently destroy data.
 
 ---
+
+# Procedure
+
+## Step 1: Open the VM2Cloud Web Interface
+
+1. Open the VM2Cloud web interface.
+2. Log in using an account with the required permissions.
+3. Wait for the VM2Cloud management interface to load.
 
 ### Screenshot 1
 
 ```text
-[ Place Screenshot Here ]
+[ Place Screenshot Here — VM2Cloud login/interface ]
 ```
 
 ---
 
-## Step 2: Review Available Disk Management Options
+## Step 2: Select the Node
 
-The Disks section may provide separate views for different storage technologies.
-
-Common sections include:
-
-- Disks
-- LVM
-- LVM-Thin
-- Directory
-- ZFS
-
-The available options depend on the installed storage components and the node configuration.
-
----
-
-# View Physical Disks
-
-Open **Disks** to view the physical storage devices detected by the node.
-
-Typical information includes:
-
-- Device name
-- Disk size
-- Model
-- Serial number
-- Usage
-- Health or status
-- Partition information
-
----
+1. Locate the **Server View** or resource tree on the left side of the interface.
+2. Expand the required cluster if the VM2Cloud installation is part of a cluster.
+3. Select the node whose physical disks you want to inspect.
+4. Wait for the node management page to load.
 
 ### Screenshot 2
 
 ```text
-[ Place Screenshot Here ]
+[ Place Screenshot Here — Select the required node ]
 ```
 
 ---
 
-# Identify an Unused Disk
+## Step 3: Open Disks
 
-Before using a disk for VM2Cloud storage:
+1. In the selected node's management menu, locate **Disks**.
+2. Click **Disks**.
+3. VM2Cloud displays the disk-management page for the selected node.
 
-1. Open **Disks**.
-2. Review the available devices.
-3. Identify the disk that is not currently being used.
-4. Verify its size and device information.
-5. Confirm that it does not contain required data.
+The node-level **Disks** section is intended to provide an overview of attached disks and to manage how those disks are used.
 
-Do not initialize or format a disk until you have confirmed that it is safe to use.
+### Screenshot 3
 
----
-
-# Disk Management Operations
-
-Depending on the VM2Cloud version and disk state, available operations may include:
-
-- View disk information.
-- Initialize disk with GPT.
-- Wipe disk.
-- Create or remove partitions.
-- View S.M.A.R.T. information.
-- Prepare the disk for storage configuration.
+```text
+[ Place Screenshot Here — Node → Disks ]
+```
 
 ---
 
-## Warning
+## Step 4: Review the Disk List
 
-Disk operations can permanently remove data.
+1. Review the disks displayed in the disk list.
+2. Identify the physical device you want to inspect.
+3. Review the information displayed for the disk.
+4. Compare the displayed device information with the physical hardware or server inventory when identifying a disk.
 
-Always verify:
+Do not select a disk for a destructive operation until its identity has been confirmed.
 
-- Correct node.
-- Correct physical disk.
-- Correct device name.
-- Existing data and partitions.
-- Backup availability.
+### Screenshot 4
 
-Do not perform destructive disk operations on a production disk unless the operation is planned and approved.
+```text
+[ Place Screenshot Here — Disk list ]
+```
 
 ---
 
-# Storage Technologies
+# Configuration / Options
 
-Physical disks can be used as the foundation for different VM2Cloud storage configurations.
+The exact information displayed can vary depending on the VM2Cloud/underlying Proxmox VE version and the detected hardware.
 
-| Storage Type | Purpose |
-|---|---|
-| LVM | Provides logical volume management for VM2Cloud storage. |
-| LVM-Thin | Provides thin-provisioned storage for virtual disks. |
-| ZFS | Provides advanced storage features such as redundancy, snapshots, and data integrity. |
-| Directory | Uses a filesystem directory to store VM2Cloud content. |
+When reviewing a disk, pay attention to the following information where available.
 
-The appropriate storage type depends on the environment, hardware, performance requirements, and redundancy requirements.
+## Device / Disk Identifier
+
+The device identifier identifies the physical disk as detected by the operating system.
+
+Examples may include device names such as:
+
+```text
+/dev/sda
+/dev/sdb
+/dev/nvme0n1
+```
+
+Use the displayed identifier together with the other disk information when determining which physical disk is being inspected.
+
+---
+
+## Disk Size
+
+The disk size indicates the capacity detected for the physical disk.
+
+Use this value to distinguish between disks when multiple drives are installed.
+
+For example:
+
+```text
+Disk 1 → 480 GB
+Disk 2 → 960 GB
+Disk 3 → 1.92 TB
+```
+
+The capacity shown by the system may differ slightly from the capacity printed on the physical disk because manufacturers and operating systems use different methods of representing storage capacity.
+
+---
+
+## Disk Usage
+
+Check whether the disk is already being used by an existing configuration.
+
+A disk that is already part of an existing storage configuration should not be treated as an unused disk.
+
+Before reusing a disk, verify whether it contains:
+
+* Existing partitions
+* LVM configuration
+* LVM-Thin configuration
+* ZFS configuration
+* Existing filesystem data
+* VM or container data
+* Other storage-related metadata
+
+---
+
+## Disk Health Information
+
+Where supported by the hardware and VM2Cloud interface, review available health information.
+
+Health information can help identify possible disk problems before using the disk for production storage.
+
+If health information indicates a problem, investigate the disk before placing workloads on it.
+
+---
+
+## Disk Type
+
+Where available, identify whether the device is:
+
+* HDD
+* SSD
+* NVMe
+* Another supported storage device
+
+The device type can be useful when planning storage configuration and workload placement.
+
+---
+
+## Mounted / In-Use State
+
+Determine whether the disk or its partitions are already being used.
+
+A disk that is mounted or assigned to an existing storage configuration should not be initialized, wiped, or reused without first confirming that its data is no longer required.
 
 ---
 
 # Verification
 
-After performing a disk operation, verify:
+After opening **Node → Disks**, verify that:
 
-- The expected disk is displayed.
-- The disk size is correct.
-- The disk state reflects the performed operation.
-- The disk is available for the intended storage configuration.
-- No unexpected disks or partitions were modified.
+1. The expected physical disks are listed.
+2. The disk count matches the hardware installed in the node.
+3. The expected disk sizes are displayed.
+4. The device identifiers are visible or otherwise identifiable.
+5. Existing disks used by the system can be distinguished from unused disks.
+6. No expected disk is missing from the list.
+
+If a newly installed disk is not displayed, do not proceed with storage creation until the disk-detection problem has been investigated.
 
 ---
 
 # Common Issues
 
-| Issue | Resolution |
-|---|---|
-| Disk is not displayed | Verify that the disk is detected by the operating system and check the physical connection. |
-| Disk shows existing partitions | Verify whether the data is required before performing any destructive operation. |
-| Disk cannot be initialized | Check whether the disk is currently being used by another storage configuration. |
-| Disk appears unavailable | Check whether it is already assigned to LVM, LVM-Thin, ZFS, or another storage configuration. |
-| Disk operation fails | Review the task output and system logs for additional information. |
+## Disk Is Not Displayed
+
+If an expected disk does not appear:
+
+1. Verify that the disk is physically connected.
+2. Verify the disk's power connection.
+3. Check the server's BIOS/UEFI to determine whether the hardware detects the disk.
+4. Check whether the disk is connected through a RAID controller or HBA.
+5. Verify that the storage controller is detected by the operating system.
+6. Refresh the VM2Cloud interface.
+7. If the disk is still missing, investigate the node's hardware and operating-system detection.
+
+---
+
+## Disk Appears but Cannot Be Used
+
+A disk may already contain an existing configuration.
+
+Check whether it is associated with:
+
+* Existing partitions
+* LVM
+* LVM-Thin
+* ZFS
+* A mounted filesystem
+* Existing VM or container storage
+
+Do not wipe or initialize the disk until the existing data has been confirmed as unnecessary.
+
+---
+
+## Disk Capacity Is Different from the Manufacturer's Label
+
+A difference between the advertised disk capacity and the capacity displayed by the operating system is normal.
+
+Storage manufacturers generally use decimal units, while operating systems and management interfaces may display capacity using different unit conventions.
+
+---
+
+## Multiple Disks Are Difficult to Identify
+
+When multiple disks have similar capacities:
+
+1. Compare the displayed device identifiers.
+2. Compare disk sizes.
+3. Compare model information where available.
+4. Compare serial information where available.
+5. Cross-check the information against the server hardware inventory.
+6. Do not rely only on the disk position in the server.
+
+---
+
+## Disk Is Already in Use
+
+If the disk is already used by an existing storage configuration:
+
+1. Identify the storage configuration using the disk.
+2. Determine whether any VM, container, backup, or other data depends on it.
+3. Confirm that the data is no longer required before changing the configuration.
+4. Follow the appropriate storage-removal or disk-management procedure.
+
+Do not wipe a disk merely because it appears in the disk list.
 
 ---
 
 # Best Practices
 
-- Never assume an unused-looking disk is safe to erase.
-- Verify disk serial numbers before destructive operations.
-- Keep backups of important data.
-- Use appropriate redundancy for production storage.
-- Monitor disk health regularly.
-- Document physical disk assignments.
-- Avoid modifying disks that are already part of active storage.
+* Always verify the disk identifier before performing disk operations.
+* Compare disk information with the physical server inventory.
+* Do not wipe a disk until its existing contents have been checked.
+* Keep production data on appropriately designed storage.
+* Monitor disk health where hardware and management tools support it.
+* Maintain backups before performing destructive storage operations.
+* Avoid using a disk for multiple incompatible storage configurations.
+* Document which physical disks are assigned to each storage configuration.
+* For production environments, use appropriate redundancy rather than relying on a single physical disk.
 
 ---
 
 # Related Documentation
 
-- LVM
-- LVM-Thin
-- ZFS
-- Directory Storage
-- Storage Management
-- Disk Troubleshooting
+* [Disks Overview](01-Disks-Overview.md)
+* [Disk Management](03-Disk-Management.md)
+* [LVM](04-LVM.md)
+* [LVM-Thin](05-LVM-Thin.md)
+* [ZFS](06-ZFS.md)
+* [Directory](07-Directory.md)
+* [Disk Troubleshooting](08-Disk-Troubleshooting.md)
 
 ---
 
 # Summary
 
-The **Disks** section provides administrators with visibility and management of the physical storage devices available on a VM2Cloud node. It is the starting point for preparing disks for storage technologies such as LVM, LVM-Thin, ZFS, and Directory storage.
+The **Disks** page provides administrators with an overview of physical disks detected by the selected VM2Cloud node.
 
-Because disk operations can permanently destroy data, administrators must verify the target disk before performing any destructive operation.
+Use this page before performing disk-management or storage-creation operations to identify the correct physical disk, review its available information, and determine whether it is already being used.
+
+Always verify the disk identity before performing destructive operations such as wiping or reinitializing a disk.
