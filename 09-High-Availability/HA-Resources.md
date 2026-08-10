@@ -1,28 +1,12 @@
 # HA Resources
 
----
-
 ## Overview
 
-HA resources are virtual machines and containers that are managed by the VM2Cloud High Availability subsystem.
+An HA resource is a virtual machine or container that is managed by the VM2Cloud High Availability system.
 
-When a virtual machine or container is added as an HA resource, VM2Cloud's HA manager monitors and manages the requested state of that resource.
+When a VM or container is added as an HA resource, VM2Cloud monitors its state and can perform HA operations according to the configured resource state, cluster health, node availability, and HA placement rules.
 
-HA can:
-
-- Keep a resource running when its requested state is started.
-- Restart a resource after a failure.
-- Relocate a resource to another suitable cluster node when required.
-- Apply HA placement rules.
-- Manage the resource during node failures and recovery.
-
-HA resources are managed from:
-
-**Datacenter → HA → Resources**
-
-VM2Cloud uses the underlying Proxmox VE HA architecture for resource management.
-
-> **Important:** Adding a VM or container to HA does not replicate its disks. The required storage, network configuration, and other resources must be available on a node where the guest may be started.
+HA resources are normally used for workloads that should automatically recover when the node running them becomes unavailable.
 
 ---
 
@@ -30,46 +14,42 @@ VM2Cloud uses the underlying Proxmox VE HA architecture for resource management.
 
 Use HA resources when:
 
-- A virtual machine requires automatic recovery after a node failure.
+- A VM requires automatic recovery after a node failure.
 - A container requires automatic recovery after a node failure.
-- A critical workload must be managed by the HA subsystem.
-- The workload must remain in a defined HA state.
-- The workload requires controlled placement across cluster nodes.
-- Automatic restart or relocation is required.
+- A production workload should be managed by HA.
+- You want HA to control the start/stop state of a guest.
+- You want a guest to participate in HA placement and recovery rules.
 
-Do not add every VM or container to HA without evaluating the workload and cluster capacity.
+Do not add every VM or container to HA automatically. HA should be enabled only for workloads that have been designed and tested for HA recovery.
 
 ---
 
 ## Prerequisites
 
-Before adding a VM or container as an HA resource, verify:
+Before adding a resource to HA:
 
-- VM2Cloud is configured as a cluster.
-- The cluster has quorum.
-- Required cluster nodes are online.
-- Cluster communication is working correctly.
-- The VM or container already exists.
-- Required storage is available to possible target nodes.
-- Required network configuration is available on possible target nodes.
-- The administrator has permission to manage HA.
-- The cluster has sufficient CPU and memory capacity for recovery.
-- Required hardware is available on possible target nodes.
-- Any required PCI passthrough or host-specific configuration is compatible with HA placement.
+- The VM2Cloud cluster must be configured.
+- The cluster should have quorum.
+- The required nodes must be available.
+- The guest must already exist.
+- Required guest storage must be available on eligible recovery nodes.
+- Required networking must be available on eligible nodes.
+- Any required hardware must be available on the nodes where the guest may run.
+- Appropriate permissions are required to manage HA resources.
+
+For production workloads, verify that backups and recovery procedures are also available.
 
 ---
 
-# Procedure
+# What Is an HA Resource?
 
-## Step 1: Open the HA Resources Page
+An HA resource is a guest that has been registered with the HA system.
 
-1. Log in to the VM2Cloud web interface.
-2. Select **Datacenter** from the left navigation tree.
-3. Select **HA**.
-4. Open the **Resources** section.
-5. Review the resources currently managed by HA.
-
-### Screenshot 1
+For example:
 
 ```text
-[ Place Screenshot Here ]
+Cluster
+├── node1
+│   └── VM 100
+├── node2
+└── node3
