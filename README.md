@@ -146,6 +146,7 @@ The following UI areas exist in VM2Cloud but are **not yet documented**. Their l
 
 ## Contributing
 
+- [COVERAGE.md](COVERAGE.md) — every UI panel and CLI operation mapped against what is documented
 - [CONTRIBUTING.md](CONTRIBUTING.md) — writing conventions, screenshot rules, file placement
 - [TEMPLATE.md](TEMPLATE.md) — copy this to start a new page
 - [GLOSSARY.md](GLOSSARY.md) — terminology used across the documentation
