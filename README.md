@@ -43,11 +43,15 @@ Every page follows the same template: **Overview → When to Use → Prerequisit
 
 **[Storage](02-Datacenter/Storage/)** — [Overview](02-Datacenter/Storage/Storage-Overview.md) · [Types](02-Datacenter/Storage/Storage-Types.md) · [Add](02-Datacenter/Storage/Add-Storage.md) · [Manage](02-Datacenter/Storage/Manage-Storage.md) · [Upload Content](02-Datacenter/Storage/Upload-Content.md) · [Troubleshooting](02-Datacenter/Storage/Storage-Troubleshooting.md)
 
+**[Backup](02-Datacenter/Backup/)** — [Backup Jobs Overview](02-Datacenter/Backup/Backup-Jobs-Overview.md) · [Create Backup Job](02-Datacenter/Backup/Create-Backup-Job.md) · [Manage Backup Job](02-Datacenter/Backup/Manage-Backup-Job.md) · [Backup Retention](02-Datacenter/Backup/Backup-Retention.md)
+
 **[Replication](02-Datacenter/Replication/)** — [Overview](02-Datacenter/Replication/Replication-Overview.md) · [Create Job](02-Datacenter/Replication/Create-Replication-Job.md) · [Edit Job](02-Datacenter/Replication/Edit-Replication-Job.md) · [Delete Job](02-Datacenter/Replication/Delete-Replication-Job.md) · [Scheduling](02-Datacenter/Replication/Replication-Scheduling.md) · [Status](02-Datacenter/Replication/Replication-Status.md) · [Troubleshooting](02-Datacenter/Replication/Replication-Troubleshooting.md)
 
-**[Permissions](02-Datacenter/Permissions/)** — [Overview](02-Datacenter/Permissions/Permissions-Overview.md) · [Users](02-Datacenter/Permissions/Users.md) · [Groups](02-Datacenter/Permissions/Groups.md) · [Roles](02-Datacenter/Permissions/Roles.md) · [API Tokens](02-Datacenter/Permissions/API-Tokens.md) · [Two-Factor Authentication](02-Datacenter/Permissions/Two-Factor-Authentication.md) · [Authentication Realms](02-Datacenter/Permissions/Authentication-Realms.md) · [Assign Permissions](02-Datacenter/Permissions/Assign-Permissions.md) · [Troubleshooting](02-Datacenter/Permissions/Permissions-Troubleshooting.md)
+**[Permissions](02-Datacenter/Permissions/)** — [Overview](02-Datacenter/Permissions/Permissions-Overview.md) · [Users](02-Datacenter/Permissions/Users.md) · [Groups](02-Datacenter/Permissions/Groups.md) · [Roles](02-Datacenter/Permissions/Roles.md) · [Pools](02-Datacenter/Permissions/Pools.md) · [API Tokens](02-Datacenter/Permissions/API-Tokens.md) · [Two-Factor Authentication](02-Datacenter/Permissions/Two-Factor-Authentication.md) · [Authentication Realms](02-Datacenter/Permissions/Authentication-Realms.md) · [Assign Permissions](02-Datacenter/Permissions/Assign-Permissions.md) · [Troubleshooting](02-Datacenter/Permissions/Permissions-Troubleshooting.md)
 
 **[HA](02-Datacenter/HA/)** — [Overview](02-Datacenter/HA/HA-Overview.md) · [Resources](02-Datacenter/HA/HA-Resources.md) · [Node Affinity](02-Datacenter/HA/Node-Affinity.md) · [Resource Affinity](02-Datacenter/HA/Resource-Affinity.md) · [Fencing](02-Datacenter/HA/Fencing.md) · [Troubleshooting](02-Datacenter/HA/HA-Troubleshooting.md)
+
+**[Firewall](02-Datacenter/Firewall/)** — [Overview](02-Datacenter/Firewall/Firewall-Overview.md) · [Options](02-Datacenter/Firewall/Firewall-Options.md) · [Rules](02-Datacenter/Firewall/Firewall-Rules.md) · [Security Groups](02-Datacenter/Firewall/Security-Groups.md) · [Aliases](02-Datacenter/Firewall/Aliases.md) · [IPSets](02-Datacenter/Firewall/IPSets.md)
 
 ### [03-Nodes](03-Nodes/) — per-server administration
 
@@ -58,6 +62,7 @@ Every page follows the same template: **Overview → When to Use → Prerequisit
 | [Reboot Node](03-Nodes/Reboot-Node.md) · [Shutdown Node](03-Nodes/Shutdown-Node.md) | Controlled restart and power-off |
 | [Task History](03-Nodes/Task-History.md) | Past operations on the node |
 | [Subscription](03-Nodes/Subscription.md) | Licence status |
+| [Node Firewall](03-Nodes/Node-Firewall.md) | Host filtering, management access, cluster traffic |
 | [Node Troubleshooting](03-Nodes/Node-Troubleshooting.md) | Node-level problems |
 
 **[System](03-Nodes/System/)** — [Overview](03-Nodes/System/System-Overview.md) · [Certificates](03-Nodes/System/Certificates.md) · [DNS](03-Nodes/System/DNS.md) · [Hosts](03-Nodes/System/Hosts.md) · [Time and NTP](03-Nodes/System/Time-and-NTP.md) · [Syslog](03-Nodes/System/Syslog.md) · [Boot Mode](03-Nodes/System/Boot-Mode.md) · [Kernel](03-Nodes/System/Kernel.md) · [Services](03-Nodes/System/Services.md) · [Troubleshooting](03-Nodes/System/System-Troubleshooting.md)
@@ -70,29 +75,40 @@ Every page follows the same template: **Overview → When to Use → Prerequisit
 
 ### [04-Virtual-Machines](04-Virtual-Machines/)
 
-[Overview](04-Virtual-Machines/Virtual-Machine-Overview.md) · [Create](04-Virtual-Machines/Create-Virtual-Machine.md) · [Manage](04-Virtual-Machines/Manage-Virtual-Machine.md) · [Console](04-Virtual-Machines/VM-Console.md) · [Hardware](04-Virtual-Machines/Manage-VM-Hardware.md) · [Snapshots](04-Virtual-Machines/VM-Snapshots.md) · [Backup and Restore](04-Virtual-Machines/Backup-and-Restore-VM.md) · [Migrate](04-Virtual-Machines/Migrate-Virtual-Machine.md) · [Clone](04-Virtual-Machines/Clone-Virtual-Machine.md) · [Delete](04-Virtual-Machines/Delete-Virtual-Machine.md) · [Troubleshooting](04-Virtual-Machines/VM-Troubleshooting.md)
+[Overview](04-Virtual-Machines/Virtual-Machine-Overview.md) · [Create](04-Virtual-Machines/Create-Virtual-Machine.md) · [Manage](04-Virtual-Machines/Manage-Virtual-Machine.md) · [Console](04-Virtual-Machines/VM-Console.md) · [Hardware](04-Virtual-Machines/Manage-VM-Hardware.md) · [Cloud-Init](04-Virtual-Machines/Cloud-Init.md) · [Options](04-Virtual-Machines/VM-Options.md) · [Snapshots](04-Virtual-Machines/VM-Snapshots.md) · [Backup and Restore](04-Virtual-Machines/Backup-and-Restore-VM.md) · [Migrate](04-Virtual-Machines/Migrate-Virtual-Machine.md) · [Clone](04-Virtual-Machines/Clone-Virtual-Machine.md) · [Delete](04-Virtual-Machines/Delete-Virtual-Machine.md) · [Firewall](04-Virtual-Machines/VM-Firewall.md) · [Troubleshooting](04-Virtual-Machines/VM-Troubleshooting.md)
 
 ### [05-Containers](05-Containers/)
 
-[Overview](05-Containers/Container-Overview.md) · [Create](05-Containers/Create-Container.md) · [Manage](05-Containers/Manage-Container.md) · [Console](05-Containers/Container-Console.md) · [Resources](05-Containers/Manage-Container-Resources.md) · [Templates](05-Containers/Manage-Container-Templates.md) · [Backup and Restore](05-Containers/Backup-and-Restore-Container.md) · [Migrate](05-Containers/Migrate-Container.md) · [Clone](05-Containers/Clone-Container.md) · [Delete](05-Containers/Delete-Container.md) · [Troubleshooting](05-Containers/Container-Troubleshooting.md)
+[Overview](05-Containers/Container-Overview.md) · [Create](05-Containers/Create-Container.md) · [Manage](05-Containers/Manage-Container.md) · [Console](05-Containers/Container-Console.md) · [Resources](05-Containers/Manage-Container-Resources.md) · [Templates](05-Containers/Manage-Container-Templates.md) · [Options](05-Containers/CT-Options.md) · [Snapshots](05-Containers/CT-Snapshots.md) · [Backup and Restore](05-Containers/Backup-and-Restore-Container.md) · [Migrate](05-Containers/Migrate-Container.md) · [Clone](05-Containers/Clone-Container.md) · [Delete](05-Containers/Delete-Container.md) · [Firewall](05-Containers/CT-Firewall.md) · [Troubleshooting](05-Containers/Container-Troubleshooting.md)
 
 ---
 
 ## Coverage Status
 
-98 pages, 257 screenshots. Fully illustrated sections are marked ✅; sections still awaiting screenshot capture show the number of `[ Place Screenshot Here ]` placeholders remaining.
+116 pages, 257 screenshots. Fully illustrated sections are marked ✅; the rest show how many `[ Place Screenshot Here ]` placeholders remain.
+
+Every placeholder carries a **Capture:** line naming the exact screen and state to photograph, so screenshots can be worked through page by page without guessing what each one should show.
 
 | Section | Pages | Screenshots | Status |
 |---|---:|---:|---|
 | 01-Getting-Started | 4 | 1 | 20 placeholders |
-| 02-Datacenter / Cluster | 9 | 28 | 10 placeholders |
-| 02-Datacenter / Storage | 6 | 28 | ✅ complete |
+| 02-Datacenter (root) | 2 | 0 | 9 placeholders |
+| 02-Datacenter / Cluster | 9 | 27 | 10 placeholders |
+| 02-Datacenter / Storage | 6 | 25 | ✅ complete |
+| 02-Datacenter / Backup | 4 | 0 | 18 placeholders |
 | 02-Datacenter / Replication | 7 | 0 | 47 placeholders |
-| 02-Datacenter / Permissions | 9 | 13 | 38 placeholders |
+| 02-Datacenter / Permissions | 10 | 12 | 43 placeholders |
 | 02-Datacenter / HA | 6 | 0 | 33 placeholders |
-| 03-Nodes | 26 | 33 | 84 placeholders |
-| 04-Virtual-Machines | 11 | 85 | ✅ complete |
-| 05-Containers | 11 | 74 | ✅ complete |
+| 02-Datacenter / Firewall | 6 | 0 | 25 placeholders |
+| 03-Nodes | 34 | 45 | 107 placeholders |
+| 04-Virtual-Machines | 14 | 80 | 15 placeholders |
+| 05-Containers | 14 | 67 | 14 placeholders |
+
+Pages also carry **Verify:** markers where a UI label could not be confirmed without a live environment. Find them with:
+
+```bash
+grep -rn '> \*\*Verify:\*\*' --include='*.md' . --exclude=TEMPLATE.md --exclude=CONTRIBUTING.md
+```
 
 ---
 
@@ -109,23 +125,22 @@ The following UI areas exist in VM2Cloud but are **not yet documented**. Their l
 
 ### 02-Datacenter
 - `Notes.md` — Datacenter Notes tab
-- `Backup/` — scheduled backup jobs: `Backup-Jobs-Overview.md`, `Create-Backup-Job.md`, `Manage-Backup-Job.md`, `Backup-Retention.md`
-- `Permissions/Pools.md` — resource pools
-- `Firewall/` — `Firewall-Overview.md`, `Firewall-Options.md`, `Firewall-Rules.md`, `Security-Groups.md`, `Aliases.md`, `IPSets.md`
+- `Storage/Storage-Content-Browser.md`, `Storage/Storage-Import.md`, `Storage/Storage-Permissions.md`
 - `SDN/` — software-defined networking: `SDN-Overview.md`, `Zones.md`, `VNets.md`
-- `Ceph/Ceph-Overview.md`
+- `Ceph/` — `Ceph-Overview.md`, `Ceph-Monitors-and-OSDs.md`, `Ceph-Pools.md`
 - `ACME-Certificates.md`, `Notifications.md`, `Metric-Server.md`, `Support.md`
 
 ### 03-Nodes
-- `Node-Notes.md`, `Node-Firewall.md`, `Ceph.md`
+- `Node-Notes.md`, `Node-Ceph.md`, `Node-Replication.md`
 
 ### 04-Virtual-Machines
-- `VM-Summary.md`, `Cloud-Init.md`, `VM-Options.md`, `VM-Notes.md`, `VM-Task-History.md`, `VM-Monitor.md`, `Convert-to-Template.md`, `VM-Firewall.md`, `VM-Permissions.md`
+- `VM-Summary.md`, `VM-Notes.md`, `VM-Task-History.md`, `VM-Monitor.md`, `VM-Replication.md`, `Convert-to-Template.md`, `VM-Permissions.md`
 
 ### 05-Containers
-- `CT-Summary.md`, `CT-Network.md`, `CT-DNS.md`, `CT-Options.md`, `CT-Notes.md`, `CT-Task-History.md`, `CT-Snapshots.md`, `CT-Firewall.md`, `CT-Permissions.md`
+- `CT-Summary.md`, `CT-Network.md`, `CT-DNS.md`, `CT-Notes.md`, `CT-Task-History.md`, `CT-Replication.md`, `CT-Permissions.md`
 
-> **Note:** Containers currently have no snapshots page even though virtual machines do, and the firewall is undocumented at all three levels (datacenter, node, guest).
+### Appendix
+- `06-CLI-Reference.md` — commands used across the set and what each verifies. The CLI has no UI location, so it cannot be mirrored into the structure.
 
 ---
 

@@ -16,6 +16,9 @@ Corresponds to selecting a container in the resource tree. For guests that need 
 | [Container Console](Container-Console.md) | Connecting to the container shell |
 | [Manage Container Resources](Manage-Container-Resources.md) | CPU, memory, swap, root disk resizing, and mount points |
 | [Manage Container Templates](Manage-Container-Templates.md) | Downloading and managing the base images used to create containers |
+| [Container Options](CT-Options.md) | Start at boot, sequencing, protection, privilege model, features |
+| [Container Firewall](CT-Firewall.md) | Per-container traffic filtering, enforced by the host |
+| [Container Snapshots](CT-Snapshots.md) | Creating, rolling back, and removing snapshots |
 | [Backup and Restore Container](Backup-and-Restore-Container.md) | Creating backups and restoring from them |
 | [Migrate Container](Migrate-Container.md) | Moving a container to another node |
 | [Clone Container](Clone-Container.md) | Copying a container |
@@ -34,6 +37,4 @@ Corresponds to selecting a container in the resource tree. For guests that need 
 
 ## Planned Pages
 
-Not yet written: `CT-Summary.md`, `CT-Network.md`, `CT-DNS.md`, `CT-Options.md`, `CT-Notes.md`, `CT-Task-History.md`, `CT-Snapshots.md`, `CT-Firewall.md`, `CT-Permissions.md`.
-
-> **Note:** Containers support snapshots in the interface, but unlike virtual machines they have no snapshots page yet. `CT-Snapshots.md` is the highest-value gap in this section.
+Not yet written: `CT-Summary.md`, `CT-Network.md`, `CT-DNS.md`, `CT-Notes.md`, `CT-Task-History.md`, `CT-Replication.md`, `CT-Permissions.md`.

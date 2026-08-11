@@ -27,6 +27,12 @@ Defining where disks, ISO images, templates, and backups are kept.
 
 [Storage Overview](Storage/Storage-Overview.md) · [Storage Types](Storage/Storage-Types.md) · [Add Storage](Storage/Add-Storage.md) · [Manage Storage](Storage/Manage-Storage.md) · [Upload Content](Storage/Upload-Content.md) · [Storage Troubleshooting](Storage/Storage-Troubleshooting.md)
 
+## Backup
+
+Scheduled, cluster-wide backup jobs with retention.
+
+[Backup Jobs Overview](Backup/Backup-Jobs-Overview.md) · [Create Backup Job](Backup/Create-Backup-Job.md) · [Manage Backup Job](Backup/Manage-Backup-Job.md) · [Backup Retention](Backup/Backup-Retention.md)
+
 ## Replication
 
 Synchronizing guest data to another node on a schedule.
@@ -37,13 +43,25 @@ Synchronizing guest data to another node on a schedule.
 
 Users, groups, roles, and how access is granted.
 
-[Permissions Overview](Permissions/Permissions-Overview.md) · [Users](Permissions/Users.md) · [Groups](Permissions/Groups.md) · [Roles](Permissions/Roles.md) · [API Tokens](Permissions/API-Tokens.md) · [Two-Factor Authentication](Permissions/Two-Factor-Authentication.md) · [Authentication Realms](Permissions/Authentication-Realms.md) · [Assign Permissions](Permissions/Assign-Permissions.md) · [Permissions Troubleshooting](Permissions/Permissions-Troubleshooting.md)
+[Permissions Overview](Permissions/Permissions-Overview.md) · [Users](Permissions/Users.md) · [Groups](Permissions/Groups.md) · [Roles](Permissions/Roles.md) · [Pools](Permissions/Pools.md) · [API Tokens](Permissions/API-Tokens.md) · [Two-Factor Authentication](Permissions/Two-Factor-Authentication.md) · [Authentication Realms](Permissions/Authentication-Realms.md) · [Assign Permissions](Permissions/Assign-Permissions.md) · [Permissions Troubleshooting](Permissions/Permissions-Troubleshooting.md)
 
 ## High Availability
 
 Automatic recovery of guests after a node failure.
 
 [HA Overview](HA/HA-Overview.md) · [HA Resources](HA/HA-Resources.md) · [Node Affinity](HA/Node-Affinity.md) · [Resource Affinity](HA/Resource-Affinity.md) · [Fencing](HA/Fencing.md) · [HA Troubleshooting](HA/HA-Troubleshooting.md)
+
+## Firewall
+
+Cluster-wide filtering and the reusable objects used at every level.
+
+[Firewall Overview](Firewall/Firewall-Overview.md) · [Firewall Options](Firewall/Firewall-Options.md) · [Firewall Rules](Firewall/Firewall-Rules.md) · [Security Groups](Firewall/Security-Groups.md) · [Aliases](Firewall/Aliases.md) · [IPSets](Firewall/IPSets.md)
+
+> The firewall applies at three levels. Concepts are documented once in
+> [Firewall Overview](Firewall/Firewall-Overview.md); the node and guest panels are
+> covered in [Node Firewall](../03-Nodes/Node-Firewall.md),
+> [VM Firewall](../04-Virtual-Machines/VM-Firewall.md), and
+> [Container Firewall](../05-Containers/CT-Firewall.md).
 
 ---
 
@@ -52,9 +70,7 @@ Automatic recovery of guests after a node failure.
 Not yet written:
 
 - `Notes.md`
-- `Backup/` — `Backup-Jobs-Overview.md`, `Create-Backup-Job.md`, `Manage-Backup-Job.md`, `Backup-Retention.md`
-- `Permissions/Pools.md`
-- `Firewall/` — `Firewall-Overview.md`, `Firewall-Options.md`, `Firewall-Rules.md`, `Security-Groups.md`, `Aliases.md`, `IPSets.md`
+- `Storage/Storage-Content-Browser.md`, `Storage/Storage-Import.md`, `Storage/Storage-Permissions.md`
 - `SDN/` — `SDN-Overview.md`, `Zones.md`, `VNets.md`
-- `Ceph/Ceph-Overview.md`
+- `Ceph/` — `Ceph-Overview.md`, `Ceph-Monitors-and-OSDs.md`, `Ceph-Pools.md`
 - `ACME-Certificates.md`, `Notifications.md`, `Metric-Server.md`, `Support.md`

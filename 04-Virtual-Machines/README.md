@@ -15,6 +15,9 @@ Corresponds to selecting a VM in the resource tree. For lightweight Linux guests
 | [Manage Virtual Machine](Manage-Virtual-Machine.md) | Start, stop, shutdown, reboot, pause, and resume |
 | [VM Console](VM-Console.md) | Connecting to the guest display, toolbar, and special keys |
 | [Manage VM Hardware](Manage-VM-Hardware.md) | Disks, CPU, memory, network devices, ISO images, USB, PCI, and TPM |
+| [Cloud-Init](Cloud-Init.md) | Automatic first-boot configuration — user, SSH key, network, DNS |
+| [VM Options](VM-Options.md) | Boot order, start at boot, start/shutdown sequencing, protection, guest agent |
+| [VM Firewall](VM-Firewall.md) | Per-machine traffic filtering |
 | [VM Snapshots](VM-Snapshots.md) | Creating, viewing, restoring, and deleting snapshots |
 | [Backup and Restore VM](Backup-and-Restore-VM.md) | Creating backups and restoring from them |
 | [Migrate Virtual Machine](Migrate-Virtual-Machine.md) | Moving a VM to another node |
@@ -34,4 +37,4 @@ Corresponds to selecting a VM in the resource tree. For lightweight Linux guests
 
 ## Planned Pages
 
-Not yet written: `VM-Summary.md`, `Cloud-Init.md`, `VM-Options.md`, `VM-Notes.md`, `VM-Task-History.md`, `VM-Monitor.md`, `Convert-to-Template.md`, `VM-Firewall.md`, `VM-Permissions.md`.
+Not yet written: `VM-Summary.md`, `VM-Notes.md`, `VM-Task-History.md`, `VM-Monitor.md`, `VM-Replication.md`, `Convert-to-Template.md`, `VM-Permissions.md`.
