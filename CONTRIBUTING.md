@@ -195,17 +195,30 @@ Screenshots live in an `images/` folder beside the Markdown that uses them.
 
 ### Placeholders
 
-If the screenshot has not been captured yet, leave a numbered placeholder so the gap stays visible:
+If the screenshot has not been captured yet, leave a numbered placeholder so the gap stays visible, **and say what to capture**:
 
 ```markdown
 ### Screenshot 1
 
-```text
+**Firewall Rules Panel**
+
+​```text
 [ Place Screenshot Here ]
-```
+​```
+
+> **Capture:** Datacenter → Firewall → Rules, showing the rule list with the **Add**,
+> **Edit**, and **Remove** buttons visible.
 ```
 
-Never delete a placeholder without either adding the image or removing the step it belongs to.
+The `Capture:` line names the exact screen and state to photograph. Whoever takes the screenshots should be able to work straight down a page without guessing what each one is meant to show.
+
+Find every outstanding capture with:
+
+```bash
+grep -rn '> \*\*Capture:\*\*' --include='*.md' . --exclude=TEMPLATE.md --exclude=CONTRIBUTING.md
+```
+
+Never delete a placeholder without either adding the image or removing the step it belongs to. When you add the image, delete the `Capture:` line with it.
 
 ### Capturing
 

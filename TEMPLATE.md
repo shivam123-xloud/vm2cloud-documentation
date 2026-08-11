@@ -89,9 +89,18 @@ Name every field and say what it does. Never write "Configure the required optio
 
 ### Screenshot 2
 
+**Short Caption**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Datacenter → Firewall → Rules, showing the rule list with the **Add**,
+> **Edit**, and **Remove** buttons visible.
+
+Every placeholder carries a **Capture:** line naming the exact screen and state to
+photograph, so whoever takes the screenshots can work straight down the page without
+guessing what is wanted.
 
 ---
 
