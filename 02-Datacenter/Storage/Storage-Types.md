@@ -221,6 +221,18 @@ It is recommended for enterprise deployments that require redundancy and high av
 
 ---
 
+# Common Issues
+
+| Issue | Resolution |
+|-------|------------|
+| The required storage type is not listed | Verify that the supporting packages and services are installed and that the node is part of a cluster where required. |
+| A storage type cannot hold the required content | Review the content types each storage supports before assigning it. |
+| Snapshots are unavailable on a storage | Not every storage type supports snapshots. Choose a storage type that does, such as ZFS or LVM-Thin. |
+| Shared storage is not visible on all nodes | Confirm the storage is configured as shared and is reachable from every node. |
+| Replication cannot be configured | Storage replication requires a supported local storage type. See [Replication Overview](../Replication/Replication-Overview.md). |
+
+---
+
 # Summary
 
 VM2Cloud supports several storage technologies, each designed for different workloads and deployment scenarios. Selecting the appropriate storage type depends on the intended use, infrastructure design, performance requirements, and availability goals. Understanding the strengths and limitations of each storage type helps administrators build a reliable and efficient virtualization environment.

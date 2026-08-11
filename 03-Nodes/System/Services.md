@@ -84,6 +84,18 @@ Administrators can perform operations such as:
 
 ---
 
+## Common Issues
+
+| Issue | Resolution |
+|-------|------------|
+| A service will not start | Review the service status and the node's system log for the reported error. |
+| A service restarts repeatedly | Investigate the underlying configuration or resource problem before restarting it again. |
+| The web interface is unreachable | Verify the proxy service is running on the node. |
+| Cluster communication fails | Verify the cluster communication service is running on every node. |
+| Changes to a service have no effect | Restart the affected service and confirm the configuration file was saved correctly. |
+
+---
+
 ## Summary
 
 The **Services** section provides centralized management of the operating system services that support VM2Cloud. Monitoring service health and understanding the purpose of each service helps administrators maintain a stable, secure, and reliable virtualization environment.

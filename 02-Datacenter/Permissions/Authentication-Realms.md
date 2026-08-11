@@ -42,11 +42,9 @@ The Realms page displays all configured authentication realms.
 
 ---
 
-### Screenshot 1
+**Realms Page**
 
-```text
-[ Place Screenshot Here ]
-```
+![Realms Page](images/access-realms.png)
 
 ---
 
@@ -64,11 +62,9 @@ Select a realm to view its configuration.
 
 ---
 
-### Screenshot 2
+**Configured Realms**
 
-```text
-[ Place Screenshot Here ]
-```
+![Configured Realms](images/supported-realms-1.png)
 
 ---
 
@@ -79,7 +75,7 @@ Depending on your VM2Cloud deployment, one or more of the following realm types 
 | Realm Type | Description |
 |------------|-------------|
 | Linux PAM | Authenticates users using the local Linux operating system accounts. |
-| Proxmox VE Authentication Server | Uses the internal VM2Cloud user database. |
+| VM2Cloud Virtual Environment Authentication Server | Uses the internal VM2Cloud user database. |
 | LDAP | Authenticates users using an LDAP directory service. |
 | Microsoft Active Directory | Authenticates users against an Active Directory domain. |
 | OpenID Connect (OIDC) | Supports authentication through an OpenID Connect identity provider. |
@@ -107,11 +103,9 @@ Depending on your VM2Cloud deployment, one or more of the following realm types 
 
 ---
 
-### Screenshot 4
+**Add an Authentication Realm**
 
-```text
-[ Place Screenshot Here ]
-```
+![Add an Authentication Realm](images/cofigure-realms.png)
 
 ---
 

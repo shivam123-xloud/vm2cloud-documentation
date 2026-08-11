@@ -871,6 +871,19 @@ Related features:
 
 ---
 
+# Common Issues
+
+| Issue | Resolution |
+|-------|------------|
+| HA resources do not recover after a node failure | Verify the cluster retained quorum and that an eligible node can reach the guest's storage. |
+| A resource remains in an error state | Review the HA task log and confirm the required storage and network exist on the node. |
+| A guest starts on an unexpected node | Review the configured node-affinity and resource-affinity rules. |
+| Nodes are fenced unexpectedly | Investigate cluster network stability. See [Fencing](Fencing.md). |
+| HA repeatedly restarts a guest | Investigate the guest operating system; HA restarts a guest that fails to stay running. |
+| HA options are unavailable | Confirm the node is part of a cluster and that you have permission to manage HA. |
+
+---
+
 # Summary
 
 VM2Cloud High Availability automatically manages selected VMs and containers so they can be recovered when a node becomes unavailable.

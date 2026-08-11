@@ -68,3 +68,97 @@ Before configuring node affinity:
 
 ```text
 [ Place Screenshot Here ]
+```
+
+---
+
+## Step 2: Create a Node-Affinity Rule
+
+1. Click **Add** in the placement configuration.
+2. Enter a name for the rule.
+3. Select the HA resources the rule applies to.
+4. Select the nodes the resources should use.
+5. Assign a priority to each node if the version supports it.
+
+Higher-priority nodes are preferred. Lower-priority nodes act as fallback targets.
+
+### Screenshot 2
+
+```text
+[ Place Screenshot Here ]
+```
+
+---
+
+## Step 3: Choose the Enforcement Behaviour
+
+Node-affinity rules can be preferred or strict.
+
+| Behaviour | Effect |
+|-----------|--------|
+| Preferred | HA tries the listed nodes first but may use another node if none are available. |
+| Strict | HA uses only the listed nodes. If none are available, the resource is not started elsewhere. |
+
+Use strict placement only when the workload genuinely cannot run on other nodes, for example when it depends on node-specific hardware.
+
+### Screenshot 3
+
+```text
+[ Place Screenshot Here ]
+```
+
+---
+
+## Step 4: Save and Verify the Rule
+
+1. Review the configuration.
+2. Save the rule.
+3. Confirm the rule appears in the placement list.
+4. Confirm the affected resources show the expected node assignment.
+
+### Screenshot 4
+
+```text
+[ Place Screenshot Here ]
+```
+
+---
+
+# Verification
+
+Verify the following:
+
+- The rule appears in the HA placement configuration.
+- The correct resources are associated with the rule.
+- The listed nodes are correct.
+- HA resources run on the expected nodes.
+- Recovery selects a node permitted by the rule.
+- The cluster reports quorum.
+
+---
+
+# Common Issues
+
+| Issue | Resolution |
+|-------|------------|
+| Resource does not run on the preferred node | Verify the node is online and has sufficient CPU, memory, storage, and network resources. |
+| Resource does not start at all | A strict rule may list only unavailable nodes. Verify node availability or relax the rule. |
+| Rule appears to be ignored | Confirm the resource is managed by HA and that the rule references the correct resource. |
+| Resource does not move back after a node returns | Node affinity does not automatically relocate a running resource; migrate it manually if required. |
+| Conflicting placement behaviour | Review resource-affinity rules, which may compete with node affinity. |
+
+---
+
+# Related Documentation
+
+- [HA Overview](HA-Overview.md)
+- [HA Resources](HA-Resources.md)
+- [Resource Affinity](Resource-Affinity.md)
+- [Fencing](Fencing.md)
+- [HA Troubleshooting](HA-Troubleshooting.md)
+
+---
+
+# Summary
+
+Node affinity controls which cluster nodes an HA resource should prefer or be restricted to. Preferred rules give HA a placement order while still allowing recovery elsewhere; strict rules confine a resource to a defined set of nodes. Node affinity governs placement only — the target node must still provide the storage, networking, and hardware the guest requires.

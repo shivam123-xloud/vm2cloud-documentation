@@ -62,3 +62,90 @@ Before deleting a replication job:
 
 ```text
 [ Place Screenshot Here ]
+```
+
+---
+
+## Step 2: Select the Replication Job
+
+1. Select the replication job to delete.
+2. Confirm the job ID, guest, and target node.
+3. Confirm this is the correct job.
+
+### Screenshot 2
+
+```text
+[ Place Screenshot Here ]
+```
+
+---
+
+## Step 3: Remove the Job
+
+1. Click **Remove**.
+2. Review the confirmation message.
+3. Confirm the deletion.
+
+### Screenshot 3
+
+```text
+[ Place Screenshot Here ]
+```
+
+---
+
+## Step 4: Verify the Deletion
+
+1. Confirm the job no longer appears in the replication list.
+2. Confirm no further replication runs are scheduled for that target.
+3. Check the task log to confirm the removal completed.
+
+### Screenshot 4
+
+```text
+[ Place Screenshot Here ]
+```
+
+---
+
+# Replicated Data After Deletion
+
+Removing a replication job stops future synchronization to the target node.
+
+The data already replicated to the target is normally cleaned up as part of the removal. Depending on the VM2Cloud version and the state of the target node, residual replication snapshots or datasets may remain.
+
+If the target node was offline when the job was deleted:
+
+1. Bring the target node back online.
+2. Verify whether replication data for the guest remains on the target storage.
+3. Remove any leftover data manually if it is no longer required.
+
+---
+
+# Verification
+
+Verify the following:
+
+- The replication job no longer appears in the replication list.
+- No new replication tasks are created for the deleted job.
+- The guest continues to run normally on the source node.
+- The removal task completed successfully.
+- Target storage capacity is released once cleanup completes.
+
+---
+
+# Common Issues
+
+| Issue | Resolution |
+|-------|------------|
+| Job cannot be deleted | Verify you have permission to manage the guest's replication configuration. |
+| Deletion fails while a run is active | Wait for the current replication run to finish, then delete the job. |
+| Replication data remains on the target | Bring the target node online and remove leftover replication snapshots or datasets manually. |
+| Job reappears in the list | Refresh the interface and confirm the removal task completed without error. |
+| Guest can no longer be migrated quickly | Without replication, migration must transfer the full disk; recreate the job if fast migration is required. |
+
+---
+
+# Summary
+
+Deleting a replication job stops all future synchronization of a guest to the configured target node and normally removes the replicated data from that target. Before deleting, confirm the target does not hold the only current copy of important data and that your backup strategy still meets recovery requirements. Verify after deletion that the job is gone and that the guest continues running normally on its source node.

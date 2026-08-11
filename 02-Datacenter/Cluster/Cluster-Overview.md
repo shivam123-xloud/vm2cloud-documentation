@@ -169,6 +169,18 @@ Verify the following after creating or joining a cluster:
 
 ---
 
+## Common Issues
+
+| Issue | Resolution |
+|-------|------------|
+| Cluster page does not load | Refresh the interface and verify the cluster services are running on the node. |
+| A node shows as offline | Verify network connectivity and confirm Corosync is running on the affected node. |
+| Cluster is not quorate | Verify that enough nodes are online and communicating. See [Quorum](Quorum.md). |
+| Configuration changes are rejected | The cluster file system becomes read-only without quorum. Restore quorum before making changes. |
+| A removed node still appears | Complete the cleanup described in [Remove Node from Cluster](Remove-Node-from-Cluster.md). |
+
+---
+
 ## Summary
 
 A VM2Cloud cluster combines multiple nodes into a single management environment, enabling centralized administration, simplified resource management, and advanced features such as Live Migration, High Availability, and Replication. Understanding the core cluster components helps administrators deploy and maintain a stable and highly available infrastructure.

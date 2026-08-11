@@ -119,7 +119,21 @@ Select the required template and complete the operation.
 
 ---
 
-## Step 3: Verify the Template
+## Step 3: Monitor the Download
+
+The Task viewer opens and displays the download progress.
+
+Wait until the task reports **TASK OK**, which confirms the template was downloaded and its checksum verified.
+
+---
+
+**Download Complete**
+
+![Download Complete](images/temp-download-done.png)
+
+---
+
+## Step 4: Verify the Template
 
 Verify that the container template appears in the **CT Templates** list.
 

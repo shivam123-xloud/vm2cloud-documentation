@@ -90,6 +90,36 @@ The VM2Cloud interface automatically opens the selected resource.
 
 ---
 
+# Datacenter Search Panel
+
+In addition to the header search box, a **Search** panel is available at the Datacenter level.
+
+1. Select **Datacenter** in the resource tree.
+2. Click **Search**.
+
+The panel lists every resource in the environment in a sortable table.
+
+Columns include:
+
+- Type (node, storage, zone, VM, container)
+- Description
+- Disk usage
+- Memory usage
+- CPU usage
+- Uptime
+- Host CPU and Host Memory
+- Tags
+
+Use the **Search** field at the top right of the panel to filter the list.
+
+---
+
+**Datacenter Search Panel**
+
+![Datacenter Search Panel](images/datacenter-search.png)
+
+---
+
 # Search Tips
 
 Search works best when using:

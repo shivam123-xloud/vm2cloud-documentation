@@ -95,7 +95,7 @@ Before creating a cluster, ensure that:
 **Cluster Creation Progress**
 
 
-![Cluster Creation Progress](images/Cluster Creation Progress.png)
+![Cluster Creation Progress](images/cluster-creation-progress.png)
 
 
 ---

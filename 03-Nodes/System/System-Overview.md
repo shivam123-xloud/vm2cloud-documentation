@@ -78,6 +78,18 @@ Before modifying system settings, ensure that:
 
 ---
 
+## Common Issues
+
+| Issue | Resolution |
+|-------|------------|
+| A System page does not load | Refresh the interface and confirm the node is online. |
+| Configuration changes are not applied | Some system changes require the affected service to be restarted or the node to be rebooted. |
+| Settings differ between cluster nodes | System settings are node-specific. Apply the same configuration to each node where required. |
+| A System option is unavailable | Confirm your account has administrator privileges on the node. |
+| Time-related errors appear | Verify time synchronization. See [Time and Network Time (NTP)](Time-and-NTP.md). |
+
+---
+
 ## Summary
 
 The **System** section provides centralized access to essential operating system configuration for a VM2Cloud node. Proper management of these settings helps maintain reliable communication, accurate time synchronization, consistent name resolution, and overall system stability.
