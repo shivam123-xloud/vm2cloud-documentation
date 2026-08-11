@@ -624,58 +624,27 @@ Running the same guest simultaneously on two nodes can result in data corruption
 
 # Related Documentation
 
-```text
-10-Replication/
-├── Replication-Overview.md
-├── Create-Replication-Job.md
-├── Edit-Replication-Job.md
-├── Delete-Replication-Job.md
-├── Replication-Scheduling.md
-├── Replication-Status.md
-└── Replication-Troubleshooting.md
-```
+Replication:
 
-Related HA documentation:
+- [Replication Overview](Replication-Overview.md)
+- [Create Replication Job](Create-Replication-Job.md)
+- [Edit Replication Job](Edit-Replication-Job.md)
+- [Delete Replication Job](Delete-Replication-Job.md)
+- [Replication Scheduling](Replication-Scheduling.md)
+- [Replication Status](Replication-Status.md)
+- [Replication Troubleshooting](Replication-Troubleshooting.md)
 
-```text
-09-High-Availability/
-├── HA-Overview.md
-├── HA-Resources.md
-├── HA-Groups.md
-├── Node-Affinity.md
-├── Resource-Affinity.md
-├── Fencing.md
-├── Quorum.md
-└── HA-Troubleshooting.md
-```
+Cluster and HA:
 
-Related storage documentation:
+- [Cluster Overview](../Cluster/Cluster-Overview.md)
+- [Quorum](../Cluster/Quorum.md)
+- [HA Overview](../HA/HA-Overview.md)
 
-```text
-06-Storage/
-├── Storage-Overview.md
-├── Add-Storage.md
-├── Edit-Storage.md
-├── Remove-Storage.md
-├── Storage-Content.md
-└── Storage-Troubleshooting.md
-```
+Storage:
 
-Related backup documentation:
-
-```text
-08-Backup-and-Restore/
-├── Backup-Overview.md
-├── Create-Backup.md
-├── Backup-Jobs.md
-├── Backup-Storage.md
-├── Restore-VM.md
-├── Restore-Container.md
-├── Backup-Verification.md
-├── Backup-Retention.md
-├── Backup-Scheduling.md
-└── Backup-Troubleshooting.md
-```
+- [Storage Overview](../Storage/Storage-Overview.md)
+- [Storage Types](../Storage/Storage-Types.md)
+- [Storage Troubleshooting](../Storage/Storage-Troubleshooting.md)
 
 ---
 

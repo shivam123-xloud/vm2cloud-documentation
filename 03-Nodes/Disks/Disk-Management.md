@@ -339,14 +339,14 @@ Verify the disk state before attempting to create storage.
 
 # Related Documentation
 
-* [Disks Overview](01-Disks-Overview.md)
-* [View Disk Information](02-View-Disk-Information.md)
-* [LVM](04-LVM.md)
-* [LVM-Thin](05-LVM-Thin.md)
-* [ZFS](06-ZFS.md)
-* [Directory](07-Directory.md)
-* [Disk Troubleshooting](08-Disk-Troubleshooting.md)
-* [Storage Overview](../06-Storage/Storage-Overview.md)
+* [Disks Overview](Disks-Overview.md)
+* [View Disk Information](View-Disk-Information.md)
+* [LVM](LVM.md)
+* [LVM-Thin](LVM-Thin.md)
+* [ZFS](ZFS.md)
+* [Directory](Directory.md)
+* [Disk Troubleshooting](Disk-Troubleshooting.md)
+* [Storage Overview](../../02-Datacenter/Storage/Storage-Overview.md)
 
 ---
 

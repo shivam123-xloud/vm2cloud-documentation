@@ -418,12 +418,9 @@ Placement can be influenced by:
 
 See:
 
-```text
-09-High-Availability/
-├── HA-Groups.md
-├── Node-Affinity.md
-└── Resource-Affinity.md
-```
+- [Node Affinity](Node-Affinity.md)
+- [Resource Affinity](Resource-Affinity.md)
+- [HA Resources](HA-Resources.md)
 
 ---
 
@@ -851,41 +848,26 @@ A controlled HA test should be performed before relying on HA for production rec
 
 # Related Documentation
 
-```text
-09-High-Availability/
-├── HA-Overview.md
-├── How-HA-Works.md
-├── HA-Resources.md
-├── HA-Groups.md
-├── Node-Affinity.md
-├── Resource-Affinity.md
-├── Fencing.md
-├── Quorum.md
-└── HA-Troubleshooting.md
-```
+High Availability:
 
-Related documentation:
+- [HA Overview](HA-Overview.md)
+- [HA Resources](HA-Resources.md)
+- [Node Affinity](Node-Affinity.md)
+- [Resource Affinity](Resource-Affinity.md)
+- [Fencing](Fencing.md)
+- [HA Troubleshooting](HA-Troubleshooting.md)
 
-```text
-17-Cluster-Management/
-├── Cluster-Status.md
-├── Quorum.md
-└── Corosync.md
-```
+Cluster:
 
-```text
-10-Replication/
-├── Replication-Overview.md
-├── Replication-Scheduling.md
-└── Replication-Troubleshooting.md
-```
+- [Cluster Overview](../Cluster/Cluster-Overview.md)
+- [Quorum](../Cluster/Quorum.md)
+- [Cluster File System](../Cluster/Cluster-File-System.md)
 
-```text
-08-Backup-and-Restore/
-├── Backup-Overview.md
-├── Backup-Verification.md
-└── Backup-Troubleshooting.md
-```
+Related features:
+
+- [Replication Overview](../Replication/Replication-Overview.md)
+- [Backup and Restore Virtual Machine](../../04-Virtual-Machines/Backup-and-Restore-VM.md)
+- [Backup and Restore Container](../../05-Containers/Backup-and-Restore-Container.md)
 
 ---
 

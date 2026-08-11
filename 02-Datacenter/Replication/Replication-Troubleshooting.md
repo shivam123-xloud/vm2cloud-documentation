@@ -772,55 +772,32 @@ Before performing destructive troubleshooting:
 
 # Related Documentation
 
-```text
-10-Replication/
-├── Replication-Overview.md
-├── Create-Replication-Job.md
-├── Edit-Replication-Job.md
-├── Delete-Replication-Job.md
-├── Replication-Scheduling.md
-├── Replication-Status.md
-└── Replication-Troubleshooting.md
-```
+Replication:
 
-Related cluster documentation:
+- [Replication Overview](Replication-Overview.md)
+- [Create Replication Job](Create-Replication-Job.md)
+- [Edit Replication Job](Edit-Replication-Job.md)
+- [Delete Replication Job](Delete-Replication-Job.md)
+- [Replication Scheduling](Replication-Scheduling.md)
+- [Replication Status](Replication-Status.md)
+- [Replication Troubleshooting](Replication-Troubleshooting.md)
 
-```text
-17-Cluster-Management/
-├── Cluster-Overview.md
-├── Cluster-Status.md
-├── Quorum.md
-├── Corosync.md
-└── Cluster-Troubleshooting.md
-```
+Cluster:
 
-Related storage documentation:
+- [Cluster Overview](../Cluster/Cluster-Overview.md)
+- [Quorum](../Cluster/Quorum.md)
+- [Cluster Troubleshooting](../Cluster/Cluster-Troubleshooting.md)
 
-```text
-06-Storage/
-├── Storage-Overview.md
-├── Storage-Content.md
-└── Storage-Troubleshooting.md
-```
+Storage:
 
-Related backup documentation:
+- [Storage Overview](../Storage/Storage-Overview.md)
+- [Storage Troubleshooting](../Storage/Storage-Troubleshooting.md)
 
-```text
-08-Backup-and-Restore/
-├── Backup-Overview.md
-├── Backup-Verification.md
-└── Backup-Troubleshooting.md
-```
+Other troubleshooting:
 
-Related HA documentation:
-
-```text
-09-High-Availability/
-├── HA-Overview.md
-├── HA-Resources.md
-├── Quorum.md
-└── HA-Troubleshooting.md
-```
+- [Node Troubleshooting](../../03-Nodes/Node-Troubleshooting.md)
+- [Network Troubleshooting](../../03-Nodes/System/Network/Network-Troubleshooting.md)
+- [HA Troubleshooting](../HA/HA-Troubleshooting.md)
 
 ---
 

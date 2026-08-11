@@ -1000,17 +1000,17 @@ If a production storage system fails:
 
 # Related Documentation
 
-* [Disks Overview](01-Disks-Overview.md)
-* [View Disk Information](02-View-Disk-Information.md)
-* [Disk Management](03-Disk-Management.md)
-* [LVM](04-LVM.md)
-* [LVM-Thin](05-LVM-Thin.md)
-* [ZFS](06-ZFS.md)
-* [Directory](07-Directory.md)
-* [Storage Overview](../06-Storage/Storage-Overview.md)
-* [Storage Troubleshooting](../06-Storage/Storage-Troubleshooting.md)
-* [VM Troubleshooting](../04-Virtual-Machines/VM-Troubleshooting.md)
-* [Container Troubleshooting](../05-Containers/Container-Troubleshooting.md)
+* [Disks Overview](Disks-Overview.md)
+* [View Disk Information](View-Disk-Information.md)
+* [Disk Management](Disk-Management.md)
+* [LVM](LVM.md)
+* [LVM-Thin](LVM-Thin.md)
+* [ZFS](ZFS.md)
+* [Directory](Directory.md)
+* [Storage Overview](../../02-Datacenter/Storage/Storage-Overview.md)
+* [Storage Troubleshooting](../../02-Datacenter/Storage/Storage-Troubleshooting.md)
+* [VM Troubleshooting](../../04-Virtual-Machines/VM-Troubleshooting.md)
+* [Container Troubleshooting](../../05-Containers/Container-Troubleshooting.md)
 
 ---
 

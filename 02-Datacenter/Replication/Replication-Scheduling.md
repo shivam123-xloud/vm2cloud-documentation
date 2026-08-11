@@ -672,42 +672,24 @@ Use CLI verification only when the VM2Cloud UI does not provide enough informati
 
 # Related Documentation
 
-```text
-10-Replication/
-├── Replication-Overview.md
-├── Create-Replication-Job.md
-├── Edit-Replication-Job.md
-├── Delete-Replication-Job.md
-├── Replication-Scheduling.md
-├── Replication-Status.md
-└── Replication-Troubleshooting.md
-```
+Replication:
 
-Related documentation:
+- [Replication Overview](Replication-Overview.md)
+- [Create Replication Job](Create-Replication-Job.md)
+- [Edit Replication Job](Edit-Replication-Job.md)
+- [Delete Replication Job](Delete-Replication-Job.md)
+- [Replication Scheduling](Replication-Scheduling.md)
+- [Replication Status](Replication-Status.md)
+- [Replication Troubleshooting](Replication-Troubleshooting.md)
 
-```text
-03-Node-Management/
-└── System/
-    ├── Time.md
-    └── NTP.md
-```
+Time synchronization:
 
-```text
-09-High-Availability/
-├── HA-Overview.md
-├── HA-Resources.md
-├── Fencing.md
-├── Quorum.md
-└── HA-Troubleshooting.md
-```
+- [Time and Network Time (NTP)](../../03-Nodes/System/Time-and-NTP.md)
 
-```text
-08-Backup-and-Restore/
-├── Backup-Overview.md
-├── Backup-Jobs.md
-├── Backup-Scheduling.md
-└── Backup-Troubleshooting.md
-```
+Cluster and HA:
+
+- [Quorum](../Cluster/Quorum.md)
+- [HA Overview](../HA/HA-Overview.md)
 
 ---
 

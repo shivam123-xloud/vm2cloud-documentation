@@ -540,15 +540,15 @@ Check:
 
 # Related Documentation
 
-* [Disks Overview](01-Disks-Overview.md)
-* [View Disk Information](02-View-Disk-Information.md)
-* [Disk Management](03-Disk-Management.md)
-* [LVM](04-LVM.md)
-* [ZFS](06-ZFS.md)
-* [Directory](07-Directory.md)
-* [Disk Troubleshooting](08-Disk-Troubleshooting.md)
-* [Storage Overview](../06-Storage/Storage-Overview.md)
-* [Add Storage](../06-Storage/Add-Storage.md)
+* [Disks Overview](Disks-Overview.md)
+* [View Disk Information](View-Disk-Information.md)
+* [Disk Management](Disk-Management.md)
+* [LVM](LVM.md)
+* [ZFS](ZFS.md)
+* [Directory](Directory.md)
+* [Disk Troubleshooting](Disk-Troubleshooting.md)
+* [Storage Overview](../../02-Datacenter/Storage/Storage-Overview.md)
+* [Add Storage](../../02-Datacenter/Storage/Add-Storage.md)
 
 ---
 

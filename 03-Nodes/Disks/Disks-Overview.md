@@ -368,14 +368,14 @@ The underlying VM2Cloud/Proxmox documentation recommends using vendor-specific t
 
 # Related Documentation
 
-* [View Disk Information](02-View-Disk-Information.md)
-* [Disk Management](03-Disk-Management.md)
-* [LVM](04-LVM.md)
-* [LVM-Thin](05-LVM-Thin.md)
-* [ZFS](06-ZFS.md)
-* [Directory](07-Directory.md)
-* [Disk Troubleshooting](08-Disk-Troubleshooting.md)
-* [Storage Overview](../06-Storage/Storage-Overview.md)
+* [View Disk Information](View-Disk-Information.md)
+* [Disk Management](Disk-Management.md)
+* [LVM](LVM.md)
+* [LVM-Thin](LVM-Thin.md)
+* [ZFS](ZFS.md)
+* [Directory](Directory.md)
+* [Disk Troubleshooting](Disk-Troubleshooting.md)
+* [Storage Overview](../../02-Datacenter/Storage/Storage-Overview.md)
 
 ---
 

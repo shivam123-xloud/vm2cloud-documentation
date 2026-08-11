@@ -12,7 +12,7 @@ This condition is known as a split-brain situation.
 
 Fencing prevents this by ensuring that a failed or unreachable node is no longer able to run its HA resources before those resources are recovered elsewhere.
 
-VM2Cloud uses the underlying Proxmox VE HA architecture, including watchdog-based fencing, to provide this protection. The HA stack uses cluster-wide locking and watchdog functionality to ensure correct recovery of HA-managed guests from fenced nodes. :contentReference[oaicite:0]{index=0}
+VM2Cloud uses the underlying Proxmox VE HA architecture, including watchdog-based fencing, to provide this protection. The HA stack uses cluster-wide locking and watchdog functionality to ensure correct recovery of HA-managed guests from fenced nodes.
 
 ---
 

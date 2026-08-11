@@ -985,45 +985,27 @@ The underlying platform documentation recommends reliable cluster networking and
 
 # Related Documentation
 
-```text
-09-High-Availability/
-├── HA-Overview.md
-├── HA-Resources.md
-├── HA-Groups.md
-├── Node-Affinity.md
-├── Resource-Affinity.md
-├── Fencing.md
-├── Quorum.md
-└── HA-Troubleshooting.md
-```
+High Availability:
 
-Related cluster documentation:
+- [HA Overview](HA-Overview.md)
+- [HA Resources](HA-Resources.md)
+- [Node Affinity](Node-Affinity.md)
+- [Resource Affinity](Resource-Affinity.md)
+- [Fencing](Fencing.md)
+- [HA Troubleshooting](HA-Troubleshooting.md)
 
-```text
-17-Cluster-Management/
-├── Cluster-Overview.md
-├── Create-Cluster.md
-├── Join-Cluster.md
-├── Add-Node.md
-├── Remove-Node.md
-├── Cluster-Options.md
-├── Quorum.md
-├── Expected-Votes.md
-├── Corosync.md
-├── Cluster-Status.md
-└── Cluster-Troubleshooting.md
-```
+Cluster:
 
-Related documentation:
+- [Cluster Overview](../Cluster/Cluster-Overview.md)
+- [Quorum](../Cluster/Quorum.md)
+- [Cluster Troubleshooting](../Cluster/Cluster-Troubleshooting.md)
 
-```text
-03-Node-Management/Node-Troubleshooting.md
-06-Storage/Storage-Troubleshooting.md
-07-Networking/Network-Troubleshooting.md
-08-Backup-and-Restore/Backup-Troubleshooting.md
-20-Troubleshooting/General-Troubleshooting.md
-20-Troubleshooting/HA-Troubleshooting.md
-```
+Other troubleshooting:
+
+- [Node Troubleshooting](../../03-Nodes/Node-Troubleshooting.md)
+- [Storage Troubleshooting](../Storage/Storage-Troubleshooting.md)
+- [Network Troubleshooting](../../03-Nodes/System/Network/Network-Troubleshooting.md)
+- [Replication Troubleshooting](../Replication/Replication-Troubleshooting.md)
 
 ---
 

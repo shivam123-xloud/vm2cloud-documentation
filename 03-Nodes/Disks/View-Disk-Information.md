@@ -294,13 +294,13 @@ Do not wipe a disk merely because it appears in the disk list.
 
 # Related Documentation
 
-* [Disks Overview](01-Disks-Overview.md)
-* [Disk Management](03-Disk-Management.md)
-* [LVM](04-LVM.md)
-* [LVM-Thin](05-LVM-Thin.md)
-* [ZFS](06-ZFS.md)
-* [Directory](07-Directory.md)
-* [Disk Troubleshooting](08-Disk-Troubleshooting.md)
+* [Disks Overview](Disks-Overview.md)
+* [Disk Management](Disk-Management.md)
+* [LVM](LVM.md)
+* [LVM-Thin](LVM-Thin.md)
+* [ZFS](ZFS.md)
+* [Directory](Directory.md)
+* [Disk Troubleshooting](Disk-Troubleshooting.md)
 
 ---
 

@@ -537,38 +537,26 @@ Use the following checklist when verifying a replication job:
 
 # Related Documentation
 
-```text
-10-Replication/
-├── Replication-Overview.md
-├── Create-Replication-Job.md
-├── Edit-Replication-Job.md
-├── Delete-Replication-Job.md
-├── Replication-Scheduling.md
-├── Replication-Status.md
-└── Replication-Troubleshooting.md
-```
+Replication:
 
-Related documentation:
+- [Replication Overview](Replication-Overview.md)
+- [Create Replication Job](Create-Replication-Job.md)
+- [Edit Replication Job](Edit-Replication-Job.md)
+- [Delete Replication Job](Delete-Replication-Job.md)
+- [Replication Scheduling](Replication-Scheduling.md)
+- [Replication Status](Replication-Status.md)
+- [Replication Troubleshooting](Replication-Troubleshooting.md)
 
-```text
-08-Backup-and-Restore/
-├── Backup-Overview.md
-├── Backup-Verification.md
-└── Backup-Troubleshooting.md
-```
+Cluster:
 
-```text
-17-Cluster-Management/
-├── Cluster-Status.md
-├── Quorum.md
-└── Cluster-Troubleshooting.md
-```
+- [Cluster Overview](../Cluster/Cluster-Overview.md)
+- [Quorum](../Cluster/Quorum.md)
+- [Cluster Troubleshooting](../Cluster/Cluster-Troubleshooting.md)
 
-```text
-06-Storage/
-├── Storage-Overview.md
-└── Storage-Troubleshooting.md
-```
+Storage:
+
+- [Storage Overview](../Storage/Storage-Overview.md)
+- [Storage Troubleshooting](../Storage/Storage-Troubleshooting.md)
 
 ---
 
