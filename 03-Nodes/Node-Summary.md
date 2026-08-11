@@ -1,10 +1,12 @@
-# Node Overview
+# Node Summary
 
 ---
 
 ## Overview
 
-The **Node Overview** page provides a centralized view of the selected VM2Cloud node. It displays the current health, resource utilization, hardware information, storage, networking, and system details of the physical server.
+A node represents a physical server that is part of the VM2Cloud environment. Each node provides the compute, memory, storage, and networking resources required to run virtual machines and containers.
+
+The **Summary** page is the default view for a node. It displays the current health, resource utilization, hardware information, storage, networking, and system details of the physical server.
 
 This page helps administrators monitor the node and quickly identify any resource or system-related issues.
 
@@ -12,20 +14,22 @@ This page helps administrators monitor the node and quickly identify any resourc
 
 ## When to Use
 
-Open the **Node Overview** page when you need to:
+Open the node **Summary** page when you need to:
 
+* View information about a physical server.
 * Monitor node health.
 * Check CPU and memory utilization.
 * Review storage capacity.
 * View network information.
 * Verify system information.
 * Monitor resource usage before deploying workloads.
+* Locate the administrative options available for the node.
 
 ---
 
 ## Prerequisites
 
-Before viewing the Node Overview, ensure that:
+Before viewing node information, ensure that:
 
 * You have administrator privileges.
 * The node is online.
@@ -35,31 +39,51 @@ Before viewing the Node Overview, ensure that:
 
 # Procedure
 
-## Step 1: Open the Node
+## Step 1: Log in to VM2Cloud
 
-1. Log in to the VM2Cloud web interface.
-2. Expand **Datacenter**.
-3. Select the required node.
-
----
-
-
-**Open Node**
-
-
-![Open Node](images/expand-datacenter.png)
-
+1. Open the VM2Cloud web interface.
+2. Sign in using an administrator account.
 
 ---
 
-## Step 2: Open the Summary Page
+**VM2Cloud Login**
+
+![VM2Cloud Login](images/log-in-page.png)
+
+---
+
+## Step 2: Expand Datacenter
+
+1. In the left navigation pane, locate **Datacenter**.
+2. Click the expand icon next to **Datacenter**.
+
+---
+
+**Datacenter Navigation**
+
+![Datacenter Navigation](images/expand-datacenter.png)
+
+---
+
+## Step 3: Select a Node
+
+1. Under **Datacenter**, click the node you want to manage.
+2. The selected node will open in the main workspace.
+
+---
+
+**Select Node**
+
+![Select Node](images/select-node.png)
+
+---
+
+## Step 4: Open the Summary Page
 
 1. From the node navigation menu, click **Summary**.
 2. The Summary page opens.
 
 ---
-
-
 
 **Summary Page**
 
@@ -67,7 +91,36 @@ Before viewing the Node Overview, ensure that:
 
 ---
 
-## Summary
+# Node Navigation Menu
+
+After selecting the node, the following management options are available from the left menu.
+
+* Summary
+* Notes
+* Shell
+* System
+* Updates
+* Repositories
+* Firewall
+* Disks
+* Ceph (if configured)
+* Task History
+* Subscription
+* Local Storage
+* Virtual Machines
+* Containers
+
+> **Note:** The available options may vary depending on your VM2Cloud configuration and installed services.
+
+---
+
+**Node Navigation Menu**
+
+![Node Navigation Menu](images/navigation-menu.png)
+
+---
+
+# Summary Page Contents
 
 The **Summary** page provides an overview of the node's current status and resource utilization.
 
@@ -85,7 +138,6 @@ Information typically displayed includes:
 * Running Containers
 
 ---
-
 
 **Node Summary**
 
@@ -109,10 +161,8 @@ Information may include:
 
 ---
 
-
 **CPU Information**
 
-![CPU Information](images/node-overview.png)
 ![CPU Information](images/cpu-usage.png)
 
 ---
@@ -131,11 +181,7 @@ Information may include:
 
 ---
 
-
-
 **Memory Information**
-
-![Memory Information](images/node-overview.png)
 
 ![Memory Information](images/memory-usage.png)
 
@@ -153,13 +199,6 @@ Information may include:
 * Used Space
 * Available Space
 * Storage Status
-
----
-
-
-**Storage Information**
-
-![Storage Information](images/node-overview.png)
 
 ---
 
@@ -200,18 +239,13 @@ Information may include:
 
 ---
 
-
-
-**System Information**
-
-![System Information](images/node-overview.png)
-
----
-
 # Verification
 
 Verify the following:
 
+* The selected node opens successfully.
+* The node name is displayed correctly.
+* The node navigation menu is visible.
 * The Summary page loads successfully.
 * CPU and memory graphs are displayed.
 * Storage information is available.
@@ -225,6 +259,9 @@ Verify the following:
 
 | Issue                               | Resolution                                                               |
 | ----------------------------------- | ------------------------------------------------------------------------ |
+| Node is not visible                 | Verify that the node has been added to the VM2Cloud environment and is online. |
+| Unable to access the node           | Confirm you have the required administrator permissions.                 |
+| Node shows Offline                  | Verify network connectivity and ensure the server is powered on.         |
 | Summary page does not load          | Refresh the page and verify the node is online.                          |
 | Resource graphs are missing         | Wait a few moments for monitoring data to update.                        |
 | Storage information is unavailable  | Verify the storage is configured correctly and connected to the node.    |
@@ -235,4 +272,4 @@ Verify the following:
 
 # Summary
 
-The Node Overview page provides a comprehensive view of the selected VM2Cloud node. It enables administrators to monitor system health, review hardware resources, track storage and network utilization, and verify the operational status of the server from a single location.
+The node **Summary** page is the primary interface for monitoring an individual VM2Cloud server. From this page, administrators can review system health, hardware resources, storage and network utilization, and the operational status of the server from a single location. The node navigation menu provides access to the remaining node-level tasks, including configuration, maintenance, and the guests hosted on the node.

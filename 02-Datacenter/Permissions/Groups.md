@@ -1,4 +1,4 @@
-# Group Management
+# Groups
 
 ---
 
@@ -12,7 +12,7 @@ Users inherit the permissions assigned to the groups they belong to. This approa
 
 ## When to Use
 
-Use Group Management to:
+Use groups to:
 
 - Organize users by department or team.
 - Assign the same permissions to multiple users.
@@ -32,7 +32,7 @@ Before managing groups, ensure that:
 
 ---
 
-# Access Group Management
+# Access the Groups Page
 
 1. Log in to the VM2Cloud web interface.
 2. Select **Datacenter**.
@@ -200,7 +200,7 @@ Removing a user from a group immediately removes the permissions inherited from 
 
 # Delete a Group
 
-> **Warning:** Deleting a group removes the group and its memberships. Users will no longer inherit permissions assigned to the deleted group.
+> **Warning:** Deleting a group removes the group, its memberships, and any permissions assigned to it. Users who were members of the group will lose the permissions inherited from it.
 
 ## Steps
 
@@ -248,4 +248,4 @@ Verify the following:
 
 # Summary
 
-Group Management simplifies access control by allowing administrators to manage permissions for multiple users through a single group. By creating groups, adding or removing members, updating group information, and deleting unused groups, administrators can maintain a secure and well-organized VM2Cloud environment.
+Groups simplify access control by allowing administrators to manage permissions for multiple users through a single group. By creating groups, adding or removing members, updating group information, and deleting unused groups, administrators can maintain a secure and well-organized VM2Cloud environment.

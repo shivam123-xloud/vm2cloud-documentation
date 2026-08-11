@@ -23,6 +23,22 @@ The VM2Cloud cluster filesystem becomes read-only when a node loses quorum. This
 
 ---
 
+## Split-Brain Protection
+
+Split-brain occurs when two groups of cluster nodes lose communication with each other and both believe they are the active cluster.
+
+Quorum prevents this condition by allowing only the group with sufficient votes to continue making cluster-wide changes. The group without a majority is placed into a read-only state and cannot modify cluster configuration.
+
+Quorum therefore helps:
+
+* Maintain cluster consistency.
+* Prevent split-brain situations.
+* Protect shared cluster configuration.
+* Ensure only a healthy cluster can perform administrative operations.
+* Maintain reliable communication between cluster nodes.
+
+---
+
 ## When to Use
 
 Use quorum information when:
@@ -691,44 +707,25 @@ Before making any quorum-related change:
 
 # Related Documentation
 
-```text
-09-High-Availability/
-├── HA-Overview.md
-├── HA-Resources.md
-├── HA-Groups.md
-├── Node-Affinity.md
-├── Resource-Affinity.md
-├── Fencing.md
-├── Quorum.md
-└── HA-Troubleshooting.md
-```
+Cluster:
 
-Related cluster documentation:
+- [Cluster Overview](Cluster-Overview.md)
+- [Create Cluster](Create-Cluster.md)
+- [Join Node to Cluster](Join-Node-to-Cluster.md)
+- [Remove Node from Cluster](Remove-Node-from-Cluster.md)
+- [Cluster File System](Cluster-File-System.md)
+- [Cluster Troubleshooting](Cluster-Troubleshooting.md)
 
-```text
-17-Cluster-Management/
-├── Cluster-Overview.md
-├── Create-Cluster.md
-├── Join-Cluster.md
-├── Add-Node.md
-├── Remove-Node.md
-├── Cluster-Options.md
-├── Quorum.md
-├── Expected-Votes.md
-├── Corosync.md
-├── Cluster-Status.md
-└── Cluster-Troubleshooting.md
-```
+High Availability:
 
-Related troubleshooting documentation:
+- [HA Overview](../HA/HA-Overview.md)
+- [Fencing](../HA/Fencing.md)
+- [HA Troubleshooting](../HA/HA-Troubleshooting.md)
 
-```text
-20-Troubleshooting/
-├── Cluster-Troubleshooting.md
-├── HA-Troubleshooting.md
-├── Network-Troubleshooting.md
-└── Node-Troubleshooting.md
-```
+Other troubleshooting:
+
+- [Network Troubleshooting](../../03-Nodes/System/Network/Network-Troubleshooting.md)
+- [Node Troubleshooting](../../03-Nodes/Node-Troubleshooting.md)
 
 ---
 
