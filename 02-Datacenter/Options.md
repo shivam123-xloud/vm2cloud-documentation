@@ -1,4 +1,4 @@
-# Cluster Options
+# Datacenter Options
 
 ---
 

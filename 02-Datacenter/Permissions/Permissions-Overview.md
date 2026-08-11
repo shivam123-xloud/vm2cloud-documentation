@@ -1,4 +1,4 @@
-# User and Permission Overview
+# Permissions Overview
 
 ---
 

@@ -1,4 +1,4 @@
-# Dashboard Troubleshooting
+# Interface Troubleshooting
 
 ---
 
