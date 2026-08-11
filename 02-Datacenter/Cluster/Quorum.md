@@ -17,7 +17,7 @@ Quorum is important for:
 * Preventing conflicting cluster states.
 * Protecting against split-brain conditions.
 
-VM2Cloud uses the underlying Proxmox VE cluster architecture, where cluster communication and quorum are provided through Corosync.
+VM2Cloud provides cluster communication and quorum through Corosync.
 
 The VM2Cloud cluster filesystem becomes read-only when a node loses quorum. This protects cluster configuration from unsafe changes while the cluster does not have a valid majority.
 
@@ -81,7 +81,10 @@ For production clusters:
 
 1. Log in to the VM2Cloud web interface.
 2. Select **Datacenter** from the left navigation tree.
-3. Open the cluster status or cluster information view available in the installed VM2Cloud version.
+3. Open the cluster status view.
+
+> **Verify:** Confirm whether the quorum state is shown on Datacenter → Cluster directly
+> or on a separate cluster status view.
 4. Review the cluster members.
 5. Review the cluster health.
 6. Check whether the cluster is quorate.

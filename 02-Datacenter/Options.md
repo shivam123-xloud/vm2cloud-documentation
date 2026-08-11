@@ -96,7 +96,8 @@ Changes are applied to the cluster configuration and synchronized across all nod
 
 # Available Cluster Options
 
-The available options may vary depending on the VM2Cloud version.
+> **Verify:** Capture the full list of settings on the Datacenter → Options panel and
+> document each one.
 
 Typical cluster options include:
 

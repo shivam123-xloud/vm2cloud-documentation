@@ -8,7 +8,7 @@ Node affinity controls where High Availability (HA) resources should run within 
 
 Node-affinity rules allow administrators to define preferred or restricted nodes for HA-managed virtual machines and containers.
 
-Node affinity is the current placement mechanism for HA resources in recent VM2Cloud versions based on the underlying Proxmox VE HA implementation.
+Node affinity is the current placement mechanism for HA resources in VM2Cloud.
 
 Node affinity controls resource placement only. It does not provide:
 
@@ -61,7 +61,10 @@ Before configuring node affinity:
 1. Log in to the VM2Cloud web interface.
 2. Select **Datacenter** from the left navigation tree.
 3. Select **HA**.
-4. Open the HA placement configuration available in the installed VM2Cloud version.
+4. Open the HA placement configuration.
+
+> **Verify:** Confirm the exact menu label for the node-affinity placement configuration
+> under Datacenter → HA.
 5. Review the existing node-affinity rules.
 
 ### Screenshot 1

@@ -10,8 +10,6 @@ Administrators can use the available disk-management actions to identify disks, 
 
 Disk-management operations can affect the contents of a physical disk. Operations such as wiping a disk are destructive and can permanently remove existing data and storage metadata.
 
-VM2Cloud uses the underlying Proxmox VE disk-management functionality for these operations.
-
 ---
 
 ## When to Use

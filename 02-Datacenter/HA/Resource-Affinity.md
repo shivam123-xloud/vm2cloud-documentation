@@ -18,7 +18,7 @@ Resource affinity controls HA placement. It does not provide:
 - Application-level clustering.
 - Guest operating system failover.
 
-VM2Cloud uses the underlying Proxmox VE HA rule mechanism for resource placement.
+VM2Cloud places HA resources using HA rules.
 
 ---
 

@@ -126,17 +126,23 @@ The available actions may vary depending on the virtual machine status and your 
 
 A virtual machine is managed through multiple tabs. Common tabs include:
 
-| Tab         | Description                                                            |
-| ----------- | ---------------------------------------------------------------------- |
-| Summary     | Displays the current status and resource usage of the virtual machine. |
-| Console     | Opens the virtual machine console.                                     |
-| Hardware    | Displays the virtual hardware assigned to the virtual machine.         |
-| Network     | Displays the configured virtual network interfaces.                    |
-| Snapshots   | Used to create and manage snapshots.                                   |
-| Backup      | Displays backup information and allows backup-related operations.      |
-| Permissions | Displays user and permission settings for the virtual machine.         |
+| Tab | Description |
+| --- | ----------- |
+| Summary | Status, HA state, node, CPU and memory usage, bootdisk size, IP addresses, and the Notes panel. |
+| Console | Opens the virtual machine console. |
+| Hardware | Virtual hardware assigned to the machine, including disks, CPU, memory, and network devices. |
+| Cloud-Init | Cloud-Init configuration, when a Cloud-Init drive is attached. |
+| Options | Per-machine settings such as boot order, start at boot, and OS type. |
+| Task History | Operations previously run against this virtual machine. |
+| Monitor | Direct monitor interface to the running machine. |
+| Backup | Backup information and backup-related operations. |
+| Replication | Replication jobs configured for this machine. |
+| Snapshots | Create and manage snapshots. |
+| Firewall | Firewall rules, options, alias, and IPSet configuration for this machine. |
+| Permissions | User and permission settings for this machine. |
 
-> **Note:** The available tabs may vary depending on your VM2Cloud version and configuration.
+> **Note:** Network interfaces are configured under **Hardware**, not on a separate Network tab.
+> **Replication** requires a cluster, and **Cloud-Init** appears only when a Cloud-Init drive is attached.
 
 ---
 

@@ -165,7 +165,7 @@ Fencing is an important part of preventing split-brain situations.
 
 An HA-managed resource can have different operational states.
 
-The exact state displayed by VM2Cloud depends on the installed version and current HA implementation.
+> **Verify:** Confirm the exact set of HA resource states shown on the Datacenter → HA panel.
 
 Common concepts include:
 
@@ -202,7 +202,8 @@ Confirm
 HA begins managing the VM
 ```
 
-The exact button and menu names must be verified against the installed VM2Cloud UI before publishing screenshots or exact UI labels.
+> **Verify:** Confirm the exact button and menu labels for adding a guest to HA on the
+> Datacenter → HA panel.
 
 ---
 
@@ -277,7 +278,7 @@ VM 100 is started on another eligible node
 
 The exact recovery time depends on the failure detection and recovery process.
 
-The official Proxmox documentation describes HA nodes reporting their presence to the cluster and, after a failed node does not return, recovering HA guests on the remaining cluster nodes.
+HA nodes continuously report their presence to the cluster. When a failed node does not return, HA recovers its guests on the remaining cluster nodes.
 
 ---
 

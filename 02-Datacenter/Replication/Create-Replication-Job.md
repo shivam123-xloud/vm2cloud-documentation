@@ -10,8 +10,6 @@ The first synchronization transfers the required guest data to the target node. 
 
 Replication is useful when a guest needs a synchronized copy on another cluster node for faster recovery or migration.
 
-VM2Cloud uses the underlying Proxmox VE storage replication mechanism.
-
 ---
 
 ## When to Use

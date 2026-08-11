@@ -10,8 +10,6 @@ Disk management is performed at the **node level**. From the node's **Disks** se
 
 Physical disks can be used as the foundation for different storage technologies, including LVM, LVM-Thin, ZFS, and directory-based storage. The available options depend on the disk, existing configuration, and underlying storage technology.
 
-VM2Cloud uses the underlying Proxmox VE disk-management functionality for these operations. The official administration guide documents local disk management, SMART monitoring, LVM, and other storage technologies.
-
 ---
 
 ## When to Use
@@ -186,7 +184,7 @@ A disk that contains existing data must not be treated as an unused disk.
 
 VM2Cloud's underlying platform supports SMART-based disk monitoring for local hard disks.
 
-SMART can provide information about the health and condition of supported disks. The underlying Proxmox documentation states that `smartmontools` is installed and that the `smartd` service monitors supported devices.
+SMART can provide information about the health and condition of supported disks. VM2Cloud installs `smartmontools`, and the `smartd` service monitors supported devices.
 
 Disk health should be considered before placing important production workloads on a physical disk.
 
@@ -347,7 +345,7 @@ If disks are behind a hardware RAID controller, the operating system may not exp
 
 In such environments, use the RAID controller's management tools to inspect the physical disks and RAID array.
 
-The underlying VM2Cloud/Proxmox documentation recommends using vendor-specific tools for disks managed through hardware RAID controllers.
+For disks presented through a hardware RAID controller, use the vendor-specific tools supplied with the controller. VM2Cloud cannot inspect the individual disks behind the controller.
 
 ---
 

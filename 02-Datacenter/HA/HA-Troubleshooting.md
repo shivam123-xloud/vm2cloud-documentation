@@ -20,7 +20,7 @@ HA problems can be caused by:
 * Cluster configuration problems.
 * VM or container configuration problems.
 
-VM2Cloud uses the underlying Proxmox VE HA architecture. HA depends on a healthy cluster, reliable Corosync communication, and quorum. The cluster switches to read-only mode when quorum is lost.
+HA depends on a healthy cluster, reliable Corosync communication, and quorum. The cluster switches to read-only mode when quorum is lost.
 
 ---
 

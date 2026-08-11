@@ -40,7 +40,7 @@ Before uploading content, ensure that:
 1. Log in to the VM2Cloud web interface.
 2. Expand the required node.
 3. Select the storage where the ISO will be uploaded (for example, **local**).
-4. Click **ISO Images** or **Content**, depending on your VM2Cloud version.
+4. Click **ISO Images**.
 
 ---
 

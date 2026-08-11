@@ -10,7 +10,7 @@ Unlike standard LVM, LVM-Thin allocates physical storage blocks as data is writt
 
 LVM-Thin also provides efficient support for storage-level snapshots and clones.
 
-VM2Cloud uses the underlying Proxmox VE LVM-Thin storage backend. The backend uses an existing LVM volume group and an LVM thin pool as its storage source.
+The VM2Cloud LVM-Thin storage backend uses an existing LVM volume group and an LVM thin pool as its storage source.
 
 ---
 

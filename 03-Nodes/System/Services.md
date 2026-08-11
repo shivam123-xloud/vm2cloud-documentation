@@ -48,7 +48,7 @@ Depending on your deployment, the Services page may include services such as:
 | chronyd | Synchronizes the system clock using Network Time Protocol (NTP). |
 | networking | Manages network interfaces and bridges. |
 
-> The list of available services may vary depending on the VM2Cloud version and installed components.
+> The list of available services depends on which components are installed on the node.
 
 ---
 

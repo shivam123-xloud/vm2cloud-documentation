@@ -13,7 +13,7 @@ Common settings that may be changed include:
 - Target node
 - Replication schedule
 - Bandwidth limit
-- Job state or related replication options available in the installed VM2Cloud version
+- Job state (enabled or disabled)
 
 Replication changes affect how future synchronization jobs are performed. Existing replicated data is not automatically replaced simply because a configuration value is edited.
 

@@ -123,7 +123,10 @@ Typical options include:
 # Remove a Hard Disk
 
 1. Select the required disk.
-2. Click **Detach** or **Remove**, depending on your VM2Cloud configuration.
+2. Click **Detach**.
+
+> **Verify:** Confirm whether the button is labelled **Detach** or **Remove** for a hard disk
+> on the VM → Hardware panel.
 3. Confirm the operation.
 
 > **Warning:** Removing a virtual disk may permanently delete its data.

@@ -1,4 +1,4 @@
-# Page Title
+# Feature Name
 
 <!--
 Copy this file to start a new page.
@@ -6,27 +6,34 @@ Copy this file to start a new page.
 Rules:
 - The H1 must match the UI label of the panel being documented.
 - Place the file in the folder matching its location in the interface.
-- Delete sections that genuinely do not apply, but keep the order of
-  the ones you keep.
+- Keep the section order below.
+- "Configuration / Options" and "Best Practices" are standard. Omit one only when the
+  page genuinely has nothing real to put in it. Never leave an empty heading.
 - Separate every block with a horizontal rule (---).
+- Never write "Proxmox".
+- Never guess a UI label. If you cannot verify it, use a > **Verify:** marker.
 -->
 
 ---
 
 ## Overview
 
-What this feature is, in two or three short paragraphs. Explain what the panel
-does and why an administrator would open it. Do not describe the steps here.
+What this feature is, and what it does. Explain the concept, not the clicks.
+
+Where the feature matters technically, explain how it actually works — normal
+operation, what happens on failure, what it depends on, and what it explicitly does
+*not* do. See `02-Datacenter/HA/HA-Overview.md` for the reference standard.
 
 ---
 
 ## When to Use
 
-Use *[feature]* to:
+Use *[feature]* when:
 
 * A situation where this page applies.
 * Another situation.
-* Another situation.
+
+State when **not** to use it if that prevents a mistake.
 
 ---
 
@@ -42,7 +49,14 @@ Before *[performing this task]*, ensure that:
 
 # Procedure
 
-## Step 1: Do the First Thing
+Every workflow walks the complete path:
+
+```
+Open location → Select resource → Click button → Configure fields
+→ Review options → Confirm → Verify result
+```
+
+## Step 1: Open the Panel
 
 1. Log in to the VM2Cloud web interface.
 2. Select **Datacenter**.
@@ -56,14 +70,20 @@ Before *[performing this task]*, ensure that:
 
 ---
 
-## Step 2: Do the Next Thing
+## Step 2: Configure the Settings
 
-1. Numbered action.
-2. Numbered action.
+Name every field and say what it does. Never write "Configure the required options."
+
+1. In **[Field Name]**, enter […]. This controls […].
+2. Select **[Option]**. Use this when […].
 
 > **Note:** Use a note for information that prevents a mistake.
 
-> **Warning:** Use a warning for anything destructive or irreversible.
+> **Warning:** Use a warning for any operation that may permanently affect or delete
+> data. State exactly what is lost.
+
+> **Verify:** Use this marker when a UI label, field, or option could not be confirmed
+> against the real interface. Say precisely what needs checking. Never guess instead.
 
 ---
 
@@ -75,6 +95,25 @@ Before *[performing this task]*, ensure that:
 
 ---
 
+## Step 3: Confirm and Verify
+
+1. Review the configuration.
+2. Click **[Confirm button]**.
+3. Wait for the task to complete.
+
+---
+
+# Configuration / Options
+
+Every field on the panel, and what each one does.
+
+| Option | Description |
+|--------|-------------|
+| **Field name** | What it controls, valid values, and the default. |
+| **Another field** | What it controls, and when to change it. |
+
+---
+
 # Verification
 
 Verify the following:
@@ -82,6 +121,12 @@ Verify the following:
 * An observable result that confirms success.
 * Another observable result.
 * The task completed without errors.
+
+Include a CLI verification command only where it genuinely helps:
+
+```bash
+pvecm status
+```
 
 ---
 
@@ -94,6 +139,14 @@ Verify the following:
 
 ---
 
+# Best Practices
+
+- Guidance that prevents problems rather than fixing them.
+- Production considerations.
+- What to avoid, and why.
+
+---
+
 # Related Documentation
 
 - [Another Page](Another-Page.md)
@@ -103,5 +156,5 @@ Verify the following:
 
 # Summary
 
-One paragraph restating what the reader accomplished and what they can do next.
-Do not introduce new instructions here.
+One paragraph restating what the reader accomplished and what they can do next. Do not
+introduce new instructions here.

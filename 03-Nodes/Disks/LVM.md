@@ -259,7 +259,7 @@ Volume Group
 
 LVM is a **block-level storage** backend.
 
-The underlying VM2Cloud/Proxmox storage documentation specifies the following characteristics for LVM:
+LVM storage in VM2Cloud has the following characteristics:
 
 | Feature                    | LVM                                                       |
 | -------------------------- | --------------------------------------------------------- |
@@ -304,7 +304,7 @@ Shared Storage
 
 This requires careful cluster-wide storage design and appropriate access from the participating nodes.
 
-The underlying VM2Cloud/Proxmox storage documentation describes LVM on iSCSI as a way to obtain managed storage allocation on a shared LUN.
+LVM on iSCSI provides managed storage allocation on a shared LUN.
 
 ---
 

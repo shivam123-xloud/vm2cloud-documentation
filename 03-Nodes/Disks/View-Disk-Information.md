@@ -10,7 +10,7 @@ Administrators can use this page to inspect the disks detected by the node befor
 
 Disk information is useful when identifying available drives, checking disk capacity and status, and determining which disks are available for operations such as LVM, LVM-Thin, or ZFS configuration.
 
-VM2Cloud uses the underlying Proxmox VE disk-management functionality for this information. The node-level **Disks** page provides an overview of attached disks and disk-management capabilities.
+The node-level **Disks** page provides an overview of attached disks and the disk-management capabilities available for them.
 
 ---
 
@@ -109,7 +109,7 @@ Do not select a disk for a destructive operation until its identity has been con
 
 # Configuration / Options
 
-The exact information displayed can vary depending on the VM2Cloud/underlying Proxmox VE version and the detected hardware.
+The exact information displayed depends on the detected hardware and what the disk reports.
 
 When reviewing a disk, pay attention to the following information where available.
 

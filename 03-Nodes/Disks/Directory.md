@@ -12,8 +12,6 @@ The directory can be located on:
 * A locally mounted filesystem.
 * A filesystem mounted through standard Linux mount configuration.
 
-VM2Cloud uses the underlying Proxmox VE directory storage backend.
-
 Because directory storage operates at the file level, it can support a wide range of content types. However, the directory backend itself does not provide native storage-level snapshots.
 
 ---

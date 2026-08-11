@@ -185,7 +185,8 @@ The following roles are commonly available in VM2Cloud.
 | Datastore Administrator | Manages storage resources. |
 | Backup Operator | Performs backup and restore operations. |
 
-> **Note:** The available predefined roles may vary depending on the VM2Cloud version.
+> **Verify:** Capture the full list of predefined roles from Datacenter → Permissions → Roles
+> and document the privileges each one grants.
 
 ---
 

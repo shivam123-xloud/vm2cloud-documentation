@@ -64,7 +64,7 @@ Depending on your VM2Cloud deployment, one or more of the following authenticati
 | WebAuthn | Uses a hardware security key or a supported biometric authentication device. |
 | Recovery Keys | Allows account recovery if the primary authentication device is unavailable. |
 
-> **Note:** The available authentication methods may vary depending on the VM2Cloud version and system configuration.
+> **Verify:** Capture the full list of second-factor methods offered on the Two Factor panel.
 
 ---
 

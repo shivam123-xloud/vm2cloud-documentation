@@ -127,17 +127,23 @@ A container is managed through multiple tabs.
 
 Common tabs include:
 
-| Tab         | Description                                                       |
-| ----------- | ----------------------------------------------------------------- |
-| Summary     | Displays the current status and resource usage of the container.  |
-| Console     | Opens the container console.                                      |
-| Resources   | Displays CPU, memory, and storage configuration.                  |
-| Network     | Displays the configured network interface.                        |
-| Snapshots   | Used to create and manage snapshots.                              |
-| Backup      | Displays backup information and allows backup-related operations. |
-| Permissions | Displays user and permission settings for the container.          |
+| Tab | Description |
+| --- | ----------- |
+| Summary | Status, node, CPU and memory usage, and the Notes panel. |
+| Console | Opens the container console. |
+| Resources | CPU, memory, swap, root disk, and mount point configuration. |
+| Network | Configured network interfaces. |
+| DNS | DNS domain and nameserver configuration for the container. |
+| Options | Per-container settings such as start at boot, OS type, and console mode. |
+| Task History | Operations previously run against this container. |
+| Backup | Backup information and backup-related operations. |
+| Replication | Replication jobs configured for this container. |
+| Snapshots | Create and manage snapshots. |
+| Firewall | Firewall rules, options, alias, and IPSet configuration for this container. |
+| Permissions | User and permission settings for this container. |
 
-> **Note:** The available tabs may vary depending on your VM2Cloud version and configuration.
+> **Note:** **Replication** requires a cluster. Unlike virtual machines, containers configure
+> networking on their own **Network** tab rather than under Resources.
 
 ---
 
