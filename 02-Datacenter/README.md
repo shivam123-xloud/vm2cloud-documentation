@@ -11,6 +11,7 @@ Corresponds to selecting **Datacenter** at the top of the resource tree.
 | Page | Covers |
 |---|---|
 | [Datacenter Summary](Datacenter-Summary.md) | Health status, guest counts, and resource widgets |
+| [Datacenter Notes](Notes.md) | Environment-wide documentation |
 | [Datacenter Options](Options.md) | Cluster-wide defaults and settings |
 
 ---
@@ -25,7 +26,7 @@ Forming and maintaining the cluster itself.
 
 Defining where disks, ISO images, templates, and backups are kept.
 
-[Storage Overview](Storage/Storage-Overview.md) · [Storage Types](Storage/Storage-Types.md) · [Add Storage](Storage/Add-Storage.md) · [Manage Storage](Storage/Manage-Storage.md) · [Upload Content](Storage/Upload-Content.md) · [Storage Troubleshooting](Storage/Storage-Troubleshooting.md)
+[Storage Overview](Storage/Storage-Overview.md) · [Storage Types](Storage/Storage-Types.md) · [Add Storage](Storage/Add-Storage.md) · [Manage Storage](Storage/Manage-Storage.md) · [Upload Content](Storage/Upload-Content.md) · [Content Browser](Storage/Storage-Content-Browser.md) · [Import](Storage/Storage-Import.md) · [Permissions](Storage/Storage-Permissions.md) · [Storage Troubleshooting](Storage/Storage-Troubleshooting.md)
 
 ## Backup
 
@@ -69,8 +70,6 @@ Cluster-wide filtering and the reusable objects used at every level.
 
 Not yet written:
 
-- `Notes.md`
-- `Storage/Storage-Content-Browser.md`, `Storage/Storage-Import.md`, `Storage/Storage-Permissions.md`
 - `SDN/` — `SDN-Overview.md`, `Zones.md`, `VNets.md`
 - `Ceph/` — `Ceph-Overview.md`, `Ceph-Monitors-and-OSDs.md`, `Ceph-Pools.md`
 - `ACME-Certificates.md`, `Notifications.md`, `Metric-Server.md`, `Support.md`

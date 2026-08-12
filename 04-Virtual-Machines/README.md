@@ -11,6 +11,7 @@ Corresponds to selecting a VM in the resource tree. For lightweight Linux guests
 | Page | Covers |
 |---|---|
 | [Virtual Machine Overview](Virtual-Machine-Overview.md) | What a VM is, the tabs available, and how VMs fit into the environment |
+| [VM Summary](VM-Summary.md) | The default view — status, usage, HA state, IPs, Notes |
 | [Create Virtual Machine](Create-Virtual-Machine.md) | The full creation wizard: General, OS, System, Disks, CPU, Memory, Network, Confirm |
 | [Manage Virtual Machine](Manage-Virtual-Machine.md) | Start, stop, shutdown, reboot, pause, and resume |
 | [VM Console](VM-Console.md) | Connecting to the guest display, toolbar, and special keys |
@@ -23,6 +24,11 @@ Corresponds to selecting a VM in the resource tree. For lightweight Linux guests
 | [Migrate Virtual Machine](Migrate-Virtual-Machine.md) | Moving a VM to another node |
 | [Clone Virtual Machine](Clone-Virtual-Machine.md) | Full and linked clones |
 | [Delete Virtual Machine](Delete-Virtual-Machine.md) | Permanently removing a VM |
+| [VM Task History](VM-Task-History.md) | Operations performed on this machine, and their output |
+| [VM Monitor](VM-Monitor.md) | Low-level hypervisor command interface, for diagnostics |
+| [VM Replication](VM-Replication.md) | Replication jobs for this machine |
+| [Convert to Template](Convert-to-Template.md) | Turning a machine into a read-only base image |
+| [VM Permissions](VM-Permissions.md) | Who can access this machine |
 | [VM Troubleshooting](VM-Troubleshooting.md) | VM will not start, console problems, performance, disk and network issues |
 
 ---
@@ -37,4 +43,4 @@ Corresponds to selecting a VM in the resource tree. For lightweight Linux guests
 
 ## Planned Pages
 
-Not yet written: `VM-Summary.md`, `VM-Notes.md`, `VM-Task-History.md`, `VM-Monitor.md`, `VM-Replication.md`, `Convert-to-Template.md`, `VM-Permissions.md`.
+Every virtual machine tab is now documented. The Notes panel is covered by [VM Summary](VM-Summary.md).

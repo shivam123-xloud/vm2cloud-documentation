@@ -45,7 +45,7 @@ Menu order confirmed: Search · Summary · Notes · Cluster · Ceph · Options �
 |---|---|---|
 | Search | ✅ | [Search](01-Getting-Started/Search.md) — Datacenter Search Panel section |
 | Summary | ✅ | [Datacenter Summary](02-Datacenter/Datacenter-Summary.md) |
-| Notes | ❌ | `02-Datacenter/Notes.md` |
+| Notes | ✅ | [Datacenter Notes](02-Datacenter/Notes.md) |
 | Cluster | ✅ | [Cluster Overview](02-Datacenter/Cluster/Cluster-Overview.md) + 8 pages |
 | Ceph | ❌ | `02-Datacenter/Ceph/` — 3 pages |
 | Options | ✅ | [Datacenter Options](02-Datacenter/Options.md) |
@@ -75,7 +75,7 @@ Menu confirmed from `03-Nodes/images/navigation-menu.png`: Search · Summary · 
 |---|---|---|
 | Search | ⚠️ | Covered in [Search](01-Getting-Started/Search.md) |
 | Summary | ✅ | [Node Summary](03-Nodes/Node-Summary.md) |
-| Notes | ❌ | `03-Nodes/Node-Notes.md` |
+| Notes | ✅ | [Node Notes](03-Nodes/Node-Notes.md) |
 | Shell | ✅ | [Shell](03-Nodes/Shell.md) |
 | System → Network | ✅ | [Network Overview](03-Nodes/System/Network/Network-Overview.md) + 5 pages |
 | System → Certificates | ✅ | [Certificates](03-Nodes/System/Certificates.md) |
@@ -90,7 +90,7 @@ Menu confirmed from `03-Nodes/images/navigation-menu.png`: Search · Summary · 
 | Firewall | ✅ | [Node Firewall](03-Nodes/Node-Firewall.md) |
 | Disks | ✅ | [Disks Overview](03-Nodes/Disks/Disks-Overview.md) + 7 pages |
 | Ceph | ❌ | `03-Nodes/Node-Ceph.md` |
-| Replication | ❌ | `03-Nodes/Node-Replication.md` — node-level replication view |
+| Replication | ✅ | [Node Replication](03-Nodes/Node-Replication.md) |
 | Task History | ✅ | [Task History](03-Nodes/Task-History.md) |
 | Subscription | ✅ | [Subscription](03-Nodes/Subscription.md) |
 | Reboot / Shutdown | ✅ | [Reboot Node](03-Nodes/Reboot-Node.md), [Shutdown Node](03-Nodes/Shutdown-Node.md) |
@@ -101,22 +101,22 @@ Tabs confirmed from `04-Virtual-Machines/images/vm-tabs.png`.
 
 | Tab | Status | Page |
 |---|---|---|
-| Summary | ❌ | `04-Virtual-Machines/VM-Summary.md` |
+| Summary | ✅ | [VM Summary](04-Virtual-Machines/VM-Summary.md) |
 | Console | ✅ | [VM Console](04-Virtual-Machines/VM-Console.md) |
 | Hardware | ✅ | [Manage VM Hardware](04-Virtual-Machines/Manage-VM-Hardware.md) |
 | Cloud-Init | ✅ | [Cloud-Init](04-Virtual-Machines/Cloud-Init.md) |
 | Options | ✅ | [VM Options](04-Virtual-Machines/VM-Options.md) |
-| Task History | ❌ | `04-Virtual-Machines/VM-Task-History.md` |
-| Monitor | ❌ | `04-Virtual-Machines/VM-Monitor.md` |
+| Task History | ✅ | [VM Task History](04-Virtual-Machines/VM-Task-History.md) |
+| Monitor | ✅ | [VM Monitor](04-Virtual-Machines/VM-Monitor.md) |
 | Backup | ✅ | [Backup and Restore VM](04-Virtual-Machines/Backup-and-Restore-VM.md) |
-| Replication | ❌ | `04-Virtual-Machines/VM-Replication.md` |
+| Replication | ✅ | [VM Replication](04-Virtual-Machines/VM-Replication.md) |
 | Snapshots | ✅ | [VM Snapshots](04-Virtual-Machines/VM-Snapshots.md) |
 | Firewall | ✅ | [VM Firewall](04-Virtual-Machines/VM-Firewall.md) |
-| Permissions | ❌ | `04-Virtual-Machines/VM-Permissions.md` |
-| Notes panel (on Summary) | ❌ | `04-Virtual-Machines/VM-Notes.md` |
+| Permissions | ✅ | [VM Permissions](04-Virtual-Machines/VM-Permissions.md) |
+| Notes panel (on Summary) | ✅ | Covered in [VM Summary](04-Virtual-Machines/VM-Summary.md) |
 | Header — Tags control | ❌ | `01-Getting-Started/Tags.md` |
 | Create / Manage / Migrate / Clone / Delete | ✅ | Five existing pages |
-| Convert to Template | ❌ | `04-Virtual-Machines/Convert-to-Template.md` |
+| Convert to Template | ✅ | [Convert to Template](04-Virtual-Machines/Convert-to-Template.md) |
 
 ## Container
 
@@ -124,19 +124,19 @@ Tabs confirmed from `05-Containers/images/ct-tabs.png`.
 
 | Tab | Status | Page |
 |---|---|---|
-| Summary | ❌ | `05-Containers/CT-Summary.md` |
+| Summary | ✅ | [CT Summary](05-Containers/CT-Summary.md) |
 | Console | ✅ | [Container Console](05-Containers/Container-Console.md) |
 | Resources | ✅ | [Manage Container Resources](05-Containers/Manage-Container-Resources.md) |
-| Network | ❌ | `05-Containers/CT-Network.md` |
-| DNS | ❌ | `05-Containers/CT-DNS.md` |
+| Network | ✅ | [CT Network](05-Containers/CT-Network.md) |
+| DNS | ✅ | [CT DNS](05-Containers/CT-DNS.md) |
 | Options | ✅ | [Container Options](05-Containers/CT-Options.md) |
-| Task History | ❌ | `05-Containers/CT-Task-History.md` |
+| Task History | ✅ | [CT Task History](05-Containers/CT-Task-History.md) |
 | Backup | ✅ | [Backup and Restore Container](05-Containers/Backup-and-Restore-Container.md) |
-| Replication | ❌ | `05-Containers/CT-Replication.md` |
+| Replication | ✅ | [CT Replication](05-Containers/CT-Replication.md) |
 | Snapshots | ✅ | [Container Snapshots](05-Containers/CT-Snapshots.md) |
 | Firewall | ✅ | [Container Firewall](05-Containers/CT-Firewall.md) |
-| Permissions | ❌ | `05-Containers/CT-Permissions.md` |
-| Notes panel (on Summary) | ❌ | `05-Containers/CT-Notes.md` |
+| Permissions | ✅ | [CT Permissions](05-Containers/CT-Permissions.md) |
+| Notes panel (on Summary) | ✅ | Covered in [CT Summary](05-Containers/CT-Summary.md) |
 | Create / Manage / Migrate / Clone / Delete / Templates | ✅ | Six existing pages |
 
 ## Storage (per-storage view)
@@ -145,12 +145,12 @@ Tabs confirmed from `02-Datacenter/Storage/images/temp-download-done.png`.
 
 | Tab | Status | Page |
 |---|---|---|
-| Summary | ❌ | `02-Datacenter/Storage/Storage-Content-Browser.md` |
-| Backups | ❌ | Same page — browsing and restoring backup files |
+| Summary | ✅ | [Storage Content Browser](02-Datacenter/Storage/Storage-Content-Browser.md) |
+| Backups | ✅ | [Storage Content Browser](02-Datacenter/Storage/Storage-Content-Browser.md) |
 | ISO Images | ✅ | [Upload Content](02-Datacenter/Storage/Upload-Content.md) |
 | CT Templates | ✅ | [Upload Content](02-Datacenter/Storage/Upload-Content.md), [Manage Container Templates](05-Containers/Manage-Container-Templates.md) |
-| Import | ❌ | `02-Datacenter/Storage/Storage-Import.md` |
-| Permissions | ❌ | `02-Datacenter/Storage/Storage-Permissions.md` |
+| Import | ✅ | [Storage Import](02-Datacenter/Storage/Storage-Import.md) |
+| Permissions | ✅ | [Storage Permissions](02-Datacenter/Storage/Storage-Permissions.md) |
 
 ---
 
@@ -235,14 +235,14 @@ The house rule remains **UI first, CLI second** — CLI appears where the UI gen
 | Level | Tabs | ✅ | ⚠️ | ❌ |
 |---|---:|---:|---:|---:|
 | Application shell | 9 | 4 | 2 | 3 |
-| Datacenter | 23 | 17 | 0 | 6 |
-| Node | 22 | 18 | 1 | 3 |
-| Virtual Machine | 16 | 9 | 0 | 7 |
-| Container | 18 | 11 | 0 | 7 |
-| Storage | 6 | 2 | 0 | 4 |
-| **Total** | **94** | **61** | **3** | **30** |
+| Datacenter | 23 | 18 | 0 | 5 |
+| Node | 22 | 20 | 1 | 1 |
+| Virtual Machine | 16 | 15 | 0 | 1 |
+| Container | 18 | 18 | 0 | 0 |
+| Storage | 6 | 6 | 0 | 0 |
+| **Total** | **94** | **81** | **3** | **10** |
 
-**Interface coverage: roughly 68% of panels have a dedicated page.**
+**Interface coverage: 86% of panels have a dedicated page.** Virtual machines, containers, and per-storage views are complete. The remaining 10 are four whole subsystems (Ceph, SDN, ACME, and the datacenter service tabs) plus the onboarding pages.
 
 ## CLI operations
 
@@ -272,21 +272,19 @@ referred to them vaguely.
 3. ✅ [Firewall Lockout Recovery](02-Datacenter/Firewall/Firewall-Lockout-Recovery.md) — two methods, chosen by whether the cluster still has quorum.
 4. ✅ [Re-Add a Removed Node](02-Datacenter/Cluster/Re-Add-Removed-Node.md) — why reinstallation is required, and what breaks without it.
 
-## High value — daily or weekly operations
+## High value ✅ complete
 
-5. Guest **Summary** pages for VMs and containers — the default view for every guest, undocumented at both levels.
-6. **Restore to a different VMID** — `qmrestore` / `pct restore`. Standard practice for test restores.
-7. Guest **Task History** and **Permissions** tabs, both levels.
-8. Guest and node **Replication** views.
-9. Storage **content browser**, covering the Summary, Backups, and Import tabs.
-10. Container **Network** and **DNS** tabs.
+Guest Summary, Task History, Permissions, Monitor, and Replication views;
+container Network and DNS; Convert to Template; the storage content browser,
+Import, and Permissions; and Datacenter and Node Notes are all written.
+
+Restoring to a different guest ID is now covered in
+[Storage Content Browser](02-Datacenter/Storage/Storage-Content-Browser.md).
 
 ## Medium — completeness
 
 11. `06-CLI-Reference.md` — one appendix covering `qm`, `pct`, `vzdump`, `pvesm`, `pvecm`, `pveum`, `ha-manager`, `pvenode`, and what each verifies.
-12. **Convert to Template**, VM and CT **Notes**, **VM Monitor**.
-13. **Tags**, resource tree views, **My Settings**, **Logging In**, **What Is VM2Cloud**.
-14. Datacenter **Notes**.
+12. **Tags**, resource tree views, **My Settings**, **Logging In**, **What Is VM2Cloud**.
 
 ## Lower traffic
 

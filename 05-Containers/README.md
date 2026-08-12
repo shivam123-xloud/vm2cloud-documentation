@@ -11,6 +11,7 @@ Corresponds to selecting a container in the resource tree. For guests that need 
 | Page | Covers |
 |---|---|
 | [Container Overview](Container-Overview.md) | What a container is, the tabs available, and how containers differ from VMs |
+| [CT Summary](CT-Summary.md) | The default view — status, CPU, memory, swap, Notes |
 | [Create Container](Create-Container.md) | The creation wizard: General, Template, Disks, CPU, Memory, Network, DNS, Confirm |
 | [Manage Container](Manage-Container.md) | Start, stop, shutdown, and reboot |
 | [Container Console](Container-Console.md) | Connecting to the container shell |
@@ -23,6 +24,11 @@ Corresponds to selecting a container in the resource tree. For guests that need 
 | [Migrate Container](Migrate-Container.md) | Moving a container to another node |
 | [Clone Container](Clone-Container.md) | Copying a container |
 | [Delete Container](Delete-Container.md) | Permanently removing a container |
+| [CT Network](CT-Network.md) | Interfaces, bridges, VLANs, addressing |
+| [CT DNS](CT-DNS.md) | Search domain and nameservers |
+| [CT Task History](CT-Task-History.md) | Operations performed on this container |
+| [CT Replication](CT-Replication.md) | Replication jobs for this container |
+| [CT Permissions](CT-Permissions.md) | Who can access this container |
 | [Container Troubleshooting](Container-Troubleshooting.md) | Container will not start, console, network, mount, and resource problems |
 
 ---
@@ -37,4 +43,4 @@ Corresponds to selecting a container in the resource tree. For guests that need 
 
 ## Planned Pages
 
-Not yet written: `CT-Summary.md`, `CT-Network.md`, `CT-DNS.md`, `CT-Notes.md`, `CT-Task-History.md`, `CT-Replication.md`, `CT-Permissions.md`.
+Every container tab is now documented. The Notes panel is covered by [CT Summary](CT-Summary.md).

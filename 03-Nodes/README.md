@@ -16,6 +16,8 @@ Corresponds to selecting a node under **Datacenter** in the resource tree. Setti
 | [Shutdown Node](Shutdown-Node.md) | Controlled power-off |
 | [Task History](Task-History.md) | Operations previously run on this node |
 | [Subscription](Subscription.md) | Licence status |
+| [Node Notes](Node-Notes.md) | Per-server documentation — location, hardware, out-of-band access |
+| [Node Replication](Node-Replication.md) | Every replication job involving this node |
 | [Node Firewall](Node-Firewall.md) | Host filtering — management access, SSH, cluster traffic |
 | [Reset Root Password](Reset-Root-Password.md) | Recovering a lost password, from the interface or the console |
 | [Node Troubleshooting](Node-Troubleshooting.md) | Node offline, unreachable, or misbehaving |
@@ -56,4 +58,4 @@ Physical disks and the storage backends built on them.
 
 ## Planned Pages
 
-Not yet written: `Node-Notes.md`, `Node-Ceph.md`, `Node-Replication.md`.
+Not yet written: `Node-Ceph.md`.

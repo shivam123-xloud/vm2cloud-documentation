@@ -37,11 +37,12 @@ Every page follows the same template: **Overview → When to Use → Prerequisit
 | Page | Description |
 |---|---|
 | [Datacenter Summary](02-Datacenter/Datacenter-Summary.md) | Health, guest counts, and resource widgets |
+| [Datacenter Notes](02-Datacenter/Notes.md) | Environment-wide documentation, visible to every administrator |
 | [Datacenter Options](02-Datacenter/Options.md) | Cluster-wide defaults and settings |
 
 **[Cluster](02-Datacenter/Cluster/)** — [Overview](02-Datacenter/Cluster/Cluster-Overview.md) · [Create](02-Datacenter/Cluster/Create-Cluster.md) · [Join Node](02-Datacenter/Cluster/Join-Node-to-Cluster.md) · [Remove Node](02-Datacenter/Cluster/Remove-Node-from-Cluster.md) · [Re-Add Removed Node](02-Datacenter/Cluster/Re-Add-Removed-Node.md) · [Delete](02-Datacenter/Cluster/Delete-Cluster.md) · [File System](02-Datacenter/Cluster/Cluster-File-System.md) · [Certificates](02-Datacenter/Cluster/Cluster-Certificates.md) · [Quorum](02-Datacenter/Cluster/Quorum.md) · [Recover Quorum](02-Datacenter/Cluster/Recover-Quorum.md) · [Troubleshooting](02-Datacenter/Cluster/Cluster-Troubleshooting.md)
 
-**[Storage](02-Datacenter/Storage/)** — [Overview](02-Datacenter/Storage/Storage-Overview.md) · [Types](02-Datacenter/Storage/Storage-Types.md) · [Add](02-Datacenter/Storage/Add-Storage.md) · [Manage](02-Datacenter/Storage/Manage-Storage.md) · [Upload Content](02-Datacenter/Storage/Upload-Content.md) · [Troubleshooting](02-Datacenter/Storage/Storage-Troubleshooting.md)
+**[Storage](02-Datacenter/Storage/)** — [Overview](02-Datacenter/Storage/Storage-Overview.md) · [Types](02-Datacenter/Storage/Storage-Types.md) · [Add](02-Datacenter/Storage/Add-Storage.md) · [Manage](02-Datacenter/Storage/Manage-Storage.md) · [Upload Content](02-Datacenter/Storage/Upload-Content.md) · [Content Browser](02-Datacenter/Storage/Storage-Content-Browser.md) · [Import](02-Datacenter/Storage/Storage-Import.md) · [Permissions](02-Datacenter/Storage/Storage-Permissions.md) · [Troubleshooting](02-Datacenter/Storage/Storage-Troubleshooting.md)
 
 **[Backup](02-Datacenter/Backup/)** — [Backup Jobs Overview](02-Datacenter/Backup/Backup-Jobs-Overview.md) · [Create Backup Job](02-Datacenter/Backup/Create-Backup-Job.md) · [Manage Backup Job](02-Datacenter/Backup/Manage-Backup-Job.md) · [Backup Retention](02-Datacenter/Backup/Backup-Retention.md)
 
@@ -62,6 +63,8 @@ Every page follows the same template: **Overview → When to Use → Prerequisit
 | [Reboot Node](03-Nodes/Reboot-Node.md) · [Shutdown Node](03-Nodes/Shutdown-Node.md) | Controlled restart and power-off |
 | [Task History](03-Nodes/Task-History.md) | Past operations on the node |
 | [Subscription](03-Nodes/Subscription.md) | Licence status |
+| [Node Notes](03-Nodes/Node-Notes.md) | Per-server documentation — location, hardware, out-of-band access |
+| [Node Replication](03-Nodes/Node-Replication.md) | Every replication job involving this node |
 | [Node Firewall](03-Nodes/Node-Firewall.md) | Host filtering, management access, cluster traffic |
 | [Reset Root Password](03-Nodes/Reset-Root-Password.md) | Recovering a lost password, from the UI or the console |
 | [Node Troubleshooting](03-Nodes/Node-Troubleshooting.md) | Node-level problems |
@@ -76,11 +79,11 @@ Every page follows the same template: **Overview → When to Use → Prerequisit
 
 ### [04-Virtual-Machines](04-Virtual-Machines/)
 
-[Overview](04-Virtual-Machines/Virtual-Machine-Overview.md) · [Create](04-Virtual-Machines/Create-Virtual-Machine.md) · [Manage](04-Virtual-Machines/Manage-Virtual-Machine.md) · [Console](04-Virtual-Machines/VM-Console.md) · [Hardware](04-Virtual-Machines/Manage-VM-Hardware.md) · [Cloud-Init](04-Virtual-Machines/Cloud-Init.md) · [Options](04-Virtual-Machines/VM-Options.md) · [Snapshots](04-Virtual-Machines/VM-Snapshots.md) · [Backup and Restore](04-Virtual-Machines/Backup-and-Restore-VM.md) · [Migrate](04-Virtual-Machines/Migrate-Virtual-Machine.md) · [Clone](04-Virtual-Machines/Clone-Virtual-Machine.md) · [Delete](04-Virtual-Machines/Delete-Virtual-Machine.md) · [Firewall](04-Virtual-Machines/VM-Firewall.md) · [Troubleshooting](04-Virtual-Machines/VM-Troubleshooting.md)
+[Overview](04-Virtual-Machines/Virtual-Machine-Overview.md) · [Summary](04-Virtual-Machines/VM-Summary.md) · [Create](04-Virtual-Machines/Create-Virtual-Machine.md) · [Manage](04-Virtual-Machines/Manage-Virtual-Machine.md) · [Console](04-Virtual-Machines/VM-Console.md) · [Hardware](04-Virtual-Machines/Manage-VM-Hardware.md) · [Cloud-Init](04-Virtual-Machines/Cloud-Init.md) · [Options](04-Virtual-Machines/VM-Options.md) · [Task History](04-Virtual-Machines/VM-Task-History.md) · [Monitor](04-Virtual-Machines/VM-Monitor.md) · [Snapshots](04-Virtual-Machines/VM-Snapshots.md) · [Backup and Restore](04-Virtual-Machines/Backup-and-Restore-VM.md) · [Replication](04-Virtual-Machines/VM-Replication.md) · [Migrate](04-Virtual-Machines/Migrate-Virtual-Machine.md) · [Clone](04-Virtual-Machines/Clone-Virtual-Machine.md) · [Convert to Template](04-Virtual-Machines/Convert-to-Template.md) · [Delete](04-Virtual-Machines/Delete-Virtual-Machine.md) · [Firewall](04-Virtual-Machines/VM-Firewall.md) · [Permissions](04-Virtual-Machines/VM-Permissions.md) · [Troubleshooting](04-Virtual-Machines/VM-Troubleshooting.md)
 
 ### [05-Containers](05-Containers/)
 
-[Overview](05-Containers/Container-Overview.md) · [Create](05-Containers/Create-Container.md) · [Manage](05-Containers/Manage-Container.md) · [Console](05-Containers/Container-Console.md) · [Resources](05-Containers/Manage-Container-Resources.md) · [Templates](05-Containers/Manage-Container-Templates.md) · [Options](05-Containers/CT-Options.md) · [Snapshots](05-Containers/CT-Snapshots.md) · [Backup and Restore](05-Containers/Backup-and-Restore-Container.md) · [Migrate](05-Containers/Migrate-Container.md) · [Clone](05-Containers/Clone-Container.md) · [Delete](05-Containers/Delete-Container.md) · [Firewall](05-Containers/CT-Firewall.md) · [Troubleshooting](05-Containers/Container-Troubleshooting.md)
+[Overview](05-Containers/Container-Overview.md) · [Summary](05-Containers/CT-Summary.md) · [Create](05-Containers/Create-Container.md) · [Manage](05-Containers/Manage-Container.md) · [Console](05-Containers/Container-Console.md) · [Resources](05-Containers/Manage-Container-Resources.md) · [Network](05-Containers/CT-Network.md) · [DNS](05-Containers/CT-DNS.md) · [Templates](05-Containers/Manage-Container-Templates.md) · [Options](05-Containers/CT-Options.md) · [Task History](05-Containers/CT-Task-History.md) · [Snapshots](05-Containers/CT-Snapshots.md) · [Backup and Restore](05-Containers/Backup-and-Restore-Container.md) · [Replication](05-Containers/CT-Replication.md) · [Migrate](05-Containers/Migrate-Container.md) · [Clone](05-Containers/Clone-Container.md) · [Delete](05-Containers/Delete-Container.md) · [Firewall](05-Containers/CT-Firewall.md) · [Permissions](05-Containers/CT-Permissions.md) · [Troubleshooting](05-Containers/Container-Troubleshooting.md)
 
 ---
 
@@ -125,20 +128,18 @@ The following UI areas exist in VM2Cloud but are **not yet documented**. Their l
 - `Tags.md` — tagging resources
 
 ### 02-Datacenter
-- `Notes.md` — Datacenter Notes tab
-- `Storage/Storage-Content-Browser.md`, `Storage/Storage-Import.md`, `Storage/Storage-Permissions.md`
 - `SDN/` — software-defined networking: `SDN-Overview.md`, `Zones.md`, `VNets.md`
 - `Ceph/` — `Ceph-Overview.md`, `Ceph-Monitors-and-OSDs.md`, `Ceph-Pools.md`
 - `ACME-Certificates.md`, `Notifications.md`, `Metric-Server.md`, `Support.md`
 
 ### 03-Nodes
-- `Node-Notes.md`, `Node-Ceph.md`, `Node-Replication.md`
+- `Node-Ceph.md`
 
 ### 04-Virtual-Machines
-- `VM-Summary.md`, `VM-Notes.md`, `VM-Task-History.md`, `VM-Monitor.md`, `VM-Replication.md`, `Convert-to-Template.md`, `VM-Permissions.md`
+- All tabs documented. Guest Notes are covered by the Notes panel on [VM Summary](04-Virtual-Machines/VM-Summary.md).
 
 ### 05-Containers
-- `CT-Summary.md`, `CT-Network.md`, `CT-DNS.md`, `CT-Notes.md`, `CT-Task-History.md`, `CT-Replication.md`, `CT-Permissions.md`
+- All tabs documented. Guest Notes are covered by the Notes panel on [CT Summary](05-Containers/CT-Summary.md).
 
 ### Appendix
 - `06-CLI-Reference.md` — commands used across the set and what each verifies. The CLI has no UI location, so it cannot be mirrored into the structure.
