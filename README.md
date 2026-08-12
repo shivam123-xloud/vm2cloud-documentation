@@ -39,7 +39,7 @@ Every page follows the same template: **Overview → When to Use → Prerequisit
 | [Datacenter Summary](02-Datacenter/Datacenter-Summary.md) | Health, guest counts, and resource widgets |
 | [Datacenter Options](02-Datacenter/Options.md) | Cluster-wide defaults and settings |
 
-**[Cluster](02-Datacenter/Cluster/)** — [Overview](02-Datacenter/Cluster/Cluster-Overview.md) · [Create](02-Datacenter/Cluster/Create-Cluster.md) · [Join Node](02-Datacenter/Cluster/Join-Node-to-Cluster.md) · [Remove Node](02-Datacenter/Cluster/Remove-Node-from-Cluster.md) · [Delete](02-Datacenter/Cluster/Delete-Cluster.md) · [File System](02-Datacenter/Cluster/Cluster-File-System.md) · [Certificates](02-Datacenter/Cluster/Cluster-Certificates.md) · [Quorum](02-Datacenter/Cluster/Quorum.md) · [Troubleshooting](02-Datacenter/Cluster/Cluster-Troubleshooting.md)
+**[Cluster](02-Datacenter/Cluster/)** — [Overview](02-Datacenter/Cluster/Cluster-Overview.md) · [Create](02-Datacenter/Cluster/Create-Cluster.md) · [Join Node](02-Datacenter/Cluster/Join-Node-to-Cluster.md) · [Remove Node](02-Datacenter/Cluster/Remove-Node-from-Cluster.md) · [Re-Add Removed Node](02-Datacenter/Cluster/Re-Add-Removed-Node.md) · [Delete](02-Datacenter/Cluster/Delete-Cluster.md) · [File System](02-Datacenter/Cluster/Cluster-File-System.md) · [Certificates](02-Datacenter/Cluster/Cluster-Certificates.md) · [Quorum](02-Datacenter/Cluster/Quorum.md) · [Recover Quorum](02-Datacenter/Cluster/Recover-Quorum.md) · [Troubleshooting](02-Datacenter/Cluster/Cluster-Troubleshooting.md)
 
 **[Storage](02-Datacenter/Storage/)** — [Overview](02-Datacenter/Storage/Storage-Overview.md) · [Types](02-Datacenter/Storage/Storage-Types.md) · [Add](02-Datacenter/Storage/Add-Storage.md) · [Manage](02-Datacenter/Storage/Manage-Storage.md) · [Upload Content](02-Datacenter/Storage/Upload-Content.md) · [Troubleshooting](02-Datacenter/Storage/Storage-Troubleshooting.md)
 
@@ -51,7 +51,7 @@ Every page follows the same template: **Overview → When to Use → Prerequisit
 
 **[HA](02-Datacenter/HA/)** — [Overview](02-Datacenter/HA/HA-Overview.md) · [Resources](02-Datacenter/HA/HA-Resources.md) · [Node Affinity](02-Datacenter/HA/Node-Affinity.md) · [Resource Affinity](02-Datacenter/HA/Resource-Affinity.md) · [Fencing](02-Datacenter/HA/Fencing.md) · [Troubleshooting](02-Datacenter/HA/HA-Troubleshooting.md)
 
-**[Firewall](02-Datacenter/Firewall/)** — [Overview](02-Datacenter/Firewall/Firewall-Overview.md) · [Options](02-Datacenter/Firewall/Firewall-Options.md) · [Rules](02-Datacenter/Firewall/Firewall-Rules.md) · [Security Groups](02-Datacenter/Firewall/Security-Groups.md) · [Aliases](02-Datacenter/Firewall/Aliases.md) · [IPSets](02-Datacenter/Firewall/IPSets.md)
+**[Firewall](02-Datacenter/Firewall/)** — [Overview](02-Datacenter/Firewall/Firewall-Overview.md) · [Options](02-Datacenter/Firewall/Firewall-Options.md) · [Rules](02-Datacenter/Firewall/Firewall-Rules.md) · [Security Groups](02-Datacenter/Firewall/Security-Groups.md) · [Aliases](02-Datacenter/Firewall/Aliases.md) · [IPSets](02-Datacenter/Firewall/IPSets.md) · [Lockout Recovery](02-Datacenter/Firewall/Firewall-Lockout-Recovery.md)
 
 ### [03-Nodes](03-Nodes/) — per-server administration
 
@@ -63,6 +63,7 @@ Every page follows the same template: **Overview → When to Use → Prerequisit
 | [Task History](03-Nodes/Task-History.md) | Past operations on the node |
 | [Subscription](03-Nodes/Subscription.md) | Licence status |
 | [Node Firewall](03-Nodes/Node-Firewall.md) | Host filtering, management access, cluster traffic |
+| [Reset Root Password](03-Nodes/Reset-Root-Password.md) | Recovering a lost password, from the UI or the console |
 | [Node Troubleshooting](03-Nodes/Node-Troubleshooting.md) | Node-level problems |
 
 **[System](03-Nodes/System/)** — [Overview](03-Nodes/System/System-Overview.md) · [Certificates](03-Nodes/System/Certificates.md) · [DNS](03-Nodes/System/DNS.md) · [Hosts](03-Nodes/System/Hosts.md) · [Time and NTP](03-Nodes/System/Time-and-NTP.md) · [Syslog](03-Nodes/System/Syslog.md) · [Boot Mode](03-Nodes/System/Boot-Mode.md) · [Kernel](03-Nodes/System/Kernel.md) · [Services](03-Nodes/System/Services.md) · [Troubleshooting](03-Nodes/System/System-Troubleshooting.md)

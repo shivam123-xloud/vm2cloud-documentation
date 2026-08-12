@@ -155,7 +155,7 @@ Only proceed once Step 3 is confirmed.
 2. Confirm it responds.
 3. Confirm your guests still reach the services they need.
 
-If access is lost, use console access to the node and disable the firewall.
+If access is lost, follow [Firewall Lockout Recovery](Firewall-Lockout-Recovery.md).
 
 ---
 
@@ -192,7 +192,7 @@ Verify the following:
 
 | Issue | Resolution |
 |-------|------------|
-| Web interface unreachable after enabling | Use console or physical access to the node and disable the firewall, then add a management-access rule before retrying. |
+| Web interface unreachable after enabling | Follow [Firewall Lockout Recovery](Firewall-Lockout-Recovery.md), then add a management-access rule before retrying. |
 | Rules configured but nothing is filtered | The master **Firewall** setting is disabled. Nothing at any level applies until it is enabled here. |
 | Guest rules still have no effect | The firewall must also be enabled on the guest and on the guest's network device. See [Firewall Overview](Firewall-Overview.md). |
 | Cluster nodes lose contact after enabling | Cluster communication is being dropped. Permit traffic between node addresses on the cluster network. |

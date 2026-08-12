@@ -176,7 +176,7 @@ Verify the following after creating or joining a cluster:
 | Cluster page does not load | Refresh the interface and verify the cluster services are running on the node. |
 | A node shows as offline | Verify network connectivity and confirm Corosync is running on the affected node. |
 | Cluster is not quorate | Verify that enough nodes are online and communicating. See [Quorum](Quorum.md). |
-| Configuration changes are rejected | The cluster file system becomes read-only without quorum. Restore quorum before making changes. |
+| Configuration changes are rejected | The cluster file system becomes read-only without quorum. See [Recover Quorum](Recover-Quorum.md). |
 | A removed node still appears | Complete the cleanup described in [Remove Node from Cluster](Remove-Node-from-Cluster.md). |
 
 ---

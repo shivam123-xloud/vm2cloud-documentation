@@ -280,7 +280,7 @@ Test from a machine other than your administrative workstation.
 | Rule appears to do nothing | Check the firewall is enabled at datacenter level, and for guests also on the guest and its network device. |
 | Rule is never reached | An earlier rule matched first. Move it above the broader rule. |
 | Cannot edit protocol or port | A macro is selected. Clear the macro to set them manually. |
-| Locked out of the web interface | Use console access to disable the firewall, then correct the rule. |
+| Locked out of the web interface | Follow [Firewall Lockout Recovery](Firewall-Lockout-Recovery.md), then correct the rule. |
 | Cluster nodes lose quorum | Cluster traffic is being filtered. Permit traffic between node addresses on the cluster network. |
 | Connections hang rather than fail | The action is **DROP**. Use **REJECT** on internal networks for immediate failure. |
 | An alias or IPSet is not accepted | The object must exist before it can be referenced. Create it first. |

@@ -168,12 +168,12 @@ The house rule remains **UI first, CLI second** — CLI appears where the UI gen
 | Remove a node from the cluster | `pvecm delnode`; UI cannot | ✅ | [Remove Node from Cluster](02-Datacenter/Cluster/Remove-Node-from-Cluster.md) |
 | Clean a removed node | Filesystem cleanup after removal | ✅ | [Remove Node from Cluster](02-Datacenter/Cluster/Remove-Node-from-Cluster.md) |
 | Inspect cluster status | `pvecm status`, `pvecm nodes` | ✅ | [Quorum](02-Datacenter/Cluster/Quorum.md) |
-| **Recover from lost quorum** | `pvecm expected <n>` | ❌ | **No page. Critical recovery gap.** |
+| **Recover from lost quorum** | `pvecm expected <n>` | ✅ | [Recover Quorum](02-Datacenter/Cluster/Recover-Quorum.md) |
 | Configure a QDevice | `pvecm qdevice setup` | ❌ | Referenced in [Quorum](02-Datacenter/Cluster/Quorum.md) but no procedure |
 | Change the cluster network / links | Edit `corosync.conf` | ❌ | No page |
 | Regenerate cluster certificates | `pvecm updatecerts` | ❌ | No page |
 | Start the cluster filesystem in local mode | `pmxcfs -l` | ⚠️ | Mentioned in [Cluster File System](02-Datacenter/Cluster/Cluster-File-System.md) |
-| Re-add a previously removed node | Requires reinstall; CLI procedure | ❌ | No page |
+| Re-add a previously removed node | Requires reinstall; CLI procedure | ✅ | [Re-Add a Removed Node](02-Datacenter/Cluster/Re-Add-Removed-Node.md) |
 
 ## High Availability
 
@@ -213,8 +213,8 @@ The house rule remains **UI first, CLI second** — CLI appears where the UI gen
 | Operation | Why CLI | Status | Where |
 |---|---|---|---|
 | Manage users, groups, roles from CLI | `pveum` | ❌ | No page |
-| **Reset a lost root password** | Console + `passwd` | ❌ | **No page. Recovery gap.** |
-| Recover from a firewall lockout | Console + stop the firewall service or edit its config | ⚠️ | Named as the remedy in the firewall pages; no exact procedure |
+| **Reset a lost root password** | Console + `passwd` | ✅ | [Reset Root Password](03-Nodes/Reset-Root-Password.md) |
+| Recover from a firewall lockout | Console + stop the firewall service or edit its config | ✅ | [Firewall Lockout Recovery](02-Datacenter/Firewall/Firewall-Lockout-Recovery.md) |
 
 ## Node and System
 
@@ -248,28 +248,29 @@ The house rule remains **UI first, CLI second** — CLI appears where the UI gen
 
 | Area | Operations | ✅ | ⚠️ | ❌ |
 |---|---:|---:|---:|---:|
-| Cluster | 10 | 4 | 1 | 5 |
+| Cluster | 10 | 6 | 1 | 3 |
 | High Availability | 4 | 1 | 0 | 3 |
 | Guests | 8 | 0 | 1 | 7 |
 | Storage and Disks | 6 | 3 | 1 | 2 |
-| Access Control | 3 | 0 | 1 | 2 |
+| Access Control | 3 | 2 | 0 | 1 |
 | Node and System | 5 | 1 | 0 | 4 |
-| **Total** | **36** | **9** | **4** | **23** |
+| **Total** | **36** | **13** | **3** | **20** |
 
-**CLI coverage: roughly 25%.** This is the weaker half of the documentation. The existing CLI content is concentrated in troubleshooting pages as inspection commands; procedures for operations the UI cannot perform are largely absent.
+**CLI coverage: roughly 36%.** Still the weaker half. The four critical recovery paths are now documented; the remaining gaps are mostly convenience and automation commands rather than recovery.
 
 ---
 
 # Part 4 — What Is Left, Ranked
 
-## Critical — recovery paths with no documentation
+## Critical — recovery paths ✅ complete
 
-An administrator hitting these has no page to turn to.
+All four are now documented and cross-linked from the pages that previously
+referred to them vaguely.
 
-1. **Recover from lost quorum** — `pvecm expected`. Without it a cluster that loses majority stays read-only.
-2. **Reset a lost root password** — console recovery.
-3. **Recover from a firewall lockout** — the firewall pages say "use console access to disable the firewall" without saying how.
-4. **Re-add a previously removed node** — a common operation with a non-obvious procedure.
+1. ✅ [Recover Quorum](02-Datacenter/Cluster/Recover-Quorum.md) — `pvecm expected`, with the split-brain safety checks it requires.
+2. ✅ [Reset Root Password](03-Nodes/Reset-Root-Password.md) — interface method first, console recovery when no account can log in.
+3. ✅ [Firewall Lockout Recovery](02-Datacenter/Firewall/Firewall-Lockout-Recovery.md) — two methods, chosen by whether the cluster still has quorum.
+4. ✅ [Re-Add a Removed Node](02-Datacenter/Cluster/Re-Add-Removed-Node.md) — why reinstallation is required, and what breaks without it.
 
 ## High value — daily or weekly operations
 

@@ -221,7 +221,7 @@ Test from a machine that is *not* your administrative workstation, so a mistake 
 
 | Issue | Resolution |
 |-------|------------|
-| Locked out of the web interface | Use console or physical access to the node and disable the firewall or correct the rule. Always keep a management-access rule in place. |
+| Locked out of the web interface | Follow [Firewall Lockout Recovery](Firewall-Lockout-Recovery.md). Always keep a management-access rule in place. |
 | Rules have no effect on a guest | The firewall must be enabled both on the guest's Firewall → Options panel **and** on its network device. Check the device checkbox. |
 | Rules have no effect anywhere | The datacenter-level firewall is disabled. Guest and node rules do nothing until it is enabled. |
 | A rule is ignored | An earlier rule matched first. Rules are evaluated top to bottom; move the specific rule above the broader one. |
@@ -251,6 +251,7 @@ Test from a machine that is *not* your administrative workstation, so a mistake 
 
 - [Firewall Options](Firewall-Options.md)
 - [Firewall Rules](Firewall-Rules.md)
+- [Firewall Lockout Recovery](Firewall-Lockout-Recovery.md)
 - [Security Groups](Security-Groups.md)
 - [Aliases](Aliases.md)
 - [IPSets](IPSets.md)

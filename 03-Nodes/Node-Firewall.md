@@ -190,7 +190,7 @@ The first matching rule wins, so a broad deny above a specific accept will block
 3. Confirm the node still shows as online in the cluster.
 4. Confirm guests on the node are still reachable.
 
-If access is lost, use console access and disable the node firewall.
+If access is lost, follow [Firewall Lockout Recovery](../02-Datacenter/Firewall/Firewall-Lockout-Recovery.md).
 
 ---
 

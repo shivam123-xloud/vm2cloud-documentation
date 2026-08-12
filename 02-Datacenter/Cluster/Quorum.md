@@ -82,12 +82,12 @@ For production clusters:
 1. Log in to the VM2Cloud web interface.
 2. Select **Datacenter** from the left navigation tree.
 3. Open the cluster status view.
-
-> **Verify:** Confirm whether the quorum state is shown on Datacenter → Cluster directly
-> or on a separate cluster status view.
 4. Review the cluster members.
 5. Review the cluster health.
 6. Check whether the cluster is quorate.
+
+> **Verify:** Confirm whether the quorum state is shown on Datacenter → Cluster directly
+> or on a separate cluster status view.
 
 ### Screenshot 1
 
@@ -281,7 +281,7 @@ Do not manually change expected votes simply to make a cluster appear quorate.
 
 Changing quorum-related values without understanding the cluster state can remove important safety protections.
 
-For temporary emergency recovery procedures, use the official VM2Cloud/underlying platform procedure and verify the cluster state before making changes.
+When a cluster has genuinely lost quorum and the missing nodes cannot be recovered quickly, expected votes can be lowered temporarily to restore service. That is a recovery operation with real risk attached — see [Recover Quorum](Recover-Quorum.md) for the procedure and the safety checks it requires.
 
 ---
 
@@ -712,6 +712,7 @@ Before making any quorum-related change:
 
 Cluster:
 
+- [Recover Quorum](Recover-Quorum.md)
 - [Cluster Overview](Cluster-Overview.md)
 - [Create Cluster](Create-Cluster.md)
 - [Join Node to Cluster](Join-Node-to-Cluster.md)

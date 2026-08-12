@@ -17,6 +17,7 @@ Corresponds to selecting a node under **Datacenter** in the resource tree. Setti
 | [Task History](Task-History.md) | Operations previously run on this node |
 | [Subscription](Subscription.md) | Licence status |
 | [Node Firewall](Node-Firewall.md) | Host filtering — management access, SSH, cluster traffic |
+| [Reset Root Password](Reset-Root-Password.md) | Recovering a lost password, from the interface or the console |
 | [Node Troubleshooting](Node-Troubleshooting.md) | Node offline, unreachable, or misbehaving |
 
 ---

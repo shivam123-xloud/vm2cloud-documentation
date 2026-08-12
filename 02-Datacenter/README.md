@@ -19,7 +19,7 @@ Corresponds to selecting **Datacenter** at the top of the resource tree.
 
 Forming and maintaining the cluster itself.
 
-[Cluster Overview](Cluster/Cluster-Overview.md) · [Create Cluster](Cluster/Create-Cluster.md) · [Join Node to Cluster](Cluster/Join-Node-to-Cluster.md) · [Remove Node from Cluster](Cluster/Remove-Node-from-Cluster.md) · [Delete Cluster](Cluster/Delete-Cluster.md) · [Cluster File System](Cluster/Cluster-File-System.md) · [Cluster Certificates](Cluster/Cluster-Certificates.md) · [Quorum](Cluster/Quorum.md) · [Cluster Troubleshooting](Cluster/Cluster-Troubleshooting.md)
+[Cluster Overview](Cluster/Cluster-Overview.md) · [Create Cluster](Cluster/Create-Cluster.md) · [Join Node to Cluster](Cluster/Join-Node-to-Cluster.md) · [Remove Node from Cluster](Cluster/Remove-Node-from-Cluster.md) · [Re-Add a Removed Node](Cluster/Re-Add-Removed-Node.md) · [Delete Cluster](Cluster/Delete-Cluster.md) · [Cluster File System](Cluster/Cluster-File-System.md) · [Cluster Certificates](Cluster/Cluster-Certificates.md) · [Quorum](Cluster/Quorum.md) · [Recover Quorum](Cluster/Recover-Quorum.md) · [Cluster Troubleshooting](Cluster/Cluster-Troubleshooting.md)
 
 ## Storage
 
@@ -55,7 +55,7 @@ Automatic recovery of guests after a node failure.
 
 Cluster-wide filtering and the reusable objects used at every level.
 
-[Firewall Overview](Firewall/Firewall-Overview.md) · [Firewall Options](Firewall/Firewall-Options.md) · [Firewall Rules](Firewall/Firewall-Rules.md) · [Security Groups](Firewall/Security-Groups.md) · [Aliases](Firewall/Aliases.md) · [IPSets](Firewall/IPSets.md)
+[Firewall Overview](Firewall/Firewall-Overview.md) · [Firewall Options](Firewall/Firewall-Options.md) · [Firewall Rules](Firewall/Firewall-Rules.md) · [Security Groups](Firewall/Security-Groups.md) · [Aliases](Firewall/Aliases.md) · [IPSets](Firewall/IPSets.md) · [Lockout Recovery](Firewall/Firewall-Lockout-Recovery.md)
 
 > The firewall applies at three levels. Concepts are documented once in
 > [Firewall Overview](Firewall/Firewall-Overview.md); the node and guest panels are
