@@ -1,0 +1,281 @@
+# ACME Certificates
+
+---
+
+## Overview
+
+**ACME** automates TLS certificates for the VM2Cloud web interface. Instead of the self-signed certificate every installation starts with — the one that makes browsers warn on every visit — ACME obtains a trusted certificate from a certificate authority and renews it automatically before it expires.
+
+The automation is the point. Certificates from public authorities are short-lived by design, so manual renewal is a recurring task that eventually gets missed. ACME removes it.
+
+Configuration happens at two levels:
+
+| Level | What it holds |
+|---|---|
+| **Datacenter → ACME** | Accounts with the certificate authority, and challenge plugins |
+| **Node → System → Certificates** | Per-node certificate ordering and the resulting certificate |
+
+This page covers the datacenter side. See [Certificates](../03-Nodes/System/Certificates.md) for the node side.
+
+---
+
+## When to Use
+
+Use ACME when:
+
+* Browser certificate warnings should stop.
+* The interface is reachable at a real DNS name.
+* Certificates should renew without anyone remembering.
+* A compliance requirement calls for trusted certificates.
+* Scripts or API clients fail because of an untrusted certificate.
+
+Do **not** use ACME when:
+
+* Nodes are reachable only by IP address. Public authorities issue for names, not addresses.
+* The organisation uses its own internal certificate authority — upload those certificates manually instead.
+* Nodes are on an isolated network with no path for the validation challenge.
+
+---
+
+## Prerequisites
+
+Before configuring ACME, ensure that:
+
+* Each node has a resolvable DNS name pointing at it.
+* You have an email address for the account, used for expiry warnings.
+* You can complete one of the challenge types below.
+* Time is synchronized. Certificate validation is time-sensitive. See [Time and NTP](../03-Nodes/System/Time-and-NTP.md).
+* The cluster has quorum.
+
+---
+
+# How Validation Works
+
+Before issuing a certificate, the authority verifies you control the name. There are two ways, and choosing correctly is most of the work.
+
+| Challenge | How it proves control | Requires |
+|---|---|---|
+| **HTTP-01** | Serves a token over HTTP on port 80 | Port 80 reachable from the internet |
+| **DNS-01** | Publishes a token as a DNS record | API access to your DNS provider |
+
+**HTTP-01** is simpler but needs the node reachable from the public internet on port 80. For a management interface, that is often unacceptable, and frequently impossible.
+
+**DNS-01** needs no inbound access at all — the node talks outbound to your DNS provider's API. It is the right choice for management interfaces, and the only choice for internal ones.
+
+> **Warning:** DNS-01 requires storing DNS provider API credentials in VM2Cloud. Those credentials can usually modify your DNS. Use a scoped or restricted API token where the provider supports one, rather than a full-access key.
+
+---
+
+# Procedure
+
+## Step 1: Open the ACME Panel
+
+1. Log in to the VM2Cloud web interface.
+2. Select **Datacenter** in the resource tree.
+3. Click **ACME**.
+
+---
+
+### Screenshot 1
+
+**Datacenter ACME Panel**
+
+```text
+[ Place Screenshot Here ]
+```
+
+> **Capture:** Datacenter → ACME, showing the Accounts and Challenge Plugins sections
+> with their controls.
+
+---
+
+## Step 2: Register an Account
+
+1. In the **Accounts** section, click **Add**.
+2. Enter an account **Name**.
+3. Enter the **Email** address for expiry notifications.
+4. Select the **ACME Directory** — the certificate authority endpoint.
+5. Accept the terms of service.
+6. Confirm.
+
+Most authorities provide a **staging** directory alongside production. Register against staging first. Staging certificates are not trusted by browsers, but the rate limits are far more forgiving — and production limits are strict enough that a misconfigured setup can lock you out for a week.
+
+> **Warning:** Production certificate authorities enforce rate limits per domain. Repeated failed attempts can exhaust your quota and block further issuance for days. Test against staging until the whole flow works, then switch.
+
+---
+
+### Screenshot 2
+
+**Register ACME Account**
+
+```text
+[ Place Screenshot Here ]
+```
+
+> **Capture:** The ACME account registration dialog, showing the name, email, directory
+> selector, and terms acceptance.
+
+---
+
+## Step 3: Add a Challenge Plugin (DNS-01 Only)
+
+Skip this if using HTTP-01.
+
+1. In the **Challenge Plugins** section, click **Add**.
+2. Enter a plugin **ID**.
+3. Select your **DNS provider**.
+4. Enter the API credentials the provider requires.
+5. Set a validation delay if the provider propagates slowly.
+6. Confirm.
+
+> **Verify:** Capture the challenge plugin dialog and the DNS provider list available in
+> this deployment, and confirm the credential fields for the providers you use.
+
+---
+
+### Screenshot 3
+
+**Challenge Plugin Configuration**
+
+```text
+[ Place Screenshot Here ]
+```
+
+> **Capture:** The Add challenge plugin dialog with a DNS provider selected, showing the
+> credential fields.
+
+---
+
+## Step 4: Order a Certificate on a Node
+
+Certificates are per node, ordered from the node's own panel.
+
+1. Select the node.
+2. Open **System** → **Certificates**.
+3. In the ACME section, add a **Domain** — the node's resolvable DNS name.
+4. Select the challenge type, and the plugin for DNS-01.
+5. Click **Order Certificates Now**.
+6. Watch the task output.
+
+The interface restarts briefly when the certificate is installed. A short disconnection is expected.
+
+---
+
+### Screenshot 4
+
+**Ordering a Certificate**
+
+```text
+[ Place Screenshot Here ]
+```
+
+> **Capture:** A node → System → Certificates, showing the ACME section with a domain
+> configured and the order action available.
+
+---
+
+## Step 5: Verify
+
+1. Reload the interface using the node's DNS name, not its IP address.
+2. Confirm no certificate warning appears.
+3. Inspect the certificate and confirm the issuer and expiry.
+4. Repeat for each node.
+
+Accessing by IP will still warn, because the certificate is issued for the name. That is expected, not a fault.
+
+---
+
+## Step 6: Confirm Automatic Renewal
+
+Renewal is automatic, and it is worth confirming rather than assuming.
+
+1. Note the expiry date.
+2. Confirm the renewal mechanism is scheduled.
+3. Check again after the first renewal window.
+
+> **Verify:** Confirm how renewal is scheduled in this deployment and where its status
+> can be checked.
+
+---
+
+# Configuration / Options
+
+### Account
+
+| Option | Description |
+|---|---|
+| **Name** | Local identifier for the account. |
+| **Email** | Address for expiry and problem notifications. |
+| **ACME Directory** | The authority endpoint. Use staging for testing. |
+| **Terms of Service** | Must be accepted to register. |
+
+### Challenge plugin
+
+| Option | Description |
+|---|---|
+| **Plugin ID** | Local identifier. |
+| **Validation delay** | Wait before checking, for slow-propagating DNS providers. |
+| **API credentials** | Provider-specific. Scope them as narrowly as possible. |
+
+---
+
+# Verification
+
+Verify the following:
+
+* The account is registered and shows as valid.
+* The challenge plugin is configured, for DNS-01.
+* Each node has a domain configured.
+* Certificates were issued without errors.
+* The interface loads by DNS name with no warning.
+* The certificate issuer and expiry are correct.
+* Renewal is scheduled.
+* Time is synchronized across nodes.
+
+---
+
+# Common Issues
+
+| Issue | Resolution |
+|-------|------------|
+| Validation fails on HTTP-01 | Port 80 is not reachable from the internet. Use DNS-01 instead. |
+| Validation fails on DNS-01 | Check the API credentials and increase the validation delay — slow propagation is the usual cause. |
+| Rate limit reached | Too many failed attempts against production. Wait, and test on staging next time. |
+| Certificate not trusted | It may be a staging certificate. Reissue against the production directory. |
+| Warning when accessing by IP | Expected. Certificates are issued for names. Use the DNS name. |
+| Certificate expired | Renewal is not running. Check the schedule and the account status. |
+| Order fails with a time error | Node time is out of sync. See [Time and NTP](../03-Nodes/System/Time-and-NTP.md). |
+| Works on one node, not another | Each node needs its own domain and certificate. |
+| Cannot register an account | Check outbound connectivity to the authority endpoint. |
+
+---
+
+# Best Practices
+
+- **Test against the staging directory first.** Production rate limits are unforgiving of a misconfigured setup.
+- Prefer **DNS-01** for management interfaces. It needs no inbound access.
+- Use scoped DNS API tokens, not full-access credentials.
+- Use a monitored email address for the account — expiry warnings are the last safety net.
+- Keep time synchronized. Certificate validation depends on it.
+- Order certificates for every node, not just the one you usually use.
+- Confirm the first automatic renewal actually happened rather than assuming.
+- Record which DNS provider and credentials are in use, so the setup is maintainable by someone else.
+
+---
+
+# Related Documentation
+
+- [Certificates](../03-Nodes/System/Certificates.md)
+- [Cluster Certificates](Cluster/Cluster-Certificates.md)
+- [DNS](../03-Nodes/System/DNS.md)
+- [Time and NTP](../03-Nodes/System/Time-and-NTP.md)
+- [Datacenter Options](Options.md)
+- [Interface Troubleshooting](../01-Getting-Started/Interface-Troubleshooting.md)
+
+---
+
+# Summary
+
+ACME replaces the self-signed certificate that causes browser warnings with a trusted one that renews automatically. Accounts and DNS challenge plugins are configured at datacenter level; certificates are ordered per node from the node's Certificates panel.
+
+The main decision is the challenge type. HTTP-01 is simpler but requires port 80 reachable from the internet, which is rarely acceptable for a management interface. DNS-01 needs no inbound access and is usually the right answer, at the cost of storing DNS API credentials — so scope those credentials narrowly. Test against the staging directory before production, because production rate limits will lock you out for days if the configuration is wrong.
