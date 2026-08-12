@@ -19,6 +19,7 @@ Corresponds to selecting a node under **Datacenter** in the resource tree. Setti
 | [Node Notes](Node-Notes.md) | Per-server documentation — location, hardware, out-of-band access |
 | [Node Replication](Node-Replication.md) | Every replication job involving this node |
 | [Node Firewall](Node-Firewall.md) | Host filtering — management access, SSH, cluster traffic |
+| [Node Ceph](Node-Ceph.md) | This node's Ceph components, and maintenance preparation |
 | [Reset Root Password](Reset-Root-Password.md) | Recovering a lost password, from the interface or the console |
 | [Node Troubleshooting](Node-Troubleshooting.md) | Node offline, unreachable, or misbehaving |
 
@@ -58,4 +59,4 @@ Physical disks and the storage backends built on them.
 
 ## Planned Pages
 
-Not yet written: `Node-Ceph.md`.
+Every node panel is now documented.

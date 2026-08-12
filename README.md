@@ -27,7 +27,12 @@ Every page follows the same template: **Overview → When to Use → Prerequisit
 
 | Page | Description |
 |---|---|
+| [What Is VM2Cloud](01-Getting-Started/What-Is-VM2Cloud.md) | The platform, its structure, and what it does not do |
+| [Logging In](01-Getting-Started/Logging-In.md) | Reaching the interface, realms, certificate warnings, first login |
 | [Interface Tour](01-Getting-Started/Interface-Tour.md) | Navigation panel, resource tree, workspace, header bar, task viewer |
+| [Resource Tree and Views](01-Getting-Started/Resource-Tree-and-Views.md) | Server, Folder, Pool, and Tag views |
+| [Tags](01-Getting-Started/Tags.md) | Labelling guests for cross-cutting grouping |
+| [My Settings](01-Getting-Started/My-Settings.md) | Password, two-factor, preferences, logout |
 | [Search](01-Getting-Started/Search.md) | Header search box and the Datacenter Search panel |
 | [Task Log and Cluster Log](01-Getting-Started/Task-Log-and-Cluster-Log.md) | Monitoring running and completed operations |
 | [Interface Troubleshooting](01-Getting-Started/Interface-Troubleshooting.md) | Problems reaching or using the web interface |
@@ -52,6 +57,12 @@ Every page follows the same template: **Overview → When to Use → Prerequisit
 
 **[HA](02-Datacenter/HA/)** — [Overview](02-Datacenter/HA/HA-Overview.md) · [Resources](02-Datacenter/HA/HA-Resources.md) · [Node Affinity](02-Datacenter/HA/Node-Affinity.md) · [Resource Affinity](02-Datacenter/HA/Resource-Affinity.md) · [Fencing](02-Datacenter/HA/Fencing.md) · [Troubleshooting](02-Datacenter/HA/HA-Troubleshooting.md)
 
+**Services** — [ACME Certificates](02-Datacenter/ACME-Certificates.md) · [Notifications](02-Datacenter/Notifications.md) · [Metric Server](02-Datacenter/Metric-Server.md) · [Support](02-Datacenter/Support.md)
+
+**[Ceph](02-Datacenter/Ceph/)** — [Overview](02-Datacenter/Ceph/Ceph-Overview.md) · [Monitors and OSDs](02-Datacenter/Ceph/Ceph-Monitors-and-OSDs.md) · [Pools](02-Datacenter/Ceph/Ceph-Pools.md)
+
+**[SDN](02-Datacenter/SDN/)** — [Overview](02-Datacenter/SDN/SDN-Overview.md) · [Zones](02-Datacenter/SDN/Zones.md) · [VNets](02-Datacenter/SDN/VNets.md)
+
 **[Firewall](02-Datacenter/Firewall/)** — [Overview](02-Datacenter/Firewall/Firewall-Overview.md) · [Options](02-Datacenter/Firewall/Firewall-Options.md) · [Rules](02-Datacenter/Firewall/Firewall-Rules.md) · [Security Groups](02-Datacenter/Firewall/Security-Groups.md) · [Aliases](02-Datacenter/Firewall/Aliases.md) · [IPSets](02-Datacenter/Firewall/IPSets.md) · [Lockout Recovery](02-Datacenter/Firewall/Firewall-Lockout-Recovery.md)
 
 ### [03-Nodes](03-Nodes/) — per-server administration
@@ -66,6 +77,7 @@ Every page follows the same template: **Overview → When to Use → Prerequisit
 | [Node Notes](03-Nodes/Node-Notes.md) | Per-server documentation — location, hardware, out-of-band access |
 | [Node Replication](03-Nodes/Node-Replication.md) | Every replication job involving this node |
 | [Node Firewall](03-Nodes/Node-Firewall.md) | Host filtering, management access, cluster traffic |
+| [Node Ceph](03-Nodes/Node-Ceph.md) | This node's Ceph components, and maintenance preparation |
 | [Reset Root Password](03-Nodes/Reset-Root-Password.md) | Recovering a lost password, from the UI or the console |
 | [Node Troubleshooting](03-Nodes/Node-Troubleshooting.md) | Node-level problems |
 
@@ -116,39 +128,23 @@ grep -rn '> \*\*Verify:\*\*' --include='*.md' . --exclude=TEMPLATE.md --exclude=
 
 ---
 
-## Planned Pages
+## Coverage
 
-The following UI areas exist in VM2Cloud but are **not yet documented**. Their location in this structure is fixed; the pages themselves have not been written.
+**Every interface panel is now documented.** See [COVERAGE.md](COVERAGE.md) for the full
+map of UI panels and CLI operations against the pages covering them.
 
-### 01-Getting-Started
-- `What-Is-VM2Cloud.md` — product introduction
-- `Logging-In.md` — first access and the login screen
-- `Resource-Tree-and-Views.md` — Server View, Folder View, Pool View, Tag View
-- `My-Settings.md` — user menu, password change, preferences
-- `Tags.md` — tagging resources
+Four Datacenter entries — Notifications, Metric Server, Support, and node-level System
+Options — carry `Verify` notes because their presence could not be confirmed from the
+screenshots available. Confirm them during screenshot capture and adjust if needed.
 
-### 02-Datacenter
-- `SDN/` — software-defined networking: `SDN-Overview.md`, `Zones.md`, `VNets.md`
-- `Ceph/` — `Ceph-Overview.md`, `Ceph-Monitors-and-OSDs.md`, `Ceph-Pools.md`
-- `ACME-Certificates.md`, `Notifications.md`, `Metric-Server.md`, `Support.md`
-
-### 03-Nodes
-- `Node-Ceph.md`
-
-### 04-Virtual-Machines
-- All tabs documented. Guest Notes are covered by the Notes panel on [VM Summary](04-Virtual-Machines/VM-Summary.md).
-
-### 05-Containers
-- All tabs documented. Guest Notes are covered by the Notes panel on [CT Summary](05-Containers/CT-Summary.md).
-
-### Appendix
-- `06-CLI-Reference.md` — commands used across the set and what each verifies. The CLI has no UI location, so it cannot be mirrored into the structure.
+The remaining work is **screenshot capture** and clearing the `Verify` markers.
 
 ---
 
 ## Contributing
 
 - [COVERAGE.md](COVERAGE.md) — every UI panel and CLI operation mapped against what is documented
+- [06-CLI-Reference.md](06-CLI-Reference.md) — command-line tools, and the operations with no UI equivalent
 - [CONTRIBUTING.md](CONTRIBUTING.md) — writing conventions, screenshot rules, file placement
 - [TEMPLATE.md](TEMPLATE.md) — copy this to start a new page
 - [GLOSSARY.md](GLOSSARY.md) — terminology used across the documentation

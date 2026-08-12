@@ -52,6 +52,22 @@ Automatic recovery of guests after a node failure.
 
 [HA Overview](HA/HA-Overview.md) · [HA Resources](HA/HA-Resources.md) · [Node Affinity](HA/Node-Affinity.md) · [Resource Affinity](HA/Resource-Affinity.md) · [Fencing](HA/Fencing.md) · [HA Troubleshooting](HA/HA-Troubleshooting.md)
 
+## Ceph
+
+Distributed storage pooling disks across every node.
+
+[Ceph Overview](Ceph/Ceph-Overview.md) · [Monitors and OSDs](Ceph/Ceph-Monitors-and-OSDs.md) · [Ceph Pools](Ceph/Ceph-Pools.md) · [Node Ceph](../03-Nodes/Node-Ceph.md)
+
+## SDN
+
+Virtual networks defined centrally and applied to every node.
+
+[SDN Overview](SDN/SDN-Overview.md) · [Zones](SDN/Zones.md) · [VNets](SDN/VNets.md)
+
+## Services
+
+[ACME Certificates](ACME-Certificates.md) · [Notifications](Notifications.md) · [Metric Server](Metric-Server.md) · [Support](Support.md)
+
 ## Firewall
 
 Cluster-wide filtering and the reusable objects used at every level.
@@ -68,8 +84,4 @@ Cluster-wide filtering and the reusable objects used at every level.
 
 ## Planned Pages
 
-Not yet written:
-
-- `SDN/` — `SDN-Overview.md`, `Zones.md`, `VNets.md`
-- `Ceph/` — `Ceph-Overview.md`, `Ceph-Monitors-and-OSDs.md`, `Ceph-Pools.md`
-- `ACME-Certificates.md`, `Notifications.md`, `Metric-Server.md`, `Support.md`
+Every Datacenter panel is now documented. Notifications, Metric Server, and Support carry `Verify` notes because their presence in this deployment is unconfirmed.

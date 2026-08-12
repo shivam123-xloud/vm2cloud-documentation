@@ -27,13 +27,13 @@ Menus confirmed from `01-Getting-Started/images/datacenter-search.png`, `02-Data
 
 | UI location | Status | Page |
 |---|---|---|
-| Login screen | ❌ | `01-Getting-Started/Logging-In.md` |
+| Login screen | ✅ | [Logging In](01-Getting-Started/Logging-In.md) |
 | Header bar — Search box | ✅ | [Search](01-Getting-Started/Search.md) |
 | Header bar — Documentation, Create VM, Create CT | ⚠️ | Covered in [Interface Tour](01-Getting-Started/Interface-Tour.md) |
-| Header bar — user menu, password, preferences | ❌ | `01-Getting-Started/My-Settings.md` |
+| Header bar — user menu, password, preferences | ✅ | [My Settings](01-Getting-Started/My-Settings.md) |
 | Resource tree — Server View | ✅ | [Interface Tour](01-Getting-Started/Interface-Tour.md) |
-| Resource tree — Folder / Pool / Tag views | ❌ | `01-Getting-Started/Resource-Tree-and-Views.md` |
-| Tags on guests | ❌ | `01-Getting-Started/Tags.md` |
+| Resource tree — Folder / Pool / Tag views | ✅ | [Resource Tree and Views](01-Getting-Started/Resource-Tree-and-Views.md) |
+| Tags on guests | ✅ | [Tags](01-Getting-Started/Tags.md) |
 | Task log / Cluster log panel | ✅ | [Task Log and Cluster Log](01-Getting-Started/Task-Log-and-Cluster-Log.md) |
 | Interface problems | ✅ | [Interface Troubleshooting](01-Getting-Started/Interface-Troubleshooting.md) |
 
@@ -47,7 +47,7 @@ Menu order confirmed: Search · Summary · Notes · Cluster · Ceph · Options �
 | Summary | ✅ | [Datacenter Summary](02-Datacenter/Datacenter-Summary.md) |
 | Notes | ✅ | [Datacenter Notes](02-Datacenter/Notes.md) |
 | Cluster | ✅ | [Cluster Overview](02-Datacenter/Cluster/Cluster-Overview.md) + 8 pages |
-| Ceph | ❌ | `02-Datacenter/Ceph/` — 3 pages |
+| Ceph | ✅ | [Ceph Overview](02-Datacenter/Ceph/Ceph-Overview.md) + 2 pages |
 | Options | ✅ | [Datacenter Options](02-Datacenter/Options.md) |
 | Storage | ✅ | [Storage Overview](02-Datacenter/Storage/Storage-Overview.md) + 5 pages |
 | Backup | ✅ | [Backup Jobs Overview](02-Datacenter/Backup/Backup-Jobs-Overview.md) + 3 pages |
@@ -60,12 +60,12 @@ Menu order confirmed: Search · Summary · Notes · Cluster · Ceph · Options �
 | Permissions → Roles | ✅ | [Roles](02-Datacenter/Permissions/Roles.md) |
 | Permissions → Realms | ✅ | [Authentication Realms](02-Datacenter/Permissions/Authentication-Realms.md) |
 | HA | ✅ | [HA Overview](02-Datacenter/HA/HA-Overview.md) + 5 pages |
-| SDN | ❌ | `02-Datacenter/SDN/` — 3 pages |
-| ACME | ❌ | `02-Datacenter/ACME-Certificates.md` |
+| SDN | ✅ | [SDN Overview](02-Datacenter/SDN/SDN-Overview.md) + 2 pages |
+| ACME | ✅ | [ACME Certificates](02-Datacenter/ACME-Certificates.md) |
 | Firewall | ✅ | [Firewall Overview](02-Datacenter/Firewall/Firewall-Overview.md) + 5 pages |
-| Metric Server | 🔍 ❌ | `02-Datacenter/Metric-Server.md` |
-| Notifications | 🔍 ❌ | `02-Datacenter/Notifications.md` |
-| Support | 🔍 ❌ | `02-Datacenter/Support.md` |
+| Metric Server | 🔍 ✅ | [Metric Server](02-Datacenter/Metric-Server.md) — presence unconfirmed |
+| Notifications | 🔍 ✅ | [Notifications](02-Datacenter/Notifications.md) — presence unconfirmed |
+| Support | 🔍 ✅ | [Support](02-Datacenter/Support.md) — presence unconfirmed |
 
 ## Node
 
@@ -89,7 +89,7 @@ Menu confirmed from `03-Nodes/images/navigation-menu.png`: Search · Summary · 
 | Updates → Repositories | ✅ | [Repositories](03-Nodes/Updates/Repositories.md) |
 | Firewall | ✅ | [Node Firewall](03-Nodes/Node-Firewall.md) |
 | Disks | ✅ | [Disks Overview](03-Nodes/Disks/Disks-Overview.md) + 7 pages |
-| Ceph | ❌ | `03-Nodes/Node-Ceph.md` |
+| Ceph | ✅ | [Node Ceph](03-Nodes/Node-Ceph.md) |
 | Replication | ✅ | [Node Replication](03-Nodes/Node-Replication.md) |
 | Task History | ✅ | [Task History](03-Nodes/Task-History.md) |
 | Subscription | ✅ | [Subscription](03-Nodes/Subscription.md) |
@@ -114,7 +114,7 @@ Tabs confirmed from `04-Virtual-Machines/images/vm-tabs.png`.
 | Firewall | ✅ | [VM Firewall](04-Virtual-Machines/VM-Firewall.md) |
 | Permissions | ✅ | [VM Permissions](04-Virtual-Machines/VM-Permissions.md) |
 | Notes panel (on Summary) | ✅ | Covered in [VM Summary](04-Virtual-Machines/VM-Summary.md) |
-| Header — Tags control | ❌ | `01-Getting-Started/Tags.md` |
+| Header — Tags control | ✅ | [Tags](01-Getting-Started/Tags.md) |
 | Create / Manage / Migrate / Clone / Delete | ✅ | Five existing pages |
 | Convert to Template | ✅ | [Convert to Template](04-Virtual-Machines/Convert-to-Template.md) |
 
@@ -234,29 +234,31 @@ The house rule remains **UI first, CLI second** — CLI appears where the UI gen
 
 | Level | Tabs | ✅ | ⚠️ | ❌ |
 |---|---:|---:|---:|---:|
-| Application shell | 9 | 4 | 2 | 3 |
-| Datacenter | 23 | 18 | 0 | 5 |
-| Node | 22 | 20 | 1 | 1 |
-| Virtual Machine | 16 | 15 | 0 | 1 |
+| Application shell | 9 | 8 | 1 | 0 |
+| Datacenter | 23 | 23 | 0 | 0 |
+| Node | 22 | 21 | 1 | 0 |
+| Virtual Machine | 16 | 16 | 0 | 0 |
 | Container | 18 | 18 | 0 | 0 |
 | Storage | 6 | 6 | 0 | 0 |
-| **Total** | **94** | **81** | **3** | **10** |
+| **Total** | **94** | **92** | **2** | **0** |
 
-**Interface coverage: 86% of panels have a dedicated page.** Virtual machines, containers, and per-storage views are complete. The remaining 10 are four whole subsystems (Ceph, SDN, ACME, and the datacenter service tabs) plus the onboarding pages.
+**Interface coverage: complete.** Every panel has a page. Two entries are marked partial rather than missing — the header bar buttons and node-level Search — because they are documented inside other pages rather than having pages of their own, which is correct for what they are.
+
+Four entries carry 🔍: Notifications, Metric Server, Support, and node-level System Options. Pages exist for them, but their presence in this deployment was never confirmed from a screenshot. Verify during capture.
 
 ## CLI operations
 
 | Area | Operations | ✅ | ⚠️ | ❌ |
 |---|---:|---:|---:|---:|
-| Cluster | 10 | 6 | 1 | 3 |
-| High Availability | 4 | 1 | 0 | 3 |
-| Guests | 8 | 0 | 1 | 7 |
-| Storage and Disks | 6 | 3 | 1 | 2 |
-| Access Control | 3 | 2 | 0 | 1 |
-| Node and System | 5 | 1 | 0 | 4 |
-| **Total** | **36** | **13** | **3** | **20** |
+| Cluster | 10 | 9 | 1 | 0 |
+| High Availability | 4 | 4 | 0 | 0 |
+| Guests | 8 | 8 | 0 | 0 |
+| Storage and Disks | 6 | 5 | 1 | 0 |
+| Access Control | 3 | 3 | 0 | 0 |
+| Node and System | 5 | 5 | 0 | 0 |
+| **Total** | **36** | **34** | **2** | **0** |
 
-**CLI coverage: roughly 36%.** Still the weaker half. The four critical recovery paths are now documented; the remaining gaps are mostly convenience and automation commands rather than recovery.
+**CLI coverage: complete.** Every operation is covered, either in its own page or in [06-CLI-Reference.md](06-CLI-Reference.md), which collects the command families and lists the operations with no interface equivalent.
 
 ---
 
@@ -281,18 +283,12 @@ Import, and Permissions; and Datacenter and Node Notes are all written.
 Restoring to a different guest ID is now covered in
 [Storage Content Browser](02-Datacenter/Storage/Storage-Content-Browser.md).
 
-## Medium — completeness
+## Everything above ✅ complete
 
-11. `06-CLI-Reference.md` — one appendix covering `qm`, `pct`, `vzdump`, `pvesm`, `pvecm`, `pveum`, `ha-manager`, `pvenode`, and what each verifies.
-12. **Tags**, resource tree views, **My Settings**, **Logging In**, **What Is VM2Cloud**.
+The CLI reference, onboarding pages, SDN, Ceph, ACME, Notifications, Metric Server,
+and Support are all written.
 
-## Lower traffic
-
-15. **SDN** — 3 pages.
-16. **Ceph** — 3 datacenter pages plus the node view.
-17. **ACME**, **Notifications**, **Metric Server**, **Support**.
-
-## Not a content gap
+## Remaining work
 
 18. **260 screenshot placeholders** on pre-existing pages, and 82 on the new Tier 1 pages. The Tier 1 placeholders carry `Capture:` lines; the older ones do not yet.
 19. **43 `Verify:` markers** on UI labels awaiting confirmation.

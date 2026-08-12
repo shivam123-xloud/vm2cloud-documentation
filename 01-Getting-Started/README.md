@@ -10,7 +10,12 @@ Start here if you are new to VM2Cloud or need to orient yourself in the interfac
 
 | Page | Covers |
 |---|---|
+| [What Is VM2Cloud](What-Is-VM2Cloud.md) | The platform, its structure, and what it does not do |
+| [Logging In](Logging-In.md) | Reaching the interface, realms, certificate warnings |
 | [Interface Tour](Interface-Tour.md) | Navigation panel, resource tree, workspace, search box, header bar, user menu, task viewer |
+| [Resource Tree and Views](Resource-Tree-and-Views.md) | Server, Folder, Pool, and Tag views |
+| [Tags](Tags.md) | Labelling guests for cross-cutting grouping |
+| [My Settings](My-Settings.md) | Password, two-factor, preferences, logout |
 | [Search](Search.md) | The header search box and the Datacenter Search panel |
 | [Task Log and Cluster Log](Task-Log-and-Cluster-Log.md) | Monitoring running and completed operations across the cluster |
 | [Interface Troubleshooting](Interface-Troubleshooting.md) | The interface will not load, resources are missing, permission errors |
@@ -27,4 +32,4 @@ Start here if you are new to VM2Cloud or need to orient yourself in the interfac
 
 ## Planned Pages
 
-Not yet written: `What-Is-VM2Cloud.md`, `Logging-In.md`, `Resource-Tree-and-Views.md` (Server / Folder / Pool / Tag views), `My-Settings.md`, `Tags.md`.
+Every application-shell page is now written.
