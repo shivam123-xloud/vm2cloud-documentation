@@ -4,7 +4,7 @@
 
 ## Overview
 
-The **Manage Storage** page allows administrators to modify existing storage configurations, enable or disable storage, and remove storage that is no longer required. Proper storage management helps maintain an organized and efficient VM2Cloud environment.
+The **Manage Storage** page allows administrators to modify existing storage configurations, enable or disable storage, and remove storage that is no longer required. Proper storage management helps maintain an organized and efficient VM2Cloud VE environment.
 
 > **Important:** Before modifying or removing storage, ensure that it is not actively being used by virtual machines, containers, backups, or ISO images.
 
@@ -37,7 +37,7 @@ Before managing storage, ensure that:
 
 ## Step 1: Open Storage Management
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select **Datacenter**.
 3. Click **Storage**.
 

@@ -4,7 +4,7 @@
 
 ## Overview
 
-This guide provides solutions for common storage-related issues that administrators may encounter while configuring or using storage in VM2Cloud. Use this document to identify problems, understand their possible causes, and apply the appropriate resolution.
+This guide provides solutions for common storage-related issues that administrators may encounter while configuring or using storage in VM2Cloud VE. Use this document to identify problems, understand their possible causes, and apply the appropriate resolution.
 
 ---
 
@@ -33,7 +33,7 @@ Refer to this guide when:
 ### Resolution
 
 * Verify that the storage server is powered on.
-* Check network connectivity between the VM2Cloud node and the storage server.
+* Check network connectivity between the VM2Cloud VE node and the storage server.
 * Confirm that the storage service is running.
 * Refresh the Storage page after connectivity has been restored.
 

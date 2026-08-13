@@ -40,7 +40,7 @@ Open the Support panel when you need to:
 
 ## Step 1: Open the Support Panel
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select **Datacenter** in the resource tree.
 3. Click **Support**.
 
@@ -172,7 +172,7 @@ That last point matters. If the interface is down, support details held only ins
 - Audit subscription status across **every** node quarterly, not just when something breaks.
 - Reapply the key immediately after rebuilding a node — a reinstall keeps nothing.
 - Set a renewal reminder at least a month before expiry.
-- Record the support contact route in [Datacenter Notes](Notes.md), and somewhere outside VM2Cloud as well.
+- Record the support contact route in [Datacenter Notes](Notes.md), and somewhere outside VM2Cloud VE as well.
 - Gather the information in Step 4 before opening a case rather than during it.
 - Include full task output rather than a summary.
 - Note the subscription key location in your password manager, not in the notes themselves.
@@ -197,4 +197,4 @@ That last point matters. If the interface is down, support details held only ins
 
 The Support panel shows support entitlement across the cluster and the route for raising cases. Keys themselves are applied per node, which is where partial coverage creeps in — a node added or rebuilt without its key runs unlicensed and nobody notices until support is needed.
 
-Audit every node rather than checking one, set a renewal reminder well before expiry, and keep the support contact route recorded outside VM2Cloud as well as inside it. Details stored only in the interface are unreachable during exactly the outage that makes you need them.
+Audit every node rather than checking one, set a renewal reminder well before expiry, and keep the support contact route recorded outside VM2Cloud VE as well as inside it. Details stored only in the interface are unreachable during exactly the outage that makes you need them.

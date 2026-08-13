@@ -4,7 +4,7 @@
 
 ## Overview
 
-The **Time** page displays the current system date, time, and time zone configured on the selected VM2Cloud node, and allows administrators to configure Network Time Protocol (NTP) synchronization.
+The **Time** page displays the current system date, time, and time zone configured on the selected VM2Cloud VE node, and allows administrators to configure Network Time Protocol (NTP) synchronization.
 
 NTP keeps the system clock synchronized with trusted time servers, ensuring accurate timestamps across all nodes. Accurate system time is essential for cluster communication, authentication, logging, backups, scheduled tasks, and High Availability (HA).
 
@@ -29,7 +29,7 @@ Use the **Time** page to:
 
 Before modifying the time settings, ensure that:
 
-- You are logged in to the VM2Cloud web interface.
+- You are logged in to the VM2Cloud VE web interface.
 - You have administrative privileges.
 - The selected node is online.
 - The configured NTP servers are reachable.
@@ -40,7 +40,7 @@ Before modifying the time settings, ensure that:
 
 ## Step 1: Open the Time Page
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select the required node.
 3. Expand **System**.
 4. Select **Time**.
@@ -269,4 +269,4 @@ Verify the following:
 
 # Summary
 
-The **Time** page allows administrators to review and configure the system date, time, time zone, and NTP synchronization for a VM2Cloud node. Maintaining accurate, synchronized time across all nodes improves cluster stability, ensures accurate logging, and supports reliable operation of authentication, scheduling, backup, and High Availability services.
+The **Time** page allows administrators to review and configure the system date, time, time zone, and NTP synchronization for a VM2Cloud VE node. Maintaining accurate, synchronized time across all nodes improves cluster stability, ensures accurate logging, and supports reliable operation of authentication, scheduling, backup, and High Availability services.

@@ -4,9 +4,9 @@
 
 ## Overview
 
-Deleting a cluster permanently removes the cluster configuration from the VM2Cloud node. This operation is typically performed when decommissioning a cluster, rebuilding the environment, or converting a clustered node back to a standalone server.
+Deleting a cluster permanently removes the cluster configuration from the VM2Cloud VE node. This operation is typically performed when decommissioning a cluster, rebuilding the environment, or converting a clustered node back to a standalone server.
 
-> **Important:** Cluster deletion cannot be performed from the VM2Cloud web interface. This operation must be completed using the command line.
+> **Important:** Cluster deletion cannot be performed from the VM2Cloud VE web interface. This operation must be completed using the command line.
 
 ---
 
@@ -39,7 +39,7 @@ Before deleting the cluster, ensure that:
 
 ## Step 1: Verify the Cluster
 
-1. Log in to the **VM2Cloud web interface**.
+1. Log in to the **VM2Cloud VE web interface**.
 
 2. Navigate to:
 
@@ -49,7 +49,7 @@ Datacenter → Cluster
 
 3. Verify that all additional nodes have already been removed.
 
-4. Confirm the node that will be converted into a standalone VM2Cloud host.
+4. Confirm the node that will be converted into a standalone VM2Cloud VE host.
 
 ---
 
@@ -113,7 +113,7 @@ pvecm nodes
 
 # Step 4: Stop Cluster Services
 
-Stop the VM2Cloud cluster services:
+Stop the VM2Cloud VE cluster services:
 
 ```bash
 systemctl stop pve-cluster
@@ -138,9 +138,9 @@ systemctl status corosync
 
 ---
 
-# Step 5: Start VM2Cloud Cluster Filesystem in Local Mode
+# Step 5: Start VM2Cloud VE Cluster Filesystem in Local Mode
 
-The `/etc/pve` directory is managed by the VM2Cloud cluster filesystem.
+The `/etc/pve` directory is managed by the VM2Cloud VE cluster filesystem.
 
 Before removing cluster configuration, start the filesystem in local mode.
 
@@ -161,10 +161,10 @@ Expected output:
 ---
 
 
-**VM2Cloud Cluster Filesystem Local Mode**
+**VM2Cloud VE Cluster Filesystem Local Mode**
 
 
-![VM2Cloud Cluster Filesystem Local Mode](images/deleting-clusture-config-1.png)
+![VM2Cloud VE Cluster Filesystem Local Mode](images/deleting-clusture-config-1.png)
 
 
 ---
@@ -183,7 +183,7 @@ Remove Corosync configuration files:
 rm -rf /etc/corosync/*
 ```
 
-Stop the local VM2Cloud cluster filesystem process:
+Stop the local VM2Cloud VE cluster filesystem process:
 
 ```bash
 killall pmxcfs
@@ -200,15 +200,15 @@ killall pmxcfs
 
 ---
 
-# Step 7: Restart VM2Cloud Services
+# Step 7: Restart VM2Cloud VE Services
 
-Start the VM2Cloud cluster filesystem service:
+Start the VM2Cloud VE cluster filesystem service:
 
 ```bash
 systemctl start pve-cluster
 ```
 
-Restart VM2Cloud management services:
+Restart VM2Cloud VE management services:
 
 ```bash
 systemctl restart pvedaemon
@@ -219,10 +219,10 @@ systemctl restart pvestatd
 ---
 
 
-**Restart VM2Cloud Services**
+**Restart VM2Cloud VE Services**
 
 
-![Restart VM2Cloud Services](images/Restart-VM2Cloud-Services.png)
+![Restart VM2Cloud VE Services](images/Restart-VM2Cloud-Services.png)
 
 
 ---
@@ -266,9 +266,9 @@ is no longer present.
 
 ---
 
-# Step 9: Verify Standalone Mode From VM2Cloud Interface
+# Step 9: Verify Standalone Mode From VM2Cloud VE Interface
 
-1. Refresh the VM2Cloud web interface.
+1. Refresh the VM2Cloud VE web interface.
 
 2. Navigate to:
 
@@ -280,7 +280,7 @@ Datacenter → Cluster
 
 * No cluster name is displayed.
 * No cluster nodes are listed.
-* The server appears as a standalone VM2Cloud host.
+* The server appears as a standalone VM2Cloud VE host.
 
 ---
 
@@ -299,7 +299,7 @@ Verify the following:
 
 * Cluster configuration has been removed.
 * Corosync configuration has been deleted.
-* Node operates as a standalone VM2Cloud host.
+* Node operates as a standalone VM2Cloud VE host.
 * Cluster membership information is no longer visible.
 * Virtual machines are still available.
 * Storage configuration remains unchanged.
@@ -311,9 +311,9 @@ Verify the following:
 
 | Issue | Resolution |
 | --- | --- |
-| Unable to remove `/etc/pve/corosync.conf` | Start VM2Cloud cluster filesystem in local mode using `pmxcfs -l` before deleting the file. |
-| Permission denied while removing cluster file | `/etc/pve` is managed by the VM2Cloud cluster filesystem. Stop services and use local mode. |
-| Cluster information still appears | Restart VM2Cloud services and refresh the web interface. |
+| Unable to remove `/etc/pve/corosync.conf` | Start VM2Cloud VE cluster filesystem in local mode using `pmxcfs -l` before deleting the file. |
+| Permission denied while removing cluster file | `/etc/pve` is managed by the VM2Cloud VE cluster filesystem. Stop services and use local mode. |
+| Cluster information still appears | Restart VM2Cloud VE services and refresh the web interface. |
 | Node fails after removing cluster | Check Corosync configuration and service status. |
 | Command execution fails | Review command output and fix reported errors before continuing. |
 
@@ -321,14 +321,14 @@ Verify the following:
 
 # Summary
 
-The cluster has been successfully removed from the VM2Cloud node.
+The cluster has been successfully removed from the VM2Cloud VE node.
 
-The server now operates as a standalone VM2Cloud host.
+The server now operates as a standalone VM2Cloud VE host.
 
 Existing virtual machines, containers, storage pools, and data remain unchanged.
 
 The node can later be used to:
 
-* Create a new VM2Cloud cluster.
-* Join an existing VM2Cloud cluster.
+* Create a new VM2Cloud VE cluster.
+* Join an existing VM2Cloud VE cluster.
 * Operate as an independent virtualization host.

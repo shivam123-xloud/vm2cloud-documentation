@@ -4,7 +4,7 @@
 
 ## Overview
 
-This guide provides solutions for common network-related issues that administrators may encounter while managing networking in VM2Cloud. It covers problems related to Linux Bridges, Bonds, VLANs, physical interfaces, DNS, gateways, and network connectivity.
+This guide provides solutions for common network-related issues that administrators may encounter while managing networking in VM2Cloud VE. It covers problems related to Linux Bridges, Bonds, VLANs, physical interfaces, DNS, gateways, and network connectivity.
 
 Use this guide to identify common issues, understand their possible causes, and apply the appropriate resolution.
 
@@ -260,4 +260,4 @@ After resolving the issue, verify the following:
 
 # Summary
 
-Most networking issues in VM2Cloud are caused by incorrect interface configuration, bridge settings, VLAN configuration, bonding configuration, or gateway and DNS settings. Reviewing the network configuration, validating physical connectivity, and using the available diagnostic commands will resolve the majority of network-related problems.
+Most networking issues in VM2Cloud VE are caused by incorrect interface configuration, bridge settings, VLAN configuration, bonding configuration, or gateway and DNS settings. Reviewing the network configuration, validating physical connectivity, and using the available diagnostic commands will resolve the majority of network-related problems.

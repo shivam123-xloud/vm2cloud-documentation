@@ -4,7 +4,7 @@
 
 ## Overview
 
-The **Hosts** page allows administrators to manage the local hostname resolution entries for a VM2Cloud node. These entries are stored in the node's hosts file and are used to resolve hostnames before querying a DNS server.
+The **Hosts** page allows administrators to manage the local hostname resolution entries for a VM2Cloud VE node. These entries are stored in the node's hosts file and are used to resolve hostnames before querying a DNS server.
 
 Host entries are commonly used for local communication, cluster nodes, and environments where DNS is unavailable or where specific hostname-to-IP mappings are required.
 
@@ -26,7 +26,7 @@ Use the **Hosts** page to:
 
 Before modifying the Hosts configuration, ensure that:
 
-- You are logged in to the VM2Cloud web interface.
+- You are logged in to the VM2Cloud VE web interface.
 - You have administrative privileges.
 - The selected node is online.
 - You know the correct hostname and IP address to configure.
@@ -37,7 +37,7 @@ Before modifying the Hosts configuration, ensure that:
 
 ## Step 1: Open the Hosts Page
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select the required node.
 3. Expand **System**.
 4. Select **Hosts**.
@@ -241,4 +241,4 @@ Verify the following:
 
 # Summary
 
-The **Hosts** page allows administrators to manage local hostname-to-IP address mappings on a VM2Cloud node. Properly configured host entries help ensure reliable hostname resolution for cluster communication, internal services, and environments where DNS is unavailable or requires supplemental local mappings.
+The **Hosts** page allows administrators to manage local hostname-to-IP address mappings on a VM2Cloud VE node. Properly configured host entries help ensure reliable hostname resolution for cluster communication, internal services, and environments where DNS is unavailable or requires supplemental local mappings.

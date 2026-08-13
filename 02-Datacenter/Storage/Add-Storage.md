@@ -4,7 +4,7 @@
 
 ## Overview
 
-VM2Cloud allows you to add different types of storage to meet your infrastructure requirements. Storage can be local to a single node or shared across multiple nodes in a cluster. Once added, storage can be used for virtual machines, containers, ISO images, backups, templates, and other supported content.
+VM2Cloud VE allows you to add different types of storage to meet your infrastructure requirements. Storage can be local to a single node or shared across multiple nodes in a cluster. Once added, storage can be used for virtual machines, containers, ISO images, backups, templates, and other supported content.
 
 ---
 
@@ -28,7 +28,7 @@ Before adding storage, ensure that:
 * You have administrator privileges.
 * The storage device or storage server is ready.
 * Network connectivity is available for shared storage.
-* The storage type is supported by VM2Cloud.
+* The storage type is supported by VM2Cloud VE.
 
 ---
 
@@ -36,7 +36,7 @@ Before adding storage, ensure that:
 
 ## Step 1: Open Storage Management
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select **Datacenter**.
 3. Click **Storage**.
 
@@ -68,7 +68,7 @@ Available options may include:
 * ESXi
 * iSCSI
 
-> **Note:** The available storage types depend on your VM2Cloud installation and enabled features.
+> **Note:** The available storage types depend on your VM2Cloud VE installation and enabled features.
 
 ---
 
@@ -173,4 +173,4 @@ Verify the following:
 
 # Summary
 
-A new storage resource has been successfully added to VM2Cloud. The storage is now available for storing virtual machine disks, container data, ISO images, templates, backups, and other supported content based on its configured content types.
+A new storage resource has been successfully added to VM2Cloud VE. The storage is now available for storing virtual machine disks, container data, ISO images, templates, backups, and other supported content based on its configured content types.

@@ -259,7 +259,7 @@ Verify the following:
 - [Tags](Tags.md)
 - [Pools](../02-Datacenter/Permissions/Pools.md)
 - [Logging In](Logging-In.md)
-- [What Is VM2Cloud](What-Is-VM2Cloud.md)
+- [What Is VM2Cloud VE](What-Is-VM2Cloud-VE.md)
 - [Assign Permissions](../02-Datacenter/Permissions/Assign-Permissions.md)
 
 ---

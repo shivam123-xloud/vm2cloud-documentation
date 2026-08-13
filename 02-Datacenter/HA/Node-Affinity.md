@@ -4,11 +4,11 @@
 
 ## Overview
 
-Node affinity controls where High Availability (HA) resources should run within the VM2Cloud cluster.
+Node affinity controls where High Availability (HA) resources should run within the VM2Cloud VE cluster.
 
 Node-affinity rules allow administrators to define preferred or restricted nodes for HA-managed virtual machines and containers.
 
-Node affinity is the current placement mechanism for HA resources in VM2Cloud.
+Node affinity is the current placement mechanism for HA resources in VM2Cloud VE.
 
 Node affinity controls resource placement only. It does not provide:
 
@@ -40,7 +40,7 @@ Use node affinity when:
 
 Before configuring node affinity:
 
-- VM2Cloud must be configured as a cluster.
+- VM2Cloud VE must be configured as a cluster.
 - HA must be available on the cluster.
 - The HA resource must already exist.
 - The cluster should have quorum.
@@ -58,7 +58,7 @@ Before configuring node affinity:
 
 ## Step 1: Open the HA Configuration
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select **Datacenter** from the left navigation tree.
 3. Select **HA**.
 4. Open the HA placement configuration.

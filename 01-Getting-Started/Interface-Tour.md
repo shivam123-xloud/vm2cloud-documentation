@@ -4,7 +4,7 @@
 
 ## Overview
 
-The Dashboard is the primary interface of VM2Cloud. It provides a centralized view of the virtualization environment and serves as the starting point for managing clusters, nodes, storage, networking, virtual machines, containers, users, and system resources.
+The Dashboard is the primary interface of VM2Cloud VE. It provides a centralized view of the virtualization environment and serves as the starting point for managing clusters, nodes, storage, networking, virtual machines, containers, users, and system resources.
 
 From the Dashboard, administrators can quickly navigate to different components, monitor system health, and perform day-to-day management tasks.
 
@@ -14,7 +14,7 @@ From the Dashboard, administrators can quickly navigate to different components,
 
 Use the Dashboard to:
 
-* Navigate through the VM2Cloud environment.
+* Navigate through the VM2Cloud VE environment.
 * Access Datacenter, Nodes, Virtual Machines, and Containers.
 * Monitor the overall infrastructure.
 * View recent tasks and system status.
@@ -26,7 +26,7 @@ Use the Dashboard to:
 
 Before accessing the Dashboard, ensure that:
 
-* The VM2Cloud web interface is accessible.
+* The VM2Cloud VE web interface is accessible.
 * You have a valid user account.
 * You have successfully logged in.
 
@@ -40,7 +40,7 @@ The Dashboard is divided into several sections that help administrators navigate
 
 ## Navigation Panel
 
-Located on the left side of the interface, the Navigation Panel displays the complete VM2Cloud resource tree.
+Located on the left side of the interface, the Navigation Panel displays the complete VM2Cloud VE resource tree.
 
 From here, you can access:
 
@@ -68,7 +68,7 @@ Select a resource from the navigation panel to open its management page.
 
 ## Resource Tree
 
-The Resource Tree displays the hierarchy of all configured resources within VM2Cloud.
+The Resource Tree displays the hierarchy of all configured resources within VM2Cloud VE.
 
 Depending on your environment, the tree may include:
 
@@ -118,7 +118,7 @@ Examples include:
 
 ## Search
 
-The Search box allows administrators to quickly locate resources within the VM2Cloud environment.
+The Search box allows administrators to quickly locate resources within the VM2Cloud VE environment.
 
 You can search for:
 
@@ -144,7 +144,7 @@ Search results are displayed as you type.
 
 The Header Bar provides quick access to commonly used functions.
 
-Depending on your VM2Cloud deployment, it may include:
+Depending on your VM2Cloud VE deployment, it may include:
 
 * Search
 * Create VM
@@ -173,7 +173,7 @@ From this menu, administrators can:
 * View account information
 * Change the password
 * Configure user preferences
-* Log out of VM2Cloud
+* Log out of VM2Cloud VE
 
 The available options depend on the user's permissions.
 
@@ -230,7 +230,7 @@ Verify the following:
 
 | Issue                                           | Resolution                                                                                        |
 | ----------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| Dashboard does not load                         | Verify that the VM2Cloud management services are running and refresh the browser.                 |
+| Dashboard does not load                         | Verify that the VM2Cloud VE management services are running and refresh the browser.                 |
 | Resources are missing from the Navigation Panel | Confirm that the resources exist and that your user account has permission to view them.          |
 | Search does not return results                  | Verify the resource name and refresh the Dashboard.                                               |
 | Task Viewer is empty                            | If no management tasks have been performed recently, the Task Viewer may not display any entries. |
@@ -240,4 +240,4 @@ Verify the following:
 
 # Summary
 
-The Dashboard is the central management interface of VM2Cloud. It provides quick access to all infrastructure resources, allows administrators to navigate the environment efficiently, and serves as the starting point for managing clusters, nodes, storage, networking, virtual machines, containers, and other platform components.
+The Dashboard is the central management interface of VM2Cloud VE. It provides quick access to all infrastructure resources, allows administrators to navigate the environment efficiently, and serves as the starting point for managing clusters, nodes, storage, networking, virtual machines, containers, and other platform components.

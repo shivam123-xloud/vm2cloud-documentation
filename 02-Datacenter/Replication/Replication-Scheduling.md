@@ -4,7 +4,7 @@
 
 ## Overview
 
-VM2Cloud replication jobs run automatically according to a configured schedule.
+VM2Cloud VE replication jobs run automatically according to a configured schedule.
 
 The replication scheduler determines when a replication job starts synchronization between the source node and the target node.
 
@@ -49,7 +49,7 @@ Before configuring a replication schedule:
 
 ## Step 1: Select the Guest
 
-1. Log in to VM2Cloud.
+1. Log in to VM2Cloud VE.
 2. Locate the required VM or container in the navigation tree.
 3. Select the guest.
 4. Open the **Replication** section.
@@ -101,7 +101,7 @@ Before configuring a replication schedule:
 3. Verify the schedule syntax.
 4. Confirm that the schedule matches the required synchronization frequency.
 5. Review the other replication settings.
-6. Click **OK** or the corresponding save button displayed by the installed VM2Cloud version.
+6. Click **OK** or the corresponding save button displayed by the installed VM2Cloud VE version.
 
 ### Screenshot 4
 
@@ -113,7 +113,7 @@ Before configuring a replication schedule:
 
 # Schedule Configuration
 
-VM2Cloud uses the underlying replication scheduler's calendar-event format.
+VM2Cloud VE uses the underlying replication scheduler's calendar-event format.
 
 A schedule can specify:
 
@@ -257,7 +257,7 @@ The underlying documentation uses this format to demonstrate repeated replicatio
 hourly
 ```
 
-Use an appropriate supported schedule expression in the VM2Cloud interface for hourly replication.
+Use an appropriate supported schedule expression in the VM2Cloud VE interface for hourly replication.
 
 ---
 
@@ -648,7 +648,7 @@ pvescheduler status
 
 The underlying scheduler is responsible for starting scheduled jobs such as replication and backup jobs.
 
-Use CLI verification only when the VM2Cloud UI does not provide enough information to diagnose the scheduling problem.
+Use CLI verification only when the VM2Cloud VE UI does not provide enough information to diagnose the scheduling problem.
 
 ---
 
@@ -695,7 +695,7 @@ Cluster and HA:
 
 # Summary
 
-Replication scheduling controls when VM2Cloud replication jobs synchronize guest data.
+Replication scheduling controls when VM2Cloud VE replication jobs synchronize guest data.
 
 The underlying replication scheduler supports configurable intervals from **one minute to one week** and uses a subset of the systemd calendar-event format.
 

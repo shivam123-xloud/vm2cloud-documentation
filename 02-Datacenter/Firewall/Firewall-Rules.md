@@ -10,7 +10,7 @@ A rule matches traffic by direction, protocol, source, destination, and port, an
 
 For direction, actions, evaluation order, and how the three firewall levels interact, see [Firewall Overview](Firewall-Overview.md). This page covers creating and managing rules on the datacenter panel.
 
-> **Warning:** A rule that blocks TCP port **8006** removes access to the VM2Cloud web interface. A rule that blocks traffic between node addresses can break cluster communication and cause nodes to lose quorum. Review every rule before enabling it.
+> **Warning:** A rule that blocks TCP port **8006** removes access to the VM2Cloud VE web interface. A rule that blocks traffic between node addresses can break cluster communication and cause nodes to lose quorum. Review every rule before enabling it.
 
 ---
 
@@ -43,7 +43,7 @@ Before creating firewall rules, ensure that:
 
 ## Step 1: Open the Rules Panel
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select **Datacenter** in the resource tree.
 3. Expand **Firewall**.
 4. Click **Rules**.

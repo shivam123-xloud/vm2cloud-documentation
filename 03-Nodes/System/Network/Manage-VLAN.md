@@ -6,7 +6,7 @@
 
 A VLAN (Virtual Local Area Network) allows multiple logical networks to operate over the same physical network infrastructure. It separates network traffic using VLAN IDs, improving security, organization, and network management.
 
-In VM2Cloud, a VLAN is created on top of a physical interface or a Bond interface and can be connected to a Linux Bridge for use by virtual machines and containers.
+In VM2Cloud VE, a VLAN is created on top of a physical interface or a Bond interface and can be connected to a Linux Bridge for use by virtual machines and containers.
 
 ---
 
@@ -38,7 +38,7 @@ Before creating a VLAN, ensure that:
 
 ## Step 1: Open the Network Page
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select the required node.
 3. Click **System**.
 4. Select **Network**.
@@ -214,4 +214,4 @@ Verify the following:
 
 # Summary
 
-VLANs allow administrators to separate network traffic into multiple logical networks while using the same physical infrastructure. By configuring VLAN interfaces and applying the network configuration, VM2Cloud can securely connect virtual machines and containers to different network segments.
+VLANs allow administrators to separate network traffic into multiple logical networks while using the same physical infrastructure. By configuring VLAN interfaces and applying the network configuration, VM2Cloud VE can securely connect virtual machines and containers to different network segments.

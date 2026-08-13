@@ -4,11 +4,11 @@
 
 ## Overview
 
-Two-Factor Authentication (2FA) provides an additional layer of security for VM2Cloud user accounts. In addition to entering a username and password, users must verify their identity using a second authentication factor during login.
+Two-Factor Authentication (2FA) provides an additional layer of security for VM2Cloud VE user accounts. In addition to entering a username and password, users must verify their identity using a second authentication factor during login.
 
 Enabling 2FA helps protect accounts from unauthorized access, even if a user's password is compromised.
 
-> **Note:** The available 2FA methods depend on your VM2Cloud deployment and configuration.
+> **Note:** The available 2FA methods depend on your VM2Cloud VE deployment and configuration.
 
 ---
 
@@ -20,7 +20,7 @@ Use Two-Factor Authentication when you need to:
 - Protect administrator accounts.
 - Meet organizational security requirements.
 - Reduce the risk of unauthorized access.
-- Secure remote access to VM2Cloud.
+- Secure remote access to VM2Cloud VE.
 
 ---
 
@@ -37,7 +37,7 @@ Before configuring 2FA, ensure that:
 
 # Access Two-Factor Authentication
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select **Datacenter**.
 3. Click **Permissions**.
 4. Click **Two-Factor Authentication**.
@@ -56,7 +56,7 @@ The Two-Factor Authentication page displays the available 2FA configuration opti
 
 # Supported Authentication Methods
 
-Depending on your VM2Cloud deployment, one or more of the following authentication methods may be available.
+Depending on your VM2Cloud VE deployment, one or more of the following authentication methods may be available.
 
 | Authentication Method | Description |
 |-----------------------|-------------|
@@ -173,7 +173,7 @@ Verify the following:
 | Hardware security key is not detected | Confirm that the browser and operating system support the selected device. |
 | User cannot complete login | Verify that the configured authentication method is functioning correctly. |
 | Lost authentication device | Use a configured recovery method or have an administrator remove and reconfigure 2FA. |
-| Unable to configure 2FA | Verify that the selected authentication method is supported by your VM2Cloud deployment. |
+| Unable to configure 2FA | Verify that the selected authentication method is supported by your VM2Cloud VE deployment. |
 
 ---
 
@@ -190,4 +190,4 @@ Verify the following:
 
 # Summary
 
-Two-Factor Authentication enhances the security of VM2Cloud by requiring an additional verification step during user authentication. Enabling 2FA helps protect user accounts from unauthorized access and is recommended for all administrative and privileged accounts.
+Two-Factor Authentication enhances the security of VM2Cloud VE by requiring an additional verification step during user authentication. Enabling 2FA helps protect user accounts from unauthorized access and is recommended for all administrative and privileged accounts.

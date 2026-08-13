@@ -6,7 +6,7 @@
 
 Creating a backup protects a container by saving its data and configuration. The backup can be restored later if the container is accidentally deleted, becomes corrupted, or needs to be recovered.
 
-VM2Cloud allows administrators to create manual backups and restore containers from existing backup files.
+VM2Cloud VE allows administrators to create manual backups and restore containers from existing backup files.
 
 ---
 
@@ -42,7 +42,7 @@ Before creating or restoring a backup, ensure that:
 
 ## Step 1: Select the Container
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select the required node.
 3. Select the container.
 4. Click **Backup**.

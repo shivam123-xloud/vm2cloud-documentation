@@ -4,7 +4,7 @@
 
 ## Overview
 
-User Management allows administrators to create, modify, and remove user accounts in VM2Cloud. Each user authenticates through an authentication realm and can be assigned roles and permissions to control access to cluster resources.
+User Management allows administrators to create, modify, and remove user accounts in VM2Cloud VE. Each user authenticates through an authentication realm and can be assigned roles and permissions to control access to cluster resources.
 
 User accounts can also be enabled, disabled, or configured with an expiration date to meet organizational security requirements.
 
@@ -34,7 +34,7 @@ Before managing users, ensure that:
 
 # Access User Management
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select **Datacenter**.
 3. Click **Permissions**.
 4. Click **Users**.
@@ -160,7 +160,7 @@ The updated details appear in the Users list.
 
 # Delete a User
 
-> **Warning:** Deleting a user permanently removes the account from VM2Cloud.
+> **Warning:** Deleting a user permanently removes the account from VM2Cloud VE.
 
 ## Step 1: Select the User
 
@@ -212,4 +212,4 @@ Verify the following:
 
 # Summary
 
-User Management enables administrators to create, update, and remove user accounts while maintaining secure access to VM2Cloud resources. After creating a user, assign the appropriate roles and permissions to provide the required level of access while following the principle of least privilege.
+User Management enables administrators to create, update, and remove user accounts while maintaining secure access to VM2Cloud VE resources. After creating a user, assign the appropriate roles and permissions to provide the required level of access while following the principle of least privilege.

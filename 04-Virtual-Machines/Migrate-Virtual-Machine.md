@@ -4,9 +4,9 @@
 
 ## Overview
 
-Virtual Machine Migration allows you to move a virtual machine from one node to another within the same VM2Cloud cluster. Migration helps balance workloads, perform hardware maintenance, and improve resource utilization without recreating the virtual machine.
+Virtual Machine Migration allows you to move a virtual machine from one node to another within the same VM2Cloud VE cluster. Migration helps balance workloads, perform hardware maintenance, and improve resource utilization without recreating the virtual machine.
 
-Depending on the virtual machine state and cluster configuration, VM2Cloud supports migrating both running and stopped virtual machines.
+Depending on the virtual machine state and cluster configuration, VM2Cloud VE supports migrating both running and stopped virtual machines.
 
 ---
 
@@ -37,7 +37,7 @@ Before migrating a virtual machine, ensure that:
 
 ## Step 1: Select the Virtual Machine
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select the node hosting the virtual machine.
 3. Select the virtual machine.
 
@@ -156,4 +156,4 @@ Verify the following:
 
 # Summary
 
-Virtual Machine Migration enables administrators to move workloads between nodes in a VM2Cloud cluster with minimal disruption. It is commonly used for maintenance, resource balancing, and workload distribution while maintaining the virtual machine's configuration and data.
+Virtual Machine Migration enables administrators to move workloads between nodes in a VM2Cloud VE cluster with minimal disruption. It is commonly used for maintenance, resource balancing, and workload distribution while maintaining the virtual machine's configuration and data.

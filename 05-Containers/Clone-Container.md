@@ -36,7 +36,7 @@ Before cloning a container, ensure that:
 
 ## Step 1: Select the Container
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select the required node.
 3. Select the container you want to clone.
 

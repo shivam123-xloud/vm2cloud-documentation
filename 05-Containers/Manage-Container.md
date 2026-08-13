@@ -35,7 +35,7 @@ Before performing any operation, ensure that:
 
 ## Step 1: Select the Container
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select the required node.
 3. Select the container.
 
@@ -149,4 +149,4 @@ Verify the following after performing any power operation:
 
 # Summary
 
-VM2Cloud provides several power management actions for containers, allowing administrators to start, stop, shut down, reboot, suspend, and resume containers directly from the management toolbar. These operations help manage Linux workloads during normal administration and maintenance.
+VM2Cloud VE provides several power management actions for containers, allowing administrators to start, stop, shut down, reboot, suspend, and resume containers directly from the management toolbar. These operations help manage Linux workloads during normal administration and maintenance.

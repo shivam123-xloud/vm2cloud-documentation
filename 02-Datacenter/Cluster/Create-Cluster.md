@@ -4,7 +4,7 @@
 
 ## Overview
 
-A cluster allows multiple VM2Cloud nodes to work together as a single environment. After creating a cluster, additional nodes can be added, enabling centralized management, workload distribution, and features such as High Availability and live migration.
+A cluster allows multiple VM2Cloud VE nodes to work together as a single environment. After creating a cluster, additional nodes can be added, enabling centralized management, workload distribution, and features such as High Availability and live migration.
 
 ---
 
@@ -12,7 +12,7 @@ A cluster allows multiple VM2Cloud nodes to work together as a single environmen
 
 Create a cluster when:
 
-* Deploying a new VM2Cloud environment.
+* Deploying a new VM2Cloud VE environment.
 * Preparing to add additional nodes.
 * Enabling High Availability.
 * Managing multiple physical servers from a single interface.
@@ -23,7 +23,7 @@ Create a cluster when:
 
 Before creating a cluster, ensure that:
 
-* VM2Cloud is installed on the server.
+* VM2Cloud VE is installed on the server.
 * The server has a static IP address.
 * The hostname is configured correctly.
 * Time synchronization is configured on the server.
@@ -36,7 +36,7 @@ Before creating a cluster, ensure that:
 
 ## Step 1: Open Cluster Management
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. In the navigation pane, select **Datacenter**.
 3. Click **Cluster**.
 
@@ -137,12 +137,12 @@ Verify the following before continuing:
 | ---------------------------- | ---------------------------------------------------------- |
 | Create button is disabled    | Verify you have administrator privileges.                  |
 | Cluster creation fails       | Check the hostname, DNS, and network configuration.        |
-| Cluster page does not update | Refresh the VM2Cloud interface and verify the task status. |
+| Cluster page does not update | Refresh the VM2Cloud VE interface and verify the task status. |
 | Communication error          | Verify the management network is reachable.                |
 
 ---
 
 # Summary
 
-You have successfully created a new VM2Cloud cluster. The current server is now the first node in the cluster and is ready for additional nodes to join. Once the cluster is created, you can proceed with adding more nodes and configuring shared resources.
+You have successfully created a new VM2Cloud VE cluster. The current server is now the first node in the cluster and is ready for additional nodes to join. Once the cluster is created, you can proceed with adding more nodes and configuring shared resources.
 

@@ -4,9 +4,9 @@
 
 ## Overview
 
-An Authentication Realm defines how users authenticate when logging in to VM2Cloud. A realm specifies the source used to validate user credentials, such as the local user database or an external authentication service.
+An Authentication Realm defines how users authenticate when logging in to VM2Cloud VE. A realm specifies the source used to validate user credentials, such as the local user database or an external authentication service.
 
-VM2Cloud supports multiple authentication realms, allowing organizations to integrate with existing identity management systems while maintaining local administrative access.
+VM2Cloud VE supports multiple authentication realms, allowing organizations to integrate with existing identity management systems while maintaining local administrative access.
 
 ---
 
@@ -17,7 +17,7 @@ Use Authentication Realms to:
 - Manage local user authentication.
 - Integrate with external directory services.
 - Configure centralized user authentication.
-- Control how users log in to VM2Cloud.
+- Control how users log in to VM2Cloud VE.
 
 ---
 
@@ -33,7 +33,7 @@ Before managing authentication realms, ensure that:
 
 # Access Authentication Realms
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select **Datacenter**.
 3. Click **Permissions**.
 4. Click **Realms**.
@@ -70,17 +70,17 @@ Select a realm to view its configuration.
 
 # Supported Authentication Realms
 
-Depending on your VM2Cloud deployment, one or more of the following realm types may be available.
+Depending on your VM2Cloud VE deployment, one or more of the following realm types may be available.
 
 | Realm Type | Description |
 |------------|-------------|
 | Linux PAM | Authenticates users using the local Linux operating system accounts. |
-| VM2Cloud Virtual Environment Authentication Server | Uses the internal VM2Cloud user database. |
+| VM2Cloud Virtual Environment Authentication Server | Uses the internal VM2Cloud VE user database. |
 | LDAP | Authenticates users using an LDAP directory service. |
 | Microsoft Active Directory | Authenticates users against an Active Directory domain. |
 | OpenID Connect (OIDC) | Supports authentication through an OpenID Connect identity provider. |
 
-> **Note:** The available authentication realms depend on your VM2Cloud deployment and configuration.
+> **Note:** The available authentication realms depend on your VM2Cloud VE deployment and configuration.
 
 ---
 
@@ -169,4 +169,4 @@ Verify the following:
 
 # Summary
 
-Authentication Realms determine how users authenticate when accessing VM2Cloud. Administrators can configure local or external authentication services to provide secure and centralized access management across the virtualization environment.
+Authentication Realms determine how users authenticate when accessing VM2Cloud VE. Administrators can configure local or external authentication services to provide secure and centralized access management across the virtualization environment.

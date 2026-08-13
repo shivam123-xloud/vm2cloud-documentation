@@ -36,7 +36,7 @@ Before modifying virtual hardware, ensure that:
 
 # Access the Hardware Page
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select the required node.
 3. Select the virtual machine.
 4. Click **Hardware**.

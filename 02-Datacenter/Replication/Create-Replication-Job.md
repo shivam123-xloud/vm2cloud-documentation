@@ -4,7 +4,7 @@
 
 ## Overview
 
-A replication job synchronizes the storage of a VM or container from its current node to another node in the VM2Cloud cluster.
+A replication job synchronizes the storage of a VM or container from its current node to another node in the VM2Cloud VE cluster.
 
 The first synchronization transfers the required guest data to the target node. Subsequent synchronizations transfer only changed data.
 
@@ -30,7 +30,7 @@ Replication is not a replacement for backup.
 
 Before creating a replication job:
 
-* VM2Cloud must have a working cluster.
+* VM2Cloud VE must have a working cluster.
 * The source and target nodes must be cluster members.
 * The guest must already exist.
 * The guest must use storage supported by replication.
@@ -41,7 +41,7 @@ Before creating a replication job:
 * The cluster must have quorum.
 * You must have sufficient permissions to manage the guest and replication configuration.
 
-The documented storage-replication implementation supports local ZFS storage. Verify the storage type used by the VM2Cloud installation before creating the job.
+The documented storage-replication implementation supports local ZFS storage. Verify the storage type used by the VM2Cloud VE installation before creating the job.
 
 > **Warning:** Replication is not a backup. Maintain a separate backup strategy for production workloads.
 
@@ -51,7 +51,7 @@ The documented storage-replication implementation supports local ZFS storage. Ve
 
 ## Step 1: Select the Guest
 
-1. Log in to VM2Cloud.
+1. Log in to VM2Cloud VE.
 2. In the left navigation tree, locate the required VM or container.
 3. Select the guest.
 4. Open the **Replication** view.
@@ -121,7 +121,7 @@ The underlying replication system supports configurable replication intervals fr
 
 ## Step 5: Configure Bandwidth Limit
 
-If the VM2Cloud interface provides a bandwidth-limit field:
+If the VM2Cloud VE interface provides a bandwidth-limit field:
 
 1. Locate **Rate Limit** or the corresponding bandwidth field.
 2. Enter the maximum replication bandwidth.
@@ -161,7 +161,7 @@ Before creating the job, verify:
 ## Step 7: Create the Job
 
 1. Review the configured values.
-2. Click **Create** or the corresponding confirmation button displayed by the installed VM2Cloud version.
+2. Click **Create** or the corresponding confirmation button displayed by the installed VM2Cloud VE version.
 3. Wait for the configuration dialog to close.
 4. Return to the replication list.
 5. Confirm that the new replication job appears.
@@ -277,7 +277,7 @@ The duration depends on:
 
 After the initial synchronization completes, later replication runs transfer only changed data.
 
-This is possible because VM2Cloud uses snapshots to identify changes.
+This is possible because VM2Cloud VE uses snapshots to identify changes.
 
 Therefore:
 

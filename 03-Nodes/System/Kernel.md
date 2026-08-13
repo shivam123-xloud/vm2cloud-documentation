@@ -4,7 +4,7 @@
 
 ## Overview
 
-The **Kernel** page provides information about the Linux kernels installed on the selected VM2Cloud node. The Linux kernel is the core component of the operating system and is responsible for managing hardware resources, memory, processes, networking, storage, and virtualization.
+The **Kernel** page provides information about the Linux kernels installed on the selected VM2Cloud VE node. The Linux kernel is the core component of the operating system and is responsible for managing hardware resources, memory, processes, networking, storage, and virtualization.
 
 Administrators can use this page to view the active kernel, review installed kernel versions, select the default boot kernel (when supported), and manage kernel packages.
 
@@ -27,7 +27,7 @@ Use the **Kernel** page to:
 
 Before managing kernels, ensure that:
 
-- You are logged in to the VM2Cloud web interface.
+- You are logged in to the VM2Cloud VE web interface.
 - You have administrative privileges.
 - The selected node is online.
 
@@ -37,7 +37,7 @@ Before managing kernels, ensure that:
 
 ## Step 1: Open the Kernel Page
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select the required node.
 3. Expand **System**.
 4. Select **Kernel**.
@@ -77,12 +77,12 @@ Review the information to verify the current kernel configuration.
 
 > **Note**
 >
-> This option is available only when multiple kernels are installed and the VM2Cloud version supports selecting the default kernel.
+> This option is available only when multiple kernels are installed and the VM2Cloud VE version supports selecting the default kernel.
 
 ## Step 1: Select the Kernel
 
 1. Select the required kernel.
-2. Click **Set as Default** or **Edit** (depending on the VM2Cloud version).
+2. Click **Set as Default** or **Edit** (depending on the VM2Cloud VE version).
 
 ---
 
@@ -158,7 +158,7 @@ Proper kernel management helps to:
 - Receive security updates.
 - Support new virtualization features.
 - Resolve known kernel issues.
-- Ensure compatibility with VM2Cloud releases.
+- Ensure compatibility with VM2Cloud VE releases.
 
 ---
 
@@ -205,4 +205,4 @@ Verify the following:
 
 # Summary
 
-The **Kernel** page allows administrators to view and manage the Linux kernels installed on a VM2Cloud node. Proper kernel management helps maintain system stability, improve security, and ensure compatibility with virtualization features and supported hardware.
+The **Kernel** page allows administrators to view and manage the Linux kernels installed on a VM2Cloud VE node. Proper kernel management helps maintain system stability, improve security, and ensure compatibility with virtualization features and supported hardware.

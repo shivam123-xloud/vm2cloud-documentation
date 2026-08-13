@@ -1,10 +1,10 @@
-# What Is VM2Cloud
+# What Is VM2Cloud VE
 
 ---
 
 ## Overview
 
-**VM2Cloud** is a virtualization platform for running virtual machines and containers on your own hardware, managed through a single web interface.
+**VM2Cloud VE** is a virtualization platform for running virtual machines and containers on your own hardware, managed through a single web interface.
 
 One installation on one server gives you a working virtualization host. Join several servers into a cluster and they are managed as one environment, with guests able to move between them, storage shared across them, and workloads recovered automatically when a server fails.
 
@@ -14,7 +14,7 @@ It combines in one product what is often assembled from several: the hypervisor,
 
 ## What It Runs
 
-VM2Cloud runs two kinds of guest, and choosing between them is the first decision for any workload.
+VM2Cloud VE runs two kinds of guest, and choosing between them is the first decision for any workload.
 
 | | Virtual machine | Container |
 |---|---|---|
@@ -158,6 +158,6 @@ That last item is the only real proof the backups work.
 
 # Summary
 
-VM2Cloud runs virtual machines and containers on your own hardware, managed from one web interface, with clustering, storage, networking, backup, and high availability included rather than assembled separately.
+VM2Cloud VE runs virtual machines and containers on your own hardware, managed from one web interface, with clustering, storage, networking, backup, and high availability included rather than assembled separately.
 
 Its structure — Datacenter, Node, Guest — determines where every setting lives, and knowing that makes the interface predictable. The things it does *not* do are worth remembering too: replication and snapshots are not backups, HA is not zero downtime, and nothing here manages what happens inside a guest.

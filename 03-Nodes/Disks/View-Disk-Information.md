@@ -4,7 +4,7 @@
 
 ## Overview
 
-The **Disks** section in VM2Cloud provides an overview of physical disks attached to the selected node.
+The **Disks** section in VM2Cloud VE provides an overview of physical disks attached to the selected node.
 
 Administrators can use this page to inspect the disks detected by the node before using them for storage configuration or other disk-management operations.
 
@@ -19,7 +19,7 @@ The node-level **Disks** page provides an overview of attached disks and the dis
 Use **View Disk Information** when you need to:
 
 * Identify physical disks attached to a node.
-* Check which disks are detected by VM2Cloud.
+* Check which disks are detected by VM2Cloud VE.
 * Review disk capacity and device information.
 * Determine whether a disk is already being used.
 * Identify disks before creating storage.
@@ -33,7 +33,7 @@ Use **View Disk Information** when you need to:
 
 Before viewing disk information:
 
-* You must be able to log in to the VM2Cloud web interface.
+* You must be able to log in to the VM2Cloud VE web interface.
 * You must have access to the required node.
 * The node should be online and accessible.
 * The physical disk must be connected to the node.
@@ -45,16 +45,16 @@ Before viewing disk information:
 
 # Procedure
 
-## Step 1: Open the VM2Cloud Web Interface
+## Step 1: Open the VM2Cloud VE Web Interface
 
-1. Open the VM2Cloud web interface.
+1. Open the VM2Cloud VE web interface.
 2. Log in using an account with the required permissions.
-3. Wait for the VM2Cloud management interface to load.
+3. Wait for the VM2Cloud VE management interface to load.
 
 ### Screenshot 1
 
 ```text
-[ Place Screenshot Here — VM2Cloud login/interface ]
+[ Place Screenshot Here — VM2Cloud VE login/interface ]
 ```
 
 ---
@@ -62,7 +62,7 @@ Before viewing disk information:
 ## Step 2: Select the Node
 
 1. Locate the **Server View** or resource tree on the left side of the interface.
-2. Expand the required cluster if the VM2Cloud installation is part of a cluster.
+2. Expand the required cluster if the VM2Cloud VE installation is part of a cluster.
 3. Select the node whose physical disks you want to inspect.
 4. Wait for the node management page to load.
 
@@ -78,7 +78,7 @@ Before viewing disk information:
 
 1. In the selected node's management menu, locate **Disks**.
 2. Click **Disks**.
-3. VM2Cloud displays the disk-management page for the selected node.
+3. VM2Cloud VE displays the disk-management page for the selected node.
 
 The node-level **Disks** section is intended to provide an overview of attached disks and to manage how those disks are used.
 
@@ -167,7 +167,7 @@ Before reusing a disk, verify whether it contains:
 
 ## Disk Health Information
 
-Where supported by the hardware and VM2Cloud interface, review available health information.
+Where supported by the hardware and VM2Cloud VE interface, review available health information.
 
 Health information can help identify possible disk problems before using the disk for production storage.
 
@@ -222,7 +222,7 @@ If an expected disk does not appear:
 3. Check the server's BIOS/UEFI to determine whether the hardware detects the disk.
 4. Check whether the disk is connected through a RAID controller or HBA.
 5. Verify that the storage controller is detected by the operating system.
-6. Refresh the VM2Cloud interface.
+6. Refresh the VM2Cloud VE interface.
 7. If the disk is still missing, investigate the node's hardware and operating-system detection.
 
 ---
@@ -306,7 +306,7 @@ Do not wipe a disk merely because it appears in the disk list.
 
 # Summary
 
-The **Disks** page provides administrators with an overview of physical disks detected by the selected VM2Cloud node.
+The **Disks** page provides administrators with an overview of physical disks detected by the selected VM2Cloud VE node.
 
 Use this page before performing disk-management or storage-creation operations to identify the correct physical disk, review its available information, and determine whether it is already being used.
 

@@ -4,7 +4,7 @@
 
 ## Overview
 
-The **Repositories** page allows administrators to manage the software repositories configured on a VM2Cloud node. Repositories provide access to operating system packages, VM2Cloud updates, security patches, and other software components.
+The **Repositories** page allows administrators to manage the software repositories configured on a VM2Cloud VE node. Repositories provide access to operating system packages, VM2Cloud VE updates, security patches, and other software components.
 
 Keeping repositories properly configured ensures that the node can receive updates and install supported packages.
 
@@ -26,7 +26,7 @@ Use the **Repositories** page to:
 
 Before managing repositories, ensure that:
 
-- You are logged in to the VM2Cloud web interface.
+- You are logged in to the VM2Cloud VE web interface.
 - You have administrative privileges.
 - The selected node is online.
 - The node has internet access or connectivity to the configured repository server.
@@ -37,7 +37,7 @@ Before managing repositories, ensure that:
 
 ## Step 1: Open the Repositories Page
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select the required node.
 3. Select **Repositories**.
 
@@ -79,7 +79,7 @@ Review the repository list to verify the current configuration.
 
 > **Note**
 >
-> This option is available only if your VM2Cloud deployment supports adding custom repositories.
+> This option is available only if your VM2Cloud VE deployment supports adding custom repositories.
 
 ## Step 1: Open the Add Repository Dialog
 
@@ -138,13 +138,13 @@ The repository status is updated immediately.
 
 ## Common Repository Types
 
-Depending on your VM2Cloud deployment, repositories may include:
+Depending on your VM2Cloud VE deployment, repositories may include:
 
 | Repository Type | Purpose |
 |-----------------|---------|
 | Enterprise | Provides stable, enterprise-tested updates. |
 | No-Subscription | Provides updates for environments without an enterprise subscription. |
-| VM2Cloud Repository | Provides VM2Cloud-specific packages and updates. |
+| VM2Cloud VE Repository | Provides VM2Cloud VE-specific packages and updates. |
 | Debian Repository | Provides Debian operating system packages. |
 | Custom Repository | Provides packages from an internal or third-party source. |
 
@@ -193,4 +193,4 @@ Verify the following:
 
 # Summary
 
-The **Repositories** page allows administrators to manage the software sources used by a VM2Cloud node. Proper repository configuration ensures reliable access to software updates, security patches, and VM2Cloud packages while maintaining a stable and supported environment.
+The **Repositories** page allows administrators to manage the software sources used by a VM2Cloud VE node. Proper repository configuration ensures reliable access to software updates, security patches, and VM2Cloud VE packages while maintaining a stable and supported environment.

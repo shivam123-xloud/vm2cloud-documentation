@@ -6,13 +6,13 @@
 
 The **Firewall** section on a node filters traffic to and from the node itself — the host, not the guests running on it.
 
-This is the level that protects the management interface, SSH access, and cluster communication. It is also the level most likely to lock you out if configured carelessly, because the VM2Cloud web interface runs on the node.
+This is the level that protects the management interface, SSH access, and cluster communication. It is also the level most likely to lock you out if configured carelessly, because the VM2Cloud VE web interface runs on the node.
 
 Node firewall rules apply **in addition to** the datacenter rules. Traffic must be permitted at both levels to reach the node.
 
 For the rule model, direction, actions, and evaluation order, see [Firewall Overview](../02-Datacenter/Firewall/Firewall-Overview.md). This page covers the node-level panel only.
 
-> **Warning:** The VM2Cloud web interface listens on TCP port **8006** on the node, and SSH on port **22**. Blocking either at node level removes your remote access to that node. You will need console or physical access to recover. Never enable the node firewall without a verified management-access rule.
+> **Warning:** The VM2Cloud VE web interface listens on TCP port **8006** on the node, and SSH on port **22**. Blocking either at node level removes your remote access to that node. You will need console or physical access to recover. Never enable the node firewall without a verified management-access rule.
 
 ---
 
@@ -47,7 +47,7 @@ Before configuring the node firewall, ensure that:
 
 ## Step 1: Open the Node Firewall Panel
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Expand **Datacenter** in the resource tree.
 3. Select the node.
 4. Expand **Firewall**.

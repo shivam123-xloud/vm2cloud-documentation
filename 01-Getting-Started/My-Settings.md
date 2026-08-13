@@ -59,7 +59,7 @@ The menu shows the account you are logged in as, written `name@realm`, and the a
 2. Enter the new password and confirm it.
 3. Confirm.
 
-For a `@pam` account this changes the underlying Linux password on the node. For a `@pve` account it updates the VM2Cloud user database.
+For a `@pam` account this changes the underlying Linux password on the node. For a `@pve` account it updates the VM2Cloud VE user database.
 
 > **Warning:** If you change the `root@pam` password here, make sure it is recorded somewhere the team can reach — a password manager, not a note on your own machine. A root password known only to one person becomes a console-recovery problem the moment they are unavailable. See [Reset Root Password](../03-Nodes/Reset-Root-Password.md).
 

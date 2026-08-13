@@ -6,7 +6,7 @@
 
 Backing up a virtual machine creates a copy of its data and configuration that can be restored if the virtual machine is lost, corrupted, or needs to be recovered. Regular backups help protect workloads from hardware failures, accidental deletion, and other unexpected events.
 
-VM2Cloud allows administrators to create backups manually and restore them when required.
+VM2Cloud VE allows administrators to create backups manually and restore them when required.
 
 ---
 
@@ -42,7 +42,7 @@ Before creating or restoring a backup, ensure that:
 
 ## Step 1: Select the Virtual Machine
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select the required node.
 3. Select the virtual machine.
 4. Click **Backup**.

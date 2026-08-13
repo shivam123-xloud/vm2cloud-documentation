@@ -4,7 +4,7 @@
 
 ## Overview
 
-VM2Cloud provides replication status information for configured replication jobs.
+VM2Cloud VE provides replication status information for configured replication jobs.
 
 The replication status allows administrators to determine whether a replication job is:
 
@@ -39,7 +39,7 @@ Use replication status to:
 
 Before checking replication status:
 
-* You must be logged in to VM2Cloud.
+* You must be logged in to VM2Cloud VE.
 * You must have permission to view the guest and replication configuration.
 * The guest must exist.
 * A replication job should be configured for the guest.
@@ -52,7 +52,7 @@ Before checking replication status:
 
 ## Step 1: Select the Guest
 
-1. Log in to VM2Cloud.
+1. Log in to VM2Cloud VE.
 2. Locate the required VM or container in the navigation tree.
 3. Select the guest.
 4. Open the **Replication** section.
@@ -85,7 +85,7 @@ Before checking replication status:
 
 Review the information displayed for the replication job.
 
-Depending on the installed VM2Cloud version and current job state, the interface may provide information such as:
+Depending on the installed VM2Cloud VE version and current job state, the interface may provide information such as:
 
 * Replication target.
 * Replication schedule.
@@ -126,7 +126,7 @@ A replication task may be actively synchronizing data.
 
 During synchronization:
 
-1. The source guest remains available according to normal VM2Cloud operation.
+1. The source guest remains available according to normal VM2Cloud VE operation.
 2. Changed guest data is synchronized to the target.
 3. The replication task can be monitored through task information.
 4. Wait for the task to complete before judging the final synchronization result.
@@ -174,7 +174,7 @@ Task History provides additional information about replication operations.
 
 ## Step 1: Open Task History
 
-1. Open **Task History** from the appropriate VM2Cloud interface location.
+1. Open **Task History** from the appropriate VM2Cloud VE interface location.
 2. Review the most recent tasks.
 3. Locate the replication task for the guest.
 
@@ -439,7 +439,7 @@ Possible causes:
 
 ### Resolution
 
-1. Check the target node in the VM2Cloud interface.
+1. Check the target node in the VM2Cloud VE interface.
 2. Verify node availability.
 3. Check cluster status.
 4. Check network connectivity.
@@ -491,7 +491,7 @@ To check cluster status:
 pvecm status
 ```
 
-Use CLI output together with the VM2Cloud UI when troubleshooting.
+Use CLI output together with the VM2Cloud VE UI when troubleshooting.
 
 ---
 
@@ -562,7 +562,7 @@ Storage:
 
 # Summary
 
-Replication Status is used to verify that VM2Cloud replication jobs are configured and synchronizing successfully.
+Replication Status is used to verify that VM2Cloud VE replication jobs are configured and synchronizing successfully.
 
 The normal verification workflow is:
 

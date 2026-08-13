@@ -4,7 +4,7 @@
 
 ## Overview
 
-When you create, modify, or remove a network interface in VM2Cloud, the changes are saved as a **pending configuration**. These changes do not take effect immediately.
+When you create, modify, or remove a network interface in VM2Cloud VE, the changes are saved as a **pending configuration**. These changes do not take effect immediately.
 
 To activate the new configuration, you must apply the pending network changes. Applying the configuration updates the node's network settings and makes the new configuration active.
 
@@ -40,7 +40,7 @@ Before applying the configuration, ensure that:
 
 ## Step 1: Open the Network Page
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select the required node.
 3. Click **System**.
 4. Select **Network**.
@@ -78,7 +78,7 @@ Before applying the configuration:
 2. Review the confirmation message.
 3. Click **Yes** to continue.
 
-VM2Cloud applies the updated network configuration to the selected node.
+VM2Cloud VE applies the updated network configuration to the selected node.
 
 ---
 
@@ -159,4 +159,4 @@ Verify the following:
 
 # Summary
 
-Network configuration changes in VM2Cloud are applied only after selecting **Apply Configuration**. Reviewing the configuration before applying it helps prevent connectivity issues and ensures that the updated network settings are activated successfully. After applying the changes, always verify that the node and connected workloads remain accessible.
+Network configuration changes in VM2Cloud VE are applied only after selecting **Apply Configuration**. Reviewing the configuration before applying it helps prevent connectivity issues and ensures that the updated network settings are activated successfully. After applying the changes, always verify that the node and connected workloads remain accessible.

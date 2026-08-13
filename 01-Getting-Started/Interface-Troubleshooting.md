@@ -4,7 +4,7 @@
 
 ## Overview
 
-This guide provides solutions for common issues that administrators may encounter while using the VM2Cloud Dashboard. The Dashboard is the primary management interface, and any issue affecting it can impact the ability to monitor and manage the virtualization environment.
+This guide provides solutions for common issues that administrators may encounter while using the VM2Cloud VE Dashboard. The Dashboard is the primary management interface, and any issue affecting it can impact the ability to monitor and manage the virtualization environment.
 
 Use this guide to identify common problems, understand their possible causes, and apply the appropriate resolution.
 
@@ -27,18 +27,18 @@ Refer to this guide when:
 
 ### Possible Causes
 
-* VM2Cloud management services are not running.
+* VM2Cloud VE management services are not running.
 * Network connectivity issues.
 * Web browser cache.
 * Incorrect URL or server address.
 
 ### Resolution
 
-* Verify that the VM2Cloud server is reachable.
+* Verify that the VM2Cloud VE server is reachable.
 * Confirm that the correct URL is being used.
 * Refresh the browser.
 * Clear the browser cache if necessary.
-* Verify that the required VM2Cloud services are running.
+* Verify that the required VM2Cloud VE services are running.
 
 ---
 
@@ -158,11 +158,11 @@ Refer to this guide when:
 
 # Common Diagnostic Commands
 
-If the Dashboard cannot be accessed or information is not updating correctly, verify the status of the VM2Cloud management services from the affected node.
+If the Dashboard cannot be accessed or information is not updating correctly, verify the status of the VM2Cloud VE management services from the affected node.
 
 ---
 
-## Check VM2Cloud Web Service
+## Check VM2Cloud VE Web Service
 
 Run the following command on the affected node:
 
@@ -170,11 +170,11 @@ Run the following command on the affected node:
 systemctl status pveproxy
 ```
 
-This command verifies whether the VM2Cloud web interface service is running.
+This command verifies whether the VM2Cloud VE web interface service is running.
 
 ---
 
-## Check VM2Cloud API Service
+## Check VM2Cloud VE API Service
 
 Run the following command on the affected node:
 
@@ -182,7 +182,7 @@ Run the following command on the affected node:
 systemctl status pvedaemon
 ```
 
-This command checks the status of the VM2Cloud API service responsible for handling management requests.
+This command checks the status of the VM2Cloud VE API service responsible for handling management requests.
 
 ---
 
@@ -206,7 +206,7 @@ Run the following command on the affected node:
 ps -ef | grep pve
 ```
 
-This command lists active VM2Cloud-related processes and can help verify that required services are running.
+This command lists active VM2Cloud VE-related processes and can help verify that required services are running.
 
 ---
 
@@ -249,4 +249,4 @@ After resolving the issue, verify the following:
 
 # Summary
 
-Most Dashboard issues are caused by service availability, network connectivity, user permissions, or temporary communication problems. Verifying the status of the VM2Cloud services, refreshing the Dashboard, and reviewing recent system logs will resolve the majority of Dashboard-related issues.
+Most Dashboard issues are caused by service availability, network connectivity, user permissions, or temporary communication problems. Verifying the status of the VM2Cloud VE services, refreshing the Dashboard, and reviewing recent system logs will resolve the majority of Dashboard-related issues.

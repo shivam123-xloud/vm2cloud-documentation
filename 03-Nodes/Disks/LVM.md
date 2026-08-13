@@ -4,11 +4,11 @@
 
 ## Overview
 
-**LVM (Logical Volume Manager)** is a block-level storage technology that allows VM2Cloud to use a physical disk or other block device through an LVM volume group.
+**LVM (Logical Volume Manager)** is a block-level storage technology that allows VM2Cloud VE to use a physical disk or other block device through an LVM volume group.
 
 LVM separates physical storage from logical volumes, allowing storage capacity to be managed through a volume group rather than assigning the entire physical disk directly to a single VM or container.
 
-In VM2Cloud, an **LVM storage** definition uses an existing LVM volume group. The storage backend can provide VM disk images and container root directories. LVM storage uses raw volumes and does not provide VM2Cloud storage-level snapshots or clones.
+In VM2Cloud VE, an **LVM storage** definition uses an existing LVM volume group. The storage backend can provide VM disk images and container root directories. LVM storage uses raw volumes and does not provide VM2Cloud VE storage-level snapshots or clones.
 
 LVM can also be used on top of shared block storage such as an iSCSI LUN, although the underlying storage design and cluster requirements must be considered carefully.
 
@@ -20,7 +20,7 @@ Use LVM when you need to:
 
 * Create block-level storage for VMs.
 * Create block-level storage for containers.
-* Use an existing LVM volume group as VM2Cloud storage.
+* Use an existing LVM volume group as VM2Cloud VE storage.
 * Use raw logical volumes for guest disks.
 * Use LVM on supported local block devices.
 * Use LVM on top of a shared block device such as an iSCSI LUN when the environment requires it.
@@ -33,7 +33,7 @@ LVM is particularly useful when you need straightforward block storage without t
 
 Before configuring LVM storage:
 
-* Log in to VM2Cloud with sufficient permissions.
+* Log in to VM2Cloud VE with sufficient permissions.
 * Ensure the required node is online.
 * Ensure the target physical disk or block device is detected.
 * An **LVM volume group must already exist**.
@@ -50,7 +50,7 @@ Before configuring LVM storage:
 
 ## Step 1: Select the Node
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Locate the resource tree.
 3. Select the node where the LVM volume group is available.
 4. Wait for the node management interface to load.
@@ -81,12 +81,12 @@ Before configuring LVM storage:
 
 1. Open the LVM-related disk-management view.
 2. Review the available volume groups.
-3. Identify the volume group that will be used by VM2Cloud.
+3. Identify the volume group that will be used by VM2Cloud VE.
 4. Verify the volume group name.
 5. Verify that the volume group has sufficient free space.
 6. Confirm that the volume group does not contain data that must be preserved before it is assigned to the intended storage configuration.
 
-VM2Cloud's underlying storage manager can scan available LVM volume groups.
+VM2Cloud VE's underlying storage manager can scan available LVM volume groups.
 
 ### Screenshot 3
 
@@ -120,7 +120,7 @@ VM2Cloud's underlying storage manager can scan available LVM volume groups.
 
 ## ID
 
-The **ID** is the unique name used by VM2Cloud to identify the storage.
+The **ID** is the unique name used by VM2Cloud VE to identify the storage.
 
 Choose a meaningful identifier.
 
@@ -130,13 +130,13 @@ Example:
 local-lvm-data
 ```
 
-The storage ID is used throughout the VM2Cloud interface when selecting storage for VM disks, container disks, and other supported content.
+The storage ID is used throughout the VM2Cloud VE interface when selecting storage for VM disks, container disks, and other supported content.
 
 ---
 
 ## Volume Group
 
-The **Volume Group** identifies the existing LVM volume group that VM2Cloud will use.
+The **Volume Group** identifies the existing LVM volume group that VM2Cloud VE will use.
 
 The volume group must already exist.
 
@@ -146,7 +146,7 @@ For example:
 pve
 ```
 
-The selected volume group becomes the backing storage for the VM2Cloud LVM storage definition.
+The selected volume group becomes the backing storage for the VM2Cloud VE LVM storage definition.
 
 The underlying LVM storage backend requires the `vgname` property to point to an existing volume group.
 
@@ -203,7 +203,7 @@ Physical Disk / Block Device
           └── Logical Volume
 ```
 
-VM2Cloud uses the **volume group** as the storage backend.
+VM2Cloud VE uses the **volume group** as the storage backend.
 
 Guest disks are allocated as logical volumes inside the volume group.
 
@@ -233,7 +233,7 @@ Example:
 pve
 ```
 
-VM2Cloud's LVM storage definition points to this volume group.
+VM2Cloud VE's LVM storage definition points to this volume group.
 
 ---
 
@@ -241,7 +241,7 @@ VM2Cloud's LVM storage definition points to this volume group.
 
 A **Logical Volume (LV)** is a virtual block device created inside a volume group.
 
-VM2Cloud can create logical volumes for guest storage.
+VM2Cloud VE can create logical volumes for guest storage.
 
 For example:
 
@@ -259,7 +259,7 @@ Volume Group
 
 LVM is a **block-level storage** backend.
 
-LVM storage in VM2Cloud has the following characteristics:
+LVM storage in VM2Cloud VE has the following characteristics:
 
 | Feature                    | LVM                                                       |
 | -------------------------- | --------------------------------------------------------- |
@@ -299,7 +299,7 @@ Shared Storage
       LVM
       │
       ▼
- VM2Cloud Storage
+ VM2Cloud VE Storage
 ```
 
 This requires careful cluster-wide storage design and appropriate access from the participating nodes.
@@ -429,7 +429,7 @@ If existing data is required, stop the operation and follow the appropriate migr
 # Best Practices
 
 * Use meaningful storage IDs.
-* Verify the volume group before adding it to VM2Cloud.
+* Verify the volume group before adding it to VM2Cloud VE.
 * Do not reuse an existing volume group without checking its contents.
 * Monitor free space regularly.
 * Keep backups of important VM and container data.
@@ -457,9 +457,9 @@ If existing data is required, stop the operation and follow the appropriate migr
 
 # Summary
 
-LVM provides VM2Cloud with block-level storage based on an existing LVM volume group.
+LVM provides VM2Cloud VE with block-level storage based on an existing LVM volume group.
 
-The storage configuration points VM2Cloud to the volume group, after which VM and container storage can be allocated as logical volumes.
+The storage configuration points VM2Cloud VE to the volume group, after which VM and container storage can be allocated as logical volumes.
 
 Standard LVM storage does not provide storage-level snapshots or clones. When those capabilities are required, LVM-Thin or another supported storage technology should be considered.
 

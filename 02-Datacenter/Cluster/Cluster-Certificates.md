@@ -4,9 +4,9 @@
 
 ## Overview
 
-VM2Cloud uses **cluster certificates** to establish secure communication between nodes within a cluster. These certificates help ensure that management traffic exchanged between cluster members is authenticated and encrypted.
+VM2Cloud VE uses **cluster certificates** to establish secure communication between nodes within a cluster. These certificates help ensure that management traffic exchanged between cluster members is authenticated and encrypted.
 
-When a node joins a cluster, VM2Cloud automatically distributes and synchronizes the required certificates. Administrators normally do not need to manually manage these certificates during routine cluster operations.
+When a node joins a cluster, VM2Cloud VE automatically distributes and synchronizes the required certificates. Administrators normally do not need to manually manage these certificates during routine cluster operations.
 
 ---
 
@@ -41,7 +41,7 @@ Administrators are not required to manually copy certificate files between nodes
 
 Cluster certificates are automatically synchronized as part of the cluster configuration.
 
-Whenever a new node joins the cluster, VM2Cloud distributes the required certificates to maintain trusted communication.
+Whenever a new node joins the cluster, VM2Cloud VE distributes the required certificates to maintain trusted communication.
 
 No manual synchronization is required.
 
@@ -57,7 +57,7 @@ Although certificate management is automatic, administrators may need to regener
 - Certificate expiration.
 - Cluster recovery procedures.
 
-These tasks should only be performed during maintenance windows or when instructed by VM2Cloud documentation or support.
+These tasks should only be performed during maintenance windows or when instructed by VM2Cloud VE documentation or support.
 
 ---
 
@@ -65,7 +65,7 @@ These tasks should only be performed during maintenance windows or when instruct
 
 ## Step 1: Open the Cluster
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Verify that all cluster nodes are online.
 3. Confirm that cluster communication is functioning normally.
 
@@ -155,4 +155,4 @@ Verify the following:
 
 # Summary
 
-Cluster certificates enable secure communication between VM2Cloud cluster nodes. They are automatically created and synchronized during cluster operations, allowing administrators to securely manage the cluster without manual certificate distribution under normal operating conditions.
+Cluster certificates enable secure communication between VM2Cloud VE cluster nodes. They are automatically created and synchronized during cluster operations, allowing administrators to securely manage the cluster without manual certificate distribution under normal operating conditions.

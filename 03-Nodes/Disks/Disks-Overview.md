@@ -4,9 +4,9 @@
 
 ## Overview
 
-The **Disks** section in VM2Cloud provides administrators with tools to view and manage the physical storage devices attached to a node.
+The **Disks** section in VM2Cloud VE provides administrators with tools to view and manage the physical storage devices attached to a node.
 
-Disk management is performed at the **node level**. From the node's **Disks** section, administrators can inspect available physical disks and use supported disk-management functions to prepare storage for VM2Cloud storage configurations.
+Disk management is performed at the **node level**. From the node's **Disks** section, administrators can inspect available physical disks and use supported disk-management functions to prepare storage for VM2Cloud VE storage configurations.
 
 Physical disks can be used as the foundation for different storage technologies, including LVM, LVM-Thin, ZFS, and directory-based storage. The available options depend on the disk, existing configuration, and underlying storage technology.
 
@@ -32,7 +32,7 @@ Use the **Disks** section when you need to:
 
 Before working with disks:
 
-* You must be able to log in to VM2Cloud.
+* You must be able to log in to VM2Cloud VE.
 * You must have access to the required node.
 * The node must be online.
 * The physical disk must be connected to the node.
@@ -45,23 +45,23 @@ Before working with disks:
 
 # Procedure
 
-## Step 1: Open the VM2Cloud Web Interface
+## Step 1: Open the VM2Cloud VE Web Interface
 
-1. Open the VM2Cloud web interface.
+1. Open the VM2Cloud VE web interface.
 2. Log in using an account with the required permissions.
-3. Wait for the VM2Cloud management interface to load.
+3. Wait for the VM2Cloud VE management interface to load.
 
 ### Screenshot 1
 
 ```text
-[ Place Screenshot Here — VM2Cloud Web Interface ]
+[ Place Screenshot Here — VM2Cloud VE Web Interface ]
 ```
 
 ---
 
 ## Step 2: Select the Required Node
 
-1. Locate the resource tree on the left side of the VM2Cloud interface.
+1. Locate the resource tree on the left side of the VM2Cloud VE interface.
 2. Expand the required cluster if applicable.
 3. Select the node whose physical disks you want to manage.
 4. Wait for the node management interface to load.
@@ -107,7 +107,7 @@ Before working with disks:
 
 # Configuration / Options
 
-The available disk information and actions depend on the physical hardware, existing disk configuration, storage technology, and VM2Cloud version.
+The available disk information and actions depend on the physical hardware, existing disk configuration, storage technology, and VM2Cloud VE version.
 
 The following concepts are important when working with the **Disks** section.
 
@@ -115,7 +115,7 @@ The following concepts are important when working with the **Disks** section.
 
 ## Physical Disk
 
-A physical disk is a storage device attached directly to the VM2Cloud node.
+A physical disk is a storage device attached directly to the VM2Cloud VE node.
 
 Examples include:
 
@@ -182,9 +182,9 @@ A disk that contains existing data must not be treated as an unused disk.
 
 ## SMART and Disk Health
 
-VM2Cloud's underlying platform supports SMART-based disk monitoring for local hard disks.
+VM2Cloud VE's underlying platform supports SMART-based disk monitoring for local hard disks.
 
-SMART can provide information about the health and condition of supported disks. VM2Cloud installs `smartmontools`, and the `smartd` service monitors supported devices.
+SMART can provide information about the health and condition of supported disks. VM2Cloud VE installs `smartmontools`, and the `smartd` service monitors supported devices.
 
 Disk health should be considered before placing important production workloads on a physical disk.
 
@@ -202,7 +202,7 @@ Common local storage technologies include:
 
 LVM provides logical volume management over physical storage.
 
-It can be used to create logical volumes that can then be used by VM2Cloud.
+It can be used to create logical volumes that can then be used by VM2Cloud VE.
 
 ### LVM-Thin
 
@@ -256,7 +256,7 @@ Before changing or removing its configuration:
 
 ## System Disk
 
-The system disk contains the VM2Cloud node's operating-system installation.
+The system disk contains the VM2Cloud VE node's operating-system installation.
 
 Do not wipe or reinitialize the system disk unless you intentionally plan to reinstall or rebuild the node.
 
@@ -289,7 +289,7 @@ If a physical disk does not appear:
 3. Check whether the server BIOS/UEFI detects the disk.
 4. Check whether the storage controller detects the disk.
 5. Check whether the operating system detects the device.
-6. Refresh the VM2Cloud interface.
+6. Refresh the VM2Cloud VE interface.
 7. If the disk remains unavailable, investigate the hardware or controller configuration.
 
 ---
@@ -345,7 +345,7 @@ If disks are behind a hardware RAID controller, the operating system may not exp
 
 In such environments, use the RAID controller's management tools to inspect the physical disks and RAID array.
 
-For disks presented through a hardware RAID controller, use the vendor-specific tools supplied with the controller. VM2Cloud cannot inspect the individual disks behind the controller.
+For disks presented through a hardware RAID controller, use the vendor-specific tools supplied with the controller. VM2Cloud VE cannot inspect the individual disks behind the controller.
 
 ---
 

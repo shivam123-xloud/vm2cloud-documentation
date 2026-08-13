@@ -6,7 +6,7 @@
 
 A Linux Bridge is a virtual network switch that connects virtual machines and containers to the physical network. It forwards network traffic between virtual interfaces and the connected physical network interface.
 
-A Linux Bridge is commonly used to provide network connectivity for virtual machines and is one of the most frequently configured network components in VM2Cloud.
+A Linux Bridge is commonly used to provide network connectivity for virtual machines and is one of the most frequently configured network components in VM2Cloud VE.
 
 ---
 
@@ -38,7 +38,7 @@ Before creating a Linux Bridge, ensure that:
 
 ## Step 1: Open the Network Page
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select the required node.
 3. Click **System**.
 4. Select **Network**.
@@ -220,4 +220,4 @@ Verify the following:
 
 # Summary
 
-Linux Bridges provide network connectivity between virtual machines, containers, and the physical network. Administrators can create, modify, and remove bridges from the Network page to meet the networking requirements of their VM2Cloud environment. After making any changes, apply the network configuration to activate the updated settings.
+Linux Bridges provide network connectivity between virtual machines, containers, and the physical network. Administrators can create, modify, and remove bridges from the Network page to meet the networking requirements of their VM2Cloud VE environment. After making any changes, apply the network configuration to activate the updated settings.

@@ -2,9 +2,9 @@
 
 ## Overview
 
-An HA resource is a virtual machine or container that is managed by the VM2Cloud High Availability system.
+An HA resource is a virtual machine or container that is managed by the VM2Cloud VE High Availability system.
 
-When a VM or container is added as an HA resource, VM2Cloud monitors its state and can perform HA operations according to the configured resource state, cluster health, node availability, and HA placement rules.
+When a VM or container is added as an HA resource, VM2Cloud VE monitors its state and can perform HA operations according to the configured resource state, cluster health, node availability, and HA placement rules.
 
 HA resources are normally used for workloads that should automatically recover when the node running them becomes unavailable.
 
@@ -28,7 +28,7 @@ Do not add every VM or container to HA automatically. HA should be enabled only 
 
 Before adding a resource to HA:
 
-- The VM2Cloud cluster must be configured.
+- The VM2Cloud VE cluster must be configured.
 - The cluster should have quorum.
 - The required nodes must be available.
 - The guest must already exist.
@@ -61,7 +61,7 @@ In this example, VM 100 runs on node1. If VM 100 is registered as an HA resource
 
 ## Step 1: Open the HA Configuration
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select **Datacenter** from the left navigation tree.
 3. Select **HA**.
 4. Review the existing HA resources.
@@ -133,7 +133,7 @@ Typical HA resource options include:
 - **Group or placement rule** — where the guest is allowed or preferred to run.
 - **Comment** — an optional description.
 
-The available options depend on the installed VM2Cloud version.
+The available options depend on the installed VM2Cloud VE version.
 
 ---
 
@@ -175,4 +175,4 @@ Verify the following:
 
 # Summary
 
-An HA resource is a virtual machine or container registered with the VM2Cloud High Availability system. Once registered, HA monitors the guest and maintains its requested state, recovering it on another eligible node when the node running it becomes unavailable. Add only workloads that have been designed and tested for automatic recovery, and confirm that every eligible node can reach the guest's storage and networking.
+An HA resource is a virtual machine or container registered with the VM2Cloud VE High Availability system. Once registered, HA monitors the guest and maintains its requested state, recovering it on another eligible node when the node running it becomes unavailable. Add only workloads that have been designed and tested for automatic recovery, and confirm that every eligible node can reach the guest's storage and networking.

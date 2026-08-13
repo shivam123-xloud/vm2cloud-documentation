@@ -34,7 +34,7 @@ Before managing groups, ensure that:
 
 # Access the Groups Page
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select **Datacenter**.
 3. Click **Permissions**.
 4. Click **Groups**.
@@ -248,4 +248,4 @@ Verify the following:
 
 # Summary
 
-Groups simplify access control by allowing administrators to manage permissions for multiple users through a single group. By creating groups, adding or removing members, updating group information, and deleting unused groups, administrators can maintain a secure and well-organized VM2Cloud environment.
+Groups simplify access control by allowing administrators to manage permissions for multiple users through a single group. By creating groups, adding or removing members, updating group information, and deleting unused groups, administrators can maintain a secure and well-organized VM2Cloud VE environment.

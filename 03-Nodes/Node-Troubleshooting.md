@@ -4,7 +4,7 @@
 
 ## Overview
 
-This guide provides solutions for common issues that administrators may encounter while managing VM2Cloud nodes. Use this document to identify common problems, understand their possible causes, and apply the appropriate resolution.
+This guide provides solutions for common issues that administrators may encounter while managing VM2Cloud VE nodes. Use this document to identify common problems, understand their possible causes, and apply the appropriate resolution.
 
 ---
 
@@ -13,7 +13,7 @@ This guide provides solutions for common issues that administrators may encounte
 Refer to this guide when:
 
 * A node is offline.
-* A node is unreachable from the VM2Cloud web interface.
+* A node is unreachable from the VM2Cloud VE web interface.
 * High CPU or memory usage is affecting performance.
 * System updates fail.
 * The node cannot be rebooted or shut down.
@@ -54,7 +54,7 @@ Refer to this guide when:
 * Verify your user account permissions.
 * Confirm network connectivity to the node.
 * Review firewall settings.
-* Verify that the VM2Cloud management services are running.
+* Verify that the VM2Cloud VE management services are running.
 
 ---
 
@@ -173,7 +173,7 @@ After resolving the issue, verify the following:
 
 # Common Diagnostic Commands
 
-The following commands can help verify the health of a VM2Cloud node.
+The following commands can help verify the health of a VM2Cloud VE node.
 
 ### Check System Uptime
 

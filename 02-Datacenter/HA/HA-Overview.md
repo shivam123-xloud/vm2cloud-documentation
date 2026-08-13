@@ -4,7 +4,7 @@
 
 ## Overview
 
-VM2Cloud High Availability (HA) is designed to automatically recover supported virtual machines and containers when the node running them becomes unavailable.
+VM2Cloud VE High Availability (HA) is designed to automatically recover supported virtual machines and containers when the node running them becomes unavailable.
 
 HA is a **cluster-level feature**. It uses the cluster's communication, quorum, fencing, and HA management components to determine whether a node has failed and where an HA-managed guest can be recovered.
 
@@ -69,7 +69,7 @@ The exact recovery behavior depends on cluster state, resource configuration, no
 
 # HA Components
 
-VM2Cloud HA depends on several cluster components.
+VM2Cloud VE HA depends on several cluster components.
 
 ## HA Resource
 
@@ -184,7 +184,7 @@ The state indicates what HA currently expects or is doing with the resource.
 
 # Adding a VM to HA
 
-Adding a VM to HA tells VM2Cloud that the guest should be managed by the HA framework.
+Adding a VM to HA tells VM2Cloud VE that the guest should be managed by the HA framework.
 
 The general workflow is:
 
@@ -887,7 +887,7 @@ Related features:
 
 # Summary
 
-VM2Cloud High Availability automatically manages selected VMs and containers so they can be recovered when a node becomes unavailable.
+VM2Cloud VE High Availability automatically manages selected VMs and containers so they can be recovered when a node becomes unavailable.
 
 The basic concept is:
 

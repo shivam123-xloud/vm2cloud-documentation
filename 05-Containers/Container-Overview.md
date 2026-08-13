@@ -4,7 +4,7 @@
 
 ## Overview
 
-A Container (CT) is a lightweight virtualization technology that allows multiple isolated environments to run on a single VM2Cloud node while sharing the host operating system kernel. Unlike a Virtual Machine (VM), a container does not require its own kernel, making it faster to deploy and more efficient in resource usage.
+A Container (CT) is a lightweight virtualization technology that allows multiple isolated environments to run on a single VM2Cloud VE node while sharing the host operating system kernel. Unlike a Virtual Machine (VM), a container does not require its own kernel, making it faster to deploy and more efficient in resource usage.
 
 Containers are commonly used to host applications, services, and development environments that require a Linux operating system.
 
@@ -28,7 +28,7 @@ Use a container when you need to:
 
 Before creating or managing a container, ensure that:
 
-* A VM2Cloud node is available.
+* A VM2Cloud VE node is available.
 * Storage has been configured.
 * A Linux Bridge or other network configuration is available.
 * A Container Template has been downloaded or uploaded.
@@ -40,7 +40,7 @@ Before creating or managing a container, ensure that:
 
 To view existing containers:
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. In the navigation panel, expand the required node.
 3. Select the container.
 
@@ -58,7 +58,7 @@ If no containers exist, create one before continuing.
 
 Selecting a container opens its management page.
 
-Depending on your VM2Cloud configuration, the page provides tabs for monitoring resource usage, accessing the console, managing resources, configuring network settings, creating backups, and changing container settings.
+Depending on your VM2Cloud VE configuration, the page provides tabs for monitoring resource usage, accessing the console, managing resources, configuring network settings, creating backups, and changing container settings.
 
 ---
 
@@ -179,4 +179,4 @@ Verify the following:
 
 # Summary
 
-Containers provide a lightweight and efficient way to run Linux workloads in VM2Cloud. They share the host kernel while maintaining isolated environments, making them ideal for applications and services that require fast deployment and efficient resource utilization. The container management page provides centralized access to monitoring, resource management, backups, snapshots, networking, and console access.
+Containers provide a lightweight and efficient way to run Linux workloads in VM2Cloud VE. They share the host kernel while maintaining isolated environments, making them ideal for applications and services that require fast deployment and efficient resource utilization. The container management page provides centralized access to monitoring, resource management, backups, snapshots, networking, and console access.

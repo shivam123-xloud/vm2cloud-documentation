@@ -43,7 +43,7 @@ Before configuring container networking, ensure that:
 
 ## Step 1: Open the Network Tab
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Expand the node in the resource tree.
 3. Select the container.
 4. Click **Network**.

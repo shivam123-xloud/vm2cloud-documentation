@@ -4,7 +4,7 @@
 
 ## Overview
 
-**ACME** automates TLS certificates for the VM2Cloud web interface. Instead of the self-signed certificate every installation starts with — the one that makes browsers warn on every visit — ACME obtains a trusted certificate from a certificate authority and renews it automatically before it expires.
+**ACME** automates TLS certificates for the VM2Cloud VE web interface. Instead of the self-signed certificate every installation starts with — the one that makes browsers warn on every visit — ACME obtains a trusted certificate from a certificate authority and renews it automatically before it expires.
 
 The automation is the point. Certificates from public authorities are short-lived by design, so manual renewal is a recurring task that eventually gets missed. ACME removes it.
 
@@ -62,7 +62,7 @@ Before issuing a certificate, the authority verifies you control the name. There
 
 **DNS-01** needs no inbound access at all — the node talks outbound to your DNS provider's API. It is the right choice for management interfaces, and the only choice for internal ones.
 
-> **Warning:** DNS-01 requires storing DNS provider API credentials in VM2Cloud. Those credentials can usually modify your DNS. Use a scoped or restricted API token where the provider supports one, rather than a full-access key.
+> **Warning:** DNS-01 requires storing DNS provider API credentials in VM2Cloud VE. Those credentials can usually modify your DNS. Use a scoped or restricted API token where the provider supports one, rather than a full-access key.
 
 ---
 
@@ -70,7 +70,7 @@ Before issuing a certificate, the authority verifies you control the name. There
 
 ## Step 1: Open the ACME Panel
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select **Datacenter** in the resource tree.
 3. Click **ACME**.
 

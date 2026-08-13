@@ -41,7 +41,7 @@ Before changing firewall options, ensure that:
 
 ## Step 1: Open the Firewall Options Panel
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select **Datacenter** in the resource tree.
 3. Expand **Firewall**.
 4. Click **Options**.

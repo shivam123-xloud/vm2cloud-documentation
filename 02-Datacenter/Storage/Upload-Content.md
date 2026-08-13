@@ -4,7 +4,7 @@
 
 ## Overview
 
-The **Upload Content** feature allows administrators to upload files that can be used by VM2Cloud. Depending on the storage configuration, supported content includes ISO images, container templates, backup files, and snippets.
+The **Upload Content** feature allows administrators to upload files that can be used by VM2Cloud VE. Depending on the storage configuration, supported content includes ISO images, container templates, backup files, and snippets.
 
 Before uploading any content, verify that the selected storage supports the required content type.
 
@@ -37,7 +37,7 @@ Before uploading content, ensure that:
 
 ## Step 1: Open the Storage
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Expand the required node.
 3. Select the storage where the ISO will be uploaded (for example, **local**).
 4. Click **ISO Images**.
@@ -104,7 +104,7 @@ After the upload completes:
 
 ## Step 2: Upload or Download a Template
 
-Depending on your VM2Cloud configuration, you can:
+Depending on your VM2Cloud VE configuration, you can:
 
 * Upload a local container template.
 * Download a template from the configured template repository.
@@ -174,4 +174,4 @@ Verify the following:
 
 # Summary
 
-The Upload Content feature allows administrators to add ISO images, container templates, backup files, and other supported content to VM2Cloud storage. Once uploaded, these files become available for virtual machine deployment, container creation, backup restoration, and other administrative tasks.
+The Upload Content feature allows administrators to add ISO images, container templates, backup files, and other supported content to VM2Cloud VE storage. Once uploaded, these files become available for virtual machine deployment, container creation, backup restoration, and other administrative tasks.

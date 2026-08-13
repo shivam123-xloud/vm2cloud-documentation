@@ -4,7 +4,7 @@
 
 ## Overview
 
-The **Cluster File System (pmxcfs)** is a distributed file system used by VM2Cloud to store and synchronize cluster configuration across all nodes.
+The **Cluster File System (pmxcfs)** is a distributed file system used by VM2Cloud VE to store and synchronize cluster configuration across all nodes.
 
 Unlike traditional file systems, the Cluster File System stores configuration information instead of virtual machine data. When a configuration change is made on one node, it is automatically synchronized with all other nodes in the cluster.
 
@@ -30,7 +30,7 @@ The Cluster File System runs on every cluster node.
 
 Configuration data is synchronized through the cluster communication service (Corosync).
 
-When an administrator modifies a configuration file through the VM2Cloud web interface or supported management tools, the change is automatically propagated to the other cluster members.
+When an administrator modifies a configuration file through the VM2Cloud VE web interface or supported management tools, the change is automatically propagated to the other cluster members.
 
 The synchronization process is automatic and does not require manual intervention.
 
@@ -91,7 +91,7 @@ For verification or troubleshooting, administrators can view the configuration d
 ls /etc/pve
 ```
 
-The directory contains cluster configuration files and folders managed by VM2Cloud.
+The directory contains cluster configuration files and folders managed by VM2Cloud VE.
 
 ---
 
@@ -121,7 +121,7 @@ Examples of directories commonly found under `/etc/pve` include:
 
 ## Important Considerations
 
-- Do not manually edit cluster configuration files unless instructed by VM2Cloud documentation or support.
+- Do not manually edit cluster configuration files unless instructed by VM2Cloud VE documentation or support.
 - Do not delete files from `/etc/pve`.
 - Ensure reliable communication between cluster nodes to maintain synchronization.
 - Loss of quorum may temporarily prevent configuration updates.
@@ -162,4 +162,4 @@ Verify the following:
 
 ## Summary
 
-The Cluster File System (pmxcfs) provides centralized and synchronized configuration management for VM2Cloud clusters. By automatically distributing configuration changes across all cluster nodes, it enables consistent administration and simplifies the management of clustered environments while maintaining configuration integrity.
+The Cluster File System (pmxcfs) provides centralized and synchronized configuration management for VM2Cloud VE clusters. By automatically distributing configuration changes across all cluster nodes, it enables consistent administration and simplifies the management of clustered environments while maintaining configuration integrity.

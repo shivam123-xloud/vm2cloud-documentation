@@ -4,7 +4,7 @@
 
 ## Overview
 
-After a virtual machine is created, it can be managed from the VM toolbar. VM2Cloud provides several power management options that allow administrators to start, stop, restart, pause, resume, or gracefully shut down a virtual machine.
+After a virtual machine is created, it can be managed from the VM toolbar. VM2Cloud VE provides several power management options that allow administrators to start, stop, restart, pause, resume, or gracefully shut down a virtual machine.
 
 These actions help administrators control the operational state of a virtual machine during maintenance, troubleshooting, or normal day-to-day administration.
 
@@ -37,7 +37,7 @@ Before performing any operation, ensure that:
 
 ## Step 1: Select the Virtual Machine
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select the required node.
 3. Select the virtual machine.
 
@@ -198,4 +198,4 @@ After performing any power operation, verify that:
 
 # Summary
 
-VM2Cloud provides several power management options to control the operational state of a virtual machine. Administrators can start, shut down, stop, reboot, pause, and resume virtual machines directly from the VM management toolbar, making it easy to perform routine maintenance and operational tasks.
+VM2Cloud VE provides several power management options to control the operational state of a virtual machine. Administrators can start, shut down, stop, reboot, pause, and resume virtual machines directly from the VM management toolbar, making it easy to perform routine maintenance and operational tasks.

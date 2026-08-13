@@ -25,7 +25,7 @@ Create a container when you need to:
 
 Before creating a container, ensure that:
 
-* A VM2Cloud node is available.
+* A VM2Cloud VE node is available.
 * A container template is available on the selected storage.
 * Storage has sufficient free space.
 * A network bridge is available.
@@ -37,7 +37,7 @@ Before creating a container, ensure that:
 
 ## Step 1: Open the Create Container Wizard
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select the node where the container will be created.
 3. Click **Create CT**.
 
@@ -241,4 +241,4 @@ After the wizard completes, verify that:
 
 # Summary
 
-The Create Container wizard provides a guided process for deploying Linux containers in VM2Cloud. By selecting a template and configuring storage, CPU, memory, and networking, administrators can quickly deploy lightweight workloads that are ready for use.
+The Create Container wizard provides a guided process for deploying Linux containers in VM2Cloud VE. By selecting a template and configuring storage, CPU, memory, and networking, administrators can quickly deploy lightweight workloads that are ready for use.

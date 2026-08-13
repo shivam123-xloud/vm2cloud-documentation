@@ -55,7 +55,7 @@ The Virtual Media connection is what allows the BMC to expose a file from your c
 
 **Virtual Media Window Before Mapping**
 
-![Virtual Media window before selecting the VM2Cloud ISO](images/01-virtual-media-empty.png)
+![Virtual Media window before selecting the VM2Cloud VE ISO](images/01-virtual-media-empty.png)
 
 *Figure 1. Virtual Media is connected and the Map CD/DVD image field is empty.*
 
@@ -74,7 +74,7 @@ Use **Map CD/DVD**, not **Map Removable Disk** — this is the most common mista
 
 **ISO Selected for Mapping**
 
-![VM2Cloud ISO selected in the Map CD/DVD section](images/02-iso-selected.png)
+![VM2Cloud VE ISO selected in the Map CD/DVD section](images/02-iso-selected.png)
 
 *Figure 2. The installation image has been selected and Map Device is available.*
 
@@ -88,7 +88,7 @@ Close the Virtual Media window and inspect the status line at the top of the rem
 
 **ISO Mapped**
 
-![Remote console showing one mapped VM2Cloud ISO](images/03-iso-mapped.png)
+![Remote console showing one mapped VM2Cloud VE ISO](images/03-iso-mapped.png)
 
 *Figure 3. The ISO is mapped to the virtual CD/DVD drive.*
 
@@ -184,13 +184,13 @@ This device is the mapped ISO. Do not select an existing operating system, a RAI
 
 ## Step 8: Start the Graphical Installer
 
-Use the arrow keys to highlight **Install VM2Cloud (Graphical)**, then press `Enter`.
+Use the arrow keys to highlight **Install VM2Cloud VE (Graphical)**, then press `Enter`.
 
 The graphical option starts the standard interactive installer. The Terminal UI and Serial Console options exist for environments that cannot use a graphical console.
 
 **Installer Boot Menu**
 
-![VM2Cloud installer menu with Install VM2Cloud Graphical selected](images/11-graphical-installer.png)
+![VM2Cloud VE installer menu with Install VM2Cloud VE Graphical selected](images/11-graphical-installer.png)
 
 *Figure 11. VM2Cloud VE installer boot menu.*
 
@@ -207,7 +207,7 @@ Verify the following:
 1. The console status shows **Devices Mapped: 1**.
 2. The mapped filename is `vm2cloud-ve-9.2-amd64-v10.iso`.
 3. Boot Manager lists and accepts **Virtual Optical Drive**.
-4. The installer menu displays **Install VM2Cloud (Graphical)**.
+4. The installer menu displays **Install VM2Cloud VE (Graphical)**.
 5. Pressing `Enter` starts the graphical installation wizard.
 
 The objective is complete only once the graphical wizard starts. Reaching Boot Manager alone is not sufficient.

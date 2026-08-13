@@ -39,7 +39,7 @@ The lifecycle case is the one people underuse. A `temporary` tag applied at crea
 
 ## Step 1: Open a Guest
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select the virtual machine or container.
 
 Existing tags appear in the header beside the guest name. A guest with none shows an empty tag control.

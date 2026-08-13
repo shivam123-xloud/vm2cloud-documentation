@@ -4,9 +4,9 @@
 
 ## Overview
 
-Roles define the set of privileges that determine what actions a user or group can perform within VM2Cloud. A role itself does not grant access to any resource. Instead, roles are assigned through permissions, which specify where the privileges apply.
+Roles define the set of privileges that determine what actions a user or group can perform within VM2Cloud VE. A role itself does not grant access to any resource. Instead, roles are assigned through permissions, which specify where the privileges apply.
 
-VM2Cloud includes several predefined roles for common administrative tasks. Custom roles can also be created to meet specific operational requirements.
+VM2Cloud VE includes several predefined roles for common administrative tasks. Custom roles can also be created to meet specific operational requirements.
 
 ---
 
@@ -34,7 +34,7 @@ Before managing roles, ensure that:
 
 # Access the Roles Page
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select **Datacenter**.
 3. Click **Permissions**.
 4. Click **Roles**.
@@ -60,7 +60,7 @@ The Roles page displays information such as:
 
 Select a role to view the privileges included in that role.
 
-> **Note:** System roles are predefined by VM2Cloud and are available immediately after installation.
+> **Note:** System roles are predefined by VM2Cloud VE and are available immediately after installation.
 
 ---
 
@@ -152,7 +152,7 @@ The new role appears in the Roles list.
 
 # Delete a Custom Role
 
-> **Warning:** Deleting a role removes it from VM2Cloud. Users or groups assigned to this role will lose the associated privileges.
+> **Warning:** Deleting a role removes it from VM2Cloud VE. Users or groups assigned to this role will lose the associated privileges.
 
 ## Steps
 
@@ -174,11 +174,11 @@ The new role appears in the Roles list.
 
 # Common System Roles
 
-The following roles are commonly available in VM2Cloud.
+The following roles are commonly available in VM2Cloud VE.
 
 | Role | Description |
 |------|-------------|
-| Administrator | Full administrative access to VM2Cloud resources. |
+| Administrator | Full administrative access to VM2Cloud VE resources. |
 | Auditor | Read-only access for monitoring and auditing. |
 | Resource Administrator | Manages virtual infrastructure resources. |
 | Virtual Machine Administrator | Manages virtual machines. |
@@ -225,4 +225,4 @@ After managing roles, verify that:
 
 # Summary
 
-Roles define the privileges available within VM2Cloud and provide a flexible way to control administrative access. By combining roles with users, groups, and permissions, administrators can implement secure and well-structured access control throughout the virtualization environment.
+Roles define the privileges available within VM2Cloud VE and provide a flexible way to control administrative access. By combining roles with users, groups, and permissions, administrators can implement secure and well-structured access control throughout the virtualization environment.

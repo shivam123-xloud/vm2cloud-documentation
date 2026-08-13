@@ -4,7 +4,7 @@
 
 ## Overview
 
-This guide provides solutions for common issues that may occur while creating, starting, managing, migrating, backing up, restoring, or deleting containers in VM2Cloud. It also includes commonly used CLI commands for diagnosing container-related issues.
+This guide provides solutions for common issues that may occur while creating, starting, managing, migrating, backing up, restoring, or deleting containers in VM2Cloud VE. It also includes commonly used CLI commands for diagnosing container-related issues.
 
 ---
 
@@ -281,7 +281,7 @@ Example:
 pct status 101
 ```
 
-Displays the current state of the container. For detailed CPU and memory usage, use the **Summary** page in the VM2Cloud web interface.
+Displays the current state of the container. For detailed CPU and memory usage, use the **Summary** page in the VM2Cloud VE web interface.
 
 ---
 

@@ -1,6 +1,6 @@
 # Glossary
 
-Terminology used throughout the VM2Cloud documentation.
+Terminology used throughout the VM2Cloud VE documentation.
 
 ---
 
@@ -9,7 +9,7 @@ Terminology used throughout the VM2Cloud documentation.
 | Term | Definition |
 |---|---|
 | **Datacenter** | The top level of the resource tree. Holds cluster-wide configuration that applies to every node. |
-| **Node** | A single physical server running VM2Cloud. Provides the CPU, memory, storage, and networking that guests consume. |
+| **Node** | A single physical server running VM2Cloud VE. Provides the CPU, memory, storage, and networking that guests consume. |
 | **Cluster** | Two or more nodes managed as a single environment, enabling shared configuration, migration, and High Availability. |
 | **Guest** | A virtual machine or a container. Used when a statement applies to both. |
 | **Resource tree** | The navigation panel on the left of the interface, showing Datacenter, nodes, and guests. |
@@ -55,7 +55,7 @@ Terminology used throughout the VM2Cloud documentation.
 
 | Term | Definition |
 |---|---|
-| **Storage** | A configured location where VM2Cloud keeps disks, ISO images, templates, or backups. |
+| **Storage** | A configured location where VM2Cloud VE keeps disks, ISO images, templates, or backups. |
 | **Content type** | What a storage is allowed to hold — disk images, ISO images, container templates, backups, or snippets. |
 | **Local storage** | Storage available on a single node only. |
 | **Shared storage** | Storage reachable from every node, required for live migration without disk transfer. |

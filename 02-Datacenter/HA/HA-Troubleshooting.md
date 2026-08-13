@@ -4,7 +4,7 @@
 
 ## Overview
 
-High Availability (HA) allows VM2Cloud to manage selected virtual machines and containers across cluster nodes and recover workloads when a node becomes unavailable.
+High Availability (HA) allows VM2Cloud VE to manage selected virtual machines and containers across cluster nodes and recover workloads when a node becomes unavailable.
 
 HA problems can be caused by:
 
@@ -46,7 +46,7 @@ Use this document when:
 
 Before troubleshooting HA:
 
-* Log in to VM2Cloud with an account that has sufficient permissions.
+* Log in to VM2Cloud VE with an account that has sufficient permissions.
 * Identify the affected VM, container, or node.
 * Confirm the cluster name.
 * Know which node normally hosts the affected resource.
@@ -62,7 +62,7 @@ Before troubleshooting HA:
 
 ## Step 1: Identify the Affected HA Resource
 
-1. Log in to VM2Cloud.
+1. Log in to VM2Cloud VE.
 2. Select **Datacenter**.
 3. Open **HA**.
 4. Open the HA resource view.
@@ -864,7 +864,7 @@ When an HA node fails:
 
 # CLI Troubleshooting Reference
 
-CLI is secondary to the VM2Cloud web UI.
+CLI is secondary to the VM2Cloud VE web UI.
 
 Use CLI primarily for verification and troubleshooting.
 

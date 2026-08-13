@@ -4,7 +4,7 @@
 
 ## Overview
 
-Deleting a virtual machine permanently removes it from VM2Cloud. Depending on the selected options during the deletion process, the associated virtual disks can also be removed from storage.
+Deleting a virtual machine permanently removes it from VM2Cloud VE. Depending on the selected options during the deletion process, the associated virtual disks can also be removed from storage.
 
 This operation should be performed only when the virtual machine is no longer required.
 
@@ -38,7 +38,7 @@ Before deleting a virtual machine, ensure that:
 
 ## Step 1: Select the Virtual Machine
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select the required node.
 3. Select the virtual machine.
 
@@ -86,7 +86,7 @@ The Remove Virtual Machine dialog opens.
 
 Review the available options before continuing.
 
-Depending on your VM2Cloud configuration, you may see options such as:
+Depending on your VM2Cloud VE configuration, you may see options such as:
 
 * Remove Virtual Disks
 * Remove Unused Disks
@@ -144,4 +144,4 @@ Verify the following:
 
 # Summary
 
-Deleting a virtual machine permanently removes it from VM2Cloud. Before proceeding, verify that the virtual machine is no longer needed and that a backup has been created if the data must be retained. Carefully review the removal options to ensure that disks and configuration files are deleted only when intended.
+Deleting a virtual machine permanently removes it from VM2Cloud VE. Before proceeding, verify that the virtual machine is no longer needed and that a backup has been created if the data must be retained. Carefully review the removal options to ensure that disks and configuration files are deleted only when intended.

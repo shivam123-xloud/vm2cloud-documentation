@@ -42,7 +42,7 @@ DNS depends on networking. A container that cannot reach its gateway will not re
 
 ## Step 1: Open the DNS Tab
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Expand the node in the resource tree.
 3. Select the container.
 4. Click **DNS**.

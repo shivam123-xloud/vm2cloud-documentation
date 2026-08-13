@@ -4,7 +4,7 @@
 
 ## Overview
 
-A Virtual Machine (VM) is a software-based computer that runs its own operating system using the resources of a VM2Cloud node. Before a virtual machine can be used, it must be created by defining its hardware configuration and installation source.
+A Virtual Machine (VM) is a software-based computer that runs its own operating system using the resources of a VM2Cloud VE node. Before a virtual machine can be used, it must be created by defining its hardware configuration and installation source.
 
 The **Create Virtual Machine** wizard guides you through the configuration process, including the virtual machine name, operating system, storage, CPU, memory, and network settings.
 
@@ -25,7 +25,7 @@ Create a virtual machine when you need to:
 
 Before creating a virtual machine, ensure that:
 
-* A VM2Cloud node is available.
+* A VM2Cloud VE node is available.
 * Storage has been configured.
 * A Linux Bridge or other network configuration is available.
 * The required ISO image has been uploaded to the storage.
@@ -37,7 +37,7 @@ Before creating a virtual machine, ensure that:
 
 ## Step 1: Open the Create Virtual Machine Wizard
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select the node where the virtual machine will be created.
 3. Click **Create VM**.
 
@@ -249,4 +249,4 @@ After the wizard completes:
 
 # Summary
 
-The Create Virtual Machine wizard provides a guided process for deploying new virtual machines in VM2Cloud. By configuring the operating system, storage, CPU, memory, and network settings, administrators can quickly provision virtual machines ready for operating system installation and further configuration.
+The Create Virtual Machine wizard provides a guided process for deploying new virtual machines in VM2Cloud VE. By configuring the operating system, storage, CPU, memory, and network settings, administrators can quickly provision virtual machines ready for operating system installation and further configuration.

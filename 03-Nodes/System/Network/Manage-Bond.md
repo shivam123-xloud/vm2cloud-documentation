@@ -37,7 +37,7 @@ Before creating a Bond, ensure that:
 
 # Bond Modes
 
-VM2Cloud supports multiple bonding modes. The most commonly used modes are:
+VM2Cloud VE supports multiple bonding modes. The most commonly used modes are:
 
 | Bond Mode      | Description                                                                                                          |
 | -------------- | -------------------------------------------------------------------------------------------------------------------- |
@@ -55,7 +55,7 @@ VM2Cloud supports multiple bonding modes. The most commonly used modes are:
 
 ## Step 1: Open the Network Page
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select the required node.
 3. Click **System**.
 4. Select **Network**.
@@ -223,7 +223,7 @@ Verify the following:
 | --------------------------------- | ------------------------------------------------------------------------------------------------------------- |
 | Bond is not created               | Verify that all selected physical interfaces are available and not already assigned to another configuration. |
 | Bond remains down                 | Check the physical network connections and verify the selected interfaces are active.                         |
-| LACP Bond does not work           | Confirm that LACP (802.3ad) is configured on both the VM2Cloud node and the connected network switch.         |
+| LACP Bond does not work           | Confirm that LACP (802.3ad) is configured on both the VM2Cloud VE node and the connected network switch.         |
 | Unable to remove the Bond         | Ensure that no Linux Bridge or VLAN is using the Bond interface.                                              |
 | Configuration changes are pending | Click **Apply Configuration** to activate the updated network settings.                                       |
 

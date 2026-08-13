@@ -6,9 +6,9 @@
 
 The **System** section provides administrators with access to node-level operating system configuration and information. It includes settings and tools used to manage system time, DNS, hostname resolution, logging, time synchronization, kernel management, and boot configuration.
 
-These settings affect the selected node only and are used to maintain a stable, secure, and properly configured VM2Cloud environment.
+These settings affect the selected node only and are used to maintain a stable, secure, and properly configured VM2Cloud VE environment.
 
-The System section allows administrators to review the current configuration, make changes where supported, and troubleshoot operating system–related issues directly from the VM2Cloud web interface.
+The System section allows administrators to review the current configuration, make changes where supported, and troubleshoot operating system–related issues directly from the VM2Cloud VE web interface.
 
 ---
 
@@ -47,7 +47,7 @@ The System section contains the following configuration pages:
 
 Before modifying system settings, ensure that:
 
-- You are logged in to the VM2Cloud web interface.
+- You are logged in to the VM2Cloud VE web interface.
 - You have administrative privileges.
 - The selected node is online.
 - You understand the impact of the configuration change.
@@ -92,4 +92,4 @@ Before modifying system settings, ensure that:
 
 ## Summary
 
-The **System** section provides centralized access to essential operating system configuration for a VM2Cloud node. Proper management of these settings helps maintain reliable communication, accurate time synchronization, consistent name resolution, and overall system stability.
+The **System** section provides centralized access to essential operating system configuration for a VM2Cloud VE node. Proper management of these settings helps maintain reliable communication, accurate time synchronization, consistent name resolution, and overall system stability.

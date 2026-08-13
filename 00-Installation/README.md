@@ -94,7 +94,7 @@ Not currently covered: USB media installation, nested or virtual installation, a
 
 [Verify the Installation](Verify-Installation.md) ends with an ordered list of post-installation tasks — updates, time synchronization, individual user accounts, certificates, storage, clustering, and backups.
 
-New to the interface? Start with [What Is VM2Cloud](../01-Getting-Started/What-Is-VM2Cloud.md) and the [Interface Tour](../01-Getting-Started/Interface-Tour.md).
+New to the interface? Start with [What Is VM2Cloud VE](../01-Getting-Started/What-Is-VM2Cloud-VE.md) and the [Interface Tour](../01-Getting-Started/Interface-Tour.md).
 
 ---
 

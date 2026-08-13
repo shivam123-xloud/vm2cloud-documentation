@@ -41,7 +41,7 @@ A VNet is the unit of separation in SDN. Use additional VNets to isolate workloa
 
 ## Step 1: Open the VNets Panel
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select **Datacenter** in the resource tree.
 3. Expand **SDN**.
 4. Click **VNets**.

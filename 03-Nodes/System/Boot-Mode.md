@@ -4,7 +4,7 @@
 
 ## Overview
 
-The **Boot Mode** page displays how the selected VM2Cloud node was started. It indicates whether the node is running in **UEFI** or **Legacy BIOS** mode.
+The **Boot Mode** page displays how the selected VM2Cloud VE node was started. It indicates whether the node is running in **UEFI** or **Legacy BIOS** mode.
 
 Knowing the boot mode is important when troubleshooting boot-related issues, installing operating systems, configuring boot loaders, or planning hardware upgrades.
 
@@ -28,7 +28,7 @@ Use the **Boot Mode** page to:
 
 Before viewing the Boot Mode information, ensure that:
 
-- You are logged in to the VM2Cloud web interface.
+- You are logged in to the VM2Cloud VE web interface.
 - The selected node is online.
 
 ---
@@ -37,7 +37,7 @@ Before viewing the Boot Mode information, ensure that:
 
 ## Step 1: Open the Boot Mode Page
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select the required node.
 3. Expand **System**.
 4. Select **Boot Mode**.
@@ -99,7 +99,7 @@ Although fully supported, it has limitations compared to UEFI, including support
 
 ## Best Practices
 
-- Use UEFI for new VM2Cloud installations whenever possible.
+- Use UEFI for new VM2Cloud VE installations whenever possible.
 - Maintain the same boot mode across similar hardware deployments.
 - Verify the firmware mode before reinstalling the operating system.
 - Avoid changing the firmware mode after installation unless required.
@@ -136,4 +136,4 @@ Verify the following:
 
 # Summary
 
-The **Boot Mode** page provides information about how the VM2Cloud node was started. Verifying the firmware mode helps administrators troubleshoot boot issues, validate system configuration, and ensure compatibility with deployment requirements.
+The **Boot Mode** page provides information about how the VM2Cloud VE node was started. Verifying the firmware mode helps administrators troubleshoot boot issues, validate system configuration, and ensure compatibility with deployment requirements.

@@ -4,7 +4,7 @@
 
 ## Overview
 
-This guide provides solutions for common issues that may occur while creating, starting, managing, or deleting virtual machines in VM2Cloud. It also includes basic diagnostic steps to help identify and resolve problems before further investigation.
+This guide provides solutions for common issues that may occur while creating, starting, managing, or deleting virtual machines in VM2Cloud VE. It also includes basic diagnostic steps to help identify and resolve problems before further investigation.
 
 ---
 
@@ -272,7 +272,7 @@ Restarts the virtual machine.
 
 ## Monitor Running Tasks
 
-Review the **Recent Tasks** section in the VM2Cloud interface to identify failed or incomplete operations and use the task details to determine the cause of the issue.
+Review the **Recent Tasks** section in the VM2Cloud VE interface to identify failed or incomplete operations and use the task details to determine the cause of the issue.
 
 ---
 

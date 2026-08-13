@@ -4,9 +4,9 @@
 
 ## Overview
 
-Storage in VM2Cloud is used to store virtual machine disks, container root filesystems, ISO images, backups, templates, and other resources required by the virtualization platform. Before creating virtual machines or containers, at least one storage location must be available.
+Storage in VM2Cloud VE is used to store virtual machine disks, container root filesystems, ISO images, backups, templates, and other resources required by the virtualization platform. Before creating virtual machines or containers, at least one storage location must be available.
 
-VM2Cloud supports both local storage attached to a single node and shared storage that can be accessed by multiple nodes in a cluster.
+VM2Cloud VE supports both local storage attached to a single node and shared storage that can be accessed by multiple nodes in a cluster.
 
 ---
 
@@ -27,16 +27,16 @@ Use the **Storage** page to:
 Before viewing storage information, ensure that:
 
 * You have administrator privileges.
-* The VM2Cloud web interface is accessible.
+* The VM2Cloud VE web interface is accessible.
 * At least one storage resource has been configured.
 
 ---
 
 # Procedure
 
-## Step 1: Log in to VM2Cloud
+## Step 1: Log in to VM2Cloud VE
 
-1. Open the VM2Cloud web interface.
+1. Open the VM2Cloud VE web interface.
 2. Sign in using an administrator account.
 
 ---
@@ -44,7 +44,7 @@ Before viewing storage information, ensure that:
 
 
 
-![Log in to VM2Cloud](images/log-in-page.png)
+![Log in to VM2Cloud VE](images/log-in-page.png)
 
 
 ---
@@ -138,7 +138,7 @@ Depending on how the storage is configured, the Content page may contain:
 
 ## Understanding Storage Types
 
-VM2Cloud supports multiple storage technologies. The configured storage type determines what data can be stored and how it is accessed.
+VM2Cloud VE supports multiple storage technologies. The configured storage type determines what data can be stored and how it is accessed.
 
 Common storage types include:
 
@@ -179,4 +179,4 @@ Verify the following:
 
 # Summary
 
-The Storage page provides a centralized view of all storage resources configured in VM2Cloud. From this page, administrators can monitor storage capacity, review available content, and verify that storage resources are ready for virtual machines, containers, backups, and installation media.
+The Storage page provides a centralized view of all storage resources configured in VM2Cloud VE. From this page, administrators can monitor storage capacity, review available content, and verify that storage resources are ready for virtual machines, containers, backups, and installation media.

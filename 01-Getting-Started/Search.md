@@ -4,7 +4,7 @@
 
 ## Overview
 
-The **Search** feature allows administrators to quickly locate resources within the VM2Cloud environment. Instead of manually navigating the resource tree, users can search for virtual machines, containers, nodes, storage resources, and other managed objects directly from the search bar.
+The **Search** feature allows administrators to quickly locate resources within the VM2Cloud VE environment. Instead of manually navigating the resource tree, users can search for virtual machines, containers, nodes, storage resources, and other managed objects directly from the search bar.
 
 The search function helps administrators efficiently locate resources in environments containing multiple nodes and workloads.
 
@@ -27,7 +27,7 @@ Use the Search feature to:
 
 Before using Search, ensure that:
 
-- You are logged in to the VM2Cloud web interface.
+- You are logged in to the VM2Cloud VE web interface.
 - You have permission to view the resource being searched.
 
 ---
@@ -36,7 +36,7 @@ Before using Search, ensure that:
 
 ## Step 1: Locate the Search Box
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Locate the **Search** box at the top of the interface.
 
 ---
@@ -78,7 +78,7 @@ Matching results are displayed automatically while typing.
 
 1. Select the required resource from the search results.
 
-The VM2Cloud interface automatically opens the selected resource.
+The VM2Cloud VE interface automatically opens the selected resource.
 
 ---
 
@@ -158,4 +158,4 @@ Verify the following:
 
 # Summary
 
-The Search feature provides a quick and efficient way to locate resources within the VM2Cloud environment. By using the search box, administrators can rapidly navigate to nodes, virtual machines, containers, and storage resources without manually browsing the resource tree.
+The Search feature provides a quick and efficient way to locate resources within the VM2Cloud VE environment. By using the search box, administrators can rapidly navigate to nodes, virtual machines, containers, and storage resources without manually browsing the resource tree.

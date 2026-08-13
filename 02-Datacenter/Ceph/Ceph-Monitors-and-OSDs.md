@@ -46,7 +46,7 @@ Work with monitors and OSDs when you need to:
 
 Monitors hold the cluster map — which nodes exist, which OSDs are up, and where data should live. Every client consults a monitor before reading or writing.
 
-They form **their own quorum**, separate from the VM2Cloud cluster quorum. If monitors lose quorum, Ceph stops serving I/O entirely, even though the VM2Cloud cluster may be perfectly healthy.
+They form **their own quorum**, separate from the VM2Cloud VE cluster quorum. If monitors lose quorum, Ceph stops serving I/O entirely, even though the VM2Cloud VE cluster may be perfectly healthy.
 
 > **Warning:** Always run an **odd** number of monitors. Two monitors are strictly worse than one: either failing loses quorum, so you have doubled the failure probability while gaining nothing.
 

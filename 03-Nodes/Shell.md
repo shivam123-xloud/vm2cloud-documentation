@@ -4,7 +4,7 @@
 
 ## Overview
 
-The **Shell** provides administrators with direct command-line access to a VM2Cloud node through the web interface. It allows you to perform system administration, execute Linux commands, troubleshoot issues, and manage the node without requiring a separate SSH client.
+The **Shell** provides administrators with direct command-line access to a VM2Cloud VE node through the web interface. It allows you to perform system administration, execute Linux commands, troubleshoot issues, and manage the node without requiring a separate SSH client.
 
 The Shell opens a terminal session on the selected node and provides the same level of access as a local terminal, subject to the permissions of the logged-in user.
 
@@ -28,7 +28,7 @@ Use the Shell to:
 
 Before using the Shell, ensure that:
 
-- You are logged in to the VM2Cloud web interface.
+- You are logged in to the VM2Cloud VE web interface.
 - You have permission to access the selected node.
 - The node is online and reachable.
 
@@ -38,7 +38,7 @@ Before using the Shell, ensure that:
 
 ## Step 1: Select the Node
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. In the navigation tree, select the required node.
 
 ---
@@ -95,7 +95,7 @@ node1
 
 ## Common Administrative Commands
 
-The following commands are commonly used when managing a VM2Cloud node.
+The following commands are commonly used when managing a VM2Cloud VE node.
 
 | Purpose | Command |
 |---------|---------|
@@ -167,4 +167,4 @@ Verify the following:
 
 # Summary
 
-The Shell provides secure command-line access to a VM2Cloud node directly from the web interface. It enables administrators to perform advanced management and troubleshooting tasks without requiring an external SSH client, making it an essential tool for day-to-day system administration.
+The Shell provides secure command-line access to a VM2Cloud VE node directly from the web interface. It enables administrators to perform advanced management and troubleshooting tasks without requiring an external SSH client, making it an essential tool for day-to-day system administration.

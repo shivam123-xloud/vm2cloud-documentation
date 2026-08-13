@@ -4,7 +4,7 @@
 
 ## Overview
 
-Rebooting a node restarts the physical server hosting the VM2Cloud services. This operation is commonly performed after installing system updates, applying configuration changes, or during scheduled maintenance.
+Rebooting a node restarts the physical server hosting the VM2Cloud VE services. This operation is commonly performed after installing system updates, applying configuration changes, or during scheduled maintenance.
 
 > **Important:** Restarting a node will temporarily interrupt the virtual machines and containers running on that node unless they have been migrated or are protected by High Availability (HA).
 
@@ -36,7 +36,7 @@ Before rebooting a node, ensure that:
 
 ## Step 1: Open the Node
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Expand **Datacenter**.
 3. Select the node you want to restart.
 
@@ -91,7 +91,7 @@ Before rebooting a node, ensure that:
 ## Step 4: Wait for the Node to Restart
 
 1. Allow the reboot process to complete.
-2. Wait for the node to reconnect to the VM2Cloud interface.
+2. Wait for the node to reconnect to the VM2Cloud VE interface.
 
 ---
 
@@ -107,7 +107,7 @@ Before rebooting a node, ensure that:
 
 ## Step 5: Verify the Node Status
 
-1. Refresh the VM2Cloud web interface.
+1. Refresh the VM2Cloud VE web interface.
 2. Confirm the node status is **Online**.
 3. Verify that hosted virtual machines and containers are running as expected.
 

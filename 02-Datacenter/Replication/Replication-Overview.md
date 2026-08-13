@@ -4,7 +4,7 @@
 
 ## Overview
 
-VM2Cloud Storage Replication provides a way to replicate virtual machine and container data from one cluster node to another node.
+VM2Cloud VE Storage Replication provides a way to replicate virtual machine and container data from one cluster node to another node.
 
 Replication is designed primarily for guests using local storage. It maintains a copy of the guest's data on another cluster node without requiring shared storage.
 
@@ -36,7 +36,7 @@ Replication can be configured for multiple target nodes, but the same guest cann
 
 Before configuring replication:
 
-* VM2Cloud must have a working cluster.
+* VM2Cloud VE must have a working cluster.
 * The source node and target node must be cluster members.
 * The guest must exist on the source node.
 * The guest's storage must support replication.
@@ -51,7 +51,7 @@ Before configuring replication:
 
 The underlying replication framework supports specific storage types. In the documented stable configuration, local ZFS storage is supported for storage replication.
 
-Verify the storage type in the actual VM2Cloud environment before creating a replication job.
+Verify the storage type in the actual VM2Cloud VE environment before creating a replication job.
 
 ---
 
@@ -59,7 +59,7 @@ Verify the storage type in the actual VM2Cloud environment before creating a rep
 
 ## Step 1: Open Replication
 
-1. Log in to VM2Cloud.
+1. Log in to VM2Cloud VE.
 2. Select **Datacenter** from the left navigation tree.
 3. Open **Replication**.
 4. Review the existing replication jobs.
@@ -122,7 +122,7 @@ Replication jobs are associated with a specific guest and target node.
 5. Configure the replication schedule.
 6. Configure a bandwidth limit if required.
 7. Review the configuration.
-8. Click **Create** or the corresponding confirmation button shown by the installed VM2Cloud version.
+8. Click **Create** or the corresponding confirmation button shown by the installed VM2Cloud VE version.
 9. Verify that the new replication job appears in the replication list.
 
 ### Screenshot 3
@@ -131,7 +131,7 @@ Replication jobs are associated with a specific guest and target node.
 [ Place Screenshot Here ]
 ```
 
-The exact button labels can vary between VM2Cloud releases because VM2Cloud follows the underlying platform version.
+The exact button labels can vary between VM2Cloud VE releases because VM2Cloud VE follows the underlying platform version.
 
 ---
 
@@ -229,7 +229,7 @@ The initial synchronization can require significant network bandwidth and time d
 
 After the initial synchronization:
 
-1. VM2Cloud creates or uses snapshots to identify changes.
+1. VM2Cloud VE creates or uses snapshots to identify changes.
 2. Only changed data is transferred.
 3. The target copy is updated.
 4. The replication job completes.
@@ -333,7 +333,7 @@ Replication and backup solve different problems.
 | Independent recovery copy           | No                            | Yes                          |
 | Replacement for backup              | No                            | N/A                          |
 
-A production VM2Cloud environment should normally use both replication and backup where appropriate.
+A production VM2Cloud VE environment should normally use both replication and backup where appropriate.
 
 ---
 
@@ -559,7 +559,7 @@ To inspect available replication information:
 pvesr status
 ```
 
-Use CLI output together with the VM2Cloud web UI when troubleshooting.
+Use CLI output together with the VM2Cloud VE web UI when troubleshooting.
 
 Do not use CLI to replace an available UI workflow unless the UI cannot perform the required operation.
 
@@ -632,7 +632,7 @@ Storage:
 
 # Summary
 
-VM2Cloud Storage Replication maintains synchronized copies of supported guest storage on another cluster node.
+VM2Cloud VE Storage Replication maintains synchronized copies of supported guest storage on another cluster node.
 
 The main characteristics are:
 

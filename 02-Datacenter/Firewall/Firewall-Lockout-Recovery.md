@@ -4,7 +4,7 @@
 
 ## Overview
 
-If a firewall rule blocks your access to the VM2Cloud web interface or to SSH, you cannot use the interface to fix the rule — the rule is what is stopping you reaching it.
+If a firewall rule blocks your access to the VM2Cloud VE web interface or to SSH, you cannot use the interface to fix the rule — the rule is what is stopping you reaching it.
 
 This page is the way out. It requires console or physical access to a node, because every network path may be blocked.
 

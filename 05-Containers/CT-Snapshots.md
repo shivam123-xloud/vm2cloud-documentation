@@ -66,7 +66,7 @@ Before taking a snapshot, ensure that:
 
 ## Step 1: Open the Snapshots Tab
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Expand the node in the resource tree.
 3. Select the container.
 4. Click **Snapshots**.
@@ -149,7 +149,7 @@ The container is restored to the snapshot's state.
 > **Warning:** Rolling back discards **every change made since the snapshot was taken** — files written, database rows added, log entries, package updates. This cannot be undone. If the container has been in use since the snapshot, that work is lost. Take a fresh snapshot or a backup before rolling back if you may need the current state.
 
 > **Verify:** Confirm whether the container must be stopped before rollback, or whether
-> VM2Cloud stops it automatically as part of the operation.
+> VM2Cloud VE stops it automatically as part of the operation.
 
 ---
 

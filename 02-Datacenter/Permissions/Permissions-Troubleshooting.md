@@ -4,7 +4,7 @@
 
 ## Overview
 
-This document provides solutions for common issues related to user accounts, authentication, groups, roles, permissions, API Tokens, and Two-Factor Authentication in VM2Cloud.
+This document provides solutions for common issues related to user accounts, authentication, groups, roles, permissions, API Tokens, and Two-Factor Authentication in VM2Cloud VE.
 
 Use this guide to diagnose and resolve access-related problems before contacting system support.
 
@@ -14,7 +14,7 @@ Use this guide to diagnose and resolve access-related problems before contacting
 
 ## Problem
 
-Unable to log in to VM2Cloud.
+Unable to log in to VM2Cloud VE.
 
 ### Possible Causes
 
@@ -239,4 +239,4 @@ When troubleshooting user and permission issues, verify the following:
 
 # Summary
 
-Most user and permission issues are caused by incorrect authentication settings, missing permissions, or misconfigured roles. By verifying user accounts, authentication realms, group memberships, roles, permissions, API Tokens, and Two-Factor Authentication settings, administrators can quickly identify and resolve access-related problems while maintaining a secure VM2Cloud environment.
+Most user and permission issues are caused by incorrect authentication settings, missing permissions, or misconfigured roles. By verifying user accounts, authentication realms, group memberships, roles, permissions, API Tokens, and Two-Factor Authentication settings, administrators can quickly identify and resolve access-related problems while maintaining a secure VM2Cloud VE environment.

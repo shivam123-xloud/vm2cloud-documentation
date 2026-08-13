@@ -1,6 +1,6 @@
 # Documentation Coverage
 
-A complete map of the VM2Cloud interface and of the operations that require the CLI, against what is documented.
+A complete map of the VM2Cloud VE interface and of the operations that require the CLI, against what is documented.
 
 Use this to answer one question: **is there anything an administrator can do that we have not written down?**
 

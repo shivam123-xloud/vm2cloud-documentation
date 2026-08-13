@@ -4,9 +4,9 @@
 
 ## Overview
 
-The Dashboard displays several widgets that provide a quick overview of the VM2Cloud environment. These widgets help administrators monitor infrastructure health, resource utilization, and system status without navigating to individual resources.
+The Dashboard displays several widgets that provide a quick overview of the VM2Cloud VE environment. These widgets help administrators monitor infrastructure health, resource utilization, and system status without navigating to individual resources.
 
-The available widgets may vary depending on your VM2Cloud configuration and the resources available in your environment.
+The available widgets may vary depending on your VM2Cloud VE configuration and the resources available in your environment.
 
 ---
 
@@ -22,7 +22,7 @@ It may display information such as:
 * Storage Resources
 * Cluster Status
 
-Use this widget to quickly understand the current state of your VM2Cloud environment.
+Use this widget to quickly understand the current state of your VM2Cloud VE environment.
 
 ---
 
@@ -105,7 +105,7 @@ This information helps administrators identify storage resources that are approa
 
 ## Node Status
 
-The **Node Status** widget displays the operational state of the nodes in the VM2Cloud environment.
+The **Node Status** widget displays the operational state of the nodes in the VM2Cloud VE environment.
 
 Administrators can quickly determine whether a node is:
 
@@ -175,4 +175,4 @@ Verify the following:
 
 # Summary
 
-Dashboard widgets provide administrators with a quick overview of the VM2Cloud environment, including resource utilization, storage capacity, node health, and subscription status. Regularly reviewing these widgets helps administrators monitor the infrastructure and identify potential issues at an early stage.
+Dashboard widgets provide administrators with a quick overview of the VM2Cloud VE environment, including resource utilization, storage capacity, node health, and subscription status. Regularly reviewing these widgets helps administrators monitor the infrastructure and identify potential issues at an early stage.

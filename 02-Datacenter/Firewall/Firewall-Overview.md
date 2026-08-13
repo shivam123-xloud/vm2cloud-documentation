@@ -4,7 +4,7 @@
 
 ## Overview
 
-The VM2Cloud firewall filters network traffic for the cluster, for individual nodes, and for individual virtual machines and containers.
+The VM2Cloud VE firewall filters network traffic for the cluster, for individual nodes, and for individual virtual machines and containers.
 
 It is configured at **three independent levels**, each with its own enable switch and its own rule list:
 
@@ -18,7 +18,7 @@ A packet is only accepted if it is permitted at every level that applies to it. 
 
 This page explains the concepts shared by all three levels — the rule model, direction, actions, evaluation order, and the reusable objects. The level-specific pages document only their own panel.
 
-> **Warning:** The firewall can lock you out of the VM2Cloud web interface. The default input policy is **DROP**, and the web interface listens on TCP port **8006**. If you enable the firewall without a rule permitting your management access, you will lose access to the interface and will need console or physical access to recover. Always add and verify a management-access rule *before* enabling the firewall.
+> **Warning:** The firewall can lock you out of the VM2Cloud VE web interface. The default input policy is **DROP**, and the web interface listens on TCP port **8006**. If you enable the firewall without a rule permitting your management access, you will lose access to the interface and will need console or physical access to recover. Always add and verify a management-access rule *before* enabling the firewall.
 
 ---
 
@@ -33,7 +33,7 @@ Use the firewall when:
 * Traffic between network segments must be controlled.
 * A compliance requirement calls for host-level or guest-level filtering.
 
-Do not rely on the VM2Cloud firewall as your only network control. It complements, rather than replaces, upstream network segmentation and the guest operating system's own firewall.
+Do not rely on the VM2Cloud VE firewall as your only network control. It complements, rather than replaces, upstream network segmentation and the guest operating system's own firewall.
 
 ---
 
@@ -265,6 +265,6 @@ Test from a machine that is *not* your administrative workstation, so a mistake 
 
 # Summary
 
-The VM2Cloud firewall filters traffic at three independent levels — datacenter, node, and guest — and a packet must be permitted at every applicable level to pass. Rules are direction-aware, evaluated top to bottom with the first match winning, and built from reusable aliases, IPSets, security groups, and macros defined at the datacenter level.
+The VM2Cloud VE firewall filters traffic at three independent levels — datacenter, node, and guest — and a packet must be permitted at every applicable level to pass. Rules are direction-aware, evaluated top to bottom with the first match winning, and built from reusable aliases, IPSets, security groups, and macros defined at the datacenter level.
 
 The two things that cause the most trouble are the default **DROP** input policy, which will lock you out of the web interface if you enable the firewall without a management-access rule, and the requirement to enable guest filtering in two places — on the guest and on its network device.

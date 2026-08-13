@@ -4,7 +4,7 @@
 
 ## Overview
 
-The **DNS** page allows administrators to configure the Domain Name System (DNS) settings used by a VM2Cloud node. DNS is responsible for translating hostnames into IP addresses, enabling the node to communicate with other systems using domain names instead of numeric IP addresses.
+The **DNS** page allows administrators to configure the Domain Name System (DNS) settings used by a VM2Cloud VE node. DNS is responsible for translating hostnames into IP addresses, enabling the node to communicate with other systems using domain names instead of numeric IP addresses.
 
 Proper DNS configuration is essential for software updates, package installation, cluster communication, authentication services, backups, and access to external resources.
 
@@ -26,7 +26,7 @@ Use the **DNS** page to:
 
 Before modifying the DNS configuration, ensure that:
 
-- You are logged in to the VM2Cloud web interface.
+- You are logged in to the VM2Cloud VE web interface.
 - You have administrative privileges.
 - The selected node is online.
 - The DNS server addresses are valid and reachable.
@@ -37,7 +37,7 @@ Before modifying the DNS configuration, ensure that:
 
 ## Step 1: Open the DNS Page
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select the required node.
 3. Expand **System**.
 4. Select **DNS**.
@@ -186,4 +186,4 @@ Verify the following:
 
 # Summary
 
-The **DNS** page allows administrators to configure and manage the DNS settings used by a VM2Cloud node. Proper DNS configuration ensures reliable hostname resolution and supports services such as software updates, authentication, backups, and communication with other systems.
+The **DNS** page allows administrators to configure and manage the DNS settings used by a VM2Cloud VE node. Proper DNS configuration ensures reliable hostname resolution and supports services such as software updates, authentication, backups, and communication with other systems.

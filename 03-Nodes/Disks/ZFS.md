@@ -6,7 +6,7 @@
 
 **ZFS** is a storage technology that combines filesystem and storage-pool management.
 
-VM2Cloud can use a local ZFS pool as storage for virtual machines and containers. ZFS provides features such as:
+VM2Cloud VE can use a local ZFS pool as storage for virtual machines and containers. ZFS provides features such as:
 
 * Storage pools.
 * Filesystems and datasets.
@@ -16,7 +16,7 @@ VM2Cloud can use a local ZFS pool as storage for virtual machines and containers
 * Optional compression.
 * Optional thin provisioning for virtual volumes.
 
-The VM2Cloud ZFS storage backend uses the underlying ZFS functionality of the platform. A local ZFS storage can provide VM disk images and container root directories. It is local storage and is not shared automatically between cluster nodes.
+The VM2Cloud VE ZFS storage backend uses the underlying ZFS functionality of the platform. A local ZFS storage can provide VM disk images and container root directories. It is local storage and is not shared automatically between cluster nodes.
 
 ---
 
@@ -24,7 +24,7 @@ The VM2Cloud ZFS storage backend uses the underlying ZFS functionality of the pl
 
 Use ZFS when you need:
 
-* Local storage for VM2Cloud nodes.
+* Local storage for VM2Cloud VE nodes.
 * ZFS storage pools.
 * VM disk images backed by ZFS.
 * Container storage backed by ZFS.
@@ -41,7 +41,7 @@ Use ZFS when you need:
 
 Before creating or managing ZFS:
 
-* Log in to VM2Cloud with sufficient permissions.
+* Log in to VM2Cloud VE with sufficient permissions.
 * Ensure the target node is online.
 * Ensure the required physical disks are detected.
 * Confirm that the selected disks do not contain required data.
@@ -58,7 +58,7 @@ Before creating or managing ZFS:
 
 ## Step 1: Select the Node
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Locate the resource tree.
 3. Select the node containing the disks that will be used for ZFS.
 4. Wait for the node interface to load.
@@ -128,7 +128,7 @@ The underlying platform provides a local ZFS pool backend called `zfspool`. It c
 
 Enter the required ZFS pool configuration.
 
-The exact available options depend on the VM2Cloud version and the selected pool layout.
+The exact available options depend on the VM2Cloud VE version and the selected pool layout.
 
 Configure:
 
@@ -186,13 +186,13 @@ After creation:
 
 ---
 
-# Adding ZFS as VM2Cloud Storage
+# Adding ZFS as VM2Cloud VE Storage
 
-Creating a ZFS pool and adding that pool as VM2Cloud storage are related but separate operations.
+Creating a ZFS pool and adding that pool as VM2Cloud VE storage are related but separate operations.
 
 The ZFS pool provides the underlying storage.
 
-The VM2Cloud storage definition makes that pool available to VM and container management operations.
+The VM2Cloud VE storage definition makes that pool available to VM and container management operations.
 
 ---
 
@@ -223,7 +223,7 @@ Typical properties include:
 * ZFS pool/filesystem.
 * Content types.
 * Node availability.
-* Optional storage settings supported by the current VM2Cloud version.
+* Optional storage settings supported by the current VM2Cloud VE version.
 
 ### Screenshot 9
 
@@ -268,7 +268,7 @@ The underlying ZFS backend supports `images` and `rootdir`.
 If the storage is local:
 
 1. Select the node that can access the ZFS pool.
-2. If the VM2Cloud cluster contains multiple nodes, verify that the pool actually exists on every node where the storage is configured as available.
+2. If the VM2Cloud VE cluster contains multiple nodes, verify that the pool actually exists on every node where the storage is configured as available.
 3. Do not mark local ZFS storage as available on nodes that cannot access it.
 
 Local ZFS storage is not shared storage. The underlying storage documentation lists local ZFS as `Shared: no`.
@@ -297,7 +297,7 @@ Local ZFS storage is not shared storage. The underlying storage documentation li
 
 ## Storage ID
 
-The **Storage ID** is the name used by VM2Cloud to identify the ZFS storage.
+The **Storage ID** is the name used by VM2Cloud VE to identify the ZFS storage.
 
 Use a meaningful name.
 
@@ -311,7 +311,7 @@ local-zfs
 
 ## Pool
 
-The **Pool** identifies the ZFS pool or filesystem used by the VM2Cloud storage backend.
+The **Pool** identifies the ZFS pool or filesystem used by the VM2Cloud VE storage backend.
 
 Example:
 
@@ -358,7 +358,7 @@ For local ZFS:
 
 ## Disable
 
-The storage can be disabled when it should temporarily be unavailable for normal VM2Cloud storage operations.
+The storage can be disabled when it should temporarily be unavailable for normal VM2Cloud VE storage operations.
 
 Disabling storage does not delete the underlying ZFS pool.
 
@@ -434,7 +434,7 @@ tank
 
 Datasets can have their own ZFS properties.
 
-The VM2Cloud storage backend can use a ZFS filesystem inside a pool rather than using the entire pool directly.
+The VM2Cloud VE storage backend can use a ZFS filesystem inside a pool rather than using the entire pool directly.
 
 ---
 
@@ -496,7 +496,7 @@ ZFS provides native snapshot functionality.
 
 Snapshots preserve a point-in-time state of ZFS data.
 
-VM2Cloud can use ZFS snapshot functionality for supported guest storage.
+VM2Cloud VE can use ZFS snapshot functionality for supported guest storage.
 
 Common uses include:
 
@@ -550,7 +550,7 @@ After creating the ZFS pool:
 4. Confirm the expected disks are members.
 5. Verify the available capacity.
 
-After adding ZFS as VM2Cloud storage:
+After adding ZFS as VM2Cloud VE storage:
 
 1. Select **Datacenter**.
 2. Open **Storage**.
@@ -610,7 +610,7 @@ Possible causes include:
 2. Confirm that the disks are not required by another storage configuration.
 3. Check disk availability.
 4. Verify that enough disks are available for the selected layout.
-5. Review the VM2Cloud task output.
+5. Review the VM2Cloud VE task output.
 6. Correct the underlying issue.
 7. Retry only after confirming that the disks are safe to modify.
 
@@ -677,7 +677,7 @@ If data changes after creating snapshots, the old blocks may remain allocated.
 
 1. Review existing snapshots.
 2. Identify snapshots that are no longer required.
-3. Remove obsolete snapshots according to the VM2Cloud snapshot workflow.
+3. Remove obsolete snapshots according to the VM2Cloud VE snapshot workflow.
 4. Monitor pool usage after cleanup.
 
 ---
@@ -801,7 +801,7 @@ This can be used to identify available ZFS filesystems when troubleshooting stor
 
 # Summary
 
-ZFS provides VM2Cloud with a powerful local storage backend that supports VM disks, container storage, snapshots, and clones.
+ZFS provides VM2Cloud VE with a powerful local storage backend that supports VM disks, container storage, snapshots, and clones.
 
 A typical configuration consists of:
 
@@ -812,7 +812,7 @@ Physical Disks
       ↓
 ZFS Dataset / Filesystem
       ↓
-VM2Cloud ZFS Storage
+VM2Cloud VE ZFS Storage
       ↓
 VMs / Containers
 ```

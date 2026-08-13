@@ -12,8 +12,8 @@ Which procedure you need depends on **which account** is locked out, and that de
 |---|---|---|
 | `root@pam` | The node's Linux root password | UI if another administrator can log in; otherwise console recovery |
 | Other `@pam` users | That Linux user's password | Same as above |
-| `@pve` users | Stored in the VM2Cloud user database | Any administrator can reset it in the interface |
-| LDAP / Active Directory users | Held by the directory service | Reset in the directory, not in VM2Cloud |
+| `@pve` users | Stored in the VM2Cloud VE user database | Any administrator can reset it in the interface |
+| LDAP / Active Directory users | Held by the directory service | Reset in the directory, not in VM2Cloud VE |
 
 The `root@pam` account is the one that causes real trouble, because its password is the node's system root password. If no other administrator account can log in, recovery requires console access to the node.
 
@@ -81,7 +81,7 @@ Works when at least one administrator account can still log in. No downtime.
 3. Enter the new password and confirm it.
 4. Click **OK**.
 
-For a `@pam` user, including `root@pam`, this changes the underlying Linux password on the node. For a `@pve` user it updates the VM2Cloud user database.
+For a `@pam` user, including `root@pam`, this changes the underlying Linux password on the node. For a `@pve` user it updates the VM2Cloud VE user database.
 
 ---
 
@@ -238,7 +238,7 @@ If that does not work, force a reboot from the out-of-band management interface 
 [ Place Screenshot Here ]
 ```
 
-> **Capture:** The VM2Cloud login screen and the resulting dashboard after logging in
+> **Capture:** The VM2Cloud VE login screen and the resulting dashboard after logging in
 > with the reset password.
 
 ---

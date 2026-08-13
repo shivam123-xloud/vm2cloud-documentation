@@ -4,7 +4,7 @@
 
 ## Overview
 
-A reference to the VM2Cloud command-line tools, collected in one place.
+A reference to the VM2Cloud VE command-line tools, collected in one place.
 
 The CLI has no location in the interface, so it cannot be mirrored into the folder structure the way every other section is. It lives here as an appendix.
 
@@ -402,7 +402,7 @@ After any CLI operation:
 
 | Issue | Resolution |
 |-------|------------|
-| Command not found | Confirm you are on a VM2Cloud node and running as root. |
+| Command not found | Confirm you are on a VM2Cloud VE node and running as root. |
 | Operation affected the wrong guest | IDs are shared between VMs and containers. Check with `qm list` and `pct list`. |
 | Command fails with a lock error | Another operation is running on that guest. Wait for it to finish. |
 | Cluster commands fail | The cluster may lack quorum, making the configuration read-only. |
@@ -443,6 +443,6 @@ After any CLI operation:
 
 # Summary
 
-This appendix collects the VM2Cloud command-line tools in one place, because the CLI has no interface location to be filed under. Each family — `qm`, `pct`, `pvecm`, `pvesm`, `pveum`, `ha-manager`, `pvesr`, `pvenode`, `pveceph`, `pveam`, `vzdump` — is listed with its common operations and a link to the interface equivalent.
+This appendix collects the VM2Cloud VE command-line tools in one place, because the CLI has no interface location to be filed under. Each family — `qm`, `pct`, `pvecm`, `pvesm`, `pveum`, `ha-manager`, `pvesr`, `pvenode`, `pveceph`, `pveam`, `vzdump` — is listed with its common operations and a link to the interface equivalent.
 
 The interface remains the primary method: it logs actions as tasks, applies confirmations, and leaves a trail colleagues can follow. Use the CLI for the handful of operations that genuinely have no interface equivalent — listed in the table above — for recovery when the interface is unreachable, and for scripting. Everything else belongs in the UI.

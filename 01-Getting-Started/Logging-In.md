@@ -4,7 +4,7 @@
 
 ## Overview
 
-The VM2Cloud web interface is reached over HTTPS on port **8006**.
+The VM2Cloud VE web interface is reached over HTTPS on port **8006**.
 
 ```text
 https://<node-address>:8006
@@ -58,7 +58,7 @@ Use `https`, not `http`.
 [ Place Screenshot Here ]
 ```
 
-> **Capture:** The VM2Cloud login screen, showing the username, password, and realm
+> **Capture:** The VM2Cloud VE login screen, showing the username, password, and realm
 > fields and the language selector.
 
 ---
@@ -87,7 +87,7 @@ The realm is the part that catches people out.
 | Realm | Accounts |
 |---|---|
 | **Linux PAM standard authentication** | System accounts on the node, including `root` |
-| **VM2Cloud Virtual Environment authentication server** | Accounts created inside VM2Cloud |
+| **VM2Cloud Virtual Environment authentication server** | Accounts created inside VM2Cloud VE |
 | **LDAP / Active Directory** | Accounts from a directory service, if configured |
 
 Selecting the wrong realm fails even with the correct password, because the account is looked up in the wrong place. On a fresh installation, log in as `root` with the **Linux PAM** realm and the root password set during installation.
@@ -211,7 +211,7 @@ Verify the following:
 # Related Documentation
 
 - [Interface Tour](Interface-Tour.md)
-- [What Is VM2Cloud](What-Is-VM2Cloud.md)
+- [What Is VM2Cloud VE](What-Is-VM2Cloud-VE.md)
 - [My Settings](My-Settings.md)
 - [Interface Troubleshooting](Interface-Troubleshooting.md)
 - [Users](../02-Datacenter/Permissions/Users.md)
@@ -224,6 +224,6 @@ Verify the following:
 
 # Summary
 
-VM2Cloud is reached at `https://<node-address>:8006`. The port is required, and any node in a cluster serves the full interface, so one node being down does not prevent managing the rest.
+VM2Cloud VE is reached at `https://<node-address>:8006`. The port is required, and any node in a cluster serves the full interface, so one node being down does not prevent managing the rest.
 
 The two things that catch people out are the certificate warning — expected on a new installation, and worth removing with a trusted certificate so future warnings still mean something — and the **realm**, which must match where the account lives. A correct password in the wrong realm fails exactly like a wrong password.

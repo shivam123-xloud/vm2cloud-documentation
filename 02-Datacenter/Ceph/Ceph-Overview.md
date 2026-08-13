@@ -4,13 +4,13 @@
 
 ## Overview
 
-**Ceph** is a distributed storage system built into VM2Cloud. Instead of each node keeping guest disks on its own local storage, Ceph pools the disks across every node into one shared storage layer that all nodes can use.
+**Ceph** is a distributed storage system built into VM2Cloud VE. Instead of each node keeping guest disks on its own local storage, Ceph pools the disks across every node into one shared storage layer that all nodes can use.
 
 That difference is what makes it worth the complexity. With Ceph, a guest's disk is not tied to the node running it, so live migration moves only memory, and a node failure does not take its guests' data down with it.
 
 Ceph replaces the need for an external SAN or NAS. It also replaces the need for [replication](../Replication/Replication-Overview.md), which exists precisely because local storage is not shared.
 
-> **Warning:** Ceph is the most demanding feature in VM2Cloud to run well. It needs a minimum of three nodes, benefits strongly from a dedicated high-speed network, and is unforgiving of undersized hardware. A poorly resourced Ceph cluster performs badly and can lose data. Do not deploy it on two nodes, on a shared 1 Gbps network, or without understanding the components below.
+> **Warning:** Ceph is the most demanding feature in VM2Cloud VE to run well. It needs a minimum of three nodes, benefits strongly from a dedicated high-speed network, and is unforgiving of undersized hardware. A poorly resourced Ceph cluster performs badly and can lose data. Do not deploy it on two nodes, on a shared 1 Gbps network, or without understanding the components below.
 
 ---
 
@@ -63,7 +63,7 @@ Before deploying Ceph, ensure that:
 | **OSD** | One per disk. Stores the actual data and handles replication. | As many as you have disks. |
 | **Metadata Server (MDS)** | Required only for CephFS file storage. | 2 or more if using CephFS. |
 
-Monitors are the part people get wrong. They form their own quorum, separate from the VM2Cloud cluster quorum, and they need an **odd** number for the same reason. Two monitors are worse than one.
+Monitors are the part people get wrong. They form their own quorum, separate from the VM2Cloud VE cluster quorum, and they need an **odd** number for the same reason. Two monitors are worse than one.
 
 ## How Data Is Stored
 
@@ -156,7 +156,7 @@ Deployment is a multi-step process performed once per cluster:
 4. Create managers.
 5. Create OSDs from the dedicated disks. See [Monitors and OSDs](Ceph-Monitors-and-OSDs.md).
 6. Create pools. See [Pools](Ceph-Pools.md).
-7. Add the pool as VM2Cloud storage so guests can use it.
+7. Add the pool as VM2Cloud VE storage so guests can use it.
 
 > **Verify:** Capture the Ceph installation wizard and the initial configuration dialog,
 > and confirm the exact step sequence and field labels in this deployment. Also confirm

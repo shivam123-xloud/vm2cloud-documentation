@@ -4,7 +4,7 @@
 
 ## Overview
 
-The **System** section contains essential operating system configuration for a VM2Cloud node. Incorrect system settings can affect networking, cluster communication, authentication, logging, package management, and overall system stability.
+The **System** section contains essential operating system configuration for a VM2Cloud VE node. Incorrect system settings can affect networking, cluster communication, authentication, logging, package management, and overall system stability.
 
 This guide provides common issues related to the System section and recommended troubleshooting steps.
 
@@ -16,7 +16,7 @@ Before troubleshooting, verify the following:
 
 - The node is powered on.
 - The node is reachable on the network.
-- The VM2Cloud web interface is accessible.
+- The VM2Cloud VE web interface is accessible.
 - You are logged in with an account that has administrative privileges.
 
 ---
@@ -178,4 +178,4 @@ Verify the following after resolving an issue:
 
 # Summary
 
-The **System Troubleshooting** guide helps administrators diagnose and resolve common operating system configuration issues on a VM2Cloud node. By systematically verifying time synchronization, DNS, hostname resolution, logging, boot configuration, and kernel information, administrators can quickly restore normal node operation while maintaining a stable and reliable environment.
+The **System Troubleshooting** guide helps administrators diagnose and resolve common operating system configuration issues on a VM2Cloud VE node. By systematically verifying time synchronization, DNS, hostname resolution, logging, boot configuration, and kernel information, administrators can quickly restore normal node operation while maintaining a stable and reliable environment.

@@ -6,7 +6,7 @@
 
 A **pool** is a logical division of Ceph storage. Guest disks live in a pool, and the pool's settings determine how many copies of that data exist and how it is distributed.
 
-Creating a pool is not the last step. A Ceph pool becomes usable by guests only once it is added as VM2Cloud **storage** — the pool holds the data, the storage entry makes it selectable when creating a disk.
+Creating a pool is not the last step. A Ceph pool becomes usable by guests only once it is added as VM2Cloud VE **storage** — the pool holds the data, the storage entry makes it selectable when creating a disk.
 
 For Ceph as a whole, see [Ceph Overview](Ceph-Overview.md). For the components underneath, see [Monitors and OSDs](Ceph-Monitors-and-OSDs.md).
 
@@ -73,7 +73,7 @@ Modern Ceph manages this automatically through the PG autoscaler, which adjusts 
 
 ## Step 1: Open the Pools Panel
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select **Datacenter** in the resource tree.
 3. Expand **Ceph**.
 4. Click **Pools**.
@@ -102,7 +102,7 @@ Existing pools are listed with their size, min_size, PG count, and usage.
 3. Set **Size** to `3`.
 4. Set **Min. Size** to `2`.
 5. Leave the PG autoscaler enabled.
-6. Optionally tick the option to add it as VM2Cloud storage automatically.
+6. Optionally tick the option to add it as VM2Cloud VE storage automatically.
 7. Click **Create**.
 
 If the interface offers to create the storage entry for you, take it — it saves the separate step below and gets the settings right.
@@ -191,7 +191,7 @@ Keep overall cluster usage below **80%**. Above that, a node failure may leave n
 > **Warning:** Destroying a pool **permanently deletes every guest disk stored in it**. This cannot be undone and there is no recovery. Confirm nothing is using the pool before proceeding.
 
 1. Migrate or delete every guest with disks on the pool.
-2. Remove the corresponding VM2Cloud storage entry.
+2. Remove the corresponding VM2Cloud VE storage entry.
 3. Select the pool.
 4. Click **Destroy**.
 5. Confirm.
@@ -207,7 +207,7 @@ Keep overall cluster usage below **80%**. Above that, a node failure may leave n
 | **Min. Size** | Copies required to accept writes. Use `2`. |
 | **PG autoscale mode** | Whether Ceph manages the placement group count. Leave enabled. |
 | **CRUSH rule** | Which placement rule applies. The default spreads copies across hosts. |
-| **Add as Storage** | Creates the VM2Cloud storage entry automatically. |
+| **Add as Storage** | Creates the VM2Cloud VE storage entry automatically. |
 
 > **Verify:** Capture the complete Create Pool dialog and confirm the exact field labels
 > and defaults in this deployment.
@@ -275,4 +275,4 @@ Verify the following:
 
 A Ceph pool holds guest disks, and its size and min_size settings decide how many copies exist and when writes stop. Use **size 3 / min_size 2** — the capacity saved by reducing it is the same capacity that keeps your data alive during a failure.
 
-A pool is not usable until it is added as VM2Cloud storage; the pool holds the data, the storage entry makes it selectable. Verify the result by migrating a guest between nodes and confirming its disk does not move — that is what shared storage buys you. And keep the cluster below 80% full, because Ceph needs free space to recover, not merely to store.
+A pool is not usable until it is added as VM2Cloud VE storage; the pool holds the data, the storage entry makes it selectable. Verify the result by migrating a guest between nodes and confirming its disk does not move — that is what shared storage buys you. And keep the cluster below 80% full, because Ceph needs free space to recover, not merely to store.

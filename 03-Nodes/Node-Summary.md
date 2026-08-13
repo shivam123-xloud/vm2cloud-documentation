@@ -4,7 +4,7 @@
 
 ## Overview
 
-A node represents a physical server that is part of the VM2Cloud environment. Each node provides the compute, memory, storage, and networking resources required to run virtual machines and containers.
+A node represents a physical server that is part of the VM2Cloud VE environment. Each node provides the compute, memory, storage, and networking resources required to run virtual machines and containers.
 
 The **Summary** page is the default view for a node. It displays the current health, resource utilization, hardware information, storage, networking, and system details of the physical server.
 
@@ -33,22 +33,22 @@ Before viewing node information, ensure that:
 
 * You have administrator privileges.
 * The node is online.
-* The VM2Cloud web interface is accessible.
+* The VM2Cloud VE web interface is accessible.
 
 ---
 
 # Procedure
 
-## Step 1: Log in to VM2Cloud
+## Step 1: Log in to VM2Cloud VE
 
-1. Open the VM2Cloud web interface.
+1. Open the VM2Cloud VE web interface.
 2. Sign in using an administrator account.
 
 ---
 
-**VM2Cloud Login**
+**VM2Cloud VE Login**
 
-![VM2Cloud Login](images/log-in-page.png)
+![VM2Cloud VE Login](images/log-in-page.png)
 
 ---
 
@@ -110,7 +110,7 @@ After selecting the node, the following management options are available from th
 * Virtual Machines
 * Containers
 
-> **Note:** The available options may vary depending on your VM2Cloud configuration and installed services.
+> **Note:** The available options may vary depending on your VM2Cloud VE configuration and installed services.
 
 ---
 
@@ -232,7 +232,7 @@ Information may include:
 * Hostname
 * Operating System
 * Kernel Version
-* VM2Cloud Version
+* VM2Cloud VE Version
 * Uptime
 * Time Zone
 * Hardware Information
@@ -259,7 +259,7 @@ Verify the following:
 
 | Issue                               | Resolution                                                               |
 | ----------------------------------- | ------------------------------------------------------------------------ |
-| Node is not visible                 | Verify that the node has been added to the VM2Cloud environment and is online. |
+| Node is not visible                 | Verify that the node has been added to the VM2Cloud VE environment and is online. |
 | Unable to access the node           | Confirm you have the required administrator permissions.                 |
 | Node shows Offline                  | Verify network connectivity and ensure the server is powered on.         |
 | Summary page does not load          | Refresh the page and verify the node is online.                          |
@@ -272,4 +272,4 @@ Verify the following:
 
 # Summary
 
-The node **Summary** page is the primary interface for monitoring an individual VM2Cloud server. From this page, administrators can review system health, hardware resources, storage and network utilization, and the operational status of the server from a single location. The node navigation menu provides access to the remaining node-level tasks, including configuration, maintenance, and the guests hosted on the node.
+The node **Summary** page is the primary interface for monitoring an individual VM2Cloud VE server. From this page, administrators can review system health, hardware resources, storage and network utilization, and the operational status of the server from a single location. The node navigation menu provides access to the remaining node-level tasks, including configuration, maintenance, and the guests hosted on the node.

@@ -4,7 +4,7 @@
 
 ## Overview
 
-VM2Cloud replication provides scheduled synchronization of guest data from a source node to one or more target nodes.
+VM2Cloud VE replication provides scheduled synchronization of guest data from a source node to one or more target nodes.
 
 Replication uses snapshots and incremental synchronization to transfer changed data after the initial synchronization. A replication failure can therefore be caused by problems with the source node, target node, storage, network, cluster communication, configuration, or the replication task itself.
 
@@ -90,7 +90,7 @@ Do not change multiple configuration items at the same time unless required.
 
 ## Step 1: Identify the Affected Replication Job
 
-1. Log in to VM2Cloud.
+1. Log in to VM2Cloud VE.
 2. Locate the affected VM or container.
 3. Select the guest.
 4. Open **Replication**.
@@ -221,7 +221,7 @@ Replication cannot proceed normally if the source guest or source node is unavai
 
 ### Check
 
-1. Open the VM2Cloud node view.
+1. Open the VM2Cloud VE node view.
 2. Locate the source node.
 3. Check its status.
 4. Verify node connectivity.
@@ -264,7 +264,7 @@ Replication cannot connect to the configured target.
 
 ### Resolution
 
-1. Check the target node in VM2Cloud.
+1. Check the target node in VM2Cloud VE.
 2. Verify that the node is online.
 3. Check network connectivity.
 4. Check cluster membership.
@@ -837,6 +837,6 @@ Verify Successful Replication
 
 The most important troubleshooting information is normally the replication task output, because it identifies the specific operation that failed.
 
-VM2Cloud replication uses the underlying storage-replication framework, which performs incremental synchronization after the initial synchronization and uses snapshots to reduce transferred data.
+VM2Cloud VE replication uses the underlying storage-replication framework, which performs incremental synchronization after the initial synchronization and uses snapshots to reduce transferred data.
 
 Successful replication must be verified through actual completed synchronization tasks. The existence of a configured replication job alone does not prove that the replica is current.

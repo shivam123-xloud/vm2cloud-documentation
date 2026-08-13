@@ -4,7 +4,7 @@
 
 ## Overview
 
-A **cluster** is a group of two or more VM2Cloud nodes that work together as a single management domain. After joining a cluster, administrators can manage all nodes from a single web interface while maintaining centralized configuration and resource management.
+A **cluster** is a group of two or more VM2Cloud VE nodes that work together as a single management domain. After joining a cluster, administrators can manage all nodes from a single web interface while maintaining centralized configuration and resource management.
 
 Each node continues to use its own CPU, memory, and local storage, but cluster members share configuration information and communicate to coordinate management operations.
 
@@ -14,7 +14,7 @@ Clusters simplify administration by allowing administrators to manage multiple n
 
 ## Benefits of a Cluster
 
-A VM2Cloud cluster provides several advantages, including:
+A VM2Cloud VE cluster provides several advantages, including:
 
 - Centralized management of multiple nodes.
 - Single web interface for cluster administration.
@@ -29,7 +29,7 @@ A VM2Cloud cluster provides several advantages, including:
 
 ## Cluster Architecture
 
-A VM2Cloud cluster consists of one or more physical nodes connected through a reliable network.
+A VM2Cloud VE cluster consists of one or more physical nodes connected through a reliable network.
 
 Each node contributes its own computing resources while sharing cluster configuration with the other members.
 
@@ -46,7 +46,7 @@ The cluster relies on several components to operate correctly:
 
 ### Node
 
-A node is an individual VM2Cloud server participating in the cluster.
+A node is an individual VM2Cloud VE server participating in the cluster.
 
 Each node has its own:
 
@@ -108,7 +108,7 @@ Certificates are automatically managed as part of the cluster configuration.
 
 Before creating a cluster, ensure that:
 
-- All nodes are running compatible VM2Cloud versions.
+- All nodes are running compatible VM2Cloud VE versions.
 - Nodes can communicate over the management network.
 - Hostnames and DNS resolution are configured correctly.
 - System time is synchronized across all nodes.
@@ -121,7 +121,7 @@ Before creating a cluster, ensure that:
 
 A typical cluster deployment consists of the following steps:
 
-1. Install VM2Cloud on each server.
+1. Install VM2Cloud VE on each server.
 2. Configure networking.
 3. Create a cluster on the first node.
 4. Join additional nodes to the cluster.
@@ -133,7 +133,7 @@ A typical cluster deployment consists of the following steps:
 
 ## Cluster Features
 
-VM2Cloud clusters support features such as:
+VM2Cloud VE clusters support features such as:
 
 - Centralized administration
 - Live Migration
@@ -183,4 +183,4 @@ Verify the following after creating or joining a cluster:
 
 ## Summary
 
-A VM2Cloud cluster combines multiple nodes into a single management environment, enabling centralized administration, simplified resource management, and advanced features such as Live Migration, High Availability, and Replication. Understanding the core cluster components helps administrators deploy and maintain a stable and highly available infrastructure.
+A VM2Cloud VE cluster combines multiple nodes into a single management environment, enabling centralized administration, simplified resource management, and advanced features such as Live Migration, High Availability, and Replication. Understanding the core cluster components helps administrators deploy and maintain a stable and highly available infrastructure.

@@ -1,8 +1,8 @@
 # Getting Started
 
-The VM2Cloud application shell — the parts of the interface that stay on screen regardless of which resource you select.
+The VM2Cloud VE application shell — the parts of the interface that stay on screen regardless of which resource you select.
 
-Start here if you are new to VM2Cloud or need to orient yourself in the interface.
+Start here if you are new to VM2Cloud VE or need to orient yourself in the interface.
 
 ---
 
@@ -10,7 +10,7 @@ Start here if you are new to VM2Cloud or need to orient yourself in the interfac
 
 | Page | Covers |
 |---|---|
-| [What Is VM2Cloud](What-Is-VM2Cloud.md) | The platform, its structure, and what it does not do |
+| [What Is VM2Cloud VE](What-Is-VM2Cloud-VE.md) | The platform, its structure, and what it does not do |
 | [Logging In](Logging-In.md) | Reaching the interface, realms, certificate warnings |
 | [Interface Tour](Interface-Tour.md) | Navigation panel, resource tree, workspace, search box, header bar, user menu, task viewer |
 | [Resource Tree and Views](Resource-Tree-and-Views.md) | Server, Folder, Pool, and Tag views |

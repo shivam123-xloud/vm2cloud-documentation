@@ -65,7 +65,7 @@ Most environments need **one or two** zones. Create more only when the transport
 
 ## Step 1: Open the Zones Panel
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select **Datacenter** in the resource tree.
 3. Expand **SDN**.
 4. Click **Zones**.

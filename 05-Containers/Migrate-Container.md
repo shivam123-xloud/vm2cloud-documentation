@@ -4,7 +4,7 @@
 
 ## Overview
 
-Container migration allows you to move a container from one node to another within the same VM2Cloud cluster. This is useful when balancing workloads, performing maintenance, or relocating containers to a different node.
+Container migration allows you to move a container from one node to another within the same VM2Cloud VE cluster. This is useful when balancing workloads, performing maintenance, or relocating containers to a different node.
 
 Depending on your cluster configuration, containers can be migrated while stopped or, if supported, while running.
 
@@ -25,7 +25,7 @@ Migrate a container when you need to:
 
 Before migrating a container, ensure that:
 
-* The source and target nodes belong to the same VM2Cloud cluster.
+* The source and target nodes belong to the same VM2Cloud VE cluster.
 * The target node is online.
 * Required storage is available on the destination node.
 * You have permission to migrate containers.
@@ -36,7 +36,7 @@ Before migrating a container, ensure that:
 
 ## Step 1: Select the Container
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select the source node.
 3. Select the container you want to migrate.
 
@@ -129,4 +129,4 @@ After the migration completes:
 
 # Summary
 
-Container migration allows administrators to move Linux containers between nodes in a VM2Cloud cluster. It is commonly used for maintenance, workload balancing, and resource optimization while minimizing service interruption.
+Container migration allows administrators to move Linux containers between nodes in a VM2Cloud VE cluster. It is commonly used for maintenance, workload balancing, and resource optimization while minimizing service interruption.

@@ -4,7 +4,7 @@
 
 ## Overview
 
-Resource Affinity controls the placement relationship between HA-managed resources in VM2Cloud.
+Resource Affinity controls the placement relationship between HA-managed resources in VM2Cloud VE.
 
 It is used when administrators need to define how multiple HA resources should be placed relative to each other.
 
@@ -18,7 +18,7 @@ Resource affinity controls HA placement. It does not provide:
 - Application-level clustering.
 - Guest operating system failover.
 
-VM2Cloud places HA resources using HA rules.
+VM2Cloud VE places HA resources using HA rules.
 
 ---
 
@@ -46,7 +46,7 @@ Examples include:
 
 Before configuring resource affinity:
 
-- VM2Cloud must be configured as a cluster.
+- VM2Cloud VE must be configured as a cluster.
 - HA must be available.
 - The affected VMs or containers must exist.
 - The affected resources should be managed by HA.
@@ -63,7 +63,7 @@ Before configuring resource affinity:
 
 ## Step 1: Open HA Configuration
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select **Datacenter** from the left navigation tree.
 3. Select **HA**.
 4. Open the available HA rules or placement configuration.

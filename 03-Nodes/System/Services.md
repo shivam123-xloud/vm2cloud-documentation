@@ -4,9 +4,9 @@
 
 ## Overview
 
-The **Services** section allows administrators to monitor and manage the system services running on a VM2Cloud node. These services are responsible for core platform functionality, including web access, cluster communication, virtualization, scheduling, networking, and storage.
+The **Services** section allows administrators to monitor and manage the system services running on a VM2Cloud VE node. These services are responsible for core platform functionality, including web access, cluster communication, virtualization, scheduling, networking, and storage.
 
-Most services start automatically during system boot and continue running in the background. If a required service stops or fails, certain VM2Cloud features may become unavailable or behave unexpectedly.
+Most services start automatically during system boot and continue running in the background. If a required service stops or fails, certain VM2Cloud VE features may become unavailable or behave unexpectedly.
 
 ---
 
@@ -26,24 +26,24 @@ Use the **Services** section to:
 
 Before managing services, ensure that:
 
-- You are logged in to the VM2Cloud web interface.
+- You are logged in to the VM2Cloud VE web interface.
 - You have administrative privileges.
 - The selected node is online.
 
 ---
 
-## Common VM2Cloud Services
+## Common VM2Cloud VE Services
 
 Depending on your deployment, the Services page may include services such as:
 
 | Service | Purpose |
 |---------|---------|
-| pveproxy | Provides the VM2Cloud web interface. |
+| pveproxy | Provides the VM2Cloud VE web interface. |
 | pvedaemon | Handles management requests and background operations. |
 | pvestatd | Collects and updates node, storage, and virtual machine statistics. |
 | pve-cluster | Manages the cluster file system and configuration synchronization. |
 | corosync | Provides cluster communication and quorum management. |
-| pve-firewall | Applies firewall rules configured in VM2Cloud. |
+| pve-firewall | Applies firewall rules configured in VM2Cloud VE. |
 | ssh | Enables secure remote command-line access. |
 | chronyd | Synchronizes the system clock using Network Time Protocol (NTP). |
 | networking | Manages network interfaces and bridges. |
@@ -78,7 +78,7 @@ Administrators can perform operations such as:
 ## Related Documentation
 
 - Manage Services
-- VM2Cloud Services
+- VM2Cloud VE Services
 - Service Troubleshooting
 - Node Troubleshooting
 
@@ -98,4 +98,4 @@ Administrators can perform operations such as:
 
 ## Summary
 
-The **Services** section provides centralized management of the operating system services that support VM2Cloud. Monitoring service health and understanding the purpose of each service helps administrators maintain a stable, secure, and reliable virtualization environment.
+The **Services** section provides centralized management of the operating system services that support VM2Cloud VE. Monitoring service health and understanding the purpose of each service helps administrators maintain a stable, secure, and reliable virtualization environment.

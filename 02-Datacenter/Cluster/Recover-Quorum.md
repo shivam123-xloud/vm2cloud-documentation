@@ -4,7 +4,7 @@
 
 ## Overview
 
-When a VM2Cloud cluster loses quorum, the cluster file system becomes **read-only**. You cannot start or stop guests, change configuration, or perform most administrative operations. The interface still loads and still shows the environment, but nothing can be changed.
+When a VM2Cloud VE cluster loses quorum, the cluster file system becomes **read-only**. You cannot start or stop guests, change configuration, or perform most administrative operations. The interface still loads and still shows the environment, but nothing can be changed.
 
 This page covers restoring operation when quorum has been lost and the missing nodes cannot be brought back quickly.
 

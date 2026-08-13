@@ -4,7 +4,7 @@
 
 ## Overview
 
-**Notifications** control how VM2Cloud tells you when something happens — a backup failing, a node going down, a replication job stopping.
+**Notifications** control how VM2Cloud VE tells you when something happens — a backup failing, a node going down, a replication job stopping.
 
 The value is straightforward: an environment that only reports problems inside its own interface reports them to nobody. Backups that stopped running three weeks ago look exactly like backups that ran fine, unless something tells you otherwise.
 
@@ -50,7 +50,7 @@ This is not optional infrastructure for a production environment. Silent failure
 
 ## Step 1: Open the Notifications Panel
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select **Datacenter** in the resource tree.
 3. Click **Notifications**.
 
@@ -240,6 +240,6 @@ Verify the following:
 
 # Summary
 
-Notifications route VM2Cloud events to somewhere people actually look. Targets define where messages go; matchers define which events reach which target.
+Notifications route VM2Cloud VE events to somewhere people actually look. Targets define where messages go; matchers define which events reach which target.
 
 The failure this prevents is silent: backups that stopped weeks ago look identical to backups that are working, unless something reports otherwise. Configure at least one target, test it when you create it, and then verify with a real failure — testing the target proves the transport works, but only a real event proves the routing does. Send to a shared address rather than an individual, and keep the volume low enough that the messages still get read.

@@ -12,7 +12,7 @@ When a node is removed with `pvecm delnode`, the cluster forgets it — its entr
 
 That machine still believes it is a member of a cluster that no longer recognises it. Pointing it back at the cluster produces two disagreeing views of the same cluster, which can corrupt the cluster file system and affect the healthy nodes as well as the returning one.
 
-The supported path is: **reinstall VM2Cloud on that hardware, then join it as a new node.**
+The supported path is: **reinstall VM2Cloud VE on that hardware, then join it as a new node.**
 
 > **Warning:** Never attempt to rejoin a previously removed node without reinstalling. The consequences land on the *working* cluster, not just the node you are adding.
 
@@ -39,7 +39,7 @@ Before re-adding a node, ensure that:
 
 * The node was genuinely removed — confirm with `pvecm nodes` on a working node.
 * The cluster is healthy and has quorum.
-* You have installation media for VM2Cloud.
+* You have installation media for VM2Cloud VE.
 * You have console or physical access to the hardware being reinstalled.
 * **Any data on that node has been backed up or is no longer needed.** Reinstallation destroys it.
 * You know the hostname and IP address the node will use.
@@ -109,10 +109,10 @@ Confirm that:
 
 ---
 
-## Step 4: Reinstall VM2Cloud
+## Step 4: Reinstall VM2Cloud VE
 
 1. Boot the hardware from the installation media.
-2. Install VM2Cloud.
+2. Install VM2Cloud VE.
 3. Set the hostname and network configuration decided in Step 2.
 4. Complete the installation and let the node boot.
 
@@ -292,4 +292,4 @@ Test a migration to the node before returning production workloads to it.
 
 A removed node cannot rejoin its old cluster. It still holds the previous cluster configuration while the cluster has purged every trace of it, and forcing the two together can corrupt the cluster file system on the healthy nodes as well as the returning one.
 
-The supported path is to reinstall VM2Cloud on the hardware and join it as a new node. Before reinstalling, confirm the node is genuinely absent and that no stale directory remains under `/etc/pve/nodes/` on any member. Afterwards, remember the node keeps nothing — storage, networking, firewall rules, and HA placement all have to be configured again.
+The supported path is to reinstall VM2Cloud VE on the hardware and join it as a new node. Before reinstalling, confirm the node is genuinely absent and that no stale directory remains under `/etc/pve/nodes/` on any member. Afterwards, remember the node keeps nothing — storage, networking, firewall rules, and HA placement all have to be configured again.

@@ -4,7 +4,7 @@
 
 ## Overview
 
-API Tokens provide a secure way for applications, scripts, and automation tools to authenticate with the VM2Cloud API without using a user's password. Each API Token is associated with an existing user account and inherits only the permissions assigned to that user.
+API Tokens provide a secure way for applications, scripts, and automation tools to authenticate with the VM2Cloud VE API without using a user's password. Each API Token is associated with an existing user account and inherits only the permissions assigned to that user.
 
 API Tokens are commonly used for infrastructure automation, monitoring systems, backup software, CI/CD pipelines, and third-party integrations.
 
@@ -16,7 +16,7 @@ API Tokens are commonly used for infrastructure automation, monitoring systems, 
 
 Use API Tokens when you need to:
 
-- Automate VM2Cloud administration.
+- Automate VM2Cloud VE administration.
 - Authenticate API requests securely.
 - Integrate third-party applications.
 - Execute automation scripts.
@@ -37,7 +37,7 @@ Before creating an API Token, ensure that:
 
 # Access the API Tokens Page
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select **Datacenter**.
 3. Click **Permissions**.
 4. Click **API Tokens**.
@@ -108,7 +108,7 @@ When disabled, the token inherits all permissions assigned to the associated use
 
 1. Click **Add**.
 
-VM2Cloud generates the API Token.
+VM2Cloud VE generates the API Token.
 
 > **Important:** Copy and securely store the generated API Token immediately. After the dialog is closed, the token value cannot be viewed again.
 
@@ -220,4 +220,4 @@ Verify the following:
 
 # Summary
 
-API Tokens provide a secure authentication method for automation and third-party integrations without exposing user passwords. By assigning appropriate permissions and following security best practices, administrators can safely integrate VM2Cloud with external applications and automation workflows.
+API Tokens provide a secure authentication method for automation and third-party integrations without exposing user passwords. By assigning appropriate permissions and following security best practices, administrators can safely integrate VM2Cloud VE with external applications and automation workflows.

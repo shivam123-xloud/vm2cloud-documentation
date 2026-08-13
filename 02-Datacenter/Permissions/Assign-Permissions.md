@@ -4,9 +4,9 @@
 
 ## Overview
 
-Permissions determine which users or groups can access specific VM2Cloud resources and what actions they are allowed to perform. A permission is created by assigning a **Role** to a **User** or **Group** for a particular resource path.
+Permissions determine which users or groups can access specific VM2Cloud VE resources and what actions they are allowed to perform. A permission is created by assigning a **Role** to a **User** or **Group** for a particular resource path.
 
-VM2Cloud uses Role-Based Access Control (RBAC) to manage permissions, allowing administrators to securely control access across the virtualization environment.
+VM2Cloud VE uses Role-Based Access Control (RBAC) to manage permissions, allowing administrators to securely control access across the virtualization environment.
 
 ---
 
@@ -14,7 +14,7 @@ VM2Cloud uses Role-Based Access Control (RBAC) to manage permissions, allowing a
 
 Assign permissions when you need to:
 
-- Grant users access to VM2Cloud resources.
+- Grant users access to VM2Cloud VE resources.
 - Assign administrative privileges.
 - Restrict access to specific resources.
 - Delegate management responsibilities.
@@ -35,7 +35,7 @@ Before assigning permissions, ensure that:
 
 # Access the Permissions Page
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select **Datacenter**.
 3. Click **Permissions**.
 
@@ -171,7 +171,7 @@ Permissions can be assigned to different resource levels.
 
 | Resource Path | Applies To |
 |--------------|------------|
-| `/` | Entire VM2Cloud environment |
+| `/` | Entire VM2Cloud VE environment |
 | `/nodes` | All nodes |
 | `/nodes/<node>` | Specific node |
 | `/storage` | All storage resources |
@@ -179,7 +179,7 @@ Permissions can be assigned to different resource levels.
 | `/vms` | All virtual machines and containers |
 | `/vms/<VMID>` | Specific virtual machine or container |
 
-> **Note:** The available resource paths depend on your VM2Cloud configuration.
+> **Note:** The available resource paths depend on your VM2Cloud VE configuration.
 
 ---
 
@@ -219,4 +219,4 @@ Verify the following:
 
 # Summary
 
-Permissions control access to VM2Cloud resources by assigning a role to a user or group for a specific resource path. Proper permission management helps secure the environment while ensuring users have the appropriate level of access to perform their responsibilities.
+Permissions control access to VM2Cloud VE resources by assigning a role to a user or group for a specific resource path. Proper permission management helps secure the environment while ensuring users have the appropriate level of access to perform their responsibilities.

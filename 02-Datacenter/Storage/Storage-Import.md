@@ -4,9 +4,9 @@
 
 ## Overview
 
-The **Import** tab lists disk images placed on a storage that can be imported into VM2Cloud as guest disks.
+The **Import** tab lists disk images placed on a storage that can be imported into VM2Cloud VE as guest disks.
 
-It exists for one main purpose: bringing virtual machines in from another platform. Rather than rebuilding a machine, you place its exported disk image where VM2Cloud can see it, then attach that image to a new machine.
+It exists for one main purpose: bringing virtual machines in from another platform. Rather than rebuilding a machine, you place its exported disk image where VM2Cloud VE can see it, then attach that image to a new machine.
 
 Import is a **file-level** operation. It handles the disk; it does not carry across the machine's configuration, its network settings, or the drivers the guest operating system needs. Those are your responsibility afterwards, and they are usually where the work actually is.
 
@@ -22,13 +22,13 @@ Use Import when you need to:
 
 * Migrate a virtual machine from another virtualization platform.
 * Bring in a vendor-supplied appliance image.
-* Attach a disk image produced outside VM2Cloud.
+* Attach a disk image produced outside VM2Cloud VE.
 * Recover a guest from a disk image held outside the backup system.
 
 Do **not** use it for:
 
-* Moving guests between VM2Cloud nodes — use [Migrate Virtual Machine](../../04-Virtual-Machines/Migrate-Virtual-Machine.md).
-* Restoring a VM2Cloud backup — use [Storage Content Browser](Storage-Content-Browser.md).
+* Moving guests between VM2Cloud VE nodes — use [Migrate Virtual Machine](../../04-Virtual-Machines/Migrate-Virtual-Machine.md).
+* Restoring a VM2Cloud VE backup — use [Storage Content Browser](Storage-Content-Browser.md).
 * Creating new machines from a base image — use a [template](../../04-Virtual-Machines/Convert-to-Template.md).
 
 ---
@@ -59,7 +59,7 @@ Copy the image into the location the storage exposes for import. For a directory
 
 ## Step 2: Open the Import Tab
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Expand the node in the resource tree.
 3. Select the storage.
 4. Click **Import**.
@@ -256,6 +256,6 @@ Verify the following:
 
 # Summary
 
-The Import tab brings disk images from outside VM2Cloud in as guest disks, which is how machines are migrated from another virtualization platform. Place the image where the storage exposes it, create a target machine, import the disk, attach it, and set the boot order.
+The Import tab brings disk images from outside VM2Cloud VE in as guest disks, which is how machines are migrated from another virtualization platform. Place the image where the storage exposes it, create a target machine, import the disk, attach it, and set the boot order.
 
 Importing the disk is the easy half. The guest operating system boots into hardware it has never seen, so expect to reconfigure networking, remove the previous platform's tools, and — for Windows especially — deal with missing storage drivers before it will boot at all. Test with a throwaway guest first, and back up the working machine as soon as you have one.

@@ -4,7 +4,7 @@
 
 ## Overview
 
-This guide provides solutions for common issues that may occur while creating, joining, or managing a VM2Cloud cluster. Use this document to identify problems, understand their possible causes, and apply the appropriate resolution.
+This guide provides solutions for common issues that may occur while creating, joining, or managing a VM2Cloud VE cluster. Use this document to identify problems, understand their possible causes, and apply the appropriate resolution.
 
 ---
 
@@ -69,7 +69,7 @@ Before troubleshooting, ensure that:
 * Copy the Join Information again.
 * Verify the administrator credentials.
 * Confirm that all nodes can communicate over the management network.
-* Ensure all nodes are running the same VM2Cloud version.
+* Ensure all nodes are running the same VM2Cloud VE version.
 
 ---
 

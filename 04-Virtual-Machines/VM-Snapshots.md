@@ -37,7 +37,7 @@ Before creating a snapshot, ensure that:
 
 # Access the Snapshot Page
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select the required node.
 3. Select the virtual machine.
 4. Click **Snapshots**.

@@ -4,7 +4,7 @@
 
 ## Overview
 
-The **Updates** page allows administrators to view and install available package updates for the selected VM2Cloud node.
+The **Updates** page allows administrators to view and install available package updates for the selected VM2Cloud VE node.
 
 Keeping a node up to date ensures that it receives the latest bug fixes, security patches, performance improvements, and new features. Updates should be performed regularly as part of routine system maintenance.
 
@@ -41,7 +41,7 @@ Before updating a node, ensure that:
 
 ## Step 1: Open the Node
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Expand **Datacenter**.
 3. Select the node you want to update.
 
@@ -77,7 +77,7 @@ Before updating a node, ensure that:
 ## Step 3: Refresh the Package List
 
 1. Click **Refresh**.
-2. Wait for VM2Cloud to retrieve the latest package information from the configured repositories.
+2. Wait for VM2Cloud VE to retrieve the latest package information from the configured repositories.
 
 ---
 
@@ -184,7 +184,7 @@ Verify the following:
 
 - Check for updates regularly.
 - Review available updates before installing them.
-- Keep production nodes on supported VM2Cloud versions.
+- Keep production nodes on supported VM2Cloud VE versions.
 - Verify repository configuration before performing upgrades.
 - Take appropriate backups before major system upgrades.
 - Schedule reboots during maintenance windows.
@@ -204,4 +204,4 @@ Verify the following:
 
 # Summary
 
-Updating a VM2Cloud node helps maintain system security, stability, and performance. Regularly reviewing and installing updates ensures that all nodes remain compatible, receive the latest fixes, and continue operating reliably within the VM2Cloud environment.
+Updating a VM2Cloud VE node helps maintain system security, stability, and performance. Regularly reviewing and installing updates ensures that all nodes remain compatible, receive the latest fixes, and continue operating reliably within the VM2Cloud VE environment.

@@ -4,9 +4,9 @@
 
 ## Overview
 
-A **metric server** is an external system VM2Cloud sends performance data to — CPU, memory, storage, and network figures for nodes and guests — so that data can be stored long-term and graphed alongside everything else you monitor.
+A **metric server** is an external system VM2Cloud VE sends performance data to — CPU, memory, storage, and network figures for nodes and guests — so that data can be stored long-term and graphed alongside everything else you monitor.
 
-The built-in graphs on the Summary tabs are useful for a quick look, but they are limited: retention is short, there is no alerting on thresholds, and you cannot correlate VM2Cloud data against the rest of your infrastructure. Sending metrics out solves all three.
+The built-in graphs on the Summary tabs are useful for a quick look, but they are limited: retention is short, there is no alerting on thresholds, and you cannot correlate VM2Cloud VE data against the rest of your infrastructure. Sending metrics out solves all three.
 
 > **Verify:** The Datacenter menu was not fully visible in the screenshots available when
 > this page was written, so **confirm the Metric Server panel exists in this deployment**
@@ -20,7 +20,7 @@ Configure a metric server when:
 
 * You need performance history longer than the built-in graphs retain.
 * Alerting on thresholds is required — a node above 90% memory, a storage filling.
-* VM2Cloud data should sit alongside other infrastructure in one dashboard.
+* VM2Cloud VE data should sit alongside other infrastructure in one dashboard.
 * Capacity planning needs trends over months.
 * An existing monitoring stack should cover the virtualization layer.
 
@@ -43,7 +43,7 @@ If you have no monitoring system and no plans for one, this adds nothing — the
 
 ## Step 1: Open the Metric Server Panel
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select **Datacenter** in the resource tree.
 3. Click **Metric Server**.
 
@@ -125,7 +125,7 @@ Every node sends independently. A firewall rule blocking one node produces a mon
 [ Place Screenshot Here ]
 ```
 
-> **Capture:** The metrics database or dashboard showing incoming VM2Cloud data from
+> **Capture:** The metrics database or dashboard showing incoming VM2Cloud VE data from
 > multiple nodes.
 
 ---
@@ -223,6 +223,6 @@ Verify the following:
 
 # Summary
 
-A metric server receives performance data from VM2Cloud so it can be retained long-term, alerted on, and correlated with the rest of your infrastructure — the three things the built-in Summary graphs cannot do.
+A metric server receives performance data from VM2Cloud VE so it can be retained long-term, alerted on, and correlated with the rest of your infrastructure — the three things the built-in Summary graphs cannot do.
 
 Configuration is a single entry naming the metrics database, its credentials, and how often to send. Two things are worth care afterwards: confirm **every** node is reporting rather than assuming, since a firewall rule blocking one node creates a silent gap; and alert on a node **ceasing** to report, not only on threshold values, because absence is often the more important signal.

@@ -38,7 +38,7 @@ Open the Summary tab when you need to:
 
 ## Step 1: Open the Summary Tab
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Expand the node in the resource tree.
 3. Select the virtual machine.
 4. Click **Summary**.
@@ -83,7 +83,7 @@ The header above the panel shows the machine's ID, name, and node — for exampl
 
 The **IPs** field only reports addresses when the QEMU guest agent is installed inside the guest **and** enabled in [VM Options](VM-Options.md).
 
-Without it, this field shows `No Guest Agent configured` rather than the machine's addresses. That is not a fault — it means VM2Cloud has no way to ask the guest what its addresses are.
+Without it, this field shows `No Guest Agent configured` rather than the machine's addresses. That is not a fault — it means VM2Cloud VE has no way to ask the guest what its addresses are.
 
 If you need IP reporting, see [VM Options](VM-Options.md) for enabling the agent. It also gives you cleaner shutdowns and consistent snapshot backups.
 
@@ -195,7 +195,7 @@ Verify the following:
 | IPs show "No Guest Agent configured" | The QEMU guest agent is not installed in the guest or not enabled. See [VM Options](VM-Options.md). |
 | Graphs are empty | The machine was recently created or started. Data accumulates over time. |
 | Graphs stopped updating | The machine may be stopped, or the node's statistics service may not be running. See [Services](../03-Nodes/System/Services.md). |
-| Memory usage looks wrong | Host memory usage and guest-reported memory differ. Without the guest agent, VM2Cloud sees only what the host allocates. |
+| Memory usage looks wrong | Host memory usage and guest-reported memory differ. Without the guest agent, VM2Cloud VE sees only what the host allocates. |
 | HA State shows `none` unexpectedly | The machine is not registered as an HA resource. See [HA Resources](../02-Datacenter/HA/HA-Resources.md). |
 | Node shown is not the expected one | The machine was migrated, or HA recovered it after a node failure. Check [Task History](../03-Nodes/Task-History.md). |
 | Summary will not load | The node may be offline or unreachable. See [Node Troubleshooting](../03-Nodes/Node-Troubleshooting.md). |

@@ -30,7 +30,7 @@ Before cloning a virtual machine, ensure that:
 * You have permission to create virtual machines.
 * The virtual machine is in a suitable state for cloning.
 
-> **Note:** Depending on the storage type and configuration, VM2Cloud may support **Full Clone** and **Linked Clone** options.
+> **Note:** Depending on the storage type and configuration, VM2Cloud VE may support **Full Clone** and **Linked Clone** options.
 
 ---
 
@@ -38,7 +38,7 @@ Before cloning a virtual machine, ensure that:
 
 ## Step 1: Select the Virtual Machine
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select the required node.
 3. Select the virtual machine that you want to clone.
 
@@ -159,4 +159,4 @@ Verify the following after the cloning process completes:
 
 # Summary
 
-Cloning allows administrators to quickly create new virtual machines from an existing one without repeating the entire deployment process. Depending on the storage configuration, VM2Cloud supports Full Clones for independent virtual machines and Linked Clones for efficient use of storage space.
+Cloning allows administrators to quickly create new virtual machines from an existing one without repeating the entire deployment process. Depending on the storage configuration, VM2Cloud VE supports Full Clones for independent virtual machines and Linked Clones for efficient use of storage space.

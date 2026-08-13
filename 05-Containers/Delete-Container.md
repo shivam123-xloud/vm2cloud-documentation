@@ -4,7 +4,7 @@
 
 ## Overview
 
-Deleting a container permanently removes it from VM2Cloud. Depending on the selected options, the container's root filesystem and associated data may also be deleted from storage.
+Deleting a container permanently removes it from VM2Cloud VE. Depending on the selected options, the container's root filesystem and associated data may also be deleted from storage.
 
 This operation should only be performed when the container is no longer required.
 
@@ -38,7 +38,7 @@ Before deleting a container, ensure that:
 
 ## Step 1: Select the Container
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select the required node.
 3. Select the container.
 
@@ -84,7 +84,7 @@ The Remove Container dialog opens.
 
 Review the available options before continuing.
 
-Depending on your VM2Cloud configuration, you may see options such as:
+Depending on your VM2Cloud VE configuration, you may see options such as:
 
 * Remove Unreferenced Disks
 * Purge Configuration
@@ -140,4 +140,4 @@ Verify the following after the deletion:
 
 # Summary
 
-Deleting a container permanently removes it from VM2Cloud. Before proceeding, verify that the container is no longer required and that a backup has been created if the data must be retained. Review the removal options carefully to ensure that storage is deleted only when intended.
+Deleting a container permanently removes it from VM2Cloud VE. Before proceeding, verify that the container is no longer required and that a backup has been created if the data must be retained. Review the removal options carefully to ensure that storage is deleted only when intended.

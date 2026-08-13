@@ -8,7 +8,7 @@ The **Notes** tab at Datacenter level holds free-text documentation attached to 
 
 It is the one piece of documentation that is guaranteed to be found. Anything written here is visible to every administrator who opens the interface, without needing to know where a wiki lives or having access to it.
 
-That makes it the right place for the small set of facts someone needs when they open VM2Cloud without context: who owns this cluster, where the real documentation lives, who to contact, and anything that would cause damage if not known.
+That makes it the right place for the small set of facts someone needs when they open VM2Cloud VE without context: who owns this cluster, where the real documentation lives, who to contact, and anything that would cause damage if not known.
 
 Notes support Markdown formatting.
 
@@ -47,7 +47,7 @@ Do **not** use it for:
 
 ## Step 1: Open the Notes Tab
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select **Datacenter** in the resource tree.
 3. Click **Notes**.
 

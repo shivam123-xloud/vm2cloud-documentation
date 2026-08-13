@@ -4,15 +4,15 @@
 
 ## Overview
 
-Fencing is a High Availability (HA) safety mechanism used by VM2Cloud to protect cluster resources when a node is no longer reliably reachable.
+Fencing is a High Availability (HA) safety mechanism used by VM2Cloud VE to protect cluster resources when a node is no longer reliably reachable.
 
-When a cluster node loses communication with the HA system, VM2Cloud must determine whether that node is still running. If the node may still be active, starting its HA resources on another node could result in the same resource running in two places at the same time.
+When a cluster node loses communication with the HA system, VM2Cloud VE must determine whether that node is still running. If the node may still be active, starting its HA resources on another node could result in the same resource running in two places at the same time.
 
 This condition is known as a split-brain situation.
 
 Fencing prevents this by ensuring that a failed or unreachable node is no longer able to run its HA resources before those resources are recovered elsewhere.
 
-VM2Cloud provides this protection through watchdog-based fencing. The HA stack combines cluster-wide locking with watchdog functionality so that HA-managed guests are recovered correctly from a fenced node.
+VM2Cloud VE provides this protection through watchdog-based fencing. The HA stack combines cluster-wide locking with watchdog functionality so that HA-managed guests are recovered correctly from a fenced node.
 
 ---
 
@@ -37,7 +37,7 @@ Administrators normally do not manually fence a node as part of routine VM or co
 
 Before relying on HA fencing:
 
-- VM2Cloud must be configured as a cluster.
+- VM2Cloud VE must be configured as a cluster.
 - HA must be configured where required.
 - Cluster communication must be healthy.
 - Corosync must be functioning.
@@ -85,7 +85,7 @@ The cluster does not need administrator interaction for this sequence. Fencing i
 
 ## Step 2: Understand the Watchdog Mechanism
 
-VM2Cloud uses a watchdog to fence an unreachable node.
+VM2Cloud VE uses a watchdog to fence an unreachable node.
 
 A watchdog is a timer that must be reset regularly by the HA services on the node.
 
@@ -173,4 +173,4 @@ Verify the following:
 
 # Summary
 
-Fencing is the safety mechanism that allows VM2Cloud High Availability to recover resources without risking a split-brain condition. By using a watchdog to guarantee that an unreachable node is no longer running its HA resources, the cluster can safely start those resources on another node. Reliable cluster networking, healthy quorum, and a working watchdog are all required for fencing to behave correctly.
+Fencing is the safety mechanism that allows VM2Cloud VE High Availability to recover resources without risking a split-brain condition. By using a watchdog to guarantee that an unreachable node is no longer running its HA resources, the cluster can safely start those resources on another node. Reliable cluster networking, healthy quorum, and a working watchdog are all required for fencing to behave correctly.

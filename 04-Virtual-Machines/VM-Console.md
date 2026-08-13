@@ -37,7 +37,7 @@ Before opening the console, ensure that:
 
 ## Step 1: Select the Virtual Machine
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select the required node.
 3. Select the virtual machine.
 
@@ -53,7 +53,7 @@ Before opening the console, ensure that:
 
 1. Click **Console** from the virtual machine toolbar.
 
-The virtual machine console opens in a new tab or within the current window, depending on your browser and VM2Cloud configuration.
+The virtual machine console opens in a new tab or within the current window, depending on your browser and VM2Cloud VE configuration.
 
 ---
 
@@ -106,7 +106,7 @@ These options are useful when the guest operating system does not respond to key
 
 # Console Toolbar
 
-Depending on your VM2Cloud version, the console toolbar may provide options such as:
+Depending on your VM2Cloud VE version, the console toolbar may provide options such as:
 
 * Refresh the console
 * Full Screen mode
@@ -142,7 +142,7 @@ Verify the following:
 | Black screen is displayed          | Wait for the guest operating system to complete booting. If the issue persists, verify that the virtual machine is powered on. |
 | Keyboard or mouse does not respond | Click inside the console window to capture input and try again.                                                                |
 | Console disconnects                | Refresh the browser and reopen the console. Verify that the node is online.                                                    |
-| Unable to log in                   | Verify the guest operating system credentials. VM2Cloud does not manage guest operating system user accounts.                  |
+| Unable to log in                   | Verify the guest operating system credentials. VM2Cloud VE does not manage guest operating system user accounts.                  |
 
 ---
 

@@ -4,7 +4,7 @@
 
 ## Overview
 
-VM2Cloud allows administrators to modify an existing replication job for a virtual machine or container.
+VM2Cloud VE allows administrators to modify an existing replication job for a virtual machine or container.
 
 Editing a replication job is used to change the replication configuration without creating a new job.
 
@@ -37,7 +37,7 @@ Edit a replication job when:
 
 Before editing a replication job:
 
-- You must be logged in to VM2Cloud.
+- You must be logged in to VM2Cloud VE.
 - You must have sufficient permissions to modify the guest and replication configuration.
 - The guest must exist.
 - The replication job must already exist.
@@ -55,7 +55,7 @@ Before editing a replication job:
 
 ## Step 1: Select the Guest
 
-1. Log in to VM2Cloud.
+1. Log in to VM2Cloud VE.
 2. Locate the VM or container whose replication job must be changed.
 3. Select the guest from the navigation tree.
 4. Open the **Replication** section.
@@ -94,7 +94,7 @@ Editable settings typically include:
 - **Comment** — an optional description.
 - **Enabled** — whether the job is active.
 
-> **Note:** The target node cannot be changed on an existing job in most VM2Cloud versions. To replicate to a different node, create a new job for that target and remove the old one.
+> **Note:** The target node cannot be changed on an existing job in most VM2Cloud VE versions. To replicate to a different node, create a new job for that target and remove the old one.
 
 ### Screenshot 3
 

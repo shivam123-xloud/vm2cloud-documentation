@@ -4,7 +4,7 @@
 
 ## Overview
 
-A node can be removed from a VM2Cloud cluster when it is no longer required, is being replaced, or needs to be rebuilt. Before removing a node, ensure that all virtual machines and containers have been migrated or backed up to prevent service disruption.
+A node can be removed from a VM2Cloud VE cluster when it is no longer required, is being replaced, or needs to be rebuilt. Before removing a node, ensure that all virtual machines and containers have been migrated or backed up to prevent service disruption.
 
 ---
 
@@ -37,7 +37,7 @@ Before removing a node, ensure that:
 
 ## Step 1: Verify the Node
 
-1. Log in to the **VM2Cloud** web interface.
+1. Log in to the **VM2Cloud VE** web interface.
 2. Navigate to **Datacenter → Cluster**.
 3. Verify that the node you want to remove is part of the cluster.
 4. Confirm that the cluster is healthy before proceeding.
@@ -96,7 +96,7 @@ Before removing a node, ensure that:
 
 ## Step 4: Remove the Node from the Cluster
 
-> **Note:** Removing a node from a cluster cannot be completed from the VM2Cloud web interface. This operation must be performed from the command line on one of the **remaining cluster nodes**, **not** on the node being removed.
+> **Note:** Removing a node from a cluster cannot be completed from the VM2Cloud VE web interface. This operation must be performed from the command line on one of the **remaining cluster nodes**, **not** on the node being removed.
 
 Open an SSH session on one of the remaining cluster nodes and run:
 
@@ -128,7 +128,7 @@ Wait until the command completes successfully.
 
 After removing the node from the cluster, log in to the removed node using SSH.
 
-1. Stop the VM2Cloud cluster services.
+1. Stop the VM2Cloud VE cluster services.
 
 ```bash
 systemctl stop pve-cluster
@@ -142,7 +142,7 @@ systemctl status pve-cluster
 systemctl status corosync
 ```
 
-3. Start the VM2Cloud cluster filesystem in local mode.
+3. Start the VM2Cloud VE cluster filesystem in local mode.
 
 ```bash
 pmxcfs -l
@@ -162,19 +162,19 @@ rm -f /etc/pve/corosync.conf
 rm -rf /etc/corosync/*
 ```
 
-6. Stop the local VM2Cloud cluster filesystem.
+6. Stop the local VM2Cloud VE cluster filesystem.
 
 ```bash
 killall pmxcfs
 ```
 
-7. Start the VM2Cloud cluster service.
+7. Start the VM2Cloud VE cluster service.
 
 ```bash
 systemctl start pve-cluster
 ```
 
-8. Restart the VM2Cloud management services.
+8. Restart the VM2Cloud VE management services.
 
 ```bash
 systemctl restart pvedaemon
@@ -195,7 +195,7 @@ systemctl restart pvestatd
 
 ## Step 6: Verify the Cluster
 
-1. Return to the **VM2Cloud** web interface.
+1. Return to the **VM2Cloud VE** web interface.
 2. Navigate to **Datacenter → Cluster**.
 3. Verify that the removed node no longer appears in the cluster.
 4. Confirm that all remaining nodes are online and operating normally.
@@ -221,7 +221,7 @@ Verify the following:
 * All remaining nodes are online.
 * The cluster is healthy.
 * Virtual machines and containers continue running normally on the remaining nodes.
-* The removed server now operates as a standalone VM2Cloud host.
+* The removed server now operates as a standalone VM2Cloud VE host.
 
 ---
 
@@ -231,8 +231,8 @@ Verify the following:
 |------|------------|
 | Node cannot be removed | Verify that no virtual machines or containers remain on the node before executing the removal command. |
 | `pvecm delnode` fails | Ensure the command is executed on a remaining cluster node, not on the node being removed. |
-| Unable to remove `/etc/pve/corosync.conf` | Start the VM2Cloud cluster filesystem in local mode using `pmxcfs -l` before deleting the file. |
-| Node still appears in the cluster | Refresh the VM2Cloud web interface after the removal completes successfully. |
+| Unable to remove `/etc/pve/corosync.conf` | Start the VM2Cloud VE cluster filesystem in local mode using `pmxcfs -l` before deleting the file. |
+| Node still appears in the cluster | Refresh the VM2Cloud VE web interface after the removal completes successfully. |
 | Command execution fails | Review the command output and resolve any reported errors before continuing. |
 
 ---
@@ -249,6 +249,6 @@ Verify the following:
 
 # Summary
 
-The node has been successfully removed from the VM2Cloud cluster.
+The node has been successfully removed from the VM2Cloud VE cluster.
 
-The remaining nodes continue operating normally as part of the cluster, while the removed server has been converted into a standalone VM2Cloud host. The standalone server can be reused to create a new cluster or join another existing cluster if required.
+The remaining nodes continue operating normally as part of the cluster, while the removed server has been converted into a standalone VM2Cloud VE host. The standalone server can be reused to create a new cluster or join another existing cluster if required.

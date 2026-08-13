@@ -6,7 +6,7 @@
 
 Container Templates are prebuilt Linux operating system images used to create LXC containers. A template contains the base operating system and allows administrators to deploy new containers quickly without performing a manual operating system installation.
 
-VM2Cloud allows administrators to download container templates from the online template repository and store them on supported storage.
+VM2Cloud VE allows administrators to download container templates from the online template repository and store them on supported storage.
 
 ---
 
@@ -25,7 +25,7 @@ Use container templates when you need to:
 
 Before managing container templates, ensure that:
 
-- A VM2Cloud node is available.
+- A VM2Cloud VE node is available.
 - Storage that supports container templates is configured.
 - The node has internet connectivity to download templates from the online repository.
 - You have permission to manage storage content.
@@ -36,7 +36,7 @@ Before managing container templates, ensure that:
 
 ## Step 1: Open Storage Content
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select the required node.
 3. Select the storage where the template will be stored.
 4. Click **CT Templates**.
@@ -160,4 +160,4 @@ Verify the following:
 
 # Summary
 
-Container Templates provide the base operating system required for creating Linux containers in VM2Cloud. Administrators can download templates from the online repository, store them on supported storage, and use them to rapidly deploy new containers. Managing templates helps maintain consistent and efficient container deployments across the environment.
+Container Templates provide the base operating system required for creating Linux containers in VM2Cloud VE. Administrators can download templates from the online repository, store them on supported storage, and use them to rapidly deploy new containers. Managing templates helps maintain consistent and efficient container deployments across the environment.

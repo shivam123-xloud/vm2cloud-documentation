@@ -41,7 +41,7 @@ Before changing options, ensure that:
 
 ## Step 1: Open the Options Tab
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Expand the node in the resource tree.
 3. Select the virtual machine.
 4. Click **Options**.
@@ -173,7 +173,7 @@ With protection on, the machine and its disks cannot be removed until it is turn
 
 ## Step 7: Enable the QEMU Guest Agent
 
-Improves integration between VM2Cloud and the guest operating system.
+Improves integration between VM2Cloud VE and the guest operating system.
 
 1. Select **QEMU Guest Agent**.
 2. Click **Edit**.
@@ -184,7 +184,7 @@ Improves integration between VM2Cloud and the guest operating system.
 
 Both halves are required. Enabling the option without installing the package in the guest achieves nothing.
 
-With the agent working, VM2Cloud can request a clean shutdown from the guest, report the guest's IP addresses on the Summary page, and quiesce the filesystem during snapshot-mode backups — which is what makes those backups consistent for databases.
+With the agent working, VM2Cloud VE can request a clean shutdown from the guest, report the guest's IP addresses on the Summary page, and quiesce the filesystem during snapshot-mode backups — which is what makes those backups consistent for databases.
 
 ---
 

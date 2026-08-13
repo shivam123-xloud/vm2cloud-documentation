@@ -1,4 +1,4 @@
-# VM2Cloud Documentation
+# VM2Cloud VE Documentation
 
 Administrator documentation for the **VM2Cloud Virtual Environment** web interface — creating and running clusters, nodes, storage, networking, virtual machines, and containers.
 
@@ -6,7 +6,7 @@ Administrator documentation for the **VM2Cloud Virtual Environment** web interfa
 
 ## How This Documentation Is Organized
 
-**The folder structure mirrors the VM2Cloud interface.** A folder corresponds to a panel in the UI, and a path corresponds to a click path.
+**The folder structure mirrors the VM2Cloud VE interface.** A folder corresponds to a panel in the UI, and a path corresponds to a click path.
 
 If you are looking at a screen and want its documentation, follow the same route you took in the interface:
 
@@ -40,7 +40,7 @@ Every page follows the same template: **Overview → When to Use → Prerequisit
 
 | Page | Description |
 |---|---|
-| [What Is VM2Cloud](01-Getting-Started/What-Is-VM2Cloud.md) | The platform, its structure, and what it does not do |
+| [What Is VM2Cloud VE](01-Getting-Started/What-Is-VM2Cloud-VE.md) | The platform, its structure, and what it does not do |
 | [Logging In](01-Getting-Started/Logging-In.md) | Reaching the interface, realms, certificate warnings, first login |
 | [Interface Tour](01-Getting-Started/Interface-Tour.md) | Navigation panel, resource tree, workspace, header bar, task viewer |
 | [Resource Tree and Views](01-Getting-Started/Resource-Tree-and-Views.md) | Server, Folder, Pool, and Tag views |

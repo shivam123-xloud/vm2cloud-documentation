@@ -4,7 +4,7 @@
 
 ## Overview
 
-VM2Cloud allows administrators to delete an existing replication job for a virtual machine or container.
+VM2Cloud VE allows administrators to delete an existing replication job for a virtual machine or container.
 
 Deleting a replication job removes the replication configuration and prevents future scheduled synchronization for that job.
 
@@ -36,7 +36,7 @@ Delete a replication job when:
 
 Before deleting a replication job:
 
-- You must be logged in to VM2Cloud.
+- You must be logged in to VM2Cloud VE.
 - You must have sufficient permissions to manage the replication configuration.
 - The replication job must already exist.
 - Verify that you are deleting the correct job.
@@ -52,7 +52,7 @@ Before deleting a replication job:
 
 ## Step 1: Select the Guest
 
-1. Log in to VM2Cloud.
+1. Log in to VM2Cloud VE.
 2. Locate the VM or container associated with the replication job.
 3. Select the guest from the navigation tree.
 4. Open the **Replication** section.
@@ -112,7 +112,7 @@ Before deleting a replication job:
 
 Removing a replication job stops future synchronization to the target node.
 
-The data already replicated to the target is normally cleaned up as part of the removal. Depending on the VM2Cloud version and the state of the target node, residual replication snapshots or datasets may remain.
+The data already replicated to the target is normally cleaned up as part of the removal. Depending on the VM2Cloud VE version and the state of the target node, residual replication snapshots or datasets may remain.
 
 If the target node was offline when the job was deleted:
 

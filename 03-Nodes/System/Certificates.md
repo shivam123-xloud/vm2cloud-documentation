@@ -4,9 +4,9 @@
 
 ## Overview
 
-The **Certificates** page allows administrators to view and manage the SSL/TLS certificates used by the VM2Cloud node.
+The **Certificates** page allows administrators to view and manage the SSL/TLS certificates used by the VM2Cloud VE node.
 
-The certificate is used to secure communication between administrators and the VM2Cloud web interface. Administrators can review the current certificate, its validity information, and certificate-related configuration.
+The certificate is used to secure communication between administrators and the VM2Cloud VE web interface. Administrators can review the current certificate, its validity information, and certificate-related configuration.
 
 ---
 
@@ -26,7 +26,7 @@ Use the **Certificates** page to:
 
 Before managing certificates, ensure that:
 
-- You are logged in to the VM2Cloud web interface.
+- You are logged in to the VM2Cloud VE web interface.
 - You have administrative privileges.
 - The selected node is online.
 - You have a valid certificate and private key if replacing the existing certificate.
@@ -37,7 +37,7 @@ Before managing certificates, ensure that:
 
 ## Step 1: Open Certificates
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select the required node.
 3. Select **System**.
 4. Open **Certificates**.
@@ -54,9 +54,9 @@ Before managing certificates, ensure that:
 
 ## Step 2: Review Certificate Information
 
-Review the certificate information displayed by VM2Cloud.
+Review the certificate information displayed by VM2Cloud VE.
 
-Depending on the VM2Cloud version, the page may display information such as:
+Depending on the VM2Cloud VE version, the page may display information such as:
 
 - Certificate status
 - Subject
@@ -80,7 +80,7 @@ Depending on the VM2Cloud version, the page may display information such as:
 
 > **Note**
 >
-> Replace the certificate only when required. An incorrect certificate or private key can prevent secure access to the VM2Cloud web interface.
+> Replace the certificate only when required. An incorrect certificate or private key can prevent secure access to the VM2Cloud VE web interface.
 
 ## Step 1: Open Certificate Management
 
@@ -101,7 +101,7 @@ Depending on the VM2Cloud version, the page may display information such as:
 
 Provide the required certificate information.
 
-Depending on the available VM2Cloud interface, this may include:
+Depending on the available VM2Cloud VE interface, this may include:
 
 - Certificate
 - Private Key
@@ -125,7 +125,7 @@ Verify that the certificate and private key belong together.
 2. Confirm the operation.
 3. Apply the changes.
 
-The VM2Cloud web service may need to reload or restart before the new certificate becomes active.
+The VM2Cloud VE web service may need to reload or restart before the new certificate becomes active.
 
 ---
 
@@ -141,7 +141,7 @@ The VM2Cloud web service may need to reload or restart before the new certificat
 
 After applying a certificate:
 
-1. Open the VM2Cloud web interface again.
+1. Open the VM2Cloud VE web interface again.
 2. Verify that the connection is established using HTTPS.
 3. Check the certificate information in the browser.
 4. Confirm that the certificate is valid and has not expired.
@@ -165,7 +165,7 @@ Check the following information:
 ## Best Practices
 
 - Use certificates issued by a trusted certificate authority for production environments.
-- Ensure the certificate matches the hostname used to access VM2Cloud.
+- Ensure the certificate matches the hostname used to access VM2Cloud VE.
 - Monitor certificate expiration dates.
 - Keep the private key secure.
 - Do not expose private keys in documentation or screenshots.
@@ -180,7 +180,7 @@ Check the following information:
 | Browser reports an invalid certificate | Verify the certificate validity, hostname, and certificate chain. |
 | Certificate has expired | Replace it with a valid certificate. |
 | Certificate does not match the hostname | Obtain or configure a certificate containing the correct hostname. |
-| Web interface becomes inaccessible after certificate replacement | Verify the certificate and private key and check the VM2Cloud web service. |
+| Web interface becomes inaccessible after certificate replacement | Verify the certificate and private key and check the VM2Cloud VE web service. |
 | Certificate is not trusted | Verify that the certificate was issued by a trusted CA and that the required certificate chain is available. |
 
 ---
@@ -189,9 +189,9 @@ Check the following information:
 
 Verify the following after certificate changes:
 
-- The VM2Cloud web interface is accessible over HTTPS.
+- The VM2Cloud VE web interface is accessible over HTTPS.
 - The certificate is valid.
-- The certificate hostname matches the address used to access VM2Cloud.
+- The certificate hostname matches the address used to access VM2Cloud VE.
 - The certificate has not expired.
 - No browser certificate warnings are displayed.
 
@@ -209,4 +209,4 @@ Verify the following after certificate changes:
 
 # Summary
 
-The **Certificates** page provides administrators with access to the SSL/TLS certificate configuration of a VM2Cloud node. Regularly reviewing certificate validity and replacing certificates before expiration helps maintain secure access to the VM2Cloud management interface.
+The **Certificates** page provides administrators with access to the SSL/TLS certificate configuration of a VM2Cloud VE node. Regularly reviewing certificate validity and replacing certificates before expiration helps maintain secure access to the VM2Cloud VE management interface.

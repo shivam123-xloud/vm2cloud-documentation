@@ -4,9 +4,9 @@
 
 ## Overview
 
-User and Permission Management allows administrators to control who can access VM2Cloud and what actions they are allowed to perform. By creating users, organizing them into groups, assigning roles, and configuring permissions, administrators can securely manage access to cluster resources.
+User and Permission Management allows administrators to control who can access VM2Cloud VE and what actions they are allowed to perform. By creating users, organizing them into groups, assigning roles, and configuring permissions, administrators can securely manage access to cluster resources.
 
-VM2Cloud supports both local and external authentication methods, enabling organizations to integrate with existing identity management systems while maintaining secure administrative access.
+VM2Cloud VE supports both local and external authentication methods, enabling organizations to integrate with existing identity management systems while maintaining secure administrative access.
 
 Proper user and permission management helps protect the virtualization environment by ensuring that users have access only to the resources and operations required for their responsibilities.
 
@@ -31,7 +31,7 @@ Use User and Permission Management to:
 Before managing users and permissions, ensure that:
 
 - You have administrator privileges.
-- The VM2Cloud cluster is accessible.
+- The VM2Cloud VE cluster is accessible.
 - Authentication services are available if using external authentication.
 - You understand the required access level for each user.
 
@@ -39,7 +39,7 @@ Before managing users and permissions, ensure that:
 
 # Access User and Permission Management
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select **Datacenter**.
 3. Click **Permissions**.
 
@@ -77,7 +77,7 @@ The Permissions section includes the following components.
 
 # User Access Model
 
-VM2Cloud controls access using the following hierarchy:
+VM2Cloud VE controls access using the following hierarchy:
 
 ```text
 Authentication Realm
@@ -148,4 +148,4 @@ Verify the following:
 
 # Summary
 
-The User and Permission Management section provides centralized control over authentication, authorization, and access management in VM2Cloud. By properly configuring users, groups, roles, permissions, authentication realms, and API tokens, administrators can secure the environment while ensuring that users have access only to the resources they need.
+The User and Permission Management section provides centralized control over authentication, authorization, and access management in VM2Cloud VE. By properly configuring users, groups, roles, permissions, authentication realms, and API tokens, administrators can secure the environment while ensuring that users have access only to the resources they need.

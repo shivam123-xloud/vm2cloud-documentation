@@ -4,7 +4,7 @@
 
 ## Overview
 
-VM2Cloud supports multiple storage technologies to meet different deployment requirements. Each storage type has its own characteristics, supported content, and recommended use cases.
+VM2Cloud VE supports multiple storage technologies to meet different deployment requirements. Each storage type has its own characteristics, supported content, and recommended use cases.
 
 Choosing the appropriate storage type depends on your infrastructure, performance requirements, scalability, and availability goals.
 
@@ -130,7 +130,7 @@ ZFS combines a filesystem and volume manager into a single storage platform. It 
 
 ## Overview
 
-NFS (Network File System) allows multiple VM2Cloud nodes to access the same shared storage over the network.
+NFS (Network File System) allows multiple VM2Cloud VE nodes to access the same shared storage over the network.
 
 It is commonly used in clustered environments.
 
@@ -158,7 +158,7 @@ It is commonly used in clustered environments.
 
 ## Overview
 
-SMB/CIFS storage connects VM2Cloud to file shares hosted on Windows or Samba servers.
+SMB/CIFS storage connects VM2Cloud VE to file shares hosted on Windows or Samba servers.
 
 ### Common Use Cases
 
@@ -235,4 +235,4 @@ It is recommended for enterprise deployments that require redundancy and high av
 
 # Summary
 
-VM2Cloud supports several storage technologies, each designed for different workloads and deployment scenarios. Selecting the appropriate storage type depends on the intended use, infrastructure design, performance requirements, and availability goals. Understanding the strengths and limitations of each storage type helps administrators build a reliable and efficient virtualization environment.
+VM2Cloud VE supports several storage technologies, each designed for different workloads and deployment scenarios. Selecting the appropriate storage type depends on the intended use, infrastructure design, performance requirements, and availability goals. Understanding the strengths and limitations of each storage type helps administrators build a reliable and efficient virtualization environment.

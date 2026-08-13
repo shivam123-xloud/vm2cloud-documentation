@@ -1,6 +1,6 @@
 # Nodes
 
-Administration of an individual server in the VM2Cloud environment.
+Administration of an individual server in the VM2Cloud VE environment.
 
 Corresponds to selecting a node under **Datacenter** in the resource tree. Settings here are node-specific — applying them to one node does not apply them to the others.
 

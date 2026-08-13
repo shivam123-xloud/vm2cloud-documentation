@@ -4,7 +4,7 @@
 
 ## Overview
 
-The **Task History** page allows administrators to view tasks and operations performed on the selected VM2Cloud node.
+The **Task History** page allows administrators to view tasks and operations performed on the selected VM2Cloud VE node.
 
 It provides a historical record of administrative operations, including completed and failed tasks. Administrators can use the task history to verify operations, investigate failures, and review activities performed on the node.
 
@@ -27,7 +27,7 @@ Use **Task History** to:
 
 Before viewing Task History, ensure that:
 
-- You are logged in to the VM2Cloud web interface.
+- You are logged in to the VM2Cloud VE web interface.
 - You have permission to view task information.
 - The selected node is online or its historical information is available.
 
@@ -37,7 +37,7 @@ Before viewing Task History, ensure that:
 
 ## Step 1: Open Task History
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select the required node.
 3. Open **Task History**.
 
@@ -55,7 +55,7 @@ Before viewing Task History, ensure that:
 
 The Task History page displays operations associated with the selected node.
 
-Depending on the VM2Cloud version, task information may include:
+Depending on the VM2Cloud VE version, task information may include:
 
 - Start Time
 - End Time
@@ -197,4 +197,4 @@ Verify the following:
 
 # Summary
 
-The **Task History** page provides a historical view of operations performed on a VM2Cloud node. It allows administrators to review task status and output, verify completed operations, and investigate failed operations.
+The **Task History** page provides a historical view of operations performed on a VM2Cloud VE node. It allows administrators to review task status and output, verify completed operations, and investigate failed operations.

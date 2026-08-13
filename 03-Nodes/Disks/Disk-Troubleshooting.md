@@ -4,7 +4,7 @@
 
 ## Overview
 
-Disk problems can affect the VM2Cloud node, storage pools, virtual machines, containers, and running workloads.
+Disk problems can affect the VM2Cloud VE node, storage pools, virtual machines, containers, and running workloads.
 
 Disk-related problems can include:
 
@@ -22,7 +22,7 @@ Disk-related problems can include:
 * Disk read/write errors.
 * Filesystem or mount problems.
 
-VM2Cloud provides disk and storage information through the web interface. CLI tools are useful for detailed verification when the UI does not provide enough information.
+VM2Cloud VE provides disk and storage information through the web interface. CLI tools are useful for detailed verification when the UI does not provide enough information.
 
 > **Warning:** Do not remove, wipe, initialize, format, or recreate a disk or storage pool until you have confirmed that it does not contain required data.
 
@@ -32,7 +32,7 @@ VM2Cloud provides disk and storage information through the web interface. CLI to
 
 Use this document when:
 
-* A disk is missing from the VM2Cloud interface.
+* A disk is missing from the VM2Cloud VE interface.
 * A storage pool is unavailable.
 * A VM cannot access its disk.
 * A container cannot access its storage.
@@ -52,7 +52,7 @@ Use this document when:
 
 Before troubleshooting:
 
-* Log in to VM2Cloud with sufficient permissions.
+* Log in to VM2Cloud VE with sufficient permissions.
 * Identify the affected node.
 * Identify the affected storage.
 * Identify the affected VM or container if applicable.
@@ -79,7 +79,7 @@ First determine whether the problem affects:
 * Directory filesystem.
 * VM disk.
 * Container storage.
-* VM2Cloud storage definition.
+* VM2Cloud VE storage definition.
 
 This distinction is important because the troubleshooting procedure depends on the storage layer.
 
@@ -93,7 +93,7 @@ This distinction is important because the troubleshooting procedure depends on t
 
 ## Step 2: Check the Node Status
 
-1. Log in to VM2Cloud.
+1. Log in to VM2Cloud VE.
 2. Select the affected node.
 3. Check the node status.
 4. Confirm that the node is online.
@@ -201,7 +201,7 @@ A physical disk reports:
 * Failing health status.
 * Other hardware-health warnings.
 
-VM2Cloud's underlying platform uses `smartmontools` for local disk health monitoring. The `smartctl` command can display SMART information.
+VM2Cloud VE's underlying platform uses `smartmontools` for local disk health monitoring. The `smartctl` command can display SMART information.
 
 ### Resolution
 
@@ -285,7 +285,7 @@ The LVM backend requires an existing volume group identified by its `vgname` con
 6. Verify the volume group from the CLI.
 7. Check physical-volume status.
 8. Resolve the hardware or LVM problem.
-9. Recheck the storage in VM2Cloud.
+9. Recheck the storage in VM2Cloud VE.
 
 ### CLI Verification
 
@@ -623,7 +623,7 @@ are not visible.
 
 # Problem 15: Storage Is Available on the Wrong Node
 
-VM2Cloud cluster configuration is shared, but local storage is physically different on each node.
+VM2Cloud VE cluster configuration is shared, but local storage is physically different on each node.
 
 The underlying storage configuration is distributed through the cluster configuration, while local storage remains physically local to each node.
 
@@ -707,7 +707,7 @@ Increasing read, write, or checksum errors can indicate an underlying hardware o
 5. Check `/etc/fstab` for external filesystems.
 6. Verify that the storage path exists.
 7. Restore the correct mount/import configuration.
-8. Verify the storage from the VM2Cloud UI.
+8. Verify the storage from the VM2Cloud VE UI.
 
 ---
 
@@ -719,11 +719,11 @@ Increasing read, write, or checksum errors can indicate an underlying hardware o
 * Incorrect ownership.
 * Read-only filesystem.
 * Storage path is inaccessible.
-* User lacks VM2Cloud permissions.
+* User lacks VM2Cloud VE permissions.
 
 ### Resolution
 
-1. Check the VM2Cloud user's permissions.
+1. Check the VM2Cloud VE user's permissions.
 2. Check storage permissions.
 3. Verify the filesystem path.
 4. Check filesystem ownership and permissions.
@@ -751,9 +751,9 @@ In this situation:
 5. Check failed or predictive-failure disks.
 6. Follow the controller vendor's disk replacement procedure.
 7. Monitor the RAID rebuild.
-8. Verify that the VM2Cloud storage becomes healthy again.
+8. Verify that the VM2Cloud VE storage becomes healthy again.
 
-The underlying VM2Cloud platform documentation notes that hardware RAID controllers generally provide their own tools for monitoring the disks and RAID array.
+The underlying VM2Cloud VE platform documentation notes that hardware RAID controllers generally provide their own tools for monitoring the disks and RAID array.
 
 ---
 
@@ -807,7 +807,7 @@ df -h
 
 ---
 
-## VM2Cloud Storage Verification
+## VM2Cloud VE Storage Verification
 
 1. Open **Datacenter → Storage**.
 2. Select the affected storage.
@@ -920,7 +920,7 @@ findmnt
 
 ---
 
-## Check VM2Cloud Storage Status
+## Check VM2Cloud VE Storage Status
 
 ```bash
 pvesm status
@@ -1027,7 +1027,7 @@ Partition / Volume
        ↓
 LVM / LVM-Thin / ZFS / Filesystem
        ↓
-VM2Cloud Storage
+VM2Cloud VE Storage
        ↓
 VM / Container
        ↓

@@ -6,7 +6,7 @@
 
 The **Permissions** tab shows who has access to this virtual machine, and lets you grant access to it directly.
 
-Permissions in VM2Cloud are assigned on a **path** in the resource hierarchy. This tab works on the path for this machine — `/vms/<vmid>` — so anything granted here applies to this machine alone.
+Permissions in VM2Cloud VE are assigned on a **path** in the resource hierarchy. This tab works on the path for this machine — `/vms/<vmid>` — so anything granted here applies to this machine alone.
 
 It also shows permissions **inherited** from higher up: a role granted on `/` or on a pool containing this machine appears here too, because those grants apply to it.
 
@@ -40,7 +40,7 @@ Use this tab when you need to:
 
 ## Step 1: Open the Permissions Tab
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Expand the node in the resource tree.
 3. Select the virtual machine.
 4. Click **Permissions**.

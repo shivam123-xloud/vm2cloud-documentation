@@ -4,7 +4,7 @@
 
 ## Overview
 
-Quorum is the mechanism used by the VM2Cloud cluster to determine whether enough cluster members are available to safely make cluster-wide decisions.
+Quorum is the mechanism used by the VM2Cloud VE cluster to determine whether enough cluster members are available to safely make cluster-wide decisions.
 
 Each cluster node normally contributes one vote. The cluster needs a majority of the configured votes to be quorate.
 
@@ -17,9 +17,9 @@ Quorum is important for:
 * Preventing conflicting cluster states.
 * Protecting against split-brain conditions.
 
-VM2Cloud provides cluster communication and quorum through Corosync.
+VM2Cloud VE provides cluster communication and quorum through Corosync.
 
-The VM2Cloud cluster filesystem becomes read-only when a node loses quorum. This protects cluster configuration from unsafe changes while the cluster does not have a valid majority.
+The VM2Cloud VE cluster filesystem becomes read-only when a node loses quorum. This protects cluster configuration from unsafe changes while the cluster does not have a valid majority.
 
 ---
 
@@ -59,7 +59,7 @@ Use quorum information when:
 
 Before troubleshooting or modifying quorum:
 
-* You must have administrative access to VM2Cloud.
+* You must have administrative access to VM2Cloud VE.
 * The cluster should be configured correctly.
 * Cluster nodes should have stable network connectivity.
 * Corosync should be running.
@@ -79,7 +79,7 @@ For production clusters:
 
 ## Step 1: Open the Cluster Status
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select **Datacenter** from the left navigation tree.
 3. Open the cluster status view.
 4. Review the cluster members.
@@ -371,7 +371,7 @@ The underlying documentation recommends QDevice for two-node clusters when highe
 
 ## Even-Node Clusters
 
-The underlying VM2Cloud platform documentation supports QDevices for clusters with an even number of nodes.
+The underlying VM2Cloud VE platform documentation supports QDevices for clusters with an even number of nodes.
 
 For an even-node cluster, the QDevice can provide an additional vote and improve availability without reducing the safety properties of quorum.
 
@@ -441,7 +441,7 @@ Quorum:
 Flags:
 ```
 
-The exact output depends on the VM2Cloud version and cluster configuration.
+The exact output depends on the VM2Cloud VE version and cluster configuration.
 
 ---
 
@@ -735,7 +735,7 @@ Other troubleshooting:
 
 # Summary
 
-Quorum allows VM2Cloud to determine whether enough cluster members are available to safely perform cluster-wide operations.
+Quorum allows VM2Cloud VE to determine whether enough cluster members are available to safely perform cluster-wide operations.
 
 The most important quorum concepts are:
 

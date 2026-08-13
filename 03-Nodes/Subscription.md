@@ -4,7 +4,7 @@
 
 ## Overview
 
-The **Subscription** page displays the subscription status of the selected VM2Cloud node.
+The **Subscription** page displays the subscription status of the selected VM2Cloud VE node.
 
 It allows administrators to review the current subscription information and determine whether the node has an active subscription.
 
@@ -26,7 +26,7 @@ Use the **Subscription** page to:
 
 Before viewing Subscription information, ensure that:
 
-- You are logged in to the VM2Cloud web interface.
+- You are logged in to the VM2Cloud VE web interface.
 - You have permission to view node information.
 - The selected node is online.
 
@@ -36,7 +36,7 @@ Before viewing Subscription information, ensure that:
 
 ## Step 1: Open Subscription
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select the required node.
 3. Open **Subscription**.
 
@@ -54,7 +54,7 @@ Before viewing Subscription information, ensure that:
 
 Review the information displayed on the Subscription page.
 
-Depending on the VM2Cloud version, information may include:
+Depending on the VM2Cloud VE version, information may include:
 
 - Subscription Status
 - Subscription Level
@@ -146,4 +146,4 @@ Verify the following:
 
 # Summary
 
-The **Subscription** page provides administrators with information about the subscription status of a VM2Cloud node. Regularly checking this information helps ensure that the node has the appropriate subscription configuration and access to the services associated with that subscription.
+The **Subscription** page provides administrators with information about the subscription status of a VM2Cloud VE node. Regularly checking this information helps ensure that the node has the appropriate subscription configuration and access to the services associated with that subscription.

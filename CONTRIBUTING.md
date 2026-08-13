@@ -1,10 +1,10 @@
-# Contributing to VM2Cloud Documentation
+# Contributing to VM2Cloud VE Documentation
 
 ---
 
 ## The One Rule
 
-**The folder structure mirrors the VM2Cloud interface.** A folder is a UI panel; a path is a click path.
+**The folder structure mirrors the VM2Cloud VE interface.** A folder is a UI panel; a path is a click path.
 
 Before creating a page, open the interface and find the panel it documents. Put the file where that panel lives. If you cannot decide where a page goes, the answer is wherever the reader would click to reach the feature.
 
@@ -31,7 +31,7 @@ A reader should finish a page knowing:
 
 1. What the feature is.
 2. When and why to use it.
-3. Where it lives in the VM2Cloud UI.
+3. Where it lives in the VM2Cloud VE UI.
 4. The complete UI workflow.
 5. What every configuration field does.
 6. How to verify the result.
@@ -42,7 +42,7 @@ A reader should finish a page knowing:
 
 ## Never Guess
 
-Do not assume a menu location, button name, field name, available option, workflow, or technical behaviour. Verify against the real VM2Cloud UI.
+Do not assume a menu location, button name, field name, available option, workflow, or technical behaviour. Verify against the real VM2Cloud VE UI.
 
 Where you cannot verify a detail, **mark it** — do not guess and do not hedge vaguely:
 
@@ -56,7 +56,7 @@ Every marker is a tracked item. Find outstanding ones with:
 grep -rn '> \*\*Verify:\*\*' --include='*.md' .
 ```
 
-Clear them as screenshots are captured. Do **not** write vague hedges such as *"depends on the installed VM2Cloud version"* — either state the verified fact or leave a `Verify` marker naming exactly what to check.
+Clear them as screenshots are captured. Do **not** write vague hedges such as *"depends on the installed VM2Cloud VE version"* — either state the verified fact or leave a `Verify` marker naming exactly what to check.
 
 Statements about genuine runtime variation are fine and are not hedges — for example, *"The available actions depend on the guest status and your user permissions."*
 
@@ -164,9 +164,19 @@ Any operation that may permanently affect or delete data carries an explicit war
 
 ### Branding
 
-The product is **VM2Cloud**. Write "VM2Cloud" or "the VM2Cloud Virtual Environment".
+The product is **VM2Cloud VE**. Use that name throughout — "the VM2Cloud VE web interface", "a VM2Cloud VE node", "the VM2Cloud VE cluster".
 
-**Never write "Proxmox."** No upstream attribution appears anywhere in this documentation. Where a page previously said *"VM2Cloud uses the underlying Proxmox VE HA architecture, including watchdog-based fencing"*, it now says *"VM2Cloud provides this protection through watchdog-based fencing"* — the technical statement is kept, the attribution is dropped.
+Three exceptions:
+
+| Form | When |
+|---|---|
+| **VM2Cloud Virtual Environment** | The expanded form. Keep it where it appears as a verbatim UI label, such as the authentication realm name. |
+| `vm2cloud` (lowercase) | Filesystem paths, URLs, and filenames — `/mnt/vm2cloud-storage`, `vm2cloud-ve-9.2-amd64-v10.iso`. Never change these. |
+| **VM2Cloud VE-managed**, **VM2Cloud VE-specific** | Hyphenated compound adjectives. Correct as written. |
+
+Do not write "VM2Cloud" on its own as the product name.
+
+**Never write "Proxmox."** No upstream attribution appears anywhere in this documentation. Where a page previously said *"VM2Cloud VE uses the underlying Proxmox VE HA architecture, including watchdog-based fencing"*, it now says *"VM2Cloud VE provides this protection through watchdog-based fencing"* — the technical statement is kept, the attribution is dropped.
 
 Command names such as `pvecm`, `pvesm`, `pvesr`, and `pveproxy` are the real binaries shipped with the product and are written as-is.
 

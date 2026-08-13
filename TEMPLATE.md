@@ -10,7 +10,7 @@ Rules:
 - "Configuration / Options" and "Best Practices" are standard. Omit one only when the
   page genuinely has nothing real to put in it. Never leave an empty heading.
 - Separate every block with a horizontal rule (---).
-- Never write "Proxmox".
+- The product is "VM2Cloud VE". Never write "Proxmox", and never "VM2Cloud" alone.
 - Never guess a UI label. If you cannot verify it, use a > **Verify:** marker.
 -->
 
@@ -58,7 +58,7 @@ Open location → Select resource → Click button → Configure fields
 
 ## Step 1: Open the Panel
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select **Datacenter**.
 3. Click **[UI element]**.
 

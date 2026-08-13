@@ -4,7 +4,7 @@
 
 ## Overview
 
-**Directory storage** is a file-level storage backend that allows VM2Cloud to use a directory on a node as storage for virtual machines, containers, templates, ISO images, backups, and other supported content.
+**Directory storage** is a file-level storage backend that allows VM2Cloud VE to use a directory on a node as storage for virtual machines, containers, templates, ISO images, backups, and other supported content.
 
 The directory can be located on:
 
@@ -26,7 +26,7 @@ Use Directory storage when you need to:
 * Store container templates.
 * Store VM templates.
 * Store backup files.
-* Use an existing Linux filesystem as VM2Cloud storage.
+* Use an existing Linux filesystem as VM2Cloud VE storage.
 * Use a locally mounted filesystem as storage.
 * Store files on filesystems supported by Linux.
 
@@ -38,18 +38,18 @@ Directory storage is useful when flexibility and support for multiple content ty
 
 Before configuring Directory storage:
 
-* Log in to VM2Cloud with sufficient permissions.
+* Log in to VM2Cloud VE with sufficient permissions.
 * Ensure the target node is online.
 * Ensure the target directory exists.
 * Ensure the filesystem is mounted and accessible.
 * Ensure sufficient free disk space exists.
 * Verify that the directory is not already being used by another incompatible storage configuration.
-* Ensure the VM2Cloud system has permission to access the directory.
+* Ensure the VM2Cloud VE system has permission to access the directory.
 * Back up important data before modifying an existing filesystem or mount point.
 
 If the directory is located on another filesystem or storage device, mount that filesystem on the node before creating the Directory storage definition.
 
-> **Warning:** Do not configure a directory as VM2Cloud storage until you have verified that it points to the intended filesystem. Incorrectly selecting a system directory or an existing directory containing unrelated data can cause data loss or unexpected storage behavior.
+> **Warning:** Do not configure a directory as VM2Cloud VE storage until you have verified that it points to the intended filesystem. Incorrectly selecting a system directory or an existing directory containing unrelated data can cause data loss or unexpected storage behavior.
 
 ---
 
@@ -57,7 +57,7 @@ If the directory is located on another filesystem or storage device, mount that 
 
 ## Step 1: Select the Node
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Locate the resource tree.
 3. Select the node where the directory exists.
 4. Wait for the node management interface to load.
@@ -72,7 +72,7 @@ If the directory is located on another filesystem or storage device, mount that 
 
 ## Step 2: Verify the Directory
 
-Before adding the directory as VM2Cloud storage, verify that the required directory exists on the selected node.
+Before adding the directory as VM2Cloud VE storage, verify that the required directory exists on the selected node.
 
 The directory must be accessible from the node and have sufficient capacity.
 
@@ -113,7 +113,7 @@ Configure:
 2. Directory path.
 3. Content types.
 4. Node availability.
-5. Any additional supported options displayed by the current VM2Cloud version.
+5. Any additional supported options displayed by the current VM2Cloud VE version.
 
 ### Screenshot 3
 
@@ -134,7 +134,7 @@ Example:
 local-directory
 ```
 
-The storage ID is used throughout VM2Cloud when selecting storage for VMs, containers, ISO images, templates, and backups.
+The storage ID is used throughout VM2Cloud VE when selecting storage for VMs, containers, ISO images, templates, and backups.
 
 ---
 
@@ -143,7 +143,7 @@ The storage ID is used throughout VM2Cloud when selecting storage for VMs, conta
 1. Enter or select the directory path used for storage.
 2. Verify that the path exists on the selected node.
 3. Verify that the path points to the intended filesystem.
-4. Do not select a system directory unless it is intentionally being used as VM2Cloud storage.
+4. Do not select a system directory unless it is intentionally being used as VM2Cloud VE storage.
 
 Example:
 
@@ -173,7 +173,7 @@ Directory storage supports a broad range of content types, including:
 * **Container templates**
 * **Backup files**
 * **VM templates**
-* Other supported file-based content depending on the VM2Cloud version.
+* Other supported file-based content depending on the VM2Cloud VE version.
 
 The underlying Directory backend supports virtual disk images, containers, templates, ISO images, and backup files.
 
@@ -197,7 +197,7 @@ If the directory is local to one node:
 
 If multiple nodes must access the same data, the underlying filesystem must actually be shared and mounted appropriately on every participating node.
 
-A local directory is not automatically shared simply because the VM2Cloud nodes belong to the same cluster.
+A local directory is not automatically shared simply because the VM2Cloud VE nodes belong to the same cluster.
 
 ---
 
@@ -223,7 +223,7 @@ A local directory is not automatically shared simply because the VM2Cloud nodes 
 
 ## Storage ID
 
-The **Storage ID** uniquely identifies the directory storage inside VM2Cloud.
+The **Storage ID** uniquely identifies the directory storage inside VM2Cloud VE.
 
 Example:
 
@@ -283,7 +283,7 @@ If the same shared filesystem is mounted at the same path on multiple nodes, the
 
 ## Disable
 
-Disabling storage prevents normal VM2Cloud storage operations from using the storage while retaining its configuration.
+Disabling storage prevents normal VM2Cloud VE storage operations from using the storage while retaining its configuration.
 
 Disabling storage does not delete the underlying directory or its contents.
 
@@ -291,7 +291,7 @@ Disabling storage does not delete the underlying directory or its contents.
 
 # Directory Storage Layout
 
-VM2Cloud organizes different content types into directories below the configured storage path.
+VM2Cloud VE organizes different content types into directories below the configured storage path.
 
 A simplified structure can look like:
 
@@ -306,9 +306,9 @@ A simplified structure can look like:
 └── private/
 ```
 
-The exact directory structure depends on the content stored and the VM2Cloud version.
+The exact directory structure depends on the content stored and the VM2Cloud VE version.
 
-Do not manually rename or move VM2Cloud-managed storage files unless the operation is explicitly supported.
+Do not manually rename or move VM2Cloud VE-managed storage files unless the operation is explicitly supported.
 
 ---
 
@@ -366,7 +366,7 @@ Typical workflow:
 
 1. Open the storage.
 2. Select the container-template content.
-3. Upload or download the required template through the supported VM2Cloud workflow.
+3. Upload or download the required template through the supported VM2Cloud VE workflow.
 4. Verify that the template appears.
 5. Use the template when creating a container.
 
@@ -374,7 +374,7 @@ Typical workflow:
 
 # Backup Storage
 
-Directory storage can store VM2Cloud backup files.
+Directory storage can store VM2Cloud VE backup files.
 
 Typical workflow:
 
@@ -407,7 +407,7 @@ For VM images using the QCOW2 format, snapshots can be supported internally by t
 
 The underlying Directory backend assumes that the directory is POSIX-compatible.
 
-This means VM2Cloud relies on the underlying Linux filesystem for:
+This means VM2Cloud VE relies on the underlying Linux filesystem for:
 
 * File creation.
 * File permissions.
@@ -436,14 +436,14 @@ External Filesystem
 /mnt/vm2cloud-storage
         │
         ▼
- VM2Cloud Directory Storage
+ VM2Cloud VE Directory Storage
 ```
 
 The underlying documentation specifically allows additional storage to be mounted through standard Linux `/etc/fstab` configuration and then defined as Directory storage.
 
 When using an external filesystem:
 
-* Ensure it mounts before VM2Cloud storage operations begin.
+* Ensure it mounts before VM2Cloud VE storage operations begin.
 * Use a stable mount point.
 * Verify filesystem availability after reboot.
 * Ensure the storage path is not accidentally mounted to the wrong filesystem.
@@ -508,7 +508,7 @@ After adding Directory storage:
 1. Select the Directory storage.
 2. Open its content view.
 3. Select the ISO-related content.
-4. Upload a test ISO using the supported VM2Cloud workflow.
+4. Upload a test ISO using the supported VM2Cloud VE workflow.
 5. Wait for the upload task to complete.
 6. Verify that the ISO appears in the storage content list.
 7. Confirm that the ISO can be selected when configuring a VM.
@@ -589,7 +589,7 @@ Possible causes:
 3. Verify the mount point.
 4. Check storage hardware or remote storage availability.
 5. Verify filesystem permissions.
-6. Review VM2Cloud task history.
+6. Review VM2Cloud VE task history.
 7. Restore filesystem availability.
 8. Recheck the storage.
 
@@ -657,7 +657,7 @@ If the storage uses a local directory, another node cannot automatically access 
 
 # CLI Verification
 
-The VM2Cloud UI should be used for normal Directory storage management.
+The VM2Cloud VE UI should be used for normal Directory storage management.
 
 CLI commands may be useful when troubleshooting filesystem or mount problems.
 
@@ -691,7 +691,7 @@ Use this when investigating access or permission problems.
 
 ---
 
-## Check VM2Cloud Storage Status
+## Check VM2Cloud VE Storage Status
 
 ```bash
 pvesm status
@@ -707,18 +707,18 @@ This can be used to verify whether the storage is detected and available. The un
 pvesm list <STORAGE_ID>
 ```
 
-Replace `<STORAGE_ID>` with the VM2Cloud storage ID.
+Replace `<STORAGE_ID>` with the VM2Cloud VE storage ID.
 
 The underlying storage manager supports listing storage contents with `pvesm list`.
 
-> **Note:** CLI commands in this document are for verification and troubleshooting. Use the VM2Cloud web interface for normal storage configuration whenever the UI provides the required operation.
+> **Note:** CLI commands in this document are for verification and troubleshooting. Use the VM2Cloud VE web interface for normal storage configuration whenever the UI provides the required operation.
 
 ---
 
 # Best Practices
 
 * Use a dedicated directory or filesystem for production storage.
-* Avoid using arbitrary system directories as VM2Cloud storage.
+* Avoid using arbitrary system directories as VM2Cloud VE storage.
 * Verify the mount point before adding it as storage.
 * Use stable filesystem mount configuration for external filesystems.
 * Monitor filesystem capacity.
@@ -727,7 +727,7 @@ The underlying storage manager supports listing storage contents with `pvesm lis
 * Do not treat local Directory storage as shared storage.
 * Restrict storage to nodes that can actually access the configured path.
 * Verify filesystem permissions.
-* Do not manually move VM2Cloud-managed files unless the operation is supported.
+* Do not manually move VM2Cloud VE-managed files unless the operation is supported.
 * Test the storage with a non-production workload before production deployment.
 * Monitor filesystem health and underlying hardware.
 * Use an appropriate cache mode for the underlying filesystem.
@@ -751,7 +751,7 @@ The underlying storage manager supports listing storage contents with `pvesm lis
 
 # Summary
 
-Directory storage provides VM2Cloud with flexible file-level storage based on a directory on the node.
+Directory storage provides VM2Cloud VE with flexible file-level storage based on a directory on the node.
 
 It can store multiple content types, including VM disks, container data, ISO images, templates, and backup files. The directory can be located on a local filesystem or on a filesystem mounted on the node.
 

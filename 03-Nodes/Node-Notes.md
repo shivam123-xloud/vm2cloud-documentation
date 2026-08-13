@@ -46,7 +46,7 @@ Do **not** use it for:
 
 ## Step 1: Open the Notes Tab
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Expand **Datacenter** in the resource tree.
 3. Select the node.
 4. Click **Notes**.

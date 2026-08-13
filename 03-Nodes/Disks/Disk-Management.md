@@ -4,7 +4,7 @@
 
 ## Overview
 
-The **Disk Management** section in VM2Cloud is used to inspect and prepare physical disks attached to a node.
+The **Disk Management** section in VM2Cloud VE is used to inspect and prepare physical disks attached to a node.
 
 Administrators can use the available disk-management actions to identify disks, inspect their existing configuration, and prepare unused disks for supported storage technologies.
 
@@ -30,7 +30,7 @@ Use **Disk Management** when you need to:
 
 Before managing a disk:
 
-* Log in to VM2Cloud with an account that has the required node permissions.
+* Log in to VM2Cloud VE with an account that has the required node permissions.
 * Ensure the target node is online.
 * Confirm that the physical disk is connected and detected.
 * Identify the correct physical disk.
@@ -45,7 +45,7 @@ Before managing a disk:
 
 ## Step 1: Select the Node
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Locate the resource tree.
 3. Select the node containing the physical disk.
 4. Wait for the node management interface to load.
@@ -93,7 +93,7 @@ Do not continue until the disk identity has been confirmed.
 
 # Disk Management Operations
 
-The available actions depend on the VM2Cloud version, hardware, and current disk configuration.
+The available actions depend on the VM2Cloud VE version, hardware, and current disk configuration.
 
 ---
 
@@ -242,7 +242,7 @@ See the corresponding storage documentation for the complete configuration proce
 
 After completing a disk-management operation:
 
-1. Confirm that the VM2Cloud task completed successfully.
+1. Confirm that the VM2Cloud VE task completed successfully.
 2. Reopen or refresh the **Disks** page.
 3. Verify that the disk shows the expected state.
 4. Confirm that the intended storage configuration is visible if one was created.
@@ -301,7 +301,7 @@ If the disk is not listed:
 3. Check the storage controller.
 4. Check operating-system hardware detection.
 5. Check for hardware failure.
-6. Refresh the VM2Cloud interface.
+6. Refresh the VM2Cloud VE interface.
 
 ---
 
@@ -350,7 +350,7 @@ Verify the disk state before attempting to create storage.
 
 # Summary
 
-The **Disk Management** section is used to inspect and prepare physical disks on a VM2Cloud node.
+The **Disk Management** section is used to inspect and prepare physical disks on a VM2Cloud VE node.
 
 Administrators should first identify the target disk and determine whether it is already being used. Destructive operations such as wiping must only be performed after confirming that the disk contains no required data.
 

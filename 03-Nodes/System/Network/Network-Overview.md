@@ -4,9 +4,9 @@
 
 ## Overview
 
-Networking is a core component of VM2Cloud. It provides communication between physical servers, virtual machines, containers, storage systems, and external networks. Every virtual machine and container relies on a properly configured network to communicate with other systems.
+Networking is a core component of VM2Cloud VE. It provides communication between physical servers, virtual machines, containers, storage systems, and external networks. Every virtual machine and container relies on a properly configured network to communicate with other systems.
 
-VM2Cloud uses Linux networking technologies to provide flexible and reliable network connectivity for virtualized workloads.
+VM2Cloud VE uses Linux networking technologies to provide flexible and reliable network connectivity for virtualized workloads.
 
 ---
 
@@ -40,7 +40,7 @@ Before managing network settings, ensure that:
 
 To manage networking:
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select the required node.
 3. Click **System**.
 4. Select **Network**.
@@ -206,4 +206,4 @@ Verify the following:
 
 # Summary
 
-The Network page provides a centralized view of all network interfaces configured on a VM2Cloud node. From this page, administrators can review physical interfaces, Linux Bridges, Bonds, VLANs, DNS settings, and gateway configuration before performing network management tasks.
+The Network page provides a centralized view of all network interfaces configured on a VM2Cloud VE node. From this page, administrators can review physical interfaces, Linux Bridges, Bonds, VLANs, DNS settings, and gateway configuration before performing network management tasks.

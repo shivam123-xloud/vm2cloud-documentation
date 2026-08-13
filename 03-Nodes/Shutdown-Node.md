@@ -4,7 +4,7 @@
 
 ## Overview
 
-Shutting down a node powers off the physical server hosting the VM2Cloud services. This operation is typically performed during planned maintenance, hardware replacement, infrastructure upgrades, or when permanently removing a server from the environment.
+Shutting down a node powers off the physical server hosting the VM2Cloud VE services. This operation is typically performed during planned maintenance, hardware replacement, infrastructure upgrades, or when permanently removing a server from the environment.
 
 > **Important:** Shutting down a node will stop all virtual machines and containers running on that node unless they have been migrated to another node beforehand.
 
@@ -38,7 +38,7 @@ Before shutting down a node, ensure that:
 
 ## Step 1: Open the Node
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Expand **Datacenter**.
 3. Select the node you want to shut down.
 
@@ -110,7 +110,7 @@ Before shutting down a node, ensure that:
 
 ## Step 5: Verify the Shutdown
 
-1. Refresh the VM2Cloud web interface.
+1. Refresh the VM2Cloud VE web interface.
 2. Confirm that the node status changes to **Offline**.
 3. Verify that the server has powered off successfully.
 
@@ -144,10 +144,10 @@ Verify the following:
 | Shutdown option is unavailable             | Verify that you have administrator privileges.                                           |
 | Node does not shut down                    | Check for active tasks or workloads that may be preventing the shutdown.                 |
 | Virtual machines were stopped unexpectedly | Migrate or gracefully shut down workloads before powering off the node.                  |
-| Node still appears online                  | Refresh the VM2Cloud interface and verify the server has completed the shutdown process. |
+| Node still appears online                  | Refresh the VM2Cloud VE interface and verify the server has completed the shutdown process. |
 
 ---
 
 # Summary
 
-The node has been successfully shut down. Before powering off any VM2Cloud node, always ensure that virtual machines and containers have been migrated or stopped to avoid unexpected service interruptions. Proper planning helps maintain the availability of the remaining infrastructure during maintenance or hardware operations.
+The node has been successfully shut down. Before powering off any VM2Cloud VE node, always ensure that virtual machines and containers have been migrated or stopped to avoid unexpected service interruptions. Proper planning helps maintain the availability of the remaining infrastructure during maintenance or hardware operations.

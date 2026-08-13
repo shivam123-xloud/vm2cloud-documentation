@@ -4,13 +4,13 @@
 
 ## Overview
 
-**LVM-Thin** is a block-level storage technology that provides thin-provisioned storage for VM2Cloud virtual machines and containers.
+**LVM-Thin** is a block-level storage technology that provides thin-provisioned storage for VM2Cloud VE virtual machines and containers.
 
 Unlike standard LVM, LVM-Thin allocates physical storage blocks as data is written instead of allocating the complete requested volume size immediately. This allows a virtual disk to have a configured size larger than the physical space currently consumed by its data.
 
 LVM-Thin also provides efficient support for storage-level snapshots and clones.
 
-The VM2Cloud LVM-Thin storage backend uses an existing LVM volume group and an LVM thin pool as its storage source.
+The VM2Cloud VE LVM-Thin storage backend uses an existing LVM volume group and an LVM thin pool as its storage source.
 
 ---
 
@@ -23,7 +23,7 @@ Use LVM-Thin when you need:
 * Efficient VM snapshots.
 * Efficient VM clones.
 * Block-level storage.
-* Local storage for a VM2Cloud node.
+* Local storage for a VM2Cloud VE node.
 * Flexible allocation of storage capacity.
 * Efficient use of physical storage for virtual disks.
 
@@ -35,7 +35,7 @@ LVM-Thin is particularly useful when snapshots and cloning are required and the 
 
 Before configuring LVM-Thin:
 
-* Log in to VM2Cloud with sufficient permissions.
+* Log in to VM2Cloud VE with sufficient permissions.
 * Ensure the target node is online.
 * Ensure the required physical disk or block device is available.
 * An LVM volume group must exist.
@@ -53,7 +53,7 @@ Before configuring LVM-Thin:
 
 ## Step 1: Select the Node
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Locate the resource tree.
 3. Select the node where the LVM-Thin storage will be configured.
 4. Wait for the node management interface to load.
@@ -106,7 +106,7 @@ An LVM-Thin storage definition requires a **thin pool** inside the selected volu
 1. Open the LVM-Thin management area.
 2. Review the available thin pools.
 3. If an appropriate thin pool already exists, verify its name and capacity.
-4. If a new thin pool is required, create it using the supported VM2Cloud disk-management workflow.
+4. If a new thin pool is required, create it using the supported VM2Cloud VE disk-management workflow.
 5. Assign the required capacity to the thin pool.
 6. Confirm the operation.
 7. Wait for the task to complete.
@@ -148,7 +148,7 @@ The underlying platform documentation describes an LVM-Thin pool as an LVM logic
 
 ## ID
 
-The **ID** is the unique name used by VM2Cloud to identify the LVM-Thin storage.
+The **ID** is the unique name used by VM2Cloud VE to identify the LVM-Thin storage.
 
 Use a meaningful name.
 
@@ -180,7 +180,7 @@ The underlying LVM-Thin backend requires the volume-group name to reference an e
 
 ## Thin Pool
 
-The **Thin Pool** identifies the LVM thin pool that VM2Cloud will use for guest storage.
+The **Thin Pool** identifies the LVM thin pool that VM2Cloud VE will use for guest storage.
 
 Example:
 
@@ -255,7 +255,7 @@ The volume group provides the storage pool.
 
 The thin pool provides thin-provisioned block storage.
 
-VM2Cloud allocates guest disks from the thin pool.
+VM2Cloud VE allocates guest disks from the thin pool.
 
 ---
 
@@ -319,7 +319,7 @@ Snapshots should not replace regular backups.
 
 LVM-Thin supports efficient cloning.
 
-A clone can be created from an existing VM or template where the VM2Cloud workflow supports the operation.
+A clone can be created from an existing VM or template where the VM2Cloud VE workflow supports the operation.
 
 Cloning is useful when deploying multiple similar virtual machines.
 
@@ -503,7 +503,7 @@ Check:
 
 This is expected when the thin pool is local to one node.
 
-LVM-Thin pools cannot be shared directly between multiple VM2Cloud nodes.
+LVM-Thin pools cannot be shared directly between multiple VM2Cloud VE nodes.
 
 If VM workloads need shared storage for cluster-wide access or migration requirements, use an appropriate shared-storage technology instead.
 
@@ -554,7 +554,7 @@ Check:
 
 # Summary
 
-LVM-Thin provides VM2Cloud with thin-provisioned block storage for virtual machines and containers.
+LVM-Thin provides VM2Cloud VE with thin-provisioned block storage for virtual machines and containers.
 
 It uses an existing LVM volume group and thin pool and supports efficient snapshots and clones. Unlike shared storage technologies, an LVM-Thin pool is local to the node on which its underlying storage exists.
 

@@ -4,7 +4,7 @@
 
 ## Overview
 
-The **Cluster Options** page allows administrators to configure cluster-wide settings that affect the overall behavior of the VM2Cloud cluster.
+The **Cluster Options** page allows administrators to configure cluster-wide settings that affect the overall behavior of the VM2Cloud VE cluster.
 
 These settings are shared across all cluster nodes and help define how the cluster operates. Changes made through the Cluster Options page are automatically synchronized to all nodes in the cluster.
 
@@ -27,7 +27,7 @@ Use the **Cluster Options** page to:
 
 Before modifying cluster options, ensure that:
 
-- You are logged in to the VM2Cloud web interface.
+- You are logged in to the VM2Cloud VE web interface.
 - You have administrative privileges.
 - The cluster is healthy and has quorum.
 - All nodes are online whenever possible.
@@ -38,7 +38,7 @@ Before modifying cluster options, ensure that:
 
 ## Step 1: Open the Cluster
 
-1. Log in to the VM2Cloud web interface.
+1. Log in to the VM2Cloud VE web interface.
 2. Select **Datacenter**.
 3. Select **Cluster**.
 4. Open the **Options** tab.
@@ -104,8 +104,8 @@ Typical cluster options include:
 | Option | Description |
 |---------|-------------|
 | Migration Settings | Configures the default behavior for virtual machine migrations when supported. |
-| Cluster Configuration | Displays cluster-wide configuration values managed by VM2Cloud. |
-| Other Version-Specific Options | Additional options may be available depending on the VM2Cloud release. |
+| Cluster Configuration | Displays cluster-wide configuration values managed by VM2Cloud VE. |
+| Other Version-Specific Options | Additional options may be available depending on the VM2Cloud VE release. |
 
 ---
 
@@ -136,7 +136,7 @@ Verify the following after modifying a cluster option:
 |--------|------------|
 | Unable to edit an option | Verify that your user account has administrative privileges. |
 | Changes cannot be saved | Confirm that the cluster has quorum and all required services are running. |
-| Option is unavailable | Some options are version-specific and may not be available in every VM2Cloud deployment. |
+| Option is unavailable | Some options are version-specific and may not be available in every VM2Cloud VE deployment. |
 | Unexpected cluster behavior after a change | Review the modified option and restore the previous configuration if necessary. |
 
 ---
@@ -155,4 +155,4 @@ Verify the following after modifying a cluster option:
 
 # Summary
 
-The **Cluster Options** page provides centralized management of cluster-wide configuration settings. By carefully reviewing and modifying these options, administrators can adjust cluster behavior while maintaining consistent configuration across all VM2Cloud nodes.
+The **Cluster Options** page provides centralized management of cluster-wide configuration settings. By carefully reviewing and modifying these options, administrators can adjust cluster behavior while maintaining consistent configuration across all VM2Cloud VE nodes.
