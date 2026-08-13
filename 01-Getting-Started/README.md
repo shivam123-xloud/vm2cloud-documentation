@@ -22,6 +22,12 @@ Start here if you are new to VM2Cloud or need to orient yourself in the interfac
 
 ---
 
+## Coming From Installation
+
+If you have just installed a node, see [Verify the Installation](../00-Installation/Verify-Installation.md) for the post-installation task list, then continue here.
+
+---
+
 ## Where to Go Next
 
 - Cluster-wide configuration → [02-Datacenter](../02-Datacenter/)

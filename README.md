@@ -10,6 +10,8 @@ Administrator documentation for the **VM2Cloud Virtual Environment** web interfa
 
 If you are looking at a screen and want its documentation, follow the same route you took in the interface:
 
+**Installing on new hardware?** Start with [00-Installation](00-Installation/) — that section covers what happens before the interface exists.
+
 | In the interface | In this repository |
 |---|---|
 | Datacenter → Permissions → Users | [02-Datacenter/Permissions/Users.md](02-Datacenter/Permissions/Users.md) |
@@ -22,6 +24,17 @@ Every page follows the same template: **Overview → When to Use → Prerequisit
 ---
 
 ## Sections
+
+### [00-Installation](00-Installation/) — before the interface exists
+
+| Page | Description |
+|---|---|
+| [Mount the Installation ISO](00-Installation/Mount-Installation-Media.md) | BMC Virtual Media, controlled restart, booting the installer |
+| [Configure Installation Storage](00-Installation/Configure-Installation-Storage.md) | Target disks, filesystem and RAID layout, ZFS options |
+| [Configure Location and Administrator Access](00-Installation/Configure-Location-and-Administrator.md) | Time zone, keyboard, root password, notification email |
+| [Configure the Management Network](00-Installation/Configure-Management-Network.md) | Management NIC, hostname, addressing, VLAN, bonding |
+| [Complete the Installation](00-Installation/Complete-Installation.md) | Reviewing the summary, installing, automatic reboot |
+| [Verify the Installation](00-Installation/Verify-Installation.md) | Console login, web login, dashboard, and next steps |
 
 ### [01-Getting-Started](01-Getting-Started/) — the application shell
 

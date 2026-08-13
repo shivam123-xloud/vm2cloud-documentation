@@ -21,6 +21,27 @@ Menus marked 🔍 are drawn from the platform's standard layout rather than from
 
 # Part 1 — Interface Coverage
 
+## Installation (pre-interface)
+
+Installing VM2Cloud VE on a physical server, before the web interface exists.
+Ported from the standalone installation site on 13 August 2026.
+
+| Stage | Status | Page |
+|---|---|---|
+| Mount ISO via BMC Virtual Media | ✅ | [Mount the Installation ISO](00-Installation/Mount-Installation-Media.md) |
+| Installation storage and RAID layout | ✅ | [Configure Installation Storage](00-Installation/Configure-Installation-Storage.md) |
+| Location, time zone, root credentials | ✅ | [Configure Location and Administrator Access](00-Installation/Configure-Location-and-Administrator.md) |
+| Management network, VLAN, bonding | ✅ | [Configure the Management Network](00-Installation/Configure-Management-Network.md) |
+| Summary review, install, reboot | ✅ | [Complete the Installation](00-Installation/Complete-Installation.md) |
+| Console login, web login, dashboard | ✅ | [Verify the Installation](00-Installation/Verify-Installation.md) |
+| USB media installation | ❌ | Not documented |
+| Nested / virtual installation | ❌ | Not documented |
+| Automated / unattended installation | ❌ | Not documented |
+| In-place upgrade | ❌ | Not documented |
+
+All 29 installation screenshots are placed. This is the only section with no
+outstanding screenshot placeholders.
+
 ## Application Shell
 
 Menus confirmed from `01-Getting-Started/images/datacenter-search.png`, `02-Datacenter/Permissions/images/access-realms.png`.
