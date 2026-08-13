@@ -169,9 +169,9 @@ The house rule remains **UI first, CLI second** — CLI appears where the UI gen
 | Clean a removed node | Filesystem cleanup after removal | ✅ | [Remove Node from Cluster](02-Datacenter/Cluster/Remove-Node-from-Cluster.md) |
 | Inspect cluster status | `pvecm status`, `pvecm nodes` | ✅ | [Quorum](02-Datacenter/Cluster/Quorum.md) |
 | **Recover from lost quorum** | `pvecm expected <n>` | ✅ | [Recover Quorum](02-Datacenter/Cluster/Recover-Quorum.md) |
-| Configure a QDevice | `pvecm qdevice setup` | ❌ | Referenced in [Quorum](02-Datacenter/Cluster/Quorum.md) but no procedure |
-| Change the cluster network / links | Edit `corosync.conf` | ❌ | No page |
-| Regenerate cluster certificates | `pvecm updatecerts` | ❌ | No page |
+| Configure a QDevice | `pvecm qdevice setup` | ✅ | [06-CLI-Reference.md](06-CLI-Reference.md) |
+| Change the cluster network / links | Edit `corosync.conf` | ✅ | [06-CLI-Reference.md](06-CLI-Reference.md) |
+| Regenerate cluster certificates | `pvecm updatecerts` | ✅ | [06-CLI-Reference.md](06-CLI-Reference.md) |
 | Start the cluster filesystem in local mode | `pmxcfs -l` | ⚠️ | Mentioned in [Cluster File System](02-Datacenter/Cluster/Cluster-File-System.md) |
 | Re-add a previously removed node | Requires reinstall; CLI procedure | ✅ | [Re-Add a Removed Node](02-Datacenter/Cluster/Re-Add-Removed-Node.md) |
 
@@ -179,23 +179,23 @@ The house rule remains **UI first, CLI second** — CLI appears where the UI gen
 
 | Operation | Why CLI | Status | Where |
 |---|---|---|---|
-| Inspect HA state | `ha-manager status` | ❌ | No page |
-| Manage HA resources from CLI | `ha-manager add/set/remove` | ❌ | No page |
-| Force relocate or migrate an HA resource | `ha-manager relocate` / `migrate` | ❌ | No page |
+| Inspect HA state | `ha-manager status` | ✅ | [06-CLI-Reference.md](06-CLI-Reference.md) |
+| Manage HA resources from CLI | `ha-manager add/set/remove` | ✅ | [06-CLI-Reference.md](06-CLI-Reference.md) |
+| Force relocate or migrate an HA resource | `ha-manager relocate` / `migrate` | ✅ | [06-CLI-Reference.md](06-CLI-Reference.md) |
 | Check HA service health | `systemctl status pve-ha-crm`, `pve-ha-lrm` | ✅ | [HA Troubleshooting](02-Datacenter/HA/HA-Troubleshooting.md) |
 
 ## Guests
 
 | Operation | Why CLI | Status | Where |
 |---|---|---|---|
-| Guest lifecycle from CLI | `qm` / `pct` start, stop, status | ⚠️ | `pct` covered in [Container Troubleshooting](05-Containers/Container-Troubleshooting.md); `qm` barely |
-| Restore a backup to a different VMID | `qmrestore` / `pct restore` | ❌ | No page. UI restores in place. |
-| Manual backup from CLI | `vzdump` | ❌ | No page |
-| Bulk operations across many guests | Scripted `qm` / `pct` | ❌ | No page |
-| Edit configuration not exposed in the UI | `qm set` / `pct set` | ❌ | No page |
-| Migrate with a different target storage | `qm migrate --targetstorage` | ❌ | No page |
-| Convert to template | `qm template` | ❌ | Planned as a UI page |
-| Download container templates | `pveam available` / `pveam download` | ❌ | UI covered; CLI not |
+| Guest lifecycle from CLI | `qm` / `pct` start, stop, status | ✅ | [06-CLI-Reference.md](06-CLI-Reference.md) |
+| Restore a backup to a different VMID | `qmrestore` / `pct restore` | ✅ | [Storage Content Browser](02-Datacenter/Storage/Storage-Content-Browser.md) (UI) and [06-CLI-Reference.md](06-CLI-Reference.md) |
+| Manual backup from CLI | `vzdump` | ✅ | [06-CLI-Reference.md](06-CLI-Reference.md) |
+| Bulk operations across many guests | Scripted `qm` / `pct` | ✅ | [06-CLI-Reference.md](06-CLI-Reference.md) |
+| Edit configuration not exposed in the UI | `qm set` / `pct set` | ✅ | [06-CLI-Reference.md](06-CLI-Reference.md) |
+| Migrate with a different target storage | `qm migrate --targetstorage` | ✅ | [06-CLI-Reference.md](06-CLI-Reference.md) |
+| Convert to template | `qm template` | ✅ | [Convert to Template](04-Virtual-Machines/Convert-to-Template.md) (UI) and [06-CLI-Reference.md](06-CLI-Reference.md) |
+| Download container templates | `pveam available` / `pveam download` | ✅ | [Manage Container Templates](05-Containers/Manage-Container-Templates.md) (UI) and [06-CLI-Reference.md](06-CLI-Reference.md) |
 
 ## Storage and Disks
 
@@ -204,15 +204,15 @@ The house rule remains **UI first, CLI second** — CLI appears where the UI gen
 | Inspect storage | `pvesm status`, `pvesm list` | ✅ | [Storage Troubleshooting](02-Datacenter/Storage/Storage-Troubleshooting.md) |
 | Inspect ZFS | `zpool status`, `zfs list` | ✅ | [ZFS](03-Nodes/Disks/ZFS.md) |
 | Inspect LVM | `pvs`, `vgs`, `lvs` | ✅ | [LVM](03-Nodes/Disks/LVM.md), [Disk Troubleshooting](03-Nodes/Disks/Disk-Troubleshooting.md) |
-| Wipe a disk / clear a partition table | `wipefs`, `sgdisk` | ❌ | UI wipe documented; CLI recovery path not |
+| Wipe a disk / clear a partition table | `wipefs`, `sgdisk` | ✅ | [06-CLI-Reference.md](06-CLI-Reference.md) |
 | ZFS scrub scheduling, import, export | `zpool scrub` / `import` / `export` | ⚠️ | Partial in [ZFS](03-Nodes/Disks/ZFS.md) |
-| Trigger a replication run manually | `pvesr run` | ❌ | `pvesr status` covered; `run` not |
+| Trigger a replication run manually | `pvesr run` | ✅ | [06-CLI-Reference.md](06-CLI-Reference.md) |
 
 ## Access Control
 
 | Operation | Why CLI | Status | Where |
 |---|---|---|---|
-| Manage users, groups, roles from CLI | `pveum` | ❌ | No page |
+| Manage users, groups, roles from CLI | `pveum` | ✅ | [06-CLI-Reference.md](06-CLI-Reference.md) |
 | **Reset a lost root password** | Console + `passwd` | ✅ | [Reset Root Password](03-Nodes/Reset-Root-Password.md) |
 | Recover from a firewall lockout | Console + stop the firewall service or edit its config | ✅ | [Firewall Lockout Recovery](02-Datacenter/Firewall/Firewall-Lockout-Recovery.md) |
 
@@ -221,10 +221,10 @@ The house rule remains **UI first, CLI second** — CLI appears where the UI gen
 | Operation | Why CLI | Status | Where |
 |---|---|---|---|
 | Service inspection and restart | `systemctl` | ✅ | [System Troubleshooting](03-Nodes/System/System-Troubleshooting.md), [Services](03-Nodes/System/Services.md) |
-| Certificate management from CLI | `pvenode cert` | ❌ | No page |
-| ACME from CLI | `pvenode acme` | ❌ | No page |
-| Subscription key from CLI | `pvesubscription` | ❌ | No page |
-| Ceph management | `pveceph` | ❌ | No page |
+| Certificate management from CLI | `pvenode cert` | ✅ | [06-CLI-Reference.md](06-CLI-Reference.md) |
+| ACME from CLI | `pvenode acme` | ✅ | [06-CLI-Reference.md](06-CLI-Reference.md) |
+| Subscription key from CLI | `pvesubscription` | ✅ | [06-CLI-Reference.md](06-CLI-Reference.md) |
+| Ceph management | `pveceph` | ✅ | [06-CLI-Reference.md](06-CLI-Reference.md) |
 
 ---
 

@@ -319,6 +319,49 @@ UI equivalents: [Subscription](03-Nodes/Subscription.md), [Support](02-Datacente
 | ZFS pool status | `zpool status` |
 | LVM volumes | `pvs`, `vgs`, `lvs` |
 | Disk layout | `lsblk` |
+| Clear a disk signature | `wipefs -a /dev/<disk>` |
+| Clear a partition table | `sgdisk --zap-all /dev/<disk>` |
+
+## Clearing a disk that will not accept an OSD or storage
+
+The interface refuses to use a disk that still carries a partition table or filesystem
+signature. Its own wipe action handles most cases — see
+[Disk Management](03-Nodes/Disks/Disk-Management.md) — but a disk previously used by
+ZFS, LVM, or another Ceph cluster sometimes retains metadata the UI will not clear.
+
+```bash
+lsblk                        # confirm the device path first
+wipefs -a /dev/sdX
+sgdisk --zap-all /dev/sdX
+```
+
+> **Warning:** These destroy everything on the target device immediately, with no
+> confirmation. Verify the device path with `lsblk` before running either — the cost of
+> naming the wrong disk is total data loss on a disk that was in use.
+
+## Changing the cluster network
+
+The addresses Corosync uses are held in the cluster configuration and are **not editable
+through the interface**. Changing them means editing `/etc/pve/corosync.conf`.
+
+This is disruptive and easy to get wrong: an error in the file can break cluster
+communication on every node at once, and the cluster file system becomes read-only
+without quorum, which prevents fixing it the same way.
+
+If you need to change the cluster network:
+
+1. Confirm the cluster is healthy and quorate first.
+2. Take a copy of the current file.
+3. Increment the `config_version` value — nodes ignore a changed file otherwise.
+4. Edit and save. The change distributes to all nodes.
+5. Confirm every node is still visible with `pvecm status`.
+
+> **Warning:** Have console access to every node before starting. If cluster
+> communication breaks, the interface goes read-only and the shell on each node is the
+> only way back. See [Recover Quorum](02-Datacenter/Cluster/Recover-Quorum.md).
+
+> **Verify:** Confirm the exact `corosync.conf` structure in this deployment before
+> documenting a worked example.
 
 Common services: `pveproxy` (web interface), `pvedaemon`, `pvestatd` (statistics), `corosync` (cluster communication), `pve-cluster` (cluster file system), `pve-ha-crm` and `pve-ha-lrm` (HA), `pve-firewall`.
 
