@@ -70,6 +70,8 @@ Every page follows the same template: **Overview → When to Use → Prerequisit
 
 **[HA](02-Datacenter/HA/)** — [Overview](02-Datacenter/HA/HA-Overview.md) · [Resources](02-Datacenter/HA/HA-Resources.md) · [Node Affinity](02-Datacenter/HA/Node-Affinity.md) · [Resource Affinity](02-Datacenter/HA/Resource-Affinity.md) · [Fencing](02-Datacenter/HA/Fencing.md) · [Troubleshooting](02-Datacenter/HA/HA-Troubleshooting.md)
 
+**Mappings** — [Resource Mappings](02-Datacenter/Resource-Mappings.md) · [Directory Mappings](02-Datacenter/Directory-Mappings.md) · [Custom CPU Models](02-Datacenter/Custom-CPU-Models.md)
+
 **Services** — [ACME Certificates](02-Datacenter/ACME-Certificates.md) · [Notifications](02-Datacenter/Notifications.md) · [Metric Server](02-Datacenter/Metric-Server.md) · [Support](02-Datacenter/Support.md)
 
 **[Ceph](02-Datacenter/Ceph/)** — [Overview](02-Datacenter/Ceph/Ceph-Overview.md) · [Monitors and OSDs](02-Datacenter/Ceph/Ceph-Monitors-and-OSDs.md) · [Pools](02-Datacenter/Ceph/Ceph-Pools.md)
@@ -148,9 +150,10 @@ grep -rn '> \*\*Verify:\*\*' --include='*.md' . --exclude=TEMPLATE.md --exclude=
 **Every interface panel is now documented.** See [COVERAGE.md](COVERAGE.md) for the full
 map of UI panels and CLI operations against the pages covering them.
 
-Four Datacenter entries — Notifications, Metric Server, Support, and node-level System
-Options — carry `Verify` notes because their presence could not be confirmed from the
-screenshots available. Confirm them during screenshot capture and adjust if needed.
+The Datacenter menu was confirmed in full on 14 August 2026 and proved three panels
+longer than had been inferred — Resource Mappings, Directory Mappings, and Custom CPU
+models. All three are now written. One entry still carries a `Verify` note: node-level
+System Options, whose presence could not be confirmed from the screenshots available.
 
 The remaining work is **screenshot capture** and clearing the `Verify` markers.
 

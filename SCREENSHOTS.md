@@ -20,10 +20,10 @@ A snapshot turns "I missed the empty Roles panel" from an afternoon into two min
 
 | | Pages | Placeholders |
 |---|---:|---:|
-| ✅ Complete | 46 | 0 |
-| ⬜ No screenshots needed | 16 | 0 |
-| ⏳ Awaiting capture | 103 | 440 |
-| **Total** | **165** | **440** |
+| ✅ Complete | 47 | 0 |
+| ⬜ No screenshots needed | 21 | 0 |
+| ⏳ Awaiting capture | 102 | 423 |
+| **Total** | **170** | **423** |
 
 ---
 
@@ -82,7 +82,7 @@ Work top to bottom. **Snapshot at every boundary.**
 
 ---
 
-## Phase 1 — Fresh single node · 114 shots · 26 pages
+## Phase 1 — Fresh single node · 123 shots · 29 pages
 
 **Before creating anything.** This is the largest phase and the only chance at most empty-state panels.
 
@@ -100,7 +100,7 @@ Node: `v2c1` only. Do not cluster yet.
 
 > Resource Tree and Views needs Pool and Tag views, which are empty now. Capture Server and Folder views here, and return in Phase 3 for the other two.
 
-### Datacenter panels — 24
+### Datacenter panels — 33
 | Page | Shots |
 |---|---:|
 | [Datacenter Summary](02-Datacenter/Datacenter-Summary.md) | 6 |
@@ -108,10 +108,15 @@ Node: `v2c1` only. Do not cluster yet.
 | [Notifications](02-Datacenter/Notifications.md) | 4 |
 | [Datacenter Options](02-Datacenter/Options.md) | 3 |
 | [Metric Server](02-Datacenter/Metric-Server.md) | 3 |
+| [Resource Mappings](02-Datacenter/Resource-Mappings.md) | 3 |
+| [Directory Mappings](02-Datacenter/Directory-Mappings.md) | 3 |
+| [Custom CPU Models](02-Datacenter/Custom-CPU-Models.md) | 3 |
 | [Datacenter Notes](02-Datacenter/Notes.md) | 2 |
 | [Support](02-Datacenter/Support.md) | 2 |
 
-> **Confirm these four exist first:** Notifications, Metric Server, Support, and node System → Options. They were written from the standard platform layout because the Datacenter menu was cut off in every available screenshot. If a panel is absent, tell me and I will remove or rework the page.
+> The three mapping panels are worth capturing even though the lab has nothing mapped — the empty state and the Add dialog are what the pages need most, and the Add dialog shows the field labels the `Verify:` markers are waiting on.
+>
+> **Still unconfirmed:** node System → Options. It was written from the standard platform layout because no available screenshot showed it. If the panel is absent, tell me and I will remove or rework the page.
 
 ### Node System — 42
 | Page | Shots |

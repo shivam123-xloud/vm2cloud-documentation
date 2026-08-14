@@ -64,6 +64,13 @@ Virtual networks defined centrally and applied to every node.
 
 [SDN Overview](SDN/SDN-Overview.md) · [Zones](SDN/Zones.md) · [VNets](SDN/VNets.md) · [Options](SDN/SDN-Options.md) · [IPAM](SDN/IPAM.md) · [VNet Firewall](SDN/VNet-Firewall.md) · [Fabrics](SDN/Fabrics.md) · [Route Maps](SDN/Route-Maps.md) · [Prefix Lists](SDN/Prefix-Lists.md)
 
+## Mappings and CPU Models
+
+Cluster-wide definitions that let a guest keep its hardware, its shared directories,
+and its CPU features when it moves between nodes.
+
+[Resource Mappings](Resource-Mappings.md) · [Directory Mappings](Directory-Mappings.md) · [Custom CPU Models](Custom-CPU-Models.md)
+
 ## Services
 
 [ACME Certificates](ACME-Certificates.md) · [Notifications](Notifications.md) · [Metric Server](Metric-Server.md) · [Support](Support.md)

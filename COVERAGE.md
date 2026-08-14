@@ -60,7 +60,7 @@ Menus confirmed from `01-Getting-Started/images/datacenter-search.png`, `02-Data
 
 ## Datacenter
 
-Menu order confirmed: Search · Summary · Notes · Cluster · Ceph · Options · Storage · Backup · Replication · Permissions · HA · SDN · ACME · Firewall
+Menu order confirmed: Search · Summary · Notes · Cluster · Ceph · Options · Storage · Backup · Replication · Permissions · HA · SDN · ACME · Firewall · Metric Server · Resource Mappings · Directory Mappings · Custom CPU models · Notifications · Support
 
 | Tab | Status | Page |
 |---|---|---|
@@ -91,9 +91,12 @@ Menu order confirmed: Search · Summary · Notes · Cluster · Ceph · Options �
 | SDN → Prefix Lists | ✅ | [Prefix Lists](02-Datacenter/SDN/Prefix-Lists.md) |
 | ACME | ✅ | [ACME Certificates](02-Datacenter/ACME-Certificates.md) |
 | Firewall | ✅ | [Firewall Overview](02-Datacenter/Firewall/Firewall-Overview.md) + 5 pages |
-| Metric Server | 🔍 ✅ | [Metric Server](02-Datacenter/Metric-Server.md) — presence unconfirmed |
-| Notifications | 🔍 ✅ | [Notifications](02-Datacenter/Notifications.md) — presence unconfirmed |
-| Support | 🔍 ✅ | [Support](02-Datacenter/Support.md) — presence unconfirmed |
+| Metric Server | ✅ | [Metric Server](02-Datacenter/Metric-Server.md) |
+| Resource Mappings | ✅ | [Resource Mappings](02-Datacenter/Resource-Mappings.md) |
+| Directory Mappings | ✅ | [Directory Mappings](02-Datacenter/Directory-Mappings.md) |
+| Custom CPU models | ✅ | [Custom CPU Models](02-Datacenter/Custom-CPU-Models.md) |
+| Notifications | ✅ | [Notifications](02-Datacenter/Notifications.md) |
+| Support | ✅ | [Support](02-Datacenter/Support.md) |
 
 ## Node
 
@@ -263,22 +266,31 @@ The house rule remains **UI first, CLI second** — CLI appears where the UI gen
 | Level | Tabs | ✅ | ⚠️ | ❌ |
 |---|---:|---:|---:|---:|
 | Application shell | 9 | 8 | 1 | 0 |
-| Datacenter | 29 | 29 | 0 | 0 |
+| Datacenter | 32 | 32 | 0 | 0 |
 | Node | 22 | 21 | 1 | 0 |
 | Virtual Machine | 16 | 16 | 0 | 0 |
 | Container | 18 | 18 | 0 | 0 |
 | Storage | 6 | 6 | 0 | 0 |
-| **Total** | **100** | **98** | **2** | **0** |
+| **Total** | **103** | **101** | **2** | **0** |
 
-**Interface coverage: 98 of 100 panels**, the remaining two being partial by design.
+**Interface coverage: 101 of 103 panels**, the remaining two being partial by design.
 
-The SDN submenu was confirmed on 14 August 2026 and turned out to have eight panels
-where two had been inferred. All six missing pages were written the same day. Seven
-other submenus — node System, Updates, Disks and Ceph, datacenter Ceph, HA and
-Firewall, and the guest Firewall — are still inferred rather than seen, and may hold
-the same kind of surprise. Two entries are marked partial rather than missing — the header bar buttons and node-level Search — because they are documented inside other pages rather than having pages of their own, which is correct for what they are.
+The Datacenter menu was confirmed in full on 14 August 2026. It runs three panels
+longer than had been inferred — Resource Mappings, Directory Mappings, and Custom CPU
+models — and all three were written the same day. The same screenshot confirmed Metric
+Server, Notifications, and Support, which had been carrying 🔍 markers.
 
-Four entries carry 🔍: Notifications, Metric Server, Support, and node-level System Options. Pages exist for them, but their presence in this deployment was never confirmed from a screenshot. Verify during capture.
+The SDN submenu was confirmed the same day and turned out to have eight panels where
+two had been inferred; all six missing pages were written then. Seven other submenus —
+node System, Updates, Disks and Ceph, datacenter Ceph, HA and Firewall, and the guest
+Firewall — are still inferred rather than seen, and may hold the same kind of surprise.
+Two entries are marked partial rather than missing — the header bar buttons and
+node-level Search — because they are documented inside other pages rather than having
+pages of their own, which is correct for what they are.
+
+One entry still carries 🔍: node-level System Options. A page does not exist for it,
+and its presence in this deployment was never confirmed from a screenshot. Verify
+during capture.
 
 ## CLI operations
 
@@ -320,7 +332,7 @@ Restoring to a different guest ID is now covered in
 ## Everything above ✅ complete
 
 The CLI reference, onboarding pages, SDN, Ceph, ACME, Notifications, Metric Server,
-and Support are all written.
+Support, Resource Mappings, Directory Mappings, and Custom CPU Models are all written.
 
 ## Remaining work
 
