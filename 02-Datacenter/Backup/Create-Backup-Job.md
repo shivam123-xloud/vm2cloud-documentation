@@ -49,15 +49,9 @@ Existing jobs are listed.
 
 ---
 
-### Screenshot 1
-
 **Datacenter Backup Panel**
 
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** Datacenter → Backup, showing the existing job list and the **Add** button.
+![Datacenter Backup Panel](images/Datacenter-Backup.png)
 
 ---
 
@@ -69,17 +63,9 @@ The job creation dialog opens.
 
 ---
 
-### Screenshot 2
-
 **Add Backup Job Dialog**
 
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** The Add Backup Job dialog immediately after opening, showing every field
-> including Node, Storage, Schedule, Selection mode, Mode, Compression, and the
-> notification settings.
+![Add Backup Job Dialog](images/Add-Backup-Job-Dialog.png)
 
 ---
 
@@ -103,16 +89,9 @@ Only storage with backup content enabled appears here. If the storage you want i
 
 ---
 
-### Screenshot 3
-
 **Storage Selected**
 
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** The Add Backup Job dialog with the Storage dropdown open, showing the
-> available backup-capable storages.
+![Storage Selected](images/Add-Backup-Job-Dialog-1.png)
 
 ---
 
@@ -160,16 +139,9 @@ This choice determines whether guests created next month are protected.
 
 ---
 
-### Screenshot 5
-
 **Guest Selection**
 
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** The guest selection area of the Add Backup Job dialog, showing the
-> selection mode options and the guest list.
+![Guest Selection](images/Select-the-Guests.png)
 
 ---
 
@@ -220,16 +192,9 @@ See [Backup Retention](Backup-Retention.md) for the full option reference.
 
 ---
 
-### Screenshot 7
-
 **Retention Settings**
 
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** The retention section of the Add Backup Job dialog, showing all keep
-> options.
+![Retention Settings](images/Configure-Retention.png)
 
 ---
 
@@ -242,16 +207,9 @@ The job appears in the list.
 
 ---
 
-### Screenshot 8
-
 **Job Created**
 
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** Datacenter → Backup showing the newly created job in the list with its
-> schedule, storage, and selection visible.
+![Job Created](images/backup-Created.png)
 
 ---
 
@@ -267,16 +225,9 @@ Do not wait for the first scheduled run to find out whether the job works.
 
 ---
 
-### Screenshot 9
-
 **Manual Run Result**
 
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** The task output of a manually triggered backup job, showing a successful
-> completion.
+![Manual Run Result](images/Manual-Run-Result.png)
 
 ---
 

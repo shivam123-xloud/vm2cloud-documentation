@@ -47,16 +47,9 @@ Before managing backup jobs, ensure that:
 
 ---
 
-### Screenshot 1
-
 **Backup Job List**
 
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** Datacenter → Backup with two or more jobs configured, showing the
-> **Add**, **Edit**, **Remove**, **Run now**, and **Job Detail** controls.
+![Backup Job List](images/Backup-Job-List.png)
 
 ---
 
@@ -72,16 +65,9 @@ This is the check that catches unprotected guests. A job created six months ago 
 
 ---
 
-### Screenshot 2
-
 **Job Detail View**
 
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** The Job Detail view for a backup job, showing the resolved list of guests
-> it currently covers.
+![Job Detail View](images/Job-Detail-View.png)
 
 ---
 
@@ -98,15 +84,9 @@ Changes take effect from the next scheduled run. Backups already taken are unaff
 
 ---
 
-### Screenshot 3
-
 **Editing a Backup Job**
 
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** The Edit dialog for an existing backup job, showing the populated fields.
+![Editing a Backup Job](images/Editing-a-Backup-Job.png)
 
 ---
 
@@ -138,16 +118,9 @@ A manual run does not affect the schedule; the next automatic run happens as nor
 
 ---
 
-### Screenshot 4
-
 **Manual Job Run**
 
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** The task output window of a backup job triggered with **Run now**,
-> showing per-guest progress.
+![Manual Job Run](images/Manual-Run-Result.png)
 
 ---
 
@@ -166,16 +139,9 @@ The job stays configured but does not run. Re-enable it the same way.
 
 ---
 
-### Screenshot 5
-
 **Disabled Job**
 
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** The backup job list showing a job in a disabled state, so the visual
-> difference from an enabled job is clear.
+![Disabled Job](images/Disabled-Job.png)
 
 ---
 

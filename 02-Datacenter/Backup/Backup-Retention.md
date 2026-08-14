@@ -82,16 +82,9 @@ This surprises people: retention looks conservative on each job, but five jobs o
 
 ---
 
-### Screenshot 1
-
 **Retention Options**
 
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** The retention section of the Add or Edit Backup Job dialog, showing every
-> keep option and its input field.
+![Retention Options](images/Retention-Options.png)
 
 ---
 

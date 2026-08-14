@@ -96,29 +96,15 @@ Each row typically shows the schedule, selected guests, target storage, mode, re
 
 ---
 
-### Screenshot 1
-
 **Datacenter Backup Panel**
 
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** Datacenter → Backup, showing the job list with the **Add**, **Edit**,
-> **Remove**, **Run now**, and **Job Detail** controls visible.
+![Datacenter Backup Panel](images/Backup-Job-List.png)
 
 ---
 
-### Screenshot 2
-
 **Backup Job Detail**
 
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** The detail view for a single backup job, showing which guests it covers
-> and its current configuration.
+![Backup Job Detail](images/Job-Detail-View.png)
 
 ---
 

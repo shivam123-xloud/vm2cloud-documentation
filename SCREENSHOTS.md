@@ -2,7 +2,7 @@
 
 The order to work through when capturing screenshots, and what is already done.
 
-**456 placeholders remain across 105 pages.** They are grouped below into ten phases that follow how a lab is actually built — install, storage, users, guests, cluster, and so on — so you never have to revisit a panel or rebuild to reach a state you have already passed.
+**441 placeholders remain across 103 pages.** They are grouped below into ten phases that follow how a lab is actually built — install, storage, users, guests, cluster, and so on — so you never have to revisit a panel or rebuild to reach a state you have already passed.
 
 ---
 
@@ -20,10 +20,10 @@ A snapshot turns "I missed the empty Roles panel" from an afternoon into two min
 
 | | Pages | Placeholders |
 |---|---:|---:|
-| ✅ Complete | 44 | 0 |
+| ✅ Complete | 46 | 0 |
 | ⬜ No screenshots needed | 16 | 0 |
-| ⏳ Awaiting capture | 105 | 456 |
-| **Total** | **165** | **456** |
+| ⏳ Awaiting capture | 103 | 441 |
+| **Total** | **165** | **441** |
 
 ---
 
@@ -249,13 +249,21 @@ The largest phase after Phase 1. Needs the cluster plus ZFS or Ceph.
 
 ---
 
-## Phase 8 — Backup jobs · 18 shots · 4 pages
+## Phase 8 — Backup jobs · 3 shots remaining · 2 pages
 
-Needs a backup target on separate storage — the NFS VM.
+**Mostly done — 15 of 18 captured 14 August 2026.**
 
-[Create Backup Job](02-Datacenter/Backup/Create-Backup-Job.md) 9 · [Manage Backup Job](02-Datacenter/Backup/Manage-Backup-Job.md) 6 · [Backup Jobs Overview](02-Datacenter/Backup/Backup-Jobs-Overview.md) 2 · [Backup Retention](02-Datacenter/Backup/Backup-Retention.md) 1
+✅ [Backup Jobs Overview](02-Datacenter/Backup/Backup-Jobs-Overview.md) · ✅ [Backup Retention](02-Datacenter/Backup/Backup-Retention.md)
 
-> Manage Backup Job wants a **failed** job in the list. Point one at a nonexistent storage and let it run.
+Still open:
+
+| Page | Shot | What to capture |
+|---|---|---|
+| [Create Backup Job](02-Datacenter/Backup/Create-Backup-Job.md) | 4 | The **Schedule** field with its dropdown open, showing the preset options |
+| [Create Backup Job](02-Datacenter/Backup/Create-Backup-Job.md) | 6 | The **Notifications** tab, or the compression dropdown open on General |
+| [Manage Backup Job](02-Datacenter/Backup/Manage-Backup-Job.md) | 6 | The task log filtered to backup tasks, ideally with a **failed** run visible |
+
+> For that last one, point a job at a nonexistent storage and let it run — a failed entry is what the page describes.
 
 📸 **Snapshot: `phase8-backup`**
 
