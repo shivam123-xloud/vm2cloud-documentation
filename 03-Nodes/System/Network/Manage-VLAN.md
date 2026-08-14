@@ -156,6 +156,10 @@ Before removing the VLAN, ensure that:
 
 ## Step 2: Remove the VLAN
 
+> **Warning:** Removing a VLAN interface disconnects anything using it. If the
+> management network is tagged on that VLAN, the node becomes unreachable and
+> recovery needs console access.
+
 1. Select the VLAN interface.
 2. Click **Remove**.
 3. Confirm the removal.

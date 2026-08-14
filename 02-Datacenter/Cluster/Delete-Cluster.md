@@ -171,6 +171,12 @@ Expected output:
 
 # Step 6: Remove Cluster Configuration
 
+> **Warning:** This removes the cluster configuration permanently. The node becomes
+> standalone and every other node's record of it is invalid. Guests on the node are
+> not deleted, but cluster features — migration, HA, replication, shared
+> configuration — stop working. There is no undo, and rebuilding the cluster means
+> starting from [Create Cluster](Create-Cluster.md).
+
 Remove the cluster configuration file:
 
 ```bash

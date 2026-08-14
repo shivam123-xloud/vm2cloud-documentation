@@ -131,6 +131,10 @@ Wait for the restore operation to complete.
 
 # Delete a Snapshot
 
+> **Warning:** Deleting a snapshot permanently discards that restore point. The
+> machine's current state is unaffected, but you can no longer roll back to it.
+> Confirm the change the snapshot protected is working before deleting it.
+
 When a snapshot is no longer required, it can be removed.
 
 ## Steps

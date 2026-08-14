@@ -153,6 +153,11 @@ Click **OK** to save the changes.
 
 # Remove a Host Entry
 
+> **Warning:** Do not remove the entry that resolves this node's own hostname. The
+> node determines its own address from that entry, and removing it breaks cluster
+> communication and certificate generation. If you are unsure which entry that is,
+> check `hostname -i` before changing anything.
+
 ## Step 1: Select the Entry
 
 1. Select the host entry to remove.

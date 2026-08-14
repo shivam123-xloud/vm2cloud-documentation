@@ -113,6 +113,10 @@ The selected kernel becomes the default kernel for the next system boot.
 
 # Remove an Unused Kernel
 
+> **Warning:** Never remove the running kernel, and never remove the last remaining
+> one — the node will not boot. Keep at least one known-good kernel besides the
+> current one, so there is something to fall back to if an update fails.
+
 > **Note**
 >
 > Remove kernels only if you are certain they are no longer required. Always keep at least one known working kernel installed.

@@ -162,6 +162,10 @@ Before removing the bridge, ensure that:
 
 ## Step 2: Remove the Bridge
 
+> **Warning:** Removing a bridge disconnects every guest attached to it, and removing
+> the management bridge makes the node unreachable — recovery then needs console
+> access. Check which guests use the bridge before removing it.
+
 1. Select the Linux Bridge.
 2. Click **Remove**.
 3. Confirm the removal.

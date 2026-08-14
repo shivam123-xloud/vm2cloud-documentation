@@ -53,13 +53,16 @@ Before creating a virtual machine, ensure that:
 
 Enter the basic virtual machine information.
 
-Typical fields include:
+| Field | What it does |
+|---|---|
+| **Node** | Which cluster node the machine is created on. It can be migrated later. |
+| **VM ID** | The machine's unique numeric identifier. Shared with containers, so no container can hold the same number. The next free ID is suggested. |
+| **Name** | Display name shown in the resource tree. Not the guest's hostname — set that inside the guest or through [Cloud-Init](Cloud-Init.md). |
+| **Resource Pool** | Optional. Places the machine in a [pool](../02-Datacenter/Permissions/Pools.md), which is what makes permissions and pool-based backup selection apply to it. |
 
-* Node
-* VM ID
-* Name
+Set the Resource Pool here if the environment uses pools. Adding it later works, but a guest created outside a pool falls outside any pool-based backup job until someone notices.
 
-After entering the required information, click **Next**.
+Click **Next**.
 
 ---
 
@@ -73,13 +76,16 @@ After entering the required information, click **Next**.
 
 Select the installation media.
 
-Typical options include:
+| Field | What it does |
+|---|---|
+| **Use CD/DVD disc image file (ISO)** | Boots the installer from an uploaded ISO. The usual choice. |
+| **Storage** | Which storage holds the ISO. Only storages with ISO content appear. |
+| **ISO image** | The installation media. Upload one first if the list is empty — see [Upload Content](../02-Datacenter/Storage/Upload-Content.md). |
+| **Do not use any media** | Creates the machine with no boot media, for importing a disk later. |
+| **Guest OS Type** | Operating system family. |
+| **Version** | Operating system version. |
 
-* Use CD/DVD Disc Image File (ISO)
-* Storage
-* ISO Image
-* Guest Operating System Type
-* Guest Operating System Version
+**Type and Version are not cosmetic.** They set defaults for the virtual hardware — controller types, clock behaviour, and other tuning the guest expects. Setting them wrong produces a machine that installs but performs poorly or behaves oddly, with no obvious cause.
 
 Click **Next**.
 
@@ -144,11 +150,18 @@ Click **Next** after reviewing the configuration.
 
 Configure the processor settings.
 
-Typical options include:
+| Field | What it does |
+|---|---|
+| **Sockets** | Number of virtual CPU sockets. |
+| **Cores** | Cores per socket. Total vCPUs = sockets × cores. |
+| **Type** | The CPU model presented to the guest. |
 
-* Socket(s)
-* Cores
-* CPU Type
+Prefer **one socket with several cores** over several sockets. Multiple sockets present a NUMA topology to the guest, which most workloads do not benefit from and some schedule badly against.
+
+The **Type** setting is a trade-off. A model that passes through more host CPU features performs better; a more generic model lets the machine migrate to nodes with different processors. In a mixed-hardware cluster, a machine set to a host-specific type may refuse to migrate.
+
+> **Verify:** Capture the CPU Type dropdown and document which models this deployment
+> offers, and which is the default.
 
 Click **Next**.
 

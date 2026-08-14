@@ -173,6 +173,11 @@ Before removing the bond, ensure that:
 
 ## Step 2: Remove the Bond
 
+> **Warning:** Removing a bond that carries management traffic makes the node
+> unreachable as soon as the change is applied, and recovery needs console access.
+> Confirm what the bond carries before removing it, and check whether any bridge
+> depends on it.
+
 1. Select the Bond interface.
 2. Click **Remove**.
 3. Confirm the removal.

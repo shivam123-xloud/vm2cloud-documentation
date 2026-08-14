@@ -96,6 +96,12 @@ Before removing a node, ensure that:
 
 ## Step 4: Remove the Node from the Cluster
 
+> **Warning:** Removal is permanent. **A removed node cannot rejoin the cluster** —
+> it must be reinstalled first, because it retains the old cluster configuration
+> while the cluster has purged every trace of it. See
+> [Re-Add a Removed Node](Re-Add-Removed-Node.md). Migrate or back up its guests
+> before proceeding; they are not moved automatically.
+
 > **Note:** Removing a node from a cluster cannot be completed from the VM2Cloud VE web interface. This operation must be performed from the command line on one of the **remaining cluster nodes**, **not** on the node being removed.
 
 Open an SSH session on one of the remaining cluster nodes and run:

@@ -55,17 +55,20 @@ The Create Container wizard opens.
 
 Enter the basic container information.
 
-Typical fields include:
+| Field | What it does |
+|---|---|
+| **Node** | Which cluster node the container is created on. |
+| **CT ID** | Unique numeric identifier. Shared with virtual machines, so no VM can hold the same number. |
+| **Hostname** | The container's hostname, used inside the guest and in DNS. |
+| **Password** / **Confirm password** | Root password inside the container. |
+| **SSH public key** | Optional. Installs a key for root, so the container can be reached without a password. |
+| **Resource Pool** | Optional. Places the container in a [pool](../02-Datacenter/Permissions/Pools.md) for permissions and pool-based backup selection. |
+| **Unprivileged container** | Maps root inside the container to an unprivileged user on the host. |
+| **Nesting** | Allows container-style workloads to run inside this container. |
 
-* Node
-* CT ID
-* Hostname
-* Password
-* Confirm Password
-* Unprivileged Container
-* Features (if required)
+> **Warning:** **Unprivileged container is decided here and cannot be changed later.** Converting afterwards means backing up, creating a new container, and restoring into it. Leave it enabled unless a specific workload requires privilege — a privileged container offers substantially weaker isolation from the host. See [Container Options](CT-Options.md).
 
-After entering the required information, click **Next**.
+Click **Next**.
 
 ---
 
@@ -79,12 +82,16 @@ After entering the required information, click **Next**.
 
 Select the container template.
 
-Typical options include:
+| Field | What it does |
+|---|---|
+| **Storage** | Which storage holds the templates. Only storages with container-template content appear. |
+| **Template** | The base image the container is built from. |
 
-* Storage
-* Template
+If the template list is empty, none have been downloaded yet — see [Manage Container Templates](Manage-Container-Templates.md).
 
-Choose the required Linux container template and click **Next**.
+The template determines the distribution inside the container. Unlike a virtual machine there is no installer: the container is created from this image and boots straight into a running system.
+
+Click **Next**.
 
 ---
 
@@ -176,10 +183,12 @@ Click **Next**.
 
 Configure the DNS settings.
 
-Typical options include:
+| Field | What it does |
+|---|---|
+| **DNS domain** | Search domain, so short names resolve. Leave empty to inherit the host's setting. |
+| **DNS servers** | Nameservers the container uses. Leave empty to inherit the host's. |
 
-* DNS Domain
-* DNS Server
+Leaving both empty is the usual choice — the container then follows the node, and a nameserver change made once on the host applies everywhere. Set them explicitly only when this container must use different resolvers. See [CT DNS](CT-DNS.md).
 
 Click **Next**.
 

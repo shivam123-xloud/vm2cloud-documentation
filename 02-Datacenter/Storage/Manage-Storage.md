@@ -158,6 +158,11 @@ Before removing storage, ensure that:
 
 ## Step 2: Remove the Storage
 
+> **Warning:** Removing a storage removes its definition from the cluster. Guests with
+> disks on it will fail to start, and backups or ISO images held there become
+> unreachable through the interface. Move or delete everything using the storage
+> first — check [Storage Content Browser](Storage-Content-Browser.md).
+
 1. Select the storage.
 2. Click **Remove**.
 3. Review the confirmation message.

@@ -115,6 +115,10 @@ Information typically includes:
 
 # Remove a Container Template
 
+> **Note:** Removing a template does not affect containers already created from it.
+> It only means new containers can no longer be created from that template until it
+> is downloaded again.
+
 > **Note:** Remove a template only if it is no longer required. Containers that have already been created from the template are not affected.
 
 ## Steps
