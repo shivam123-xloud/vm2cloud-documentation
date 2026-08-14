@@ -107,13 +107,13 @@ Choose a window when guest load is low and the job can finish before business ho
 
 ---
 
-### Screenshot 4
+
 
 **Schedule Configured**
 
-```text
-[ Place Screenshot Here ]
-```
+
+![Schedule Configured](images/Select-the-Guests.png)
+
 
 > **Capture:** The schedule field of the Add Backup Job dialog, showing the input format
 > and any preset options available.
