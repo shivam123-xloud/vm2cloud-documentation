@@ -133,6 +133,23 @@ See [Zones](Zones.md) and [VNets](VNets.md).
 
 ---
 
+# The SDN Panels
+
+| Panel | Covers |
+|---|---|
+| [Zones](Zones.md) | How traffic is carried between nodes |
+| [VNets](VNets.md) | The networks guests attach to, and their subnets |
+| [SDN Options](SDN-Options.md) | Controllers, IPAM backends, and DNS backends |
+| [IPAM](IPAM.md) | Which addresses are allocated to which guests |
+| [VNet Firewall](VNet-Firewall.md) | Filtering traffic within a virtual network |
+| [Fabrics](Fabrics.md) | Automatic routing between nodes on a routed underlay |
+| [Route Maps](Route-Maps.md) | Which routes are exchanged with peers, and how they are modified |
+| [Prefix Lists](Prefix-Lists.md) | Named sets of prefixes that route maps match on |
+
+Most deployments use only **Zones** and **VNets**. The rest matter for EVPN, routed underlays, and multi-tenant isolation.
+
+---
+
 # Verification
 
 Verify the following:

@@ -74,7 +74,7 @@ Every page follows the same template: **Overview → When to Use → Prerequisit
 
 **[Ceph](02-Datacenter/Ceph/)** — [Overview](02-Datacenter/Ceph/Ceph-Overview.md) · [Monitors and OSDs](02-Datacenter/Ceph/Ceph-Monitors-and-OSDs.md) · [Pools](02-Datacenter/Ceph/Ceph-Pools.md)
 
-**[SDN](02-Datacenter/SDN/)** — [Overview](02-Datacenter/SDN/SDN-Overview.md) · [Zones](02-Datacenter/SDN/Zones.md) · [VNets](02-Datacenter/SDN/VNets.md)
+**[SDN](02-Datacenter/SDN/)** — [Overview](02-Datacenter/SDN/SDN-Overview.md) · [Zones](02-Datacenter/SDN/Zones.md) · [VNets](02-Datacenter/SDN/VNets.md) · [Options](02-Datacenter/SDN/SDN-Options.md) · [IPAM](02-Datacenter/SDN/IPAM.md) · [VNet Firewall](02-Datacenter/SDN/VNet-Firewall.md) · [Fabrics](02-Datacenter/SDN/Fabrics.md) · [Route Maps](02-Datacenter/SDN/Route-Maps.md) · [Prefix Lists](02-Datacenter/SDN/Prefix-Lists.md)
 
 **[Firewall](02-Datacenter/Firewall/)** — [Overview](02-Datacenter/Firewall/Firewall-Overview.md) · [Options](02-Datacenter/Firewall/Firewall-Options.md) · [Rules](02-Datacenter/Firewall/Firewall-Rules.md) · [Security Groups](02-Datacenter/Firewall/Security-Groups.md) · [Aliases](02-Datacenter/Firewall/Aliases.md) · [IPSets](02-Datacenter/Firewall/IPSets.md) · [Lockout Recovery](02-Datacenter/Firewall/Firewall-Lockout-Recovery.md)
 

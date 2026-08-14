@@ -268,13 +268,16 @@ Still open:
 
 ---
 
-## Phase 9 — Firewall and SDN · 46 shots · 11 pages
+## Phase 9 — Firewall and SDN · 62 shots · 17 pages
 
 ### Firewall — 38
 [Firewall Rules](02-Datacenter/Firewall/Firewall-Rules.md) 6 · [Security Groups](02-Datacenter/Firewall/Security-Groups.md) 6 · [IPSets](02-Datacenter/Firewall/IPSets.md) 5 · [Node Firewall](03-Nodes/Node-Firewall.md) 5 · [Aliases](02-Datacenter/Firewall/Aliases.md) 4 · [Firewall Options](02-Datacenter/Firewall/Firewall-Options.md) 4 · [VM Firewall](04-Virtual-Machines/VM-Firewall.md) 4 · [CT Firewall](05-Containers/CT-Firewall.md) 4
 
-### SDN — 8
-[VNets](02-Datacenter/SDN/VNets.md) 4 · [Zones](02-Datacenter/SDN/Zones.md) 3 · [SDN Overview](02-Datacenter/SDN/SDN-Overview.md) 1
+### SDN — 24
+[VNets](02-Datacenter/SDN/VNets.md) 4 · [Zones](02-Datacenter/SDN/Zones.md) 3 · [SDN Options](02-Datacenter/SDN/SDN-Options.md) 3 · [IPAM](02-Datacenter/SDN/IPAM.md) 1 · [VNet Firewall](02-Datacenter/SDN/VNet-Firewall.md) 3 · [Fabrics](02-Datacenter/SDN/Fabrics.md) 4 · [Route Maps](02-Datacenter/SDN/Route-Maps.md) 2 · [Prefix Lists](02-Datacenter/SDN/Prefix-Lists.md) 2 · [SDN Overview](02-Datacenter/SDN/SDN-Overview.md) 1
+
+> SDN has eight panels, not two. The six beyond Zones and VNets were written on
+> 14 August 2026 after the submenu was seen for the first time.
 
 > Capture firewall panels **before enabling** the firewall. Enabling it without a management rule locks you out — which is Phase 10's problem, not this one's.
 

@@ -83,12 +83,12 @@ Menu order confirmed: Search · Summary · Notes · Cluster · Ceph · Options �
 | HA | ✅ | [HA Overview](02-Datacenter/HA/HA-Overview.md) + 5 pages |
 | SDN → Zones | ✅ | [Zones](02-Datacenter/SDN/Zones.md) |
 | SDN → VNets | ✅ | [VNets](02-Datacenter/SDN/VNets.md) |
-| SDN → Options | ❌ | `02-Datacenter/SDN/SDN-Options.md` |
-| SDN → IPAM | ❌ | `02-Datacenter/SDN/IPAM.md` |
-| SDN → VNet Firewall | ❌ | `02-Datacenter/SDN/VNet-Firewall.md` |
-| SDN → Fabrics | ❌ | `02-Datacenter/SDN/Fabrics.md` |
-| SDN → Route Maps | ❌ | `02-Datacenter/SDN/Route-Maps.md` |
-| SDN → Prefix Lists | ❌ | `02-Datacenter/SDN/Prefix-Lists.md` |
+| SDN → Options | ✅ | [SDN Options](02-Datacenter/SDN/SDN-Options.md) |
+| SDN → IPAM | ✅ | [IPAM](02-Datacenter/SDN/IPAM.md) |
+| SDN → VNet Firewall | ✅ | [VNet Firewall](02-Datacenter/SDN/VNet-Firewall.md) |
+| SDN → Fabrics | ✅ | [Fabrics](02-Datacenter/SDN/Fabrics.md) |
+| SDN → Route Maps | ✅ | [Route Maps](02-Datacenter/SDN/Route-Maps.md) |
+| SDN → Prefix Lists | ✅ | [Prefix Lists](02-Datacenter/SDN/Prefix-Lists.md) |
 | ACME | ✅ | [ACME Certificates](02-Datacenter/ACME-Certificates.md) |
 | Firewall | ✅ | [Firewall Overview](02-Datacenter/Firewall/Firewall-Overview.md) + 5 pages |
 | Metric Server | 🔍 ✅ | [Metric Server](02-Datacenter/Metric-Server.md) — presence unconfirmed |
@@ -263,18 +263,20 @@ The house rule remains **UI first, CLI second** — CLI appears where the UI gen
 | Level | Tabs | ✅ | ⚠️ | ❌ |
 |---|---:|---:|---:|---:|
 | Application shell | 9 | 8 | 1 | 0 |
-| Datacenter | 29 | 23 | 0 | 6 |
+| Datacenter | 29 | 29 | 0 | 0 |
 | Node | 22 | 21 | 1 | 0 |
 | Virtual Machine | 16 | 16 | 0 | 0 |
 | Container | 18 | 18 | 0 | 0 |
 | Storage | 6 | 6 | 0 | 0 |
-| **Total** | **100** | **92** | **2** | **6** |
+| **Total** | **100** | **98** | **2** | **0** |
 
-**Interface coverage: 92 of 100 panels.** Six SDN sub-panels are undocumented —
-confirmed missing on 14 August 2026 when the SDN submenu was seen for the first time.
-This is the enumeration risk stated below working exactly as warned: the submenu was
-never visible in any available screenshot, so it was inferred as two entries when it
-has eight. Two entries are marked partial rather than missing — the header bar buttons and node-level Search — because they are documented inside other pages rather than having pages of their own, which is correct for what they are.
+**Interface coverage: 98 of 100 panels**, the remaining two being partial by design.
+
+The SDN submenu was confirmed on 14 August 2026 and turned out to have eight panels
+where two had been inferred. All six missing pages were written the same day. Seven
+other submenus — node System, Updates, Disks and Ceph, datacenter Ceph, HA and
+Firewall, and the guest Firewall — are still inferred rather than seen, and may hold
+the same kind of surprise. Two entries are marked partial rather than missing — the header bar buttons and node-level Search — because they are documented inside other pages rather than having pages of their own, which is correct for what they are.
 
 Four entries carry 🔍: Notifications, Metric Server, Support, and node-level System Options. Pages exist for them, but their presence in this deployment was never confirmed from a screenshot. Verify during capture.
 
