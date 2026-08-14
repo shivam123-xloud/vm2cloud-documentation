@@ -95,10 +95,15 @@ Examples include:
 
 ### User or Group
 
-Select whether the permission will be assigned to:
+The **Add** button offers three permission types:
 
-- A User
-- A Group
+| Type | Assigns to |
+|---|---|
+| **Group Permission** | A group. Preferred — membership changes then need no permission edits. |
+| **User Permission** | A single user. Use for genuine exceptions. |
+| **API Token Permission** | An [API token](API-Tokens.md) directly, when token privilege separation is enabled. |
+
+> **Verify:** Confirm the exact wording of these three options in the Add menu.
 
 ### Role
 
@@ -178,8 +183,28 @@ Permissions can be assigned to different resource levels.
 | `/storage/<storage>` | Specific storage |
 | `/vms` | All virtual machines and containers |
 | `/vms/<VMID>` | Specific virtual machine or container |
+| `/pool/<pool>` | Every guest and storage in a [pool](Pools.md) |
+| `/access` | User, group, and realm management |
+| `/sdn` | Software-defined networking |
+
+Guest IDs are shared between virtual machines and containers, so `/vms/101` applies to whichever guest holds that ID.
+
+`/pool/<pool>` is the path that scales. Granting on it covers every member, including guests added to the pool later — which is why per-guest grants become unmanageable and pools do not.
 
 > **Note:** The available resource paths depend on your VM2Cloud VE configuration.
+
+---
+
+# root@pam Is Unrestricted
+
+The `root@pam` account always has full access to everything. It **cannot** be limited by permissions — assigning it a restrictive role, or **NoAccess** on a path, has no effect.
+
+Two consequences:
+
+- **Do not rely on permissions to restrict root.** Control who knows the root password instead.
+- **Do not use root for day-to-day work.** Create individual accounts with appropriate roles, so actions are attributable and mistakes are bounded. See [Users](Users.md).
+
+> **Warning:** Anyone with the root password has complete control of the environment regardless of how permissions are configured. Store it in a shared password manager, rotate it when administrators leave, and use named accounts for routine administration.
 
 ---
 

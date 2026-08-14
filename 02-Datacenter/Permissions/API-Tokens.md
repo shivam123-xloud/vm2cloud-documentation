@@ -86,6 +86,20 @@ Typical fields include:
 
 Review the configuration before continuing.
 
+### Token identifier format
+
+A token belongs to a user and is identified by combining the two:
+
+```text
+<user>@<realm>!<token-id>
+
+automation@pve!backup-script
+```
+
+That full string is the username your script authenticates with. The token **secret** is shown once, when the token is created.
+
+> **Warning:** The secret is displayed only at creation and cannot be retrieved afterwards. Copy it into your secret store before closing the dialog. If it is lost, the token must be deleted and recreated.
+
 ### Privilege Separation
 
 When enabled, the API Token uses only the permissions explicitly assigned to the token.

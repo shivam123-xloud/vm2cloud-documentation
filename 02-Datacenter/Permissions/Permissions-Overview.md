@@ -59,13 +59,14 @@ The Permissions section includes the following components.
 
 | Component | Description |
 |-----------|-------------|
-| Users | Create, edit, and delete user accounts. |
-| Groups | Organize users into logical groups for easier permission management. |
-| Roles | Define sets of privileges that can be assigned to users or groups. |
-| Permissions | Assign roles to users or groups for specific resources. |
-| Realms | Configure local or external authentication methods. |
-| API Tokens | Create secure authentication tokens for automation and API access. |
-| Two-Factor Authentication | Configure additional authentication methods for enhanced security. |
+| [Users](Users.md) | Create, edit, and delete user accounts. |
+| [Groups](Groups.md) | Organize users into logical groups for easier permission management. |
+| [Pools](Pools.md) | Group guests and storage so they can be permissioned as one unit. |
+| [Roles](Roles.md) | Named sets of privileges. |
+| [Permissions](Assign-Permissions.md) | Bind a role to a user or group on a path. |
+| [Realms](Authentication-Realms.md) | Configure local or external authentication methods. |
+| [API Tokens](API-Tokens.md) | Credentials for automation and API access. |
+| [Two-Factor Authentication](Two-Factor-Authentication.md) | A second authentication factor for accounts. |
 
 ---
 
@@ -75,37 +76,53 @@ The Permissions section includes the following components.
 
 ---
 
-# User Access Model
+# How Access Actually Works
 
-VM2Cloud VE controls access using the following hierarchy:
+A **permission** is not a property of a user. It is a binding of three things at once:
 
 ```text
-Authentication Realm
-        │
-        ▼
-      User
-        │
-        ▼
-     Group (Optional)
-        │
-        ▼
-      Role
-        │
-        ▼
-   Permission
-        │
-        ▼
-Protected Resource
+   WHO                WHAT                 WHERE
+   ───                ────                 ─────
+ user or group   +    role       on a      path
+ alice@pve            PVEVMAdmin           /pool/finance
 ```
 
-A user authenticates through an authentication realm. The user may belong to one or more groups. Roles define the privileges available to the user or group, while permissions determine where those privileges apply.
+Read as: *alice@pve has PVEVMAdmin on /pool/finance.*
 
----
+All three are required. A role by itself grants nothing until it is bound to someone on a path. This is why "assign a role to a user" is an incomplete instruction — the path is what decides where the privileges apply.
 
+## Paths
 
-![User Access Model](images/permission-components.png)
+Resources form a hierarchy, and permissions are granted on paths within it:
 
+```text
+/                          the whole environment
+├── /nodes/<node>          one server
+├── /vms/<vmid>            one guest
+├── /storage/<storage>     one storage
+├── /pool/<pool>           everything in a pool
+├── /access                user and realm management
+└── /sdn                   software-defined networking
+```
 
+A permission granted on a path applies to everything beneath it when **Propagate** is enabled. A role on `/` therefore reaches every guest, node, and storage in the environment.
+
+See [Assign Permissions](Assign-Permissions.md) for the full path reference.
+
+## Authentication is separate from authorization
+
+The realm decides **whether** someone can log in. Permissions decide **what they can do** once in.
+
+```text
+Realm  →  authenticates the account
+Permission (who + role + path)  →  authorizes the action
+```
+
+A user with a valid account and no permissions logs in successfully and sees an empty resource tree. That is working as designed, not a fault.
+
+## root@pam is outside the model
+
+The `root@pam` account always has full access and **cannot be restricted by permissions**. Control it by controlling the password, not by configuring roles. See [Assign Permissions](Assign-Permissions.md).
 
 ---
 

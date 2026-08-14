@@ -172,32 +172,54 @@ The new role appears in the Roles list.
 
 ---
 
-# Common System Roles
+# Predefined Roles
 
-The following roles are commonly available in VM2Cloud VE.
+These roles exist by default and cannot be edited or deleted. Most access can be granted without ever creating a custom role.
 
-| Role | Description |
-|------|-------------|
-| Administrator | Full administrative access to VM2Cloud VE resources. |
-| Auditor | Read-only access for monitoring and auditing. |
-| Resource Administrator | Manages virtual infrastructure resources. |
-| Virtual Machine Administrator | Manages virtual machines. |
-| Datastore Administrator | Manages storage resources. |
-| Backup Operator | Performs backup and restore operations. |
+| Role | Grants |
+|---|---|
+| **Administrator** | Every privilege. Unrestricted. |
+| **NoAccess** | No privileges. Used deliberately to block inherited access on a specific path. |
+| **PVEAdmin** | Almost everything except system-level node operations and realm management. |
+| **PVEAuditor** | Read-only across the environment. The right choice for monitoring and reporting. |
+| **PVEVMAdmin** | Full control of virtual machines and containers — create, configure, delete. |
+| **PVEVMUser** | Use guests without reconfiguring them: console, power, backup, snapshot. |
+| **PVETemplateUser** | View templates and create guests from them. |
+| **PVEDatastoreAdmin** | Full storage administration, including adding and removing storage. |
+| **PVEDatastoreUser** | Allocate space on storage and view its contents. Cannot reconfigure it. |
+| **PVEPoolAdmin** | Manage pools and their membership. |
+| **PVEPoolUser** | View pools. |
+| **PVESysAdmin** | Node and system administration — services, network, updates. |
+| **PVEUserAdmin** | Manage users, groups, and their permissions. |
+| **PVESDNAdmin** | Manage SDN zones and VNets. |
+| **PVESDNUser** | Use SDN networks without configuring them. |
 
-> **Verify:** Capture the full list of predefined roles from Datacenter → Permissions → Roles
-> and document the privileges each one grants.
+**NoAccess** is the one worth understanding. Permissions inherit down the path hierarchy, so a role granted on `/` reaches everything below it. Assigning **NoAccess** on a narrower path carves out an exception — the usual way to say "this team administers everything except that one guest".
+
+> **Verify:** Confirm this list against Datacenter → Permissions → Roles in your deployment.
+> These are the platform's standard roles; a specific build may add or omit some. Also
+> capture the privileges each one contains.
 
 ---
 
-# Verification
+# Privileges
 
-Verify the following:
+Privileges are what a role contains. You choose from these when creating a custom role.
 
-- The custom role appears in the Roles list.
-- The selected privileges are assigned correctly.
-- Users or groups assigned to the role receive the expected privileges.
-- Deleted custom roles no longer appear in the Roles list.
+| Group | Privileges | Controls |
+|---|---|---|
+| **VM** | `VM.Allocate`, `VM.Audit`, `VM.Clone`, `VM.Console`, `VM.Migrate`, `VM.Monitor`, `VM.PowerMgmt`, `VM.Backup`, `VM.Snapshot`, `VM.Snapshot.Rollback` | Creating, viewing, and operating guests |
+| **VM config** | `VM.Config.CPU`, `VM.Config.Memory`, `VM.Config.Disk`, `VM.Config.Network`, `VM.Config.CDROM`, `VM.Config.Options`, `VM.Config.HWType`, `VM.Config.Cloudinit` | Changing individual parts of guest hardware |
+| **Storage** | `Datastore.Allocate`, `Datastore.AllocateSpace`, `Datastore.AllocateTemplate`, `Datastore.Audit` | Managing storage and consuming capacity |
+| **System** | `Sys.Audit`, `Sys.Console`, `Sys.Modify`, `Sys.PowerMgmt`, `Sys.Syslog`, `Sys.Incoming` | Node-level operations |
+| **Access** | `User.Modify`, `Group.Allocate`, `Realm.Allocate`, `Realm.AllocateUser`, `Permissions.Modify` | Managing who can do what |
+| **Pools** | `Pool.Allocate`, `Pool.Audit` | Creating and viewing pools |
+| **SDN** | `SDN.Allocate`, `SDN.Audit`, `SDN.Use` | Software-defined networking |
+
+The `VM.Config.*` split is the useful one for delegation. Granting `VM.Config.Memory` but not `VM.Config.Disk` lets a team resize memory on their own guests without touching storage allocation.
+
+> **Verify:** Capture the privilege list from the Create Role dialog and confirm these
+> names and groupings.
 
 ---
 
@@ -215,11 +237,27 @@ Verify the following:
 
 # Verification
 
-After managing roles, verify that:
+Verify the following:
 
-- The required role exists.
-- The assigned privileges are correct.
-- Users or groups inherit the expected privileges after the role is assigned through permissions.
+- The role appears in the Roles list.
+- Its privileges match what was intended.
+- A user assigned the role through a permission gains exactly the expected access.
+- That user **cannot** perform actions the role does not grant.
+- Deleted custom roles no longer appear.
+
+Test what the role does **not** allow, not only what it does. A role granting more than intended is only discovered when someone uses it.
+
+---
+
+# Best Practices
+
+- Use a predefined role wherever one fits. Custom roles are another thing to maintain.
+- Start from the least privileged role that could work, then add privileges if it proves insufficient.
+- Use **PVEAuditor** for monitoring and reporting accounts rather than a custom read-only role.
+- Use **NoAccess** to carve exceptions out of broad grants rather than restructuring the whole permission set.
+- Name custom roles after the job they enable, not the person or team who first needed them.
+- Review custom roles when responsibilities change — they tend to accumulate privileges and never lose them.
+- Grant roles to groups on paths, never directly to individuals where a group would do.
 
 ---
 
