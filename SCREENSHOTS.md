@@ -2,7 +2,7 @@
 
 The order to work through when capturing screenshots, and what is already done.
 
-**441 placeholders remain across 103 pages.** They are grouped below into ten phases that follow how a lab is actually built — install, storage, users, guests, cluster, and so on — so you never have to revisit a panel or rebuild to reach a state you have already passed.
+**440 placeholders remain across 103 pages.** They are grouped below into ten phases that follow how a lab is actually built — install, storage, users, guests, cluster, and so on — so you never have to revisit a panel or rebuild to reach a state you have already passed.
 
 ---
 
@@ -22,8 +22,8 @@ A snapshot turns "I missed the empty Roles panel" from an afternoon into two min
 |---|---:|---:|
 | ✅ Complete | 46 | 0 |
 | ⬜ No screenshots needed | 16 | 0 |
-| ⏳ Awaiting capture | 103 | 441 |
-| **Total** | **165** | **441** |
+| ⏳ Awaiting capture | 103 | 440 |
+| **Total** | **165** | **440** |
 
 ---
 
@@ -249,9 +249,9 @@ The largest phase after Phase 1. Needs the cluster plus ZFS or Ceph.
 
 ---
 
-## Phase 8 — Backup jobs · 3 shots remaining · 2 pages
+## Phase 8 — Backup jobs · 2 shots remaining · 2 pages
 
-**Mostly done — 15 of 18 captured 14 August 2026.**
+**Mostly done — 16 of 18 captured 14 August 2026.**
 
 ✅ [Backup Jobs Overview](02-Datacenter/Backup/Backup-Jobs-Overview.md) · ✅ [Backup Retention](02-Datacenter/Backup/Backup-Retention.md)
 
@@ -259,9 +259,8 @@ Still open:
 
 | Page | Shot | What to capture |
 |---|---|---|
-| [Create Backup Job](02-Datacenter/Backup/Create-Backup-Job.md) | 4 | The **Schedule** field with its dropdown open, showing the preset options |
 | [Create Backup Job](02-Datacenter/Backup/Create-Backup-Job.md) | 6 | The **Notifications** tab, or the compression dropdown open on General |
-| [Manage Backup Job](02-Datacenter/Backup/Manage-Backup-Job.md) | 6 | The task log filtered to backup tasks, ideally with a **failed** run visible |
+| [Manage Backup Job](02-Datacenter/Backup/Manage-Backup-Job.md) | 6 | The task log at the bottom of the interface, filtered to backup tasks — the task *list* with several runs, not one task's Output window |
 
 > For that last one, point a job at a nonexistent storage and let it run — a failed entry is what the page describes.
 

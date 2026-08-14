@@ -158,14 +158,17 @@ A job can succeed overall while skipping an individual guest. Check per-guest re
 
 
 
+### Screenshot 6
+
 **Backup Task History**
 
+```text
+[ Place Screenshot Here ]
+```
 
-![Backup Task History](images/Manual-Run-Result.png)
-
-
-> **Capture:** The task log filtered to backup tasks, showing several completed runs
-> with their status.
+> **Capture:** The **task log at the bottom of the interface**, filtered to backup tasks,
+> showing several completed runs and their status — ideally including one failure. This
+> is the task *list*, not the Output window of a single task, which is Screenshot 4.
 
 ---
 
