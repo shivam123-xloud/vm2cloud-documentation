@@ -114,9 +114,11 @@ Every page follows the same template: **Overview → When to Use → Prerequisit
 
 ## Coverage Status
 
-116 pages, 257 screenshots. Fully illustrated sections are marked ✅; the rest show how many `[ Place Screenshot Here ]` placeholders remain.
+165 content pages, 286 screenshots placed, 456 placeholders remaining.
 
-Every placeholder carries a **Capture:** line naming the exact screen and state to photograph, so screenshots can be worked through page by page without guessing what each one should show.
+**See [SCREENSHOTS.md](SCREENSHOTS.md) for the capture plan** — every outstanding placeholder grouped into ten phases that follow how a lab is built, so no panel needs revisiting.
+
+199 placeholders carry a **Capture:** line naming the exact screen and state to photograph. The rest are on older pages where the surrounding step text says what is wanted.
 
 | Section | Pages | Screenshots | Status |
 |---|---:|---:|---|
@@ -156,6 +158,7 @@ The remaining work is **screenshot capture** and clearing the `Verify` markers.
 
 ## Contributing
 
+- [SCREENSHOTS.md](SCREENSHOTS.md) — the capture plan, phased to match how a lab is built
 - [COVERAGE.md](COVERAGE.md) — every UI panel and CLI operation mapped against what is documented
 - [06-CLI-Reference.md](06-CLI-Reference.md) — command-line tools, and the operations with no UI equivalent
 - [CONTRIBUTING.md](CONTRIBUTING.md) — writing conventions, screenshot rules, file placement
