@@ -69,17 +69,18 @@ The **Add User** window opens.
 
 Enter the required information.
 
-Typical fields include:
+| Field | What it does |
+|---|---|
+| **User name** | The account name. Combined with the realm to form `name@realm`. |
+| **Realm** | Where the account authenticates. Cannot be changed after creation. |
+| **Password** / **Confirm password** | The account password. Shown only for realms that store passwords locally. |
+| **Group** | Groups the user joins immediately. The efficient way to grant access — see [Groups](Groups.md). |
+| **Expire** | Date the account stops working. `never` for no expiry. |
+| **Enabled** | Whether the account may log in. Clearing it blocks access without deleting anything. |
+| **First Name**, **Last Name**, **E-Mail** | Optional identity details. Email is used for notifications. |
+| **Comment** | Free text. Useful for recording why the account exists. |
 
-- User Name
-- Realm
-- Password
-- Confirm Password
-- Expire (Optional)
-- First Name (Optional)
-- Last Name (Optional)
-- Email (Optional)
-- Comment (Optional)
+Set **Group** here rather than later. A user created with no group has no permissions and sees an empty resource tree, which is usually mistaken for a broken account.
 - Enable Account
 
 Review the configuration before continuing.
@@ -127,14 +128,19 @@ The user is created and appears in the Users list.
 
 Modify the required information.
 
-Typical editable fields include:
+| Field | Editable |
+|---|---|
+| **User name** | No. Shown but fixed. |
+| **Realm** | No. Fixed at creation. |
+| **Group** | Yes. Add or remove group membership. |
+| **Expire** | Yes. |
+| **Enabled** | Yes. Clear it to block login without deleting the account. |
+| **First Name**, **Last Name**, **E-Mail** | Yes. |
+| **Comment** | Yes. |
 
-- First Name
-- Last Name
-- Email
-- Expire
-- Comment
-- Enable Account
+To change a password, use the **Password** button on the Users panel rather than the Edit dialog.
+
+> **Note:** Disabling an account is preferable to deleting it when someone leaves. It blocks access immediately while preserving the audit trail of what the account did.
 
 Click **OK** to save the changes.
 

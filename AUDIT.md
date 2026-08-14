@@ -12,7 +12,7 @@ This tracks **content correctness**, not screenshots. For screenshot progress se
 |---|---|---:|---|
 | 1 | Invented role names and duplicate sections in Permissions | 4 | ✅ Fixed |
 | 2 | Destructive operations with no safety warning | 11 | ✅ Fixed |
-| 3 | `Typical fields include` — fields hedged rather than named | 26 | ⏳ Open |
+| 3 | `Typical fields include` — fields hedged rather than named | 19 | ⏳ 7 pages fixed |
 | 4 | Vague instructions such as "Configure the required settings" | 12 | ⏳ Open |
 | 5 | Missing `Configuration / Options` section | 78 | ⏳ Open |
 | 6 | Missing `Best Practices` section | 55 | ⏳ Open |
@@ -54,7 +54,7 @@ Fixed 14 August 2026. Ten pages performed destructive operations with no warning
 
 # ⏳ 3. Fields hedged rather than named
 
-**26 pages, 37 instances.** These write `Typical fields include` followed by a bare list, instead of naming each field and what it does.
+**Started at 26 pages / 37 instances. Now 19 pages / 21 instances.** These write `Typical fields include` followed by a bare list, instead of naming each field and what it does.
 
 This is the rule the authoring spec is most explicit about:
 

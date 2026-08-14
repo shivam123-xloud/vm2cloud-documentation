@@ -56,12 +56,14 @@ Before modifying the DNS configuration, ensure that:
 
 The DNS page displays the current DNS settings.
 
-Typical information includes:
+| Field | What it shows |
+|---|---|
+| **Search domain** | Domain appended to short names, so `fileserver` resolves as `fileserver.example.com`. |
+| **DNS server 1** | Primary resolver. Queried first. |
+| **DNS server 2** | Used when the first does not answer. |
+| **DNS server 3** | Used when neither of the first two answers. |
 
-- Search Domain
-- DNS Server 1
-- DNS Server 2
-- DNS Server 3
+These are the node's own resolvers. Containers inherit them unless overridden — see [CT DNS](../../05-Containers/CT-DNS.md).
 
 Review the values to ensure they match your network configuration.
 
@@ -95,12 +97,16 @@ Review the values to ensure they match your network configuration.
 
 Configure the required values.
 
-Typical options include:
+| Field | What to enter |
+|---|---|
+| **Search domain** | Your internal domain. Leave empty if short names are not used. |
+| **DNS server 1** | The resolver to query first. |
+| **DNS server 2** | A second resolver, on different infrastructure from the first where possible. |
+| **DNS server 3** | Optional third resolver. |
 
-- Search Domain
-- DNS Server 1
-- DNS Server 2
-- DNS Server 3
+**Configure at least two servers.** With one, any outage of that resolver stops name resolution on the node — which presents as backups, updates, and cluster operations failing for unrelated-looking reasons rather than as an obvious DNS fault.
+
+In a cluster, use the same resolvers on every node unless there is a specific reason not to.
 
 After entering the required values, click **OK**.
 

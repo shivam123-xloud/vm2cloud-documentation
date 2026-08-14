@@ -56,11 +56,20 @@ Before modifying the Hosts configuration, ensure that:
 
 The Hosts page displays all configured hostname mappings.
 
-Typical information includes:
+Each entry maps an address to one or more names:
 
-- IP Address
-- Hostname
-- Aliases (if configured)
+| Element | Purpose |
+|---|---|
+| **IP address** | The address the names resolve to. |
+| **Hostname** | The primary fully qualified name for that address. |
+| **Aliases** | Additional short names for the same address. |
+
+The entry resolving **this node's own hostname** is the one that matters. The node reads its own address from it for cluster communication and certificate generation, so it must match the address actually configured on the management interface.
+
+> **Verify:** Confirm how this panel presents the file — as an editable plain-text view of
+> `/etc/hosts` with a Save control, or as a table with per-entry Add and Edit dialogs.
+> The procedure below assumes per-entry dialogs; if it is a text editor, these steps
+> need rewriting as "edit the line and save".
 
 Review the entries to verify that they are correct.
 
@@ -94,11 +103,13 @@ Review the entries to verify that they are correct.
 
 Enter the required information.
 
-Typical fields include:
+| Field | What to enter |
+|---|---|
+| **IP address** | The address being named. |
+| **Hostname** | The fully qualified name, such as `node1.example.com`. |
+| **Aliases** | Optional short names, such as `node1`. |
 
-- IP Address
-- Hostname
-- Aliases (optional)
+Give every cluster node an entry containing both its fully qualified name and its short name. Cluster communication resolves node names locally, so a missing or wrong entry produces join failures and certificate errors that look unrelated to DNS.
 
 After completing the required fields, click **Create**.
 
@@ -133,11 +144,13 @@ After completing the required fields, click **Create**.
 
 Modify the required information.
 
-Typical fields include:
+| Field | Notes |
+|---|---|
+| **IP address** | Change only when the node or host has genuinely moved. |
+| **Hostname** | The fully qualified name. |
+| **Aliases** | Short names. |
 
-- IP Address
-- Hostname
-- Aliases
+> **Warning:** Changing the address on this node's own entry without also changing the interface configuration leaves the two disagreeing. The node then advertises an address it does not hold, which breaks cluster join, certificate generation, and the cluster join information. Confirm with `hostname -i` after any change to this node's entry.
 
 Click **OK** to save the changes.
 

@@ -55,13 +55,14 @@ Before managing repositories, ensure that:
 
 The page displays the configured software repositories.
 
-Typical information includes:
+| Column | What it shows |
+|---|---|
+| **Enabled** | Whether the repository is currently used when checking for updates. |
+| **Component** | Which set of packages the repository provides. |
+| **Origin** | Who publishes it. |
+| **Status** | Whether the repository is reachable and correctly configured. |
 
-- Repository Name
-- Repository URL
-- Status
-- Component
-- Enabled or Disabled
+The panel also reports whether the node's overall repository configuration is suitable for its intended use — for example warning when a node is configured for one release channel but expected to be on another.
 
 Review the repository list to verify the current configuration.
 
@@ -99,11 +100,18 @@ Review the repository list to verify the current configuration.
 
 Provide the required information.
 
-Typical fields include:
+> **Verify:** Confirm how repositories are added in this deployment — whether **Add**
+> offers a list of known repositories to select from, or free-text fields for URL,
+> distribution, and component. The fields below assume free-text entry; if it is a
+> selection list, this step should be rewritten as "choose the repository from the list".
 
-- Repository URL
-- Distribution
-- Component
+| Field | What to enter |
+|---|---|
+| **Repository URL** | The base address the packages are served from. |
+| **Distribution** | The release the repository targets. Must match the node's release. |
+| **Component** | Which package set to enable from that repository. |
+
+> **Warning:** A repository targeting a different release than the node runs can offer packages that are incompatible with the installed system. Upgrading from a mismatched repository can leave the node unable to boot or its services unable to start.
 
 Click **Add** to save the configuration.
 

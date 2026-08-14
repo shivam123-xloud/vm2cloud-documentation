@@ -73,10 +73,12 @@ The **Create: Group** window opens.
 
 Enter the required information.
 
-Typical fields include:
+| Field | What it does |
+|---|---|
+| **Name** | Group identifier, used when assigning permissions. Cannot be changed after creation. |
+| **Comment** | Free text. Record which team the group represents and who owns it. |
 
-- Group Name
-- Comment (Optional)
+Name the group after the team or role it represents rather than the permission it currently holds — permissions change, teams persist.
 
 Review the configuration before continuing.
 
@@ -129,9 +131,10 @@ The new group appears in the Groups list.
 
 Modify the required information.
 
-Typical editable fields include:
-
-- Comment
+| Field | Editable |
+|---|---|
+| **Name** | No. Fixed at creation. To rename, create a new group, move the members and permissions, then remove the old one. |
+| **Comment** | Yes. |
 
 After making the required changes:
 
