@@ -59,9 +59,14 @@ The documented storage-replication implementation supports local ZFS storage. Ve
 
 ### Screenshot 1
 
+**Guest Replication View**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The guest's **Replication** tab with no jobs yet. Capture this before
+> creating the first one — the empty state cannot be recreated afterwards.
 
 ---
 
@@ -74,9 +79,13 @@ The documented storage-replication implementation supports local ZFS storage. Ve
 
 ### Screenshot 2
 
+**Create Replication Job Dialog**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The Create dialog as it opens, showing the guest field already filled in.
 
 The replication job is associated with a specific guest and target node.
 
@@ -92,9 +101,14 @@ The replication job is associated with a specific guest and target node.
 
 ### Screenshot 3
 
+**Target Node Selection**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The **Target** dropdown open, listing the nodes available as replication
+> targets.
 
 A guest can be replicated to multiple different target nodes, but the same guest cannot have two replication jobs targeting the same node.
 
@@ -111,9 +125,13 @@ A guest can be replicated to multiple different target nodes, but the same guest
 
 ### Screenshot 4
 
+**Schedule Field**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The **Schedule** field with its selector open, or a value entered.
 
 The underlying replication system supports configurable replication intervals from one minute up to one week.
 
@@ -130,9 +148,13 @@ If the VM2Cloud VE interface provides a bandwidth-limit field:
 
 ### Screenshot 5
 
+**Rate Limit Field**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The **Rate limit** field, showing the units the dialog expects.
 
 A replication job can have its bandwidth limited to prevent replication traffic from overloading storage or the server.
 
@@ -152,9 +174,15 @@ Before creating the job, verify:
 
 ### Screenshot 6
 
+**Completed Dialog Before Confirming**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The whole dialog with every field filled, just before **Create** is
+> clicked. This is the most useful single shot on the page — it names every field at
+> once.
 
 ---
 
@@ -168,9 +196,13 @@ Before creating the job, verify:
 
 ### Screenshot 7
 
+**New Job in the List**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The Replication list with the newly created job visible.
 
 ---
 
@@ -186,9 +218,14 @@ Before creating the job, verify:
 
 ### Screenshot 8
 
+**Job Status Columns**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The job row showing whether it is enabled, its status, and the next
+> scheduled run.
 
 ---
 
@@ -383,9 +420,13 @@ After creating the replication job:
 
 ### Screenshot 9
 
+**First Synchronization Task**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Task History showing the first replication task, completed successfully.
 
 ---
 
@@ -399,9 +440,14 @@ After creating the replication job:
 
 ### Screenshot 10
 
+**Replicated Data on the Target**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The target node's storage content, showing the replicated guest disk
+> present.
 
 ---
 
@@ -417,9 +463,14 @@ After creating the replication job:
 
 ### Screenshot 11
 
+**Failed Replication Task Output**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** A failed replication task with its **Output** open. If nothing has
+> failed, skip this one rather than staging a failure.
 
 ---
 

@@ -45,9 +45,13 @@ Before using the Shell, ensure that:
 
 ### Screenshot 1
 
+**Node Selected**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The node selected in the tree with the **Shell** button visible.
 
 ---
 
@@ -61,9 +65,13 @@ A new terminal window opens.
 
 ### Screenshot 2
 
+**Shell Window**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The terminal open at a root prompt.
 
 ---
 
@@ -87,9 +95,13 @@ node1
 
 ### Screenshot 3
 
+**Command and Output**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** A command run in the shell with its output — `hostname` or similar.
 
 ---
 

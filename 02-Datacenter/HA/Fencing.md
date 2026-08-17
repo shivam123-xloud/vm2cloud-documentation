@@ -99,9 +99,15 @@ This design means fencing works even when the node can no longer communicate wit
 
 ### Screenshot 1
 
+**Watchdog Active**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Node → Shell showing the watchdog device present and the HA services
+> running. Fencing itself cannot be photographed while it works, so this is the evidence
+> that it is armed.
 
 ---
 
@@ -117,9 +123,14 @@ Fencing depends on a healthy cluster, so verify the following before relying on 
 
 ### Screenshot 2
 
+**Fencing Readiness**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Datacenter → HA with the cluster status visible — quorum held, all nodes
+> communicating, HA services healthy.
 
 ---
 

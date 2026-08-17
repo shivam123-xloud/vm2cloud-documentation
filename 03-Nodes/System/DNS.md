@@ -46,9 +46,13 @@ Before modifying the DNS configuration, ensure that:
 
 ### Screenshot 1
 
+**DNS Page**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Node → System → DNS as it opens.
 
 ---
 
@@ -71,9 +75,13 @@ Review the values to ensure they match your network configuration.
 
 ### Screenshot 2
 
+**Current Resolvers**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The page showing the search domain and the configured DNS servers.
 
 ---
 
@@ -87,9 +95,13 @@ Review the values to ensure they match your network configuration.
 
 ### Screenshot 3
 
+**Edit Control**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The DNS page with **Edit** clicked.
 
 ---
 
@@ -114,9 +126,13 @@ After entering the required values, click **OK**.
 
 ### Screenshot 4
 
+**DNS Edit Dialog**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The dialog with all three server fields visible and filled.
 
 ---
 

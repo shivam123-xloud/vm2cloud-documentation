@@ -186,9 +186,13 @@ The user account is permanently removed.
 
 ### Screenshot 7
 
+**Delete User Confirmation**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The confirmation dialog shown when removing a user.
 
 ---
 

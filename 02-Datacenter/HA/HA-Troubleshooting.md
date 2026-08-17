@@ -74,9 +74,14 @@ Before troubleshooting HA:
 
 ### Screenshot 1
 
+**HA Resource State**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Datacenter → HA, Resources list with the failing resource selected. The
+> **State** and **Node** columns are what this step asks you to record.
 
 ---
 
@@ -93,9 +98,14 @@ Before troubleshooting HA:
 
 ### Screenshot 2
 
+**Cluster Health**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Datacenter → Cluster, showing the quorum line and the member list with
+> any node that is not healthy.
 
 A healthy HA environment requires a functioning cluster and quorum.
 
@@ -114,9 +124,14 @@ If quorum is lost, restore reliable cluster communication or restore the require
 
 ### Screenshot 3
 
+**Cluster Voting Members**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The cluster member list with an offline node visible, so a missing vote
+> can be seen rather than inferred.
 
 The underlying cluster uses a majority-based quorum model. When quorum is lost, cluster configuration becomes read-only to protect the distributed state.
 
@@ -136,9 +151,14 @@ The underlying cluster uses a majority-based quorum model. When quorum is lost, 
 
 ### Screenshot 4
 
+**Node Summary of the Suspect Node**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Node → Summary for the node the resource was running on — status,
+> storage, and whether the node is responding at all.
 
 If the node is unreachable, determine whether it is:
 
@@ -164,9 +184,14 @@ If the node is unreachable, determine whether it is:
 
 ### Screenshot 5
 
+**Resource in Error State**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Datacenter → HA with a resource showing an error or a pending request
+> state.
 
 Do not repeatedly start or migrate the resource while HA is already processing a recovery operation.
 
@@ -187,9 +212,14 @@ Do not repeatedly start or migrate the resource while HA is already processing a
 
 ### Screenshot 6
 
+**Failed HA Task Output**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Task History with a failed HA task open at its **Output** tab, so the
+> error text and its timestamp are both readable.
 
 Task history is often the first place to identify whether an HA operation failed because of storage, networking, node availability, or resource configuration.
 
@@ -211,9 +241,14 @@ If the HA resource is not recovering:
 
 ### Screenshot 7
 
+**Node Network Status**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Node → System → Network, showing the interface that carries cluster
+> traffic and its current state.
 
 The underlying cluster requires reliable communication between nodes. Corosync carries cluster communication and is critical to cluster stability.
 
@@ -239,9 +274,14 @@ Check:
 
 ### Screenshot 8
 
+**Syslog During the Failure**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Node → System → Syslog scrolled to the time of the failure, showing
+> restart, network, or communication errors.
 
 If Corosync is not running, investigate the underlying service and network configuration before attempting HA recovery.
 
@@ -279,9 +319,14 @@ Also review the node list shown by the command.
 
 ### Screenshot 9
 
+**Cluster Status From the Shell**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Node → Shell running `pvecm status`, with the **Flags** line and the node
+> list both visible in the same frame.
 
 Do not modify quorum values simply because the cluster reports that it is not quorate.
 
@@ -312,9 +357,14 @@ Review:
 
 ### Screenshot 10
 
+**HA Service Status**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Node → Shell running `systemctl status pve-ha-lrm pve-ha-crm`, showing
+> whether the services are active or failed.
 
 The HA services are responsible for local resource management and cluster-wide HA management.
 
@@ -336,9 +386,14 @@ If the resource cannot start or recover:
 
 ### Screenshot 11
 
+**Rules Affecting the Resource**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The HA rules list showing every node-affinity and resource-affinity rule
+> that names the failing resource.
 
 ---
 
@@ -357,9 +412,14 @@ Check:
 
 ### Screenshot 12
 
+**Guest Hardware Requirements**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The guest's **Hardware** panel, showing the network devices and any
+> passthrough hardware the target node must also provide.
 
 If the target node cannot satisfy the resource requirements, identify another eligible node or correct the resource constraints.
 
@@ -381,9 +441,14 @@ If the VM or container cannot start:
 
 ### Screenshot 13
 
+**Target Node Storage Content**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Storage → Content on the target node, showing whether the guest's disk
+> exists and is reachable there.
 
 An HA resource cannot recover successfully if required storage is unavailable.
 
@@ -405,9 +470,14 @@ If the resource starts but cannot provide network connectivity:
 
 ### Screenshot 14
 
+**Bridge and Interface State**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Node → System → Network on the target node, showing the bridge the guest
+> expects and the physical interface beneath it.
 
 ---
 
@@ -425,9 +495,14 @@ If the resource cannot be placed on a node:
 
 ### Screenshot 15
 
+**Placement Restrictions**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The affinity rules panel showing the rule that excludes the target node,
+> or the negative rule creating the conflict.
 
 > **Warning:** Overly restrictive placement rules can prevent HA resources from finding an eligible recovery node.
 
@@ -448,9 +523,14 @@ If a node suddenly became unavailable:
 
 ### Screenshot 16
 
+**Cluster State After Fencing**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Datacenter → Cluster immediately after a node was fenced — the reduced
+> member list and the quorum line.
 
 > **Warning:** Do not manually start a resource elsewhere unless you are certain that the original node cannot still run that resource.
 
@@ -470,9 +550,14 @@ Review whether a watchdog device exists.
 
 ### Screenshot 17
 
+**Watchdog Device**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Node → Shell running `ls -l /dev/watchdog*`, showing whether the device
+> exists.
 
 If the watchdog device is unavailable, investigate the node's hardware and watchdog configuration before relying on HA fencing.
 
@@ -518,9 +603,14 @@ Look for:
 
 ### Screenshot 18
 
+**Cluster Log Around the Event**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The cluster log covering the failure window, showing the fencing and
+> recovery sequence in order.
 
 ---
 
@@ -773,9 +863,14 @@ After resolving an HA problem:
 
 ### Screenshot 19
 
+**Recovered Resource**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Datacenter → HA after recovery — the resource back to `started` on a
+> healthy node, with no errors remaining.
 
 ---
 

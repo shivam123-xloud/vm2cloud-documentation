@@ -320,13 +320,19 @@ Follow [CONTRIBUTING.md](CONTRIBUTING.md). In short:
 - Delete the `Capture:` line along with the placeholder
 - No real hostnames, addresses, licence keys, or credentials
 
-**199 placeholders already carry a `Capture:` line** naming the exact screen and state. The remaining 257 are on the older pages and do not — the surrounding step text says what is wanted.
+**Every one of the 421 placeholders carries a `Capture:` line** naming the exact screen and state to shoot. You should never have to read the surrounding prose to work out what was wanted.
+
+Some carry an instruction beyond the framing — blur a licence key or a token secret, snapshot before causing a failure, or skip the shot entirely rather than staging a fault. Those are worth reading before you press the shutter.
 
 ---
 
 # While You Are There
 
-**Clear the `Verify:` markers.** 101 of them flag UI labels, field lists, and option sets that could not be confirmed without a live environment. You are about to be looking at every one of those screens.
+**Clear the `Verify:` markers.** 126 of them flag UI labels, field lists, and option sets that could not be confirmed without a live environment. You are about to be looking at every one of those screens.
+
+Where a screenshot settles one, its `Capture:` line says so — look for **"this clears a `Verify` marker."** Those are the highest-value shots in the set, because they fix correctness rather than only illustrating it. Thirteen are called out that way:
+
+Hosts · Roles privilege picker · HA requested-state list · 2FA method list · Realms list · Node-affinity label and enforcement control · Resource-affinity types · Kernel default control · Certificates upload control · Repositories panel · Datacenter Options location · Quorum display · Header bar
 
 ```bash
 grep -rn '> \*\*Verify:\*\*' --include='*.md' . \

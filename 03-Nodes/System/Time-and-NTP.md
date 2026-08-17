@@ -49,9 +49,13 @@ Before modifying the time settings, ensure that:
 
 ### Screenshot 1
 
+**Time Page**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Node → System → Time as it opens.
 
 ---
 
@@ -69,9 +73,14 @@ Review the displayed information to verify that the node is using the correct sy
 
 ### Screenshot 2
 
+**Time Information**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The same page showing current date, current time, and configured time
+> zone.
 
 ---
 
@@ -85,9 +94,13 @@ Review the displayed information to verify that the node is using the correct sy
 
 ### Screenshot 3
 
+**Time Zone Control**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The Time page with the **Time Zone** control visible.
 
 ---
 
@@ -102,9 +115,13 @@ The selected time zone is applied to the node.
 
 ### Screenshot 4
 
+**Time Zone Dialog**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The time-zone selector open, listing the available zones.
 
 ---
 
@@ -128,9 +145,13 @@ Typical information includes:
 
 ### Screenshot 5
 
+**Network Time Section**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The NTP portion of the Time page — service status and configured servers.
 
 ---
 
@@ -142,9 +163,14 @@ Review the displayed information to ensure the node is synchronizing correctly.
 
 ### Screenshot 6
 
+**Synchronization Status**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The same section showing the current time source and last
+> synchronization.
 
 ---
 
@@ -158,9 +184,13 @@ Review the displayed information to ensure the node is synchronizing correctly.
 
 ### Screenshot 7
 
+**Edit Network Time**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The **Edit** control for the Network Time section.
 
 ---
 
@@ -181,9 +211,14 @@ Click **OK** to save the configuration.
 
 ### Screenshot 8
 
+**NTP Server Configuration**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The NTP edit dialog with servers entered, showing exactly how multiple
+> servers are separated.
 
 ---
 
@@ -199,9 +234,14 @@ After saving the configuration:
 
 ### Screenshot 9
 
+**Verified Synchronization**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The Time page after saving, showing the node synchronized and the time
+> correct.
 
 ---
 

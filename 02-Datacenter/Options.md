@@ -47,9 +47,14 @@ Before modifying cluster options, ensure that:
 
 ### Screenshot 1
 
+**Datacenter Options Panel**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Datacenter → Options. **This clears a `Verify` marker** — the page
+> describes it as a tab under Cluster, which may not match this deployment.
 
 ---
 
@@ -69,9 +74,14 @@ Review the current configuration before making any changes.
 
 ### Screenshot 2
 
+**Option List**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The full list of options with their current values. Get it in one shot if
+> it fits — this is the reference the page needs.
 
 ---
 
@@ -88,9 +98,13 @@ Changes are applied to the cluster configuration and synchronized across all nod
 
 ### Screenshot 3
 
+**Edit an Option**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** An option open for editing, showing the value control it uses.
 
 ---
 

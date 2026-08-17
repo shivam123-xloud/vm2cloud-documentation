@@ -46,9 +46,13 @@ Before managing kernels, ensure that:
 
 ### Screenshot 1
 
+**Kernel Page**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Node → System → Kernel as it opens.
 
 ---
 
@@ -67,9 +71,14 @@ Review the information to verify the current kernel configuration.
 
 ### Screenshot 2
 
+**Installed Kernels**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The list showing each version, which is currently running, and which
+> boots by default.
 
 ---
 
@@ -88,9 +97,14 @@ Review the information to verify the current kernel configuration.
 
 ### Screenshot 3
 
+**Select a Kernel**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** A kernel selected with the action buttons visible. **This clears a
+> `Verify` marker** — whether the control is **Set as Default** or **Edit**.
 
 ---
 
@@ -105,9 +119,13 @@ The selected kernel becomes the default kernel for the next system boot.
 
 ### Screenshot 4
 
+**Confirm Default Change**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The confirmation dialog.
 
 ---
 
@@ -130,9 +148,13 @@ The selected kernel becomes the default kernel for the next system boot.
 
 ### Screenshot 5
 
+**Remove a Kernel**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** An unused kernel selected with **Remove** available.
 
 ---
 
@@ -147,9 +169,13 @@ The selected kernel package is removed from the node.
 
 ### Screenshot 6
 
+**Removal Confirmation**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The confirmation dialog, showing which kernel is about to be removed.
 
 ---
 

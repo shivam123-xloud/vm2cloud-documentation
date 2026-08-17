@@ -46,9 +46,13 @@ Before viewing the system logs, ensure that:
 
 ### Screenshot 1
 
+**Syslog Page**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Node → System → Syslog as it opens.
 
 ---
 
@@ -69,9 +73,13 @@ Review the log entries to identify warnings, errors, or other system events.
 
 ### Screenshot 2
 
+**Log Entries**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Entries showing timestamp, service, and message.
 
 ---
 
@@ -85,9 +93,14 @@ Refresh the page to view the latest log messages.
 
 ### Screenshot 3
 
+**Refreshed View**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The panel after new entries have arrived, ideally including a warning or
+> error line.
 
 ---
 

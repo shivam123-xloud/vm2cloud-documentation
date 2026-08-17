@@ -71,9 +71,14 @@ Before configuring resource affinity:
 
 ### Screenshot 1
 
+**HA Rules Panel**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Datacenter → HA showing the rules section before any rule exists. One-
+> time empty state.
 
 ---
 
@@ -90,9 +95,14 @@ Use positive affinity for workloads that communicate heavily or depend on each o
 
 ### Screenshot 2
 
+**Affinity Type Selection**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The create dialog with the affinity type control visible, showing how
+> positive and negative are actually labelled. **This clears a `Verify` marker.**
 
 ---
 
@@ -108,9 +118,13 @@ A rule must reference at least two HA resources to be meaningful.
 
 ### Screenshot 3
 
+**Rule Configured**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The dialog with a name, a type, and at least two resources selected.
 
 ---
 
@@ -122,9 +136,13 @@ A rule must reference at least two HA resources to be meaningful.
 
 ### Screenshot 4
 
+**Rule in the List**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The rules list showing the saved rule and the resources it names.
 
 ---
 

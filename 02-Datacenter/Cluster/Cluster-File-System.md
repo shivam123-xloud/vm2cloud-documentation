@@ -97,9 +97,14 @@ The directory contains cluster configuration files and folders managed by VM2Clo
 
 ### Screenshot 1
 
+**Cluster Configuration Directory**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Node → Shell showing `ls /etc/pve` output, with the cluster configuration
+> files and per-node directories listed.
 
 ---
 

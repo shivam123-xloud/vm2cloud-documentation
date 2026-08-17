@@ -63,9 +63,13 @@ Before editing a replication job:
 
 ### Screenshot 1
 
+**Guest Replication View**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The guest's **Replication** tab with the job to be changed listed.
 
 ---
 
@@ -77,9 +81,13 @@ Before editing a replication job:
 
 ### Screenshot 2
 
+**Job Selected**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The job selected with **Edit** available, current values visible.
 
 ---
 
@@ -98,9 +106,14 @@ Editable settings typically include:
 
 ### Screenshot 3
 
+**Edit Dialog**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The dialog open, showing which fields are editable — and that the target
+> node is not among them.
 
 ---
 
@@ -112,9 +125,13 @@ Editable settings typically include:
 
 ### Screenshot 4
 
+**Modified Configuration**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The dialog with the changed values, before saving.
 
 ---
 
@@ -126,9 +143,13 @@ Editable settings typically include:
 
 ### Screenshot 5
 
+**Updated Job**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The job list showing the new values and the recalculated next run.
 
 ---
 

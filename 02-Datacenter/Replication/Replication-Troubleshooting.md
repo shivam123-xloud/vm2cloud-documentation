@@ -106,9 +106,14 @@ Do not change multiple configuration items at the same time unless required.
 
 ### Screenshot 1
 
+**Affected Replication Job**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The job list with the failing job selected — source, target, and status
+> all visible.
 
 ---
 
@@ -125,9 +130,14 @@ Do not change multiple configuration items at the same time unless required.
 
 ### Screenshot 2
 
+**Failed Task Output**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Task History with the failed replication task open at its **Output** tab,
+> error text readable.
 
 > **Important:** The task output is normally the first place to look when a replication operation fails.
 
@@ -147,9 +157,14 @@ Do not change multiple configuration items at the same time unless required.
 
 ### Screenshot 3
 
+**Job Configuration Review**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The job's Edit dialog opened to check the configuration. Close it without
+> saving.
 
 ---
 
@@ -637,9 +652,14 @@ After correcting a replication problem:
 
 ### Screenshot 4
 
+**Successful Run After Fixing**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Task History showing a completed replication task after the problem was
+> resolved.
 
 ---
 

@@ -68,9 +68,14 @@ In this example, VM 100 runs on node1. If VM 100 is registered as an HA resource
 
 ### Screenshot 1
 
+**HA Panel**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Datacenter → HA before any resource is added. One-time empty state —
+> capture it before the first resource.
 
 ---
 
@@ -83,9 +88,13 @@ In this example, VM 100 runs on node1. If VM 100 is registered as an HA resource
 
 ### Screenshot 2
 
+**Add Resource Dialog**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The Add dialog showing the guest selector and every option it offers.
 
 ---
 
@@ -104,9 +113,14 @@ Select the state that matches the workload requirement.
 
 ### Screenshot 3
 
+**Requested State Selector**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The state dropdown open, showing every value it contains. **This clears a
+> `Verify` marker** — the state list on this page is inferred.
 
 ---
 
@@ -116,9 +130,14 @@ Confirm that the resource appears in the HA resource list with the expected stat
 
 ### Screenshot 4
 
+**Managed Resource**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The resource list showing the guest with its requested state and current
+> node.
 
 ---
 

@@ -45,9 +45,14 @@ The Groups page displays all configured groups.
 
 ### Screenshot 1
 
+**Groups Page**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Datacenter → Permissions → Groups. Capture before creating any group —
+> the empty list is a one-time shot.
 
 ---
 
@@ -63,9 +68,13 @@ The **Create: Group** window opens.
 
 ### Screenshot 2
 
+**Create Group Window**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The Create: Group dialog as it opens, still empty.
 
 ---
 
@@ -86,9 +95,13 @@ Review the configuration before continuing.
 
 ### Screenshot 3
 
+**Group Configured**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The same dialog with **Name** and **Comment** filled in.
 
 ---
 
@@ -102,9 +115,13 @@ The new group appears in the Groups list.
 
 ### Screenshot 4
 
+**New Group in the List**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The Groups list with the created group visible.
 
 ---
 
@@ -121,9 +138,13 @@ The new group appears in the Groups list.
 
 ### Screenshot 5
 
+**Edit Group**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** A group selected with **Edit** clicked.
 
 ---
 
@@ -146,9 +167,14 @@ The updated information is saved.
 
 ### Screenshot 6
 
+**Group Edit Dialog**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The edit dialog showing **Name** fixed and **Comment** editable — the
+> distinction the page makes.
 
 ---
 
@@ -173,9 +199,13 @@ The selected users become members of the group.
 
 ### Screenshot 7
 
+**Add Members**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The **Members** tab with the user selection dialog open.
 
 ---
 
@@ -195,9 +225,13 @@ Removing a user from a group immediately removes the permissions inherited from 
 
 ### Screenshot 8
 
+**Remove a Member**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The **Members** tab with a user selected and **Remove** available.
 
 ---
 
@@ -218,9 +252,13 @@ The group is permanently removed.
 
 ### Screenshot 9
 
+**Remove Group Confirmation**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The confirmation dialog shown when removing a group.
 
 ---
 

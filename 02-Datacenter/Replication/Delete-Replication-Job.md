@@ -60,9 +60,13 @@ Before deleting a replication job:
 
 ### Screenshot 1
 
+**Guest Replication View**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The guest's **Replication** tab with the job to be removed listed.
 
 ---
 
@@ -74,9 +78,14 @@ Before deleting a replication job:
 
 ### Screenshot 2
 
+**Job Selected**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The job selected, its ID and target node visible so the right one is
+> confirmed.
 
 ---
 
@@ -88,9 +97,13 @@ Before deleting a replication job:
 
 ### Screenshot 3
 
+**Removal Confirmation**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The confirmation dialog.
 
 ---
 
@@ -102,9 +115,13 @@ Before deleting a replication job:
 
 ### Screenshot 4
 
+**Job Removed**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The replication list after deletion, showing the job gone.
 
 ---
 

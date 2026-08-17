@@ -45,9 +45,13 @@ Before viewing Task History, ensure that:
 
 ### Screenshot 1
 
+**Task History Page**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Node → Task History with a populated list.
 
 ---
 
@@ -69,9 +73,13 @@ Depending on the VM2Cloud VE version, task information may include:
 
 ### Screenshot 2
 
+**Task Columns**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The same list showing user, node, type, status, and task ID.
 
 ---
 
@@ -86,9 +94,13 @@ Depending on the VM2Cloud VE version, task information may include:
 
 ### Screenshot 3
 
+**Task Selected**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** A task opened for detail.
 
 ---
 
@@ -107,9 +119,14 @@ For failed operations, use the displayed error information to identify the cause
 
 ### Screenshot 4
 
+**Task Output**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The **Output** tab of a task — ideally a failed one, so an actual error
+> is visible.
 
 ---
 

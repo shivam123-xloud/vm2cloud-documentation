@@ -75,9 +75,14 @@ If cluster communication is healthy, certificate synchronization is typically fu
 
 ### Screenshot 1
 
+**Healthy Cluster**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Datacenter → Cluster with all nodes online. That is the interface-level
+> indication that certificate synchronization is working.
 
 ---
 
@@ -103,9 +108,14 @@ ls -l /etc/pve/local
 
 ### Screenshot 2
 
+**Certificate Directory**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Node → Shell showing the output of `ls -l /etc/pve/nodes/` and `ls -l
+> /etc/pve/local`.
 
 ---
 

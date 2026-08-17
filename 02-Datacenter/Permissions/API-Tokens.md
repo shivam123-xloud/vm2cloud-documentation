@@ -48,9 +48,13 @@ The API Tokens page displays all configured API Tokens.
 
 ### Screenshot 1
 
+**API Tokens Page**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Datacenter → Permissions → API Tokens, before any token exists.
 
 ---
 
@@ -66,9 +70,14 @@ The Add API Token window opens.
 
 ### Screenshot 2
 
+**Add API Token Window**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The Add dialog as it opens, showing the user, token ID, and privilege
+> separation fields.
 
 ---
 
@@ -112,9 +121,14 @@ When disabled, the token inherits all permissions assigned to the associated use
 
 ### Screenshot 3
 
+**Privilege Separation Option**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The dialog with **Privilege Separation** visible and its default state
+> clear.
 
 ---
 
@@ -130,9 +144,15 @@ VM2Cloud VE generates the API Token.
 
 ### Screenshot 4
 
+**Generated Token Value**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The dialog shown after creation, which displays the secret once. **Blur
+> the secret** before saving the image — the point of the shot is that the value appears
+> here and nowhere else.
 
 ---
 
@@ -152,9 +172,14 @@ The page displays information such as:
 
 ### Screenshot 5
 
+**Token List Columns**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The list showing user, token ID, enabled state, expiry, and privilege
+> separation.
 
 ---
 
@@ -171,9 +196,13 @@ Disabling an API Token immediately prevents it from being used for authenticatio
 
 ### Screenshot 6
 
+**Edit a Token**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** A token open for editing, showing which fields can still be changed.
 
 ---
 
@@ -191,9 +220,13 @@ Disabling an API Token immediately prevents it from being used for authenticatio
 
 ### Screenshot 7
 
+**Remove a Token**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The removal confirmation.
 
 ---
 

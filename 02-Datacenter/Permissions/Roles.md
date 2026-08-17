@@ -45,9 +45,14 @@ The Roles page displays all predefined and custom roles.
 
 ### Screenshot 1
 
+**Roles Page**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Datacenter → Permissions → Roles showing the predefined roles. **Capture
+> the whole list** — it confirms every role name documented on this page.
 
 ---
 
@@ -66,9 +71,14 @@ Select a role to view the privileges included in that role.
 
 ### Screenshot 2
 
+**Role Privileges**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** A role selected, showing the privileges it contains. Pick `PVEVMAdmin` or
+> similar rather than `Administrator`, so real privilege names are visible.
 
 ---
 
@@ -84,9 +94,13 @@ The Create Role window opens.
 
 ### Screenshot 3
 
+**Create Role Window**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The Create dialog as it opens.
 
 ---
 
@@ -107,9 +121,15 @@ Review the configuration before continuing.
 
 ### Screenshot 4
 
+**Privilege Selection**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The privilege picker open, showing how privileges are grouped. **This
+> clears a `Verify` marker** — the privilege table on this page came from reference
+> material, not from this deployment.
 
 ---
 
@@ -123,9 +143,13 @@ The new role appears in the Roles list.
 
 ### Screenshot 5
 
+**New Role in the List**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The Roles list with the custom role added.
 
 ---
 
@@ -144,9 +168,13 @@ The new role appears in the Roles list.
 
 ### Screenshot 6
 
+**Edit a Custom Role**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** A custom role open for editing.
 
 ---
 
@@ -166,9 +194,14 @@ The new role appears in the Roles list.
 
 ### Screenshot 7
 
+**Remove a Custom Role**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The removal confirmation. If you can frame a system role alongside it
+> showing **Remove** unavailable, better still.
 
 ---
 

@@ -45,9 +45,14 @@ Before managing repositories, ensure that:
 
 ### Screenshot 1
 
+**Repositories Page**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Node → Repositories as it opens. **This clears a `Verify` marker** — the
+> exact panel location and its column set.
 
 ---
 
@@ -70,9 +75,14 @@ Review the repository list to verify the current configuration.
 
 ### Screenshot 2
 
+**Repository List**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The configured repositories with their status, including any warning
+> banner the panel displays about the overall configuration.
 
 ---
 
@@ -90,9 +100,13 @@ Review the repository list to verify the current configuration.
 
 ### Screenshot 3
 
+**Add Repository Dialog**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The Add dialog as it opens.
 
 ---
 
@@ -119,9 +133,14 @@ Click **Add** to save the configuration.
 
 ### Screenshot 4
 
+**Repository Fields**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The dialog with the fields filled, showing which are required and which
+> are optional.
 
 ---
 
@@ -138,9 +157,14 @@ The repository status is updated immediately.
 
 ### Screenshot 5
 
+**Enable or Disable**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** A repository selected with the enable/disable control visible and its
+> status changing.
 
 ---
 

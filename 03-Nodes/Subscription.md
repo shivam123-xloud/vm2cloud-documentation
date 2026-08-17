@@ -44,9 +44,13 @@ Before viewing Subscription information, ensure that:
 
 ### Screenshot 1
 
+**Subscription Page**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Node → Subscription as it opens.
 
 ---
 
@@ -66,9 +70,13 @@ Depending on the VM2Cloud VE version, information may include:
 
 ### Screenshot 2
 
+**Subscription Status**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The status detail. **Blur any licence key** before saving.
 
 ---
 
@@ -98,9 +106,13 @@ After adding or changing subscription information:
 
 ### Screenshot 3
 
+**Verified Subscription**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The page after the status has been checked, showing no errors.
 
 ---
 

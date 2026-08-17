@@ -67,9 +67,13 @@ Verify the storage type in the actual VM2Cloud VE environment before creating a 
 
 ### Screenshot 1
 
+**Datacenter Replication Panel**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Datacenter → Replication, showing every job in the cluster.
 
 The Replication view can also be accessed at node or guest level. The displayed jobs depend on the selected level.
 
@@ -92,9 +96,14 @@ Check:
 
 ### Screenshot 2
 
+**Job Columns**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The list showing schedule, status, last successful sync, rate limit, and
+> enabled state.
 
 ---
 
@@ -127,9 +136,14 @@ Replication jobs are associated with a specific guest and target node.
 
 ### Screenshot 3
 
+**Create Dialog From Datacenter Level**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The Create dialog opened here rather than from a guest, so the guest
+> selector is visible.
 
 The exact button labels can vary between VM2Cloud VE releases because VM2Cloud VE follows the underlying platform version.
 
@@ -380,9 +394,13 @@ After creating a replication job:
 
 ### Screenshot 4
 
+**Job Running Normally**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** A job with a recent successful sync and a next run scheduled.
 
 ---
 
@@ -409,9 +427,13 @@ A successful replication job should show that synchronization completed without 
 
 ### Screenshot 5
 
+**Replicated Data on the Target**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The target node's storage content listing the replicated volume.
 
 ---
 
@@ -541,9 +563,14 @@ Resolution:
 
 ### Screenshot 6
 
+**Job Reporting an Error**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** A job row in an error state. Skip this if nothing has failed — do not
+> stage a failure for it.
 
 ---
 

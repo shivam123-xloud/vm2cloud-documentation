@@ -43,9 +43,13 @@ Before using Search, ensure that:
 
 ### Screenshot 1
 
+**Search Box**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The search field at the top of the interface, empty.
 
 ---
 
@@ -68,9 +72,14 @@ Matching results are displayed automatically while typing.
 
 ### Screenshot 2
 
+**Search Results**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Results appearing as a term is typed, showing guests and storage matched
+> together.
 
 ---
 
@@ -84,9 +93,14 @@ The VM2Cloud VE interface automatically opens the selected resource.
 
 ### Screenshot 3
 
+**Resource Opened**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The interface after selecting a result, showing it jumped to that
+> resource.
 
 ---
 

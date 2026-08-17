@@ -55,6 +55,8 @@ Before updating a node, ensure that:
 [ Place Screenshot Here ]
 ```
 
+> **Capture:** The node selected in the resource tree.
+
 ---
 
 ## Step 2: Open Updates
@@ -72,6 +74,8 @@ Before updating a node, ensure that:
 [ Place Screenshot Here ]
 ```
 
+> **Capture:** Node → Updates, showing the package list.
+
 ---
 
 ## Step 3: Refresh the Package List
@@ -88,6 +92,8 @@ Before updating a node, ensure that:
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The task window that opens when **Refresh** is clicked.
 
 ---
 
@@ -115,6 +121,9 @@ Information displayed may include:
 [ Place Screenshot Here ]
 ```
 
+> **Capture:** The list showing current version, available version, and package
+> description.
+
 ---
 
 ## Step 5: Install Updates
@@ -134,6 +143,8 @@ Information displayed may include:
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The console that opens when **Upgrade** runs, mid-installation.
 
 ---
 

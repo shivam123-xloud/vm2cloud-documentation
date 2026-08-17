@@ -86,9 +86,15 @@ Depending on your VM2Cloud VE deployment, one or more of the following realm typ
 
 ### Screenshot 3
 
+**Realms Panel**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Datacenter → Permissions → Realms, showing every realm this deployment
+> offers. **This clears the `Verify` marker above** — the realm list on this page is
+> inferred.
 
 ---
 
@@ -120,9 +126,13 @@ Depending on your VM2Cloud VE deployment, one or more of the following realm typ
 
 ### Screenshot 5
 
+**Edit a Realm**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** A realm open for editing, showing its settings.
 
 ---
 
@@ -138,9 +148,13 @@ Depending on your VM2Cloud VE deployment, one or more of the following realm typ
 
 ### Screenshot 6
 
+**Remove a Realm**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The removal confirmation.
 
 ---
 

@@ -69,9 +69,14 @@ Before configuring node affinity:
 
 ### Screenshot 1
 
+**HA Placement Configuration**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Datacenter → HA, the node-affinity section. **This clears the `Verify`
+> marker above** — the exact menu label.
 
 ---
 
@@ -87,9 +92,14 @@ Higher-priority nodes are preferred. Lower-priority nodes act as fallback target
 
 ### Screenshot 2
 
+**Create Node-Affinity Rule**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The dialog with resources and nodes selected, and node priorities if this
+> version offers them.
 
 ---
 
@@ -106,9 +116,14 @@ Use strict placement only when the workload genuinely cannot run on other nodes,
 
 ### Screenshot 3
 
+**Enforcement Behaviour**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The control that sets preferred against strict, showing its exact
+> wording.
 
 ---
 
@@ -121,9 +136,13 @@ Use strict placement only when the workload genuinely cannot run on other nodes,
 
 ### Screenshot 4
 
+**Rule Saved**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The placement list showing the rule and the resources it affects.
 
 ---
 

@@ -48,9 +48,13 @@ The Two-Factor Authentication page displays the available 2FA configuration opti
 
 ### Screenshot 1
 
+**Two Factor Panel**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Datacenter → Permissions → Two Factor.
 
 ---
 
@@ -70,9 +74,14 @@ Depending on your VM2Cloud VE deployment, one or more of the following authentic
 
 ### Screenshot 2
 
+**Available Methods**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The method list or type dropdown open. **This clears the `Verify` marker
+> above** — the method list on this page is inferred.
 
 ---
 
@@ -88,9 +97,13 @@ The Add Two-Factor Authentication window opens.
 
 ### Screenshot 3
 
+**Add 2FA Window**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The Add dialog as it opens.
 
 ---
 
@@ -110,9 +123,14 @@ Complete the required configuration.
 
 ### Screenshot 4
 
+**Method Configuration**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The dialog after choosing TOTP, showing the QR code and secret. **Blur
+> both** before saving the image.
 
 ---
 
@@ -126,9 +144,13 @@ The Two-Factor Authentication method is configured for the selected user.
 
 ### Screenshot 5
 
+**Configured Method**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The panel showing the method attached to a user.
 
 ---
 
@@ -148,9 +170,13 @@ The selected authentication method is removed.
 
 ### Screenshot 6
 
+**Remove a Method**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The removal confirmation.
 
 ---
 

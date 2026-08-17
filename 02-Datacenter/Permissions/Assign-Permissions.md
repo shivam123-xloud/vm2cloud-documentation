@@ -45,9 +45,13 @@ The Permissions page displays all configured permission entries.
 
 ### Screenshot 1
 
+**Permissions Page**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Datacenter → Permissions, the root panel listing permission entries.
 
 ---
 
@@ -63,9 +67,14 @@ The Add Permission window opens.
 
 ### Screenshot 2
 
+**Add Permission Window**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The Add dialog as it opens, showing the path, user or group, role, and
+> propagate fields.
 
 ---
 
@@ -117,9 +126,13 @@ Enable **Propagate** if the permission should automatically apply to child resou
 
 ### Screenshot 3
 
+**Propagate Option**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The dialog with **Propagate** visible and its default state clear.
 
 ---
 
@@ -133,9 +146,13 @@ The permission appears in the Permissions list.
 
 ### Screenshot 4
 
+**Permission Created**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The list showing the new entry with its path, principal, and role.
 
 ---
 
@@ -164,9 +181,13 @@ The permission is removed immediately.
 
 ### Screenshot 5
 
+**Remove Permission**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The removal confirmation.
 
 ---
 

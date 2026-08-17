@@ -60,9 +60,13 @@ Select a resource from the navigation panel to open its management page.
 
 ### Screenshot 1
 
+**Navigation Panel**
+
 ```text id="dash01"
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The Datacenter-level menu expanded in the left panel.
 
 ---
 
@@ -85,9 +89,13 @@ The tree automatically expands as additional resources are added.
 
 ### Screenshot 2
 
+**Resource Tree**
+
 ```text id="dash02"
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The tree with nodes, guests, and storage all visible and expanded.
 
 ---
 
@@ -110,9 +118,14 @@ Examples include:
 
 ### Screenshot 3
 
+**Workspace**
+
 ```text id="dash03"
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** A resource selected, so the right-hand content area is populated rather
+> than blank.
 
 ---
 
@@ -134,9 +147,13 @@ Search results are displayed as you type.
 
 ### Screenshot 4
 
+**Search Box**
+
 ```text id="dash04"
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The search field at the top of the interface with a term typed into it.
 
 ---
 
@@ -158,9 +175,14 @@ Depending on your VM2Cloud VE deployment, it may include:
 
 ### Screenshot 5
 
+**Header Bar**
+
 ```text id="dash05"
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The top bar showing every button it carries. **This clears a `Verify`
+> marker** — the button list on this page is inferred.
 
 ---
 
@@ -181,9 +203,13 @@ The available options depend on the user's permissions.
 
 ### Screenshot 6
 
+**User Menu**
+
 ```text id="dash06"
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The user menu open, showing its entries.
 
 ---
 
@@ -206,9 +232,13 @@ Task status helps administrators monitor the progress of management activities.
 
 ### Screenshot 7
 
+**Task Viewer**
+
 ```text id="dash07"
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The bottom panel with a task in progress or recently finished.
 
 ---
 

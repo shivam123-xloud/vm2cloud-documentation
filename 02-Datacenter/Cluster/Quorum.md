@@ -91,9 +91,14 @@ For production clusters:
 
 ### Screenshot 1
 
+**Cluster Status**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Datacenter → Cluster showing the quorum state. **This clears the `Verify`
+> marker above** — whether quorum appears here or on a separate view.
 
 ---
 
@@ -107,9 +112,13 @@ For production clusters:
 
 ### Screenshot 2
 
+**Cluster Node List**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** All nodes listed with their current status.
 
 Each normal cluster node contributes one vote to the cluster.
 
@@ -131,9 +140,14 @@ Review:
 
 ### Screenshot 3
 
+**Quorum Details**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Wherever expected votes, total votes, and the quorum requirement are
+> shown. If the interface does not show them, use `pvecm status` in the Shell.
 
 ---
 
@@ -193,9 +207,13 @@ The cluster can still remain quorate because two of three votes form a majority.
 
 ### Screenshot 4
 
+**Votes With All Nodes Online**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** `pvecm status` with all three votes present.
 
 ---
 
@@ -238,9 +256,14 @@ When a node becomes unavailable:
 
 ### Screenshot 5
 
+**Votes With a Node Down**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The same view after shutting one node down — two of three, still quorate.
+> **Snapshot before you do this.**
 
 Do not immediately change quorum configuration simply because one node is offline.
 
@@ -265,9 +288,14 @@ If the cluster is not quorate:
 
 ### Screenshot 6
 
+**Quorum Lost**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The state with two nodes down, showing the cluster inquorate. This is the
+> shot the page exists for, and the only way to get it is to cause it.
 
 ---
 
@@ -401,9 +429,13 @@ After checking or recovering quorum:
 
 ### Screenshot 7
 
+**Quorum Restored**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The cluster healthy again after the nodes return.
 
 ---
 

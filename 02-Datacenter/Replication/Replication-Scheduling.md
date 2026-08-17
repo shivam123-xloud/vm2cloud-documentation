@@ -57,9 +57,13 @@ Before configuring a replication schedule:
 
 ### Screenshot 1
 
+**Guest Replication View**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The guest's **Replication** tab showing the existing jobs.
 
 ---
 
@@ -73,9 +77,13 @@ Before configuring a replication schedule:
 
 ### Screenshot 2
 
+**Job Selected**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The job row selected, with its current schedule visible.
 
 ---
 
@@ -88,9 +96,13 @@ Before configuring a replication schedule:
 
 ### Screenshot 3
 
+**Edit Dialog Open**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The replication job dialog with the **Schedule** field visible.
 
 ---
 
@@ -105,9 +117,13 @@ Before configuring a replication schedule:
 
 ### Screenshot 4
 
+**Schedule Entered**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The **Schedule** field with a new value typed in.
 
 ---
 
@@ -474,9 +490,13 @@ If replication consistently takes longer than the configured interval:
 
 ### Screenshot 5
 
+**Reopening the Job**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The same job reopened for a further schedule change.
 
 ---
 
@@ -490,9 +510,13 @@ If replication consistently takes longer than the configured interval:
 
 ### Screenshot 6
 
+**Schedule Replaced**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The **Schedule** field showing the replacement value.
 
 ---
 
@@ -505,9 +529,13 @@ If replication consistently takes longer than the configured interval:
 
 ### Screenshot 7
 
+**Saved Schedule**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The job list showing the new schedule and the recalculated next run.
 
 ---
 
@@ -528,9 +556,14 @@ After changing the schedule:
 
 ### Screenshot 8
 
+**Run on the New Schedule**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Task History showing a replication task that started at the new time —
+> proof the schedule took effect.
 
 ---
 

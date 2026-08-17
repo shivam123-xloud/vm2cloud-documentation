@@ -28,9 +28,13 @@ Use this widget to quickly understand the current state of your VM2Cloud VE envi
 
 ### Screenshot 1
 
+**Resource Summary Widget**
+
 ```text id="dw01"
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The top of Datacenter → Summary, showing guest counts and cluster health.
 
 ---
 
@@ -51,9 +55,14 @@ Monitoring CPU utilization helps identify overloaded systems and resource bottle
 
 ### Screenshot 2
 
+**CPU Usage**
+
 ```text id="dw02"
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The CPU widget with real utilization rather than a flat zero line —
+> capture it while a guest is doing some work.
 
 ---
 
@@ -74,9 +83,13 @@ Regularly monitoring memory usage helps prevent performance issues caused by ins
 
 ### Screenshot 3
 
+**Memory Usage**
+
 ```text id="dw03"
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The memory widget showing used against total.
 
 ---
 
@@ -97,9 +110,13 @@ This information helps administrators identify storage resources that are approa
 
 ### Screenshot 4
 
+**Storage Usage**
+
 ```text id="dw04"
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The storage widget with at least one storage part-full.
 
 ---
 
@@ -120,9 +137,13 @@ Monitoring node status helps identify infrastructure problems before they affect
 
 ### Screenshot 5
 
+**Node Status**
+
 ```text id="dw05"
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The node list on the summary, with all nodes online.
 
 ---
 
@@ -142,9 +163,14 @@ If your environment does not use subscriptions, this widget may display a notifi
 
 ### Screenshot 6
 
+**Subscription Widget**
+
 ```text id="dw06"
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Whatever this deployment shows here. **Blur any licence key** before
+> saving.
 
 ---
 

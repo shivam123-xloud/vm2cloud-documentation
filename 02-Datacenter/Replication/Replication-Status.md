@@ -59,9 +59,13 @@ Before checking replication status:
 
 ### Screenshot 1
 
+**Guest Replication Section**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The guest's **Replication** tab with at least one job configured.
 
 ---
 
@@ -75,9 +79,13 @@ Before checking replication status:
 
 ### Screenshot 2
 
+**Replication Job List**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The list showing the target node, schedule, and status columns.
 
 ---
 
@@ -99,9 +107,13 @@ Use the displayed information to determine whether the replication job is operat
 
 ### Screenshot 3
 
+**Current Replication State**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** A job row showing next run, state, and last result together.
 
 ---
 
@@ -180,9 +192,13 @@ Task History provides additional information about replication operations.
 
 ### Screenshot 4
 
+**Task History**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Task History with replication tasks visible among the other entries.
 
 ---
 
@@ -196,9 +212,14 @@ Task History provides additional information about replication operations.
 
 ### Screenshot 5
 
+**Replication Task Entry**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** A single replication task selected, showing start time, end time, and
+> status.
 
 ---
 
@@ -222,9 +243,13 @@ If the task failed:
 
 ### Screenshot 6
 
+**Replication Task Output**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The task's **Output** tab, showing what a successful run reports.
 
 ---
 
@@ -244,9 +269,14 @@ To verify it:
 
 ### Screenshot 7
 
+**Target Node in the Edit Dialog**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The job's Edit dialog showing the target node. Open it to look, then
+> close without saving.
 
 ---
 
@@ -264,9 +294,13 @@ To verify the schedule:
 
 ### Screenshot 8
 
+**Schedule Field in the Edit Dialog**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The **Schedule** field as it appears when reviewing an existing job.
 
 For schedule configuration details, see:
 
@@ -291,9 +325,14 @@ After creating a new replication job:
 
 ### Screenshot 9
 
+**Successful Synchronization**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Task History showing a completed replication run after the job was
+> created.
 
 ---
 

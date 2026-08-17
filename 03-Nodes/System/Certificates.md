@@ -46,9 +46,13 @@ Before managing certificates, ensure that:
 
 ### Screenshot 1
 
+**Certificates Page**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Node → System → Certificates as it opens.
 
 ---
 
@@ -70,9 +74,13 @@ Depending on the VM2Cloud VE version, the page may display information such as:
 
 ### Screenshot 2
 
+**Certificate Details**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** A certificate selected, showing issuer, validity dates, and fingerprint.
 
 ---
 
@@ -91,9 +99,14 @@ Depending on the VM2Cloud VE version, the page may display information such as:
 
 ### Screenshot 3
 
+**Upload Control**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The control used to install a custom certificate. **This clears a
+> `Verify` marker** — the page hedges on its exact label.
 
 ---
 
@@ -113,9 +126,13 @@ Verify that the certificate and private key belong together.
 
 ### Screenshot 4
 
+**Certificate Upload Dialog**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The dialog showing the certificate and private key fields.
 
 ---
 
@@ -131,9 +148,13 @@ The VM2Cloud VE web service may need to reload or restart before the new certifi
 
 ### Screenshot 5
 
+**Applied Certificate**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The panel after upload, showing the new certificate in place.
 
 ---
 

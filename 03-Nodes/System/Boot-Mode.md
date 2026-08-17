@@ -46,9 +46,13 @@ Before viewing the Boot Mode information, ensure that:
 
 ### Screenshot 1
 
+**Boot Mode Page**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Node → System → Boot Mode as it opens.
 
 ---
 
@@ -67,9 +71,14 @@ Review the displayed information to verify the system configuration.
 
 ### Screenshot 2
 
+**Boot Information**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The values shown — whether the node booted UEFI or legacy BIOS, and
+> whether Secure Boot is enabled.
 
 ---
 

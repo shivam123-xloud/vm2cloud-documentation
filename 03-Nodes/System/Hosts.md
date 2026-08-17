@@ -46,9 +46,15 @@ Before modifying the Hosts configuration, ensure that:
 
 ### Screenshot 1
 
+**Hosts Page**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** Node → System → Hosts as it opens. **This one shot settles the open
+> `Verify` question above** — whether the panel is a plain-text editor or a table of
+> entries.
 
 ---
 
@@ -77,9 +83,13 @@ Review the entries to verify that they are correct.
 
 ### Screenshot 2
 
+**Existing Host Entries**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The entries for this node, including the one that maps its own hostname.
 
 ---
 
@@ -93,9 +103,13 @@ Review the entries to verify that they are correct.
 
 ### Screenshot 3
 
+**Add Control**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The control used to add an entry, whichever form the panel takes.
 
 ---
 
@@ -117,9 +131,13 @@ After completing the required fields, click **Create**.
 
 ### Screenshot 4
 
+**Host Entry Fields**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The add form with IP address, hostname, and aliases filled in.
 
 ---
 
@@ -134,9 +152,13 @@ After completing the required fields, click **Create**.
 
 ### Screenshot 5
 
+**Edit an Entry**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** An existing entry opened for editing.
 
 ---
 
@@ -158,9 +180,13 @@ Click **OK** to save the changes.
 
 ### Screenshot 6
 
+**Edit Fields**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The edit form, showing which values can be changed.
 
 ---
 
@@ -180,9 +206,13 @@ Click **OK** to save the changes.
 
 ### Screenshot 7
 
+**Remove Control**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** An entry selected with **Remove** available.
 
 ---
 
@@ -197,9 +227,13 @@ The host entry is removed from the local hosts configuration.
 
 ### Screenshot 8
 
+**Removal Confirmation**
+
 ```text
 [ Place Screenshot Here ]
 ```
+
+> **Capture:** The confirmation shown before an entry is deleted.
 
 ---
 
