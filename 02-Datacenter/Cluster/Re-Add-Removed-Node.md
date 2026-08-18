@@ -113,21 +113,7 @@ pvecm status
 | No Corosync configuration, cluster file system writable | The node is already **standalone**. Skip to Step 4. |
 | Cannot determine, or the node has been running in the network since removal | **Reinstall** — Step 5. |
 
-An orphan's web interface still shows the old cluster name under **Datacenter → Cluster**, which is the quickest visual check if the interface is reachable.
-
----
-
-### Screenshot 2
-
-**Removed Node Still Holding Cluster Configuration**
-
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** The removed node's own interface at Datacenter → Cluster, still showing the
-> old cluster name, or a shell showing `pvecm status` reporting no quorum. This is the
-> state the cleanup exists to resolve.
+An orphan's web interface still shows the old cluster name under **Datacenter → Cluster**, which is the quickest visual check if the interface is reachable. A node that has already been cleaned reads **Standalone node - no cluster defined** instead, and `pvecm status` answers that it is not part of a cluster — both shown in Step 3.
 
 ---
 
@@ -158,7 +144,7 @@ It should report that the node is not part of a cluster, and `/etc/pve` should b
 
 ---
 
-### Screenshot 3
+### Screenshot 2
 
 **Standalone After Cleanup**
 
@@ -231,20 +217,21 @@ See [Join Node to Cluster](Join-Node-to-Cluster.md) for the full workflow.
 
 ---
 
-### Screenshot 4
+### Screenshot 3
 
 **Join Cluster Dialog**
 
-```text
-[ Place Screenshot Here ]
-```
+![Join Cluster Dialog](images/Cluster-Join-Configuration.png)
 
-> **Capture:** The Join Cluster dialog on the returning node with the join information
-> pasted, showing the peer address and fingerprint populated.
+Pasting the copied blob into **Information** fills the peer address and fingerprint
+automatically — they are not typed. The password is the root password of the node the join
+information came from, not of the node being joined. **Cluster Network** selects which of
+the joining node's addresses carries cluster traffic, with the peer's link address shown
+alongside for comparison.
 
 ---
 
-### Screenshot 5
+### Screenshot 4
 
 **Join Task Output**
 
@@ -273,7 +260,7 @@ In the interface, confirm the node appears in the resource tree and reports **On
 
 ---
 
-### Screenshot 6
+### Screenshot 5
 
 **Votes Restored**
 
@@ -285,7 +272,7 @@ completed — the resource tree can show a node before it is fully participating
 
 ---
 
-### Screenshot 7
+### Screenshot 6
 
 **Node Online in the Interface**
 

@@ -20,10 +20,10 @@ A snapshot turns "I missed the empty Roles panel" from an afternoon into two min
 
 | | Pages | Placeholders |
 |---|---:|---:|
-| ✅ Complete | 51 | 0 |
+| ✅ Complete | 52 | 0 |
 | ⬜ No screenshots needed | 21 | 0 |
-| ⏳ Awaiting capture | 98 | 402 |
-| **Total** | **170** | **402** |
+| ⏳ Awaiting capture | 97 | 400 |
+| **Total** | **170** | **400** |
 
 ---
 
@@ -205,14 +205,14 @@ Create one VM and one container. Nested virtualization must be working.
 
 ---
 
-## Phase 5 — Cluster · 4 shots · 3 pages
+## Phase 5 — Cluster · 2 shots · 2 pages
 
 Join `v2c2` and `v2c3`. Create/Join/Remove/Delete Cluster are already captured.
 
 | Page | Shots | Note |
 |---|---:|---|
 | [Quorum](02-Datacenter/Cluster/Quorum.md) | ✅ done | Captured 17 August |
-| [Re-Add a Removed Node](02-Datacenter/Cluster/Re-Add-Removed-Node.md) | 2 | The orphan state and the Join dialog — the rest captured 18 August |
+| [Re-Add a Removed Node](02-Datacenter/Cluster/Re-Add-Removed-Node.md) | ✅ done | Captured 18 August |
 | [Cluster Certificates](02-Datacenter/Cluster/Cluster-Certificates.md) | 2 | |
 | [Recover Quorum](02-Datacenter/Cluster/Recover-Quorum.md) | 2 | Power off 2 nodes to force loss of quorum |
 | [Cluster File System](02-Datacenter/Cluster/Cluster-File-System.md) | 1 | |
@@ -322,7 +322,7 @@ Follow [CONTRIBUTING.md](CONTRIBUTING.md). In short:
 - Delete the `Capture:` line along with the placeholder
 - No real hostnames, addresses, licence keys, or credentials
 
-**Every one of the 402 placeholders carries a `Capture:` line** naming the exact screen and state to shoot. You should never have to read the surrounding prose to work out what was wanted.
+**Every one of the 400 placeholders carries a `Capture:` line** naming the exact screen and state to shoot. You should never have to read the surrounding prose to work out what was wanted.
 
 Some carry an instruction beyond the framing — blur a licence key or a token secret, snapshot before causing a failure, or skip the shot entirely rather than staging a fault. Those are worth reading before you press the shutter.
 
