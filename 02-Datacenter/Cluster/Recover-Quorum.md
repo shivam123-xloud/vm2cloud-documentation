@@ -214,9 +214,23 @@ Do not leave a cluster running indefinitely on a manually lowered vote count.
 | `pvecm expected <n>` | Temporarily set the number of votes the cluster requires. |
 | `pvecm delnode <name>` | Permanently remove a node and adjust expected votes. |
 
-> **Verify:** Confirm the exact `pvecm status` field names in this deployment, and
-> whether the interface surfaces quorum state anywhere that remains usable while the
-> cluster is read-only.
+`pvecm status` groups its output into four blocks. The one that matters here is
+**Votequorum information**:
+
+| Field | Meaning |
+|---|---|
+| **Expected votes** | How many votes the cluster wants. This is what `pvecm expected` changes. |
+| **Highest expected** | The highest value seen, which is why the original figure stays visible after you lower it. |
+| **Total votes** | How many votes are currently present. |
+| **Quorum** | The number needed for a majority. |
+| **Flags** | `Quorate` when the requirement is met. Reads `Activity blocked` when it is not. |
+
+The **Quorate** line in the Quorum information block above it gives the same answer as a
+plain `Yes` or `No`.
+
+**The interface cannot help here.** Datacenter → Cluster reports the cluster name, config
+version, node count, and a per-node table — but never the quorum state, whether the cluster
+is healthy or not. Recovering quorum is a shell operation from beginning to end.
 
 ---
 
