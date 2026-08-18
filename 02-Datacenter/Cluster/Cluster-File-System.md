@@ -99,12 +99,14 @@ The directory contains cluster configuration files and folders managed by VM2Clo
 
 **Cluster Configuration Directory**
 
-```text
-[ Place Screenshot Here ]
-```
+![Cluster Configuration Directory](images/cluster-fs-directory.png)
 
-> **Capture:** Node → Shell showing `ls /etc/pve` output, with the cluster configuration
-> files and per-node directories listed.
+Every entry here is replicated to all members. `corosync.conf` carries the cluster
+membership, `storage.cfg` and `datacenter.cfg` the cluster-wide configuration, `user.cfg`
+the access control database, and `qemu-server/` and `lxc/` the guest configurations —
+which is why a guest can be started on any node. `mapping/` and `virtual-guest/` hold the
+resource mappings and custom CPU models. `local` and `nodes/` are the per-node view
+described in [Cluster Certificates](Cluster-Certificates.md).
 
 ---
 

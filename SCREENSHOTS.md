@@ -20,10 +20,10 @@ A snapshot turns "I missed the empty Roles panel" from an afternoon into two min
 
 | | Pages | Placeholders |
 |---|---:|---:|
-| ✅ Complete | 53 | 0 |
+| ✅ Complete | 55 | 0 |
 | ⬜ No screenshots needed | 21 | 0 |
-| ⏳ Awaiting capture | 96 | 398 |
-| **Total** | **170** | **398** |
+| ⏳ Awaiting capture | 94 | 395 |
+| **Total** | **170** | **395** |
 
 ---
 
@@ -213,9 +213,9 @@ Join `v2c2` and `v2c3`. Create/Join/Remove/Delete Cluster are already captured.
 |---|---:|---|
 | [Quorum](02-Datacenter/Cluster/Quorum.md) | ✅ done | Captured 17 August |
 | [Re-Add a Removed Node](02-Datacenter/Cluster/Re-Add-Removed-Node.md) | ✅ done | Captured 18 August |
-| [Cluster Certificates](02-Datacenter/Cluster/Cluster-Certificates.md) | 2 | |
+| [Cluster Certificates](02-Datacenter/Cluster/Cluster-Certificates.md) | ✅ done | Captured 18 August |
 | [Recover Quorum](02-Datacenter/Cluster/Recover-Quorum.md) | ✅ done | Captured 18 August |
-| [Cluster File System](02-Datacenter/Cluster/Cluster-File-System.md) | 1 | |
+| [Cluster File System](02-Datacenter/Cluster/Cluster-File-System.md) | ✅ done | Captured 18 August |
 
 > **Recover Quorum** needs a deliberately broken cluster. Snapshot before, capture, then roll back.
 >
@@ -322,7 +322,7 @@ Follow [CONTRIBUTING.md](CONTRIBUTING.md). In short:
 - Delete the `Capture:` line along with the placeholder
 - No real hostnames, addresses, licence keys, or credentials
 
-**Every one of the 398 placeholders carries a `Capture:` line** naming the exact screen and state to shoot. You should never have to read the surrounding prose to work out what was wanted.
+**Every one of the 395 placeholders carries a `Capture:` line** naming the exact screen and state to shoot. You should never have to read the surrounding prose to work out what was wanted.
 
 Some carry an instruction beyond the framing — blur a licence key or a token secret, snapshot before causing a failure, or skip the shot entirely rather than staging a fault. Those are worth reading before you press the shutter.
 

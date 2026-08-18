@@ -77,12 +77,11 @@ If cluster communication is healthy, certificate synchronization is typically fu
 
 **Healthy Cluster**
 
-```text
-[ Place Screenshot Here ]
-```
+![Healthy Cluster](images/certificates-healthy-cluster.png)
 
-> **Capture:** Datacenter → Cluster with all nodes online. That is the interface-level
-> indication that certificate synchronization is working.
+All three nodes online with the cluster reporting its full node count. There is no
+certificate view at this level — a healthy cluster panel is itself the indication that
+certificate synchronisation is working, because nodes could not communicate otherwise.
 
 ---
 
@@ -110,12 +109,13 @@ ls -l /etc/pve/local
 
 **Certificate Directory**
 
-```text
-[ Place Screenshot Here ]
-```
+![Certificate Directory](images/certificates-directory.png)
 
-> **Capture:** Node → Shell showing the output of `ls -l /etc/pve/nodes/` and `ls -l
-> /etc/pve/local`.
+`/etc/pve/nodes/` holds one directory per cluster member, each containing that node's own
+certificate and key. `/etc/pve/local` is a **symlink to the current node's directory** —
+`nodes/node1` here — which is how the same path resolves to different files on each node.
+Anything written under `/etc/pve/local` on one node is that node's own configuration, not
+shared state.
 
 ---
 
