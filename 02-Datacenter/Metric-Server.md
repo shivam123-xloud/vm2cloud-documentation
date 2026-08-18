@@ -8,10 +8,6 @@ A **metric server** is an external system VM2Cloud VE sends performance data to 
 
 The built-in graphs on the Summary tabs are useful for a quick look, but they are limited: retention is short, there is no alerting on thresholds, and you cannot correlate VM2Cloud VE data against the rest of your infrastructure. Sending metrics out solves all three.
 
-> **Verify:** The Datacenter menu was not fully visible in the screenshots available when
-> this page was written, so **confirm the Metric Server panel exists in this deployment**
-> and capture it before relying on this page.
-
 ---
 
 ## When to Use
@@ -58,8 +54,8 @@ If you have no monitoring system and no plans for one, this adds nothing — the
 ```
 
 > **Capture:** Datacenter → Metric Server, showing the server list and the **Add**,
-> **Edit**, and **Remove** controls. If this panel does not exist, capture where metric
-> export is configured instead.
+> **Edit**, and **Remove** controls. Capture it empty, before adding a server — the empty
+> state cannot be recreated afterwards.
 
 ---
 
