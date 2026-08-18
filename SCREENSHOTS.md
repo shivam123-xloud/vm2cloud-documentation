@@ -22,8 +22,8 @@ A snapshot turns "I missed the empty Roles panel" from an afternoon into two min
 |---|---:|---:|
 | ✅ Complete | 47 | 0 |
 | ⬜ No screenshots needed | 21 | 0 |
-| ⏳ Awaiting capture | 102 | 423 |
-| **Total** | **170** | **423** |
+| ⏳ Awaiting capture | 102 | 424 |
+| **Total** | **170** | **424** |
 
 ---
 
@@ -205,19 +205,21 @@ Create one VM and one container. Nested virtualization must be working.
 
 ---
 
-## Phase 5 — Cluster · 16 shots · 5 pages
+## Phase 5 — Cluster · 18 shots · 5 pages
 
 Join `v2c2` and `v2c3`. Create/Join/Remove/Delete Cluster are already captured.
 
 | Page | Shots | Note |
 |---|---:|---|
 | [Quorum](02-Datacenter/Cluster/Quorum.md) | 7 | |
-| [Re-Add a Removed Node](02-Datacenter/Cluster/Re-Add-Removed-Node.md) | 4 | Needs a node removed and reinstalled |
+| [Re-Add a Removed Node](02-Datacenter/Cluster/Re-Add-Removed-Node.md) | 6 | Remove a node, clean it, rejoin it — no reinstall needed |
 | [Cluster Certificates](02-Datacenter/Cluster/Cluster-Certificates.md) | 2 | |
 | [Recover Quorum](02-Datacenter/Cluster/Recover-Quorum.md) | 2 | Power off 2 nodes to force loss of quorum |
 | [Cluster File System](02-Datacenter/Cluster/Cluster-File-System.md) | 1 | |
 
 > **Recover Quorum** needs a deliberately broken cluster. Snapshot before, capture, then roll back.
+>
+> **Re-Add a Removed Node** is the last thing to do in this phase, because it takes a node out of the cluster. The cleanup path keeps it non-destructive — the node is cleaned and rejoined rather than wiped — so a snapshot beforehand is enough and no reinstall is required.
 
 📸 **Snapshot: `phase5-cluster`**
 
@@ -320,7 +322,7 @@ Follow [CONTRIBUTING.md](CONTRIBUTING.md). In short:
 - Delete the `Capture:` line along with the placeholder
 - No real hostnames, addresses, licence keys, or credentials
 
-**Every one of the 421 placeholders carries a `Capture:` line** naming the exact screen and state to shoot. You should never have to read the surrounding prose to work out what was wanted.
+**Every one of the 424 placeholders carries a `Capture:` line** naming the exact screen and state to shoot. You should never have to read the surrounding prose to work out what was wanted.
 
 Some carry an instruction beyond the framing — blur a licence key or a token secret, snapshot before causing a failure, or skip the shot entirely rather than staging a fault. Those are worth reading before you press the shutter.
 

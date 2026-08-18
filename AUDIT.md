@@ -38,7 +38,7 @@ Fixed 14 August 2026. Ten pages performed destructive operations with no warning
 | Page | Consequence now documented |
 |---|---|
 | `Cluster/Delete-Cluster.md` | Permanent; cluster features stop working |
-| `Cluster/Remove-Node-from-Cluster.md` | **A removed node cannot rejoin without reinstallation** |
+| `Cluster/Remove-Node-from-Cluster.md` | The node keeps stale cluster config and must not be left running in the network |
 | `Storage/Manage-Storage.md` | Guests with disks on the storage fail to start |
 | `System/Hosts.md` | Removing the node's own entry breaks cluster communication |
 | `System/Kernel.md` | Removing the running or last kernel leaves the node unbootable |
@@ -49,6 +49,38 @@ Fixed 14 August 2026. Ten pages performed destructive operations with no warning
 | `Manage-Container-Templates.md` | Note only — existing containers unaffected |
 
 `Tags.md` was flagged and needs nothing: removing a tag genuinely changes nothing, and the page already says so.
+
+---
+
+# ✅ 7. Re-Add a Removed Node — factual error
+
+Found by the user on 18 August 2026 and fixed the same day.
+
+The page asserted that a removed node **cannot** rejoin its cluster and **must** be
+reinstalled, carrying a `Warning:` to that effect. That contradicted this repository's own
+[Remove Node from Cluster](02-Datacenter/Cluster/Remove-Node-from-Cluster.md), whose Step 5
+documents — with screenshots — the cleanup that makes a removed node standalone again.
+Both pages could not be right.
+
+What is actually true, and what the page now says:
+
+* Removal does **not** make a node standalone. It leaves an orphan holding the old cluster
+  configuration, with a read-only cluster file system because it cannot reach quorum alone.
+* The Step 5 cleanup turns that orphan into a genuine standalone node, which can then join
+  a cluster like any other.
+* Reinstalling reaches the same end state and is the safer default in production, because
+  its result does not depend on the node's history. It is a choice about certainty, not a
+  technical requirement.
+
+Also corrected: the `Warning:` on the Remove page, the "Always reinstall" best practice,
+the Common Issues row prescribing reinstallation as the fix for a rejoined node, and the
+Summary. Host-key mismatch — the real failure mode of the cleanup path — is now documented
+where the imaginary one used to be.
+
+**This is the second factual error found by reading rather than by grep**, after the
+invented role names in Permissions. Both were well-formed prose that no sweep would flag.
+Cross-page contradiction is now worth checking for directly: where two pages describe the
+same operation from different sides, read them together.
 
 ---
 
