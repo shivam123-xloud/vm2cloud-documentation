@@ -75,12 +75,11 @@ If quorate reports `Yes`, quorum is not your problem and this procedure does not
 
 **Cluster Status Showing Loss of Quorum**
 
-```text
-[ Place Screenshot Here ]
-```
+![Cluster Status Showing Loss of Quorum](images/recover-quorum-lost.png)
 
-> **Capture:** A node shell showing `pvecm status` output on a cluster that has lost
-> quorum, with Expected votes, Total votes, and the Quorate line visible.
+A three-node cluster with two nodes down. **Expected votes: 3** against **Total votes: 1**,
+`Quorate: No`, and the Quorum line reads **`2 Activity blocked`** — the cluster wants two
+votes and has one. Only the surviving node appears in the membership list.
 
 ---
 
@@ -146,12 +145,14 @@ The cluster immediately re-evaluates. The cluster file system becomes writable a
 
 **Setting Expected Votes**
 
-```text
-[ Place Screenshot Here ]
-```
+![Setting Expected Votes](images/recover-quorum-expected-set.png)
 
-> **Capture:** A node shell showing the `pvecm expected` command being run and the
-> subsequent `pvecm status` output confirming the cluster is now quorate.
+`pvecm expected 1` prints nothing; the following `pvecm status` shows the effect.
+**Expected votes** and **Quorum** are both now 1, `Quorate: Yes`, and **Flags: Quorate**.
+The Activity blocked note is gone and the cluster file system is writable again.
+
+Note that **Highest expected** also dropped to 1. The output no longer records that this is
+a three-node cluster — see the warning under [Configuration / Options](#configuration--options).
 
 ---
 
@@ -220,13 +221,20 @@ Do not leave a cluster running indefinitely on a manually lowered vote count.
 | Field | Meaning |
 |---|---|
 | **Expected votes** | How many votes the cluster wants. This is what `pvecm expected` changes. |
-| **Highest expected** | The highest value seen, which is why the original figure stays visible after you lower it. |
+| **Highest expected** | Tracks the same value. `pvecm expected` lowers this too — it does **not** preserve the original figure. |
 | **Total votes** | How many votes are currently present. |
-| **Quorum** | The number needed for a majority. |
-| **Flags** | `Quorate` when the requirement is met. Reads `Activity blocked` when it is not. |
+| **Quorum** | The number needed for a majority. When that number is not met, `Activity blocked` is appended to this line. |
+| **Flags** | Reads `Quorate` when the requirement is met, and is **empty** when it is not. |
 
-The **Quorate** line in the Quorum information block above it gives the same answer as a
-plain `Yes` or `No`.
+The **Quorate** line in the Quorum information block above gives the same answer as a plain
+`Yes` or `No`.
+
+> **Warning:** Once expected votes is lowered, `pvecm status` shows no trace of the
+> cluster's real size — Expected votes, Highest expected, and Quorum all read the new
+> number, and a cluster running degraded looks identical to a healthy cluster of that
+> smaller size. Nothing will remind you. The only clue is the membership list being shorter
+> than the cluster you know you built, which is why Step 8 exists and why it is the step
+> people skip.
 
 **The interface cannot help here.** Datacenter → Cluster reports the cluster name, config
 version, node count, and a per-node table — but never the quorum state, whether the cluster
