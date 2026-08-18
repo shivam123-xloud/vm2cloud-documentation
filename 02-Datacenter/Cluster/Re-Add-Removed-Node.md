@@ -77,8 +77,9 @@ If a directory for the removed node is still present, the cluster has not fully 
 [ Place Screenshot Here ]
 ```
 
-> **Capture:** A node shell showing `pvecm nodes` output and a listing of
-> `/etc/pve/nodes/`, on a cluster where a node has been removed.
+> **Capture:** A shell on a **remaining** cluster node, showing `pvecm nodes` and
+> `ls /etc/pve/nodes/` in one frame, taken after a node has been removed. The removed
+> node must be absent from both — that is what the step asks the reader to confirm.
 
 ---
 
@@ -137,12 +138,9 @@ Time synchronization matters more than it appears — cluster communication and 
 
 **Freshly Installed Node**
 
-```text
-[ Place Screenshot Here ]
-```
+![Freshly Installed Node](images/cluster-overview.png)
 
-> **Capture:** The web interface of a newly installed standalone node, showing no cluster
-> configured.
+The Cluster panel of a node with no cluster configuration reads **Standalone node - no cluster defined**, and the Cluster Nodes table is empty. A reinstalled node looks exactly like a node that has never been clustered, which is the state the join procedure expects.
 
 ---
 
@@ -182,8 +180,10 @@ In the interface, confirm the node appears in the resource tree and reports **On
 [ Place Screenshot Here ]
 ```
 
-> **Capture:** `pvecm nodes` and `pvecm status` output after the node has rejoined,
-> showing the increased vote count.
+> **Capture:** `pvecm nodes` and `pvecm status` run on an existing cluster node after
+> the rejoin, in one frame. The membership list must show every node including the
+> returned one, and **Total votes** must match the full node count — that contrast with
+> the reduced count during removal is the whole point of the shot.
 
 ---
 
@@ -191,12 +191,9 @@ In the interface, confirm the node appears in the resource tree and reports **On
 
 **Node Online in the Interface**
 
-```text
-[ Place Screenshot Here ]
-```
+![Node Online in the Interface](images/node-Successfully-Joined.png)
 
-> **Capture:** The resource tree showing the rejoined node online alongside the existing
-> cluster nodes.
+The rejoined node appears in the resource tree alongside the existing members, and the Cluster Nodes table lists it with its own ID, one vote, and its address.
 
 ---
 

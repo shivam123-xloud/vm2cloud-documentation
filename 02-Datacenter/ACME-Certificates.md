@@ -117,7 +117,33 @@ Most authorities provide a **staging** directory alongside production. Register 
 
 ---
 
-## Step 3: Add a Challenge Plugin (DNS-01 Only)
+## Step 3: Confirm the Account Registered
+
+Registration contacts the authority immediately, so a failure here is visible at once rather than surfacing later during an order.
+
+1. Select the account in the **Accounts** list.
+2. Click **View**.
+3. Confirm **Status** reads `valid`.
+4. Confirm **Directory** is the endpoint you intended — staging and production are easy to confuse, and the difference only becomes obvious when a browser rejects the resulting certificate.
+
+The dialog is read-only. Close it when finished.
+
+---
+
+### Screenshot 3
+
+**Account Details**
+
+```text
+[ Place Screenshot Here ]
+```
+
+> **Capture:** An account selected and opened with **View**, showing the created
+> timestamp, `valid` status, directory URL, and terms of service link.
+
+---
+
+## Step 4: Add a Challenge Plugin (DNS-01 Only)
 
 Skip this if using HTTP-01.
 
@@ -133,7 +159,7 @@ Skip this if using HTTP-01.
 
 ---
 
-### Screenshot 3
+### Screenshot 4
 
 **Challenge Plugin Configuration**
 
@@ -146,7 +172,7 @@ Skip this if using HTTP-01.
 
 ---
 
-## Step 4: Order a Certificate on a Node
+## Step 5: Order a Certificate on a Node
 
 Certificates are per node, ordered from the node's own panel.
 
@@ -161,7 +187,7 @@ The interface restarts briefly when the certificate is installed. A short discon
 
 ---
 
-### Screenshot 4
+### Screenshot 5
 
 **Ordering a Certificate**
 
@@ -174,7 +200,7 @@ The interface restarts briefly when the certificate is installed. A short discon
 
 ---
 
-## Step 5: Verify
+## Step 6: Verify
 
 1. Reload the interface using the node's DNS name, not its IP address.
 2. Confirm no certificate warning appears.
@@ -185,7 +211,7 @@ Accessing by IP will still warn, because the certificate is issued for the name.
 
 ---
 
-## Step 6: Confirm Automatic Renewal
+## Step 7: Confirm Automatic Renewal
 
 Renewal is automatic, and it is worth confirming rather than assuming.
 
