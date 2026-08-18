@@ -85,13 +85,13 @@ If the node still appears in `pvecm nodes`, it was never fully removed — finis
 
 **Cluster After Removal**
 
-```text
-[ Place Screenshot Here ]
-```
+![Membership After Removal](images/readd-node-absent-membership.png)
 
-> **Capture:** A shell on a **remaining** cluster node showing `pvecm nodes` and
-> `ls /etc/pve/nodes/` in one frame, after a node has been removed. The removed node must
-> be absent from both.
+![Directory After Removal](images/readd-node-absent-directory.png)
+
+`pvecm nodes` shows node3 gone from the membership. The directory listing shows why the
+second check matters: `/etc/pve/nodes/` still contained `node3` after the removal, and it
+had to be deleted by hand before the node could return under the same name.
 
 ---
 
@@ -162,12 +162,14 @@ It should report that the node is not part of a cluster, and `/etc/pve` should b
 
 **Standalone After Cleanup**
 
-```text
-[ Place Screenshot Here ]
-```
+![Standalone After Cleanup](images/readd-standalone-after-cleanup.png)
 
-> **Capture:** The cleaned node's Datacenter → Cluster panel reading **Standalone node -
-> no cluster defined**, with an empty Cluster Nodes table.
+![Standalone Confirmed From the Shell](images/readd-standalone-cli.png)
+
+The node's own interface now reads **Standalone node - no cluster defined** with an empty
+Cluster Nodes table. From the shell, `/etc/corosync/` is empty, `/etc/pve/corosync.conf` is
+gone, and `pvecm status` answers *"is this node part of a cluster?"* — which is exactly the
+state a fresh installation would be in.
 
 ---
 
@@ -242,6 +244,20 @@ See [Join Node to Cluster](Join-Node-to-Cluster.md) for the full workflow.
 
 ---
 
+### Screenshot 5
+
+**Join Task Output**
+
+![Join Task Output](images/readd-join-task-output.png)
+
+The task output is worth reading rather than skipping. It backs up the node's existing
+cluster database before touching anything, waits for quorum, regenerates the node's
+certificate, and merges the authorized SSH keys — the last of which is why a stale host key
+entry causes a join to fail. `successfully added node 'node3' to cluster` is the line to
+look for.
+
+---
+
 ## Step 8: Verify the Node Rejoined
 
 On any cluster member:
@@ -257,30 +273,26 @@ In the interface, confirm the node appears in the resource tree and reports **On
 
 ---
 
-### Screenshot 5
+### Screenshot 6
 
 **Votes Restored**
 
-```text
-[ Place Screenshot Here ]
-```
+![Votes Restored](images/readd-votes-restored.png)
 
-> **Capture:** `pvecm nodes` and `pvecm status` on an existing member after the rejoin, in
-> one frame. The membership list must include the returned node, and **Total votes** must
-> match the full node count.
+All three nodes are in the membership list, and **Expected votes** and **Total votes** both
+read 3 with **Flags: Quorate**. That restored count is the confirmation the join actually
+completed — the resource tree can show a node before it is fully participating.
 
 ---
 
-### Screenshot 6
+### Screenshot 7
 
 **Node Online in the Interface**
 
-```text
-[ Place Screenshot Here ]
-```
+![Node Online in the Interface](images/cluster-status-three-nodes.png)
 
-> **Capture:** The resource tree showing the returned node online alongside the existing
-> members.
+node3 is back in the resource tree and in the Cluster Nodes table with its own ID, one
+vote, and its address. The **Join Cluster** task shows OK in the log below.
 
 ---
 

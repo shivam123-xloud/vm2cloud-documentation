@@ -110,12 +110,11 @@ It also means **nothing you configure works until you click Apply**, which is th
 
 **Datacenter SDN Panel**
 
-```text
-[ Place Screenshot Here ]
-```
+![Datacenter SDN Panel](images/sdn-status-panel.png)
 
-> **Capture:** Datacenter → SDN, showing the zone list and the **Apply** control, ideally
-> with pending changes visible.
+The Status panel reports every zone against every node, so a configuration that applied to
+some nodes and not others is visible immediately. **Apply** pushes pending changes to all
+nodes; **Dry-Run** reports what would change without doing it.
 
 ---
 

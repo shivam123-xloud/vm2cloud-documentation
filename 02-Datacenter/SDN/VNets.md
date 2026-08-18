@@ -54,12 +54,11 @@ Existing VNets are listed with their zone and tag.
 
 **SDN VNets Panel**
 
-```text
-[ Place Screenshot Here ]
-```
+![SDN VNets Panel](images/vnets-panel.png)
 
-> **Capture:** Datacenter → SDN → VNets, showing the VNet list with zone and tag, the
-> subnet panel beneath, and the **Create**, **Edit**, and **Remove** controls.
+The panel is split. **VNets** on the left lists ID, Alias, Zone, Tag, VLAN aware, and
+State; **Subnets** on the right shows the subnets belonging to whichever VNet is selected.
+Both have their own Create, Remove, and Edit controls.
 
 ---
 
@@ -81,12 +80,11 @@ The name is what administrators will see in every guest's network configuration 
 
 **Create VNet Dialog**
 
-```text
-[ Place Screenshot Here ]
-```
+![Create VNet Dialog](images/create-vnet-dialog.png)
 
-> **Capture:** The Create VNet dialog, showing Name, Zone, Tag, Alias, and the VLAN
-> Aware option.
+Name and Zone are required; the Zone dropdown lists only zones that already exist, so the
+zone has to be created first. **Tag** is greyed out for zone types that do not use one and
+becomes editable for those that do. **Advanced** exposes the VLAN aware option.
 
 ---
 
@@ -108,12 +106,11 @@ A VNet works without a subnet — guests can use it as a plain layer 2 network a
 
 **Create Subnet Dialog**
 
-```text
-[ Place Screenshot Here ]
-```
+![Create Subnet Dialog](images/create-subnet-dialog.png)
 
-> **Capture:** The Create Subnet dialog for a VNet, showing the subnet, gateway, and
-> SNAT fields.
+The **General** tab takes the subnet in CIDR form, its gateway, whether SNAT is enabled,
+and an optional DNS zone prefix. The **DHCP Ranges** tab alongside it defines the addresses
+handed out automatically.
 
 ---
 

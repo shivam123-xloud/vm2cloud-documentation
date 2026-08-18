@@ -86,19 +86,21 @@ For production clusters:
 5. Review the cluster health.
 6. Check whether the cluster is quorate.
 
-> **Verify:** Confirm whether the quorum state is shown on Datacenter → Cluster directly
-> or on a separate cluster status view.
+The interface does **not** report the quorum state. Datacenter → Cluster shows the cluster
+name, config version, node count, and a per-node table — but nothing indicating whether the
+cluster is currently quorate. Quorum is checked from a node shell with `pvecm status`,
+which Step 3 covers.
 
 ### Screenshot 1
 
 **Cluster Status**
 
-```text
-[ Place Screenshot Here ]
-```
+![Cluster Status](images/cluster-status-three-nodes.png)
 
-> **Capture:** Datacenter → Cluster showing the quorum state. **This clears the `Verify`
-> marker above** — whether quorum appears here or on a separate view.
+**The quorum state is not shown here.** Datacenter → Cluster reports the cluster name,
+config version, node count, and a per-node table with each node's ID, vote, and link
+address — but nothing that says whether the cluster is currently quorate. For that, use
+`pvecm status` from a node shell, as Step 3 does.
 
 ---
 
@@ -114,11 +116,11 @@ For production clusters:
 
 **Cluster Node List**
 
-```text
-[ Place Screenshot Here ]
-```
+![Cluster Node List](images/quorum-node-list.png)
 
-> **Capture:** All nodes listed with their current status.
+Each node contributes one vote, shown in the **Votes** column. This table is the
+configured voting membership; it does not change when a node goes offline, which is why
+loss of quorum cannot be diagnosed from it alone.
 
 Each normal cluster node contributes one vote to the cluster.
 
@@ -142,12 +144,11 @@ Review:
 
 **Quorum Details**
 
-```text
-[ Place Screenshot Here ]
-```
+![Quorum Details](images/quorum-details.png)
 
-> **Capture:** Wherever expected votes, total votes, and the quorum requirement are
-> shown. If the interface does not show them, use `pvecm status` in the Shell.
+`pvecm status` is where the numbers live. **Expected votes: 3**, **Total votes: 3**,
+**Quorum: 2**, and **Flags: Quorate** — a healthy three-node cluster with every vote
+present.
 
 ---
 
@@ -205,15 +206,9 @@ Total votes    = 2
 
 The cluster can still remain quorate because two of three votes form a majority.
 
-### Screenshot 4
-
-**Votes With All Nodes Online**
-
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** `pvecm status` with all three votes present.
+Both numbers are visible in the `pvecm status` output shown in
+[Screenshot 3](#screenshot-3) — **Expected votes: 3** against **Total votes: 3**. The
+contrast worth studying is that against Screenshot 4 below, where one node is down.
 
 ---
 
@@ -254,16 +249,16 @@ When a node becomes unavailable:
 7. Review recent cluster tasks.
 8. Check the cluster network.
 
-### Screenshot 5
+### Screenshot 4
 
 **Votes With a Node Down**
 
-```text
-[ Place Screenshot Here ]
-```
+![Votes With a Node Down](images/quorum-one-node-down.png)
 
-> **Capture:** The same view after shutting one node down — two of three, still quorate.
-> **Snapshot before you do this.**
+With node3 shut down, **Total votes** drops to 2 while **Expected votes** stays at 3. Two
+of three is still a majority, so **Quorate** remains `Yes` and the cluster keeps working
+normally. Note that node3 is marked offline in the resource tree while the cluster itself
+is unaffected.
 
 Do not immediately change quorum configuration simply because one node is offline.
 
@@ -286,16 +281,16 @@ If the cluster is not quorate:
 9. Recheck quorum.
 10. Verify that the cluster returns to a healthy state.
 
-### Screenshot 6
+### Screenshot 5
 
 **Quorum Lost**
 
-```text
-[ Place Screenshot Here ]
-```
+![Quorum Lost](images/quorum-lost.png)
 
-> **Capture:** The state with two nodes down, showing the cluster inquorate. This is the
-> shot the page exists for, and the only way to get it is to cause it.
+With a second node down, **Total votes** falls to 1 against a **Quorum** requirement of 2.
+`Quorate: No`, and the quorum line reads **Activity blocked**. The cluster file system is
+now read-only on the surviving node — no cluster configuration can be changed until enough
+votes return.
 
 ---
 
@@ -427,15 +422,14 @@ After checking or recovering quorum:
 8. Verify that cluster configuration is accessible.
 9. Confirm that no network or Corosync errors remain.
 
-### Screenshot 7
+### Screenshot 6
 
 **Quorum Restored**
 
-```text
-[ Place Screenshot Here ]
-```
+![Quorum Restored](images/quorum-restored.png)
 
-> **Capture:** The cluster healthy again after the nodes return.
+Both nodes back, **Total votes** at 3, **Flags: Quorate**, and all three members listed
+with their addresses. Nothing had to be forced — restoring the votes restored the quorum.
 
 ---
 

@@ -76,12 +76,10 @@ Most environments need **one or two** zones. Create more only when the transport
 
 **SDN Zones Panel**
 
-```text
-[ Place Screenshot Here ]
-```
+![SDN Zones Panel](images/zones-panel.png)
 
-> **Capture:** Datacenter → SDN → Zones, showing the zone list with type and node
-> assignment, plus the **Add**, **Edit**, and **Remove** controls.
+The columns are ID, Type, MTU, IPAM, Domain, DNS, Reverse DNS, Nodes, and State. **Add** is
+a dropdown — the zone type is chosen there rather than inside the dialog.
 
 ---
 
@@ -101,12 +99,12 @@ Most environments need **one or two** zones. Create more only when the transport
 
 **Add Zone Dialog**
 
-```text
-[ Place Screenshot Here ]
-```
+![Add Zone Dialog](images/add-zone-dialog.png)
 
-> **Capture:** The Add Zone dialog with a type selected, showing the ID, node selection,
-> MTU, and the type-specific fields.
+A Simple zone takes an ID, an MTU, the nodes it applies to, and an IPAM. **Nodes** is a
+multi-select: a zone omitting a node simply does not exist there, which is the usual reason
+a guest fails to reach its network after a migration. **Advanced** exposes the remaining
+options, and the field set changes with the zone type.
 
 ---
 
@@ -156,12 +154,15 @@ Nothing works until this happens.
 
 **Applying SDN Configuration**
 
-```text
-[ Place Screenshot Here ]
-```
+![Zone Created, Pending Apply](images/zone-created-pending-apply.png)
 
-> **Capture:** The SDN panel showing the Apply action and the resulting task output
-> across nodes.
+A newly created zone shows **State: new** and does nothing yet. SDN configuration is staged
+until applied, which is what makes a partial or mistaken change safe to correct before it
+reaches the nodes. Run **Apply** from [SDN Overview](SDN-Overview.md) to commit it; the
+state clears once every node reports the zone.
+
+> **Capture:** Still needed — the Apply action running, with its task output. This image
+> shows the pending state that Apply resolves, not the apply itself.
 
 ---
 

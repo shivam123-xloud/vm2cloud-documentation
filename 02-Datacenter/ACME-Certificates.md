@@ -80,12 +80,10 @@ Before issuing a certificate, the authority verifies you control the name. There
 
 **Datacenter ACME Panel**
 
-```text
-[ Place Screenshot Here ]
-```
+![Datacenter ACME Panel](images/acme-panel.png)
 
-> **Capture:** Datacenter → ACME, showing the Accounts and Challenge Plugins sections
-> with their controls.
+Both sections are empty on a new cluster. **Accounts** carries Add, View, and Remove;
+**Challenge Plugins** carries Add, Edit, and Remove.
 
 ---
 
@@ -108,12 +106,11 @@ Most authorities provide a **staging** directory alongside production. Register 
 
 **Register ACME Account**
 
-```text
-[ Place Screenshot Here ]
-```
+![Register ACME Account](images/acme-register-account.png)
 
-> **Capture:** The ACME account registration dialog, showing the name, email, directory
-> selector, and terms acceptance.
+The dialog asks for an account name, an email address, and the directory. The terms of
+service link and its **Accept TOS** checkbox appear once a directory is chosen — the
+account cannot be registered without ticking it.
 
 ---
 
@@ -163,12 +160,12 @@ Skip this if using HTTP-01.
 
 **Challenge Plugin Configuration**
 
-```text
-[ Place Screenshot Here ]
-```
+![Challenge Plugin Configuration](images/acme-challenge-plugin.png)
 
-> **Capture:** The Add challenge plugin dialog with a DNS provider selected, showing the
-> credential fields.
+Selecting a DNS API reveals that provider's credential fields as **separate labelled
+inputs** — for Cloudflare, `CF_Account_ID`, `CF_Email`, `CF_Key`, `CF_Token`, and
+`CF_Zone_ID`. Enter only the value; the key is the label. The hint above them states which
+combinations the provider accepts, and mixing the two methods is rejected.
 
 ---
 
@@ -191,12 +188,12 @@ The interface restarts briefly when the certificate is installed. A short discon
 
 **Ordering a Certificate**
 
-```text
-[ Place Screenshot Here ]
-```
+![Ordering a Certificate](images/acme-order-certificate.png)
 
-> **Capture:** A node → System → Certificates, showing the ACME section with a domain
-> configured and the order action available.
+Domains are added from the node's own Certificates panel. The dialog takes the challenge
+type, the plugin when the type is DNS, and the domain itself. The panel above lists the
+certificates currently installed on the node, with their issuer, validity dates, and
+subject alternative names.
 
 ---
 
