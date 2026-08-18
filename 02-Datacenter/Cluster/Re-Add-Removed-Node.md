@@ -306,8 +306,14 @@ A node that took the reinstall path keeps nothing. A node that took the cleanup 
 | `ls /etc/corosync/` | On the removed node, reveals whether it still holds cluster configuration. |
 | `pmxcfs -l` | Start the cluster file system in local mode, so it can be edited without quorum. |
 
-> **Verify:** Confirm whether the interface exposes the cluster member list anywhere that
-> makes Step 1 possible without the shell.
+**Half of Step 1 can be done from the interface.** Datacenter → Cluster lists every member
+in its Cluster Nodes table, so confirming a node is absent from the membership needs no
+shell — see the panel in [Cluster Certificates](Cluster-Certificates.md).
+
+The other half cannot. Nothing in the interface shows `/etc/pve/nodes/`, so a stale
+directory left behind by an incomplete removal is invisible there. That is the case which
+causes a rejoin to fail on a name conflict, and it is why Step 1 uses the shell for both
+checks rather than only the second.
 
 ---
 
