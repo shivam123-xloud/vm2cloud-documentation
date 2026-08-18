@@ -2,7 +2,7 @@
 
 The order to work through when capturing screenshots, and what is already done.
 
-**440 placeholders remain across 103 pages.** They are grouped below into ten phases that follow how a lab is actually built — install, storage, users, guests, cluster, and so on — so you never have to revisit a panel or rebuild to reach a state you have already passed.
+**440 placeholders remain across 101 pages.** They are grouped below into ten phases that follow how a lab is actually built — install, storage, users, guests, cluster, and so on — so you never have to revisit a panel or rebuild to reach a state you have already passed.
 
 ---
 
@@ -20,10 +20,10 @@ A snapshot turns "I missed the empty Roles panel" from an afternoon into two min
 
 | | Pages | Placeholders |
 |---|---:|---:|
-| ✅ Complete | 55 | 0 |
-| ⬜ No screenshots needed | 21 | 0 |
-| ⏳ Awaiting capture | 94 | 395 |
-| **Total** | **170** | **395** |
+| ✅ Complete | 53 | 0 |
+| ⬜ No screenshots needed | 16 | 0 |
+| ⏳ Awaiting capture | 101 | 440 |
+| **Total** | **170** | **440** |
 
 ---
 
@@ -322,7 +322,13 @@ Follow [CONTRIBUTING.md](CONTRIBUTING.md). In short:
 - Delete the `Capture:` line along with the placeholder
 - No real hostnames, addresses, licence keys, or credentials
 
-**Every one of the 395 placeholders carries a `Capture:` line** naming the exact screen and state to shoot. You should never have to read the surrounding prose to work out what was wanted.
+**395 of the 440 placeholders carry a `Capture:` line** naming the exact screen and state to shoot. The remaining 45 are the Disks pages, which
+use an older inline form — `[ Place Screenshot Here — Select Node ]` — carrying a short
+description instead of a separate `Capture:` line.
+
+> **Counting caveat:** that older form does not match `[ Place Screenshot Here ]`, so any
+> sweep using the exact string misses all 45. Count with `\[ Place Screenshot Here[^]]*\]`
+> instead. Totals in this file were 45 low until 18 August because of it.
 
 Some carry an instruction beyond the framing — blur a licence key or a token secret, snapshot before causing a failure, or skip the shot entirely rather than staging a fault. Those are worth reading before you press the shutter.
 
