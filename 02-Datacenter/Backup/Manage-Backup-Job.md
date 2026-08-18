@@ -156,11 +156,6 @@ A job can succeed overall while skipping an individual guest. Check per-guest re
 
 ---
 
-
-
-
----
-
 ## Step 8: Remove a Job
 
 1. Select the job.
