@@ -73,13 +73,18 @@ If a directory for the removed node is still present, the cluster has not fully 
 
 **Confirming the Node Is Absent**
 
-```text
-[ Place Screenshot Here ]
-```
+![Removal Command](images/CLI-Node-Removal.png)
 
-> **Capture:** A shell on a **remaining** cluster node, showing `pvecm nodes` and
-> `ls /etc/pve/nodes/` in one frame, taken after a node has been removed. The removed
-> node must be absent from both — that is what the step asks the reader to confirm.
+![Membership After Removal](images/Verify-Current-Cluster-Status.png)
+
+The first shows the removal itself — `pvecm delnode` run on a remaining node. The second
+is the check this step calls for: `pvecm status` and `pvecm nodes` afterwards. The removed
+node appears in neither the membership list nor the vote count, which is the confirmation
+you need before reinstalling.
+
+> **Capture:** Add a listing of `/etc/pve/nodes/` alongside the above, so the reader can
+> see the directory is gone as well as the membership entry. A leftover directory is the
+> failure this step exists to catch, and no current image shows it.
 
 ---
 
