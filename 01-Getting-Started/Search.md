@@ -45,11 +45,9 @@ Before using Search, ensure that:
 
 **Search Box**
 
-```text
-[ Place Screenshot Here ]
-```
+![Search Box](images/search-box.png)
 
-> **Capture:** The search field at the top of the interface, empty.
+The header search box is available from every screen.
 
 ---
 
@@ -74,12 +72,10 @@ Matching results are displayed automatically while typing.
 
 **Search Results**
 
-```text
-[ Place Screenshot Here ]
-```
+![Search Results](images/search-results.png)
 
-> **Capture:** Results appearing as a term is typed, showing guests and storage matched
-> together.
+Results appear as you type, matched across guests, nodes, and storage. Typing a guest ID
+finds it directly.
 
 ---
 
@@ -95,12 +91,10 @@ The VM2Cloud VE interface automatically opens the selected resource.
 
 **Resource Opened**
 
-```text
-[ Place Screenshot Here ]
-```
+![Resource Opened](images/search-panel.png)
 
-> **Capture:** The interface after selecting a result, showing it jumped to that
-> resource.
+Datacenter → Search is the same search as a full panel, listing every resource with its
+type, description, and live usage figures.
 
 ---
 

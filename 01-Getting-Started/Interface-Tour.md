@@ -62,12 +62,13 @@ Select a resource from the navigation panel to open its management page.
 
 **Navigation Panel**
 
-```text id="dash01"
-[ Place Screenshot Here ]
-```
+![Navigation Panel](images/interface-workspace.png)
 
-> **Capture:** The Datacenter-level menu expanded in the left panel.
+Selecting an entry in the resource tree fills the middle column with that resource's menu.
+The menu is contextual — a datacenter, a node, and a guest each show a different list.
 
+The right-hand area shows whichever panel you selected. Everything you configure happens
+here.
 ---
 
 ## Resource Tree
@@ -91,11 +92,10 @@ The tree automatically expands as additional resources are added.
 
 **Resource Tree**
 
-```text id="dash02"
-[ Place Screenshot Here ]
-```
+![Resource Tree](images/resource-tree.png)
 
-> **Capture:** The tree with nodes, guests, and storage all visible and expanded.
+The tree is the left column: the datacenter at the top, then nodes, then the guests and
+storage belonging to each. It expands as resources are added.
 
 ---
 
@@ -116,19 +116,6 @@ Examples include:
 
 ---
 
-### Screenshot 3
-
-**Workspace**
-
-```text id="dash03"
-[ Place Screenshot Here ]
-```
-
-> **Capture:** A resource selected, so the right-hand content area is populated rather
-> than blank.
-
----
-
 ## Search
 
 The Search box allows administrators to quickly locate resources within the VM2Cloud VE environment.
@@ -145,15 +132,13 @@ Search results are displayed as you type.
 
 ---
 
-### Screenshot 4
+### Screenshot 3
 
 **Search Box**
 
-```text id="dash04"
-[ Place Screenshot Here ]
-```
+![Search Box](images/search-box.png)
 
-> **Capture:** The search field at the top of the interface with a term typed into it.
+The search box sits in the header and searches every resource in the cluster.
 
 ---
 
@@ -173,16 +158,14 @@ Depending on your VM2Cloud VE deployment, it may include:
 
 ---
 
-### Screenshot 5
+### Screenshot 4
 
 **Header Bar**
 
-```text id="dash05"
-[ Place Screenshot Here ]
-```
+![Header Bar](images/header-bar.png)
 
-> **Capture:** The top bar showing every button it carries. **This clears a `Verify`
-> marker** — the button list on this page is inferred.
+The header carries the product name, the search box, **Documentation**, **Create VM**,
+**Create CT**, the licence status, and the user menu.
 
 ---
 
@@ -201,15 +184,14 @@ The available options depend on the user's permissions.
 
 ---
 
-### Screenshot 6
+### Screenshot 5
 
 **User Menu**
 
-```text id="dash06"
-[ Place Screenshot Here ]
-```
+![User Menu](images/user-menu.png)
 
-> **Capture:** The user menu open, showing its entries.
+The user menu holds **My Settings**, **Password**, **TFA**, **Language**, **Colour Theme**,
+and **Logout**.
 
 ---
 
@@ -230,15 +212,14 @@ Task status helps administrators monitor the progress of management activities.
 
 ---
 
-### Screenshot 7
+### Screenshot 6
 
 **Task Viewer**
 
-```text id="dash07"
-[ Place Screenshot Here ]
-```
+![Task Viewer](images/task-panel.png)
 
-> **Capture:** The bottom panel with a task in progress or recently finished.
+The bottom panel has two tabs: **Tasks**, listing operations, and **Cluster log**, listing
+events. It stays visible whatever else you are doing.
 
 ---
 

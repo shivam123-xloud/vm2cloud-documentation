@@ -54,13 +54,13 @@ Use `https`, not `http`.
 
 **Login Screen**
 
-```text
-[ Place Screenshot Here ]
-```
+![Login Screen](images/login-screen.png)
 
-> **Capture:** The VM2Cloud VE login screen, showing the username, password, and realm
-> fields and the language selector.
+The login window asks for a user name, a password, a **Realm**, and a **Language**, with a
+**Save User name** option.
 
+**Realm** decides which authentication source checks the credentials. A fresh installation
+offers **Linux PAM standard authentication**, which is where `root` lives.
 ---
 
 ## Step 2: Accept the Certificate Warning
@@ -96,19 +96,6 @@ Usernames are written `name@realm` — `root@pam`, `alice@pve`. See [Authenticat
 
 ---
 
-### Screenshot 2
-
-**Realm Selection**
-
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** The login screen with the Realm dropdown open, showing the available
-> realms.
-
----
-
 ## Step 4: Complete Two-Factor Authentication
 
 If the account has 2FA enabled, a second prompt appears. Enter the code from your authenticator.
@@ -129,16 +116,13 @@ Do these before anything else:
 
 ---
 
-### Screenshot 3
+### Screenshot 2
 
 **Interface After Login**
 
-```text
-[ Place Screenshot Here ]
-```
+![Interface After Login](images/interface-workspace.png)
 
-> **Capture:** The interface immediately after a successful login, showing the resource
-> tree and default view.
+After login the tree, the menu, the workspace, and the task panel are all populated.
 
 ---
 

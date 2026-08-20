@@ -65,12 +65,9 @@ Its limitation: guests move. A machine that migrates appears somewhere else in t
 
 **Server View**
 
-```text
-[ Place Screenshot Here ]
-```
+![Server View](images/view-server.png)
 
-> **Capture:** The resource tree in Server View, showing nodes with their guests and
-> storage nested beneath, and the view selector at the top.
+**Server View** is the default: resources grouped under the node that hosts them.
 
 ---
 
@@ -99,11 +96,10 @@ Useful when the question is "show me every virtual machine" rather than "show me
 
 **Folder View**
 
-```text
-[ Place Screenshot Here ]
-```
+![Folder View](images/view-folder.png)
 
-> **Capture:** The resource tree in Folder View, showing the type-based grouping.
+**Folder View** groups by type instead of by node — all guests together, all storage
+together — which is the faster way to find a guest when you do not know where it runs.
 
 ---
 
@@ -130,12 +126,9 @@ Guests not in any pool do not appear grouped here, which is itself useful — it
 
 **Pool View**
 
-```text
-[ Place Screenshot Here ]
-```
+![Pool View](images/view-pool.png)
 
-> **Capture:** The resource tree in Pool View, showing guests grouped under two or more
-> pools.
+**Pool View** shows only resources that belong to a pool. It is empty until pools exist.
 
 ---
 
@@ -160,11 +153,9 @@ Tags are more flexible than pools: a guest belongs to one pool but can carry sev
 
 **Tag View**
 
-```text
-[ Place Screenshot Here ]
-```
+![Tag View](images/view-tag.png)
 
-> **Capture:** The resource tree in Tag View, showing guests grouped by tag.
+**Tag View** groups guests by tag, and is empty until guests are tagged.
 
 ---
 

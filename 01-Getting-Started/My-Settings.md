@@ -44,12 +44,9 @@ The menu shows the account you are logged in as, written `name@realm`, and the a
 
 **User Menu**
 
-```text
-[ Place Screenshot Here ]
-```
+![User Menu](images/user-menu.png)
 
-> **Capture:** The user menu open in the top-right corner, showing the logged-in account
-> and all available options.
+Everything personal to your account is reached from the user menu in the header.
 
 ---
 
