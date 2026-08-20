@@ -96,7 +96,7 @@ Every page follows the same template: **Overview → When to Use → Prerequisit
 | [Reset Root Password](03-Nodes/Reset-Root-Password.md) | Recovering a lost password, from the UI or the console |
 | [Node Troubleshooting](03-Nodes/Node-Troubleshooting.md) | Node-level problems |
 
-**[System](03-Nodes/System/)** — [Overview](03-Nodes/System/System-Overview.md) · [Certificates](03-Nodes/System/Certificates.md) · [DNS](03-Nodes/System/DNS.md) · [Hosts](03-Nodes/System/Hosts.md) · [Time and NTP](03-Nodes/System/Time-and-NTP.md) · [Syslog](03-Nodes/System/Syslog.md) · [Boot Mode](03-Nodes/System/Boot-Mode.md) · [Kernel](03-Nodes/System/Kernel.md) · [Services](03-Nodes/System/Services.md) · [Troubleshooting](03-Nodes/System/System-Troubleshooting.md)
+**[System](03-Nodes/System/)** — [Overview](03-Nodes/System/System-Overview.md) · [Certificates](03-Nodes/System/Certificates.md) · [DNS](03-Nodes/System/DNS.md) · [Hosts](03-Nodes/System/Hosts.md) · [Time and NTP](03-Nodes/System/Time-and-NTP.md) · [Syslog](03-Nodes/System/Syslog.md) · [Services](03-Nodes/System/Services.md) · [Troubleshooting](03-Nodes/System/System-Troubleshooting.md)
 
 **[System → Network](03-Nodes/System/Network/)** — [Overview](03-Nodes/System/Network/Network-Overview.md) · [Linux Bridge](03-Nodes/System/Network/Manage-Linux-Bridge.md) · [Bond](03-Nodes/System/Network/Manage-Bond.md) · [VLAN](03-Nodes/System/Network/Manage-VLAN.md) · [Apply Configuration](03-Nodes/System/Network/Apply-Network-Configuration.md) · [Troubleshooting](03-Nodes/System/Network/Network-Troubleshooting.md)
 

@@ -115,7 +115,8 @@ Menu confirmed from `03-Nodes/images/navigation-menu.png`: Search · Summary · 
 | System → Time | ✅ | [Time and NTP](03-Nodes/System/Time-and-NTP.md) |
 | System → Syslog | ✅ | [Syslog](03-Nodes/System/Syslog.md) |
 | System → Options | 🔍 ❌ | Node-level System Options, if present |
-| Boot Mode / Kernel / Services | ✅ | [Boot Mode](03-Nodes/System/Boot-Mode.md), [Kernel](03-Nodes/System/Kernel.md), [Services](03-Nodes/System/Services.md) |
+| Services | ✅ | [Services](03-Nodes/System/Services.md) |
+| Boot Mode / Kernel Version | ✅ | Fields on [Node Summary](03-Nodes/Node-Summary.md) — no panel of their own |
 | Updates | ✅ | [Update Node](03-Nodes/Updates/Update-Node.md) |
 | Updates → Repositories | ✅ | [Repositories](03-Nodes/Updates/Repositories.md) |
 | Firewall | ✅ | [Node Firewall](03-Nodes/Node-Firewall.md) |

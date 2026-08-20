@@ -29,7 +29,7 @@ Corresponds to selecting a node under **Datacenter** in the resource tree. Setti
 
 Node-level operating system configuration.
 
-[System Overview](System/System-Overview.md) · [Certificates](System/Certificates.md) · [DNS](System/DNS.md) · [Hosts](System/Hosts.md) · [Time and NTP](System/Time-and-NTP.md) · [Syslog](System/Syslog.md) · [Boot Mode](System/Boot-Mode.md) · [Kernel](System/Kernel.md) · [Services](System/Services.md) · [System Troubleshooting](System/System-Troubleshooting.md)
+[System Overview](System/System-Overview.md) · [Certificates](System/Certificates.md) · [DNS](System/DNS.md) · [Hosts](System/Hosts.md) · [Time and NTP](System/Time-and-NTP.md) · [Syslog](System/Syslog.md) · [Services](System/Services.md) · [System Troubleshooting](System/System-Troubleshooting.md)
 
 ### Network
 

@@ -33,12 +33,12 @@ Before modifying the Hosts configuration, ensure that:
 
 ---
 
-# View Host Entries
+# Procedure
 
 ## Step 1: Open the Hosts Page
 
 1. Log in to the VM2Cloud VE web interface.
-2. Select the required node.
+2. Select the node.
 3. Expand **System**.
 4. Select **Hosts**.
 
@@ -46,228 +46,103 @@ Before modifying the Hosts configuration, ensure that:
 
 ### Screenshot 1
 
-**Hosts Page**
+**Hosts Panel**
+
+![Hosts Panel](images/hosts-panel.png)
+
+**This panel is a plain-text editor, not a table.** It shows the node's hosts file exactly
+as it is on disk, and the only two controls are **Save** and **Revert**. There is no Add,
+no Edit, and no Remove — you edit lines directly in the text area.
+
+A default file contains the loopback entry, one entry for this node, and the standard IPv6
+block:
 
 ```text
-[ Place Screenshot Here ]
+127.0.0.1 localhost.localdomain localhost
+192.168.0.123 node1.test node1
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+ff02::3 ip6-allhosts
 ```
 
-> **Capture:** Node → System → Hosts as it opens. **This one shot settles the open
-> `Verify` question above** — whether the panel is a plain-text editor or a table of
-> entries.
+The second line is the one that matters. It maps this node's own address to its fully
+qualified name and its short name, and the node uses it to determine its own address.
 
 ---
 
-## Step 2: Review Existing Entries
+## Step 2: Edit an Entry
 
-The Hosts page displays all configured hostname mappings.
+Entries are `<address> <fully-qualified-name> <short-name>`, one per line, whitespace
+separated. To add a host, type a new line. To change one, edit it in place. To remove one,
+delete the line — or comment it out with `#` if you may want it back.
 
-Each entry maps an address to one or more names:
+Give every cluster node a line carrying both its fully qualified name and its short name.
+Cluster communication resolves node names locally, so a node missing here is a node the
+others may fail to reach even when DNS is healthy.
 
-| Element | Purpose |
-|---|---|
-| **IP address** | The address the names resolve to. |
-| **Hostname** | The primary fully qualified name for that address. |
-| **Aliases** | Additional short names for the same address. |
-
-The entry resolving **this node's own hostname** is the one that matters. The node reads its own address from it for cluster communication and certificate generation, so it must match the address actually configured on the management interface.
-
-> **Verify:** Confirm how this panel presents the file — as an editable plain-text view of
-> `/etc/hosts` with a Save control, or as a table with per-entry Add and Edit dialogs.
-> The procedure below assumes per-entry dialogs; if it is a text editor, these steps
-> need rewriting as "edit the line and save".
-
-Review the entries to verify that they are correct.
+> **Warning:** Do not remove or break the line for this node's own hostname. The node
+> determines its own address from that entry — removing it breaks cluster communication and
+> certificate generation. If you are unsure which line that is, run `hostname -i` in the
+> [Shell](../Shell.md) before changing anything.
 
 ---
 
-### Screenshot 2
+## Step 3: Save or Revert
 
-**Existing Host Entries**
+* **Save** writes the file immediately. There is no confirmation dialog and no undo.
+* **Revert** discards your edits and reloads the file from disk. It only helps *before* you
+  save.
 
-```text
-[ Place Screenshot Here ]
+Changes take effect at once — nothing needs restarting.
+
+---
+
+## Step 4: Verify
+
+Confirm the node still resolves its own name, and that any name you added resolves:
+
+```bash
+hostname -i
+getent hosts node1
 ```
 
-> **Capture:** The entries for this node, including the one that maps its own hostname.
+In a cluster, check that the other members still see this node — `pvecm status` on any
+member.
 
 ---
 
-# Add a Host Entry
+# Keeping the Address Correct
 
-## Step 1: Open the Add Host Dialog
+The address on the node's own line must match the address the node actually uses. They can
+drift apart: change the management address in
+[Network](Network/Network-Overview.md) and this file is **not** updated for you.
 
-1. On the **Hosts** page, click **Create**.
+That mismatch is quiet. The node keeps working locally, and the problem surfaces later as a
+cluster member that cannot be reached, a certificate whose subject alternative names no
+longer include the real address, or a join that fails on a name conflict.
 
----
+Check the two agree whenever a node's address changes:
 
-### Screenshot 3
-
-**Add Control**
-
-```text
-[ Place Screenshot Here ]
+```bash
+hostname -i
+ip -4 addr show
 ```
-
-> **Capture:** The control used to add an entry, whichever form the panel takes.
-
----
-
-## Step 2: Configure the Host Entry
-
-Enter the required information.
-
-| Field | What to enter |
-|---|---|
-| **IP address** | The address being named. |
-| **Hostname** | The fully qualified name, such as `node1.example.com`. |
-| **Aliases** | Optional short names, such as `node1`. |
-
-Give every cluster node an entry containing both its fully qualified name and its short name. Cluster communication resolves node names locally, so a missing or wrong entry produces join failures and certificate errors that look unrelated to DNS.
-
-After completing the required fields, click **Create**.
-
----
-
-### Screenshot 4
-
-**Host Entry Fields**
-
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** The add form with IP address, hostname, and aliases filled in.
-
----
-
-# Edit a Host Entry
-
-## Step 1: Select the Entry
-
-1. Select the required host entry.
-2. Click **Edit**.
-
----
-
-### Screenshot 5
-
-**Edit an Entry**
-
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** An existing entry opened for editing.
-
----
-
-## Step 2: Update the Configuration
-
-Modify the required information.
-
-| Field | Notes |
-|---|---|
-| **IP address** | Change only when the node or host has genuinely moved. |
-| **Hostname** | The fully qualified name. |
-| **Aliases** | Short names. |
-
-> **Warning:** Changing the address on this node's own entry without also changing the interface configuration leaves the two disagreeing. The node then advertises an address it does not hold, which breaks cluster join, certificate generation, and the cluster join information. Confirm with `hostname -i` after any change to this node's entry.
-
-Click **OK** to save the changes.
-
----
-
-### Screenshot 6
-
-**Edit Fields**
-
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** The edit form, showing which values can be changed.
-
----
-
-# Remove a Host Entry
-
-> **Warning:** Do not remove the entry that resolves this node's own hostname. The
-> node determines its own address from that entry, and removing it breaks cluster
-> communication and certificate generation. If you are unsure which entry that is,
-> check `hostname -i` before changing anything.
-
-## Step 1: Select the Entry
-
-1. Select the host entry to remove.
-2. Click **Remove**.
-
----
-
-### Screenshot 7
-
-**Remove Control**
-
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** An entry selected with **Remove** available.
-
----
-
-## Step 2: Confirm the Removal
-
-1. Review the selected entry.
-2. Click **Yes** to confirm.
-
-The host entry is removed from the local hosts configuration.
-
----
-
-### Screenshot 8
-
-**Removal Confirmation**
-
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** The confirmation shown before an entry is deleted.
-
----
-
-## Typical Uses
-
-Host entries are commonly used for:
-
-- Cluster node communication.
-- Local hostname resolution.
-- Internal servers.
-- Storage servers.
-- Temporary hostname mappings during maintenance.
-- Environments without DNS.
-
----
-
-## Best Practices
-
-- Use valid IP addresses.
-- Ensure hostnames are unique.
-- Remove unused host entries.
-- Verify hostname resolution after making changes.
-- Use DNS for large environments whenever possible.
-
----
 
 # Verification
 
 Verify the following:
 
-- The host entry appears in the Hosts page.
-- The hostname resolves to the correct IP address.
-- Existing entries remain unchanged.
-- Applications can communicate using the configured hostname.
+- The edited line appears in the panel after saving.
+- `hostname -i` returns the address you expect.
+- `getent hosts <name>` resolves each name you added.
+- The node's own line still carries both its fully qualified and short name.
+- The address on that line matches the node's actual management address.
+- In a cluster, `pvecm status` still lists every member.
 
 ---
 
@@ -293,4 +168,11 @@ Verify the following:
 
 # Summary
 
-The **Hosts** page allows administrators to manage local hostname-to-IP address mappings on a VM2Cloud VE node. Properly configured host entries help ensure reliable hostname resolution for cluster communication, internal services, and environments where DNS is unavailable or requires supplemental local mappings.
+The **Hosts** page is a plain-text editor for the node's hosts file, with **Save** and
+**Revert** as its only controls. There is no per-entry dialog — you edit lines directly.
+
+Local entries are consulted before DNS, which makes this file how cluster nodes find each
+other when DNS is unavailable or incomplete. Two things are worth remembering: the line for
+the node's own hostname is load-bearing, because the node reads its own address from it; and
+that address is **not** updated when you change the management address elsewhere, so the two
+can drift apart silently.

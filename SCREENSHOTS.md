@@ -123,11 +123,9 @@ Node: `v2c1` only. Do not cluster yet.
 |---|---:|
 | [Time and NTP](03-Nodes/System/Time-and-NTP.md) | 9 |
 | [Hosts](03-Nodes/System/Hosts.md) | 8 |
-| [Kernel](03-Nodes/System/Kernel.md) | 6 |
 | [Certificates](03-Nodes/System/Certificates.md) | 5 |
 | [DNS](03-Nodes/System/DNS.md) | 4 |
 | [Syslog](03-Nodes/System/Syslog.md) | 3 |
-| [Boot Mode](03-Nodes/System/Boot-Mode.md) | 2 |
 
 ### Node other — 17
 | Page | Shots |
