@@ -85,12 +85,10 @@ Do this across the whole cluster rather than checking one node and assuming.
 
 **Node Subscription Status**
 
-```text
-[ Place Screenshot Here ]
-```
+![Node Subscription Status](images/support-panel-lower.png)
 
-> **Capture:** A node → Subscription, showing a valid subscription with its level and
-> expiry date.
+Below the activation notice, the panel links to the administration guide and to the
+corresponding source for the shipped version. There is nothing to configure here.
 
 ---
 

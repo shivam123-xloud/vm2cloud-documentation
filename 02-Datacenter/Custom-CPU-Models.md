@@ -101,19 +101,6 @@ Enable only what the workload needs. Every additional flag narrows the set of no
 
 ---
 
-### Screenshot 3
-
-**Flag Selection**
-
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** The flag list with per-node support visible, so the difference between a
-> universally supported flag and a node-specific one is clear.
-
----
-
 ## Step 4: Assign the Model to a Machine
 
 1. Select the virtual machine.

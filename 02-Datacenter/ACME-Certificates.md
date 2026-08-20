@@ -131,12 +131,15 @@ The dialog is read-only. Close it when finished.
 
 **Account Details**
 
-```text
-[ Place Screenshot Here ]
-```
+![Account Details](images/acme-account-details.png)
 
-> **Capture:** An account selected and opened with **View**, showing the created
-> timestamp, `valid` status, directory URL, and terms of service link.
+**View** on a selected account opens a read-only window showing the **Created** timestamp,
+the account **Status**, the **Directory** it was registered against, and a link to the terms
+of service accepted at registration.
+
+`valid` is what a working account reports. The Directory line is worth reading carefully —
+a staging account and a production account look identical everywhere else, and the
+difference only becomes obvious when a browser rejects the resulting certificate.
 
 ---
 

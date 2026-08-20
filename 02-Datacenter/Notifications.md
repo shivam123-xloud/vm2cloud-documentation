@@ -114,11 +114,10 @@ A target that has never been tested is an assumption. Mail is routinely blocked,
 
 **Test Notification**
 
-```text
-[ Place Screenshot Here ]
-```
+![Test Notification](images/notifications-test.png)
 
-> **Capture:** The result of sending a test notification, and the received message.
+**Test** sends a notification through the selected target immediately, so delivery can be
+proven before something real depends on it. The result appears as a task.
 
 ---
 
@@ -140,11 +139,10 @@ Start simple: one matcher sending everything important to one address. Split it 
 
 **Notification Matcher**
 
-```text
-[ Place Screenshot Here ]
-```
+![Notification Matcher](images/notifications-modify.png)
 
-> **Capture:** The Add matcher dialog, showing the condition fields and target selector.
+Matchers decide which events reach which target. **Modify** on a target opens its
+configuration; the built-in `mail-to-root` target cannot be removed, only reconfigured.
 
 ---
 

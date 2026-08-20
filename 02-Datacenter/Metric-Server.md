@@ -77,12 +77,11 @@ The panel lists configured servers with **Name**, **Type**, **Enabled**, **Serve
 
 **Add Metric Server Dialog**
 
-```text
-[ Place Screenshot Here ]
-```
+![Add Metric Server Dialog](images/metric-server-add.png)
 
-> **Capture:** The Add metric server dialog with a type selected, showing address, port,
-> authentication, and interval fields.
+**Add** is a dropdown offering the server type, and the dialog that follows is specific to
+it. The fields cover the destination address and port, the protocol, authentication where
+the type requires it, and an **Enable** checkbox.
 
 ---
 
@@ -111,16 +110,7 @@ Every node sends independently. A firewall rule blocking one node produces a mon
 
 ---
 
-### Screenshot 3
-
-**Metrics Arriving**
-
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** The metrics database or dashboard showing incoming VM2Cloud VE data from
-> multiple nodes.
+> **Not captured:** Needs a metrics database actually receiving data. This is a picture of your monitoring system rather than of VM2Cloud VE.
 
 ---
 

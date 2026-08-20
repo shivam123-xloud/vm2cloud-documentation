@@ -99,11 +99,9 @@ Changes are applied to the cluster configuration and synchronized across all nod
 
 **Edit an Option**
 
-```text
-[ Place Screenshot Here ]
-```
+![Edit an Option](images/datacenter-option-edit.png)
 
-> **Capture:** An option open for editing, showing the value control it uses.
+Each option opens its own dialog, sized to that one setting. There is no bulk edit.
 
 ---
 

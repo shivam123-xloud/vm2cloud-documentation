@@ -104,15 +104,7 @@ The cleanest arrangement is a directory on shared storage, mounted at the same p
 
 ---
 
-### Screenshot 3
-
-**Mapping Across Nodes**
-
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** A directory mapping with entries for two or more nodes.
+> **Not captured:** Same — a single node cannot show a mapping spanning several.
 
 ---
 

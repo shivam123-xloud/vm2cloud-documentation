@@ -102,16 +102,7 @@ The devices do not have to sit at the same address on each node. They do have to
 
 ---
 
-### Screenshot 3
-
-**Mapping Across Multiple Nodes**
-
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** A mapping with entries for two or more nodes, showing the different device
-> addresses on each.
+> **Not captured:** A mapping needs entries on two or more nodes to be worth a picture. Rebuild this shot when a second node exists.
 
 ---
 
