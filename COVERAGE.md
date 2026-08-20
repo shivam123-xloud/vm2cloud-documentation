@@ -119,6 +119,7 @@ Menu confirmed from `03-Nodes/images/navigation-menu.png`: Search · Summary · 
 | Boot Mode / Kernel Version | ✅ | Fields on [Node Summary](03-Nodes/Node-Summary.md) — no panel of their own |
 | Updates | ✅ | [Update Node](03-Nodes/Updates/Update-Node.md) |
 | Updates → Repositories | ✅ | [Repositories](03-Nodes/Updates/Repositories.md) |
+| Updates → Update Bundles | ❌ | **Undocumented.** Confirmed present in the node menu on 20 August; no page exists |
 | Firewall | ✅ | [Node Firewall](03-Nodes/Node-Firewall.md) |
 | Disks | ✅ | [Disks Overview](03-Nodes/Disks/Disks-Overview.md) + 7 pages |
 | Ceph | ✅ | [Node Ceph](03-Nodes/Node-Ceph.md) |

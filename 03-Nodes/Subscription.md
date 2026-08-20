@@ -46,12 +46,13 @@ Before viewing Subscription information, ensure that:
 
 **Subscription Page**
 
-```text
-[ Place Screenshot Here ]
-```
+![Subscription Page](images/subscription-panel.png)
 
-> **Capture:** Node → Subscription as it opens.
+The panel reports the node's subscription status and carries the controls to upload or
+remove a key.
 
+Status is per node, not per cluster. In a cluster each node is licensed separately, and the
+Datacenter Summary reports the worst case across all of them.
 ---
 
 ## Step 2: Review Subscription Status
@@ -65,18 +66,6 @@ Depending on the VM2Cloud VE version, information may include:
 - Subscription Key
 - Validity Information
 - Subscription Message
-
----
-
-### Screenshot 2
-
-**Subscription Status**
-
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** The status detail. **Blur any licence key** before saving.
 
 ---
 
@@ -104,7 +93,7 @@ After adding or changing subscription information:
 
 ---
 
-### Screenshot 3
+### Screenshot 2
 
 **Verified Subscription**
 

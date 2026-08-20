@@ -70,12 +70,13 @@ Before updating a node, ensure that:
 
 **Updates Page**
 
-```text
-[ Place Screenshot Here ]
-```
+![Updates Page](images/updates-panel.png)
 
-> **Capture:** Node → Updates, showing the package list.
+The panel lists packages with an available update, showing the installed version against the
+candidate version, with **Refresh** and **Upgrade** above the list.
 
+Each row names the package, the version you have, the version available, and a short
+description of the change.
 ---
 
 ## Step 3: Refresh the Package List
@@ -113,19 +114,6 @@ Information displayed may include:
 
 ---
 
-### Screenshot 4
-
-**Available Updates**
-
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** The list showing current version, available version, and package
-> description.
-
----
-
 ## Step 5: Install Updates
 
 1. Click **Upgrade**.
@@ -136,7 +124,7 @@ Information displayed may include:
 
 ---
 
-### Screenshot 5
+### Screenshot 4
 
 **Upgrade Packages**
 

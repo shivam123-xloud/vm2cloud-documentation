@@ -57,11 +57,10 @@ Do **not** use it for:
 
 **Node Notes Tab**
 
-```text
-[ Place Screenshot Here ]
-```
+![Node Notes Tab](images/node-notes-panel.png)
 
-> **Capture:** A node → Notes, showing existing content and the edit control.
+A free-text area attached to this node, with a single **Edit** control. Unlike Datacenter
+Notes, what you write here belongs to this node alone.
 
 ---
 

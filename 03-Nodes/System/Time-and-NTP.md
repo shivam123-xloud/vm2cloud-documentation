@@ -51,12 +51,13 @@ Before modifying the time settings, ensure that:
 
 **Time Page**
 
-```text
-[ Place Screenshot Here ]
-```
+![Time Page](images/time-panel.png)
 
-> **Capture:** Node → System → Time as it opens.
+The panel shows the node's **Time zone**, its current **Local time**, and the **UTC time**,
+with a single **Edit** control.
 
+Local time and UTC are shown together deliberately — a node whose clock is wrong is easier
+to spot against UTC than against a time zone you have to convert in your head.
 ---
 
 ## Step 2: Review the Time Information
@@ -71,19 +72,6 @@ Review the displayed information to verify that the node is using the correct sy
 
 ---
 
-### Screenshot 2
-
-**Time Information**
-
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** The same page showing current date, current time, and configured time
-> zone.
-
----
-
 # Change the Time Zone
 
 ## Step 1: Open the Time Zone Configuration
@@ -92,16 +80,16 @@ Review the displayed information to verify that the node is using the correct sy
 
 ---
 
-### Screenshot 3
+### Screenshot 2
 
 **Time Zone Control**
 
-```text
-[ Place Screenshot Here ]
-```
+![Time Zone Control](images/time-edit-dialog.png)
 
-> **Capture:** The Time page with the **Time Zone** control visible.
+**Edit** is the only control on this panel, and it changes the time zone.
 
+A single searchable **Time zone** selector. The clock itself is not set here — that is
+handled by time synchronisation, which is configured outside this panel.
 ---
 
 ## Step 2: Select the Time Zone
@@ -110,18 +98,6 @@ Review the displayed information to verify that the node is using the correct sy
 2. Click **OK**.
 
 The selected time zone is applied to the node.
-
----
-
-### Screenshot 4
-
-**Time Zone Dialog**
-
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** The time-zone selector open, listing the available zones.
 
 ---
 
@@ -143,7 +119,7 @@ Typical information includes:
 
 ---
 
-### Screenshot 5
+### Screenshot 3
 
 **Network Time Section**
 
@@ -161,7 +137,7 @@ Review the displayed information to ensure the node is synchronizing correctly.
 
 ---
 
-### Screenshot 6
+### Screenshot 4
 
 **Synchronization Status**
 
@@ -182,7 +158,7 @@ Review the displayed information to ensure the node is synchronizing correctly.
 
 ---
 
-### Screenshot 7
+### Screenshot 5
 
 **Edit Network Time**
 
@@ -209,7 +185,7 @@ Click **OK** to save the configuration.
 
 ---
 
-### Screenshot 8
+### Screenshot 6
 
 **NTP Server Configuration**
 
@@ -232,7 +208,7 @@ After saving the configuration:
 
 ---
 
-### Screenshot 9
+### Screenshot 7
 
 **Verified Synchronization**
 

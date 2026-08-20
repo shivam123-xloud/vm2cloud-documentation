@@ -48,12 +48,13 @@ Before modifying the DNS configuration, ensure that:
 
 **DNS Page**
 
-```text
-[ Place Screenshot Here ]
-```
+![DNS Page](images/dns-panel.png)
 
-> **Capture:** Node → System → DNS as it opens.
+A short read-only summary with a single **Edit** control: the search domain and up to three
+resolvers.
 
+These are the node's own resolvers, not the guests'. Containers inherit them unless
+overridden — see [CT DNS](../../05-Containers/CT-DNS.md).
 ---
 
 ## Step 2: Review the DNS Configuration
@@ -73,18 +74,6 @@ Review the values to ensure they match your network configuration.
 
 ---
 
-### Screenshot 2
-
-**Current Resolvers**
-
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** The page showing the search domain and the configured DNS servers.
-
----
-
 # Modify DNS Settings
 
 ## Step 1: Open the DNS Configuration
@@ -93,16 +82,18 @@ Review the values to ensure they match your network configuration.
 
 ---
 
-### Screenshot 3
+### Screenshot 2
 
 **Edit Control**
 
-```text
-[ Place Screenshot Here ]
-```
+![Edit Control](images/dns-edit-dialog.png)
 
-> **Capture:** The DNS page with **Edit** clicked.
+**Edit** opens the only dialog this panel has.
 
+Four fields: **Search domain**, and **DNS server 1**, **2**, and **3**. Only the first
+server is required. Configure at least two — with one, any outage of that resolver stops
+name resolution on the node, which surfaces as backups, updates, and cluster joins failing
+rather than as an obvious DNS problem.
 ---
 
 ## Step 2: Configure the DNS Settings
@@ -121,18 +112,6 @@ Configure the required values.
 In a cluster, use the same resolvers on every node unless there is a specific reason not to.
 
 After entering the required values, click **OK**.
-
----
-
-### Screenshot 4
-
-**DNS Edit Dialog**
-
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** The dialog with all three server fields visible and filled.
 
 ---
 

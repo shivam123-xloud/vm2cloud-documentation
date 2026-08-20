@@ -48,12 +48,16 @@ Before managing certificates, ensure that:
 
 **Certificates Page**
 
-```text
-[ Place Screenshot Here ]
-```
+![Certificates Page](images/certificates-panel.png)
 
-> **Capture:** Node → System → Certificates as it opens.
+The panel lists the certificates installed on this node with **File**, **Issuer**,
+**Subject**, **Valid Since**, **Expires**, and **Subject Alternative Names**. Two exist on a
+fresh install: `pve-root-ca.pem`, the cluster's own certificate authority, and
+`pve-ssl.pem`, the certificate this node serves the web interface with.
 
+Read the **Subject Alternative Names** column rather than the subject. A browser matches
+the address you typed against those names, so a node reachable at an address missing from
+that list warns even when the certificate itself is valid.
 ---
 
 ## Step 2: Review Certificate Information
@@ -72,18 +76,6 @@ Depending on the VM2Cloud VE version, the page may display information such as:
 
 ---
 
-### Screenshot 2
-
-**Certificate Details**
-
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** A certificate selected, showing issuer, validity dates, and fingerprint.
-
----
-
 # Replace the Node Certificate
 
 > **Note**
@@ -97,17 +89,18 @@ Depending on the VM2Cloud VE version, the page may display information such as:
 
 ---
 
-### Screenshot 3
+### Screenshot 2
 
 **Upload Control**
 
-```text
-[ Place Screenshot Here ]
-```
+![Upload Control](images/certificates-upload-dialog.png)
 
-> **Capture:** The control used to install a custom certificate. **This clears a
-> `Verify` marker** — the page hedges on its exact label.
+The control is labelled **Upload Custom Certificate**, alongside **Delete Custom
+Certificate** and **View Certificate**.
 
+The dialog takes the private key and the certificate chain, each as pasted text or an
+uploaded file. Both are required together — a certificate without its matching key is
+rejected.
 ---
 
 ## Step 2: Provide the Certificate
@@ -124,18 +117,6 @@ Verify that the certificate and private key belong together.
 
 ---
 
-### Screenshot 4
-
-**Certificate Upload Dialog**
-
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** The dialog showing the certificate and private key fields.
-
----
-
 ## Step 3: Apply the Certificate
 
 1. Review the certificate information.
@@ -146,7 +127,7 @@ The VM2Cloud VE web service may need to reload or restart before the new certifi
 
 ---
 
-### Screenshot 5
+### Screenshot 3
 
 **Applied Certificate**
 

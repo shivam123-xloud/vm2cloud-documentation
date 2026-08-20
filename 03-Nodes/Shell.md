@@ -47,12 +47,12 @@ Before using the Shell, ensure that:
 
 **Node Selected**
 
-```text
-[ Place Screenshot Here ]
-```
+![Node Selected](images/shell-panel.png)
 
-> **Capture:** The node selected in the tree with the **Shell** button visible.
+**Shell** in the node menu opens a root terminal on that node, in the browser.
 
+The session is a real root shell. Everything available over SSH is available here, including
+the commands this documentation uses for verification.
 ---
 
 ## Step 2: Open the Shell
@@ -60,18 +60,6 @@ Before using the Shell, ensure that:
 1. Click **Shell** from the node menu.
 
 A new terminal window opens.
-
----
-
-### Screenshot 2
-
-**Shell Window**
-
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** The terminal open at a root prompt.
 
 ---
 
@@ -93,15 +81,13 @@ node1
 
 ---
 
-### Screenshot 3
+### Screenshot 2
 
 **Command and Output**
 
-```text
-[ Place Screenshot Here ]
-```
+![Command and Output](images/shell-command.png)
 
-> **Capture:** A command run in the shell with its output — `hostname` or similar.
+Commands and their output behave exactly as they would over SSH.
 
 ---
 

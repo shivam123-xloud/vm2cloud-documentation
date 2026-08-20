@@ -47,12 +47,12 @@ Before viewing Task History, ensure that:
 
 **Task History Page**
 
-```text
-[ Place Screenshot Here ]
-```
+![Task History Page](images/task-history-panel.png)
 
-> **Capture:** Node → Task History with a populated list.
+Every operation performed on this node, newest first.
 
+Columns are **Start Time**, **End Time**, **Node**, **User name**, **Description**, and
+**Status**. A running task has no end time yet.
 ---
 
 ## Step 2: Review Tasks
@@ -71,18 +71,6 @@ Depending on the VM2Cloud VE version, task information may include:
 
 ---
 
-### Screenshot 2
-
-**Task Columns**
-
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** The same list showing user, node, type, status, and task ID.
-
----
-
 # View Task Details
 
 ## Step 1: Select a Task
@@ -92,16 +80,16 @@ Depending on the VM2Cloud VE version, task information may include:
 
 ---
 
-### Screenshot 3
+### Screenshot 2
 
 **Task Selected**
 
-```text
-[ Place Screenshot Here ]
-```
+![Task Selected](images/task-detail.png)
 
-> **Capture:** A task opened for detail.
+Double-clicking a task opens its detail window.
 
+The window has **Output** and **Status** tabs. Output carries what the task printed —
+the first place to look when something failed.
 ---
 
 ## Step 2: Review the Task Output
@@ -114,19 +102,6 @@ Review the task output to determine:
 - Whether an error occurred.
 
 For failed operations, use the displayed error information to identify the cause.
-
----
-
-### Screenshot 4
-
-**Task Output**
-
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** The **Output** tab of a task — ideally a failed one, so an actual error
-> is visible.
 
 ---
 

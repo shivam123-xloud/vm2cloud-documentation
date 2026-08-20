@@ -47,13 +47,13 @@ Before managing repositories, ensure that:
 
 **Repositories Page**
 
-```text
-[ Place Screenshot Here ]
-```
+![Repositories Page](images/repositories-panel.png)
 
-> **Capture:** Node → Repositories as it opens. **This clears a `Verify` marker** — the
-> exact panel location and its column set.
+The panel lists every configured repository with its **Component**, **Origin**, and
+**Status**, and reports on the overall configuration above the list.
 
+The status column is the useful one. It flags repositories that are unreachable, and warns
+where the mix of enabled repositories is not appropriate for the node's intended use.
 ---
 
 ## Step 2: Review Repository Configuration
@@ -73,19 +73,6 @@ Review the repository list to verify the current configuration.
 
 ---
 
-### Screenshot 2
-
-**Repository List**
-
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** The configured repositories with their status, including any warning
-> banner the panel displays about the overall configuration.
-
----
-
 # Add a Repository
 
 > **Note**
@@ -98,16 +85,16 @@ Review the repository list to verify the current configuration.
 
 ---
 
-### Screenshot 3
+### Screenshot 2
 
 **Add Repository Dialog**
 
-```text
-[ Place Screenshot Here ]
-```
+![Add Repository Dialog](images/repositories-add-dialog.png)
 
-> **Capture:** The Add dialog as it opens.
+**Add** offers a list of known repositories rather than a free-text URL field, so the
+release and component always match the installed system.
 
+Selecting an entry fills the repository definition for you. There is nothing to type.
 ---
 
 ## Step 2: Configure the Repository
@@ -131,19 +118,6 @@ Click **Add** to save the configuration.
 
 ---
 
-### Screenshot 4
-
-**Repository Fields**
-
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** The dialog with the fields filled, showing which are required and which
-> are optional.
-
----
-
 # Enable or Disable a Repository
 
 ## Step 1: Select a Repository
@@ -155,7 +129,7 @@ The repository status is updated immediately.
 
 ---
 
-### Screenshot 5
+### Screenshot 3
 
 **Enable or Disable**
 

@@ -48,12 +48,13 @@ Before viewing the system logs, ensure that:
 
 **Syslog Page**
 
-```text
-[ Place Screenshot Here ]
-```
+![Syslog Page](images/syslog-panel.png)
 
-> **Capture:** Node → System → Syslog as it opens.
+The panel is labelled **System Log** in the node menu. It streams the node's journal, newest
+entries appended as they arrive.
 
+Each line carries its timestamp, the host, the service or process that emitted it, and the
+message.
 ---
 
 ## Step 2: Review Log Entries
@@ -71,18 +72,6 @@ Review the log entries to identify warnings, errors, or other system events.
 
 ---
 
-### Screenshot 2
-
-**Log Entries**
-
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** Entries showing timestamp, service, and message.
-
----
-
 ## Refresh the Log View
 
 As new events occur, additional log entries are generated.
@@ -91,7 +80,7 @@ Refresh the page to view the latest log messages.
 
 ---
 
-### Screenshot 3
+### Screenshot 2
 
 **Refreshed View**
 
