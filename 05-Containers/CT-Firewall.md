@@ -91,12 +91,9 @@ Repeat for each service the container must expose.
 
 **Adding a Container Firewall Rule**
 
-```text
-[ Place Screenshot Here ]
-```
+![Adding a Container Firewall Rule](images/ct-firewall-rule-add.png)
 
-> **Capture:** The Add Rule dialog on a container, filled in for an inbound rule
-> permitting a specific service port from a specific source.
+The same rule dialog used everywhere else, scoped to this container.
 
 ---
 

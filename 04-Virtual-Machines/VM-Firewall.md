@@ -88,12 +88,10 @@ Repeat for each service the machine must expose.
 
 **Adding a VM Firewall Rule**
 
-```text
-[ Place Screenshot Here ]
-```
+![Adding a VM Firewall Rule](images/vm-firewall-rule-add.png)
 
-> **Capture:** The Add Rule dialog on a virtual machine, filled in for an inbound rule
-> permitting a specific service port from a specific source.
+The same rule dialog used at datacenter and node level — direction, action, source and
+destination, macro or explicit protocol and port.
 
 ---
 

@@ -103,12 +103,10 @@ Name snapshots after the change you are about to make, not the date. `before-php
 
 **Take Snapshot Dialog**
 
-```text
-[ Place Screenshot Here ]
-```
+![Take Snapshot Dialog](images/ct-snapshot-take.png)
 
-> **Capture:** The Take Snapshot dialog on a container, showing the Name and Description
-> fields.
+The dialog takes a **Name** and a **Description**. Containers have no memory-state option —
+that is a virtual machine feature.
 
 ---
 
@@ -116,12 +114,10 @@ Name snapshots after the change you are about to make, not the date. `before-php
 
 **Snapshot Created**
 
-```text
-[ Place Screenshot Here ]
-```
+![Snapshot Created](images/ct-snapshot-created.png)
 
-> **Capture:** The container Snapshots tab showing a created snapshot in the list
-> alongside the NOW state.
+Snapshots list newest first with **current** marking the live state. Rollback and Remove
+act on the selected snapshot.
 
 ---
 

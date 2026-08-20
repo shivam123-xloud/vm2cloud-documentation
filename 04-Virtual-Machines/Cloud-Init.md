@@ -74,12 +74,10 @@ The **Cloud-Init** tab appears.
 
 **Adding a CloudInit Drive**
 
-```text
-[ Place Screenshot Here ]
-```
+![Adding a CloudInit Drive](images/vm-hardware-add.png)
 
-> **Capture:** VM → Hardware → Add → CloudInit Drive, showing the storage selection
-> dialog.
+CloudInit is added from **Hardware → Add**, alongside disks, network devices, and
+passthrough hardware. Until it is added, the Cloud-Init tab has nothing to configure.
 
 ---
 

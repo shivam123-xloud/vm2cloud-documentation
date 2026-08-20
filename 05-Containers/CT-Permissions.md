@@ -86,11 +86,9 @@ Prefer granting to a **group**. Membership changes are then a single edit rather
 
 **Adding a Permission**
 
-```text
-[ Place Screenshot Here ]
-```
+![Adding a Permission](images/ct-permission-add.png)
 
-> **Capture:** The Add Permission dialog opened from a container's Permissions tab.
+The path is fixed to this container; you choose the principal and role.
 
 ---
 

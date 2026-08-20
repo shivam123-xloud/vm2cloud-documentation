@@ -75,13 +75,10 @@ configuration. Containers configure addressing here rather than inside the guest
 
 **Add Network Device Dialog**
 
-```text
-[ Place Screenshot Here ]
-```
+![Add Network Device Dialog](images/ct-network-add.png)
 
-> **Capture:** The Add network device dialog for a container, empty, showing every field
-> including Name, Bridge, VLAN Tag, Firewall, MAC address, and the IPv4 and IPv6
-> configuration sections.
+The dialog takes a **Name**, **Bridge**, optional **VLAN Tag**, **Firewall** checkbox, and
+IPv4 and IPv6 configuration — DHCP, static, or none.
 
 ---
 
@@ -117,12 +114,10 @@ Choose the addressing method:
 
 **Static IPv4 Configuration**
 
-```text
-[ Place Screenshot Here ]
-```
+![Static IPv4 Configuration](images/ct-network-edit.png)
 
-> **Capture:** The Add or Edit network device dialog with Static selected and the
-> IPv4/CIDR and Gateway fields filled in.
+Editing an existing device opens the same form with its current values. Container
+addressing is set here, not inside the container.
 
 ---
 

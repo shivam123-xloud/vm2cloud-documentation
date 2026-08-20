@@ -76,12 +76,9 @@ console mode, protection, unprivileged flag, and features.
 
 **Editing a Container Option**
 
-```text
-[ Place Screenshot Here ]
-```
+![Editing a Container Option](images/ct-option-edit.png)
 
-> **Capture:** The edit dialog for a single container option — ideally **Start at boot**
-> — showing the available values.
+As with machines, each option opens its own dialog.
 
 ---
 

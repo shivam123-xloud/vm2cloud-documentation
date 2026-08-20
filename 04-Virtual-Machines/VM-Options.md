@@ -76,12 +76,10 @@ The list updates immediately. Whether the machine's behaviour changes immediatel
 
 **Editing an Option**
 
-```text
-[ Place Screenshot Here ]
-```
+![Editing an Option](images/vm-option-edit.png)
 
-> **Capture:** The edit dialog for a single option — ideally **Start at boot** or
-> **Boot Order** — showing the available values.
+Each option opens its own small dialog rather than one large form, so only the setting you
+selected can be changed.
 
 ---
 

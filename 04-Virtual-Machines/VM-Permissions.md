@@ -91,12 +91,10 @@ Prefer granting to a **group** rather than a user. When someone joins or leaves,
 
 **Adding a Permission**
 
-```text
-[ Place Screenshot Here ]
-```
+![Adding a Permission](images/vm-permission-add.png)
 
-> **Capture:** The Add Permission dialog opened from a VM's Permissions tab, showing the
-> group or user field and the role selector.
+The path is filled in for you and fixed to this machine. You choose the principal and the
+role.
 
 ---
 
