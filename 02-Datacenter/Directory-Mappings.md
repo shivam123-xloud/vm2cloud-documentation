@@ -57,12 +57,10 @@ Do **not** use it as a substitute for [storage](Storage/Storage-Overview.md). Gu
 
 **Directory Mappings Panel**
 
-```text
-[ Place Screenshot Here ]
-```
+![Directory Mappings Panel](images/directory-mappings-panel.png)
 
-> **Capture:** Datacenter → Directory Mappings, showing the mapping list with the
-> **Add**, **Edit**, and **Remove** controls.
+Unlike Resource Mappings, this is a single list — columns **ID/Node**, **Actions**, and
+**Comment**, with one **Add** control. It reads `No Mapping found` when empty.
 
 ---
 
@@ -82,11 +80,12 @@ Name it after the content rather than the path, since the path may differ per no
 
 **Add Directory Mapping**
 
-```text
-[ Place Screenshot Here ]
-```
+![Add Directory Mapping](images/directory-mappings-add.png)
 
-> **Capture:** The Add directory mapping dialog, showing the name, node, and path fields.
+The fields are **Name**, **Node**, **Path**, and **Comment** — the path shown as a
+`/some/path` placeholder. The dialog carries its own warning: **"Make sure the directory
+exists."** Nothing here creates the directory for you, and a mapping pointing at a path that
+does not exist on the selected node fails only when a guest tries to use it.
 
 ---
 

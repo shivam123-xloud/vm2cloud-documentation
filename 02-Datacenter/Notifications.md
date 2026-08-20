@@ -60,13 +60,12 @@ This is not optional infrastructure for a production environment. Silent failure
 
 **Notifications Panel**
 
-```text
-[ Place Screenshot Here ]
-```
+![Notifications Panel](images/notifications-panel.png)
 
-> **Capture:** Datacenter → Notifications, showing the target list and matcher list with
-> their controls. If this panel does not exist, capture where notification settings live
-> instead.
+The panel is split. **Notification Targets** lists where notifications are sent — columns
+**Target Name**, **Type**, **Comment**, and **Origin** — with Add, Modify, Remove, **Test**,
+and Enable. A built-in `mail-to-root` target of type `sendmail` exists from installation,
+marked as a built-in origin, which is why the list is never truly empty.
 
 ---
 

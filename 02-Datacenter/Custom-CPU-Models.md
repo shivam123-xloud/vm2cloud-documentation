@@ -50,12 +50,11 @@ If every node has identical processors, a built-in model is simpler and sufficie
 
 **Custom CPU Models Panel**
 
-```text
-[ Place Screenshot Here ]
-```
+![Custom CPU Models Panel](images/custom-cpu-models-panel.png)
 
-> **Capture:** Datacenter → Custom CPU Models, showing the model list with the **Add**,
-> **Edit**, and **Remove** controls.
+The list shows **Name**, **Base Model**, **Physical Address Bits**, **Hide Hypervisor**,
+**Hyper-V Vendor**, and **Flags**, with Add, Remove, and Edit. It is empty until a model is
+created.
 
 ---
 
@@ -75,12 +74,17 @@ Choose a base model every node can run. Building on a base that only some nodes 
 
 **Create Custom CPU Model**
 
-```text
-[ Place Screenshot Here ]
-```
+![Create Custom CPU Model](images/custom-cpu-models-create.png)
 
-> **Capture:** The Add custom CPU model dialog, showing the name, base model selector,
-> vendor, physical address bits, and the flag list.
+Everything is in one dialog — there is no separate flag step. The top half takes **Name**,
+**Base Model**, **Hyper-V Vendor**, **Hide Hypervisor**, and **Physical Address Bits**,
+which is a three-way choice between *Default from QEMU*, *Inherit from host CPU*, and a
+custom value.
+
+The lower half is the flag table, and the column that matters is **Supported On** — it names
+the nodes that actually provide each flag. A search box, an **Accel** switch between KVM and
+TCG, a **Nodes** filter, and a *"Only show flags supported by at least one node"* checkbox
+sit above it. Each flag is a three-state control: **Off**, **Default**, **On**.
 
 ---
 

@@ -57,11 +57,10 @@ Do **not** use it for:
 
 **Datacenter Notes Tab**
 
-```text
-[ Place Screenshot Here ]
-```
+![Datacenter Notes Tab](images/datacenter-notes-panel.png)
 
-> **Capture:** Datacenter → Notes, showing existing content and the edit control.
+The Notes panel is a single free-text area shared cluster-wide, with one **Edit** control.
+It starts empty.
 
 ---
 

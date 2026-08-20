@@ -49,13 +49,11 @@ If you have no monitoring system and no plans for one, this adds nothing — the
 
 **Metric Server Panel**
 
-```text
-[ Place Screenshot Here ]
-```
+![Metric Server Panel](images/metric-server-panel.png)
 
-> **Capture:** Datacenter → Metric Server, showing the server list and the **Add**,
-> **Edit**, and **Remove** controls. Capture it empty, before adding a server — the empty
-> state cannot be recreated afterwards.
+The panel lists configured servers with **Name**, **Type**, **Enabled**, **Server**, and
+**Port**, and carries **Add**, **Edit**, and **Remove**. It is empty on a new cluster.
+**Add** is a dropdown — the server type is chosen there, before the dialog opens.
 
 ---
 

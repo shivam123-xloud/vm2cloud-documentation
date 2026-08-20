@@ -57,12 +57,12 @@ The panel lists PCI and USB mappings separately.
 
 **Resource Mappings Panel**
 
-```text
-[ Place Screenshot Here ]
-```
+![Resource Mappings Panel](images/resource-mappings-panel.png)
 
-> **Capture:** Datacenter → Resource Mappings, showing the PCI and USB sections with
-> their **Add**, **Edit**, and **Remove** controls.
+The panel has two independent sections, **PCI Devices** and **USB Devices**, each with its
+own **Add** control. The PCI table carries ID/Node/Path, Actions, Vendor/Device, Subsystem
+Vendor/Device, **IOMMU-Group**, Status, and Comment. Both read `No Mapping found` until
+something is mapped.
 
 ---
 
@@ -82,12 +82,10 @@ Name the mapping after what the device *is*, not where it sits — `gpu-passthro
 
 **Add Mapping Dialog**
 
-```text
-[ Place Screenshot Here ]
-```
+![Add Mapping Dialog](images/resource-mappings-add.png)
 
-> **Capture:** The Add mapping dialog with a node selected, showing the detected devices
-> available for mapping.
+The dialog asks for a mapping name and then the node and device, with the devices detected
+on the selected node offered for selection.
 
 ---
 

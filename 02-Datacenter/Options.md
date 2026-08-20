@@ -49,12 +49,11 @@ Before modifying cluster options, ensure that:
 
 **Datacenter Options Panel**
 
-```text
-[ Place Screenshot Here ]
-```
+![Datacenter Options Panel](images/datacenter-options-panel.png)
 
-> **Capture:** Datacenter → Options. **This clears a `Verify` marker** — the page
-> describes it as a tab under Cluster, which may not match this deployment.
+Options is a flat **Name / Value** table with a single **Edit** control that acts on the
+selected row. There are no tabs and no grouping — every cluster-wide setting is in this one
+list.
 
 ---
 

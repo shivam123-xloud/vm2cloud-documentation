@@ -50,12 +50,11 @@ Open the Support panel when you need to:
 
 **Support Panel**
 
-```text
-[ Place Screenshot Here ]
-```
+![Support Panel](images/support-panel.png)
 
-> **Capture:** Datacenter → Support, showing entitlement information and any contact
-> details presented.
+The Support panel is informational rather than interactive. It states the activation status
+of the installation and links to the administration guide and to the corresponding source
+for the shipped version.
 
 ---
 

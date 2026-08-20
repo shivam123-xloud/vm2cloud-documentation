@@ -28,19 +28,20 @@ Use this widget to quickly understand the current state of your VM2Cloud VE envi
 
 ### Screenshot 1
 
-**Resource Summary Widget**
+**Health**
 
-```text id="dw01"
-[ Place Screenshot Here ]
-```
+![Health](images/datacenter-summary-health.png)
 
-> **Capture:** The top of Datacenter → Summary, showing guest counts and cluster health.
+The **Health** widget is the first thing to read. It reports the cluster name, whether the
+cluster is **quorate**, and how many nodes are online against how many are offline. A single
+node that is its own cluster still shows quorate here, because one vote of one is a
+majority.
 
 ---
 
 ## CPU Usage
 
-The **CPU Usage** widget displays the current processor utilization across the selected resource.
+The **Guests** widget displays the current processor utilization across the selected resource.
 
 Depending on the selected object, the widget may show CPU usage for:
 
@@ -55,20 +56,18 @@ Monitoring CPU utilization helps identify overloaded systems and resource bottle
 
 ### Screenshot 2
 
-**CPU Usage**
+**Guests**
 
-```text id="dw02"
-[ Place Screenshot Here ]
-```
+![Guests](images/datacenter-summary-guests.png)
 
-> **Capture:** The CPU widget with real utilization rather than a flat zero line —
-> capture it while a guest is doing some work.
+**Guests** counts virtual machines and containers separately, split by running and stopped.
+It counts across the whole cluster, not the node you happen to be looking at.
 
 ---
 
 ## Memory Usage
 
-The **Memory Usage** widget displays the amount of physical memory currently being used.
+The **Resources** widget displays the amount of physical memory currently being used.
 
 The widget generally includes:
 
@@ -83,19 +82,19 @@ Regularly monitoring memory usage helps prevent performance issues caused by ins
 
 ### Screenshot 3
 
-**Memory Usage**
+**Resources**
 
-```text id="dw03"
-[ Place Screenshot Here ]
-```
+![Resources](images/datacenter-summary-resources.png)
 
-> **Capture:** The memory widget showing used against total.
+**Resources** carries CPU, memory, and storage as three gauges in one widget — not as three
+separate panels. Each shows a percentage and the underlying figures, so 50% memory reads as
+`3.90 GiB of 7.70 GiB`. The totals are cluster-wide sums.
 
 ---
 
 ## Storage Usage
 
-The **Storage Usage** widget provides information about the storage resources available to the selected object.
+The **Nodes** widget provides information about the storage resources available to the selected object.
 
 Typical information includes:
 
@@ -110,19 +109,19 @@ This information helps administrators identify storage resources that are approa
 
 ### Screenshot 4
 
-**Storage Usage**
+**Nodes**
 
-```text id="dw04"
-[ Place Screenshot Here ]
-```
+![Nodes](images/datacenter-summary-nodes.png)
 
-> **Capture:** The storage widget with at least one storage part-full.
+The **Nodes** table lists every member with its ID, online state, support level, address,
+and live CPU, memory, and uptime figures. This is where a node that has stopped reporting
+becomes visible.
 
 ---
 
 ## Node Status
 
-The **Node Status** widget displays the operational state of the nodes in the VM2Cloud VE environment.
+The **Subscriptions** widget displays the operational state of the nodes in the VM2Cloud VE environment.
 
 Administrators can quickly determine whether a node is:
 
@@ -137,13 +136,12 @@ Monitoring node status helps identify infrastructure problems before they affect
 
 ### Screenshot 5
 
-**Node Status**
+**Subscriptions**
 
-```text id="dw05"
-[ Place Screenshot Here ]
-```
+![Subscriptions](images/datacenter-summary-subscription.png)
 
-> **Capture:** The node list on the summary, with all nodes online.
+**Subscriptions** summarises licensing across the cluster. It reports the worst case rather
+than a list — one unlicensed node makes the whole widget say so.
 
 ---
 
@@ -158,19 +156,6 @@ Depending on your deployment, this section may include:
 * License Information
 
 If your environment does not use subscriptions, this widget may display a notification instead.
-
----
-
-### Screenshot 6
-
-**Subscription Widget**
-
-```text id="dw06"
-[ Place Screenshot Here ]
-```
-
-> **Capture:** Whatever this deployment shows here. **Blur any licence key** before
-> saving.
 
 ---
 
