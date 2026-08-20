@@ -119,34 +119,9 @@ Typical information includes:
 
 ---
 
-### Screenshot 3
-
-**Network Time Section**
-
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** The NTP portion of the Time page — service status and configured servers.
-
----
-
 ## Step 2: Review the Configuration
 
 Review the displayed information to ensure the node is synchronizing correctly.
-
----
-
-### Screenshot 4
-
-**Synchronization Status**
-
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** The same section showing the current time source and last
-> synchronization.
 
 ---
 
@@ -158,46 +133,6 @@ Review the displayed information to ensure the node is synchronizing correctly.
 
 ---
 
-### Screenshot 5
-
-**Edit Network Time**
-
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** The **Edit** control for the Network Time section.
-
----
-
-## Step 2: Configure the NTP Servers
-
-Enter the required NTP server addresses.
-
-Typical examples include:
-
-- pool.ntp.org
-- time.google.com
-- time.cloudflare.com
-- Your organization's internal NTP server
-
-Click **OK** to save the configuration.
-
----
-
-### Screenshot 6
-
-**NTP Server Configuration**
-
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** The NTP edit dialog with servers entered, showing exactly how multiple
-> servers are separated.
-
----
-
 ## Step 3: Verify Time Synchronization
 
 After saving the configuration:
@@ -205,19 +140,6 @@ After saving the configuration:
 - Verify that the NTP service is running.
 - Confirm that the node synchronizes with an NTP server.
 - Ensure the displayed system time is correct.
-
----
-
-### Screenshot 7
-
-**Verified Synchronization**
-
-```text
-[ Place Screenshot Here ]
-```
-
-> **Capture:** The Time page after saving, showing the node synchronized and the time
-> correct.
 
 ---
 
@@ -286,3 +208,29 @@ Verify the following:
 # Summary
 
 The **Time** page allows administrators to review and configure the system date, time, time zone, and NTP synchronization for a VM2Cloud VE node. Maintaining accurate, synchronized time across all nodes improves cluster stability, ensures accurate logging, and supports reliable operation of authentication, scheduling, backup, and High Availability services.
+
+---
+
+# Time Synchronisation
+
+**The interface does not configure time synchronisation.** The Time panel sets the time
+zone and reports the server time — nothing more. Synchronisation is handled by the system
+time daemon and is configured from the shell.
+
+Check what the node is doing:
+
+```bash
+timedatectl status
+```
+
+`System clock synchronized: yes` and `NTP service: active` are what a healthy node reports.
+To change the servers, edit the time daemon's configuration and restart it:
+
+```bash
+systemctl restart systemd-timesyncd
+timedatectl timesync-status
+```
+
+This matters more than its brief mention suggests. Cluster communication and certificate
+validation both depend on agreeing clocks, and a skewed clock surfaces as a join failure
+or a certificate error rather than as an obvious time problem.

@@ -66,11 +66,11 @@ For a `@pam` account this changes the underlying Linux password on the node. For
 
 **Change Password**
 
-```text
-[ Place Screenshot Here ]
-```
+![Change Password](images/my-settings.png)
 
-> **Capture:** The password change dialog opened from the user menu.
+**My Settings** opens as a dialog rather than a panel, holding the personal preferences —
+the interface language, colour theme, and the resource-tree behaviour. Password and
+two-factor enrolment are separate entries on the same user menu.
 
 ---
 
