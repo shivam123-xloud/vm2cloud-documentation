@@ -47,12 +47,10 @@ The Groups page displays all configured groups.
 
 **Groups Page**
 
-```text
-[ Place Screenshot Here ]
-```
+![Groups Page](images/groups-panel-empty.png)
 
-> **Capture:** Datacenter → Permissions → Groups. Capture before creating any group —
-> the empty list is a one-time shot.
+Datacenter → Permissions → Groups, before any group exists. Columns are **Group name**,
+**Comment**, and **Users**.
 
 ---
 
@@ -70,11 +68,9 @@ The **Create: Group** window opens.
 
 **Create Group Window**
 
-```text
-[ Place Screenshot Here ]
-```
+![Create Group Window](images/group-create.png)
 
-> **Capture:** The Create: Group dialog as it opens, still empty.
+The dialog takes only a **Name** and a **Comment**.
 
 ---
 
@@ -117,11 +113,10 @@ The new group appears in the Groups list.
 
 **New Group in the List**
 
-```text
-[ Place Screenshot Here ]
-```
+![New Group in the List](images/groups-panel.png)
 
-> **Capture:** The Groups list with the created group visible.
+The created group appears with its comment and, once members are added, the list of users
+belonging to it.
 
 ---
 
@@ -169,12 +164,10 @@ The updated information is saved.
 
 **Group Edit Dialog**
 
-```text
-[ Place Screenshot Here ]
-```
+![Group Edit Dialog](images/group-edit.png)
 
-> **Capture:** The edit dialog showing **Name** fixed and **Comment** editable — the
-> distinction the page makes.
+Editing offers the **Comment** only. The group name is fixed at creation — to rename, create
+a new group, move the members and permissions, then remove the old one.
 
 ---
 

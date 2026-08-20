@@ -50,11 +50,10 @@ The API Tokens page displays all configured API Tokens.
 
 **API Tokens Page**
 
-```text
-[ Place Screenshot Here ]
-```
+![API Tokens Page](images/api-tokens-panel.png)
 
-> **Capture:** Datacenter → Permissions → API Tokens, before any token exists.
+Empty on a new installation. Columns are **User name**, **Token ID**, **Expire**,
+**Privilege Separation**, and **Comment**.
 
 ---
 
@@ -72,12 +71,10 @@ The Add API Token window opens.
 
 **Add API Token Window**
 
-```text
-[ Place Screenshot Here ]
-```
+![Add API Token Window](images/api-token-add.png)
 
-> **Capture:** The Add dialog as it opens, showing the user, token ID, and privilege
-> separation fields.
+The dialog takes the **User**, a **Token ID**, an optional **Expire** date, a **Comment**,
+and the **Privilege Separation** checkbox.
 
 ---
 
@@ -174,12 +171,10 @@ The page displays information such as:
 
 **Token List Columns**
 
-```text
-[ Place Screenshot Here ]
-```
+![Token List Columns](images/api-tokens-list.png)
 
-> **Capture:** The list showing user, token ID, enabled state, expiry, and privilege
-> separation.
+A created token shows against its owning user. The secret is not shown here — it appears
+once, at creation, and cannot be retrieved afterwards.
 
 ---
 

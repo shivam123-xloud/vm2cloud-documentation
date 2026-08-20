@@ -88,13 +88,11 @@ Depending on your VM2Cloud VE deployment, one or more of the following realm typ
 
 **Realms Panel**
 
-```text
-[ Place Screenshot Here ]
-```
+![Realms Panel](images/realms-panel.png)
 
-> **Capture:** Datacenter → Permissions → Realms, showing every realm this deployment
-> offers. **This clears the `Verify` marker above** — the realm list on this page is
-> inferred.
+Two realms exist from installation: **pam**, the Linux PAM standard authentication that
+`root` uses, and **pve**, the built-in VM2Cloud VE authentication server. Columns are
+**Realm**, **Type**, **TFA**, **Default**, and **Comment**.
 
 ---
 
@@ -128,11 +126,10 @@ Depending on your VM2Cloud VE deployment, one or more of the following realm typ
 
 **Edit a Realm**
 
-```text
-[ Place Screenshot Here ]
-```
+![Edit a Realm](images/realm-add.png)
 
-> **Capture:** A realm open for editing, showing its settings.
+Adding a realm first asks which type — LDAP, Active Directory, OpenID Connect — and the
+field set changes with that choice.
 
 ---
 

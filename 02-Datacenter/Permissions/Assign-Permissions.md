@@ -47,11 +47,11 @@ The Permissions page displays all configured permission entries.
 
 **Permissions Page**
 
-```text
-[ Place Screenshot Here ]
-```
+![Permissions Page](images/permissions-panel.png)
 
-> **Capture:** Datacenter → Permissions, the root panel listing permission entries.
+Datacenter → Permissions lists every access control entry as **Path**, **User/Group/API
+Token**, **Role**, and **Propagate**. A permission is always those three things bound
+together.
 
 ---
 
@@ -69,12 +69,9 @@ The Add Permission window opens.
 
 **Add Permission Window**
 
-```text
-[ Place Screenshot Here ]
-```
+![Add Permission Window](images/permission-add.png)
 
-> **Capture:** The Add dialog as it opens, showing the path, user or group, role, and
-> propagate fields.
+The dialog takes a **Path**, a **User** or **Group**, a **Role**, and **Propagate**.
 
 ---
 

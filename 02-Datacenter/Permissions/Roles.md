@@ -47,12 +47,12 @@ The Roles page displays all predefined and custom roles.
 
 **Roles Page**
 
-```text
-[ Place Screenshot Here ]
-```
+![Roles Page](images/roles-panel.png)
 
-> **Capture:** Datacenter → Permissions → Roles showing the predefined roles. **Capture
-> the whole list** — it confirms every role name documented on this page.
+The predefined roles ship with the installation: Administrator, NoAccess, PVEAdmin,
+PVEAuditor, PVEDatastoreAdmin, PVEDatastoreUser, PVEMappingAdmin, PVEMappingUser,
+PVEPoolAdmin, PVEPoolUser, PVESDNAdmin, PVESDNUser, PVESysAdmin, PVETemplateUser,
+PVEUserAdmin, PVEVMAdmin, and PVEVMUser. Columns are **Role** and **Privileges**.
 
 ---
 
@@ -96,11 +96,9 @@ The Create Role window opens.
 
 **Create Role Window**
 
-```text
-[ Place Screenshot Here ]
-```
+![Create Role Window](images/role-create.png)
 
-> **Capture:** The Create dialog as it opens.
+Creating a role takes a **Name** and a **Privileges** selector.
 
 ---
 
@@ -145,11 +143,10 @@ The new role appears in the Roles list.
 
 **New Role in the List**
 
-```text
-[ Place Screenshot Here ]
-```
+![New Role in the List](images/roles-panel-custom.png)
 
-> **Capture:** The Roles list with the custom role added.
+A custom role appears alongside the predefined ones. Only custom roles can be edited or
+removed — the predefined set is fixed.
 
 ---
 

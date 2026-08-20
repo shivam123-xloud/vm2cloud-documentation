@@ -64,12 +64,10 @@ The existing pools are listed.
 
 **Pools Panel**
 
-```text
-[ Place Screenshot Here ]
-```
+![Pools Panel](images/pools-panel.png)
 
-> **Capture:** Datacenter → Permissions → Pools, showing the pool list with the **Create**,
-> **Edit**, and **Remove** buttons visible.
+Pools group guests and storage so permissions can be granted over the set rather than each
+member. Columns are **Name** and **Comment**.
 
 ---
 
@@ -88,11 +86,9 @@ The pool is created empty.
 
 **Create Pool Dialog**
 
-```text
-[ Place Screenshot Here ]
-```
+![Create Pool Dialog](images/pool-create.png)
 
-> **Capture:** The Create Pool dialog, showing the Name and Comment fields.
+A pool needs only a **Name** and an optional **Comment**. Members are added afterwards.
 
 ---
 

@@ -50,11 +50,9 @@ The Two-Factor Authentication page displays the available 2FA configuration opti
 
 **Two Factor Panel**
 
-```text
-[ Place Screenshot Here ]
-```
+![Two Factor Panel](images/two-factor-panel.png)
 
-> **Capture:** Datacenter → Permissions → Two Factor.
+Lists the second factors configured for each user. Empty until one is enrolled.
 
 ---
 
@@ -99,11 +97,9 @@ The Add Two-Factor Authentication window opens.
 
 **Add 2FA Window**
 
-```text
-[ Place Screenshot Here ]
-```
+![Add 2FA Window](images/two-factor-add.png)
 
-> **Capture:** The Add dialog as it opens.
+The dialog selects the user and the method, then shows the enrolment detail for that method.
 
 ---
 
