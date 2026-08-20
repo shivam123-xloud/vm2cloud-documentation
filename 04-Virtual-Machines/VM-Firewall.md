@@ -63,12 +63,10 @@ Before configuring the VM firewall, ensure that:
 
 **VM Firewall Rules Panel**
 
-```text
-[ Place Screenshot Here ]
-```
+![VM Firewall Rules Panel](images/vm-firewall-tab.png)
 
-> **Capture:** A virtual machine → Firewall → Rules, showing the empty or populated rule
-> list with the **Add**, **Edit**, **Remove**, and **Insert: Security Group** controls.
+Rules that apply to this machine only. They sit alongside the datacenter and node rules
+rather than replacing them.
 
 ---
 

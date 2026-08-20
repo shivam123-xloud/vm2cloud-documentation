@@ -49,12 +49,11 @@ Use this tab when you need to:
 
 **Storage Permissions Tab**
 
-```text
-[ Place Screenshot Here ]
-```
+![Storage Permissions Tab](images/storage-permissions-tab.png)
 
-> **Capture:** A storage → Permissions, showing direct and inherited grants with the
-> **Add** and **Remove** buttons.
+Each storage has its own **Permissions** tab, showing the access control entries whose path
+covers this storage. Granting here is the same three-part binding used everywhere else —
+a path, a principal, and a role.
 
 ---
 

@@ -51,12 +51,9 @@ Use this tab when you need to:
 
 **Container Permissions Tab**
 
-```text
-[ Place Screenshot Here ]
-```
+![Container Permissions Tab](images/ct-permissions-tab.png)
 
-> **Capture:** A container → Permissions, showing both a direct grant and an inherited
-> one, with the **Add** and **Remove** buttons visible.
+Access control entries covering this container.
 
 ---
 

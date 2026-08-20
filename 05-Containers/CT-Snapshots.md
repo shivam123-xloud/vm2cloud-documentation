@@ -79,12 +79,10 @@ Existing snapshots are listed, with the current state shown at the bottom of the
 
 **Container Snapshots Tab**
 
-```text
-[ Place Screenshot Here ]
-```
+![Container Snapshots Tab](images/ct-snapshots-tab.png)
 
-> **Capture:** A container → Snapshots, showing the snapshot list with the **Take
-> Snapshot**, **Rollback**, **Edit**, and **Remove** buttons visible.
+Snapshots taken of this container, with **Take Snapshot**, **Rollback**, and **Remove**.
+Empty until the first snapshot.
 
 ---
 

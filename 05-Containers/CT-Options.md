@@ -56,12 +56,10 @@ The settings are listed with their current values.
 
 **Container Options Tab**
 
-```text
-[ Place Screenshot Here ]
-```
+![Container Options Tab](images/ct-options-tab.png)
 
-> **Capture:** A container → Options, showing the complete settings list with current
-> values and the **Edit** button.
+A **Key / Value** table with a single **Edit** control — hostname, start at boot, OS type,
+console mode, protection, unprivileged flag, and features.
 
 ---
 

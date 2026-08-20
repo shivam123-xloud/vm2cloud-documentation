@@ -51,12 +51,10 @@ The Summary tab opens by default when a container is selected.
 
 **Container Summary Tab**
 
-```text
-[ Place Screenshot Here ]
-```
+![Container Summary Tab](images/ct-summary-tab.png)
 
-> **Capture:** A running container → Summary, showing the status panel, the Notes panel,
-> and the usage graphs below.
+The same layout as a virtual machine's summary, reporting the container's status, uptime,
+and resource usage.
 
 ---
 

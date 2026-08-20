@@ -55,12 +55,10 @@ The current settings are shown.
 
 **Container DNS Tab**
 
-```text
-[ Place Screenshot Here ]
-```
+![Container DNS Tab](images/ct-dns-tab.png)
 
-> **Capture:** A container → DNS, showing the DNS domain and DNS servers fields with
-> their current values and the **Edit** button.
+The container's DNS domain and servers, with a single **Edit** control. Left empty, the
+container inherits the node's resolvers.
 
 ---
 

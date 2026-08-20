@@ -50,12 +50,9 @@ Tasks are listed with the most recent first.
 
 **VM Task History Tab**
 
-```text
-[ Place Screenshot Here ]
-```
+![VM Task History Tab](images/vm-task-history-tab.png)
 
-> **Capture:** A virtual machine → Task History, showing several tasks of different types
-> with their start time, end time, user, description, and status.
+The same task list as elsewhere, filtered to this machine.
 
 ---
 

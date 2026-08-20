@@ -72,12 +72,10 @@ Images available for import are listed.
 
 **Storage Import Tab**
 
-```text
-[ Place Screenshot Here ]
-```
+![Storage Import Tab](images/storage-import-tab.png)
 
-> **Capture:** A storage → Import, showing one or more disk images available for import
-> with their format and size.
+The **Import** tab lists disk images and appliance files staged on the storage that can be
+turned into guests. It only appears on storage configured to hold `import` content.
 
 ---
 

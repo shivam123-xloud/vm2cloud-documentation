@@ -53,12 +53,10 @@ Existing permissions affecting this machine are listed.
 
 **VM Permissions Tab**
 
-```text
-[ Place Screenshot Here ]
-```
+![VM Permissions Tab](images/vm-permissions-tab.png)
 
-> **Capture:** A virtual machine → Permissions, showing both a direct grant and an
-> inherited one, with the **Add** and **Remove** buttons visible.
+Access control entries whose path covers this machine, with **Add** offering a user or a
+group permission.
 
 ---
 

@@ -60,12 +60,11 @@ The storage's tabs appear.
 
 **Storage Selected in the Resource Tree**
 
-```text
-[ Place Screenshot Here ]
-```
+![Storage Selected in the Resource Tree](images/storage-summary-tab.png)
 
-> **Capture:** A storage selected under a node, showing its full tab list — Summary,
-> Backups, ISO Images, CT Templates, Import, Permissions.
+Storage appears in the tree beneath the node that provides it, named
+`storage (node)`. Selecting it opens its own menu — Summary, and one tab per content
+type the storage is configured to hold.
 
 ---
 
@@ -83,11 +82,10 @@ Watch the trend rather than the single figure. Storage that has been filling ste
 
 **Storage Summary Tab**
 
-```text
-[ Place Screenshot Here ]
-```
+![Storage Summary Tab](images/storage-summary-tab.png)
 
-> **Capture:** A storage → Summary, showing capacity, used space, and the usage graph.
+Summary reports usage and the storage's status, with the same gauge style used across the
+interface.
 
 ---
 
@@ -113,12 +111,10 @@ This is the list your retention policy is pruning. If it is longer than expected
 
 **Backups Tab**
 
-```text
-[ Place Screenshot Here ]
-```
+![Backups Tab](images/storage-backups-tab.png)
 
-> **Capture:** A storage → Backups, showing several backup files with the **Restore**,
-> **Remove**, **Show Configuration**, and **Edit Notes** controls.
+The **Backups** tab lists every backup archive held on this storage, with the guest it
+belongs to, its format, and its size. Empty until a backup runs.
 
 ---
 

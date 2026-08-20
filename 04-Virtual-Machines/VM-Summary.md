@@ -51,12 +51,10 @@ The Summary tab opens by default when a machine is selected, so this is usually 
 
 **VM Summary Tab**
 
-```text
-[ Place Screenshot Here ]
-```
+![VM Summary Tab](images/vm-summary-tab.png)
 
-> **Capture:** A running virtual machine → Summary, showing the status panel, the Notes
-> panel, and the usage graphs below.
+Summary is the guest's front page: status, uptime, and live CPU, memory, and disk figures,
+with the usage graphs below and a notes area at the bottom.
 
 ---
 

@@ -67,12 +67,9 @@ Before configuring the container firewall, ensure that:
 
 **Container Firewall Rules Panel**
 
-```text
-[ Place Screenshot Here ]
-```
+![Container Firewall Rules Panel](images/ct-firewall-tab.png)
 
-> **Capture:** A container → Firewall → Rules, showing the rule list with the **Add**,
-> **Edit**, **Remove**, and **Insert: Security Group** controls.
+Rules applying to this container only.
 
 ---
 

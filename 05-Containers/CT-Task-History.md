@@ -51,12 +51,9 @@ Tasks are listed with the most recent first.
 
 **Container Task History Tab**
 
-```text
-[ Place Screenshot Here ]
-```
+![Container Task History Tab](images/ct-task-history-tab.png)
 
-> **Capture:** A container → Task History, showing several tasks with their start time,
-> end time, user, description, and status.
+The task list filtered to this container.
 
 ---
 

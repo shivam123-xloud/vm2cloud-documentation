@@ -56,12 +56,10 @@ The container's interfaces are listed.
 
 **Container Network Tab**
 
-```text
-[ Place Screenshot Here ]
-```
+![Container Network Tab](images/ct-network-tab.png)
 
-> **Capture:** A container → Network, showing the interface list with the **Add**,
-> **Edit**, and **Remove** buttons visible.
+Network devices attached to the container, listed with their name, bridge, MAC, and IP
+configuration. Containers configure addressing here rather than inside the guest.
 
 ---
 

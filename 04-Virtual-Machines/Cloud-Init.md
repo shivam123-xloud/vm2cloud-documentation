@@ -96,12 +96,10 @@ The configurable settings are listed with their current values.
 
 **Cloud-Init Tab**
 
-```text
-[ Place Screenshot Here ]
-```
+![Cloud-Init Tab](images/cloudinit-tab.png)
 
-> **Capture:** VM → Cloud-Init, showing all available settings with their current
-> values and the **Edit** and **Regenerate Image** controls.
+The tab exists on every machine, but is inert until a CloudInit drive is added in
+**Hardware**. Until then it prompts you to add one rather than showing fields.
 
 ---
 

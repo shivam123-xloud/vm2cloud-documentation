@@ -54,12 +54,10 @@ The settings are listed with their current values.
 
 **VM Options Tab**
 
-```text
-[ Place Screenshot Here ]
-```
+![VM Options Tab](images/vm-options-tab.png)
 
-> **Capture:** A virtual machine → Options, showing the complete settings list with
-> current values and the **Edit** button.
+A flat **Key / Value** table with a single **Edit** control acting on the selected row —
+name, start at boot, boot order, OS type, QEMU Guest Agent, protection, and the rest.
 
 ---
 

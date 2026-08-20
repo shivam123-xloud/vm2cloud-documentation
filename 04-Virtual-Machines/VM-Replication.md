@@ -54,13 +54,10 @@ Jobs for this machine are listed.
 
 **VM Replication Tab**
 
-```text
-[ Place Screenshot Here ]
-```
+![VM Replication Tab](images/vm-replication-tab.png)
 
-> **Capture:** A virtual machine → Replication, showing a configured job with its target,
-> schedule, last sync, duration, and status, plus the **Add**, **Edit**, **Remove**, and
-> **Schedule now** controls.
+Replication jobs for this machine. On a single-node cluster the tab exists but no job can
+be created — replication needs a second node as target.
 
 ---
 

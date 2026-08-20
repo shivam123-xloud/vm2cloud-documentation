@@ -60,12 +60,10 @@ A command prompt is presented.
 
 **VM Monitor Tab**
 
-```text
-[ Place Screenshot Here ]
-```
+![VM Monitor Tab](images/vm-monitor-tab.png)
 
-> **Capture:** A running virtual machine → Monitor, showing the command prompt and any
-> banner text presented on opening.
+Monitor is a direct QEMU monitor console for the machine — a prompt where inspection
+commands can be issued against the running hypervisor process.
 
 ---
 
