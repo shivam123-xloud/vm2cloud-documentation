@@ -62,13 +62,10 @@ The existing IPSets are listed.
 
 **IPSet Panel**
 
-```text
-[ Place Screenshot Here ]
-```
+![IPSet Panel](images/ipset-panel.png)
 
-> **Capture:** Datacenter → Firewall → IPSet, showing the IPSet list on one side and the
-> member list for a selected set on the other, with the **Add**, **Edit**, and
-> **Remove** buttons visible.
+An IPSet is a named collection of addresses, used where one alias is not enough — a rule
+matching any of many networks. Empty until you create one.
 
 ---
 
@@ -87,11 +84,10 @@ The set is created empty. It has no effect until members are added.
 
 **Create IPSet Dialog**
 
-```text
-[ Place Screenshot Here ]
-```
+![Create IPSet Dialog](images/ipset-create.png)
 
-> **Capture:** The Create IPSet dialog, showing the Name and Comment fields.
+Creating the set takes only a **Name** and **Comment**; members are added to the set after
+it exists.
 
 ---
 

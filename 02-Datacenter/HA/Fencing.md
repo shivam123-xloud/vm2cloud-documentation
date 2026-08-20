@@ -125,12 +125,10 @@ Fencing depends on a healthy cluster, so verify the following before relying on 
 
 **Fencing Readiness**
 
-```text
-[ Place Screenshot Here ]
-```
+![Fencing Readiness](images/fencing-panel.png)
 
-> **Capture:** Datacenter → HA with the cluster status visible — quorum held, all nodes
-> communicating, HA services healthy.
+Datacenter → HA → **Fencing** is its own panel. It reports the fencing configuration in
+force for the cluster.
 
 ---
 

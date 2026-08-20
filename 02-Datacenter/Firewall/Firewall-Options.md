@@ -54,12 +54,11 @@ The panel lists the cluster-wide firewall settings and their current values.
 
 **Datacenter Firewall Options**
 
-```text
-[ Place Screenshot Here ]
-```
+![Datacenter Firewall Options](images/firewall-options-panel.png)
 
-> **Capture:** Datacenter → Firewall → Options, showing the full settings list with the
-> current values and the **Edit** button visible.
+The cluster-wide firewall switch lives here, along with the default input and output
+policies and logging levels. **Firewall: No** on a new cluster — rules can be written and
+reviewed before anything is enforced.
 
 ---
 

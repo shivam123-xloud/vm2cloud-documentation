@@ -72,13 +72,9 @@ Lists appear on the left. Selecting one shows its entries on the right.
 
 **Prefix Lists Panel**
 
-```text
-[ Place Screenshot Here ]
-```
+![Prefix Lists Panel](images/prefix-lists-panel.png)
 
-> **Capture:** Datacenter → SDN → Prefix Lists with a list selected, showing the list on
-> the left and its entries on the right with the Sequence Nr., Action, Prefix,
-> Prefix <=, and Prefix >= columns.
+Prefix lists name sets of networks that route maps then match against.
 
 ---
 
@@ -110,12 +106,9 @@ Leaving the sequence number blank assigns the next value automatically, in steps
 
 **Add Prefix List Entry**
 
-```text
-[ Place Screenshot Here ]
-```
+![Add Prefix List Entry](images/prefix-list-add.png)
 
-> **Capture:** The Add entry dialog for a prefix list, showing the Sequence Nr., Action,
-> Prefix, Prefix >=, and Prefix <= fields.
+An entry is a network with an optional length range, permitted or denied.
 
 ---
 

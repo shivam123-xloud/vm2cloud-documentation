@@ -51,13 +51,10 @@ Open the IPAM panel when you need to:
 
 **IPAM Panel**
 
-```text
-[ Place Screenshot Here ]
-```
+![IPAM Panel](images/ipam-panel.png)
 
-> **Capture:** Datacenter → SDN → IPAM with at least one guest holding an address,
-> showing the Name/VMID, IP Address, MAC, Gateway, and Actions columns plus the
-> **Reload** button.
+IPAM tracks which addresses SDN has handed out. The built-in `pve` backend is present by
+default and is what zones use unless told otherwise.
 
 ---
 

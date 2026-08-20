@@ -58,13 +58,10 @@ The existing groups are listed alongside the rules belonging to the selected gro
 
 **Security Group Panel**
 
-```text
-[ Place Screenshot Here ]
-```
+![Security Group Panel](images/security-groups-panel.png)
 
-> **Capture:** Datacenter → Firewall → Security Group, showing the group list and the
-> rule list for a selected group, with the **Add**, **Edit**, and **Remove** buttons
-> visible.
+A security group is a named set of rules defined once and inserted wherever it is needed.
+The panel is empty until you create one.
 
 ---
 
@@ -83,11 +80,10 @@ The group is created empty. It has no effect until rules are added and the group
 
 **Create Security Group Dialog**
 
-```text
-[ Place Screenshot Here ]
-```
+![Create Security Group Dialog](images/security-group-create.png)
 
-> **Capture:** The Create Security Group dialog, showing the Name and Comment fields.
+A group needs only a **Name** and an optional **Comment**. The rules are added afterwards,
+inside the group.
 
 ---
 

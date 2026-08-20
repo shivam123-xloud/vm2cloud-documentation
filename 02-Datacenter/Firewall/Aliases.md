@@ -57,12 +57,10 @@ The existing aliases are listed.
 
 **Alias Panel**
 
-```text
-[ Place Screenshot Here ]
-```
+![Alias Panel](images/alias-panel.png)
 
-> **Capture:** Datacenter → Firewall → Alias, showing the alias list with the **Add**,
-> **Edit**, and **Remove** buttons visible.
+An alias gives an address or network a name, so rules can refer to `management-net` rather
+than repeating a CIDR. Empty until you create one.
 
 ---
 
@@ -78,12 +76,9 @@ The alias creation dialog opens.
 
 **Add Alias Dialog**
 
-```text
-[ Place Screenshot Here ]
-```
+![Add Alias Dialog](images/alias-add.png)
 
-> **Capture:** The Add Alias dialog, empty, showing the Name, IP/CIDR, and Comment
-> fields.
+The dialog takes a **Name**, the **IP/CIDR** it stands for, and an optional **Comment**.
 
 ---
 

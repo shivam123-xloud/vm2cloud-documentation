@@ -79,13 +79,9 @@ Two consequences worth holding onto:
 
 **Route Maps Panel**
 
-```text
-[ Place Screenshot Here ]
-```
+![Route Maps Panel](images/route-maps-panel.png)
 
-> **Capture:** Datacenter → SDN → Route Maps, showing the Name, Order, Action, Match,
-> Set, Call, Exit Policy, and State columns with the **Add**, **Edit**, **Remove**, and
-> **Reload** buttons.
+Route maps shape which routes are accepted and advertised in a routed SDN deployment.
 
 ---
 
@@ -105,12 +101,9 @@ Two consequences worth holding onto:
 
 **Add Route Map Entry**
 
-```text
-[ Place Screenshot Here ]
-```
+![Add Route Map Entry](images/route-map-add.png)
 
-> **Capture:** The Add route map entry dialog, showing the Name, Order, Action, Match,
-> Set, and Exit Policy fields.
+Each entry pairs a match condition with an action, applied in sequence.
 
 ---
 

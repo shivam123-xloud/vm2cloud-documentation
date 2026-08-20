@@ -56,12 +56,10 @@ The existing cluster-wide rules are listed in evaluation order.
 
 **Datacenter Firewall Rules Panel**
 
-```text
-[ Place Screenshot Here ]
-```
+![Datacenter Firewall Rules Panel](images/firewall-rules-panel.png)
 
-> **Capture:** Datacenter → Firewall → Rules, showing the rule list with the **Add**,
-> **Edit**, **Remove**, and rule-ordering controls visible.
+Rules created here apply cluster-wide. The list is empty on a new cluster, and the
+firewall itself is disabled until you enable it in [Firewall Options](Firewall-Options.md).
 
 ---
 
@@ -77,13 +75,11 @@ The rule creation dialog opens.
 
 **Add Rule Dialog**
 
-```text
-[ Place Screenshot Here ]
-```
+![Add Rule Dialog](images/firewall-rule-add.png)
 
-> **Capture:** The Add Rule dialog immediately after opening, empty, showing every
-> available field including Direction, Action, Macro, Protocol, Source, Destination,
-> ports, and Comment.
+The dialog takes a **Direction**, an **Action**, an optional **Interface** and **Source** /
+**Destination**, and either a **Macro** or an explicit protocol and port. **Enable** is a
+checkbox on the rule itself, so a rule can exist without being active.
 
 ---
 

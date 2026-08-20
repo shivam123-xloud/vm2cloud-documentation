@@ -71,12 +71,11 @@ Before configuring node affinity:
 
 **HA Placement Configuration**
 
-```text
-[ Place Screenshot Here ]
-```
+![HA Placement Configuration](images/affinity-rules-panel.png)
 
-> **Capture:** Datacenter → HA, the node-affinity section. **This clears the `Verify`
-> marker above** — the exact menu label.
+The menu entry is **Datacenter → HA → Affinity Rules**, and the panel is headed **HA Node
+Affinity Rules**. Columns are **Enabled**, **State**, **Strict**, **HA Resources**,
+**Nodes**, and **Comment**.
 
 ---
 
@@ -94,12 +93,14 @@ Higher-priority nodes are preferred. Lower-priority nodes act as fallback target
 
 **Create Node-Affinity Rule**
 
-```text
-[ Place Screenshot Here ]
-```
+![Create Node-Affinity Rule](images/affinity-rule-add.png)
 
-> **Capture:** The dialog with resources and nodes selected, and node priorities if this
-> version offers them.
+The dialog is **Add: HA Node Affinity**. It takes **Enable**, **Strict**, the **HA
+Resources** the rule applies to, a comment, and a node table listing every node with its
+live memory and CPU usage and a **Priority** field.
+
+Priority is where preference is expressed: a higher number is preferred, and nodes left
+blank are fallbacks.
 
 ---
 
@@ -118,12 +119,12 @@ Use strict placement only when the workload genuinely cannot run on other nodes,
 
 **Enforcement Behaviour**
 
-```text
-[ Place Screenshot Here ]
-```
+![Enforcement Behaviour](images/affinity-rule-add.png)
 
-> **Capture:** The control that sets preferred against strict, showing its exact
-> wording.
+Enforcement is the **Strict** checkbox at the top of the same dialog, not a separate
+control. Unchecked, HA prefers the listed nodes but will use another if none are available.
+Checked, HA uses only the listed nodes and leaves the resource stopped rather than starting
+it elsewhere.
 
 ---
 

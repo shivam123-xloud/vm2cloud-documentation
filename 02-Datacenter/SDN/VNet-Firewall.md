@@ -62,12 +62,10 @@ The panel lists VNets on the left. Selecting one opens its **Rules** and **Optio
 
 **VNet Firewall Panel**
 
-```text
-[ Place Screenshot Here ]
-```
+![VNet Firewall Panel](images/vnet-firewall-panel.png)
 
-> **Capture:** Datacenter → SDN → VNet Firewall with a VNet selected, showing the VNet
-> list on the left and the Rules and Options tabs populated on the right.
+Firewall rules attached to a VNet rather than to a guest or a node, so every guest on that
+VNet is covered by the same policy.
 
 ---
 

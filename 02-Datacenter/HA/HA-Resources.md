@@ -70,12 +70,10 @@ In this example, VM 100 runs on node1. If VM 100 is registered as an HA resource
 
 **HA Panel**
 
-```text
-[ Place Screenshot Here ]
-```
+![HA Panel](images/ha-panel.png)
 
-> **Capture:** Datacenter → HA before any resource is added. One-time empty state —
-> capture it before the first resource.
+Datacenter → HA lists the guests HA manages, with their requested state and current status.
+It is empty until a resource is added.
 
 ---
 
@@ -90,11 +88,10 @@ In this example, VM 100 runs on node1. If VM 100 is registered as an HA resource
 
 **Add Resource Dialog**
 
-```text
-[ Place Screenshot Here ]
-```
+![Add Resource Dialog](images/ha-resource-add.png)
 
-> **Capture:** The Add dialog showing the guest selector and every option it offers.
+The dialog selects the guest, then takes **Max. Restart**, **Max. Relocate**, a **Group**,
+a **Request State**, and a comment.
 
 ---
 

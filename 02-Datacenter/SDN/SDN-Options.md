@@ -63,12 +63,10 @@ Simple, VLAN, QinQ, and VXLAN zones do **not** use a controller.
 
 **SDN Options Panel**
 
-```text
-[ Place Screenshot Here ]
-```
+![SDN Options Panel](images/sdn-options-panel.png)
 
-> **Capture:** Datacenter → SDN → Options, showing all three sections — Controllers,
-> IPAM, and DNS — with their **Add**, **Remove**, and **Edit** controls.
+Options is where external IPAM and DNS backends are registered, so zones and VNets can
+reference them by name.
 
 ---
 

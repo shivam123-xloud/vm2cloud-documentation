@@ -74,13 +74,10 @@ Do **not** create one when all nodes share a subnet and can already reach each o
 
 **Fabrics Panel**
 
-```text
-[ Place Screenshot Here ]
-```
+![Fabrics Panel](images/fabrics-panel.png)
 
-> **Capture:** Datacenter → SDN → Fabrics, showing the **Add Fabric** dropdown open with
-> the available protocols, alongside the **Add Node** and **Reload** buttons and the
-> Name, Protocol, IPv4, IPv6, Interfaces, Action, and State columns.
+Fabrics describe the routed underlay that carries SDN traffic between nodes. A single node
+needs none, which is why the panel is empty here.
 
 ---
 
