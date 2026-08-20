@@ -118,9 +118,13 @@ The underlying platform provides a local ZFS pool backend called `zfspool`. It c
 
 ### Screenshot 4
 
-```text
-[ Place Screenshot Here — ZFS Management ]
-```
+**ZFS Panel**
+
+![ZFS Panel](images/zfs-panel-empty.png)
+
+Node → Disks → ZFS lists the pools on this node, with **Name**, **Size**, **Free**,
+**Allocated**, **Fragmentation**, **Health**, and **Deduplication**. Empty until a pool
+exists.
 
 ---
 
@@ -142,9 +146,12 @@ Configure:
 
 ### Screenshot 5
 
-```text
-[ Place Screenshot Here — Create ZFS Pool ]
-```
+**Create ZFS Dialog**
+
+![Create ZFS Dialog](images/zfs-create-dialog.png)
+
+The dialog takes a pool **Name**, a **RAID Level**, a **Compression** algorithm, an
+**ashift** value, and the devices to include. Only unused disks are offered.
 
 ---
 
@@ -160,9 +167,11 @@ Configure:
 
 ### Screenshot 6
 
-```text
-[ Place Screenshot Here — ZFS Pool Confirmation ]
-```
+**ZFS Pool Detail**
+
+![ZFS Pool Detail](images/zfs-pool-detail.png)
+
+Opening a pool shows its device tree and the state of each member device.
 
 ---
 
@@ -180,9 +189,12 @@ After creation:
 
 ### Screenshot 7
 
-```text
-[ Place Screenshot Here — ZFS Pool Successfully Created ]
-```
+**ZFS Pool Created**
+
+![ZFS Pool Created](images/zfs-pool-created.png)
+
+The pool appears with its size, free space, fragmentation, and health. `ONLINE` is what a
+healthy pool reports.
 
 ---
 

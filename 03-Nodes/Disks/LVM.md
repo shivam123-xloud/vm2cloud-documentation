@@ -71,9 +71,11 @@ Before configuring LVM storage:
 
 ### Screenshot 2
 
-```text
-[ Place Screenshot Here — Node → Disks ]
-```
+**LVM Panel**
+
+![LVM Panel](images/lvm-panel-empty.png)
+
+Node → Disks → LVM lists volume groups with **Name**, **Size**, and **Free**.
 
 ---
 
@@ -90,9 +92,12 @@ VM2Cloud VE's underlying storage manager can scan available LVM volume groups.
 
 ### Screenshot 3
 
-```text
-[ Place Screenshot Here — LVM Volume Groups ]
-```
+**Volume Group Created**
+
+![Volume Group Created](images/lvm-vg-created.png)
+
+A created group reports its total and free space. Free space is what remains for logical
+volumes.
 
 ---
 
@@ -110,9 +115,12 @@ VM2Cloud VE's underlying storage manager can scan available LVM volume groups.
 
 ### Screenshot 4
 
-```text
-[ Place Screenshot Here — Datacenter → Storage → Add → LVM ]
-```
+**Create Volume Group Dialog**
+
+![Create Volume Group Dialog](images/lvm-create-dialog.png)
+
+The dialog takes the disk to use and a name for the group, with an option to add it as
+storage in the same step.
 
 ---
 

@@ -117,9 +117,12 @@ Configure:
 
 ### Screenshot 3
 
-```text
-[ Place Screenshot Here — Directory Storage Configuration ]
-```
+**Create Directory Dialog**
+
+![Create Directory Dialog](images/directory-create-dialog.png)
+
+The dialog takes the disk, a **filesystem** — ext4 or xfs — and a **name**, which becomes
+both the mount point and the storage name.
 
 ---
 
@@ -155,9 +158,12 @@ The underlying Directory backend requires a valid filesystem path.
 
 ### Screenshot 4
 
-```text
-[ Place Screenshot Here — Directory Path ]
-```
+**Directory Panel**
+
+![Directory Panel](images/directory-panel-empty.png)
+
+Node → Disks → Directory lists directory-backed storage created from a whole disk, with
+its device, mount point, and filesystem.
 
 ---
 
@@ -481,9 +487,11 @@ After adding Directory storage:
 
 ### Screenshot 7
 
-```text
-[ Place Screenshot Here — Directory Storage Verification ]
-```
+**Directory Created**
+
+![Directory Created](images/directory-created.png)
+
+The created directory appears with its device, mount point, and filesystem type.
 
 ---
 

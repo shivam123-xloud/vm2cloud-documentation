@@ -74,9 +74,11 @@ Before configuring LVM-Thin:
 
 ### Screenshot 2
 
-```text
-[ Place Screenshot Here — Node → Disks ]
-```
+**LVM-Thin Panel**
+
+![LVM-Thin Panel](images/lvmthin-panel-empty.png)
+
+Node → Disks → LVM-Thin lists thin pools with their name, size, and usage.
 
 ---
 
@@ -93,9 +95,13 @@ The LVM-Thin storage backend requires an existing volume group.
 
 ### Screenshot 3
 
-```text
-[ Place Screenshot Here — LVM Volume Group ]
-```
+**Thin Pool Created**
+
+![Thin Pool Created](images/lvmthin-pool-created.png)
+
+A thin pool reports its size and how much of it is actually allocated. Thin provisioning
+means the sum of guest disks can exceed the pool — which is why that usage figure needs
+watching.
 
 ---
 
@@ -114,9 +120,11 @@ An LVM-Thin storage definition requires a **thin pool** inside the selected volu
 
 ### Screenshot 4
 
-```text
-[ Place Screenshot Here — LVM-Thin Pool Configuration ]
-```
+**Create Thinpool Dialog**
+
+![Create Thinpool Dialog](images/lvmthin-create-dialog.png)
+
+The dialog takes the disk, a name, and offers to add the pool as storage.
 
 The underlying platform documentation describes an LVM-Thin pool as an LVM logical volume configured as a thin pool.
 

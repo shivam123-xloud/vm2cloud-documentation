@@ -84,9 +84,13 @@ The node-level **Disks** section is intended to provide an overview of attached 
 
 ### Screenshot 3
 
-```text
-[ Place Screenshot Here — Node → Disks ]
-```
+**Disk List**
+
+![Disk List](images/disks-panel-unused.png)
+
+The list is read-only. Each row carries the device path, its type — `ssd`, `hdd`, or
+`nvme` — its model and serial number for physical identification, and its S.M.A.R.T.
+health.
 
 ---
 
@@ -101,9 +105,11 @@ Do not select a disk for a destructive operation until its identity has been con
 
 ### Screenshot 4
 
-```text
-[ Place Screenshot Here — Disk list ]
-```
+**Partitioned Disk**
+
+![Partitioned Disk](images/disks-panel-partitioned.png)
+
+A partitioned disk expands to show its partitions and what each is used for.
 
 ---
 

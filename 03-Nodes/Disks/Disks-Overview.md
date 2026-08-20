@@ -82,9 +82,13 @@ Before working with disks:
 
 ### Screenshot 3
 
-```text
-[ Place Screenshot Here — Node → Disks ]
-```
+**Disks Panel**
+
+![Disks Panel](images/disks-panel-unused.png)
+
+Node → Disks lists every physical device with its **Device**, **Type**, **Usage**,
+**GPT**, **Model**, **Serial**, **S.M.A.R.T.** status, and **Size**. The Usage column is
+the one that matters — it says whether a disk is free or already claimed.
 
 ---
 
@@ -99,9 +103,12 @@ Before working with disks:
 
 ### Screenshot 4
 
-```text
-[ Place Screenshot Here — Disks Page ]
-```
+**Disk in Use**
+
+![Disk in Use](images/disks-panel-inuse.png)
+
+Once a disk is claimed, Usage names what claimed it. A disk showing no usage is available;
+anything else is in use and wiping it destroys whatever is there.
 
 ---
 
