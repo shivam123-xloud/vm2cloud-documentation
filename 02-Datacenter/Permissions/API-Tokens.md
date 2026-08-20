@@ -193,11 +193,10 @@ Disabling an API Token immediately prevents it from being used for authenticatio
 
 **Edit a Token**
 
-```text
-[ Place Screenshot Here ]
-```
+![Edit a Token](images/api-token-edit.png)
 
-> **Capture:** A token open for editing, showing which fields can still be changed.
+Editing offers the expiry, the comment, and the privilege separation flag. The token ID and
+its owner are fixed, and the secret cannot be shown again.
 
 ---
 
@@ -217,11 +216,10 @@ Disabling an API Token immediately prevents it from being used for authenticatio
 
 **Remove a Token**
 
-```text
-[ Place Screenshot Here ]
-```
+![Remove a Token](images/api-token-remove.png)
 
-> **Capture:** The removal confirmation.
+Removal is immediate and cannot be undone. Anything authenticating with that token stops
+working at once.
 
 ---
 

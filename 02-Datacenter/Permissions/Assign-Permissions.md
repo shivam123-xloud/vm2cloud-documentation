@@ -180,11 +180,9 @@ The permission is removed immediately.
 
 **Remove Permission**
 
-```text
-[ Place Screenshot Here ]
-```
+![Remove Permission](images/permission-remove.png)
 
-> **Capture:** The removal confirmation.
+Removing an entry takes effect immediately for that user or group.
 
 ---
 

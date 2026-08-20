@@ -125,12 +125,9 @@ A guest belongs to one pool at a time. Adding it to a second pool moves it.
 
 **Pool With Members**
 
-```text
-[ Place Screenshot Here ]
-```
+![Pool With Members](images/pool-selected.png)
 
-> **Capture:** A pool selected in Datacenter → Permissions → Pools, showing its member
-> guests and storage in the members list.
+Selecting a pool enables **Edit** and **Remove**, and shows what belongs to it.
 
 ---
 

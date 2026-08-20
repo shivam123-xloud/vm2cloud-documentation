@@ -167,11 +167,10 @@ removed — the predefined set is fixed.
 
 **Edit a Custom Role**
 
-```text
-[ Place Screenshot Here ]
-```
+![Edit a Custom Role](images/role-edit.png)
 
-> **Capture:** A custom role open for editing.
+Only custom roles can be edited. The dialog offers the full privilege list with the role's
+current selection ticked.
 
 ---
 

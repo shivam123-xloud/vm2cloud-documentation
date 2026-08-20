@@ -135,11 +135,10 @@ belonging to it.
 
 **Edit Group**
 
-```text
-[ Place Screenshot Here ]
-```
+![Edit Group](images/group-selected.png)
 
-> **Capture:** A group selected with **Edit** clicked.
+Selecting a group enables **Edit** and **Remove**. The **Users** column shows its current
+members.
 
 ---
 
@@ -247,11 +246,11 @@ The group is permanently removed.
 
 **Remove Group Confirmation**
 
-```text
-[ Place Screenshot Here ]
-```
+![Remove Group Confirmation](images/group-remove-confirm.png)
 
-> **Capture:** The confirmation dialog shown when removing a group.
+Removing a group asks for confirmation. The users in it are not deleted — they simply stop
+inheriting whatever the group granted, which is the point worth understanding before
+clicking Yes.
 
 ---
 
